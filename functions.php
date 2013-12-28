@@ -176,9 +176,6 @@ function twentythirteen_scripts_styles() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
 
-	// Adds Masonry to handle vertical alignment of footer widgets.
-	if ( is_active_sidebar( 'sidebar-1' ) )
-		wp_enqueue_script( 'jquery-masonry' );
 
 	wp_enqueue_script( 'swipejs', get_template_directory_uri() . '/js/swipe.js', array(), '2013-12-27', true );
 	wp_enqueue_script( 'twentythirteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '2013-07-18', true );
@@ -287,38 +284,9 @@ add_theme_support( 'infinite-scroll', array(
 
 
 
-	/*register_sidebar( array(
-		'name'          => __( 'Main Widget Area', 'twentythirteen' ),
-		'id'            => 'sidebar-1',
-		'description'   => __( 'Appears in the footer section of the site.', 'twentythirteen' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'Secondary Widget Area', 'twentythirteen' ),
-		'id'            => 'sidebar-2',
-		'description'   => __( 'Appears on posts and pages in the sidebar.', 'twentythirteen' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );*/
+	
 }
 add_action( 'widgets_init', 'twentythirteen_widgets_init' );
-
-
-function disable_all_widgets( $sidebars_widgets ) {
-
-	if ( is_home() )
-		$sidebars_widgets = array( false );
-
-	return $sidebars_widgets;
-}
-
-
 
 if ( ! function_exists( 'twentythirteen_paging_nav' ) ) :
 /**
@@ -533,8 +501,6 @@ function twentythirteen_body_class( $classes ) {
 	if ( ! is_multi_author() )
 		$classes[] = 'single-author';
 
-	if ( is_active_sidebar( 'sidebar-2' ) && ! is_attachment() && ! is_404() )
-		$classes[] = 'sidebar';
 
 	if ( ! get_option( 'show_avatars' ) )
 		$classes[] = 'no-avatars';
