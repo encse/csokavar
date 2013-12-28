@@ -31,12 +31,11 @@ get_header(); ?>
 								<div class="entry-thumbnail">
 									<?php echo get_the_post_thumbnail($recent['ID'], 'post-thumbnail', array('class' => 'crop-vertical')); ?>
 								</div>
+								<h2 class="entry-title">
 								<a href="<?php echo get_permalink($recent["ID"]); ?>" title="<?php echo esc_attr($recent["post_title"]) ?>">
-									<h2 class="entry-title">
-									
-										<?php echo $recent["post_title"] ?>
-									</h2>
+									<?php echo $recent["post_title"] ?>
 								</a>
+								</h2>
 							</div>
 							<?php endforeach; ?>
 						
