@@ -1,4 +1,6 @@
 <?php
+
+require('minify-html.php');
 /**
  * Twenty Thirteen functions and definitions.
  *
@@ -72,7 +74,8 @@ function twentythirteen_setup() {
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, icons, and column width.
 	 */
-    add_editor_style( array( 'css/editor-style.css', 'fonts/genericons.css', twentythirteen_fonts_url() ) );
+    add_editor_style( array( 'css/editor-style.css', 'fonts/genericons.css' ) );
+	
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
@@ -111,57 +114,6 @@ function twentythirteen_setup() {
 }
 add_action( 'after_setup_theme', 'twentythirteen_setup' );
 
-/**
- * Returns the Google font stylesheet URL, if available.
- *
- * The use of Source Sans Pro and Bitter by default is localized. For languages
- * that use characters not supported by the font, the font can be disabled.
- *
- * @since Twenty Thirteen 1.0
- *
- * @return string Font stylesheet or empty string if disabled.
- */
-function twentythirteen_fonts_url() {
-
-	$fonts_url = '';
-
-	/* Translators: If there are characters in your language that are not
-	 * supported by Source Sans Pro, translate this to 'off'. Do not translate
-	 * into your own language.
-	 */
-	$source_sans_pro = 'off'; //_x( 'on', 'Source Sans Pro font: on or off', 'twentythirteen' );
-
-	/* Translators: If there are characters in your language that are not
-	 * supported by Bitter, translate this to 'off'. Do not translate into your
-	 * own language.
-	 */
-	$bitter = 'off'; // _x( 'on', 'Bitter font: on or off', 'twentythirteen' );
-
-	//<link href='http://fonts.googleapis.com/css?family=Habibi|Sorts+Mill+Goudy|Droid+Sans+Mono&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	
-	//if ( 'off' !== $source_sans_pro || 'off' !== $bitter ) 
-	{
-		$font_families = array();
-
-		if ( 'off' !== $source_sans_pro )
-			$font_families[] = 'Source Sans Pro:300,400,700,300italic,400italic,700italic';
-
-		if ( 'off' !== $bitter )
-			$font_families[] = 'Bitter:400,700';
-			
-		$font_families[] = 'Habibi:300,400,700,300italic,400italic,700italic';
-		$font_families[] = 'Sorts Mill Goudy:300,400,700,300italic,400italic,700italic';
-		$font_families[] = 'Droid Sans Mono:300,400,700,300italic,400italic,700italic';
-
-		$query_args = array(
-			'family' => urlencode( implode( '|', $font_families ) ),
-			'subset' => urlencode( 'latin,latin-ext' ),
-		);
-		$fonts_url = add_query_arg( $query_args, "//fonts.googleapis.com/css" );
-	}
-
-	return $fonts_url;
-}
 
 /**
  * Enqueues scripts and styles for front end.
@@ -180,30 +132,14 @@ function twentythirteen_scripts_styles() {
 	wp_enqueue_script( 'swipejs', get_template_directory_uri() . '/js/swipe.js', array(), '2013-12-27', true );
 	wp_enqueue_script( 'twentythirteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '2013-07-18', true );
 	
-	// Add Open Sans and Bitter fonts, used in the main stylesheet.
-	wp_enqueue_style( 'twentythirteen-fonts', twentythirteen_fonts_url(), array(), null );
-
+	
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
-
-	// Loads our main stylesheet.
-//	wp_enqueue_style( 'twentythirteen-style', get_stylesheet_uri(), array(), '2013-07-18' );
-	
-	
+	wp_enqueue_style( 'theme-fonts', get_template_directory_uri() . '/fonts/gfonts.css', array(), '2.09' );
 	
 	wp_enqueue_style('theme-main', get_stylesheet_directory_uri().'/style.less');
-	
-
-	// Loads the Internet Explorer specific stylesheet.
-	//wp_enqueue_style( 'twentythirteen-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentythirteen-style' ), '2013-07-18' );
-	//wp_style_add_data( 'twentythirteen-ie', 'conditional', 'lt IE 9' );
-
-
 	remove_filter( 'the_content', 'sharing_display', 19);
 	remove_filter( 'the_excerpt', 'sharing_display', 19 );
-	
-	
-
 }
 	
 add_action( 'wp_enqueue_scripts', 'twentythirteen_scripts_styles' );
@@ -227,6 +163,7 @@ function remove_jetpack_styles(){
 	wp_deregister_style('sharing'); // Sharedaddy Sharing
 	wp_deregister_style('stats_reports_css'); // Stats
 	wp_deregister_style('jetpack-widgets'); // Widgets
+	wp_dequeue_script( 'devicepx' );
 }
 add_action('wp_print_styles', 'remove_jetpack_styles');
 
@@ -609,3 +546,24 @@ function add_slug_body_class( $classes ) {
 }
 
 add_filter( 'body_class', 'add_slug_body_class' );
+add_filter( 'jetpack_enable_opengraph', '__return_false', 99 );
+remove_action( 'wp_head', 'wp_generator'); // Display the XHTML generator that is generated on the wp_head hook, WP version
+remove_action('wp_head', 'wlwmanifest_link');// Display the link to the Really Simple Discovery service endpoint, EditURI link
+remove_action('wp_head', 'rsd_link');// Display the link to the Windows Live Writer manifest file.
+//remove_action('wp_head', 'feed_links', 2); // Display the links to the general feeds: Post and Comment Feed
+remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
+remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 ); // remove both link rel="prev" and link rel="next"
+remove_action( 'wp_head', 'wp_shortlink_wp_head' );
+
+    
+// if (true || !is_admin()) {
+
+    // remove_action( 'wp_head', 'feed_links'); // Display the links to the general feeds: Post and Comment Feed
+    // remove_action( 'wp_head', 'rsd_link'); // Display the link to the Really Simple Discovery service endpoint, EditURI link
+    // remove_action( 'wp_head', 'wlwmanifest_link' ); // Display the link to the Windows Live Writer manifest file.
+    // remove_action( 'wp_head', 'index_rel_link' ); // index link
+    // remove_action( 'wp_head', 'parent_post_rel_link', 10); // prev link
+    // remove_action( 'wp_head', 'start_post_rel_link', 10); // start link
+    // remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10); // Display relational links for the posts adjacent to the current post.
+    
+// }
