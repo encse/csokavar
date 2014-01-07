@@ -1,6 +1,5 @@
 <?php
 
-//require('minify-html.php');
 /**
  * Twenty Thirteen functions and definitions.
  *
