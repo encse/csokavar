@@ -1,6 +1,6 @@
 <?php
 
-require('minify-html.php');
+//require('minify-html.php');
 /**
  * Twenty Thirteen functions and definitions.
  *
@@ -115,13 +115,23 @@ function twentythirteen_setup() {
 add_action( 'after_setup_theme', 'twentythirteen_setup' );
 
 
-/**
- * Enqueues scripts and styles for front end.
- *
- * @since Twenty Thirteen 1.0
- *
- * @return void
- */
+function twentythirteen_fonts_url() {
+
+	$font_families = array(
+		'Habibi:300,400,700,300italic,400italic,700italic',
+		'Sorts Mill Goudy:300,400,700,300italic,400italic,700italic',
+		'Droid Sans Mono:300,400,700,300italic,400italic,700italic'
+	);
+
+	$query_args = array(
+		'family' => urlencode( implode( '|', $font_families ) ),
+		'subset' => urlencode( 'latin,latin-ext' ),
+	);
+	return add_query_arg( $query_args, "http://fonts.googleapis.com/css" );
+}
+
+
+
 function twentythirteen_scripts_styles() {
 	// Adds JavaScript to pages with the comment form to support sites with
 	// threaded comments (when in use).
@@ -135,7 +145,10 @@ function twentythirteen_scripts_styles() {
 	
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
-	wp_enqueue_style( 'theme-fonts', get_template_directory_uri() . '/fonts/gfonts.css', array(), '2.09' );
+	//wp_enqueue_style( 'theme-fonts', get_template_directory_uri() . '/fonts/gfonts.css', array(), '2.09' );
+	//wp_enqueue_style( 'twentythirteen-fonts', twentythirteen_fonts_url(), array(), null );
+	
+	
 	
 	wp_enqueue_style('theme-main', get_stylesheet_directory_uri().'/style.less');
 	remove_filter( 'the_content', 'sharing_display', 19);
@@ -144,6 +157,13 @@ function twentythirteen_scripts_styles() {
 	
 add_action( 'wp_enqueue_scripts', 'twentythirteen_scripts_styles' );
 
+function twentythirteen_footer()
+{
+	echo '<link rel="stylesheet" href="'.twentythirteen_fonts_url().'">';
+}
+
+add_action('wp_footer', 'twentythirteen_footer');
+	
 
 	
 function remove_jetpack_styles(){
@@ -550,7 +570,6 @@ add_filter( 'jetpack_enable_opengraph', '__return_false', 99 );
 remove_action( 'wp_head', 'wp_generator'); // Display the XHTML generator that is generated on the wp_head hook, WP version
 remove_action('wp_head', 'wlwmanifest_link');// Display the link to the Really Simple Discovery service endpoint, EditURI link
 remove_action('wp_head', 'rsd_link');// Display the link to the Windows Live Writer manifest file.
-//remove_action('wp_head', 'feed_links', 2); // Display the links to the general feeds: Post and Comment Feed
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 ); // remove both link rel="prev" and link rel="next"
 remove_action( 'wp_head', 'wp_shortlink_wp_head' );

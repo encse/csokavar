@@ -2,8 +2,8 @@
 class WP_HTML_Compression
 {
 	// Settings
-	protected $compress_css = true;
-	protected $compress_js = true;
+	protected $compress_css = false;
+	protected $compress_js = false;
 	protected $info_comment = false;
 	protected $remove_comments = true;
 
