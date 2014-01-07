@@ -145,7 +145,7 @@ function twentythirteen_scripts_styles() {
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
 	//wp_enqueue_style( 'theme-fonts', get_template_directory_uri() . '/fonts/gfonts.css', array(), '2.09' );
-	//wp_enqueue_style( 'twentythirteen-fonts', twentythirteen_fonts_url(), array(), null );
+	wp_enqueue_style( 'twentythirteen-fonts', twentythirteen_fonts_url(), array(), null );
 	
 	
 	
@@ -155,14 +155,14 @@ function twentythirteen_scripts_styles() {
 }
 	
 add_action( 'wp_enqueue_scripts', 'twentythirteen_scripts_styles' );
-
-function twentythirteen_footer()
+/*
+function twentythirteen_fonts()
 {
-	echo '<link rel="stylesheet" href="'.twentythirteen_fonts_url().'">';
+	echo '<link rel="stylesheet" href="'.twentythirteen_fonts_url().'" />';
 }
 
-add_action('wp_footer', 'twentythirteen_footer');
-	
+add_action('wp_head', 'twentythirteen_fonts');
+	*/
 
 	
 function remove_jetpack_styles(){
@@ -574,14 +574,3 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 ); // remove 
 remove_action( 'wp_head', 'wp_shortlink_wp_head' );
 
     
-// if (true || !is_admin()) {
-
-    // remove_action( 'wp_head', 'feed_links'); // Display the links to the general feeds: Post and Comment Feed
-    // remove_action( 'wp_head', 'rsd_link'); // Display the link to the Really Simple Discovery service endpoint, EditURI link
-    // remove_action( 'wp_head', 'wlwmanifest_link' ); // Display the link to the Windows Live Writer manifest file.
-    // remove_action( 'wp_head', 'index_rel_link' ); // index link
-    // remove_action( 'wp_head', 'parent_post_rel_link', 10); // prev link
-    // remove_action( 'wp_head', 'start_post_rel_link', 10); // start link
-    // remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10); // Display relational links for the posts adjacent to the current post.
-    
-// }

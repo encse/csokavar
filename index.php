@@ -1,4 +1,3 @@
-
 <?php
 /**
  * The main template file.
@@ -42,7 +41,7 @@ get_header(); ?>
 				  </div>
 				  
 				  <ul class="swipe-pagination">
-					<?php foreach( $recent_posts as $recent ) echo '<li />'; ?>
+					<?php foreach( $recent_posts as $recent ) echo '<li></li>'; ?>
 				</ul>
 				</div>
 	
