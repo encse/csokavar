@@ -149,7 +149,7 @@ function twentythirteen_scripts_styles() {
 	
 	
 	
-	wp_enqueue_style('theme-main', get_stylesheet_directory_uri().'/style.less');
+	wp_enqueue_style('theme-main', get_stylesheet_directory_uri().'/style.less',array(), '1.11' );
 	remove_filter( 'the_content', 'sharing_display', 19);
 	remove_filter( 'the_excerpt', 'sharing_display', 19 );
 }
