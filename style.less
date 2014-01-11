@@ -14,6 +14,15 @@
 @size-entry-thumbnail: 100px;
 @size-entry-thumbnail-max-height: 400px;
 
+
+@font-face {
+    font-family: 'Genericons';
+    src: url('fonts/genericons-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 .centered-block() {
 	display: block;
 	margin: 0 auto;
@@ -283,6 +292,7 @@ img	{
 			h1,h2,h3,h4,h5,h6{ padding: 0; }
 			position: relative;
 
+		
 			.home-link{
 				text-decoration:none;
 				display:inline-block;
@@ -322,7 +332,7 @@ img	{
 				margin: 0;
 				position:absolute;
 				right:(@size-font / 2);
-				top:(@size-font / 2);
+				top:(0.625*@size-font);
 			}
 
 			.search-form
@@ -335,9 +345,11 @@ img	{
 			}
 			.site-title{
 				position:relative;
-				left: (@size-font/2);
+				//left: (@size-font/2);
 				display:inline;
+			
 			}
+		
 		}
 		
 		//prev post/next post
@@ -621,7 +633,7 @@ img	{
 		.navbar {
 			nav{
 				max-width: @size-max-content-width;
-				margin:0 auto;
+				margin:@size-font auto;
 				
 				.home-link{
 					h1{
@@ -631,7 +643,12 @@ img	{
 					padding-right: (2*@size-font);
 				}
 
-				border-bottom: (@size-font) solid @cl-dark;
+				.logo{
+					width: auto;
+					height:(4*@size-font);
+					display:inline-block;
+				}
+			
 				
 				.menu-1-menu-container, .nav-menu {	display: inline-block; }
 				.menu-toggle {	display:none; }			 
@@ -648,12 +665,6 @@ img	{
 							font-weight:bold;
 							display: block;
 							text-align:center;
-							
-							&:before{
-								.genericon-settings((3*@size-font));
-								content: '\f308';
-								display:block;
-							}
 						}
 						
 					}
@@ -692,9 +703,16 @@ img	{
 	#infinite-handle span{
 		display:block;
 	}
+	
+	.logo{
+		width: auto;
+		height:(1.5*@size-font);
+		display:inline-block;
+	}
+	#navbar nav {
+		margin: (0.5*@size-font) 0;
+	}	
 }
-
-
 
 @media (max-width: 1280px){
 	img {
