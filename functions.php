@@ -119,7 +119,9 @@ function twentythirteen_fonts_url() {
 	$font_families = array(
 		'Habibi:300,400,700,300italic,400italic,700italic',
 		'Sorts Mill Goudy:300,400,700,300italic,400italic,700italic',
-		'Droid Sans Mono:300,400,700,300italic,400italic,700italic'
+		'Bitter:400,700,400italic',
+		'Droid Sans Mono:300,400,700,300italic,400italic,700italic',
+		
 	);
 
 	$query_args = array(
@@ -145,7 +147,7 @@ function twentythirteen_scripts_styles() {
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
 	//wp_enqueue_style( 'theme-fonts', get_template_directory_uri() . '/fonts/gfonts.css', array(), '2.09' );
-	wp_enqueue_style( 'twentythirteen-fonts', twentythirteen_fonts_url(), array(), null );
+	//wp_enqueue_style( 'twentythirteen-fonts', twentythirteen_fonts_url(), array(), null );
 	
 	
 	
