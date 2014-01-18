@@ -286,8 +286,7 @@ img	{
 		
 			.home-link{
 				text-decoration:none;
-				display:inline-block;
-				height: (2*@size-font);
+				
 			}
 				
 			//toggle on/off
@@ -323,7 +322,8 @@ img	{
 				margin: 0;
 				position:absolute;
 				right:(@size-font / 2);
-				top:(0.625*@size-font);
+				top:(0.45*@size-font);
+				line-height:100%;
 			}
 
 			.search-form
@@ -461,42 +461,46 @@ img	{
 			
 		a.sd-button	{	
 			text-decoration:none;
-			color:white;
-			height: (1.5*@size-font);
-			width: (1.5*@size-font);
-			text-align:center;
-			display:inline-block;
-			.rounded-corners(@size-font);
 			
 			span:before{
+				color:white;
+				.rounded-corners(0.8*@size-font);
 				.genericon-settings(@size-font);
+				
+				line-height: (1.5*@size-font);
 			
+				height: (1.5* @size-font);
+				width: (1.5*@size-font);
+				
+				text-align:center;
+				display:inline-block;
 			}
 		}
 
-		li.share-facebook a.sd-button {
-			background: #3B5998 ;
-			span:before {	content: '\f204'; } 
+		li.share-facebook a.sd-button span:before {
+			
+			 background: #3B5998 ;	
+			 content: '\f204';
 		}
 		
-		li.share-tumblr a.sd-button {
+		li.share-tumblr a.sd-button span:before {
 			background: #00225F ;
-			span:before {	content: '\f214'; } 
+			content: '\f214';		
 		}
 		
-		li.share-twitter a.sd-button {
+		li.share-twitter a.sd-button span:before {
 			background: #4099FF ;
-			span:before {	content: '\f202'; } 
+			content: '\f202'; 
 		}
 		
-		li.share-google-plus-1 a.sd-button {
+		li.share-google-plus-1 a.sd-button span:before{
 			background: #353631 ;
-			span:before {	content: '\f218'; } 
+			content: '\f218';
 		}
 		
-		li.share-reddit a.sd-button {
+		li.share-reddit a.sd-button span:before{
 			background: #ff5700 ;
-			span:before {	content: '\f222'; } 
+			content: '\f222'; 
 		}
 		
 	}
@@ -699,11 +703,14 @@ img	{
 	.logo{
 		width: auto;
 		height:(1.5*@size-font);
-		display:inline-block;
+		display:none;
 	}
+	
 	#navbar nav {
 		margin: (0.5*@size-font) 0;
+		
 	}	
+	
 }
 
 @media (max-width: 1280px){
@@ -758,7 +765,8 @@ img	{
 	
 	.swipe-pagination{
 		text-align:center;
-		padding-bottom: (@size-font);
+		padding: (@size-font / 2) 0;
+		
 		li {
 			text-decoration: none;
 			display: inline-block;
