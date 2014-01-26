@@ -7,6 +7,7 @@
 
 @cl-light: (lighten(@cl-dark, 20%));
 @cl-lighter: (lighten(@cl-light, 35%));
+@cl-lighter2: (lighten(@cl-light, 45%));
 
 
 @size-max-content-width: 1024px;
@@ -270,8 +271,10 @@ img	{
 		}
 		
 		pre, .code{
-			padding: @size-font;
-			background:@cl-lighter;
+			margin-top: (@size-font);
+			padding: (@size-font/2);
+			background:@cl-lighter2;
+			overflow:auto;
 		}
 	}
 
