@@ -28,7 +28,11 @@ get_header(); ?>
 							foreach( $recent_posts as $recent ) : ?>
 							<div>
 								<div class="entry-thumbnail">
+									<div class="entry-thumbnail-wrap1">
+									<div class="entry-thumbnail-wrap2">
 									<?php echo get_the_post_thumbnail($recent['ID'], 'post-thumbnail', array('class' => 'crop-vertical')); ?>
+									</div>
+									</div>
 								</div>
 								<h2 class="entry-title">
 								<a href="<?php echo get_permalink($recent["ID"]); ?>" title="<?php echo esc_attr($recent["post_title"]) ?>">

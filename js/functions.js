@@ -128,17 +128,6 @@
 (function($) {
 	$(document).ready(function() {
 	 
-		function centerImage() {
-			$('img.crop-vertical').each(function(){
-				var imageHeight = $(this).height();
-				var wrapperHeight = $(this).parent().height();
-				var overlap = (wrapperHeight - imageHeight) / 2;
-				$(this).css('margin-top', overlap);		
-			});
-			
-		}
-		 
-		$(window).on("load resize", centerImage);
 		
 		if(window.intiniteScroll && window.infiniteScroll.scroller)
 			window.infiniteScroll.scroller.updateURL = function(){};

@@ -18,13 +18,17 @@
 </article>
 
 <?php else: ?>
-			
+		
 				
 <article id="post-<?php the_ID(); ?>" class="entry">
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 		<div class="entry-thumbnail">
-			<?php the_post_thumbnail( 'post-thumbnail', array('class' => 'crop-vertical')); ?>
+			<div class="entry-thumbnail-wrap1">
+				<div class="entry-thumbnail-wrap2">
+					<?php the_post_thumbnail( 'post-thumbnail', array('class' => 'crop-vertical')); ?>
+				</div>
+			</div>
 		</div>
 		<?php endif; ?>
 
