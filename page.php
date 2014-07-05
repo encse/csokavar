@@ -35,7 +35,6 @@ get_header(); ?>
 						<h1 class="entry-title"><?php the_title(); ?></h1>
 						<div class="entry-meta">
 						
-						<?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
 						</div><!-- .entry-meta -->
 					</header><!-- .entry-header -->
 
