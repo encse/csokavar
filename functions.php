@@ -104,12 +104,13 @@ function twentythirteen_setup() {
 	// This theme uses its own gallery styles.
 	add_filter( 'use_default_gallery_style', '__return_false' );
 	
+	/*
 	add_theme_support( 'infinite-scroll', array(
 			'container'  => 'content',
 			'footer'     => 'page',
 			'type'		 => 'click',
 		) );
-
+*/
 }
 add_action( 'after_setup_theme', 'twentythirteen_setup' );
 
@@ -235,7 +236,7 @@ add_theme_support( 'infinite-scroll', array(
     'type'           => 'scroll',
     'footer_widgets' => false,
     'container'      => 'content',
-    'wrapper'        => true,
+    'wrapper'        => false,
     'render'         => false,
     'posts_per_page' => false
 ) );
