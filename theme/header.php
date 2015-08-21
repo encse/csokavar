@@ -17,7 +17,7 @@
 	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	
-	<link rel="shortcut icon" href="/favicon/favicon.ico">
+	<!--link rel="shortcut icon" href="/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-touch-icon-114x114.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-touch-icon-72x72.png" />
@@ -37,7 +37,7 @@
 	<meta name="msapplication-square144x144logo" content="/favicon/mstile-144x144.png" />
 	<meta name="msapplication-square150x150logo" content="/favicon/mstile-150x150.png" />
 	<meta name="msapplication-square310x310logo" content="/favicon/mstile-310x310.png" />
-	<meta name="msapplication-wide310x150logo" content="/favicon/mstile-310x150.png" />
+	<meta name="msapplication-wide310x150logo" content="/favicon/mstile-310x150.png" /-->
 	<?php wp_head(); ?>
 </head>
 
