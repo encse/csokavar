@@ -1,12 +1,4 @@
-﻿<?php
-if(isset($_POST['redirect']))
-{
-	$url = $_POST['redirect']; 
-	print "<html><head><title>redirect</title><meta http-equiv=\"Refresh\" content=\"0; URL=$url\"><head><body onLoad=\"javascript: window.location='$url';\">$url</body></html>"; 
-	exit;
-}?>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>  
 <title>Hány napos vagyok?</title>
@@ -68,7 +60,7 @@ if(isset($_POST['redirect']))
 			var m0 = date.getTime();
 			var m1 = (new Date()).getTime();
 			
-			var  s= "<h2>Mennyi az annyi?</h2>";
+			var  s= "<h3>Mennyi az annyi?</h3>";
 			s +="<p>Most pontosan ";
 			
 			var d = m1-m0;
@@ -217,69 +209,45 @@ if(isset($_POST['redirect']))
 </head>
 <body>
 <div id="container">
-<div id="top">	
+	<div id="top">	
 
-	<div id="header">
-		
-		
-		<div id="logo">
-			<h1><a href="http://www.csokavar.hu/hanynapos">Hány napos vagyok?</a></h1>
+		<div id="top-content">
+			<div id="logo">
+				<h1><a href="http://www.csokavar.hu/hanynapos">Hány napos vagyok?</a></h1>
+			</div>
 		</div>
-		<div id="beta">
-			
-		</div>
-		
-			
 	</div>
-</div>
-
-					
 
 	<div id="main">
-	
-	<div class="ad">
-		<script type="text/javascript">
-		google_ad_client = "pub-5815787374478753";
-		/* 728x90, created 8/29/10 */
-		google_ad_slot = "9791455379";
-		google_ad_width = 728;
-		google_ad_height = 90;
-		</script>
-		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-		</script>	
-	</div>
-	<p>Mindig tudni akartad, hogy pontosan hány napos is vagy valójában?</p>
-	<p>Most egyszerűen kiszámolhatod, csak add meg a születésnapodat az alábbi mezőben:</p>
-		<form id="query">
-			<input type="text" size="10" id="q" value="" />
-		</form>
-	
-		<p id="your_date"></p>
-		<div id="result"></div>
-		
-		<p>&nbsp;</p>
-		
-			<h2>Tippek</h2>
-		<p class="tipp">Kíváncsi vagy mikor jön a baba? Add meg a fogantatás időpontját, és máris megtudod hányadik hétben vagy. Ha minden jól megy, a baba a negyvenedik héten érkezik.</p>
+		<div id="main-content">
+			<p>Mindig tudni akartad, hogy pontosan hány napos is vagy valójában?</p>
+			<p>Most egyszerűen kiszámolhatod, csak add meg a születésnapodat az alábbi mezőben:</p>
+			<form id="query">
+				<input type="text" size="10" id="q" value="" />
+			</form>
+			
+			<p id="your_date"></p>
+			<div id="result"></div>
+				
+			<p>&nbsp;</p>
+				
+			<h3>Tippek</h3>
+			<p class="tipp">Kíváncsi vagy mikor jön a baba? Add meg a fogantatás időpontját, és máris megtudod hányadik hétben vagy. Ha minden jól megy, a baba a negyvenedik héten érkezik.</p>
 
-        <p>&nbsp;</p>
-		<h2>Oszd meg az infót</h2>
-		<p>permalink: <span id="permalink"></span></p>
-		<a name="fb_share"  type="box_count" ></a> 
-<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" 
-        type="text/javascript">
-</script>
-
+	        <p>&nbsp;</p>
+			<h3>Oszd meg az infót</h3>
+			<p>permalink: <span id="permalink"></span></p>
+			<a name="fb_share"  type="box_count" ></a> 
+			<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+		</div>
 	</div>
 
 	<div id="footer" style="overflow: hidden;">
-	<p><a href="http://www.csokavar.hu/">Encsé Művek</a> - 2009 - napjainkig</p>
-	<p>Kapcsolat: <a href="mailto:encse@csokavar.hu">encse@csokavar.hu</a></p>
+		<p><a href="http://www.csokavar.hu/">Encsé Művek</a> - 2009 - napjainkig</p>
+		<p>Kapcsolat: <a href="mailto:encse@csokavar.hu">encse@csokavar.hu</a></p>
+	</div>
 	
 </div>
-	
-	</div>
-
 
 
 	<!-- Google Analytics for WordPress | http://yoast.com/wordpress/google-analytics/ -->
