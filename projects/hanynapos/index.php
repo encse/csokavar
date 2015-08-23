@@ -213,13 +213,14 @@
 
 		<div id="top-content">
 			<div id="logo">
-				<h1><a href="http://www.csokavar.hu/hanynapos">Hány napos vagyok?</a></h1>
+				<h1><a href="http://www.csokavar.hu/hanynapos">projects/hanynapos</a></h1>
 			</div>
 		</div>
 	</div>
 
 	<div id="main">
 		<div id="main-content">
+			<h2>Hány napos vagyok</h2>
 			<p>Mindig tudni akartad, hogy pontosan hány napos is vagy valójában?</p>
 			<p>Most egyszerűen kiszámolhatod, csak add meg a születésnapodat az alábbi mezőben:</p>
 			<form id="query">
