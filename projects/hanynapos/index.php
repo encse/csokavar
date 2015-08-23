@@ -213,7 +213,7 @@
 
 		<div id="top-content">
 			<div id="logo">
-				<h1><a href="http://www.csokavar.hu/hanynapos"><script>document.write(location.pathname);</script></a></h1>
+				<h1><a href="http://www.csokavar.hu/hanynapos"><script>document.write(location.pathname.slice(0,-1));</script></a></h1>
 			</div>
 		</div>
 	</div>
