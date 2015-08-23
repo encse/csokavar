@@ -8,7 +8,7 @@
 <meta name="description" content="Mindig tudni akartad, hogy pontosan hány napos is vagy valójában?" />
 <link rel="image_src" href="http://csokavar.hu/hanynapos/cake.jpg" / >
 
-<link href="skin/style.css" media="all" rel="Stylesheet" type="text/css"/>
+<link href="/projects/skin/style.css" media="all" rel="Stylesheet" type="text/css"/>
 
 <script src="js/jquery.js"></script> 
 <script src="js/jquery.urlparams.js"></script> 
