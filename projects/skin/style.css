@@ -37,10 +37,10 @@ h3 {
 	font-size: 22px;
 }
 p{
-	  
-	    line-height: 25px;
-	    font-size: 17px;
-	    margin: 10px 0;
+	 
+	line-height: 25px;
+	font-size: 17px;
+	margin: 10px 0;
 }
 
 form, .form{
@@ -113,8 +113,7 @@ repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px,
 	background-repeat: repeat-x;
 
 	
-	padding-bottom: 100px;
-	box-sizing: border-box;
+	padding-bottom: 120px;
 	overflow: hidden;
 }
 
