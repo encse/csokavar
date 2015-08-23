@@ -8,14 +8,11 @@
 <link href="skin/style.css" media="all" rel="Stylesheet" type="text/css"/>
 <link href="skin/sIFR-screen.css" media="screen" rel="Stylesheet" type="text/css"/>
 
-<script src="js/sifr.js" type="text/javascript"></script>
-<script src="js/sifr-addons.js" type="text/javascript"></script>
 <script src="js/jquery.js"></script> 
 <script src="js/jquery.urlparams.js"></script> 
 <script src="js/jquery.rotate.js"></script> 
 
 <script type="text/javascript">
-	//http://bakery.cakephp.org/articles/view/textimage-helper
 	
 	var stText;
 	function Sign(st)
@@ -246,48 +243,36 @@ a img, img a, img{
 </style>
 </head>
 <body>
-<div id="top">	
-
-	<div id="header">
-		<div id="logo">
-			<h1><a href="http://www.csokavar.hu/teameditor">ISCTeamEditor</a></h1>
-		</div>
-		
-		<div id="menu">
-			<ul>
-				<li><a href=""> </a></li>
-				<li><a href=""> </a></li>
-				<li><a href=""> </a></li>
-				<li><a href=""> </a></li>		
-				<li><a href=""> </a></li>				
-				<li><a href="" class="last"> </a></li>						
-			</ul>
-		</div>
-			
-	</div>
-</div>
 
 <div id="container">
-					
-	<h2>ISC Team Editor</h2>
-	<div id="main">  
-		<form id="query">
-			<input type="text" size="10" id="q" value="Ide írj valamit!" />
-			<input type="submit"  value="Mondjad" />
-		</form>
-		<div id="image-container">
-			<img src="team.jpg"/>
+	<div id="top">	
+		<div id="top-content">
+			<div id="logo">
+				<h1><a href="http://www.csokavar.hu/teameditor">ISCTeamEditor</a></h1>
+			</div>
 		</div>
-		<p class="center">permalink: <span id="permalink"></span></p>
 	</div>
-</div>
+
+	<div id="main">  
+		<div id="main-content">  			
+			<h2>ISC Team Editor</h2>
+			<form id="query">
+				<input type="text" size="10" id="q" value="Ide írj valamit!" />
+				<input type="submit"  value="Mondjad" />
+			</form>
+			<div id="image-container">
+				<img src="team.jpg"/>
+			</div>
+			<p class="center">permalink: <span id="permalink"></span></p>
+		</div>
+	</div>
 
 
-<div id="footer" style="overflow: hidden;">
-	<p><a href="http://www.csokavar.hu/">Encsé Mûvek</a> - 2009</p>
-	<p>Kapcsolat: <a href="mailto:encse@csokavar.hu">encse@csokavar.hu</a></p>
-	
-</div>
+	<div id="footer">
+		<p><a href="http://www.csokavar.hu/">Encsé Mûvek</a> - 2009</p>
+		<p>Kapcsolat: <a href="mailto:encse@csokavar.hu">encse@csokavar.hu</a></p>
+		
+	</div>
 	
 	<!-- Google Analytics for WordPress | http://yoast.com/wordpress/google-analytics/ -->
 	<script type="text/javascript">
@@ -304,6 +289,6 @@ a img, img a, img{
 	</script>
 	<!-- End of Google Analytics code -->
 
-	
+	</div>
 </body>
 </html>
