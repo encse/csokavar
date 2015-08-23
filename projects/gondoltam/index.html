@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>  
+<title>project Gondoltam</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<meta name="author" content="Encsé (encse)" />
+
+<link href="skin/style.css" media="all" rel="Stylesheet" type="text/css"/>
+<link href="skin/sIFR-screen.css" media="screen" rel="Stylesheet" type="text/css"/>
+
+<script src="js/sifr.js" type="text/javascript"></script>
+<script src="js/sifr-addons.js" type="text/javascript"></script>
+<script src="js/jquery.js"></script> 
+<script src="js/jb.js"></script> 
+
+</head>
+<body>
+<div id="top">	
+
+	<div id="header">
+		<div id="logo">
+			<h1><a href="http://www.csokavar.hu/gondoltam">projectGondoltam</a></h1>
+		</div>
+		
+		<div id="menu">
+			<ul>
+				<li><a href=""> </a></li>
+				<li><a href=""> </a></li>
+				<li><a href=""> </a></li>
+				<li><a href=""> </a></li>		
+				<li><a href=""> </a></li>				
+				<li><a href="" class="last"> </a></li>						
+			</ul>
+		</div>
+			
+	</div>
+</div>
+
+<div id="container">
+	<h2>Gondoltam...*</h2>
+	<div id="main">  
+	<p>Gondoltam egy személyre. Kitalálod ki az?</p>
+	<p>Az alábbi űrlapon tetszőleges eldöntendő kérdéseket tehetsz fel, amire igennel és nemmel lehet válaszolni.</p>
+	<p>*: Ötlet by András</p>
+	<div class="form">
+	<form >
+	<input type="text" size="10" id="q" value="" />
+	<input type="submit" id="query" value="?" />
+	vagy <input type="button" id="restart" value="Kezdjük újra!" size="40"/><br/>
+	<div id="resultsPanel"></div>
+	<script type="text/javascript">$('#query').click(function(){performQuery($('#q').val()); return false;});</script>
+	<script type="text/javascript">$('#restart').click(function(){restart(); return false;});</script>
+	</form>
+	</div>
+</div>
+
+
+<div id="footer" style="overflow: hidden;">
+	<p><a href="http://www.csokavar.hu/">Encsé Művek</a> - 2009</p>
+	<p>Kapcsolat: <a href="mailto:encse@csokavar.hu">encse@csokavar.hu</a></p>
+	
+</div>
+	
+	
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-203054-9");
+	</script>
+	<script type="text/javascript">
+		pageTracker._initData();
+		
+		pageTracker._trackPageview();
+	</script>
+	
+	
+</body>
+</html>
+	
+
+	
