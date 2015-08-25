@@ -1,19 +1,17 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>  
-<title>Hány napos vagyok?</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="author" content="Encsé Művek" />
-<meta name="title" content="Hány napos vagyok?" />
-<meta name="description" content="Mindig tudni akartad, hogy pontosan hány napos is vagy valójában?" />
-<link rel="image_src" href="http://csokavar.hu/hanynapos/cake.jpg" / >
+<?php require('../bootstrap.php'); ?>
+<html>
+<head>
+	<?php csv_head(); ?>
 
-<link href="/projects/skin/style.css" media="all" rel="Stylesheet" type="text/css"/>
+	<title>Hány napos vagyok?</title>
+	<meta name="description" content="Mindig tudni akartad, hogy pontosan hány napos is vagy valójában?" />
+	<link rel="image_src" href="http://csokavar.hu/hanynapos/cake.jpg" / >
 
-<script src="js/jquery.js"></script> 
-<script src="js/jquery.urlparams.js"></script> 
-<script src="js/date-hu-HU.js"></script> 
-<script type="text/javascript">
+	<script src="js/jquery.js"></script> 
+	<script src="js/jquery.urlparams.js"></script> 
+	<script src="js/date-hu-HU.js"></script> 
+	<script type="text/javascript">
 
 	var date= null;
 	
@@ -178,7 +176,7 @@
 	    if (parseInt(month) < edgeMonth)
 	        cYear = year - 1;
 	    else 
-        {
+            {
             if (parseInt(month) == edgeMonth) 
             {
                 edgeDay = parseFloat(cNYstartDate[year - 1900].substring(parseInt(cNYstartDate[year - 1900].indexOf(".")) + 1, cNYstartDate[year - 1900].length));
@@ -199,68 +197,40 @@
 
 </script>
 
-<style type="text/css">
+<style>
 #your_date
 {
 	text-align:center;
 }
 </style>
 
+
 </head>
 <body>
-<div id="container">
-	<div id="top">	
+	<?php csv_header(); ?>
 
-		<div id="top-content">
-			<div id="logo">
-				<h1><script>document.write('<a href="http://www.csokavar.hu'+location.pathname+'">'+location.pathname.slice(0,-1)+'</a>');</script></a></h1>
-			</div>
-		</div>
-	</div>
+	<h2>Hány napos vagyok</h2>
+	<p>Mindig tudni akartad, hogy pontosan hány napos is vagy valójában?</p>
+	<p>Most egyszerűen kiszámolhatod, csak add meg a születésnapodat az alábbi mezőben:</p>
+	<form id="query">
+		<input type="text" size="10" id="q" value="" />
+	</form>
 
-	<div id="main">
-		<div id="main-content">
-			<h2>Hány napos vagyok</h2>
-			<p>Mindig tudni akartad, hogy pontosan hány napos is vagy valójában?</p>
-			<p>Most egyszerűen kiszámolhatod, csak add meg a születésnapodat az alábbi mezőben:</p>
-			<form id="query">
-				<input type="text" size="10" id="q" value="" />
-			</form>
-			
-			<p id="your_date"></p>
-			<div id="result"></div>
-				
-			<p>&nbsp;</p>
-				
-			<h3>Tippek</h3>
-			<p class="tipp">Kíváncsi vagy mikor jön a baba? Add meg a fogantatás időpontját, és máris megtudod hányadik hétben vagy. Ha minden jól megy, a baba a negyvenedik héten érkezik.</p>
+	<p id="your_date"></p>
+	<div id="result"></div>
 
-	        <p>&nbsp;</p>
-			<h3>Oszd meg az infót</h3>
-			<p>permalink: <span id="permalink"></span></p>
-			<a name="fb_share"  type="box_count" ></a> 
-			<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
-		</div>
-	</div>
+	<p>&nbsp;</p>
 
-	<div id="footer" style="overflow: hidden;">
-		<p><a href="http://www.csokavar.hu/">Encsé Művek</a> - 2009 - napjainkig</p>
-		<p>Kapcsolat: <a href="mailto:encse@csokavar.hu">encse@csokavar.hu</a></p>
-	</div>
-	
-</div>
+	<h3>Tippek</h3>
+	<p class="tipp">Kíváncsi vagy mikor jön a baba? Add meg a fogantatás időpontját, és máris megtudod hányadik hétben vagy. Ha minden jól megy, a baba a negyvenedik héten érkezik.</p>
 
+        <p>&nbsp;</p>
+	<h3>Oszd meg az infót</h3>
+	<p>permalink: <span id="permalink"></span></p>
+	<a name="fb_share"  type="box_count" ></a> 
+	<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
 
-	<!-- Google Analytics for WordPress | http://yoast.com/wordpress/google-analytics/ -->
-	<script type="text/javascript">
-		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-		var pageTracker = _gat._getTracker("UA-203054-9");
-		pageTracker._initData();
-
-		pageTracker._trackPageview();
-	</script>
-	<!-- End of Google Analytics code -->
-
+	<?php csv_footer(); ?>
 </body>
 </html>
+
