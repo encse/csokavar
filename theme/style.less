@@ -234,11 +234,16 @@ img	{
 				overflow:hidden;
 				max-height: @size-entry-thumbnail-max-height;
 				margin: 0 -@size-font;
+			
+			
 			}
 			
 			@media (min-width: @canvas-width-thumbnail-crop-start){
-			
-				.entry-thumbnail-wrap1{ 
+				.entry-thumbnail{
+					display:flex;
+					align-items:center;
+				}	
+			/*	.entry-thumbnail-wrap1{ 
 					display:table-cell;
 					vertical-align:middle;
 					height:@size-entry-thumbnail-real-height;
@@ -246,7 +251,7 @@ img	{
 				
 				.entry-thumbnail-wrap2{ 
 					margin-top:-(@size-entry-thumbnail-real-height /2);
-				}
+				}*/
 			}	
 		
 		}
