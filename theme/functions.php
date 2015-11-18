@@ -172,7 +172,7 @@ function remove_jetpack_styles(){
 
 
 	wp_deregister_style('AtD_style'); // After the Deadline
-	wp_deregister_style('jetpack-carousel'); // Carousel
+//	wp_deregister_style('jetpack-carousel'); // Carousel
 	wp_deregister_style('grunion.css'); // Grunion contact form
 	wp_deregister_style('the-neverending-homepage'); // Infinite Scroll
 	wp_deregister_style('infinity-twentyten'); // Infinite Scroll - Twentyten Theme
