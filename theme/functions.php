@@ -576,4 +576,13 @@ remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the ext
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 ); // remove both link rel="prev" and link rel="next"
 remove_action( 'wp_head', 'wp_shortlink_wp_head' );
 
+
+function filter_media_comment_status( $open, $post_id ) {
+	$post = get_post( $post_id );
+	if( $post->post_type == 'attachment' ) {
+		return false;
+	}
+	return $open;
+}
+add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
     
