@@ -222,7 +222,7 @@
 	<p>&nbsp;</p>
 
 	<h3>Tippek</h3>
-	<p class="tipp">Tudtad, hogy a születésnapodat az adószámodból is ki lehet számolni? Erről szól egy másik <a href="http://csokavar.hu/projects/ado">mini projektem</a>.</p>
+	<p class="tipp">Tudtad, hogy a születésnapodat az adószámodból is ki lehet számolni? Erről szól egy másik <a href="//csokavar.hu/projects/ado">mini projektem</a>.</p>
 
         <p>&nbsp;</p>
 	<h3>Oszd meg az infót</h3>
