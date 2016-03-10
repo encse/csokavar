@@ -6,7 +6,7 @@
 
 	<title>Hány napos vagyok?</title>
 	<meta name="description" content="Mindig tudni akartad, hogy pontosan hány napos is vagy valójában?" />
-	<link rel="image_src" href="http://csokavar.hu/hanynapos/cake.jpg" / >
+	<link rel="image_src" href="//csokavar.hu/hanynapos/cake.jpg" / >
 
 	<script src="js/jquery.js"></script> 
 	<script src="js/jquery.urlparams.js"></script> 
