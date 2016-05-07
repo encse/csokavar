@@ -602,17 +602,10 @@ img	{
 			& > *{
 				display:block;
 				overflow:hidden;
+				padding-left: (5*@size-font);
 			}
 			
-			&:before{
-				.genericon-settings(8*@size-font);
-				color: @cl-dark;
-				content: "\201C";
-				float:left;
-				padding-right: @size-font;
-				height:10px;
-			}
-		}
+		
 		.contact{
 			a:before{
 				.genericon-settings(1.5*@size-font);
