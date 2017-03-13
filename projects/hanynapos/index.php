@@ -221,8 +221,8 @@
 
 	<p>&nbsp;</p>
 
-	<h3>Tippek</h3>
-	<p class="tipp">Tudtad, hogy a születésnapodat az adószámodból is ki lehet számolni? Erről szól egy másik <a href="//csokavar.hu/projects/ado">mini projektem</a>.</p>
+	<h3>Ajánló</h3>
+	<p class="tipp">Valamikor irtam egy <a href="//csokavar.hu/projects/nes">Nintendo NES</a> emulátort</a> is.</p>
 
         <p>&nbsp;</p>
 	<h3>Oszd meg az infót</h3>
