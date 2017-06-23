@@ -585,4 +585,11 @@ function filter_media_comment_status( $open, $post_id ) {
 	return $open;
 }
 add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
+
+// https://wordpress.stackexchange.com/questions/224661/annoying-jqmigrate-migrate-is-in-console-after-update-to-wp-4-5
+add_action( 'wp_default_scripts', function( $scripts ) {
+    if ( ! empty( $scripts->registered['jquery'] ) ) {
+        $scripts->registered['jquery']->deps = array_diff( $scripts->registered['jquery']->deps, array( 'jquery-migrate' ) );
+    }
+} );
     
