@@ -54,7 +54,7 @@ for($size=100;$size>0;$size--)
 	imagefilledrectangle($image, 0, 0, $width, $height, $backgroundColor);
 	$options['line_height'] = $size *1.4;
 
-	$fCrop = imagettftextboxopt(&$image,$size, 0, 0, 0, $color, $font_arial, $text, $options);
+	$fCrop = imagettftextboxopt($image,$size, 0, 0, 0, $color, $font_arial, $text, $options);
 
 	if(!$fCrop) 
 		break;
