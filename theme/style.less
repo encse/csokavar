@@ -432,6 +432,7 @@ embed, iframe, object {
 
 		.dropdown {
 			float: right;
+			user-select: none; 
 		}
 
 		nav {
@@ -453,7 +454,7 @@ embed, iframe, object {
 				background: @shortNavbarColor;
 
 				max-height: 0px;
-				transition: max-height .7s ease-out;
+				transition: max-height 0.2s ease-in-out;
 			}
 		
 			a {
@@ -467,7 +468,7 @@ embed, iframe, object {
 		}
 
 		.active ul {
-			max-height: 1000px;
+			max-height: 160px;
 		}
 
 	}
