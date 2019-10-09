@@ -13,6 +13,7 @@ remove_action('wp_head', 'wp_oembed_add_discovery_links');
 remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('template_redirect', 'rest_output_link_header', 11 );
 
+add_filter( 'comment_text', 'do_shortcode' ); 
 
 /**
  * csokavar functions and definitions
@@ -27,18 +28,21 @@ function csokavar_setup() {
 
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
+	
+
 }
 add_action( 'after_setup_theme', 'csokavar_setup' );
 
 
 function csokavar_scripts() {
 
-    wp_dequeue_style( 'wp-block-library' ); // Wordpress core
-    wp_dequeue_style( 'wp-block-library-theme' ); // Wordpress core
+	wp_dequeue_style( 'wp-block-library' ); // Wordpress core
+	wp_dequeue_style( 'wp-block-library-theme' ); // Wordpress core
 	wp_deregister_script( 'wp-embed' );
 
 	wp_enqueue_style( 'csokavar-style', get_template_directory_uri() . '/style.less' );
 	
+	wp_enqueue_script( 'csokavar-ui', get_template_directory_uri() . '/js/ui.js' );
 	wp_enqueue_script( 'csokavar-fonts', get_template_directory_uri() . '/js/fonts.js' );
 	wp_enqueue_script( 'csokavar-welcome', get_template_directory_uri() . '/js/welcome.js' );
 }
@@ -120,3 +124,26 @@ function csokavar_entry_footer() {
 		echo get_previous_post_link();
 	}
 }
+
+function csokavar_customFormatGallery($string,$attr){
+
+	$posts_order_string = $attr['ids'];
+	$posts_order = explode(',', $posts_order_string);
+
+	$output = "<div class=\"gallery-container\">";
+	$posts = get_posts(array(
+		  'include' => $posts_order,
+		  'post_type' => 'attachment', 
+		  'orderby' => 'post__in'
+	));
+
+	foreach($posts as $imagePost){
+		$output .= '<div class="gallery-item"><img src="' . wp_get_attachment_image_src($imagePost->ID, 'full')[0] . '" alt="" /></div>';
+	}
+
+	$output .= "</div>";
+
+	return $output;
+}
+add_filter('post_gallery','csokavar_customFormatGallery',10,2);
+

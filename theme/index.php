@@ -47,6 +47,14 @@
 				<div class="page-heading home-page-heading">
 					<h1><?php the_title() ?></h1>
 				</div>
+			<?php elseif (is_search() ): ?>
+				<div class="page-heading">
+					<h1>Minden, ami "<?php echo esc_html( get_search_query( false ) ); ?>"</h1>
+				</div>
+			<?php elseif (is_archive() ): ?>
+				<div class="page-heading">
+					<h1><?php echo get_the_archive_title() ?></h1>
+				</div>
 			<?php else : ?>
 				<div class="page-heading">
 					<h1><?php the_title() ?></h1>
@@ -103,24 +111,5 @@
 			<p class="copyright">2006 - <?php echo date("Y")?> csokavar.hu</p>
 		</footer>
 		<?php wp_footer(); ?>
-
-		<script>
-			window.addEventListener("load", function(){
-				document.querySelectorAll('.site-heading nav').forEach(element => {
-					const a = document.createElement('a');
-					a.textContent="☰";
-					a.href="#";
-					a.classList.toggle("dropdown");
-
-					element.parentNode.insertBefore(a, element);
-
-					a.onclick = () => {
-						element.classList.toggle("active");
-						return false;
-					}
-				})
-			});
-
-		</script>
 	</body>
 </html>
