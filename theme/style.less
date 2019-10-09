@@ -419,11 +419,10 @@ embed, iframe, object {
 }
 
 .aligncenter {
-	max-width: 80%;
 	max-height: @iphone7-width;
 	height: auto;
 	width: auto;
-	margin: auto;
+	margin: auto 24px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -488,7 +487,8 @@ embed, iframe, object {
 		}
 
 	}
-  }
+	
+}
 
 
 @media only screen and (min-width: 601px) {
@@ -526,6 +526,8 @@ embed, iframe, object {
 		}
 	}
 
+
+
 }
 
 hr.short {
@@ -542,23 +544,23 @@ hr.short {
 .gallery-container {
 	display: grid;
 	grid-gap: 8px;
-	grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-	grid-auto-rows: min-content;
-	grid-auto-flow: row dense;
-}
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	margin: auto 32px;
 
-.gallery-item {
-	grid-column-start: auto;
-	grid-row-start: auto;
-	display: flex;
-}
+	.gallery-item {
+		grid-column-start: auto;
+		grid-row-start: auto;
+		display: flex;
+	}
 
-.gallery-item:first-child:nth-last-child(odd) {
-	grid-row-end: span 2;
-}
+	// make the first item twice as tall if there are anodd number of items.
+	.gallery-item:first-child:nth-last-child(odd) {
+		grid-row-end: span 2;
+	}
 
-.gallery-item img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
+	.gallery-item img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
 }
