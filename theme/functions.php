@@ -143,7 +143,22 @@ function csokavar_customFormatGallery($string,$attr){
 
 	$output .= "</div>";
 
+	
 	return $output;
 }
 add_filter('post_gallery','csokavar_customFormatGallery',10,2);
 
+function csokavar_responsive_embeds($html)
+{	
+	return 
+		'<div class="iframe-container">
+			<div style="padding-top: 75%;position: relative;">
+				<div style="position: absolute;top: 0;bottom: 0;left: 0;right: 0;"></div>
+			</div>
+			<div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; text-align: center;">
+				<div style="display: inline-block;height: 100%;position: relative;">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAQAAAAe/WZNAAAADklEQVR42mNkgAJGDAYAAFEABCaLYqoAAAAASUVORK5CYII=" style="height: 100%;">'.$html.'
+				</div></div></div>';
+}
+
+add_filter('embed_oembed_html', 'csokavar_responsive_embeds', 10, 3);
