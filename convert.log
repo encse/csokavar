@@ -1,0 +1,708 @@
+Starting wizard...
+? Path to WordPress export file? export.xml
+? Path to output folder? output
+? Create year folders? No
+? Create month folders? No
+? Create a folder for each post? Yes
+? Prefix post folders/files with date? Yes
+? Save images attached to posts? Yes
+? Save images scraped from post body content? Yes
+? Include custom post types and pages? Yes
+
+Parsing...
+265 "post" posts found.
+3 "page" posts found.
+1 "modula-gallery" posts found.
+350 attached images found.
+132 images scraped from post body content.
+
+Saving 269 posts (0 already exist)...
+[OK] post - columbo-visszater
+[OK] post - mit-csinal-a-szoke-no-a-fakockaval-elrontja
+[OK] post - wildcat-rossz-hirek
+[OK] post - google-earth
+[OK] post - wildcat-rossz-hirek-2
+[OK] post - activex-szivas
+[OK] post - muemlek
+[OK] post - pop
+[OK] post - team-building
+[OK] post - zsonglor-rekordok
+[OK] post - zsongas
+[OK] post - felutes
+[OK] post - discovery
+[OK] post - jatek-ajanlo-starship-titanic
+[OK] post - wildcat
+[OK] post - starship-titanic
+[OK] post - google-earth-discovery
+[OK] post - lakas-sp1
+[OK] post - lufihal
+[OK] post - nyar-eloszor
+[OK] post - matroz
+[OK] post - volanbusz
+[OK] post - kodkonyv
+[OK] post - varazsbab
+[OK] post - most-mondjak-meg
+[OK] post - blogter
+[OK] post - ket-programozo-a-buszon
+[OK] post - padon
+[OK] post - lufifun
+[OK] post - direkt-marketing-ii
+[OK] post - irodai-humor
+[OK] post - direkt-marketing
+[OK] post - mod-x-the-omega-project
+[OK] post - konyvespolc
+[OK] post - sony-rdr-hx720-dvd-felvevo
+[OK] post - spam-filter-hazilag
+[OK] post - tortenesek
+[OK] post - petes-pond
+[OK] post - taviranyito
+[OK] post - linda-i
+[OK] post - zarvanyok
+[OK] post - aug-20-gatyara-vetkozve
+[OK] post - vissza-a-jovobe
+[OK] post - a-szexszualis-tulhajszoltsag-elettani-hatasai
+[OK] post - hany-munkas-kell
+[OK] post - css-oromok
+[OK] post - csokavar
+[OK] post - iroda-lom
+[OK] post - wildcat-snapshot
+[OK] post - wildcat-reloaded
+[OK] post - a-nap-izeje
+[OK] post - t-21400
+[OK] post - eltorott-a-ctrl
+[OK] post - stereogramok-es-legvedelem
+[OK] post - alma-bor-palacsinta
+[OK] post - het
+[OK] post - az-xp-meg-az-eszkozok
+[OK] post - hackers
+[OK] post - sam-max
+[OK] post - 2007319-eszrevetel
+[OK] post - kutyak-es-nyulak
+[OK] post - user-interfesz-a-seggem
+[OK] post - ask-charles
+[OK] post - karacsony
+[OK] post - teknos
+[OK] post - a-zsonglorkodes-es-a-matematika
+[OK] post - eszaki-sark
+[OK] post - ora
+[OK] post - dolgok
+[OK] post - vizilo
+[OK] post - holdseta
+[OK] post - web-20-intentional-programming
+[OK] post - autos-uldozos
+[OK] post - beszelgettunk
+[OK] post - meg-tobb-robot
+[OK] post - az-elefant-nem-felejt
+[OK] post - a-robot
+[OK] post - encse-virust-irt
+[OK] post - szinteveszto
+[OK] post - escher
+[OK] post - huszonharom
+[OK] post - celebrity
+[OK] post - billentyuzet
+[OK] post - ebbe-meg-van
+[OK] post - szuletesnap
+[OK] post - maya-talalta-ezt
+[OK] post - robban-vagy-nem-robban
+[OK] post - charles-az-urben
+[OK] post - quote-of-the-day
+[OK] post - hekker-kezikonyv
+[OK] post - wii
+[OK] post - a-tanu
+[OK] post - santa-kloz
+[OK] post - valahogy-indul-aztan-valahogy-folytatodik
+[OK] post - 54-geek
+[OK] post - tokfej
+[OK] post - ize
+[OK] post - spamek
+[OK] post - hugh-laurie-a-balek
+[OK] post - ebredes
+[OK] post - szappan
+[OK] post - intentional-software-at-jaoo
+[OK] post - hacktivity-2007
+[OK] post - vallalati-sorozes
+[OK] post - egy-igazi-blog-bejegyzes
+[OK] post - 100-bejegyzes
+[OK] post - a-nap-mondasa
+[OK] post - wildcat-redesign
+[OK] post - uj-index
+[OK] post - busz
+[OK] post - excel-delokalizalas-quickhack
+[OK] post - khmm-baranykefelos
+[OK] post - varosjaras
+[OK] post - vizitdij
+[OK] post - kigyo
+[OK] post - igen-igen
+[OK] post - bolcsesseg
+[OK] post - a-legkisebb-emlitesre-sem-melto-szam-projekt
+[OK] post - szamla
+[OK] post - tudok-egy-rovidebb-utat-az-erdon-at
+[OK] post - vonat
+[OK] post - ordoglakat
+[OK] post - meg-tobb-virus
+[OK] post - shapgvba-ejtfc
+[OK] post - agymosas
+[OK] post - elindultunk
+[OK] post - gekko-hirek
+[OK] post - van-sporterteke
+[OK] post - ez-a-durva
+[OK] post - alapito-okirat
+[OK] post - ot-dal-amit-a-dunaba-kene-loni
+[OK] post - lesz-e-ebbol-valami
+[OK] post - szuletesnapomra
+[OK] post - osztalytalalkozo
+[OK] post - szosszenet
+[OK] post - fodraszszekben
+[OK] post - szemelyes-bejegyzes-vigyazat-semmi-ertelme
+[OK] post - eljatszottam-a-gondolattal
+[OK] post - samfazd-ki-azt-a-puncit
+[OK] post - magic-pen
+[OK] post - csalodas
+[OK] post - boldog-szulinapot-blog
+[OK] post - drotkotel-maszas
+[OK] post - vasarnapi-monitor
+[OK] post - uj-hajnal
+[OK] post - oda-es-vissza
+[OK] post - 200822379-eszrevetel
+[OK] post - kisse-torekeny
+[OK] post - kanape
+[OK] post - nagy-monitor-szarakodas
+[OK] post - igy-legyen-otosom-a-lotton
+[OK] post - emlekszunk-meg-erre
+[OK] post - elso-nagy-csokavaras-kozonsegtalalkozo
+[OK] post - egypercesek
+[OK] post - oops-they-noticed
+[OK] post - mert-tied-az-orszag
+[OK] post - tuti-bank
+[OK] post - a-programozo-otthona
+[OK] post - villamtrefak-rovat
+[OK] post - hacktivity-2008
+[OK] post - kis-gonoszsag-a-leleknek
+[OK] post - szombati-gondolatok
+[OK] post - barlangaszat-vegre-ott-ahova-mindig-kivantak
+[OK] post - gekko-level-8
+[OK] post - szombati-egyveleg
+[OK] post - onarckep
+[OK] post - gorcs
+[OK] post - hegesztesi-zsebkonyv
+[OK] post - 999
+[OK] post - tabla
+[OK] post - hangjegyek
+[OK] post - felfamentes
+[OK] post - bilux
+[OK] post - firmware-upgrade
+[OK] post - a-duna-kozeperol
+[OK] post - hires-lettem
+[OK] post - gekko-api
+[OK] post - adsl-viszontagsagok
+[OK] post - gekko-level-9
+[OK] post - downtime
+[OK] post - firmware-upgrade-ii
+[OK] post - megpadkazta
+[OK] post - politicalcompassorg
+[OK] post - az-externet-a-magyar-telekom-meg-az-adsl
+[OK] post - kozepkor
+[OK] post - teaskanna
+[OK] post - jo-ez
+[OK] post - janos-vitez-a-magyarok-kirala
+[OK] post - kopaszodas
+[OK] post - akarok-egy-ilyet
+[OK] post - holy-crapola
+[OK] post - isc-team-editor
+[OK] post - komolysagok
+[OK] post - koltozes
+[OK] post - rettsegi
+[OK] post - pafe09
+[OK] post - gekko-goes-down
+[OK] post - a-nap-kerdese
+[OK] post - pozsi
+[OK] post - hetvege
+[OK] post - letolattam
+[OK] post - zarnyitas-alapfok
+[OK] post - camel-active-nem-meno
+[OK] post - bolgar-lotto
+[OK] post - hacktivity-2009
+[OK] post - madarvers
+[OK] post - baratok-kozt
+[OK] post - egy-vektor-ket-feladat
+[OK] post - fogaskerek
+[OK] post - tokfaragas
+[OK] post - vad-viragok-konymuhely
+[OK] post - hacking
+[OK] post - wordpress-mu
+[OK] post - golya
+[OK] post - haz
+[OK] post - getting-the-name-of-the-current-drive
+[OK] post - eskuvo
+[OK] post - problem-of-the-week-9-digit-problem
+[OK] post - koltozes-2
+[OK] post - encse-gently
+[OK] post - krokodil
+[OK] post - mertek-honlap
+[OK] post - zsofi
+[OK] post - a-nap-kerdese-2
+[OK] post - tuzifa-rakodas
+[OK] post - atomreaktor-latogatas
+[OK] post - halak
+[OK] post - napelem-keszitese-hazilag
+[OK] post - napelemek
+[OK] post - ha-az-isc-zs-film-lenne
+[OK] post - gekko
+[OK] post - uj-idok
+[OK] post - autovasarlas
+[OK] post - gazora-tigaz-es-emfesz
+[OK] post - practical-common-lisp
+[OK] post - munka
+[OK] post - forditott-vilag
+[OK] post - tesztelesi-vezeto-kerestetik
+[OK] post - panni
+[OK] post - oreganyam
+[OK] post - gekko-hirek-2
+[OK] post - koltozes-a-felhobe
+[OK] post - vonatos-mese
+[OK] post - diophantosz
+[OK] post - gekko-tesztek
+[OK] post - kerti-to-epites
+[OK] post - horgasz-bot
+[OK] post - ready-player-one
+[OK] post - heti-feladat
+[OK] post - csanak
+[OK] post - cryptography-i
+[OK] post - raytrace-es-ray-march
+[OK] post - kockak-metszete
+[OK] post - the-art-of-prolog
+[OK] post - challenge24-ec-2014
+[OK] post - the-elements-of-computing-systems
+[OK] post - kemeny-dio
+[OK] post - challenge24-ec-2015
+[OK] post - a-szamitogep-programozas-muveszete
+[OK] post - funkcionalis-gyongyok
+[OK] post - encse-es-a-windows-team
+[OK] post - mikulas
+[OK] post - mini-scheme
+[OK] post - nes-emulator
+[OK] post - 4695
+[OK] page - projects
+[OK] page - about
+[OK] page - konyvespolc
+[OK] modula-gallery - pekeskedes
+Done, got them all!
+
+Downloading and saving 413 images (0 already exist)...
+[OK] haz0.jpg
+[OK] Columbo.jpg
+[OK] haz1.jpg
+[FAILED] flash_ad.gif (StatusCodeError: 404)
+[OK] flash_ad.png
+[OK] oszlop_athen.jpg
+[OK] oszlop_gyor.jpg
+[OK] grldn01.jpg
+[OK] EGYPT.jpg
+[OK] shuttle.jpg
+[OK] Typewriters.jpg
+[OK] shuttle-500x440.jpg
+[OK] starship_titanic_box_art.jpg
+[OK] repter.jpg
+[OK] hal_oldal.jpg
+[OK] szabi2.jpg
+[OK] hal_szembe.jpg
+[OK] singh.jpg
+[OK] photo-52.jpg
+[OK] kutya.jpg
+[OK] macska2.jpg
+[FAILED] article_ads.gif (StatusCodeError: 404)
+[OK] article_ads.png
+[OK] antilop.jpg
+[OK] elefant.jpg
+[OK] kumba.jpg
+[OK] strucc.jpg
+[OK] mg_2669.jpg
+[OK] mg_2669-500x333.jpg
+[OK] 4-abra.jpg
+[OK] gyor_belvaros_pentek.jpg
+[OK] gyor_belvaros_pentek-500x257.jpg
+[OK] main3.jpg
+[OK] main3-500x408.jpg
+[OK] main2.jpg
+[OK] main2-500x452.jpg
+[OK] nasa_view.jpg
+[OK] ncs_view.jpg
+[OK] nasa_view-500x375.jpg
+[OK] ncs_view-500x346.jpg
+[OK] haz.png
+[OK] haz_inv.png
+[OK] haz_ph.png
+[OK] sorhaz.png
+[OK] haz-500x468.png
+[OK] haz_inv-500x234.png
+[OK] haz_ph-500x234.png
+[OK] sorhaz-500x82.png
+[FAILED] modem.gif (StatusCodeError: 404)
+[OK] modem.png
+[OK] hackers.jpg
+[OK] Spacewar-PDP-1-200705121.jpg
+[OK] ep2_myra.jpg
+[OK] ep2_sambanjo.jpg
+[OK] ep2_sitcom2.jpg
+[OK] Capture.png
+[OK] disz.jpg
+[OK] dino.jpg
+[OK] disz-500x375.jpg
+[OK] dino-500x375.jpg
+[OK] sarkany_t.jpg
+[OK] Capture.png
+[OK] Capture-311x500.png
+[OK] hippo.jpg
+[OK] hippo-500x375.jpg
+[OK] holdseta.jpg
+[OK] Aldrin_Apollo_11.jpg
+[OK] Spacewar-PDP-1-20070512.jpg
+[OK] lab.jpg
+[OK] hpim5410.jpg
+[OK] szinteveszto.jpg
+[OK] kalapacs.jpg
+[OK] birthday.jpg
+[FAILED] simonyi_patch.gif (StatusCodeError: 404)
+[OK] simonyi_patch.png
+[OK] wii_sports_club_boxing.0.jpg
+[OK] wii_sports_club_boxing.0-500x333.jpg
+[OK] santa.jpg
+[OK] santa-500x351.jpg
+[OK] hpim5581.jpg
+[OK] hpim5584.jpg
+[OK] b330327.jpg
+[OK] hpim5585.jpg
+[OK] Hugh-Laurie-hugh-laurie-31954777-1024-7681.jpg
+[OK] hpim5596.jpg
+[OK] darazs-500x365.jpg
+[OK] darazs.jpg
+[OK] shitfairy.jpg
+[FAILED] schmuck04.gif (StatusCodeError: 404)
+[OK] Avril-Lavigne-hot.jpg
+[OK] schmuck041.png
+[OK] Budapest-at-Night-2.jpg
+[OK] sp_a0054.jpg
+[OK] sp_a0054-500x375.jpg
+[OK] sicp-cover.jpg
+[OK] photo-1.jpg
+[OK] sicp-cover-345x500.jpg
+[OK] szamla_t.jpg
+[OK] szamla_t-257x500.jpg
+[OK] eyes-in-the-dark-paranoid.jpg
+[FAILED] brg.gif (StatusCodeError: 404)
+[OK] brg.png
+[OK] gekko.jpg
+[OK] gekko-500x136.jpg
+[OK] outlook.png
+[OK] kanape.jpg
+[OK] logo.png
+[OK] MorseCodeForever.png
+[OK] 0191162_PE345209_S5.jpg
+[OK] ezgif.com-resize.gif
+[OK] 2008_09_086.jpg
+[OK] lacceleratore-di-particelle-lhc-del-cern-ripartir-nel-2015-Large_Hadron_Collider_acceleratore_particelle_CERN_bosone_Higgs.jpg
+[OK] 2008_09_086-500x434.jpg
+[OK] 003.jpg
+[OK] 003-500x400.jpg
+[OK] micimacko.jpg
+[OK] matyasbarlang-500x309.jpg
+[OK] matyasbarlang.jpg
+[OK] p1010157.jpg
+[OK] p1010157-500x375.jpg
+[OK] p1010253.jpg
+[OK] p1010253-500x375.jpg
+[OK] cactus.png
+[OK] cactus-david.png
+[OK] en.png
+[OK] zape.png
+[OK] p-640-480-51ff3df0-3b72-4e39-bdfc-7c682342bd29.jpeg
+[OK] p-640-480-b962d39b-6709-41e5-a2ef-86e8262ff2db.jpeg
+[OK] MIg_MAGCOhegesztes_2.jpg
+[OK] l-640-480-5b736a46-5d6b-40a5-97a4-c752a25c1979.jpeg
+[OK] l-640-480-5b736a46-5d6b-40a5-97a4-c752a25c1979-500x375.jpeg
+[OK] l-640-480-2cd4fc65-37e9-4d07-ada4-b1cc739e10d1.jpeg
+[OK] l-640-480-312f67b0-7be8-482b-aa13-ee56b745c476.jpeg
+[OK] l-640-480-d1a44488-574a-4dc8-852e-e083946b8d6e.jpeg
+[OK] p-640-480-c929bfd3-a3e9-4751-ae6a-db7f1568e772.jpeg
+[OK] l-640-480-312f67b0-7be8-482b-aa13-ee56b745c476-500x375.jpeg
+[OK] l-640-480-d1a44488-574a-4dc8-852e-e083946b8d6e-500x375.jpeg
+[OK] p-640-480-c929bfd3-a3e9-4751-ae6a-db7f1568e772-375x500.jpeg
+[OK] p-640-480-29d46282-1098-44e8-9d91-8162fbed511d.jpeg
+[OK] Capture.png
+[OK] p-640-480-d4827b2c-6c01-486b-8cbd-2b5023a4dc83.jpeg
+[OK] p-640-480-f0f04512-c552-4807-ba88-512595967aa3.jpeg
+[OK] l-640-480-79eccb05-0108-42b9-b31e-afb0f8d47f21.jpeg
+[OK] p-640-480-44655016-301e-4340-ac4a-3010e58f73cb.jpeg
+[OK] tobw0106.jpg
+[OK] istenverte8.jpg
+[OK] istenverte8-500x375.jpg
+[OK] faja.png
+[OK] faja-500x300.png
+[OK] janosvitez.png
+[OK] timetravelling.jpg
+[OK] timetravelling-458x500.jpg
+[OK] holycrapola.jpg
+[OK] holycrapola-500x437.jpg
+[OK] HIGH-FIDELITY-REWIRE-SECTION.jpg
+[OK] Capture-e1570276074859.png
+[OK] HIGH-FIDELITY-REWIRE-SECTION-1.jpg
+[OK] 1560919091129.jpg
+[OK] P1000927.jpg
+[OK] shutterstock_612941954-900x506.jpg
+[OK] wU0J1QB-1.jpg
+[OK] p-1600-1200-9fcabf1f-2191-48b9-aab2-8e50a6a590bd.jpeg
+[OK] question-mark-e1447879471360.jpg
+[OK] p-1600-1200-9fcabf1f-2191-48b9-aab2-8e50a6a590bd-375x500.jpeg
+[OK] rebirth__a_precious_name_or_a_smile3-e1447879361691.jpg
+[OK] lloyd16-e1447878996273.jpg
+[OK] 1111_ODY_BackupSensors-e1447878542810.jpg
+[OK] p-1600-1200-8df7e0a3-59b0-47f8-98e1-4167eb22e729.jpeg
+[OK] p-1600-1200-361a7325-97bd-4eeb-b0c0-bf19f03a14af.jpeg
+[OK] Chain-e1447878835557.jpg
+[OK] 490_1camel_004-e1447878289318.jpg
+[OK] hot-lotto-lottery-cheat-hacker-e1447878179998.jpg
+[OK] xbox360.jpg
+[OK] guitarhero.jpg
+[OK] hacktivity_logo_2-e1447878090663.jpg
+[OK] birds_wallpapers_free_download-e1447877918280.jpg
+[OK] 20150521kos-karoly-ter-baratok-kozt-e1447533718321.jpg
+[OK] blackboard-bog-standard-e1447877703210.jpg
+[OK] index-cimoldal.jpg
+[OK] gear-wallpaper-6-e1447877395284.jpg
+[OK] index-cimoldal-500x331.jpg
+[OK] pa312925.jpg
+[OK] pa312926.jpg
+[OK] pa312930.jpg
+[OK] pa312934.jpg
+[OK] pa312937.jpg
+[OK] PA312929-triangle-e1447877230902.jpg
+[OK] kazmer.jpg
+[OK] sin102_36211235-e1447876823864.jpg
+[OK] 6916462-gears-mechanism-e1447790803915.jpg
+[OK] Ciconia_ciconia_at_the_hamburg_zoo.jpg
+[OK] IMG_0118-e1447790521598.jpg
+[OK] disk_drive_image-e1447790283886.jpg
+[OK] IMG_0085-e1447790120144.jpg
+[OK] 8bit_digits_pattern-500-e1447789863193.jpg
+[OK] win95shutdown-e1447789608709.jpg
+[OK] IMG_05081.jpg
+[OK] maxresdefault.jpg
+[OK] IMG_050711.jpg
+[OK] IMG_050711-500x375.jpg
+[OK] IMG_05081-500x375.jpg
+[OK] korokdil.png
+[OK] crocobg-e1447788902784.jpg
+[OK] korokdil-500x250.png
+[OK] Capture-e1447788606209.jpg
+[OK] Capture.png
+[OK] Capture-500x283.png
+[OK] IMG_0584-e1380095771486.jpg
+[OK] tenyek04.jpg
+[OK] hasitottfa.jpg
+[OK] 339bf9bb47.jpg
+[OK] IMG_0661.jpg
+[OK] IMG_0663.jpg
+[OK] IMG_0664.jpg
+[OK] IMG_0667.jpg
+[OK] IMG_0671.jpg
+[OK] IMG_0673.jpg
+[OK] IMG_0675.jpg
+[OK] IMG_0676.jpg
+[OK] IMG_0677.jpg
+[OK] IMG_0679.jpg
+[OK] IMG_0681.jpg
+[OK] IMG_0661-500x375.jpg
+[OK] IMG_0683.jpg
+[OK] IMG_0663-500x375.jpg
+[OK] IMG_0664-375x500.jpg
+[OK] IMG_0667-375x500.jpg
+[OK] IMG_0671-500x375.jpg
+[OK] IMG_0673-375x500.jpg
+[OK] 339bf9bb47-500x375.jpg
+[OK] IMG_0676-500x375.jpg
+[OK] IMG_0677-500x375.jpg
+[OK] IMG_0679-375x500.jpg
+[OK] IMG_0681-375x500.jpg
+[OK] IMG_0683-375x500.jpg
+[OK] hal.jpg
+[OK] hal_regi.jpg
+[OK] hal-500x332.jpg
+[OK] Untitled-2.png
+[OK] hal_regi-500x246.jpg
+[OK] IMG_0720.jpg
+[OK] ΙΚ1.jpg
+[OK] IMG_0746.jpg
+[OK] ΙΚ1-1.jpg
+[OK] IMG_0720-500x375.jpg
+[OK] IMG_0746-500x375.jpg
+[OK] Helios_in_flight.jpg
+[OK] oceans-twelve-504f4b226fcdf-1.jpg
+[OK] Red_Power_Button_Wallpaper_by_halo_enigma.jpg
+[OK] 174885_176839412360203_7011051_n.jpg
+[OK] sun-technology-field-sunlight-environment-green-clean-electricity-energy-eco-solar-panel-power-net-sustainable-renewable-solar-power-solar-energy-photovoltaic-solar-panel-array-photocell-1162040-1.jpg
+[OK] old_peugeot_by_luethy-d3a5hzz.jpg
+[OK] Untitled2.png
+[OK] pcommlisp.jpg
+[OK] me.png
+[OK] practical-common-lisp.png
+[OK] alice-wonderland-vintage-image-graphicsfairy007c.jpg
+[OK] 517sx7ua-LL._SL1500_.jpg
+[OK] 86c5a37f93850a8c47d3a890ce0219be.jpg
+[OK] Barcode_on_a_Coke_can.jpg
+[OK] 2194494864_47d3f3b098_o.jpg
+[OK] AWS_LOGO_CMYK.png
+[OK] Clouds_on_a_nice_day_by_EdenMarel.jpg
+[OK] footer-symbol.png
+[OK] locomotive-001.jpg
+[OK] Fermat-3-11.jpg
+[OK] maxresdefault-1.jpg
+[OK] to1.jpg
+[OK] IMG_08011-500x375.jpg
+[OK] IMG_0804-500x375.jpg
+[OK] IMG_0811-500x375.jpg
+[OK] IMG_0804.jpg
+[OK] IMG_08011.jpg
+[OK] IMG_0821-500x375.jpg
+[OK] IMG_0811.jpg
+[OK] Untitled-21.png
+[OK] horgaszbot.jpg
+[OK] IMG_0821.jpg
+[OK] Untitled-21-500x254.png
+[OK] ready-player-one.png
+[OK] ready-player-one-322x500.png
+[OK] ready-player-one1.png
+[OK] photo.jpg
+[OK] IMG_1409.jpg
+[OK] 003-500x400.jpg
+[OK] IMG_1417-MOTION.gif
+[OK] cserhati-gyorgyne1.jpg
+[OK] inception.jpg
+[OK] cserhati-gyorgyne.png
+[OK] IMG_1400-MOTION.gif
+[OK] cserhati-gyorgyne-1024x323.png
+[OK] 08_displacement_05.jpg
+[OK] raytrace.png
+[OK] raytrace1.jpg
+[OK] cubes2.jpg
+[OK] cubes.gif
+[OK] large-0262193388.jpg
+[OK] Shinagawa-_Departure_of_a_Daimyo_LACMA_48.jpg
+[OK] ch24.jpg
+[OK] ch241.jpg
+[OK] ch242.jpg
+[OK] The-Elements-of-Computing-Systems-9780262640688.jpg
+[OK] photo-1-1.jpg
+[OK] photo-2.jpg
+[OK] 1C6476108-130314-oil-rig-hmed2-238p.jpg
+[OK] pohar.jpg
+[OK] pohar-375x500.jpg
+[OK] cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg
+[OK] a-szamitogep-programozas-muveszete-1-3-8458788-e1570267410481.jpg
+[OK] 4k7kp0I.gif
+[OK] ba97_3_big-e1426287915242.jpg
+[OK] dek-14may10-1.jpg
+[OK] 51JRG-YGgOL.jpg
+[OK] pearl.jpg
+[OK] Windows-8.1-e1446755008901.jpg
+[OK] Windows-10-Stock-Wallpapers-11-e1570564429455.jpg
+[OK] mikulas_cover1-e1447613745267.jpg
+[OK] mikulas-370x500.jpg
+[OK] mikulas.jpg
+[OK] fotó-3-1-e1451228615671.jpg
+[OK] 0001-e1451228724420.jpg
+[OK] minischeme.png
+[OK] Untitled.png
+[OK] minischeme.jpg
+[OK] fotó-3-1-e1451228572856-375x500.jpg
+[OK] minischeme-500x334.jpg
+[OK] maxresdefault-e1457817969902.jpg
+[OK] flimbo.jpg.jpg
+[OK] 162160-avenger-commodore-64-screenshot-gameplay-us-and-europe-version.png
+[OK] nesemu.png
+[OK] nesemu.jpg
+[OK] super_mario_bros.0-e1457822735742.jpg
+[OK] Super_Mario_Bros_NES_02.gif
+[OK] ezgif-4-cec339a7d2.gif
+[OK] IMG_2920-scaled.jpg
+[OK] smb.gif
+[OK] IMG_2908-scaled.jpg
+[OK] IMG_2927-scaled.jpg
+[OK] IMG_2936-scaled.jpg
+[OK] IMG_2952-2-scaled-e1607276841765.jpg
+[OK] mobilengine.png
+[OK] IMG_2988-scaled.jpg
+[OK] isc.png
+[OK] cozero.png
+[OK] bilux.jpg
+[OK] mertek.png
+[OK] fogaskerek.png
+[OK] gondoltam.jpg
+[OK] hanynapos.png
+[OK] zsonglor.png
+[OK] gekko.jpg
+[OK] fishingbot.png
+[OK] projectlin.png
+[OK] ado.jpg
+[OK] teameditor.jpg
+[OK] ado.png
+[OK] bilux.png
+[OK] cozero1.png
+[OK] fishingbot-500x2541.png
+[OK] fogaskerek1.png
+[OK] gekko.png
+[OK] gondoltam.png
+[OK] hanynapos1.png
+[OK] isc1.png
+[OK] mertek-500x2911.png
+[OK] mobilengine1.png
+[OK] projectado.png
+[OK] projectlin1.png
+[OK] teameditor.png
+[OK] zsonglor1.png
+[OK] Super_Mario_Bros._Logo.svg.png
+[OK] NES_Super_Mario_Bros.png
+[OK] christmas_star.png
+[OK] maxresdefault-e1523079088252.jpg
+[OK] 2.jpg
+[OK] AfA1xJc-e1556467081569.jpg
+[OK] lego_puzzle_details_126260_2560x1440-e1570564137428.jpg
+[OK] hackmetop_r1_c2-e1568920869463.gif
+[OK] aladdin-scaled.jpg
+[OK] casette.png
+[OK] Screen-Shot-2021-01-07-at-20.13.57.png
+[OK] mario1.jpg
+[OK] Screen-Shot-2021-01-14-at-20.43.36-scaled.jpg
+[OK] Screen-Shot-2021-01-14-at-20.47.03-scaled.jpg
+[OK] about-scaled-e1610655487115.jpg
+[OK] Screen-Shot-2021-03-31-at-14.46.59.png
+[OK] Screen-Shot-2021-03-31-at-14.46.59-300x300.png
+[OK] casette-500x313.png
+[OK] ezgif.com-gif-maker-1.gif
+[OK] 0001-e1451228724420-300x300.jpg
+[OK] photo-2-300x300.jpg
+[OK] raytrace1-300x300.jpg
+[OK] Screen-Shot-2021-01-07-at-20.13.57-500x440.png
+[OK] AAEAAQAAAAAAAAmGAAAAJGQ2ZTAzNmJmLWRlZmQtNGJhMy04OGJiLTZlZWYyYWNlNjIwYg-e1503254268233.jpg
+[OK] green-lego.jpg
+[OK] Guardian-LEGO-Article-01-e1570564249228.jpg
+[OK] aladdin3-1.jpg
+[OK] 26341_super_mario_bros_super_mario_template.jpg
+[OK] Screen-Shot-2021-01-14-at-20.46.18-scaled.jpg
+[OK] about-scaled-e1610655487115.jpg
+[OK] ezgif-7-c057475f207c-1.gif
+[OK] img_3844-e1523078374975.jpg
+[OK] Back-Little-Red-Riding-Hood-Scene.jpg
+[OK] decorations-for-bookshelves-hd-wallpaper-picture-download-awesome-library-backgrounds-free-wallpaper-of-decorations-for-bookshelves-hd-wallpaper-picture-download.jpg
+[OK] books-bookstore-book-reading-159711.jpeg
+[OK] LEGO-Modular-Buildings-e1556466731946.jpg
+[OK] aladdin2-scaled.jpg
+[OK] Screen-Shot-2021-01-14-at-20.45.37-scaled.jpg
+[OK] 19173_super_mario_bros.jpg
+[OK] books-bookstore-book-reading-159711.jpeg
+[OK] ezgif-7-c057475f207c-1.gif
+[OK] ezgif-7-c057475f207c.gif
+[OK] ezgif-7-4455edd3d49e.gif
+Done, but with 6 failed.
+
+All done!
+Look for your output files in: /Users/encse/projects/csokavar/output
