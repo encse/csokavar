@@ -1,3 +1,4 @@
+import { isTemplateSpan } from "typescript";
 
 export function slugify(st: string) {
     return st.normalize("NFD")
@@ -17,4 +18,12 @@ export function formatDate(date: Date) {
 export function zeroPad(num: number, places: number): string {
     const zero = places - num.toString().length + 1;
     return Array(+(zero > 0 && zero)).join("0") + num;
+}
+
+export function* chunks<T>(items: T[], chunkSize: number): Iterable<T[]> {
+    let i = 0;
+    while (i < items.length) {
+        yield items.slice(i, i + chunkSize);
+        i += chunkSize;
+    }
 }

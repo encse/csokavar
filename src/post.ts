@@ -4,7 +4,7 @@ import { slugify, formatDate, zeroPad } from "./util";
 
 export class PostList {
     readonly htmlContent: string;
-    constructor(template: string, title: string, posts: Post[]) {
+    constructor(template: string, title: string, subtitle: string, coverImage: string, baseUri: string, posts: Post[], page: number, postCount: number) {
         let content = '';
         for (let post of posts) {
             content += `<article>
@@ -18,10 +18,29 @@ export class PostList {
             </article>`
         }
 
+        const hasPrev = page > 1;
+        const hasNext = postCount / posts.length > page;
+
+        if (hasPrev || hasNext) {
+            content += `<div class="pager">`;
+            if (hasPrev) {
+                if (page > 2) {
+                    content += `<div class="previous"><a href="${baseUri}/page/${page - 1}">« Előző</a></div>`;
+                } else {
+                    content += `<div class="previous"><a href="${baseUri}/">« Előző</a></div>`;
+                }
+            }
+            if (hasNext) {
+                content += `<div class="next"><a href="${baseUri}/page/${page + 1}">Következő »</a></div>`;
+            }
+            content += `</div>`;
+        }
+
         this.htmlContent = template
+            .replace('{{ heading-classes }}', ' home-page-heading')
             .replace('{{ title }}', title)
-            .replace('{{ subtitle }}', '')
-            .replace('{{ featured-image }}', posts[0].coverImage)
+            .replace('{{ subtitle }}', subtitle)
+            .replace('{{ featured-image }}', coverImage)
             .replace('{{ post-content }}', content)
             .replace('{{ footer }}', '');
     }
@@ -50,6 +69,7 @@ export class Page {
         const postContent = markdownIt.render(content);
 
         this.htmlContent = template
+            .replace('{{ heading-classes }}', ' home-page-heading')
             .replace('{{ title }}', metadata.title)
             .replace('{{ subtitle }}', '')
             .replace('{{ featured-image }}', `images/${metadata.coverImage}`)
@@ -89,13 +109,14 @@ export class Post {
         }
 
         this.htmlContent = template
+            .replace('{{ heading-classes }}', '')
             .replace('{{ title }}', metadata.title)
             .replace('{{ subtitle }}', `<time class="posted-on" datetime="${this.date.toISOString()}">${formatDate(this.date)}</time>`)
             .replace('{{ featured-image }}', `images/${metadata.coverImage}`)
             .replace('{{ post-content }}', postContent)
             .replace('{{ footer }}', footer);
 
-        this.uri = `blog/${zeroPad(this.date.getFullYear(), 4)}/${zeroPad(this.date.getMonth() + 1, 2)}/${this.slug}/`;
+        this.uri = `/blog/${zeroPad(this.date.getFullYear(), 4)}/${zeroPad(this.date.getMonth() + 1, 2)}/${this.slug}/`;
 
         this.excerpt = '';
 

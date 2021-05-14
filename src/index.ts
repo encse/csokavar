@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { Post, Page, PostList } from './post';
+import { chunks } from './util';
 
 
 function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, content: string | NodeJS.ArrayBufferView) => void) {
@@ -34,10 +35,25 @@ function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, con
         ), page.htmlContent);
     }
 
+    let page = 1;
+    let chunkSize = 5;
+    for (let chunk of chunks([...posts].sort((a, b) => b.date.getTime() - a.date.getTime()), chunkSize)) {
 
-    writeFile(path.join(fpatOut, "index.html"), 
-        new PostList(pageTemplate, "x", [...posts].sort((a, b) => b.date.getTime() - a.date.getTime() ).slice(0, 5)).htmlContent
-    );
+        let fpat = page == 1 ? path.join(fpatOut, "index.html") : path.join(fpatOut, `page/${page}/index.html`);
+
+        writeFile(
+            fpat,
+            new PostList(pageTemplate, 
+                'Csókavár', 
+                'Németh Cs. Dávid blogja', 
+                'https://d1tyrc4sjyi164.cloudfront.net/wp-content/uploads/2021/01/Screen-Shot-2021-01-14-at-20.47.03-scaled.jpg',
+                '',
+                chunk, page, posts.length).htmlContent
+        );
+        page++;
+    }
+
+
 }
 
 generate('.', 'build', (fpat: string, content: string | NodeJS.ArrayBufferView) => {
