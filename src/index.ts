@@ -1,17 +1,40 @@
 import fs from 'fs';
 import path from 'path';
-import { Post, Page, PostList } from './post';
+import { Post, Page, PostList,PageTemplateProps } from './post';
 import { chunks } from './util';
+import ReactDOMServer from 'react-dom/server';
+import React from 'react';
 
+function renderReactChild(child: React.ReactChild | null): string {
+    if (child == null){
+        return ''
+    } else if (typeof(child) === 'string'){
+        return child;
+    } else if (typeof(child) === 'number'){
+        return '' + child;
+    } else {
+        return ReactDOMServer.renderToStaticMarkup(child)
+    }
+}
 
 function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, content: string | NodeJS.ArrayBufferView) => void) {
     const posts: Post[] = [];
     const postsDir = path.join(fpatIn, 'site/post');
-    const postTemplate = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
+    const pageTemplateHtml = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
+
+    const pageTemplate = (props: PageTemplateProps) => {
+        return pageTemplateHtml
+            .replace('{{ heading-classes }}', props.headingClasses.map(c => ' ' + c).join(''))
+            .replace('{{ title }}', renderReactChild(props.title))
+            .replace('{{ subtitle }}',renderReactChild(props.subtitle))
+            .replace('{{ featured-image }}', props.featuredImage)
+            .replace('{{ post-content }}', renderReactChild(props.postContent))
+            .replace('{{ footer }}', renderReactChild(props.footer))
+    }
 
     for (const item of fs.readdirSync(postsDir)) {
         const markdown = fs.readFileSync(path.join(postsDir, item, 'index.md'), 'utf8');
-        posts.push(new Post(postTemplate, markdown));
+        posts.push(new Post(pageTemplate, markdown));
     }
 
     for (const post of posts) {
@@ -20,8 +43,7 @@ function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, con
 
     const pages: Page[] = [];
     const pageDir = path.join(fpatIn, 'site/page');
-    const pageTemplate = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
-
+    
     for (const item of fs.readdirSync(pageDir)) {
         const markdown = fs.readFileSync(path.join(pageDir, item, 'index.md'), 'utf8');
         pages.push(new Page(pageTemplate, markdown));
