@@ -2,6 +2,8 @@ import MarkdownIt from 'markdown-it';
 import metadataParse from 'markdown-yaml-metadata-parser';
 import { slugify, formatDate, zeroPad } from "./util";
 import * as React from 'react';
+import { PathLike } from 'fs';
+import { ParsedPath } from 'path';
 
 export type PageTemplateProps = {
     headingClasses: string[],
@@ -122,7 +124,11 @@ export class Post {
     readonly excerpt: React.ReactElement<any>;
 
 
-    constructor(template: Template<PageTemplateProps>, md: string) {
+    constructor(
+        template: Template<PageTemplateProps>, 
+        md: string, 
+        public readonly assets: readonly ParsedPath[]
+    ) {
         const { metadata, content } = metadataParse(md);
         this.date = new Date(metadata.date);
         this.title = metadata.title;
