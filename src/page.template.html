@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
     <style media="all">
+        @font-face {
+            font-family: 'font_awesome';
+            src: url(data:application/font-woff;charset=utf-8;base64,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) format('woff');
+            font-weight: normal;
+            font-style: normal;
+        
+        }
         * {
             --xxl-text-size: 80px
         }
@@ -46,22 +54,22 @@
         }
 
         .github-icon:before {
-            font-family: 'Font Awesome 5 Free';
+            font-family: 'font_awesome';
             content: '\f09b'
         }
 
         .twitter-icon:before {
-            font-family: 'Font Awesome 5 Free';
+            font-family: 'font_awesome';
             content: '\f099'
         }
 
         .linkedin-icon:before {
-            font-family: 'Font Awesome 5 Free';
+            font-family: 'font_awesome';
             content: '\f0e1'
         }
 
         .tags-icon:before {
-            font-family: 'Font Awesome 5 Free';
+            font-family: 'font_awesome';
             content: '\e800'
         }
 

@@ -1,9 +1,12 @@
-import fs from 'fs';
+import fs, { PathLike } from 'fs';
 import path, { ParsedPath } from 'path';
 import { Post, Page, PostList, PageTemplateProps } from './post';
 import { chunks } from './util';
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
+
+type Asset = ParsedPath;
+
 
 function renderReactChild(child: React.ReactChild | null): string {
     if (child == null) {
@@ -32,13 +35,23 @@ function* files(root: string, dir: string = ''): Iterable<ParsedPath> {
 };
 
 
-function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, content: string | NodeJS.ArrayBufferView) => void) {
-    const posts: Post[] = [];
-    const postsDir = path.join(fpatIn, 'site/post');
-    const pageTemplateHtml = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
+function collectPostlike<T>(dir: string, create: (markdown:string, assets: Asset[]) => T): T[] {
+    const result: T[] = [];
+    for (const item of fs.readdirSync(dir)) {
+        const markdown = fs.readFileSync(path.join(dir, item, 'index.md'), 'utf8');
+        const assets = [...files(path.join(dir, item))]
+            .filter(fpat => fpat.name != 'index.md')
+        result.push(create(markdown, assets));
+    }
+    return result;
+}
 
-    const pageTemplate = (props: PageTemplateProps) => {
-        return pageTemplateHtml
+
+function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, content: string | NodeJS.ArrayBufferView) => void) {
+    const templateHtml = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
+
+    const template = (props: PageTemplateProps) => {
+        return templateHtml
             .replace('{{ heading-classes }}', props.headingClasses.map(c => ' ' + c).join(''))
             .replace('{{ title }}', renderReactChild(props.title))
             .replace('{{ subtitle }}', renderReactChild(props.subtitle))
@@ -47,42 +60,19 @@ function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, con
             .replace('{{ footer }}', renderReactChild(props.footer))
     }
 
-    for (const item of fs.readdirSync(postsDir)) {
-        const markdown = fs.readFileSync(path.join(postsDir, item, 'index.md'), 'utf8');
+    const pages: Page[] = collectPostlike('site/page', (md, assets) => new Page(template, md, assets));
+    const posts: Post[] = collectPostlike('site/post', (md, assets) => new Post(template, md, assets));
 
-        const assets = [...files(path.join(postsDir, item))]
-            .filter(fpat => fpat.name != 'index.md')
-
-        posts.push(new Post(pageTemplate, markdown, assets));
-    }
-
-  
-
-    for (const post of posts) {
-        const postDir = path.join(fpatOut, post.uri)
-        writeFile(path.join(postDir, 'index.html'), post.htmlContent);
-        for (let asset of post.assets) {
+    for (const p of [...posts, ...pages]) {
+        const pDir = path.join(fpatOut, p.uri)
+        writeFile(path.join(pDir, 'index.html'), p.htmlContent);
+        for (let asset of p.assets) {
             writeFile(
-                path.join(postDir, asset.dir, asset.base), 
+                path.join(pDir, asset.dir, asset.base), 
                 fs.readFileSync(path.join(asset.root, asset.dir, asset.base)));
         }
     }
 
-    const pages: Page[] = [];
-    const pageDir = path.join(fpatIn, 'site/page');
-
-    for (const item of fs.readdirSync(pageDir)) {
-        const markdown = fs.readFileSync(path.join(pageDir, item, 'index.md'), 'utf8');
-        pages.push(new Page(pageTemplate, markdown));
-    }
-
-    for (const page of pages) {
-        writeFile(path.join(
-            fpatOut,
-            page.slug,
-            "index.html",
-        ), page.htmlContent);
-    }
 
     let page = 1;
     let chunkSize = 5;
@@ -92,7 +82,7 @@ function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, con
 
         writeFile(
             fpat,
-            new PostList(pageTemplate,
+            new PostList(template,
                 'Csókavár',
                 'Németh Cs. Dávid blogja',
                 'https://d1tyrc4sjyi164.cloudfront.net/wp-content/uploads/2021/01/Screen-Shot-2021-01-14-at-20.47.03-scaled.jpg',
@@ -104,6 +94,8 @@ function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, con
 
 
 }
+
+fs.rmdirSync("build", { recursive: true });
 
 generate('.', 'build', (fpat: string, content: string | NodeJS.ArrayBufferView) => {
     fs.mkdirSync(path.parse(fpat).dir, { recursive: true });

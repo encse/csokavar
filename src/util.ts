@@ -11,7 +11,7 @@ export function slugify(st: string) {
 
 export function formatDate(date: Date) {
     const months = "január február március április május június július augusztus szeptember október november december".split(' ');
-    return `${date.getFullYear()} ${months[date.getMonth()]} ${date.getDate()}.`;
+    return `${date.getFullYear()}. ${months[date.getMonth()]} ${date.getDate()}.`;
 }
 
 

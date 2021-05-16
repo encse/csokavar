@@ -31,7 +31,7 @@ export class PostList {
         let content: React.ReactElement<any>[] = [];
         for (let post of posts) {
             content.push(
-                <article>
+                <article key={post.uri}>
                     <header>
                         <h2 className="title"><a href={post.uri} rel="bookmark">{post.title}</a></h2>
                         <p className="subtitle">{formatDate(post.date)}</p>
@@ -91,14 +91,20 @@ export class Page {
     readonly tags: string[];
     readonly htmlContent: string;
     readonly slug: string;
+    readonly uri: string;
 
-    constructor(template: Template<PageTemplateProps>, md: string) {
+    constructor(
+        template: Template<PageTemplateProps>, 
+        md: string, 
+        public readonly assets: readonly ParsedPath[]
+    ) {
         const { metadata, content } = metadataParse(md);
         this.date = new Date(metadata.date);
         this.title = metadata.title;
         this.coverImage = metadata.coverImage;
         this.tags = metadata.tags || [];
         this.slug = metadata.slug || slugify(this.title);
+        this.uri = this.slug;
 
         this.htmlContent = template(
             {
