@@ -47,7 +47,7 @@ function collectPostlike<T>(dir: string, create: (markdown:string, assets: Asset
 }
 
 
-function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, content: string | NodeJS.ArrayBufferView) => void) {
+async function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, content: string | NodeJS.ArrayBufferView) => void) {
     const templateHtml = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
 
     const template = (props: PageTemplateProps) => {
@@ -65,7 +65,8 @@ function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, con
 
     for (const p of [...posts, ...pages]) {
         const pDir = path.join(fpatOut, p.uri)
-        writeFile(path.join(pDir, 'index.html'), p.htmlContent);
+        const htmlContent = await p.render();
+        writeFile(path.join(pDir, 'index.html'), htmlContent);
         for (let asset of p.assets) {
             writeFile(
                 path.join(pDir, asset.dir, asset.base), 
@@ -80,15 +81,15 @@ function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, con
 
         let fpat = page == 1 ? path.join(fpatOut, "index.html") : path.join(fpatOut, `page/${page}/index.html`);
 
-        writeFile(
-            fpat,
-            new PostList(template,
-                'Csókavár',
-                'Németh Cs. Dávid blogja',
-                'https://d1tyrc4sjyi164.cloudfront.net/wp-content/uploads/2021/01/Screen-Shot-2021-01-14-at-20.47.03-scaled.jpg',
-                '',
-                chunk, page, posts.length).htmlContent
-        );
+        const postList = new PostList(template,
+            'Csókavár',
+            'Németh Cs. Dávid blogja',
+            'https://d1tyrc4sjyi164.cloudfront.net/wp-content/uploads/2021/01/Screen-Shot-2021-01-14-at-20.47.03-scaled.jpg',
+            '',
+            chunk, page, posts.length);
+
+        const htmlContent = await postList.render();
+        writeFile(fpat, htmlContent);
         page++;
     }
 

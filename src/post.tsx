@@ -2,8 +2,69 @@ import MarkdownIt from 'markdown-it';
 import metadataParse from 'markdown-yaml-metadata-parser';
 import { slugify, formatDate, zeroPad } from "./util";
 import * as React from 'react';
-import { PathLike } from 'fs';
 import { ParsedPath } from 'path';
+import mjAPI from 'mathjax-node';
+
+
+function decodeEntities(encodedString: string) {
+    let translate_re = /&(nbsp|amp|quot|lt|gt);/g;
+    let translate = {
+        "nbsp":" ",
+        "amp" : "&",
+        "quot": "\"",
+        "lt"  : "<",
+        "gt"  : ">"
+    };
+    return encodedString.replace(translate_re, function(match, entity) {
+        return translate[entity];
+    }).replace(/&#(\d+);/gi, function(match, numStr) {
+        let num = parseInt(numStr, 10);
+        return String.fromCharCode(num);
+    });
+}
+
+
+function typeset(encodedString: string): Promise<string> {
+    let st = decodeEntities(encodedString)
+
+    mjAPI.config({
+        MathJax: {
+        }
+    });
+    
+    mjAPI.start();
+    
+    return new Promise<string>((resolve, reject) => {
+        
+        let format = "TeX"
+        if (st.startsWith("$$")){
+            st = st.substring(2);
+        }
+        if (st.endsWith("$$")){
+            st = st.substring(0, st.length - 2);
+        }
+        if (st.startsWith("[latex]")){
+            format="inline-TeX";
+            st = st.substring("[latex]".length);
+        }
+        if (st.endsWith("[/latex]")) {
+            st = st.substring(0, st.length - "[/latex]".length);
+        }
+
+        mjAPI.typeset({
+            math: st,
+            format: format,
+            html: true,
+          }, function (data: any) {
+            if (!data.errors) {
+                resolve(data.html)
+            } else {
+                reject(data.errors)
+            }
+          });
+    });
+}
+
 
 export type PageTemplateProps = {
     headingClasses: string[],
@@ -17,7 +78,9 @@ export type PageTemplateProps = {
 type Template<T> = (t:T) => string;
 
 export class PostList {
-    readonly htmlContent: string;
+
+    readonly #htmlContent: string;
+
     constructor(
         template: Template<PageTemplateProps>, 
         title: string,
@@ -65,7 +128,7 @@ export class PostList {
             );
         }
 
-        this.htmlContent = template(
+        this.#htmlContent = template(
             {
                 headingClasses: ['home-page-heading'],
                 title, subtitle, 
@@ -75,23 +138,45 @@ export class PostList {
             }
         )
     }
+
+    async render(): Promise<string>{
+        return this.#htmlContent
+    }
 }
 
-function markdownToReact(md: string): React.ReactElement<any>{
+async function markdownToReact(md: string): Promise<React.ReactElement<any>>{
     const markdownIt = MarkdownIt({
         html: true
     });
-    return <div dangerouslySetInnerHTML={{__html: markdownIt.render(md)}} />
+
+    let html = markdownIt.render(md);
+
+    for (const rx of [/\[latex\].*?\[\/latex\]/sg, /\$\$.*?\$\$/sg]){
+        let matches = [...html.matchAll(rx)].reverse();
+        for (let match of matches) {
+
+            const tex = match[0];
+
+            console.log(tex);
+            const mathjax = await typeset(tex);
+            html = html.substring(0, match.index) + mathjax + html.substring(match.index + tex.length);
+        }
+    }
+
+    return <div dangerouslySetInnerHTML={{__html: html}} />
 }
 
 export class Page {
     readonly title: string;
+    readonly subtitle: string;
     readonly coverImage: string;
     readonly date: Date;
     readonly tags: string[];
-    readonly htmlContent: string;
+    readonly #htmlContent: string;
     readonly slug: string;
     readonly uri: string;
+    readonly #mdContent: string;
+    readonly #template: Template<PageTemplateProps>;
 
     constructor(
         template: Template<PageTemplateProps>, 
@@ -101,21 +186,27 @@ export class Page {
         const { metadata, content } = metadataParse(md);
         this.date = new Date(metadata.date);
         this.title = metadata.title;
+        this.subtitle = metadata.subtitle;
         this.coverImage = metadata.coverImage;
         this.tags = metadata.tags || [];
         this.slug = metadata.slug || slugify(this.title);
         this.uri = this.slug;
+        this.#template = template;
+        this.#mdContent = content;
+    }
 
-        this.htmlContent = template(
+    async render(): Promise<string> {
+        const html = await markdownToReact(this.#mdContent);
+        return this.#template(
             {
                 headingClasses: ['home-page-heading'],
-                title: metadata.title, 
-                subtitle: metadata.subtitle, 
-                featuredImage: `images/${metadata.coverImage}`,
-                postContent: markdownToReact(content),
+                title: this.title, 
+                subtitle: this.subtitle, 
+                featuredImage: `images/${this.coverImage}`,
+                postContent: html,
                 footer: null
             }
-        )
+        );
     }
 }
 
@@ -124,7 +215,9 @@ export class Post {
     readonly coverImage: string;
     readonly date: Date;
     readonly tags: string[];
-    readonly htmlContent: string;
+    readonly #htmlContent: string;
+    readonly #mdContent: string;
+    readonly #template: Template<PageTemplateProps>;
     readonly slug: string;
     readonly uri: string;
     readonly excerpt: React.ReactElement<any>;
@@ -153,16 +246,8 @@ export class Post {
             </p>
         }
 
-        this.htmlContent = template(
-            {
-                headingClasses: [],
-                title: metadata.title, 
-                subtitle: <time className="posted-on" dateTime={this.date.toISOString()}>{formatDate(this.date)}</time>, 
-                featuredImage: `images/${metadata.coverImage}`,
-                postContent: markdownToReact(content),
-                footer: footer
-            }
-        )
+        this.#template = template;
+        this.#mdContent = content;
 
         this.uri = `/blog/${zeroPad(this.date.getFullYear(), 4)}/${zeroPad(this.date.getMonth() + 1, 2)}/${this.slug}/`;
 
@@ -182,5 +267,19 @@ export class Post {
                 break;
             }
         }
+    }
+
+    async render(): Promise<string>{
+        const html = await markdownToReact(this.#mdContent);
+        return this.#template(
+            {
+                headingClasses: ['home-page-heading'],
+                title: this.title, 
+                subtitle: <time className="posted-on" dateTime={this.date.toISOString()}>{formatDate(this.date)}</time>, 
+                featuredImage: `images/${this.coverImage}`,
+                postContent: html,
+                footer: null
+            }
+        );
     }
 }
