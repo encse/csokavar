@@ -23,29 +23,33 @@ Aztán volt még padding oracle támadásra is egy jó példa. Egy webszervernek
 
 Ha most azt gondolják, hogy ez valami elméleti baromság, akkor elmondom, hogy a módszert eredetileg email jelszavak megszerzésére használták (az IMAP protokol sajátosságait és a TLS kezdeti hibás implementációit kihasználva). A kurzus amúgy tele van gyakorlatban elkövetett baklövések esettanulmányaival, és abszolút a mindennapi életben használható tudást ad.
 
-A másik szintén teljesen flopside élmény nagy \[latex\]N\[/latex\]-ek faktorizálásáról szólt. Ugyanis ha \[latex\]N=pq\[/latex\] alkalmas prímekkel, ahol ezek a prímek közel vannak egymáshoz, akkor egész könnyen meg tudjuk őket találni. A feltétel szerint $$|p - q| \\lt 2 N^{1/4}\\quad\\quad(\*)$$ Figyeljük meg, hogy az _elég közel_ mondjuk egy \[latex\]4096\[/latex\] bites \[latex\]N\[/latex\] esetén azt jelenti, hogy \[latex\]p\[/latex\] és \[latex\]q\[/latex\] távolsága nagyjából \[latex\]2^{1025}\[/latex\] is lehet.
+A másik szintén teljesen flopside élmény nagy $N$-ek faktorizálásáról szólt. Ugyanis ha $N=pq$ alkalmas prímekkel, ahol ezek a prímek közel vannak egymáshoz, akkor egész könnyen meg tudjuk őket találni. A feltétel szerint 
 
-Lényeg a lényeg, belátható, hogy ebben az esetben \[latex\]p\[/latex\] és \[latex\]q\[/latex\] számtani közepe, nevezzük \[latex\]A\[/latex\]-nak, nagyon közel esik \[latex\]N\[/latex\] négyzetgyökéhez. Egész pontosan \[latex\]A - \\sqrt{N} \\lt 1\[/latex\], azaz \[latex\]A\[/latex\] nem más mint \[latex\]\\sqrt{N}\[/latex\] felső egész része.
+$$|p - q| \lt 2 N^{1/4}\quad\quad(*)$$
 
-\[latex\]A\[/latex\]-t már csak azért is jó ötlet bevezetni, mert így felírhatjuk ismeretlenjeinket \[latex\]p = A - x\[/latex\] és \[latex\]q = A + x\[/latex\] alakban, valamilyen \[latex\]x\[/latex\] egész számmal.
+Figyeljük meg, hogy az _elég közel_ mondjuk egy $4096$ bites $N$ esetén azt jelenti, hogy $p$ és $q$ távolsága nagyjából $2^{1025}$ is lehet.
 
-Ekkor viszont \[latex\]N = pq = (A-x)(A+x)\[/latex\]-ből \[latex\]x\[/latex\]-et ki is lehet számolni: \[latex\]x = \\sqrt{A^2-N} \[/latex\]. Innen pedig már meg is vannak azok a huncut kis prímek.
+Lényeg a lényeg, belátható, hogy ebben az esetben $p$ és $q$ számtani közepe, nevezzük $A$-nak, nagyon közel esik $N$ négyzetgyökéhez. Egész pontosan $A - \sqrt{N} \lt 1$, azaz $A$ nem más mint $\sqrt{N}$ felső egész része.
 
-Már csak az a kérdés, hogy miért vagyunk ilyen mázlisták \[latex\]A\[/latex\]-val. Ehhez vizsgáljuk a következőt:
+$A$-t már csak azért is jó ötlet bevezetni, mert így felírhatjuk ismeretlenjeinket $p = A - x$ és $q = A + x$ alakban, valamilyen $x$ egész számmal.
 
-$$A^2 - N = \\left({p+q \\over 2}\\right)^2 - N = {p^2+2N+q^2 \\over 4} - N = {p^2-2N+q^2 \\over 4} = {(p-q)^2 \\over 4} $$
+Ekkor viszont $N = pq = (A-x)(A+x)$-ből $x$-et ki is lehet számolni: $x = \sqrt{A^2-N}$. Innen pedig már meg is vannak azok a huncut kis prímek.
+
+Már csak az a kérdés, hogy miért vagyunk ilyen mázlisták $A$-val. Ehhez vizsgáljuk a következőt:
+
+$$A^2 - N = \left({p+q \over 2}\right)^2 - N = {p^2+2N+q^2 \over 4} - N = {p^2-2N+q^2 \over 4} = {(p-q)^2 \over 4} $$
 
 A kifejezés felfogható négyzetek különbségeként is, így bepattinthatjuk ide:
 
-$$A - \\sqrt{N} = (A - \\sqrt{N}) {A + \\sqrt{N} \\over A + \\sqrt{N}} = { A^2 - N \\over A + \\sqrt{N}} = { {(p-q)^2/4} \\over A + \\sqrt{N}}$$
+$$A - \sqrt{N} = (A - \sqrt{N}) {A + \sqrt{N} \over A + \sqrt{N}} = { A^2 - N \over A + \sqrt{N}} = { {(p-q)^2/4} \over A + \sqrt{N}}$$
 
-A jobb oldal pozitív, tehát \[latex\]\\sqrt{N} \\leq A\[/latex\]. Amit felhasználva:
+A jobb oldal pozitív, tehát $\sqrt{N} \leq A$. Amit felhasználva:
 
-$$A - \\sqrt{N} \\leq { {(p-q)^2/4} \\over 2 \\sqrt{N}} = {(p-q)^2 \\over 8 \\sqrt{N} }$$
+$$A - \sqrt{N} \leq { {(p-q)^2/4} \over 2 \sqrt{N}} = {(p-q)^2 \over 8 \sqrt{N} }$$
 
-A \[latex\]p\[/latex\] és \[latex\]q\[/latex\] távolságára tett \[latex\](\*)\[/latex\] kiindulási feltételünkből következik, hogy \[latex\](p-q)^2 \\lt 4 \\sqrt{N}\[/latex\], így:
+A $p$ és $q$ távolságára tett $(*)$ kiindulási feltételünkből következik, hogy $(p-q)^2 \lt 4 \sqrt{N}$, így:
 
-$$A - \\sqrt{N} \\leq { 4 \\sqrt{N} \\over 8 \\sqrt{N}} = 1/2$$
+$$A - \sqrt{N} \leq { 4 \sqrt{N} \over 8 \sqrt{N}} = 1/2$$
 
 Amivel be is láttuk amit szerettünk volna. Na persze nehogy azt higyjék, hogy erre egyedül kell rájönni. Mindent szépen leírtak, én is onnan ollóztam ide. Meg az is igaz, hogy ez volt talán az egyetlen matematikai bizonyítás, és ez is csak egy szorgalmi feladatban. Szóval megijedni nem kell, nagyon gyakorlatias az egész. Csak ajánlani tudom minden programozó ismerősömnek.
 

@@ -4,6 +4,7 @@ import { slugify, formatDate, zeroPad } from "./util";
 import * as React from 'react';
 import { ParsedPath } from 'path';
 import mjAPI from 'mathjax-node';
+import mk from 'markdown-it-katex';
 
 
 function decodeEntities(encodedString: string) {
@@ -148,20 +149,27 @@ async function markdownToReact(md: string): Promise<React.ReactElement<any>>{
     const markdownIt = MarkdownIt({
         html: true
     });
+    markdownIt.use(mk);
+    
+
 
     let html = markdownIt.render(md);
 
-    for (const rx of [/\[latex\].*?\[\/latex\]/sg, /\$\$.*?\$\$/sg]){
-        let matches = [...html.matchAll(rx)].reverse();
-        for (let match of matches) {
+    if (md.includes('$$'))  
+        console.log(html);
 
-            const tex = match[0];
+    
+    // for (const rx of [/\[latex\].*?\[\/latex\]/sg, /\$\$.*?\$\$/sg]){
+    //     let matches = [...html.matchAll(rx)].reverse();
+    //     for (let match of matches) {
 
-            console.log(tex);
-            const mathjax = await typeset(tex);
-            html = html.substring(0, match.index) + mathjax + html.substring(match.index + tex.length);
-        }
-    }
+    //         const tex = match[0];
+
+    //         console.log(tex);
+    //         const mathjax = await typeset(tex);
+    //         html = html.substring(0, match.index) + mathjax + html.substring(match.index + tex.length);
+    //     }
+    // }
 
     return <div dangerouslySetInnerHTML={{__html: html}} />
 }
