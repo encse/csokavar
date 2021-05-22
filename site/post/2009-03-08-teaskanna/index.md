@@ -13,10 +13,10 @@ A történet úgy 8-10 éve kezdődött. Akkoriban még nagyon könnyen belefele
 
 (Ezt persze Önök közül jópáran nem fogják megérteni, de a többieknek mondom, hogy a körkörös include-okat elkerülendő a C++-ban a header fájlok szerkezete gyakorta valami hasonló:
 
-#ifndef FOO
+<pre><code>#ifndef FOO
 #define FOO
 /\*ide jön a lényeg\*/
-#endif
+#endif</code></pre>
 
 Namármost ez a FOO csak egy kis technikai trükk, kizárólag a körkörös izé kiküszöbölésére, semmi köze a programhoz magához, csak az a fontos, hogy a programon belül egyedi legyen. Lehet ide írni a fájl nevét, egy guidot, de alkalmat ad egy kis kreatívkodásra is. Így született meg a TEGNAP\_ODAEGETTEM\_A\_TEASKANNAT definíció. Akkoriban még így toltam, nem volt rendes blogom, na.)
 

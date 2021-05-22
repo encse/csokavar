@@ -131,7 +131,7 @@ export class Page {
                 headingClasses: ['home-page-heading'],
                 title: this.title,
                 subtitle: this.subtitle,
-                featuredImage: `images/${this.coverImage}`,
+                featuredImage: this.coverImage ? `images/${this.coverImage}` : null,
                 postContent: html,
                 footer: null
             }
@@ -160,20 +160,9 @@ export class Post {
         const { metadata, content } = metadataParse(md);
         this.date = new Date(metadata.date);
         this.title = metadata.title;
-        this.coverImage = `images/${metadata.coverImage}`;
+        this.coverImage = metadata.coverImage ? `images/${metadata.coverImage}` : null;
         this.tags = metadata.tags || [];
         this.slug = metadata.slug || slugify(this.title);
-
-        let footer: React.ReactElement = null;
-        if (this.tags.length > 0) {
-            footer = <p>
-                <span className="tags-icon" />
-                {this.tags.map((tag, i) => [
-                    i == 0 ? ' ' : ', ',
-                    <a href={`/blog/tag/${tag}/`} rel="tag">{tag}</a>
-                ])}
-            </p>
-        }
 
         this.#template = template;
         this.#mdContent = content;
@@ -199,17 +188,26 @@ export class Post {
     }
 
     async render(): Promise<string> {
-        console.log(this.uri);
+        let footer: React.ReactElement = null;
+        if (this.tags.length > 0) {
+            footer = <p>
+                <span className="tags-icon" />
+                {this.tags.map((tag, i) => [
+                    i == 0 ? ' ' : ', ',
+                    <a href={`/blog/tag/${tag}/`} rel="tag">{tag}</a>
+                ])}
+            </p>
+        }
 
         const html = markdownToReact(this.#mdContent);
         return this.#template(
             {
-                headingClasses: ['home-page-heading'],
+                headingClasses: [],
                 title: this.title,
                 subtitle: <time className="posted-on" dateTime={this.date.toISOString()}>{formatDate(this.date)}</time>,
-                featuredImage: `images/${this.coverImage}`,
+                featuredImage: this.coverImage,
                 postContent: html,
-                footer: null
+                footer: footer
             }
         );
     }

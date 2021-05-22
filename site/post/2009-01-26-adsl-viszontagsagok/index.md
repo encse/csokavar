@@ -99,7 +99,8 @@ Sejtettem ám, hogy ha más nem is, az előző fax már az Externetnél is kiver
 
 Rögtön leállította a számlázást, aztán még azt is kitalálta, hogy pontosan mit mondjak a T-Pontban, hogy megint legyen internet. Úgy tűnik, csak annyi kellett, hogy visszakérjem a szolgáltatást a szüneteltetésből de úgy ám, hogy bármennyire is kapállózik a T-Arc, mégse kapjak mellé semmilyen telefonos csomagot.
 
-> \-- Az lehetetlen. Ilyen nálunk nincs. -- Pedig lennie kell, uram.
+> — Az lehetetlen. Ilyen nálunk nincs.\
+> — Pedig lennie kell, uram.
 
 Kis telefonálgatás, és úgy tűnik mégis van "olyan".
 

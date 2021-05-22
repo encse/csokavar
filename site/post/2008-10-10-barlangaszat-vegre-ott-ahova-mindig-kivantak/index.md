@@ -17,7 +17,7 @@ Az öltözködés után jöhetett a lámpák bepöccintése. Ez Júliánál pici
 
 Felvágósan:
 
-CaC2 + H2O = CaO + C2H2
+$$CaC_2 + H_2O = CaO + C_2H_2$$
 
 (Ha most azt gondolnák, hogy karbid csak úgy terem a barlangban, akkor hozzám hasonlóan Önöknek is ki kell ábrándulniuk, mert - Júlia szerint legalábbis - azt is úgy kell gyártani mészkőből meg szénből viszonylag magas (2000 °C fölötti) hőmérsékleten.)
 

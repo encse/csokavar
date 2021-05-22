@@ -55,7 +55,10 @@ async function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: strin
             .replace('{{ heading-classes }}', props.headingClasses.map(c => ' ' + c).join(''))
             .replace('{{ title }}', renderReactChild(props.title))
             .replace('{{ subtitle }}', renderReactChild(props.subtitle))
-            .replace('{{ featured-image }}', props.featuredImage)
+            .replace('{{ featured-image }}', 
+                props.featuredImage ? 
+                    `url(${props.featuredImage})` :
+                    `linear-gradient(to right, #0f2027, #203a43, #2c5364)`)
             .replace('{{ post-content }}', renderReactChild(props.postContent))
             .replace('{{ footer }}', renderReactChild(props.footer))
     }

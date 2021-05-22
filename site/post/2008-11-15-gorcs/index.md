@@ -9,7 +9,7 @@ tags:
   - "velemeny"
 ---
 
-.beszelo { text-transform: uppercase; } Azért jó dolog ha az embernek olyan barátnéje van aki mindenfelé elviszi, mert egyedül asszem nem mennék színházba. Sőt jelentsük ki bátran: egyedül nem megyek színházba. Legfeljebb a MU-ba járok, amiről már írtam korábban, és akkor is megbeszéltük, hogy legfeljebb a büféig jutok. Közel van és jó a bor, meg van rágcsálni való és szendvics is. A MU büféje egyébként nagyon hasonlít a Csiga nevű helyre, ami mostanság kezdi átvenni a törzshely szerepét, már ami a Verával való találkozásokat illeti. Hasonló a kínálat, és tulajdonképpen ugyanazokat az embereket látom mindkét helyen, a vezetőséget is beleértve. De meg kell mondjam azt is, hogy a székek ott sokkal rosszabbak.
+Azért jó dolog ha az embernek olyan barátnéje van aki mindenfelé elviszi, mert egyedül asszem nem mennék színházba. Sőt jelentsük ki bátran: egyedül nem megyek színházba. Legfeljebb a MU-ba járok, amiről már írtam korábban, és akkor is megbeszéltük, hogy legfeljebb a büféig jutok. Közel van és jó a bor, meg van rágcsálni való és szendvics is. A MU büféje egyébként nagyon hasonlít a Csiga nevű helyre, ami mostanság kezdi átvenni a törzshely szerepét, már ami a Verával való találkozásokat illeti. Hasonló a kínálat, és tulajdonképpen ugyanazokat az embereket látom mindkét helyen, a vezetőséget is beleértve. De meg kell mondjam azt is, hogy a székek ott sokkal rosszabbak.
 
 De elkanyarodtunk a témától, mert ma nem orális élvezetekről akartam írni, sokkal inkább a színházról, ahová mostanság valóban igazán sokat járunk. Voltunk pl. kedden is, holnap is megyünk, sőt jövő kedden megint. (Ezzel vége idénre.)
 
@@ -21,23 +21,32 @@ Aztán a _G.Ö.R.CS._, ami a görögök összes regéit és cselekedeteit hivato
 
 Szabadjon egy rövid idézetet ebből. Kedvcsinálónak. Ki kell adnom magamból, már csak azért is, mert a fityma szót olvasva minden drága olvasóm fel fogja kapni a fejét.
 
-Az Úr: _(mennydörögve)_ Ábrahám!
+ AZ ÚR: _(mennydörögve)_\
+ — Ábrahám!
 
-Ábrahám: Szólítottál, Uram?
+ ÁBRAHÁM:\
+ — Szólítottál, Uram?
 
-Az Úr: Ábrahám, ajánld fel nekem a te fitymádat!
+ AZ ÚR:\
+ — Ábrahám, ajánld fel nekem a te fitymádat!
 
-Ábrahám: ... de Uram, mi az a fityma?
+ ÁBRAHÁM:\
+ — ... de Uram, mi az a fityma?
 
-Az Úr: Az a kis húsdarab a péniszed végén.
+ AZ ÚR:\
+ — Az a kis húsdarab a péniszed végén.
 
-Ábrahám: ... én azt hittem Uram, hogy ott maga a férfi van.
+ ÁBRAHÁM:\
+ — ... én azt hittem Uram, hogy ott maga a férfi van.
 
-Az Úr: A másik végén!
+ AZ ÚR:\
+ — A másik végén!
 
-Ábrahám: És mondd Uram, mihez kezdenél az én fitymámmal?
+ ÁBRAHÁM:\
+ — És mondd Uram, mihez kezdenél az én fitymámmal?
 
-Az Úr: _(láthatóan nem számított a kérdésre, hosszan gondolkodik)_ Egy ... bőr pénztárcát szeretnék készíteni.
+ AZ ÚR: _(láthatóan nem számított a kérdésre, hosszan gondolkodik)_\
+ — Egy ... bőr pénztárcát szeretnék készíteni.
 
 Hát így. A G.Ö.R.CS. egyébként egy másik darab, a Shakespeare Összes Röviden (_S.Ö.R._) folytatása. Ezt sajnos még nem láttam, de Maya már régebben emlegette, hogy jó. Szerencsére honlap bepótoljuk ezt a lemaradást is, de addig még át kell rágnom a királydrámákat. :)
 
