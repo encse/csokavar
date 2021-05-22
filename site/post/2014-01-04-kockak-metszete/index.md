@@ -14,6 +14,6 @@ Na de mennyi számolási hibám volt, és milyen bonyolult lett a végeredmény.
 
 Még egy kis alpha blending, és néhány forgató mátrix, és kész is a [végeredmény](https://csokavar.hu/projects/raymarch/cubes/), ami megint csak Chrome és Firefox böngészőkben működik, mert ismét webgl-t használtam hozzá.
 
-/i/https://csokavar.hu/projects/raymarch/cubes/
+[iframe src="https://csokavar.hu/projects/raymarch/cubes/"]
 
 A forráskód githubon is [elérhető](https://github.com/encse/raymarch), ha bárkit édekel az ilyesmi.

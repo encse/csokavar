@@ -8,6 +8,6 @@ tags:
 
 One man... one mission... Facing his biggest challenge... realizing his greatest dream...
 
-http://www.youtube.com/watch?v=ih6jCImGtUY
+[youtube src="ih6jCImGtUY"]
 
 OMG

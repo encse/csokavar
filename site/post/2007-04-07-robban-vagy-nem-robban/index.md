@@ -8,6 +8,6 @@ tags:
 
 3, 2, 1 éééés felszállás!
 
-http://www.youtube.com/watch?v=WS58jaFWL0M
+[youtube src="WS58jaFWL0M"]
 
 Vajon beperel a NASA, a YouTube vagy Károly, amiért feltettem? Majd elválik...

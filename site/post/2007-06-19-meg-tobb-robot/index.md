@@ -15,7 +15,7 @@ Első lépésként csináltam egy cellák között mozgó robotot. Ahhoz, hogy 
 
 Többszöri 'szarok az egészre' után, végül mégis sikerült a sima navigáció. Ezen felbátorova, kicsit bonyolítottam a feladaton, és akadályokat tettem a labirintusba. Most a robot csak akkor hajtja végre a mozgást, ha útközben nem ütközik bele semmibe. Ellenkező esetben egyszerűen visszamegy a kiindulási pontra. A videón a 'menj egyet hátra' parancsot látjuk meghiúsulni egy flakon miatt (Vitaflóra, citrusfélék tápoldata).
 
-http://www.youtube.com/watch?v=SZxvTsMe2fQ
+[youtube src="SZxvTsMe2fQ"]
 
 A felvételen hallható csipogás a tesztoutput része:
 

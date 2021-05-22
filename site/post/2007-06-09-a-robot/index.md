@@ -41,7 +41,7 @@ A manuális kalibrálásnál jópofább, ha a robot magától tanulja meg az ér
 
 Fejleszhetünk az algoritmuson úgy is, hogy a fényességi tartományt 2 helyett 3 részre osztjuk, és a középsőben a robot előre halad. Aztán lehet még tovább bontogatni, és az egyes tartományokhoz különböző kanyarodási sebességeket rendelni.
 
-http://www.youtube.com/watch?v=t-lXlGYnikk
+[youtube src="t-lXlGYnikk"]
 
 _Itt aludtam el._
 

@@ -10,7 +10,7 @@ coverImage: "ezgif-4-cec339a7d2.gif"
 
 Januárban megint rám jött a hmm... 'csinálhatnék', és valami oknál fogva pont egy Nintendo emulátor mellett döntöttem. Beugrottak a Dévényi Tibi bácsi-féle Nintendo játékok, és hogy minden délután nyálcsorgatva néztük a tévén, ahogy a Czigány család Super Mario Brosozik. Nekünk nem volt NES-ünk, és nem is játszottam igazi gépen soha.
 
-https://www.youtube.com/watch?v=8LJwRnfRs2g
+[youtube src="8LJwRnfRs2g"]
 
 De jó húsz évvel később, már elég tökös gyereknek tartom magam ahhoz, hogy megcsináljam házilag. Megmutatom annak a kis geek 12 éves énemnek, hogy igenis megírom. Ha most lenne egy időgépem vissza is küldhetném neki, hadd játszon vele. Bár igazából mi évekig jól elvoltunk a Flimbo's Questtel. Sőt, az talán még jobb is volt, és főleg pokoli nehéz. Bár abban nem vagyok biztos, hogy a flimbós korszak egybe estett az Elektor kalandorral, mert C-64-et is csak viszonylag későn kaptunk, amikor a többi osztálytársam már inkább a PC-felé kacsintgatott.
 

@@ -21,7 +21,7 @@ A hinta mögött, ribizli bokrok vannak a kerítés tövében. A háttérben val
 
 Ha kicsit jobbra fordulnánk, akkor a traktorkerékből készült homokozót látnánk. Bár tegnap nem csináltam róla képet, 2006-ban viszont videót is. Bár itt a homokozó csak háttérként funkcionál a sokkal izgalmasabb eseményekhez. Hoppá, és én is látható vagyok egy pillanatra.
 
-http://www.youtube.com/watch?v=DoiuY6K6vy4
+[youtube src="DoiuY6K6vy4"]
 
 Aztán, ez az a hely, ahol megfordítottuk Józsi bácsi szőlőt hirdető kis tábláját. Biztos nem örült neki, dehát mi már csak ilyen csibész gyerekek vagyunk így harminc évesen is.
 
@@ -43,10 +43,10 @@ Itt öltük a pipiket ebédre, és erről is írtam már egy rövidet korábban,
 
 A tyúkudvarról most persze nem csináltam képet, mert nem tudtam, hogy erről fogok írni, de szerencsére találtam még egy frankó kis pom bear ölős videót, aminek ez áll a középpontjában. Jó hogy ezeket a konzervanyagokat még nem lőttem el idáig. Alapvetően 101-et akartunk belőle forgatni, de hamar elfogyott a chips, meg az ötletek is ellaposodtak. Végül is mi a túró történhet _még_ egy nyamvadt kis medvével.
 
-http://www.youtube.com/watch?v=So1QIE2Bs18
+[youtube src="So1QIE2Bs18"]
 
 Van még egy ilyen remek videó, úgyhogy azt is elmondom, hogy a ház tövében van egy hatalmas vaskád, ebben esővíz gyűlik. Régebben egy nagy vas(?)hordó volt itt, valamikor 20 éve ástuk csak le ezt a kádat. A hordóban vágtam tönkre az első órámat, mert elfelejtettem levenni mielőtt belemásztam. Emlékszem, hogy a Willy Fog volt a tévében, amikor apu elkezdte szárítani, de sajnos menthetetlen volt. Pedig milyen szép kék kis óra volt.
 
 Érdekes, hogy az elektronikus cuccok nálunk mindig folyadék általi halált halnak. Apu egyszer vodkával végezte ki a mobilját, a másikat meg talán beejtette a WC-be. Bár ez utóbbiban nem vagyok teljesen biztos. Na de visszakanyarodva a véres belezéshez, amire mindannyian kíváncsiak. Íme:
 
-http://www.youtube.com/watch?v=TiJPNM6BKQ4
+[youtube src="TiJPNM6BKQ4"]

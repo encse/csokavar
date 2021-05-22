@@ -5,6 +5,7 @@ import * as React from 'react';
 import { ParsedPath } from 'path';
 import markdownKatex from '@iktakahiro/markdown-it-katex';
 import markdown_it_iframe_plugin from './markdown-it-iframe';
+import markdown_it_youtube_plugin from './markdown-it-youtube';
 
 export type PageTemplateProps = {
     headingClasses: string[],
@@ -91,7 +92,9 @@ function markdownToReact(md: string): React.ReactElement<any> {
     markdownIt.use(markdownKatex, {
         output: "html",
         errorColor: "#cc0000"
-    }).use(markdown_it_iframe_plugin);
+    })
+    .use(markdown_it_iframe_plugin)
+    .use(markdown_it_youtube_plugin);
     let html = markdownIt.render(md);
     return <div dangerouslySetInnerHTML={{ __html: html }} />
 }

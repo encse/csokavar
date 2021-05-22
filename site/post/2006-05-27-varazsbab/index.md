@@ -8,4 +8,4 @@ tags:
 
 Egy jó bohóc kicsit bűvészkedni is tud. Ezt a gumis trükköt mindig meg akartam tanulni. Végre sikerült. :)
 
-http://www.youtube.com/watch?v=9eMrPGd9HI8
+[youtube src="9eMrPGd9HI8"]
