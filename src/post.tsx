@@ -4,6 +4,7 @@ import { slugify, formatDate, zeroPad } from "./util";
 import * as React from 'react';
 import { ParsedPath } from 'path';
 import markdownKatex from '@iktakahiro/markdown-it-katex';
+import markdown_it_iframe_plugin from './markdown-it-iframe';
 
 export type PageTemplateProps = {
     headingClasses: string[],
@@ -90,7 +91,7 @@ function markdownToReact(md: string): React.ReactElement<any> {
     markdownIt.use(markdownKatex, {
         output: "html",
         errorColor: "#cc0000"
-    });
+    }).use(markdown_it_iframe_plugin);
     let html = markdownIt.render(md);
     return <div dangerouslySetInnerHTML={{ __html: html }} />
 }

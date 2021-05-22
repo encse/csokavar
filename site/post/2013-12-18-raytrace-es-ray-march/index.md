@@ -23,7 +23,7 @@ Fragment shadert GLSL-ben lehet programozni. Ez egy C-nek látszó nyelv, csak m
 
 Mivel az elmúlt hónapokban csak úgy röpködtek a closure-ök, promise-ok és hasonlók az irodában, képzelhetik mekkora élmény volt összekalapálni az alábbi kis szösszenetet. Kis hijján lefejeltem a monitort a fékezéstől.
 
-\[iframe src="//csokavar.hu/projects/raymarch/spheres"\]
+/i/https://csokavar.hu/projects/raymarch/spheres
 
 Viszont működik, már amelyik böngésző támogatja a WebGL-t.
 
