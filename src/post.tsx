@@ -3,69 +3,7 @@ import metadataParse from 'markdown-yaml-metadata-parser';
 import { slugify, formatDate, zeroPad } from "./util";
 import * as React from 'react';
 import { ParsedPath } from 'path';
-import mjAPI from 'mathjax-node';
-import mk from 'markdown-it-katex';
-
-
-function decodeEntities(encodedString: string) {
-    let translate_re = /&(nbsp|amp|quot|lt|gt);/g;
-    let translate = {
-        "nbsp":" ",
-        "amp" : "&",
-        "quot": "\"",
-        "lt"  : "<",
-        "gt"  : ">"
-    };
-    return encodedString.replace(translate_re, function(match, entity) {
-        return translate[entity];
-    }).replace(/&#(\d+);/gi, function(match, numStr) {
-        let num = parseInt(numStr, 10);
-        return String.fromCharCode(num);
-    });
-}
-
-
-function typeset(encodedString: string): Promise<string> {
-    let st = decodeEntities(encodedString)
-
-    mjAPI.config({
-        MathJax: {
-        }
-    });
-    
-    mjAPI.start();
-    
-    return new Promise<string>((resolve, reject) => {
-        
-        let format = "TeX"
-        if (st.startsWith("$$")){
-            st = st.substring(2);
-        }
-        if (st.endsWith("$$")){
-            st = st.substring(0, st.length - 2);
-        }
-        if (st.startsWith("[latex]")){
-            format="inline-TeX";
-            st = st.substring("[latex]".length);
-        }
-        if (st.endsWith("[/latex]")) {
-            st = st.substring(0, st.length - "[/latex]".length);
-        }
-
-        mjAPI.typeset({
-            math: st,
-            format: format,
-            html: true,
-          }, function (data: any) {
-            if (!data.errors) {
-                resolve(data.html)
-            } else {
-                reject(data.errors)
-            }
-          });
-    });
-}
-
+import markdownKatex from 'markdown-it-katex';
 
 export type PageTemplateProps = {
     headingClasses: string[],
@@ -73,23 +11,23 @@ export type PageTemplateProps = {
     subtitle: React.ReactChild,
     featuredImage: string,
     postContent: React.ReactChild
-    footer:React.ReactChild
+    footer: React.ReactChild
 }
 
-type Template<T> = (t:T) => string;
+type Template<T> = (t: T) => string;
 
 export class PostList {
 
     readonly #htmlContent: string;
 
     constructor(
-        template: Template<PageTemplateProps>, 
+        template: Template<PageTemplateProps>,
         title: string,
-        subtitle: string, 
-        coverImage: string, 
-        baseUri: string, 
-        posts: Post[], 
-        page: number, 
+        subtitle: string,
+        coverImage: string,
+        baseUri: string,
+        posts: Post[],
+        page: number,
         postCount: number
     ) {
         let content: React.ReactElement<any>[] = [];
@@ -114,16 +52,16 @@ export class PostList {
             content.push(
                 <div className="pager">
                     {
-                        hasPrev && page > 2 ? 
+                        hasPrev && page > 2 ?
                             <div className="previous"><a href={`${baseUri}/page/${page - 1}`}>« Előző</a></div> :
-                        hasPrev ? 
-                            <div className="previous"><a href={baseUri}>« Előző</a></div> :
-                        null
+                            hasPrev ?
+                                <div className="previous"><a href={baseUri}>« Előző</a></div> :
+                                null
                     }
                     {
-                        hasNext ? 
+                        hasNext ?
                             <div className="next"><a href={`${baseUri}/page/${page + 1}`}>Következő »</a></div> :
-                        null
+                            null
                     }
                 </div>
             );
@@ -132,7 +70,7 @@ export class PostList {
         this.#htmlContent = template(
             {
                 headingClasses: ['home-page-heading'],
-                title, subtitle, 
+                title, subtitle,
                 featuredImage: coverImage,
                 postContent: <>{content}</>,
                 footer: null
@@ -140,38 +78,18 @@ export class PostList {
         )
     }
 
-    async render(): Promise<string>{
+    async render(): Promise<string> {
         return this.#htmlContent
     }
 }
 
-async function markdownToReact(md: string): Promise<React.ReactElement<any>>{
+function markdownToReact(md: string): React.ReactElement<any> {
     const markdownIt = MarkdownIt({
         html: true
     });
-    markdownIt.use(mk);
-    
-
-
+    markdownIt.use(markdownKatex);
     let html = markdownIt.render(md);
-
-    if (md.includes('$$'))  
-        console.log(html);
-
-    
-    // for (const rx of [/\[latex\].*?\[\/latex\]/sg, /\$\$.*?\$\$/sg]){
-    //     let matches = [...html.matchAll(rx)].reverse();
-    //     for (let match of matches) {
-
-    //         const tex = match[0];
-
-    //         console.log(tex);
-    //         const mathjax = await typeset(tex);
-    //         html = html.substring(0, match.index) + mathjax + html.substring(match.index + tex.length);
-    //     }
-    // }
-
-    return <div dangerouslySetInnerHTML={{__html: html}} />
+    return <div dangerouslySetInnerHTML={{ __html: html }} />
 }
 
 export class Page {
@@ -187,8 +105,8 @@ export class Page {
     readonly #template: Template<PageTemplateProps>;
 
     constructor(
-        template: Template<PageTemplateProps>, 
-        md: string, 
+        template: Template<PageTemplateProps>,
+        md: string,
         public readonly assets: readonly ParsedPath[]
     ) {
         const { metadata, content } = metadataParse(md);
@@ -204,12 +122,12 @@ export class Page {
     }
 
     async render(): Promise<string> {
-        const html = await markdownToReact(this.#mdContent);
+        const html = markdownToReact(this.#mdContent);
         return this.#template(
             {
                 headingClasses: ['home-page-heading'],
-                title: this.title, 
-                subtitle: this.subtitle, 
+                title: this.title,
+                subtitle: this.subtitle,
                 featuredImage: `images/${this.coverImage}`,
                 postContent: html,
                 footer: null
@@ -232,8 +150,8 @@ export class Post {
 
 
     constructor(
-        template: Template<PageTemplateProps>, 
-        md: string, 
+        template: Template<PageTemplateProps>,
+        md: string,
         public readonly assets: readonly ParsedPath[]
     ) {
         const { metadata, content } = metadataParse(md);
@@ -264,12 +182,12 @@ export class Post {
         const markdownIt = MarkdownIt({
             html: true
         });
-        
+
         for (let block of markdownIt.parse(content, {})) {
             if (block.content != '') {
-                this.excerpt = 
+                this.excerpt =
                     <p>
-                        <span dangerouslySetInnerHTML={{__html:markdownIt.renderer.render([block], {html: true}, {})} }/>
+                        <span dangerouslySetInnerHTML={{ __html: markdownIt.renderer.render([block], { html: true }, {}) }} />
                         <a href={this.uri} rel="bookmark">…</a>
                     </p>;
                 break;
@@ -277,13 +195,13 @@ export class Post {
         }
     }
 
-    async render(): Promise<string>{
-        const html = await markdownToReact(this.#mdContent);
+    async render(): Promise<string> {
+        const html = markdownToReact(this.#mdContent);
         return this.#template(
             {
                 headingClasses: ['home-page-heading'],
-                title: this.title, 
-                subtitle: <time className="posted-on" dateTime={this.date.toISOString()}>{formatDate(this.date)}</time>, 
+                title: this.title,
+                subtitle: <time className="posted-on" dateTime={this.date.toISOString()}>{formatDate(this.date)}</time>,
                 featuredImage: `images/${this.coverImage}`,
                 postContent: html,
                 footer: null
