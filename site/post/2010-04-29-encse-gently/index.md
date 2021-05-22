@@ -28,37 +28,43 @@ Az alábbi ábrából induljunk ki.
 
 ![IMG_050711](images/IMG_050711-500x375.jpg)
 
-Ez egy oldalnézeti kép. A csíkozott rész jelöli a falat, a piros téglalap a hűtő, amit addig döntünk, amíg a legmagasabb pontja éppen a nyílás magasságába nem esik, ezután rátoljuk a kamra falára, majd elkezdjük a talpára állítani, miközben végig hozzáér a hátsó falhoz. A hűtő méretei \[latex\]H\_x\[/latex\], \[latex\]H\_y\[/latex\], a kamráé \[latex\]K\_x\[/latex\], \[latex\]K\_y\[/latex\]. Egy adott pillanatban a helyzetet egy \[latex\]\\alpha\[/latex\] szöggel jellemezhetjük. A kérdés az, hogy van-e olyan \[latex\]\\alpha\[/latex\] a \[latex\]\[0,\\pi/2\]\[/latex\] tartományban, amikor a \[latex\](K\_x, K\_y)\[/latex\] pont a hűtő belsejébe kerül.
+Ez egy oldalnézeti kép. A csíkozott rész jelöli a falat, a piros téglalap a hűtő, amit addig döntünk, amíg a legmagasabb pontja éppen a nyílás magasságába nem esik, ezután rátoljuk a kamra falára, majd elkezdjük a talpára állítani, miközben végig hozzáér a hátsó falhoz. A hűtő méretei $H_x$, $H_y$, a kamráé $K_x$, $K_y$. Egy adott pillanatban a helyzetet egy $\alpha$ szöggel jellemezhetjük. A kérdés az, hogy van-e olyan $\alpha$ a $[0,\pi/2]$ tartományban, amikor a $(K_x, K_y)$ pont a hűtő belsejébe kerül.
 
-Egészítsük ki az ábrát az \[latex\]A\[/latex\] és \[latex\]B\[/latex\] pontokkal, az ezeken átmenő \[latex\]e\[/latex\] egyenessel. Toljuk el \[latex\]e\[/latex\]-t \[latex\]e'\[/latex\]-be, ami a hűtő külső oldalán fut végig, és vegyük fel a talajjal és a fallal alkotott metszéspontokba az \[latex\]A', B'\[/latex\] pontokat.
+Egészítsük ki az ábrát az $A$ és $B$ pontokkal, az ezeken átmenő $e$ egyenessel. Toljuk el $e$-t $e'$-be, ami a hűtő külső oldalán fut végig, és vegyük fel a talajjal és a fallal alkotott metszéspontokba az $A', B'$ pontokat.
 
 ![IMG_05081](images/IMG_05081-500x375.jpg)
 
 Kis trigonometrikus bűvészkedéssel:
 
-$$ A = (H\_y\\cos\\alpha, 0)\\\\B=(0, H\_y\\sin\\alpha) $$
+$$\begin{aligned}
+   A &= (H_y\cos\alpha, 0) \\
+   B &= (0, H_y\sin\alpha)
+\end{aligned}$$
 
 valamint
 
-$$A' = (H\_x\\sin\\alpha + H\_y \\cos\\alpha, 0)\\\\B'=(0, H\_x\\cos\\alpha + H\_y\\sin\\alpha)$$
+$$\begin{aligned}
+   A' &= (H_x\sin\alpha + H_y \cos\alpha, 0) \\
+   B' &= (0, H_x\cos\alpha + H_y\sin\alpha)
+\end{aligned}$$
 
-Az \[latex\]\\overrightarrow{AB} = (-H\_y \\cos\\alpha, H\_y \\sin\\alpha)\[/latex\] óramutató járása szerinti 90 fokos elforgatásával és a hosszával való osztás után kapjuk az egyenes normálvektorát: \[latex\]\\underline{n}=(\\sin\\alpha, \\cos\\alpha)\[/latex\]. Ezzel már felírhatjuk \[latex\]e'\[/latex\] normálvektoros egyenletét:
+Az $\overrightarrow{AB} = (-H_y \cos\alpha, H_y \sin\alpha)$ óramutató járása szerinti 90 fokos elforgatásával és a hosszával való osztás után kapjuk az egyenes normálvektorát: $\underline{n}=(\sin\alpha, \cos\alpha)$. Ezzel már felírhatjuk $e'$ normálvektoros egyenletét:
 
-$$ n\_x(x-A'\_x)+n\_y(y-A'\_y) = 0 $$
+$$ n_x(x-A'_x)+n_y(y-A'_y) = 0 $$
 
 Behelyettesitve a fentieket:
 
-$$\\begin{equation} \\tag{e'} x\\sin\\alpha-H\_x-H\_y\\sin\\alpha \\cos\\alpha + y\\cos\\alpha=0 \\end{equation} $$
+$$\tag{e'} x\sin\alpha-H_x-H_y\sin\alpha \cos\alpha + y\cos\alpha=0$$
 
-Mivel az x és y együtthatójának négyzetösszege 1, az egyenlet bal oldalába helyettesítve a \[latex\](K\_x, K\_y)\[/latex\] pont koordinátáit, éppen a pont és egyenes (előjeles) távolságát kapjuk. (Nem emlékszem hogy hívják az egyenesnek ezt a fajta egyenletét.)
+Mivel az x és y együtthatójának négyzetösszege 1, az egyenlet bal oldalába helyettesítve a $(K_x, K_y)$ pont koordinátáit, éppen a pont és egyenes (előjeles) távolságát kapjuk. (Nem emlékszem hogy hívják az egyenesnek ezt a fajta egyenletét.)
 
-Már csak azt kell kiderítenünk, hogy adott \[latex\]K\_x\[/latex\], \[latex\]K\_y\[/latex\], \[latex\]H\_x\[/latex\], \[latex\]H\_y\[/latex\] mellett minden \[latex\]\\alpha\[/latex\] esetén igaz-e, hogy
+Már csak azt kell kiderítenünk, hogy adott $K_x$, $K_y$, $H_x$, $H_y$ mellett minden $\alpha$ esetén igaz-e, hogy
 
-$$ K\_x\\sin\\alpha-H\_x-H\_y\\sin\\alpha \\cos\\alpha + K\_y\\cos\\alpha \\geq 0 $$
+$$K_x\sin\alpha-H_x-H_y\sin\alpha \cos\alpha + K_y\cos\alpha \geq 0$$
 
 Sajnos a feladatot analitikus eszközökkel nem lehet megoldani (legalábbis nem sikerült), de megoldható Maple-ben numerikus módon.
 
-Egész pontosan a kiválasztott hűtők paramétereivel megkerestem a távolság minimumát a \[latex\]\[0,\\pi/2\]\[/latex\] tartományban és megnéztem, hogy pozitív-e.
+Egész pontosan a kiválasztott hűtők paramétereivel megkerestem a távolság minimumát a $[0,\pi/2]$ tartományban és megnéztem, hogy pozitív-e.
 
 A végeredmény szerint választottunk hűtőt és bár hihetetlen, de tényleg befért, még szenvedni sem kellett vele.
 

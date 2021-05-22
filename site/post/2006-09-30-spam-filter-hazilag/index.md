@@ -23,7 +23,8 @@ Adott tehát egy IP cím. A példa kedvéért mondjuk 127.0.0.2.. Ez megállapod
 
 Konkrétan:
 
-\>nslookup 2.0.0.127.sbl-xbl.spamhaus.org
+<pre><code>
+>nslookup 2.0.0.127.sbl-xbl.spamhaus.org
 Server: xxx.xxx.xxx.xxx
 Address: xxx.xxx.xxx.xxx#yyy
 
@@ -32,37 +33,43 @@ Name: 2.0.0.127.sbl-xbl.spamhaus.org
 Address: 127.0.0.2
 Name: 2.0.0.127.sbl-xbl.spamhaus.org
 Address: 127.0.0.4
+</code></pre>
 
 A két válasz azt jelenti, hogy 'fúj spam', ha nem kapnánk választ: 'nem spam'. Precízebben:
 
+<pre><code>
 127.0.0.2: Direct UBE sources, verified spam services and ROKSO spammers
 127.0.0.4-6: Illegal 3rd party exploits, including proxies, worms and trojan exploits
+</code></pre>
 
 Nekem ez nagyon bejön... Aztán találtam még egy php kódot is (fúj konzerv) hozzá:
 
-function is\_blacklisted($ip)
+<pre><code>
+function is_blacklisted($ip)
 {
   // written by satmd, do what you want with it, but keep the author please
   $result=Array();
-  $dnsbl\_check=array("bl.spamcop.net",
+  $dnsbl_check=array("bl.spamcop.net",
                      "list.dsbl.org",
                      "sbl.spamhaus.org");
   if ($ip)
   {
     $quads=explode(".",$ip);
-    $rip=$quads\[3\].".".$quads\[2\].".".$quads\[1\].".".$quads\[0\];
-    for ($i=0; $i<count($dnsbl\_check); $i++)
+    $rip=$quads[3].".".$quads[2].".".$quads[1].".".$quads[0];
+    for ($i=0; $i&lt;count($dnsbl_check); $i++)
     {
-      if (checkdnsrr($rip.".".$dnsbl\_check\[$i\].".","A"))
+      if (checkdnsrr($rip.".".$dnsbl_check[$i].".","A"))
       {
-        $result\[\]=Array($dnsbl\_check\[$i\],$rip.".".$dnsbl\_check\[$i\]);
+        $result[]=Array($dnsbl_check[$i],$rip.".".$dnsbl_check[$i]);
       }
     }
     return $result;
   }
 }
+</code></pre>
 
 Ennyi. :)
+
 
 ### Javascript
 

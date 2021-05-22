@@ -3,7 +3,7 @@ import metadataParse from 'markdown-yaml-metadata-parser';
 import { slugify, formatDate, zeroPad } from "./util";
 import * as React from 'react';
 import { ParsedPath } from 'path';
-import markdownKatex from 'markdown-it-katex';
+import markdownKatex from '@iktakahiro/markdown-it-katex';
 
 export type PageTemplateProps = {
     headingClasses: string[],
@@ -87,7 +87,10 @@ function markdownToReact(md: string): React.ReactElement<any> {
     const markdownIt = MarkdownIt({
         html: true
     });
-    markdownIt.use(markdownKatex);
+    markdownIt.use(markdownKatex, {
+        output: "html",
+        errorColor: "#cc0000"
+    });
     let html = markdownIt.render(md);
     return <div dangerouslySetInnerHTML={{ __html: html }} />
 }
@@ -196,6 +199,8 @@ export class Post {
     }
 
     async render(): Promise<string> {
+        console.log(this.uri);
+
         const html = markdownToReact(this.#mdContent);
         return this.#template(
             {

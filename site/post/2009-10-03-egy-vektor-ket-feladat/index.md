@@ -8,11 +8,11 @@ tags:
 coverImage: "blackboard-bog-standard-e1447877703210.jpg"
 ---
 
-Adott egy \[latex\]n\[/latex\] elemű egész számokat tartalmazó \[latex\]A\[/latex\] vektor.
+Adott egy $n$ elemű egész számokat tartalmazó $A$ vektor.
 
-1\. Adjuk meg azt a \[latex\]P\[/latex\] és \[latex\]Q\[/latex\] indexet, ami maximalizálja a \[latex\]\\sum\_{i=P}^{Q}A\[i\]\[/latex\] részvektort. Az algoritmus műveletideje legyen \[latex\]O(n)\[/latex\].
+1. Adjuk meg azt a $P$ és $Q$ indexet, ami maximalizálja a $\sum_{i=P}^{Q}A[i]$ részvektort. Az algoritmus műveletideje legyen $O(n)$.
 
-2\. Válasszuk ki a vektor második legkisebb elemét \[latex\]n + O(log\_{2}n)\[/latex\] összehasonlítással.
+2. Válasszuk ki a vektor második legkisebb elemét $n + O(log_{2}n)$ összehasonlítással.
 
 ### Frissítés 2019 október 7.
 
@@ -22,25 +22,26 @@ Olyan sok lehetőségünk nincs, tekintve, hogy csak egyszer mehetünk végig az
 
 Egy lehetséges ötlet az, hogy minden indexre próbáljuk meghatározni azt a legnagyobb részösszeget, ami az adott elemnél végződik.
 
-Ciklusváltozónak válasszuk a kis \[latex\]q\[/latex\]-t, és vezessük be a kis \[latex\]p\[/latex\]-t is, a hozzátartozó intervallum kezdetét, az összeg legyen \[latex\]m\[/latex\] és tartsuk még nyilván a \[latex\]M\[/latex\] maximum összeget is, valamint az ehhez tartozó nagy \[latex\]P\[/latex\], \[latex\]Q\[/latex\] indexeket.
+Ciklusváltozónak válasszuk a kis $q$-t, és vezessük be a kis $p$-t is, a hozzátartozó intervallum kezdetét, az összeg legyen $m$ és tartsuk még nyilván a $M$ maximum összeget is, valamint az ehhez tartozó nagy $P$, $Q$ indexeket.
 
-Induláskor legyen \[latex\]p = q = P = Q = 0\[/latex\] és \[latex\]m = M = A\[0\]\[/latex\].
+Induláskor legyen $p = q = P = Q = 0$ és $m = M = A[0]$.
 
-Ha megvagyunk \[latex\]q\[/latex\]-ig, akkor \[latex\]q + 1\[/latex\]-re viszonylag könnyen átléphetünk, hiszen ha \[latex\]m\[/latex\] negatív volt, akkor új intervallumot kell kezdenünk, ha pedig pozitív, akkor érdemes az előzőt folytatni.
+Ha megvagyunk $q$-ig, akkor $q + 1$-re viszonylag könnyen átléphetünk, hiszen ha $m$ negatív volt, akkor új intervallumot kell kezdenünk, ha pedig pozitív, akkor érdemes az előzőt folytatni.
 
-Ezután már csak a \[latex\]P\[/latex\], \[latex\]Q\[/latex\] és \[latex\]M\[/latex\] beállítgatása van hátra és kész is vagyunk:
+Ezután már csak a $P$, $Q$ és $M$ beállítgatása van hátra és kész is vagyunk:
 
-**function** maxContiguousSum(A): 
+<pre><code>
+<b>function</b> maxContiguousSum(A): 
   p = q = P = Q = 0
-  m = M = A\[0\]
-  **for** q **in** 1 .. A.length:
-    **if** m < 0:
-      (p, m) = (q, A\[q\])
-    **else**:
+  m = M = A[0]
+  <b>for</b> q <b>in</b> 1 .. A.length:
+    <b>if</b> m < 0:
+      (p, m) = (q, A[q])
+    <b>else</b>:
       m = A\[q\] + m
-
-    **if** m > M:
+    <b>if</b> m > M:
       (P, Q, M) = (p, q, m)
-  **return** (P, Q)
+  <b>return</b> (P, Q)
+</code></pre>
 
 Ez a feladat egyébként az irodalomban [maxium subarray problem](https://en.wikipedia.org/wiki/Maximum_subarray_problem) néven ismert, a fenti megoldás pedig a Kadane algoritmus egy változata.
