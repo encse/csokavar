@@ -4,7 +4,7 @@ date: "2013-10-04"
 tags: 
   - "feladat"
   - "geekseg"
-coverImage: "photo.jpg"
+coverImage: images/photo.jpg
 ---
 
 Tegnap elkezdtem a Courserán egy [kriptográfia tanfolyamot](https://www.coursera.org/course/crypto). Biztos jó lesz, de sajnos már megy egy pár hete, így rögtön egy hónap lemaradással indulok, szóval össze kell kapnom magamat.

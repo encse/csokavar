@@ -4,6 +4,7 @@ import { Post, Page, PostList, PageTemplateProps } from './post';
 import { chunks } from './util';
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
+import { AssetManager } from './assets';
 
 type Asset = ParsedPath;
 
@@ -63,14 +64,21 @@ async function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: strin
             .replace('{{ footer }}', renderReactChild(props.footer))
     }
 
-    const pages: Page[] = collectPostlike('site/page', (md, assets) => new Page(template, md, assets));
-    const posts: Post[] = collectPostlike('site/post', (md, assets) => new Post(template, md, assets));
+    const pages: Page[] = collectPostlike(
+        'site/page', 
+        (md, assetPaths) => new Page(template, md, assetPaths)
+    );
+
+    const posts: Post[] = collectPostlike(
+        'site/post', 
+        (md, assetPaths) => new Post(template, md, assetPaths)
+    );
 
     for (const p of [...posts, ...pages]) {
         const pDir = path.join(fpatOut, p.uri)
         const htmlContent = await p.render();
         writeFile(path.join(pDir, 'index.html'), htmlContent);
-        for (let asset of p.assets) {
+        for (let asset of p.assetManager.paths) {
             writeFile(
                 path.join(pDir, asset.dir, asset.base), 
                 fs.readFileSync(path.join(asset.root, asset.dir, asset.base)));

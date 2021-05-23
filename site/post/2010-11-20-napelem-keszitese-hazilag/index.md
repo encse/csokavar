@@ -4,7 +4,7 @@ date: "2010-11-20"
 tags: 
   - "geekseg"
   - "villamosmernokseg"
-coverImage: "ΙΚ1.jpg"
+coverImage: images/ΙΚ1.jpg
 ---
 
 Villamosipari anyagismeretből azt a feladatot kaptuk, hogy válasszunk ki bármilyen az anyagismeret témájába vágó anyagot, és írjunk róla valamit. Elsőéves villamismérnök halgatóként a legmesszebbmenőkig elítélem ezt a feladatkiosztást, hiszen honnan a .... kéne nekem bármit tudni az anyagtudományról, meg arról, hogy mi vág a témájába. Meg is mondtam a tanárnak, hogy tőlem ne várjon érdekességeket, a napelemekről tudok írni, mert az viszonylag jól dokumentált mindenfelé a neten. De azért, hogy ne legyen túl száraz a dolog, és főleg, hogy én is élvezzem egy kicsit, megpróbálkozom itthon napelem készítésével.

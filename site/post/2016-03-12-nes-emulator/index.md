@@ -5,7 +5,7 @@ tags:
   - "eniko"
   - "geekseg"
   - "szemelyes"
-coverImage: "ezgif-4-cec339a7d2.gif"
+coverImage: images/ezgif-4-cec339a7d2.gif
 ---
 
 Januárban megint rám jött a hmm... 'csinálhatnék', és valami oknál fogva pont egy Nintendo emulátor mellett döntöttem. Beugrottak a Dévényi Tibi bácsi-féle Nintendo játékok, és hogy minden délután nyálcsorgatva néztük a tévén, ahogy a Czigány család Super Mario Brosozik. Nekünk nem volt NES-ünk, és nem is játszottam igazi gépen soha.

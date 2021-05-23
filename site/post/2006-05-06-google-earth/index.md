@@ -16,6 +16,9 @@ Az amerikai városok tele vannak webkamerák linkjeivel, így élőben beleshe
 
 Tulajdonképpen erről akartam írni, ugyanis pár hete ingyen elérhető a [Google SketchUp](http://sketchup.google.com/) nevű program, amivel most már bárki készíthet 3D modelleket a Google Earth-höz. Már alig várom, hogy megjelenjenek az első budapesti hidak, fontosabb középületek. Ezzel a programmal játszottam délután, és pár óra alatt megcsináltam a nagymamám házának 3D modelljét. Íme, itt voltam gyerek:
 
-\[gallery type="square" ids="3255,3256"\]
+[gallery]
+  images/haz0.jpg
+  images/haz1.jpg
+[/gallery]
 
 Sajnos Ménfőcsanakról nincs elég részletes kép ahhoz, hogy a Google Earthbe is beilleszthessem, de remélem ami késik, nem múlik...

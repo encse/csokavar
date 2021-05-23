@@ -5,7 +5,7 @@ tags:
   - "geekseg"
   - "haz"
   - "matematika"
-coverImage: "maxresdefault.jpg"
+coverImage: images/maxresdefault.jpg
 ---
 
 Vettünk hűtőt, egy élmény volt... Végigjártuk az összes boltot, kiválasztottuk a jót, aztán a neten kikerestük a legolcsóbb helyet és [megrendeltük](http://konyhabolt.hu). Eddig jól is ment, csak a kiszállítás volt szar, mert nem tudták megmondani, hogy melyik nap hozzák majd, csak előtte este hét és nyolc között. Aztán vegyél ki szabadságot másnapra... Majd biztos jön valami buzgómócsing megint, aki szerint ez így kurva jó, de engem akkor is idegesít.

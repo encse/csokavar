@@ -4,7 +4,7 @@ date: "2015-07-05"
 tags: 
   - "konyv"
   - "velemeny"
-coverImage: "pearl.jpg"
+coverImage: images/pearl.jpg
 ---
 
 Megvolt a banki elszámoltatás. Bár nekem már nincs hitelem, mégis kaptam vissza valamennyi pénzt, amit könnyen jött könnyen megy alapon az amazonos wish listám (ez rémesen néz ki magyarul) kipucolására fordítottam. Jobban mondva csak egy részét. A másik részét a NAV-nak küldtem el, mert hiába töltöttem ki tavaly, adtam oda és pecsételtettem le, hogy nem kérem a gyerekek után járó adókedvezményt, a csodálatos mobilengines papírgyáros néni mégis visszaigényelte nekem. Így aztán én is és Enikő is megkaptuk tavaly a kedvezményt, amit most büntetéssel együtt csengethettem ki az adóbevallással. Ennyit a hozzáértésről.

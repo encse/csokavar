@@ -5,7 +5,7 @@ tags:
   - "konyv"
   - "szeretem"
   - "velemeny"
-coverImage: "photo-52.jpg"
+coverImage: images/photo-52.jpg
 ---
 
 Simon Singh könyve, a Kódkönyv, a titkosírásról szól. Kezdve az alapvető betűcserélgetéstől, egészen a kvantumtitkosításig bemutatja a titkosírás fejlődését, a titkosítók és a kódfejtők örök párharcát. Valamiért nagyon szeretem ezt a könyvet. Még akkor is, ha nem én vagyok a kifejezett célközönsége. Érdekel, hiszen borzasztó kiváncsi vagyok, és az ilyen titkos dolgok mindig is megmozgatták a fantáziámat. Nincs tele mély techno blablával, remekül elmagyarázza miért rosszak a régi módszerek, és receptet ad a "kihüvelyezésükhöz" is. (Igen, ezt a hülye szót is ebből tanultam.) Ezon felül olvasmányos, és igazából csak ennyit várok tőle.

@@ -4,7 +4,7 @@ date: "2015-03-13"
 tags: 
   - "konyv"
   - "szemelyes"
-coverImage: "dek-14may10-1.jpg"
+coverImage: images/dek-14may10-1.jpg
 ---
 
 A héten ismét elkezdtem olvasni A számítógép-programozás művészetét Knuthtól. Emlékszem milyen viccesnek találtam, amikor először láttam ezt a könyvet 1998 körül az Akadémiai Kiadó győri boltjában. A programozás művészete, na ne... Persze ez még a háború előtt volt, nem sokkal mielőtt leérettségiztem, tehát lópikulát se tudtam a programozásról, meg arról, hogy ki a fene az Donald E. Knuth.

@@ -1,7 +1,7 @@
 ---
 title: "Atomreaktor látogatás"
 date: "2010-09-26"
-coverImage: "IMG_0675.jpg"
+coverImage: images/IMG_0675.jpg
 ---
 
 Pénteken a Kutatók Éjszakájának keretében megnéztük a BME kísérleti atomreaktorát belülről, működés közben. Csináltam pár képet.

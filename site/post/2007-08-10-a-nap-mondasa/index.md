@@ -5,7 +5,7 @@ tags:
   - "fun"
   - "isc"
   - "jopofa-mondas"
-coverImage: "Avril-Lavigne-hot.jpg"
+coverImage: images/Avril-Lavigne-hot.jpg
 ---
 
 > Nincs rosszabb egy nyálas picsánál, bár nagy mértékben függ attól is, hogy ki nyálazta össze. - Encsé

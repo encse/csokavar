@@ -5,7 +5,7 @@ tags:
   - "geekseg"
   - "konyv"
   - "velemeny"
-coverImage: "Shinagawa-_Departure_of_a_Daimyo_LACMA_48.jpg"
+coverImage: images/Shinagawa-_Departure_of_a_Daimyo_LACMA_48.jpg
 ---
 
 Amikor Ásványi tanár úr leosztályozta a második Prolog ZH-mat, mondott pár dolgot, aminek azóta sem néztem utána. Tudni illik nem tudtam a különbséget a zöld és piros vágás között. A ZH-ban meg piros vágásokat használtam, és ejnye-bejnye. ("De félre ne értsen nagyon jó dolgozatról van szó, csak...") Most azt már nem tudom, hogy konkrétan rossz is volt-e a megoldás, mindenesetre azt mondta a tanár úr, hogy nekünk ezt "nem szabad".

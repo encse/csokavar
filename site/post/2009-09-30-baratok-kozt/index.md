@@ -3,7 +3,7 @@ title: "Barátok közt"
 date: "2009-09-30"
 tags: 
   - "hack"
-coverImage: "20150521kos-karoly-ter-baratok-kozt-e1447533718321.jpg"
+coverImage: images/20150521kos-karoly-ter-baratok-kozt-e1447533718321.jpg
 ---
 
 A múltkor egész jópofa hackelés volt a Barátok köztben. Kamilla chates belépési adatait úgy találták ki, hogy megnézték, hogy a böngésző valamilyen kezdőbetűre (a,b,c) felajánl-e login nevet az emlékeiből. Ebből kijött a chamomile. Aztán Bandita megtippelte, hogy a jelszó biztos Kamilla kedvenc tinimagazinjának címe lesz.

@@ -5,7 +5,7 @@ tags:
   - "fun"
   - "geekseg"
   - "hacktivity"
-coverImage: "hacktivity_logo_2-e1447878090663.jpg"
+coverImage: images/hacktivity_logo_2-e1447878090663.jpg
 ---
 
 Idén is indultunk a Hacktivity Wargamen, a tavaly már jól bevált Cactus & Encsé (The Intentionals) felállásban. Nyertünk, de most tényleg csak pár percen múlt az egész. Tegnap délután még úgy jöttünk el, hogy 22 ponttal első helyen állunk, az utánunk következőnek pedig csak 13 pontja volt. Jól is aludtunk, de reggel mikor bementem kiderült, hogy az este folyamán egy csapat a nulláról eljutott 22 pontig.
@@ -14,7 +14,12 @@ Döntetlen volt a meccs reggel nyolckor, szerencsére az éjjel megoldottunk 4 m
 
 Sikerült befutni az első helyre, a nyeremény egy XBox 360-as egy Guitar Hero játékkal. Holnap eldöntjük mi legyen a sorsa. Vagy kivásárolom Cactust, vagy eladjuk Vaterán, ha nincs rá más jelentkező...
 
-\[gallery type="square" link="none" columns="2" ids="2900,2902"\] A feladatok nagyon jók voltak, és idén alig volt egy-két hibás feladvány. (Az ilyenek amúgy kurvára idegesítőek ám...) A három kedvencemet szeretném kiemelni:
+[gallery]
+  images/guitarhero.jpg
+  images/xbox360.jpg
+[/gallery]
+
+A feladatok nagyon jók voltak, és idén alig volt egy-két hibás feladvány. (Az ilyenek amúgy kurvára idegesítőek ám...) A három kedvencemet szeretném kiemelni:
 
 1\. Egy Javában írt applettel kellett Hanoi tornyait játszani, és ha sikerült átpakolni 10 korongot egyik rúdról a másikra, megkaptad a pályát megoldó kódot. Azt gondolhatnánk, hogy elég volt az appletet valahogy visszafejteni, és a kód is ott volt benne. De ennél ügyesebbek voltak a tervezők, mert a pályakódot a korongok átpakolási sorrendjéből számították ki. Tehát a megfejtéshez az eredeti problémát is mindenképp meg kellett oldani.
 

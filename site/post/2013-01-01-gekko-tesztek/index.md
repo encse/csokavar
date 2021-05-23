@@ -4,7 +4,7 @@ date: "2013-01-01"
 tags: 
   - "gekko"
   - "programozas"
-coverImage: "maxresdefault-1.jpg"
+coverImage: images/maxresdefault-1.jpg
 ---
 
 Egy játékos írt pár napja, hogy biztos minden rendben van-e a Gekkó adathalászós pályájával, mert nem akar napokig egy nem működő feladattal szívni. Megnyugtattam, hogy igen minden OK, mert kipróbáltam miután összeraktam a szervert, de ezen felbuzdulva allokáltam magamnak három gyerekalvásnyi időt, és csináltam egy kis móricka automatizált tesztelést hozzá.

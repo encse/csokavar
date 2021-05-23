@@ -5,7 +5,7 @@ tags:
   - "isc"
   - "konyv"
   - "urkutatas"
-coverImage: "Aldrin_Apollo_11.jpg"
+coverImage: images/Aldrin_Apollo_11.jpg
 ---
 
 Ez mégiscsak egy blog valahol, így, még ha oly óvatosan is, de kénytelen vagyok megemlékezni a [charlesinspace.com](http://charlesinspace.com/) weboldalról. Hát csoda, ha az ember űrmániákus lesz egy ilyen cégnél?

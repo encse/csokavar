@@ -1,7 +1,7 @@
 ---
 title: "Mérték honlap"
 date: "2010-06-28"
-coverImage: "Capture-e1447788606209.jpg"
+coverImage: images/Capture-e1447788606209.jpg
 ---
 
 Egy ideje már élesben működik a Mérték Építészeti Stúdió [honlapja](http://www.mertek.hu/), amit az Encsé Művek készített és pillanatnyilag üzemeltet is. Nézzék meg maguknak.

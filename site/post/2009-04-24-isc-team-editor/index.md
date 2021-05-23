@@ -4,7 +4,7 @@ date: "2009-04-24"
 tags: 
   - "fun"
   - "isc"
-coverImage: "Capture-e1570276074859.png"
+coverImage: images/Capture-e1570276074859.png
 ---
 
 A múltkori bejegyzéshez kapcsolódóan elkészítettem egy kis szerkesztőt, amivel bájos csapatunk szájába szövegeket adhatunk.

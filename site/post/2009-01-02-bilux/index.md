@@ -1,7 +1,7 @@
 ---
 title: "Bilux"
 date: "2009-01-02"
-coverImage: "Capture.png"
+coverImage: images/Capture.png
 ---
 
 Apu is olyan, hogy a fiával csináltatja a céges honlapot, mer az úgy költséghatékony, és már látott a gyerek egy kis html-t. Aztán meg lehet nézni az [eredményt](http://www.biluxiskola.hu). Hát így kell kinézni 2009-ben egy honlapnak?

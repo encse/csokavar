@@ -5,7 +5,7 @@ tags:
   - "fun"
   - "geekseg"
   - "matematika"
-coverImage: "hot-lotto-lottery-cheat-hacker-e1447878179998.jpg"
+coverImage: images/hot-lotto-lottery-cheat-hacker-e1447878179998.jpg
 ---
 
 [„Csoda történt a bolgár lottón”](http://index.hu/tudomany/2009/09/18/csoda_tortent_a_bolgar_lotton/) írja az index, két egymást követő héten ugyanazok a számok jöttek ki. Varázslatos, igaz? Pedig annak a valószínűsége, hogy ilyesmi történjen pontosan annyi, mint hogy valaki egyetlen szelvénnyel telitalálatot érjen el.

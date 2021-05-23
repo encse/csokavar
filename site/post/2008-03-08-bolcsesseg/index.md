@@ -6,7 +6,7 @@ tags:
   - "konyv"
   - "szemelyes"
   - "velemeny"
-coverImage: "photo-1.jpg"
+coverImage: images/photo-1.jpg
 ---
 
 Encsé nagyon leépült mostanság. A héten már a harmadik testrésze gyulladt be: a  bölcsességfoga, pontosabban a fölötte levő íny, amitől sosem tudott rendesen kinőni az a szegény fog. A fogorvos bácsi szerint ki kellene húzni, mármint ki kellene vésni onnan. hátafaszom

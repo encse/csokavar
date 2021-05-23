@@ -5,7 +5,7 @@ tags:
   - "eniko"
   - "golya"
   - "szemelyes"
-coverImage: "IMG_0118-e1447790521598.jpg"
+coverImage: images/IMG_0118-e1447790521598.jpg
 ---
 
 Ha már gyerek, akkor érdemes nagyobb helyre költözni, hiszen pillanatnyilag egyetlen szobánk van, amibe még egy rendes ágy sem fért bele. Elég kényelmetlen, mert ahogy Enikő növekszik, pontosabban a kis jövevény fejlődik, szegény hölgy egyre lehetetlenebb pózokba kényszerül, ami mellesleg azzal jár, hogy nekem már teljesen egyenesen és lapjával kell aludnom, különben leesik az ágyról.

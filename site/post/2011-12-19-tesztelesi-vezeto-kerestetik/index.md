@@ -3,7 +3,7 @@ title: "Tesztelési vezető kerestetik"
 date: "2011-12-19"
 tags: 
   - "mobilengine"
-coverImage: "517sx7ua-LL._SL1500_.jpg"
+coverImage: images/517sx7ua-LL._SL1500_.jpg
 ---
 
 Ma először vettem részt állásinterjún úgy, hogy én is interjúztattam. Nem ment valami jól, ahogy mindjárt kiderül. Tesztelési vezetőt keresünk ugyanis, és Zape megkérdezte, nincs-e kedvem beülni vele az interjúra, meg, hogy van-e valami ötletem arra, hogy milyen vizsgafeladatot adjunk fel. Én meg kitaláltam, hogy legyen valami fekete doboz, és nézzük meg mihez kezd vele.

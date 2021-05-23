@@ -5,7 +5,7 @@ tags:
   - "geekseg"
   - "konyv"
   - "velemeny"
-coverImage: "photo-1-1.jpg"
+coverImage: images/photo-1-1.jpg
 ---
 
 Múlt héten volt egy lélegzetvételnyi időm, és sikerült befejezni a [The Elements of Computing Systems](http://www.nand2tetris.org/) című könyvet. Régen volt a kezemben ilyen jó könyv. Bár igazából nem is az volt jó, hanem a mondanivalója. Mert hát melyik programozó ne szeretne legalább egyszer az életben egy saját számítógépet összerakni, egészen az alapoktól: NAND kapukból?

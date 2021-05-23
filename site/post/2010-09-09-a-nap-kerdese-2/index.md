@@ -1,7 +1,7 @@
 ---
 title: "a nap kérdése"
 date: "2010-09-09"
-coverImage: "tenyek04.jpg"
+coverImage: images/tenyek04.jpg
 ---
 
 Honnan származik az alábbi lista?

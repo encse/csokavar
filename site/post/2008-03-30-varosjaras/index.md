@@ -4,7 +4,7 @@ date: "2008-03-30"
 tags: 
   - "budapest"
   - "szemelyes"
-coverImage: "Budapest-at-Night-2.jpg"
+coverImage: images/Budapest-at-Night-2.jpg
 ---
 
 Mostanában Encsé kicsit egészségesebben él, például jóval kevesebb zsíros szart eszik a Teraszon, ami jóformán az egyetlen hely az irodához közel. Ezen kívül nagyokat sétál a városban.

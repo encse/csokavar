@@ -3,7 +3,7 @@ title: "Challenge24 EC 2015"
 date: "2015-03-04"
 tags: 
   - "geekseg"
-coverImage: "cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+coverImage: images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg
 ---
 
 Az idei EC nem sikerült túl fényesen, csak hatvanegyedikek lettünk, pedig most hárman voltunk Viktorral és Gidával, egy prezis munkatársammal, aki elég jól vágja az algoritmusokat. Sajnos nem volt elég összeszokott a csapat, és valahogy a kitalált dolgok implementálása se ment olyan jól, mint tavaly.

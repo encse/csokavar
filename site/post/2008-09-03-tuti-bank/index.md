@@ -3,7 +3,7 @@ title: "Tuti Bank"
 date: "2008-09-03"
 tags: 
   - "gekko"
-coverImage: "logo.png"
+coverImage: images/logo.png
 ---
 
 Igazán büszke vagyok, mert Cactus úgy jött be reggel az irodába, hogy annyira tetszett neki a Gekkó hetedik pályája, hogy ezért akár még egy nem túl arcpirító havidíjat is hajlandó lenne fizetni.

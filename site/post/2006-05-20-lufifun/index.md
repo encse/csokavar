@@ -15,4 +15,7 @@ Maga a hajtogatás egyszerű, bármenniyre is hihetetlennek tűnik. A kutyát pl
 
 Néhány műremek:
 
-\[gallery type="square" ids="3241,3242"\]
+[gallery]
+  images/kutya.jpg
+  images/macska2.jpg
+[/gallery]

@@ -2,10 +2,12 @@ import MarkdownIt from 'markdown-it';
 import metadataParse from 'markdown-yaml-metadata-parser';
 import { slugify, formatDate, zeroPad } from "./util";
 import * as React from 'react';
-import { ParsedPath } from 'path';
 import markdownKatex from '@iktakahiro/markdown-it-katex';
 import markdown_it_iframe_plugin from './markdown-it-iframe';
 import markdown_it_youtube_plugin from './markdown-it-youtube';
+import markdown_it_gallery_plugin from './markdown-it-gallery';
+import {AssetManager, ImageAsset} from './assets';
+import { ParsedPath } from 'path';
 
 export type PageTemplateProps = {
     headingClasses: string[],
@@ -85,7 +87,7 @@ export class PostList {
     }
 }
 
-function markdownToReact(md: string): React.ReactElement<any> {
+function markdownToReact(md: string, assetManager: AssetManager): React.ReactElement<any> {
     const markdownIt = MarkdownIt({
         html: true
     });
@@ -93,16 +95,18 @@ function markdownToReact(md: string): React.ReactElement<any> {
         output: "html",
         errorColor: "#cc0000"
     })
-    .use(markdown_it_iframe_plugin)
-    .use(markdown_it_youtube_plugin);
+        .use(markdown_it_iframe_plugin)
+        .use(markdown_it_youtube_plugin)
+        .use(markdown_it_gallery_plugin, { assetManager: assetManager });
     let html = markdownIt.render(md);
     return <div dangerouslySetInnerHTML={{ __html: html }} />
 }
 
+
 export class Page {
     readonly title: string;
     readonly subtitle: string;
-    readonly coverImage: string;
+    readonly coverImage: ImageAsset | null;
     readonly date: Date;
     readonly tags: string[];
     readonly #htmlContent: string;
@@ -110,32 +114,39 @@ export class Page {
     readonly uri: string;
     readonly #mdContent: string;
     readonly #template: Template<PageTemplateProps>;
+    public assetManager: AssetManager;
 
     constructor(
         template: Template<PageTemplateProps>,
         md: string,
-        public readonly assets: readonly ParsedPath[]
+        private readonly assetPaths: ParsedPath[]
     ) {
+
         const { metadata, content } = metadataParse(md);
         this.date = new Date(metadata.date);
         this.title = metadata.title;
         this.subtitle = metadata.subtitle;
-        this.coverImage = metadata.coverImage;
+
+
         this.tags = metadata.tags || [];
         this.slug = metadata.slug || slugify(this.title);
         this.uri = this.slug;
+        this.assetManager = new AssetManager(this.assetPaths, this.uri);
+
+        this.coverImage = metadata.coverImage ? this.assetManager.lookup(metadata.coverImage) : null;
+
         this.#template = template;
         this.#mdContent = content;
     }
 
     async render(): Promise<string> {
-        const html = markdownToReact(this.#mdContent);
+        const html = markdownToReact(this.#mdContent, this.assetManager);
         return this.#template(
             {
                 headingClasses: ['home-page-heading'],
                 title: this.title,
                 subtitle: this.subtitle,
-                featuredImage: this.coverImage ? `images/${this.coverImage}` : null,
+                featuredImage: this.coverImage?.uri,
                 postContent: html,
                 footer: null
             }
@@ -145,7 +156,7 @@ export class Page {
 
 export class Post {
     readonly title: string;
-    readonly coverImage: string;
+    readonly coverImage: ImageAsset;
     readonly date: Date;
     readonly tags: string[];
     readonly #htmlContent: string;
@@ -155,16 +166,16 @@ export class Post {
     readonly uri: string;
     readonly excerpt: React.ReactElement<any>;
 
+    public assetManager: AssetManager;
 
     constructor(
         template: Template<PageTemplateProps>,
         md: string,
-        public readonly assets: readonly ParsedPath[]
+        private readonly assetPaths: ParsedPath[]
     ) {
         const { metadata, content } = metadataParse(md);
         this.date = new Date(metadata.date);
         this.title = metadata.title;
-        this.coverImage = metadata.coverImage ? `images/${metadata.coverImage}` : null;
         this.tags = metadata.tags || [];
         this.slug = metadata.slug || slugify(this.title);
 
@@ -172,6 +183,9 @@ export class Post {
         this.#mdContent = content;
 
         this.uri = `/blog/${zeroPad(this.date.getFullYear(), 4)}/${zeroPad(this.date.getMonth() + 1, 2)}/${this.slug}/`;
+
+        this.assetManager = new AssetManager(this.assetPaths, this.uri);
+        this.coverImage = metadata.coverImage != null ? this.assetManager.lookup(metadata.coverImage) : null;
 
         this.excerpt = <></>;
 
@@ -203,13 +217,13 @@ export class Post {
             </p>
         }
 
-        const html = markdownToReact(this.#mdContent);
+        const html = markdownToReact(this.#mdContent, this.assetManager);
         return this.#template(
             {
                 headingClasses: [],
                 title: this.title,
                 subtitle: <time className="posted-on" dateTime={this.date.toISOString()}>{formatDate(this.date)}</time>,
-                featuredImage: this.coverImage,
+                featuredImage: this.coverImage?.uri,
                 postContent: html,
                 footer: footer
             }

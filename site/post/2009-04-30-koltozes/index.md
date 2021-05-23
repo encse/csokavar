@@ -4,7 +4,7 @@ date: "2009-04-30"
 tags: 
   - "eniko"
   - "metaentry"
-coverImage: "1560919091129.jpg"
+coverImage: images/1560919091129.jpg
 ---
 
 Érdekes, hogy Cséz és Kemeron, Encsé és Encsi valamint a csókavár szervere is költöznek a hétvégén.

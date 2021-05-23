@@ -3,7 +3,7 @@ title: "Fordított világ"
 date: "2011-12-11"
 tags: 
   - "geekseg"
-coverImage: "alice-wonderland-vintage-image-graphicsfairy007c.jpg"
+coverImage: images/alice-wonderland-vintage-image-graphicsfairy007c.jpg
 ---
 
 Azon gondolkotunk valamelyik ebéd után, hogy milyen érdekes lenne egy olyan bolygón élni, ahol a funkcionális programozási paradigma került előtérbe, nem az imperatív vonal. Az egész természetesen ott indul, hogy a számítógépekben levő processzorok gráfredukciós algoritmusokkal működnének. Minden kisiskolás valami lebutított Haskellt próbálgatna Logo helyett (típusok nélkül). A mainstream munkahelyeken is funkcionális programozók ülnének, a nagyobb cégekben a túl sok enterprise pirulát beszedett arhitectektek pedig mindent kategóriákkal és én nem tudom milyen bifunktorokal absztrahálnának szarrá.

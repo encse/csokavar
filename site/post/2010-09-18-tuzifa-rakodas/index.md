@@ -5,7 +5,7 @@ tags:
   - "fejtoro"
   - "feladat"
   - "geekseg"
-coverImage: "hasitottfa.jpg"
+coverImage: images/hasitottfa.jpg
 ---
 
 Ezt a jóságot Enikő Facebook falán láttam, és kicsit még ki is egészítem, hogy lássuk, hogy egy sima matekpélda hogy kísérheti végig tanulmányainkat.

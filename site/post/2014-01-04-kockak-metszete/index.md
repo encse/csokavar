@@ -5,7 +5,7 @@ tags:
   - "fun"
   - "geekseg"
   - "grafika"
-coverImage: "cubes.gif"
+coverImage: images/cubes.gif
 ---
 
 Az egyetemen volt egy olyan beadandó, amiben két kocka metszetét kellett megjeleníteni. Egy egész hétvégét eltöltöttem vele, mire kész lett. Kiszámoltam egy poliédernek és egy féltérnek metszeteként létrejövő poliédert. Így az egyik kockát mint poliédert a másik kockát határoló félterekkel egyesével elmetszve megkaptam a végeredményt. Ezt utána már csak ki kellett rajzolni.

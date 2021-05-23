@@ -4,7 +4,7 @@ date: "2013-10-13"
 tags: 
   - "csalad"
   - "fun"
-coverImage: "IMG_1409.jpg"
+coverImage: images/IMG_1409.jpg
 ---
 
 Tegnap voltunk Csanakon, csináltam képeket mindkét gyerekről. Itt van mindjárt Zsófi:

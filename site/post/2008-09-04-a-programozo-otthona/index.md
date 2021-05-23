@@ -7,7 +7,7 @@ tags:
   - "geekseg"
   - "isc"
   - "matematika"
-coverImage: "0191162_PE345209_S5.jpg"
+coverImage: images/0191162_PE345209_S5.jpg
 ---
 
 Beszélgettünk Dávid kollégával, és megint előkerültek a geek lét előnyei. Mert annyira büszke a vízmértékes esetre (joggal, mindjárt kivesézem). Én meg ezúttal azzal vágtam vissza, hogy miért mit gondol, nálam tán nem 17 csipesszel van feltéve a függöny?
@@ -26,32 +26,32 @@ Függönyt ugye úgy könnyű feltenni, hogy fogod a két szélső csipeszt, fel
 
 #### Na ezt így nem
 
-Építsünk inkább egy an sorozatot - akkor is ha fáj -, aminek minden eleme azzal a roppant kellemes tulajdonsággal bír, hogy annyi csipesszel könnyű feltenni a függönyt.
+Építsünk inkább egy $a_n$ sorozatot - akkor is ha fáj -, aminek minden eleme azzal a roppant kellemes tulajdonsággal bír, hogy annyi csipesszel könnyű feltenni a függönyt.
 
-a0 := 2 csipesz jó.
+$a_0 := 2$ csipesz jó.
 
 Ha most a két csipesz közé teszünk egy harmadikat, akkor arra az egy új csipeszre elég a függöny közepét felcsíptetni.
 
-a1 := 3 csipesz jó.
+$a_1 := 3$ csipesz jó.
 
 Ha most megint minden két szomszédos csipesz közé beteszünk egy újabbat, akkor azokra ugyanígy a megfelelő darab közepének megkeresésével fel tudjuk tenni a függönyt.
 
-a2 := 5 csipesz jó.
+$a_2 := 5$ csipesz jó.
 
-És így tovább, ha an csipeszt szerettünk, akkor an+1 = an + an -1 = 2 \* an - 1 csipeszt megint szeretni fogunk.
+És így tovább, ha $a_n$ csipeszt szerettünk, akkor $a_{n+1} = a_n + a_n - 1 = 2 * a_n - 1$ csipeszt megint szeretni fogunk.
 
-#### De mennyi az az an?
+#### De mennyi az az $a_n$?
 
-Mivel a0 \= 2 = 20 +1 , a1 = 3 = 21+1, az a sejtésünk támadhat, hogy a sorozat n-edik eleme an = 2n+1.
+Mivel $a_0 = 2 = 2^0 +1$ , $a_1 = 3 = 2^1+1$, az a sejtésünk támadhat, hogy a sorozat n-edik eleme $a_n = 2^n+1$.
 
 _Nézzük teljes indukcióval._
 
 Az n=0 ill. 1 eseteket már be is láttuk.
 
-Tegyük fel, hogy valamilyen n-re az indukciós feltevés már igaz, akkor an+1 = 2 \* an - 1 = 2 \* (2n+1) - 1 = 2n+1+2-1 = 2n+1+1, és milyen meglepő: pontosan ezt akartuk igazolni. ∎
+Tegyük fel, hogy valamilyen n-re az indukciós feltevés már igaz, akkor $a_{n+1} = 2 * a_n - 1 = 2 * (2^{n}+1) - 1 = 2^{n+1}+2-1 = 2^{n+1}+1$, és milyen meglepő: pontosan ezt akartuk igazolni. □
 
 Imádom az ilyen megsejtjük, aztán majdcsak lesz valami jellegű bizonyításokat. Az ég világon semmit nem árulnak el a mögötte levő gondolatokról. De azért sikerült belátnuk az alábbi tételt.
 
-_**Függönyökről szóló tétel:** tetszőleges n nem negatív egész szám esetén an = 2n+1 számú csipeszre könnyű a függönyt felcsíptetni. (Speciálisan nálam 9 illetve 17 csipesszel vannak feltéve itthon.)_
+_**Függönyökről szóló tétel:** tetszőleges n nem negatív egész szám esetén $a_n = 2^n+1$ számú csipeszre könnyű a függönyt felcsíptetni. (Speciálisan nálam 9 illetve 17 csipesszel vannak feltéve itthon.)_
 
 Tudom: menjek a picsába. Szeretnék.

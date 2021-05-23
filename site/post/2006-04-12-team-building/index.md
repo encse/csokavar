@@ -4,7 +4,7 @@ date: "2006-04-12"
 tags: 
   - "isc"
   - "velemeny"
-coverImage: "grldn01.jpg"
+coverImage: images/grldn01.jpg
 ---
 
 Mi is lehet jobb egy jó kis csapatépítő vállalati sörözésnél? Talán egy kis illegális autóverseny a kollégákkal (NFSMW - munkaidőben). Na de tegnap nem ez volt, hanem a Sör. A műintézmény neve Tajtékos napok étterem ([www.tajtekosnapok.hu](http://www.tajtekosnapok.hu/)), egyenesen egy Boris Vian regényből. A névválasztás szerencsésnek mondható, különösen ha figyelembe vesszük, hogy az alternatívák között a Köpök a sírotokra, ill. az Öljünk meg minden rohadékot szerepel ugyanettől a szerzőtől.

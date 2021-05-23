@@ -26,13 +26,11 @@ export function iframe(state: StateInline, src: string){
     ];
 
     token = state.push("iframe_open", "iframe", 1);
-    token.markup = "/i/"
     token.attrs = [
         ["frameborder", "0"],
         ["src", src]
     ];
     token = state.push("iframe_close", "iframe", -1);
-    token.markup = "/i/";
 
     token = state.push("div_close", "div", -1);
 

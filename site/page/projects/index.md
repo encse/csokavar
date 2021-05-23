@@ -2,7 +2,7 @@
 title: "Projektek"
 slug: "projects"
 date: "2008-06-30"
-coverImage: "about-scaled-e1610655487115.jpg"
+coverImage: images/about-scaled-e1610655487115.jpg
 ---
 
 <style>

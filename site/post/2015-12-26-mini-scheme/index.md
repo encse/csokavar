@@ -4,7 +4,7 @@ date: "2015-12-26"
 tags: 
   - "geekseg"
   - "konyv"
-coverImage: "0001-e1451228724420.jpg"
+coverImage: images/0001-e1451228724420.jpg
 ---
 
 Nemrégiben fejeztem be két aranyos Scheme könyvet a Little Schemert, és a folytatását a Seasoned Schemert. Bár nem sok újdonságot találtam bennünk, mégis nagyon szerethetők, főleg az illusztrációk miatt.

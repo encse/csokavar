@@ -12,4 +12,7 @@ Na de most a GLS-es futár kicsit maga alá szart, ahogy mondani szokás. (FSH-2
 
 Gyönyörű, szívmelengető felvételek:
 
-\[gallery type="square" ids="2962,2961"\]
+[gallery]
+  images/l-640-480-79eccb05-0108-42b9-b31e-afb0f8d47f21.jpeg
+  images/p-640-480-44655016-301e-4340-ac4a-3010e58f73cb.jpeg
+[/gallery]

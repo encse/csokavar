@@ -3,7 +3,7 @@ title: "Ha az ISC zséfilm lenne"
 date: "2011-02-14"
 tags: 
   - "isc"
-coverImage: "oceans-twelve-504f4b226fcdf-1.jpg"
+coverImage: images/oceans-twelve-504f4b226fcdf-1.jpg
 ---
 
 ## Encsé's nine

@@ -6,7 +6,7 @@ tags:
   - "geekseg"
   - "nyomtatas"
   - "zarvanyok"
-coverImage: "4-abra.jpg"
+coverImage: images/4-abra.jpg
 ---
 
 Vannak ilyen evolúciós zsákutcák az informatikában. Csak foltozgatják őket évek óta, de nem vezetnek sehova. Vajon kinek jó az, hogy a harmadik évezredben még DOS alatt fut a cége ügyviteli szofvere? Biztos, hogy azóta semmit sem találtak fel, ami esetleg hasznos lenne? Mást ne mondjak: egér for free? Hmm? Egynél több program futtatása? Vágólap? Tucatnyi használható windows control? Nyomtató megosztása? Egyáltalán: támogatott nyomtatás? Együttműködő alkalmazások? Neeem az már tényleg túl durva lenne. Inkább Mari néni kinyomtatja ami kell, aztán begépeli Excelbe, ha már a főnöknek mindenképp grafikon kell a bevétel alakulásáról. Havonta egyszer úgyis elég...

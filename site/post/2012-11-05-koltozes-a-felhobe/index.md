@@ -3,7 +3,7 @@ title: "Költözés a felhőbe"
 date: "2012-11-05"
 tags: 
   - "metaentry"
-coverImage: "Clouds_on_a_nice_day_by_EdenMarel.jpg"
+coverImage: images/Clouds_on_a_nice_day_by_EdenMarel.jpg
 ---
 
 Nos. Az 500 év letelt, a hétvégén átköltöztettem mindent a felhőbe, egész pontosan egy Amazon EC2, linuxos micro instance-ra, ami a legolcsóbb megoldás volt az összes közül.

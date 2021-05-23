@@ -4,7 +4,7 @@ date: "2010-04-02"
 tags: 
   - "eniko"
   - "szemelyes"
-coverImage: "IMG_0085-e1447790120144.jpg"
+coverImage: images/IMG_0085-e1447790120144.jpg
 ---
 
 Tegnap elvettem a Hölgyet. Sokan azt gondolták, hogy csak áprilisi tréfa lesz, inkluzíve az étterem személyzetét, de végül minden rendben volt, minden vendég odatalált satöbbi.

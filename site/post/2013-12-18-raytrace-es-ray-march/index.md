@@ -6,7 +6,7 @@ tags:
   - "geekseg"
   - "grafika"
   - "matematika"
-coverImage: "raytrace1.jpg"
+coverImage: images/raytrace1.jpg
 ---
 
 Gyerekkoromban rengeteg kisebb-nagyobb grafikai demót csináltunk Lukács haverommal PC-re. Persze ő mindig ügyesebb volt nálam, de azért én is összeraktam egy-két pörgő-forgó poliédert, mindenféle tűz effekteket meg plazmákat, Rubik kockát meg ilyesmit. Akkoriban még C-ben programoztunk, és assemblyben az igazán kritikus részeknél.

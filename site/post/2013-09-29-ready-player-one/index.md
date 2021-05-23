@@ -5,7 +5,7 @@ tags:
   - "konyv"
   - "szemelyes"
   - "velemeny"
-coverImage: "ready-player-one1.png"
+coverImage: images/ready-player-one1.png
 ---
 
 Tudom, hogy mostanában alig-alig blogolok, de szeretném visszahozni ezt a jó szokásomat, mert hát mitagadás hiányzik az írás. Jó dolog szavakat egymás mellé rakni, és később visszaolvasni. Bár mióta gyerekeim vannak, csak lopva találok magamnak egy kis időt. Az is főleg arra elég, hogy kipihenjem magam a következő műszakig.

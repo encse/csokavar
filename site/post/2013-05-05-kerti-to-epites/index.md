@@ -3,7 +3,7 @@ title: "Kerti tó építés"
 date: "2013-05-05"
 tags: 
   - "kert"
-coverImage: "to1.jpg"
+coverImage: images/to1.jpg
 ---
 
 A tavat már a házzal együtt vettem, és ha már megvolt, nem akartam betemetni. Elolvastam egy csomó egymásnak részben ellentmondó leírást, mindenfélét kipróbáltam, jó csomó pénzt beleöltünk, és talán-talán most már működőképes állapotba került, de ki tudja mit hoz a jövő.

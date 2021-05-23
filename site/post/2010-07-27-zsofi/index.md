@@ -4,7 +4,7 @@ date: "2010-07-27"
 tags: 
   - "eniko"
   - "golya"
-coverImage: "IMG_0584-e1380095771486.jpg"
+coverImage: images/IMG_0584-e1380095771486.jpg
 ---
 
 Vasárnap hajnalban megszületett babánk Zsófi. Képet nem kapnak róla, mert némely retardált baromarcú vadállatok bizonyára visszaélnének vele.

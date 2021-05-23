@@ -3,7 +3,7 @@ title: "Kemény dió"
 date: "2014-09-19"
 tags: 
   - "prezi"
-coverImage: "1C6476108-130314-oil-rig-hmed2-238p.jpg"
+coverImage: images/1C6476108-130314-oil-rig-hmed2-238p.jpg
 ---
 
 Gondolkodtam egy csomót, hogy mitől leszek én ismert egy olyan cégben, ahol van vagy 200-250 ember. (Jah, hát ide még nem írtam le, de már vagy három hónapja ismét a Preziben dolgozom.) Mert azt nem mondhatnánk, hogy túlságosan feltűnő jelenség vagyok. Omar haverom ma meg is jegyezte, hogy én néztem ki a leglustább/flegmább alaknak az egész cégben, aztán kiderült, hogy engem érdekel a legjobban az egész és mindig meglepem valami újjal (ma rajzoltam neki egy szülinapi tortát, mert láttam LinkedIn-en, hogy ma van). Jó hát én ilyen csendes lázadó vagyok, inkább gondolkodok mint beszélek, és meggyőzök egy hangadót, hogy aztán ő győzze meg a többieket helyettem. Nekem ez az aknamunka megy, na.

@@ -1,7 +1,8 @@
 import StateInline from 'markdown-it/lib/rules_inline/state_inline';
 import { iframe } from './iframe';
+import MarkdownIt from 'markdown-it';
 
-export default function markdown_it_iframe_plugin(md) {
+export default function plugin(md: MarkdownIt) {
 
   function process(state: StateInline, silent: boolean) {
     const rx = /\[youtube src="(.*)"\]/s;

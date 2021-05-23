@@ -5,7 +5,7 @@ tags:
   - "fun"
   - "isc"
   - "karacsony"
-coverImage: "MorseCodeForever.png"
+coverImage: images/MorseCodeForever.png
 ---
 
 Takarítottam, és mit nem találok....

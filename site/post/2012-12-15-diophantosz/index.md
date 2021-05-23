@@ -6,7 +6,7 @@ tags:
   - "geekseg"
   - "logika"
   - "matematika"
-coverImage: "Fermat-3-11.jpg"
+coverImage: images/Fermat-3-11.jpg
 ---
 
 A következő jópofa feladaton gondolkoztam a héten viszonylag sokáig. Határozzuk meg azokat az $x,y$ pozitív egész számokat, amelyekre teljesül, hogy:

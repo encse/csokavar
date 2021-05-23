@@ -3,7 +3,7 @@ title: "Horgász-bot"
 date: "2013-06-28"
 tags: 
   - "geekseg"
-coverImage: "horgaszbot.jpg"
+coverImage: images/horgaszbot.jpg
 ---
 
 A horgászás Wowban úgy működik, hogy bedobod a csalit, vársz egy kicsit, amíg ráharap valami, aztán amikor hallod, hogy kapás van, jobb gombbal rákattintasz az úszóra, és bezsákolod halat.

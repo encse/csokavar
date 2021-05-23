@@ -4,7 +4,7 @@ date: "2013-10-27"
 tags: 
   - "fun"
   - "geekseg"
-coverImage: "inception.jpg"
+coverImage: images/inception.jpg
 ---
 
 Még nem meséltem el, hogy kerültem át Flopside-ra. Illetve, arra már én sem pontosan emlékszem, hogy történt az átkerülés, de határozott jelek mutatnak arra, hogy igenis kifordult valami. Talán akkor történt, amikor a fodrász a másik oldalra [fésülte](https://csokavar.hu/blog/2007/11/ize/) az akkor még hoszú és lobogó hajamat. Már akkor alig találtam haza, lehet valami varázsfésűje volt, vagy én nem tudom. Lényeg a lényeg, először azt vettem észre, hogy a valamelyik karácsonyra kapott gravírozott Parker tollamon a nevem valahogy átváltozott Cserháti Györgynére. Pont ma került a kezembe, most ilyen. Kicsit olyan ez nekem, mint a pörgettyű az [Eredetben](http://www.imdb.com/title/tt1375666/).

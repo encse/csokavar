@@ -3,7 +3,7 @@ title: "Pékeskedés"
 date: "2021-01-05"
 tags: 
   - "fun"
-coverImage: "IMG_2988-scaled.jpg"
+coverImage: images/img_2988.jpg
 ---
 
 Legalább annyi értelme lett ennek az egész Covid járványnak, hogy megtanultam kenyeret sütni. Mármint rendes kenyeret kovászból. Ez egy gyerekkori álom volt, vagy legalábbis bakancslistás feladat. Korábban is próbálkoztam élesztőből, de az nem ugyanaz.
@@ -14,6 +14,11 @@ Eleinte próbálkoztam még csigával és zsemlével is, de kovászból nagyon m
 
 Kenyeret minden nap sütök, vagy mondjuk hatszor egy héten, és kb kétszer valami mást is. Ez lehet Blundel tésztás (ez egy vajmagos tésztafajta) csiga vagy túrós táska, vagy sima kelt tésztás kalács, esetleg tejes kifli, kuglóf. Karácsonykor sütöttem több bejglit is. Az meg zsíros tészta. Ezek a kelt dolgok jönnek be nekem. Itt van néhány kép, nagyjából ilyenek. És nagyon gyorsan elfogynak...
 
-\[modula id="4716"\]
+[gallery]
+  images/img_2952.jpg
+  images/img_2936.jpg
+  images/img_2908.jpg
+  images/img_2920.jpg
+[/gallery]
 
 Van már kutyánk is, illetve a régi két kutyánk helyett most megint van egy, Olala. Csak azért említem meg, mert már kétszer előfordult, hogy felzabálta a csigát mire reggel lementem... Benti kutya... Amúgy nem lopkod, csak a csigát szereti. Lehet hogy francia apja van?
