@@ -2,7 +2,7 @@
 title: "Challenge24 EC 2015"
 date: "2015-03-04"
 tags: 
-  - "geekseg"
+  - "geekség"
 coverImage: images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg
 ---
 

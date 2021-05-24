@@ -2,7 +2,7 @@
 title: "Beszélgettünk..."
 date: "2007-06-21"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "robot"
   - "szeretem"
 ---

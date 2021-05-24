@@ -2,7 +2,7 @@
 title: "Challenge24 Ec 2014"
 date: "2014-02-09"
 tags: 
-  - "geekseg"
+  - "geekség"
 coverImage: images/ch242.jpg
 ---
 

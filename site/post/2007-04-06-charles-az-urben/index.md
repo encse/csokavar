@@ -3,7 +3,7 @@ title: "Charles az űrben"
 date: "2007-04-06"
 tags: 
   - "isc"
-  - "urkutatas"
+  - "űrkutatás"
 coverImage: images/simonyi_patch.png
 ---
 

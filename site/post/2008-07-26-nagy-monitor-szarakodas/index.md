@@ -2,7 +2,7 @@
 title: "Nagy monitor szarakodás"
 date: "2008-07-26"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "isc"
   - "monitor"
 coverImage: images/ezgif.com-resize.gif

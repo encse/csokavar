@@ -3,8 +3,8 @@ title: "Gázóra - Tigáz és Emfesz"
 date: "2011-08-03"
 tags: 
   - "emfesz"
-  - "tigaz"
-  - "velemeny"
+  - "tigáz"
+  - "vélemény"
 coverImage: images/Untitled2.png
 ---
 

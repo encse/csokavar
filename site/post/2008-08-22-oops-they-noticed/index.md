@@ -2,7 +2,7 @@
 title: "Oops, they noticed"
 date: "2008-08-22"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 ```

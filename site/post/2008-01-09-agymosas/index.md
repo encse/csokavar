@@ -3,7 +3,7 @@ title: "Agymosás"
 date: "2008-01-09"
 tags: 
   - "isc"
-  - "jopofa-mondas"
+  - "jópofa-mondás"
 ---
 
 > Encsé: Cactus, betennéd végre azt a fájlt a publikomba?

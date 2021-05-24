@@ -2,7 +2,7 @@
 title: "Hekker kézikönyv"
 date: "2007-03-18"
 tags: 
-  - "geekseg"
+  - "geekség"
 ---
 
 Már megint majdnem lemaradtam a jóról a sok wiizés miatt, de szerencsére pihenésképpen a 49-es villamos vonalán lecsekkoltam az új hotspotokat. (Néha szoktam ilyet, sose lehet tudni.)

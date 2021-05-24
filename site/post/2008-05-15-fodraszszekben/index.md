@@ -2,7 +2,7 @@
 title: "Fodrászszékben"
 date: "2008-05-15"
 tags: 
-  - "fodrasz"
+  - "fodrász"
   - "fun"
 ---
 

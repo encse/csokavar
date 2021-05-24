@@ -2,7 +2,7 @@
 title: "Ébredés"
 date: "2007-10-19"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 Hogyan változtatta meg a zsonglőrködés az életemet?

@@ -4,7 +4,7 @@ date: "2009-03-08"
 tags: 
   - "metaentry"
   - "muveszek"
-  - "velemeny"
+  - "vélemény"
 ---
 
 Meghekkeltem a ki se merem mondani melyik webes játékot, és most a headerben az utolsó néhány bejegyzésről láthatunk egy kis szófelhőt... Sajna nem engedi a dolog licensze, hogy ilyeneket csináljunk vele, ezért nincs link sem (bocsi...). Kellett hozzá egy kis JAD is, kitartás, meg mindenféle jóság.

@@ -2,8 +2,8 @@
 title: "Komolyságok"
 date: "2009-04-27"
 tags: 
-  - "eniko"
-  - "szemelyes"
+  - "enikő"
+  - "személyes"
 coverImage: images/HIGH-FIDELITY-REWIRE-SECTION-1.jpg
 ---
 

@@ -2,7 +2,7 @@
 title: "Öt dal, amit a Dunába kéne lőni"
 date: "2007-12-16"
 tags: 
-  - "velemeny"
+  - "vélemény"
 ---
 
 Az ötlet a buszon jött, amikor a rádióban meghallottam az egyik befutót. Nem vagyok benne biztos, hogy ez a legrosszabb öt, mert csak keveset gondolkodtam rajta, de egytől egyig esélyesek. A lista összeállításánál csak kilencvenes évek előtti dalok jöhettek szóba, akkor ugyanis végleg eltörött valami, és sok értelme nincs a rengeteg Kozsót meg nem tom mit itt felsorolni. 

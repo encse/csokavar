@@ -2,8 +2,8 @@
 title: "Karácsony"
 date: "2006-12-28"
 tags: 
-  - "karacsony"
-  - "szemelyes"
+  - "karácsony"
+  - "személyes"
 ---
 
 Idén annyi sok kurva jó ajándékot kaptam, hogy felsorolni is nehéz lenne, úgyhogy meg se próbálom, csak csemegézünk kicsit. Kaptam pl. egy jópofa asztali díszt. Egy üvegedény, benne mindenféle bizbasz meg egy _hálókártya(!),_ és az egész le van öntve azzal a zselés trutyival, amivel az ilyeneket le szokás önteni.

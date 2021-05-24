@@ -3,7 +3,7 @@ title: "LHC"
 date: "2008-09-17"
 tags: 
   - "fun"
-  - "jopofa-mondas"
+  - "jópofa-mondás"
 coverImage: images/lacceleratore-di-particelle-lhc-del-cern-ripartir-nel-2015-Large_Hadron_Collider_acceleratore_particelle_CERN_bosone_Higgs.jpg
 ---
 

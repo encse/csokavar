@@ -2,7 +2,7 @@
 title: "Zsongás"
 date: "2006-04-10"
 tags: 
-  - "zsonglorkodes"
+  - "zsonglőrködés"
 coverImage: images/EGYPT.jpg
 ---
 

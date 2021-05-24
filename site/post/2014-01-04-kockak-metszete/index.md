@@ -3,7 +3,7 @@ title: "Kockák metszete"
 date: "2014-01-04"
 tags: 
   - "fun"
-  - "geekseg"
+  - "geekség"
   - "grafika"
 coverImage: images/cubes.gif
 ---

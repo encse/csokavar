@@ -4,7 +4,7 @@ date: "2006-05-25"
 tags: 
   - "busz"
   - "feladat"
-  - "geekseg"
+  - "geekség"
   - "logika"
 ---
 

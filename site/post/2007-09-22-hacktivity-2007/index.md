@@ -2,7 +2,7 @@
 title: "Hacktivity 2007"
 date: "2007-09-22"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "hacktivity"
 ---
 

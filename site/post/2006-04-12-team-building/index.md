@@ -3,7 +3,7 @@ title: "Team building"
 date: "2006-04-12"
 tags: 
   - "isc"
-  - "velemeny"
+  - "vélemény"
 coverImage: images/grldn01.jpg
 ---
 

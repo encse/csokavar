@@ -2,7 +2,7 @@
 title: "Gekkó hírek"
 date: "2007-12-31"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "gekko"
 ---
 

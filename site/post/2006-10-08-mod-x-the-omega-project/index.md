@@ -2,8 +2,8 @@
 title: "Mod-x – The Omega Project"
 date: "2006-10-08"
 tags: 
-  - "geekseg"
-  - "velemeny"
+  - "geekség"
+  - "vélemény"
 ---
 
 A kedvenc [wargame oldalam](http://www.mod-x.co.uk/) több év tetszhalál után a múlt héten frissült. Tudják, ez amolyan hacker játék. Ettől persze még senki sem fog betörni a Pentagon tűzfala mögé, hogy ellopja az atomkódokat, de legalább pár év múlva elég paranoiás lesz ahhoz, hogy viszonylag normális webboltokat készítsen. Mármint az a néhány szerencsétlen, aki kénytelen lesz webprogramozással keresni a kenyerét. (Nem egy nagy életcél, higgyék el.)

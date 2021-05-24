@@ -2,7 +2,7 @@
 title: "Az elefánt nem felejt"
 date: "2007-06-15"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 > Kedves Tanár úr!

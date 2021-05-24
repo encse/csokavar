@@ -2,7 +2,7 @@
 title: "Az Xp meg az Eszközök"
 date: "2007-01-28"
 tags: 
-  - "geekseg"
+  - "geekség"
 ---
 
 Már megint szívtam pár órát ezzel a remek kis Xp-vel. Vettünk egy USB Bluetooth adaptert, és sehogy sem sikerült feltelepíteni, mert a telepítés közben ezt a hibát kaptam:

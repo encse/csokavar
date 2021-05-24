@@ -3,7 +3,7 @@ title: "Mert Tiéd az ország..."
 date: "2008-08-29"
 tags: 
   - "gondolatok"
-  - "vallas"
+  - "vallás"
 ---
 
 Encsé teljes mértékben agnosztikus. Azt hiszem, ez az egyetlen vállalható filozófia egy programozó számára. Örülök, hogy van neve. (Sőt még ismerem is, pedig nem vagyok valami nagy lángelme.)

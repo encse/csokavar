@@ -2,7 +2,7 @@
 title: "Encse és a Windows team"
 date: "2015-11-05"
 tags: 
-  - "konyv"
+  - "könyv"
   - "prezi"
 coverImage: images/Windows-10-Stock-Wallpapers-11-e1570564429455.jpg
 ---

@@ -3,8 +3,8 @@ title: "Vasárnapi monitor"
 date: "2008-04-06"
 tags: 
   - "monitor"
-  - "szemelyes"
-  - "velemeny"
+  - "személyes"
+  - "vélemény"
 ---
 
 Vettem reggel monitort és kurva jó. Ilyen: Samsung Syncmaster 2232BW. Ha most Sony Bravia reklám lennék, akkor lefényképezném a képét, és beszúrnám ide a blogba, hogy Önök is megcsodálhassák: [ding-dong](http://www.youtube.com/watch?v=oP5J4W5GQ3w&fmt=18). Mivel azonban ennek értelme nincs, a legjobb talán mégis az lesz, ha elhiszik, hogy tényleg szép a képe.

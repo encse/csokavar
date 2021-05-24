@@ -2,7 +2,7 @@
 title: "Új index"
 date: "2007-07-27"
 tags: 
-  - "geekseg"
+  - "geekség"
 ---
 
 Az [index](http://www.index.hu/) új kinézete már négy nappal a bevezetés után kihúzta a gyufát, legalábbis ami a reklámokat illeti. Nagyon elszúrták a cikkek közepébe ékelt hirdetéseket, ugyanis folyamatosan elfelejtem átgörgetni őket.

@@ -3,7 +3,7 @@ title: "Költözés"
 date: "2010-04-23"
 tags: 
   - "metaentry"
-  - "szemelyes"
+  - "személyes"
 coverImage: images/win95shutdown-e1447789608709.jpg
 ---
 

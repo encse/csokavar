@@ -2,7 +2,7 @@
 title: "Hegesztési zsebkönyv"
 date: "2008-11-16"
 tags: 
-  - "konyv"
+  - "könyv"
 coverImage: images/MIg_MAGCOhegesztes_2.jpg
 ---
 

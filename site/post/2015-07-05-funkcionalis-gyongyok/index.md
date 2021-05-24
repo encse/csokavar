@@ -2,8 +2,8 @@
 title: "Pearls of Functional Algorithm Design"
 date: "2015-07-05"
 tags: 
-  - "konyv"
-  - "velemeny"
+  - "könyv"
+  - "vélemény"
 coverImage: images/pearl.jpg
 ---
 

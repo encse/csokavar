@@ -2,7 +2,7 @@
 title: "Zsonglőr rekordok"
 date: "2006-04-10"
 tags: 
-  - "zsonglorkodes"
+  - "zsonglőrködés"
 ---
 
 Ma volt egy kérdés a Wildcaton, előbb-utóbb asszem a FAQ-ba is be fog kerülni. Valaki arra volt kíváncsi, hogy milyen rekordok vannak zsonglőrködésből.

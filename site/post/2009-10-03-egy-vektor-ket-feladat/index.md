@@ -3,7 +3,7 @@ title: "Egy vektor, két feladat"
 date: "2009-10-03"
 tags: 
   - "feladat"
-  - "geekseg"
+  - "geekség"
   - "logika"
 coverImage: images/blackboard-bog-standard-e1447877703210.jpg
 ---

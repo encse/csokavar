@@ -2,9 +2,9 @@
 title: "Ready player one"
 date: "2013-09-29"
 tags: 
-  - "konyv"
-  - "szemelyes"
-  - "velemeny"
+  - "könyv"
+  - "személyes"
+  - "vélemény"
 coverImage: images/ready-player-one1.png
 ---
 

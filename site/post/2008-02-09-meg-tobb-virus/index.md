@@ -2,7 +2,7 @@
 title: "Még több vírus"
 date: "2008-02-09"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "hack"
   - "virus"
 ---

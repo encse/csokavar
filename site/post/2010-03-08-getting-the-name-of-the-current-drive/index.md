@@ -2,7 +2,7 @@
 title: "The name of the current drive"
 date: "2010-03-08"
 tags: 
-  - "geekseg"
+  - "geekség"
 coverImage: images/disk_drive_image-e1447790283886.jpg
 ---
 

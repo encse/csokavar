@@ -3,7 +3,7 @@ title: "Madárvers"
 date: "2009-09-24"
 tags: 
   - "feladat"
-  - "geekseg"
+  - "geekség"
   - "logika"
 coverImage: images/birds_wallpapers_free_download-e1447877918280.jpg
 ---

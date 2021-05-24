@@ -2,9 +2,9 @@
 title: "T + 2:14:00"
 date: "2006-07-04"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "google-earth"
-  - "urkutatas"
+  - "űrkutatás"
 ---
 
 Na, sikerül a sajtótájékoztató után elcsípnem pár screenshotot Hustonból. Íme az összehasonlítás! (Klikk a képre.)

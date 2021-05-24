@@ -2,8 +2,8 @@
 title: "Születésnapomra"
 date: "2008-06-24"
 tags: 
-  - "geekseg"
-  - "szemelyes"
+  - "geekség"
+  - "személyes"
 ---
 
 Hétvégén egy újabb számrendszerben is betöltöttem a 18-at. Mostanában inkább így számolom, kevésbé nagy megrázkódtatás.  Megint egy csomó kedves ismerősömnek eszébe jutott a dolog, sőt olyanoknak is, akikre kb. utoljára számítottam, mert eleve csak futólag ismertük egymást, ráadásul az is évekkel ezelőtt volt. Vera pedig mindjárt két tortát is sütött, mert szerinte az első nem sikerült jól. Ezt egyébként tükörtojásosnak nevezem, mert félbevágott barackok voltak a tetején, és bár a rétegrendje valóban nem volt szabványos (ő mondta így), a világon semmi baj nem volt vele. Mindegyik nagyon finom volt a sok túróval, gyümölccsel és a szebbikhez adott rum aromával.

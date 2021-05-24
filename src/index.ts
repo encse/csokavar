@@ -1,7 +1,7 @@
 import fs, { PathLike } from 'fs';
 import path, { ParsedPath } from 'path';
 import { Post, Page, PostList, PageTemplateProps, Template } from './post';
-import { chunks } from './util';
+import { chunks, slugify } from './util';
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
 import { AssetManager } from './assets';
@@ -106,11 +106,11 @@ async function generate(fpatIn: string, fpatOut: string, writeFile: FileWriter) 
     }
 
     for (const tag of tags) {
-        console.log(tag);
+        console.log
         await generateList(
             posts.filter(post => post.tags.indexOf(tag) >= 0),
-            path.join(fpatOut, 'blog', 'tag', tag),
-            `/blog/tag/${tag}`,
+            path.join(fpatOut, 'blog', 'tag', slugify(tag)),
+            `/blog/tag/${slugify(tag)}`,
             template,
             `Címke: ${tag}`,
             '',

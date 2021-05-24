@@ -2,9 +2,9 @@
 title: "Direkt marketing"
 date: "2006-05-13"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "iwiw"
-  - "velemeny"
+  - "vélemény"
 ---
 
 Magenta bőrű testvéreink a minap felvásárolták a [WIWet](http://www.iwiw.hu/), a mostanában igencsak felkapott magyar kapcsolatépítő hálózatot. Remélhetőleg tesznek alá rendes hardvert is, hogy megoldódjanak a sebesség problémák, és végre elszabadulhat a pokol. Hölgyeim és Uraim: ez egy időzített bomba! Lássuk miért.

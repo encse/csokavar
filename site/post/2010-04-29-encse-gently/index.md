@@ -2,8 +2,8 @@
 title: "Encsé Gently"
 date: "2010-04-29"
 tags: 
-  - "geekseg"
-  - "haz"
+  - "geekség"
+  - "ház"
   - "matematika"
 coverImage: images/maxresdefault.jpg
 ---

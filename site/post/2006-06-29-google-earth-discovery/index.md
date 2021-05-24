@@ -2,9 +2,9 @@
 title: "Google Earth, Discovery"
 date: "2006-06-29"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "google-earth"
-  - "urkutatas"
+  - "űrkutatás"
 ---
 
 Megint játszottam a Google Earth-szel. Találtam egy kizárólag ezzel foglalkozó blogot. ([Erre](http://www.gearthblog.com/index.html)) Az egyik bejegyzés viszont annyira megtetszett, hogy muszáj vagyok ellopni. Az alábbi kép egy repülőteret ábrázol. De ha jobban megnézzük, emberek állnak körülötte (balra lent), és az egész csak egy modell. Jól demonstrálja a felbontást... [Megnyitás Google Earth-ben.](http://bbs.keyhole.com/ubb/download.php?Number=408419)

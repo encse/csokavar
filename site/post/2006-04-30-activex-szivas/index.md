@@ -2,7 +2,7 @@
 title: "ActiveX szívás"
 date: "2006-04-30"
 tags: 
-  - "geekseg"
+  - "geekség"
 ---
 
 Ezt el ne felejtsem megemlíteni cs-nek legközelebb, ha a szofverszabadalmakról kérdez.

@@ -2,7 +2,7 @@
 title: "Autós üldözős"
 date: "2007-06-29"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 Tegnap öcséméknél bútorokat szereltünk össze. (Mostanában úgyis sokat legóztam, ez lényegében ugyanaz csak nagyban.) Összeraktunk: két asztalt, négy széket, egy ágyat, egy komódot, egy szekrényt, egy fürdőszobaszekrényt, egy polcot meg egy fotelt. Utána felszereltünk egy tükröt meg egy csillárt, ezzel el is ment a nap.

@@ -2,7 +2,7 @@
 title: "csókavár"
 date: "2006-07-25"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 Megszületett Encsé első saját domainje a [csokavar.hu](https://csokavar.hu/).

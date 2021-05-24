@@ -3,7 +3,7 @@ title: "Robban vagy nem robban?"
 date: "2007-04-07"
 tags: 
   - "isc"
-  - "urkutatas"
+  - "űrkutatás"
 ---
 
 3, 2, 1 éééés felszállás!

@@ -2,7 +2,7 @@
 title: "54% geek"
 date: "2007-11-20"
 tags: 
-  - "geekseg"
+  - "geekség"
 ---
 
 Kitöltöttem a Nagy Geek Quiz-t. Az eredmény:

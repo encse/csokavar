@@ -4,7 +4,7 @@ date: "2007-08-10"
 tags: 
   - "fun"
   - "isc"
-  - "jopofa-mondas"
+  - "jópofa-mondás"
 coverImage: images/Avril-Lavigne-hot.jpg
 ---
 

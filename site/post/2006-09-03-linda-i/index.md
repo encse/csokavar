@@ -2,7 +2,7 @@
 title: "Linda I."
 date: "2006-09-03"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 Mindenféle szappanoperába illő oknál fogva két Linda nevű tesóm van. Tegnap férjhez adtuk a nagyobbikat. ![_mg_2669](images/mg_2669-500x333.jpg)

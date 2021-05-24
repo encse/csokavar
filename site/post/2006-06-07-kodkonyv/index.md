@@ -2,9 +2,9 @@
 title: "Kódkönyv"
 date: "2006-06-07"
 tags: 
-  - "konyv"
+  - "könyv"
   - "szeretem"
-  - "velemeny"
+  - "vélemény"
 coverImage: images/photo-52.jpg
 ---
 

@@ -3,7 +3,7 @@ title: "Tökfej"
 date: "2007-11-03"
 tags: 
   - "fun"
-  - "tokfej"
+  - "tökfej"
 ---
 
 Minden ősszel faragunk tököt itthon. Ha tavaly nem találkoztak vele a blogon, annak csak az az oka, hogy megrohadt, mire kifaragtuk volna.

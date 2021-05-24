@@ -3,7 +3,7 @@ title: "Történések"
 date: "2006-09-30"
 tags: 
   - "isc"
-  - "szemelyes"
+  - "személyes"
 ---
 
 Érdemi dolgot nem csináltam az elmúlt pár hétben, úgyhogy ez egy szar bejegyzés lesz. Ez a terv legalábbis. Ugyanakkor emléket kell állítani szegény Viktornak, aki ezen a héten ment el a cégtől. Elfáradt. Sajnálom, mert komoly veszteséget jelent a távozása. Még én szerveztem be pár éve, és a cégen belül is egy csapatban dolgoztunk. Két fős csapatban, úgyhogy ennek most lőttek.

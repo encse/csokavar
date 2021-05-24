@@ -2,7 +2,7 @@
 title: "Wildcat snapshot"
 date: "2006-07-15"
 tags: 
-  - "zsonglorkodes"
+  - "zsonglőrködés"
 ---
 
 Le akarom dokumentálni a folyamatot. Most ez a terv:

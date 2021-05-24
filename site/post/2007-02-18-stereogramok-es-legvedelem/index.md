@@ -3,7 +3,7 @@ title: "Stereogramok és légvédelem"
 date: "2007-02-18"
 tags: 
   - "fun"
-  - "geekseg"
+  - "geekség"
 ---
 
 Dávidka nagyon unatkozott tegnap délután, úgyhogy azon kezdett gondolkodni, hogyan is megy a dolog ezzel a térlátással meg a távolságméréssel. Illetve, hogyan lehet két képből távolságinformációt kinyerni. A stereogramos részt az új könyvem ihlette, bár egyáltalán nem erről szól.

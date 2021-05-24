@@ -3,7 +3,7 @@ title: "Diophantosz"
 date: "2012-12-15"
 tags: 
   - "feladat"
-  - "geekseg"
+  - "geekség"
   - "logika"
   - "matematika"
 coverImage: images/Fermat-3-11.jpg

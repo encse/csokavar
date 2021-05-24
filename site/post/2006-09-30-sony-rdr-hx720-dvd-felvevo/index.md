@@ -3,7 +3,7 @@ title: "Sony RDR-HX722 DVD-felvevő"
 date: "2006-09-30"
 tags: 
   - "rdr-hx-722"
-  - "velemeny"
+  - "vélemény"
 ---
 
 Szerda este egyszerre két sorozatot is néznék a TV-ben. Az összes többi nap csak Irigy Hónaljmirigy melegklub, NCIS - olyan, mint a CSI, Lost - nem történik semmi, meg hasonló szar megy. Csak szerdán van nézhető műsor a két legnagyobb kereskedelmi csatornán, és akkor is egy időben: Született feleségek és Szökés. (A Született feleségek azért sokat romlott az előző évad óta. De az is lehet, hogy csak kezdek beleunni az örökös kavarásba. )

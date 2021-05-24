@@ -2,9 +2,9 @@
 title: "Gólya"
 date: "2009-12-30"
 tags: 
-  - "eniko"
-  - "golya"
-  - "szemelyes"
+  - "enikő"
+  - "gólya"
+  - "személyes"
 coverImage: images/Ciconia_ciconia_at_the_hamburg_zoo.jpg
 ---
 

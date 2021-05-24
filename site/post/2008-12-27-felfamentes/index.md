@@ -2,8 +2,8 @@
 title: "Félfamentes"
 date: "2008-12-27"
 tags: 
-  - "karacsony"
-  - "szemelyes"
+  - "karácsony"
+  - "személyes"
 ---
 
 Szar volt a karácsony na. 23-án reggel öcsém hív, hogy aput kórházba kellett vinni, mert szívritmus izé, meg magas vércukor. Öltözés, csomagolás, buszra futás, aztán mégis inkább húgomékkal menés. Közben már a villamoson hívott a beteg, hogy ne siessek, mert nem lesz otthon karácsonykor. Szívinfarktus...

@@ -3,7 +3,7 @@ title: "Varázsbab"
 date: "2006-05-27"
 tags: 
   - "fun"
-  - "zsonglorkodes"
+  - "zsonglőrködés"
 ---
 
 Egy jó bohóc kicsit bűvészkedni is tud. Ezt a gumis trükköt mindig meg akartam tanulni. Végre sikerült. :)

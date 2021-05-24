@@ -2,9 +2,9 @@
 title: "The Elements of Computing Systems"
 date: "2014-06-23"
 tags: 
-  - "geekseg"
-  - "konyv"
-  - "velemeny"
+  - "geekség"
+  - "könyv"
+  - "vélemény"
 coverImage: images/photo-1-1.jpg
 ---
 

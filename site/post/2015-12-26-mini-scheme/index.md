@@ -2,8 +2,8 @@
 title: "Mini Scheme"
 date: "2015-12-26"
 tags: 
-  - "geekseg"
-  - "konyv"
+  - "geekség"
+  - "könyv"
 coverImage: images/0001-e1451228724420.jpg
 ---
 

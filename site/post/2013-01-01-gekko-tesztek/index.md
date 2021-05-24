@@ -3,7 +3,7 @@ title: "Gekkó tesztek"
 date: "2013-01-01"
 tags: 
   - "gekko"
-  - "programozas"
+  - "programozás"
 coverImage: images/maxresdefault-1.jpg
 ---
 

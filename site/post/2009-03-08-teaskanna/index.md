@@ -2,9 +2,9 @@
 title: "Teáskanna"
 date: "2009-03-08"
 tags: 
-  - "eniko"
-  - "geekseg"
-  - "szemelyes"
+  - "enikő"
+  - "geekség"
+  - "személyes"
 ---
 
 Apunak van egy ilyen mániája, hogy a régi dolgoktól időnként meg kell szabadulni. Volt otthon egy teáskanna is például, az a fütyülős fajta.

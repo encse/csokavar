@@ -2,8 +2,8 @@
 title: "A számítógép-programozás művészete"
 date: "2015-03-13"
 tags: 
-  - "konyv"
-  - "szemelyes"
+  - "könyv"
+  - "személyes"
 coverImage: images/dek-14may10-1.jpg
 ---
 

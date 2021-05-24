@@ -2,10 +2,10 @@
 title: "Bölcsesség"
 date: "2008-03-08"
 tags: 
-  - "geekseg"
-  - "konyv"
-  - "szemelyes"
-  - "velemeny"
+  - "geekség"
+  - "könyv"
+  - "személyes"
+  - "vélemény"
 coverImage: images/photo-1.jpg
 ---
 

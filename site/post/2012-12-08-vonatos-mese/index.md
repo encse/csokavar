@@ -2,7 +2,7 @@
 title: "Vonatos mese"
 date: "2012-12-08"
 tags: 
-  - "zsofi"
+  - "zsófi"
 coverImage: images/locomotive-001.jpg
 ---
 

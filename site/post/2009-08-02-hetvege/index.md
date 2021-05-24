@@ -2,7 +2,7 @@
 title: "Hétvége"
 date: "2009-08-02"
 tags: 
-  - "szemelyes"
+  - "személyes"
 coverImage: images/lloyd16-e1447878996273.jpg
 ---
 

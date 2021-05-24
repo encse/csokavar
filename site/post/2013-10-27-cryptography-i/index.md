@@ -3,7 +3,7 @@ title: "Cryptography I"
 date: "2013-10-27"
 tags: 
   - "fun"
-  - "geekseg"
+  - "geekség"
 coverImage: images/inception.jpg
 ---
 

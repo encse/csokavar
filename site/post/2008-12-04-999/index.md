@@ -3,8 +3,8 @@ title: "DigiTV"
 date: "2008-12-04"
 tags: 
   - "fun"
-  - "geekseg"
-  - "zarvanyok"
+  - "geekség"
+  - "zárványok"
 ---
 
 Minap átkapcsoltam a kábelszolgáltató (sima lakótelepes lóf�sz) csatornájára. Hát mit látok kiítűnő HD minőségben. Na mit?

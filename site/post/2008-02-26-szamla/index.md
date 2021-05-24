@@ -2,7 +2,7 @@
 title: "Számla"
 date: "2008-02-26"
 tags: 
-  - "geekseg"
+  - "geekség"
 ---
 
 Annak idején Kevin Mitnick egy telefonfülkéből feltörte a Pacific Bell számítógéprendszerét. De próbálta volna meg ugyanezt egy pénztárgéppel...

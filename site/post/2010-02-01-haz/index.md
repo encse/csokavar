@@ -2,9 +2,9 @@
 title: "Ház"
 date: "2010-02-01"
 tags: 
-  - "eniko"
-  - "golya"
-  - "szemelyes"
+  - "enikő"
+  - "gólya"
+  - "személyes"
 coverImage: images/IMG_0118-e1447790521598.jpg
 ---
 

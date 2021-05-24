@@ -2,7 +2,7 @@
 title: "Horgász-bot"
 date: "2013-06-28"
 tags: 
-  - "geekseg"
+  - "geekség"
 coverImage: images/horgaszbot.jpg
 ---
 

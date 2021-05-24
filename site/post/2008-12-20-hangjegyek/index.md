@@ -2,9 +2,9 @@
 title: "Hangjegyek"
 date: "2008-12-20"
 tags: 
-  - "karacsony"
+  - "karácsony"
   - "szeretem"
-  - "velemeny"
+  - "vélemény"
 ---
 
 Balázsról még nem írtam Önöknek, pedig az unokatesóm. Művész lélek. Építész amúgy, de zongorázik is. Hobbiból. Magának. Karácsony alkalmából azonban idén már másodszor (szigorúan hagyományőrző jelleggel) karácsonyi zongoraestet adott az ismerősöknek, no meg a rokonságnak.

@@ -3,7 +3,7 @@ title: "Műemlék"
 date: "2006-04-22"
 tags: 
   - "fun"
-  - "gyor"
+  - "győr"
 ---
 
 Kicsit sárgább, kicsit savanyúbb...

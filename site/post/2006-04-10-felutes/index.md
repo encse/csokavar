@@ -3,7 +3,7 @@ title: "Felütés"
 date: "2006-04-10"
 tags: 
   - "metaentry"
-  - "szemelyes"
+  - "személyes"
 coverImage: images/Typewriters.jpg
 ---
 

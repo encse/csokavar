@@ -2,7 +2,7 @@
 title: "Ez a durva"
 date: "2007-12-18"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "monitor"
 ---
 

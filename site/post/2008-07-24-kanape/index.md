@@ -3,7 +3,7 @@ title: "Kanapé"
 date: "2008-07-24"
 tags: 
   - "isc"
-  - "velemeny"
+  - "vélemény"
 ---
 
 Nagyon előrelátó módon, még évekkel ezelőtt elkezdtem az irodában kallódó cuccokat magam köré gyűjteni. Hogy mást nem mondjak, így tettem szert a mostani telefonomra, egy virágra, a külső monitorra, kb. 5 irodai lámpára és végül egy kanapéra is.

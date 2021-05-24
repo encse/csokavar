@@ -2,7 +2,7 @@
 title: "Színtévesztő"
 date: "2007-05-27"
 tags: 
-  - "geekseg"
+  - "geekség"
 ---
 
 Az előbb ránéztem az elemtöltőre, és erről eszembe jutott, hogy durván színtévesztő vagyok. Ez az élmények és a szórakozás kimeríthetetlen tárháza. Néhány pillanatot megosztok önökkel is:

@@ -2,7 +2,7 @@
 title: "Kopaszodás"
 date: "2009-04-07"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 Megint voltam fodrásznál, és be is szólt, hogy milyen ritkán járok. Na szép...

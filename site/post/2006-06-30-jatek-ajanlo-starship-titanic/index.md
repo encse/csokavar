@@ -2,8 +2,8 @@
 title: "Játék ajánló: Starship Titanic"
 date: "2006-06-30"
 tags: 
-  - "geekseg"
-  - "velemeny"
+  - "geekség"
+  - "vélemény"
 ---
 
 A Titanik Csillaghajó egy Douglas Adams fémjelezte CD-ROM, még az özönvíz előtti huszadik századból. Tavaly tudtam meg, hogy létezik, mikor a Kétség lazacát olvastam. Aztán valahogy elfejetődött, de pár hete megint eszembe jutott, és mivel elég retromán vagyok, muszáj volt beszerezni.

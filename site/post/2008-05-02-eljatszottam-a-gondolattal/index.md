@@ -2,7 +2,7 @@
 title: "Eljátszottam a gondolattal"
 date: "2008-05-02"
 tags: 
-  - "geekseg"
+  - "geekség"
 ---
 
 Akkor én ezt most itt nem is minősíteném...

@@ -3,7 +3,7 @@ title: "Bolgár lottó"
 date: "2009-09-18"
 tags: 
   - "fun"
-  - "geekseg"
+  - "geekség"
   - "matematika"
 coverImage: images/hot-lotto-lottery-cheat-hacker-e1447878179998.jpg
 ---

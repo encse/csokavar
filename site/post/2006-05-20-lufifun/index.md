@@ -4,7 +4,7 @@ date: "2006-05-20"
 tags: 
   - "fun"
   - "lufi"
-  - "zsonglorkodes"
+  - "zsonglőrködés"
 ---
 
 Ez a post megint valamilyen formában felkerül a Wildcat oldalra, hiszen a zsonglőrködés velejárója, hogy az ember érdeklődik a különböző bohócságok iránt.

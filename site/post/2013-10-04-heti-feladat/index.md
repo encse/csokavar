@@ -3,7 +3,7 @@ title: "Heti feladat"
 date: "2013-10-04"
 tags: 
   - "feladat"
-  - "geekseg"
+  - "geekség"
 coverImage: images/photo.jpg
 ---
 

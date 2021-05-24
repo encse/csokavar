@@ -2,7 +2,7 @@
 title: "Billentyűzet"
 date: "2007-05-14"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 MEGINT [VAN CTRL](https://csokavar.hu/blog/2007/02/22/eltorott-a-ctrl/) A GÉPEMEN! El sem tudom mondani, mennyivel jobb így. Délelőtt Cactus gépén dolgoztam (bocsi), és ebéd után már ott várt az én kis Dellem megjavítva. Három hónapig tartott, de legalább az egész billentyűzetet kicserélték. Egy gombot külön ugyanis nem lehet előállítani, csak egy egész billt egyben. A gyárban nincs is gyártósor, csak egy tölcsér, amibe beleöntik a műanyagot, és alul azonnal kiesik a full billentyűzet összeszerelve. (Külön tölcsérek vannak minden billentyűzetkiosztáshoz nyilván.)

@@ -3,8 +3,8 @@ title: "Holdséta"
 date: "2006-10-28"
 tags: 
   - "isc"
-  - "konyv"
-  - "urkutatas"
+  - "könyv"
+  - "űrkutatás"
 coverImage: images/Aldrin_Apollo_11.jpg
 ---
 

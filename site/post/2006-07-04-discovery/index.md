@@ -2,9 +2,9 @@
 title: "Discovery"
 date: "2006-07-04"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "google-earth"
-  - "urkutatas"
+  - "űrkutatás"
 ---
 
 Végre kilőtték. A Google Earth-ös tracker per pill ilyet mutat:

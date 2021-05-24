@@ -4,7 +4,7 @@ date: "2011-07-24"
 tags: 
   - "isc"
   - "prezi"
-  - "szemelyes"
+  - "személyes"
 coverImage: images/174885_176839412360203_7011051_n.jpg
 ---
 

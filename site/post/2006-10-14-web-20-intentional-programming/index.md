@@ -2,9 +2,9 @@
 title: "Web 2.0 - Intentional programming"
 date: "2006-10-14"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "isc"
-  - "zsonglorkodes"
+  - "zsonglőrködés"
 ---
 
 Mivel már évek óta az intentional bizniszben utazom ([www.intentionalsoftware.com](http://www.intentionalsoftware.com/)), nem csoda, ha a hétvégi projektben sem tudok teljesen elszakadni tőle. :)

@@ -2,7 +2,7 @@
 title: "Zárnyitás alapfok"
 date: "2009-08-07"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "hack"
 coverImage: images/Chain-e1447878835557.jpg
 ---

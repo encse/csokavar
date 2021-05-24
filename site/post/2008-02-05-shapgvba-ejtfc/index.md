@@ -2,11 +2,11 @@
 title: "shapgvba ejtf(c){..."
 date: "2008-02-05"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "gekko"
   - "hack"
   - "virus"
-  - "zsonglorkodes"
+  - "zsonglőrködés"
 ---
 
 Amikor a pokol elszabadul.

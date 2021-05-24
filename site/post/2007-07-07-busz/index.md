@@ -4,7 +4,7 @@ date: "2007-07-07"
 tags: 
   - "busz"
   - "fun"
-  - "szemelyes"
+  - "személyes"
 ---
 
 Csak, hogy érezzék milyen egy kopasz embernek, kifejlett sörhassal. 

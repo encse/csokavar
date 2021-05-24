@@ -3,7 +3,7 @@ title: "Ray trace és ray march"
 date: "2013-12-18"
 tags: 
   - "fun"
-  - "geekseg"
+  - "geekség"
   - "grafika"
   - "matematika"
 coverImage: images/raytrace1.jpg

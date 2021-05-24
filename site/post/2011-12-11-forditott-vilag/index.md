@@ -2,7 +2,7 @@
 title: "Fordított világ"
 date: "2011-12-11"
 tags: 
-  - "geekseg"
+  - "geekség"
 coverImage: images/alice-wonderland-vintage-image-graphicsfairy007c.jpg
 ---
 

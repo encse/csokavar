@@ -3,7 +3,7 @@ title: "Sánta klóz"
 date: "2007-12-07"
 tags: 
   - "rajz"
-  - "szemelyes"
+  - "személyes"
 ---
 
 Tegnap volt Télapó, úgyhogy kapnak egy félkész rajzot, amit a tesóm barátnőjének csináltam pár hete, mert valami gyerekrajz pályázatra akarta beküldeni „Lappföldi találkozásunk a Mikulással” témában. Ez nem az egész rajz, pl. hiányzik Rudolf feneke, meg úgy általában az egész találkozás, de valahová elkevertem a kész verziót.

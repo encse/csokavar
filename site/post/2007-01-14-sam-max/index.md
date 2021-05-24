@@ -3,8 +3,8 @@ title: "Sam & Max"
 date: "2007-01-14"
 tags: 
   - "fun"
-  - "geekseg"
-  - "velemeny"
+  - "geekség"
+  - "vélemény"
 ---
 
 Előfizettem az egész Sam & Max szezonra, szóval remélhetőleg a többi rész is olyan jó lesz, mint az első kettő. Nem volt drága, csak kb 8000 Ft. Szeretem, hogy epizodikus, mert így egy-egy estét el lehet vele lőni, nem túl bonyolult, és minden hónapban jön egy új!

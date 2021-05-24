@@ -2,7 +2,7 @@
 title: "Elindultunk"
 date: "2008-01-05"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "gekko"
 ---
 

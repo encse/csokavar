@@ -2,8 +2,8 @@
 title: "Zsófi"
 date: "2010-07-27"
 tags: 
-  - "eniko"
-  - "golya"
+  - "enikő"
+  - "gólya"
 coverImage: images/IMG_0584-e1380095771486.jpg
 ---
 

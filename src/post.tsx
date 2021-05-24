@@ -214,7 +214,7 @@ export class Post {
                 <span className="tags-icon" />
                 {this.tags.map((tag, i) => [
                     i == 0 ? ' ' : ', ',
-                    <a href={`/blog/tag/${tag}/`} rel="tag">{tag}</a>
+                    <a href={`/blog/tag/${slugify(tag)}/`} rel="tag">{tag}</a>
                 ])}
             </p>
         }

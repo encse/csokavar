@@ -2,9 +2,9 @@
 title: "Születésnap"
 date: "2007-04-11"
 tags: 
-  - "almok"
+  - "álmok"
   - "metaentry"
-  - "szemelyes"
+  - "személyes"
 ---
 
 Boldog születésnapot, Blog! ![birthday](images/birthday.jpg) Encsé már egy éve blogol, úgyhogy egy aprócska, level 1-es, korszellemet idézzünk meg:

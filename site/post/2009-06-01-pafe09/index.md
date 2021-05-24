@@ -2,7 +2,7 @@
 title: "Pafe09"
 date: "2009-06-01"
 tags: 
-  - "eniko"
+  - "enikő"
   - "fun"
 coverImage: images/shutterstock_612941954-900x506.jpg
 ---

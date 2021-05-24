@@ -2,7 +2,7 @@
 title: "Költözés"
 date: "2009-04-30"
 tags: 
-  - "eniko"
+  - "enikő"
   - "metaentry"
 coverImage: images/1560919091129.jpg
 ---

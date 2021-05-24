@@ -3,7 +3,7 @@ title: "Problem of the week - 9 Digit Problem"
 date: "2010-04-20"
 tags: 
   - "feladat"
-  - "geekseg"
+  - "geekség"
 coverImage: images/8bit_digits_pattern-500-e1447789863193.jpg
 ---
 

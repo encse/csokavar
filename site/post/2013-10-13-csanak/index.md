@@ -2,7 +2,7 @@
 title: "Csanak"
 date: "2013-10-13"
 tags: 
-  - "csalad"
+  - "család"
   - "fun"
 coverImage: images/IMG_1409.jpg
 ---

@@ -2,9 +2,9 @@
 title: "Izé"
 date: "2007-11-03"
 tags: 
-  - "fodrasz"
+  - "fodrász"
   - "fun"
-  - "jopofa-mondas"
+  - "jópofa-mondás"
 ---
 
 1) Tükörországban. Az a lökött fodrász a másik oldalra fésülte a hajamat; alig találtam haza.

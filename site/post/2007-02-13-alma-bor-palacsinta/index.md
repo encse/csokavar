@@ -2,7 +2,7 @@
 title: "Alma, bor, palacsinta"
 date: "2007-02-13"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 Majd ne feledjem be0rni  az önéletrajzomba a  Mac-es magasfokú felhasználói ismereteket: ezt  a bejegyzést ugyanis egy Almával 0rom.  Mondjuk a hosszú i-t  még nem sikerült megtalálni, de annyi baj legyen. (Úgyis mindenki hazudik a CV-ben.) A c0met :) tovább magyarázandó: forralt bort iszom, és Vera palacsintát süt a konyhában. Sokan vagyunk egyébként, fenn a hegyen.

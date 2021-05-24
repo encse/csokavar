@@ -2,7 +2,7 @@
 title: "Napelemek"
 date: "2011-01-16"
 tags: 
-  - "villamosmernokseg"
+  - "villamosmérnökség"
 coverImage: images/sun-technology-field-sunlight-environment-green-clean-electricity-energy-eco-solar-panel-power-net-sustainable-renewable-solar-power-solar-energy-photovoltaic-solar-panel-array-photocell-1162040-1.jpg
 ---
 

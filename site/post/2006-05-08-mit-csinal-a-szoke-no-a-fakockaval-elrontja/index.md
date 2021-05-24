@@ -2,8 +2,8 @@
 title: "Mit csinál a szőke nő a fakockával - elrontja"
 date: "2006-05-08"
 tags: 
-  - "geekseg"
-  - "gyor"
+  - "geekség"
+  - "győr"
   - "isc"
 ---
 

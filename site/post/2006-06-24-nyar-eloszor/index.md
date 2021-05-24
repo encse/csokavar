@@ -2,7 +2,7 @@
 title: "Nyár először"
 date: "2006-06-24"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 ![szabi2](images/szabi2.jpg)

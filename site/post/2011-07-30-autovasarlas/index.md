@@ -2,7 +2,7 @@
 title: "Autóvásárlás"
 date: "2011-07-30"
 tags: 
-  - "auto"
+  - "autó"
 coverImage: images/old_peugeot_by_luethy-d3a5hzz.jpg
 ---
 

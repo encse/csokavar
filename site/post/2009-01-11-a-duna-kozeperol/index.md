@@ -2,8 +2,8 @@
 title: "Extrém blogolás"
 date: "2009-01-11"
 tags: 
-  - "extrem-blogolas"
-  - "szemelyes"
+  - "extrem-blogolás"
+  - "személyes"
 ---
 
 Extrém bologolás rovatunkban ma a jégen blogolást mutatjuk be Önöknek. Tegnap tesómékkal kisétáltunk a Duna Csepel szigetet keletről kerülő ágához. Egész pontosan ide:

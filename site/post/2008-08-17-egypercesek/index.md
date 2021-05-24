@@ -3,7 +3,7 @@ title: "Egypercesek"
 date: "2008-08-17"
 tags: 
   - "feladat"
-  - "geekseg"
+  - "geekség"
   - "logika"
 ---
 

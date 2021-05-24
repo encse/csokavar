@@ -2,7 +2,7 @@
 title: "Öreganyám..."
 date: "2012-03-26"
 tags: 
-  - "jopofa-mondas"
+  - "jópofa-mondás"
 coverImage: images/Barcode_on_a_Coke_can.jpg
 ---
 

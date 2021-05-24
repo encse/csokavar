@@ -2,8 +2,8 @@
 title: "Esküvő"
 date: "2010-04-02"
 tags: 
-  - "eniko"
-  - "szemelyes"
+  - "enikő"
+  - "személyes"
 coverImage: images/IMG_0085-e1447790120144.jpg
 ---
 

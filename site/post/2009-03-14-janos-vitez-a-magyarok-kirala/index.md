@@ -3,7 +3,7 @@ title: "János vitéz a magyarok királa..."
 date: "2009-03-14"
 tags: 
   - "busz"
-  - "velemeny"
+  - "vélemény"
 ---
 
 Régen volt már buszos történet, pedig van miből meríteni. Ma például a magyar őstulok egyik korosodó példányával sikerült összefutni, aki nemzeti szallagos, lúdtollas kalpagba, kitüntetésekkel meg ilyenekkel várta a pesti buszt.

@@ -2,7 +2,7 @@
 title: "User Interfész a seggem"
 date: "2007-01-02"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "otp"
 ---
 

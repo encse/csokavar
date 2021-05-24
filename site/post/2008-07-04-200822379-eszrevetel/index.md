@@ -2,7 +2,7 @@
 title: "2008/22379. észrevétel"
 date: "2008-07-04"
 tags: 
-  - "darazs"
+  - "darázs"
 ---
 
 Soha, semmilyen körülmények között ne akarjanak darázsba lépni.

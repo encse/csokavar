@@ -2,7 +2,7 @@
 title: "Spam filter házilag"
 date: "2006-09-30"
 tags: 
-  - "geekseg"
+  - "geekség"
 ---
 
 A Freeblogon rendszeresen végigjárja valami hülye robot a bejegyzéseimet, és telepakolja 'Hi guys, check out these cool sites' kezdetű szeméttel az én drága írásaimat. Szerencsére, a gyári spamszűrő rendszerint kidobálja őket a fenébe.

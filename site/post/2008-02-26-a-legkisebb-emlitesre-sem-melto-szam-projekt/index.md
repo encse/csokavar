@@ -3,7 +3,7 @@ title: "A legkisebb említésre sem méltó szám projekt"
 date: "2008-02-26"
 tags: 
   - "fun"
-  - "geekseg"
+  - "geekség"
 ---
 
 Elhatároztam, hogy a phd-met "A legkisebb említése sem méltó szám"-ról fogom írni\*. A legkisebb említésre sem méltó számon azt a legkisebb pozitív egész számot értem, amire a Google nem ad egyetlen találatot sem. Elkezdtünk gondolkodni, hogy mekkora lehet ez a szám... Vajon érdekel valakit a 4204789? A Google szerint 606 helyen használják.

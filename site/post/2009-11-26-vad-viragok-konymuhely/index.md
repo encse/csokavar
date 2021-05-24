@@ -2,8 +2,8 @@
 title: "Vad Virágok Könyvműhely"
 date: "2009-11-26"
 tags: 
-  - "konyv"
-  - "velemeny"
+  - "könyv"
+  - "vélemény"
 coverImage: images/kazmer.jpg
 ---
 

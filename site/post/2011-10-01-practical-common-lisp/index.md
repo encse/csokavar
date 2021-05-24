@@ -2,9 +2,9 @@
 title: "Practical Common Lisp"
 date: "2011-10-01"
 tags: 
-  - "geekseg"
-  - "konyv"
-  - "velemeny"
+  - "geekség"
+  - "könyv"
+  - "vélemény"
 coverImage: images/practical-common-lisp.png
 ---
 

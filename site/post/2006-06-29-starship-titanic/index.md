@@ -2,7 +2,7 @@
 title: "Starship Titanic"
 date: "2006-06-29"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "szeretem"
 ---
 

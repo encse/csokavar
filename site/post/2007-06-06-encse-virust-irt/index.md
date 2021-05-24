@@ -2,7 +2,7 @@
 title: "Encsé vírust irt"
 date: "2007-06-06"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "virus"
 ---
 

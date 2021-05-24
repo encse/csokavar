@@ -2,8 +2,8 @@
 title: "Hugh Laurie: A Balek"
 date: "2007-10-23"
 tags: 
-  - "konyv"
-  - "velemeny"
+  - "könyv"
+  - "vélemény"
 coverImage: images/Hugh-Laurie-hugh-laurie-31954777-1024-7681.jpg
 ---
 

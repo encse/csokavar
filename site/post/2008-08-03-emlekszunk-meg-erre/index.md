@@ -4,7 +4,7 @@ date: "2008-08-03"
 tags: 
   - "fun"
   - "isc"
-  - "karacsony"
+  - "karácsony"
 coverImage: images/MorseCodeForever.png
 ---
 

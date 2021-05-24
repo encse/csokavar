@@ -2,7 +2,7 @@
 title: "Excel delokalizálás quickhack"
 date: "2007-06-30"
 tags: 
-  - "geekseg"
+  - "geekség"
 ---
 
 Tegnap Vera megkért, hogy segítsek neki valamit Excelben. Maya közreműködésével végül megoldottuk a problémát, viszont belefutottam az Excelem azon kellemes tulajdonságába, hogy a munkalapfüggvények neveit csak magyarul hajlandó elfogadni.

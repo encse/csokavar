@@ -2,7 +2,7 @@
 title: "Igen, igen"
 date: "2008-03-10"
 tags: 
-  - "velemeny"
+  - "vélemény"
 ---
 
 Most akkor anélkül, hogy minősíteném ezt az egész tegnapi cirkuszt (upsz), mi ez a faszság, hogy majd a Szerencsejáték ZRt. adójából fogjuk finanszírozni a kieső 40 milliárdot?

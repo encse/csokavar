@@ -4,8 +4,8 @@ date: "2009-01-26"
 tags: 
   - "adsl"
   - "externet"
-  - "matav"
-  - "velemeny"
+  - "matáv"
+  - "vélemény"
   - "vivanet"
 ---
 

@@ -2,8 +2,8 @@
 title: "Letolattam..."
 date: "2009-08-05"
 tags: 
-  - "fodrasz"
-  - "szemelyes"
+  - "fodrász"
+  - "személyes"
 coverImage: images/1111_ODY_BackupSensors-e1447878542810.jpg
 ---
 

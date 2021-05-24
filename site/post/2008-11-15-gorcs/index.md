@@ -2,11 +2,11 @@
 title: "Görcs"
 date: "2008-11-15"
 tags: 
-  - "eniko"
+  - "enikő"
   - "fun"
-  - "szemelyes"
-  - "szinhaz"
-  - "velemeny"
+  - "személyes"
+  - "színház"
+  - "vélemény"
 ---
 
 Azért jó dolog ha az embernek olyan barátnéje van aki mindenfelé elviszi, mert egyedül asszem nem mennék színházba. Sőt jelentsük ki bátran: egyedül nem megyek színházba. Legfeljebb a MU-ba járok, amiről már írtam korábban, és akkor is megbeszéltük, hogy legfeljebb a büféig jutok. Közel van és jó a bor, meg van rágcsálni való és szendvics is. A MU büféje egyébként nagyon hasonlít a Csiga nevű helyre, ami mostanság kezdi átvenni a törzshely szerepét, már ami a Verával való találkozásokat illeti. Hasonló a kínálat, és tulajdonképpen ugyanazokat az embereket látom mindkét helyen, a vezetőséget is beleértve. De meg kell mondjam azt is, hogy a székek ott sokkal rosszabbak.

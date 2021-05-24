@@ -3,9 +3,9 @@ title: "Zárványok"
 date: "2006-08-26"
 tags: 
   - "dos"
-  - "geekseg"
-  - "nyomtatas"
-  - "zarvanyok"
+  - "geekség"
+  - "nyomtatás"
+  - "zárványok"
 coverImage: images/4-abra.jpg
 ---
 

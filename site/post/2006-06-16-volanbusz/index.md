@@ -3,7 +3,7 @@ title: "Volánbusz"
 date: "2006-06-16"
 tags: 
   - "busz"
-  - "szemelyes"
+  - "személyes"
 ---
 
 Dávidka ma 80 percet várt a győri buszra. Szépen kiment 17:50-re a Petőfi hídhoz, megvárta a 18:10-kor érkező mosonmagyaróvári buszt. Normál körülmények között erre kellett volna felszállnia. Ehelyett meghallgatta a sofőr bácsit, aki azt mondta, hogy csak a móváriak szálljanak fel. Aztán várt még egyórácskát, és máris megjött a busza.

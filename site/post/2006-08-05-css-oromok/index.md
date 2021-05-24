@@ -2,8 +2,8 @@
 title: "css örömök"
 date: "2006-08-05"
 tags: 
-  - "geekseg"
-  - "velemeny"
+  - "geekség"
+  - "vélemény"
 ---
 
 Gondoltam most nagyon szépen megcsinálok mindent a zsongi oldalhoz. A css világ azonban ellenem van. Az hagyján, hogy IE alatt teljesen másképp néznek ki a dolgok, mint Firefox-ban. Vannak olyan dolgok is, amiben egyetértenek, csak éppen egetrengetően nagy hülyeség.

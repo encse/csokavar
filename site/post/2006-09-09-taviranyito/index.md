@@ -2,7 +2,7 @@
 title: "Távirányító"
 date: "2006-09-09"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "pda"
 ---
 

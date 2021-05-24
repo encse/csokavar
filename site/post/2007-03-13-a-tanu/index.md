@@ -2,7 +2,7 @@
 title: "A tanú"
 date: "2007-03-13"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 A várakozásnak vége: Encsé újra billentyűzetet ragad. (Bár a Ctrl még mindig el van törve.)

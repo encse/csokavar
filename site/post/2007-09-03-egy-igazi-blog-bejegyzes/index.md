@@ -2,8 +2,8 @@
 title: "Egy igazi blog bejegyzés"
 date: "2007-09-03"
 tags: 
-  - "darazs"
-  - "szemelyes"
+  - "darázs"
+  - "személyes"
 ---
 
 Tegnap éppen elkezdtem egy bejegyzést, amikor az alábbi szörnyetegre lettem figyelmes:

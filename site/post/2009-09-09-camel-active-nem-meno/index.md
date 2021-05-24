@@ -2,7 +2,7 @@
 title: "Camel Active = nem menő"
 date: "2009-09-09"
 tags: 
-  - "velemeny"
+  - "vélemény"
 coverImage: images/490_1camel_004-e1447878289318.jpg
 ---
 

@@ -2,7 +2,7 @@
 title: "Osztálytalálkozó"
 date: "2008-06-15"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 Tegnap délután (meg este) osztálytalálkozó volt. Pontosabb ez csak egy afféle előtalálkozó volt a szeptemberi tíz éves érettségi tali előtt. Megállapítottam, hogy némelyik osztálytársam félelmetesen sokat bír picsogni, és mégis jól áll neki. Mások gyereket várnak, megint másoknak meg már van is egy fia vagy lánya. És olyan is van, aki akcentussal beszél „magyahrul", mert közben elköltözött Németohrszágba. Nagyon viccesek azok az r-ek. Persze én tudom, hogy valójában csak teszi az agyát, de sebaj, ezért szeretjük. (Nyilván nem tudom. Honnan is tudhatnám?)

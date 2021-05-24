@@ -2,8 +2,8 @@
 title: "Pözsi"
 date: "2009-08-02"
 tags: 
-  - "auto"
-  - "eniko"
+  - "autó"
+  - "enikő"
 coverImage: images/rebirth__a_precious_name_or_a_smile3-e1447879361691.jpg
 ---
 

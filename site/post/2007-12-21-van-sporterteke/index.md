@@ -3,7 +3,7 @@ title: "Van sportértéke..."
 date: "2007-12-21"
 tags: 
   - "fun"
-  - "szemelyes"
+  - "személyes"
 coverImage: images/eyes-in-the-dark-paranoid.jpg
 ---
 

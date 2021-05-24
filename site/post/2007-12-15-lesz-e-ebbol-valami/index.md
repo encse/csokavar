@@ -2,7 +2,7 @@
 title: "Lesz-e ebből valami?"
 date: "2007-12-15"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "gekko"
 ---
 

@@ -2,7 +2,7 @@
 title: "Padon"
 date: "2006-05-25"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 Julival ültünk egy parkban a múlt héten. Egyszer csak arra jött egy kedves kutya. Megszaglászott, megsimogattuk meg minden.

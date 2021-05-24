@@ -3,7 +3,7 @@ title: "Könyvespolc"
 date: "2006-10-01"
 tags: 
   - "fun"
-  - "szemelyes"
+  - "személyes"
 ---
 
 Mikor a lakásom megvettem, rá kellett ébrednem, hogy bizony, alig vannak cuccaim. Bár a lakás nem nagy, mégis nagyon üresnek tűnt eleinte. Sokat gondolkoztam, mivel is lehetne megtölteni, végül a könyvek mellett döntöttem. A TV-ben úgysincs soha semmi, valamivel el kell ütni az időt...

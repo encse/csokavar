@@ -4,7 +4,7 @@ date: "2008-09-04"
 tags: 
   - "feladat"
   - "fun"
-  - "geekseg"
+  - "geekség"
   - "isc"
   - "matematika"
 coverImage: images/0191162_PE345209_S5.jpg

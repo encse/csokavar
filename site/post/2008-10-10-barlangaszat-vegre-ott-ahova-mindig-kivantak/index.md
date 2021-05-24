@@ -3,7 +3,7 @@ title: "Barlangászat - végre ott, ahová mindig kívántak"
 date: "2008-10-10"
 tags: 
   - "barlang"
-  - "szemelyes"
+  - "személyes"
   - "szeretem"
 ---
 

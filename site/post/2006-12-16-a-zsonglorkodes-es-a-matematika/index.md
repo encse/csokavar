@@ -2,7 +2,7 @@
 title: "A zsonglőrködés és a matematika"
 date: "2006-12-16"
 tags: 
-  - "zsonglorkodes"
+  - "zsonglőrködés"
 ---
 
 Valakitől kaptam egy emailt, hogy tudnék-e ajánlani valamit a fenti témában. A helyzet az, hogy ez engem is nagyon érdekelne, de olyan sok anyagom nincs róla. Van egy egyetemi előadás [A zsonglőrködés matematikája](http://www.math.u-szeged.hu/tagok/czedli/oktatas/zs-mat.htm) címmel, de sajnos nincs online jegyzetük, ráadásul a szegedi egyetemen tartják, ami, mit ne mondjak, enyhén szólva kiesik a közvetlen környezetemből.

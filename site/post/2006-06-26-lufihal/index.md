@@ -4,7 +4,7 @@ date: "2006-06-26"
 tags: 
   - "fun"
   - "lufi"
-  - "zsonglorkodes"
+  - "zsonglőrködés"
 ---
 
 Csináltam egy pöpec halat.

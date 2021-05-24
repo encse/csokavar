@@ -2,10 +2,10 @@
 title: "Szombati egyveleg"
 date: "2008-10-25"
 tags: 
-  - "eniko"
+  - "enikő"
   - "fun"
   - "plafon"
-  - "tokfej"
+  - "tökfej"
 ---
 
 Úgy tűnik, mostanában jobb szeretem pennámat máshová mártog... akarom mondani, kissé kevesebb leírandó marhaság jut eszembe. De megint rám szakadt a szombat, és ilyenkor menetrendszerűen beköszönt az írhatnék is. Fura dolog ez ezzel a múzsával. De az legalább már biztos, hogy nem zsidó származású.

@@ -2,8 +2,8 @@
 title: "Matróz"
 date: "2006-06-17"
 tags: 
-  - "gyor"
-  - "velemeny"
+  - "győr"
+  - "vélemény"
 ---
 
 Múlt héten bementünk a városba (Győr) sétálni. Kicsit eleredt az eső, és beszorultunk a városháza előtt felállított sátrak alá foci VB-t nézni. Aztán volt szivárvány, és onnantól kezdve azt néztem. Végül elállt az eső, de még úgymond lógott a lába, és muszáj volt valami fedél után nézni. Kitaláltam, hogy menjünk el a Matrózba.

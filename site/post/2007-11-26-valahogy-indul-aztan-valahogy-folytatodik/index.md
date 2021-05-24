@@ -2,9 +2,9 @@
 title: "Valahogy indul, aztán valahogy folytatódik"
 date: "2007-11-26"
 tags: 
-  - "almok"
-  - "geekseg"
-  - "szemelyes"
+  - "álmok"
+  - "geekség"
+  - "személyes"
 ---
 
 Hétvégén végigtoltam valami [random haxor játékot](http://scifi.pages.at/hackits/), mert ott volt. Nagyon gagyi volt, és egy része más játékokból volt összelopva. Az azért már jelent valamit, ha az ilyenket észreveszem, nem?

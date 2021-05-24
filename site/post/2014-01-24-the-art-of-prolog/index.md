@@ -2,9 +2,9 @@
 title: "The Art of Prolog"
 date: "2014-01-24"
 tags: 
-  - "geekseg"
-  - "konyv"
-  - "velemeny"
+  - "geekség"
+  - "könyv"
+  - "vélemény"
 coverImage: images/Shinagawa-_Departure_of_a_Daimyo_LACMA_48.jpg
 ---
 

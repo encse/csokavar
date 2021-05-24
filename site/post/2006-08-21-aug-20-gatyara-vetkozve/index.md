@@ -2,7 +2,7 @@
 title: "Aug 20. - Gatyára vetkőzve"
 date: "2006-08-21"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 Az esernyő fogyóeszköz.  Rendszerint az első szélroham ki szokta fordítani, és a harmadik eset után mehet az egész a kukába. Komolyan. Óriási piaci rést vélek itt felfedezni... Ha egyszer valaki feltalálná az örökké tartó esernyőt!

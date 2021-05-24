@@ -2,7 +2,7 @@
 title: "Vonat"
 date: "2008-02-16"
 tags: 
-  - "almok"
+  - "álmok"
 ---
 
 Időről időre le fogom írni pár álmomat, mert némelyik elég fura. (Azért a hosszú combú szökéseket megtartom magamnak.)

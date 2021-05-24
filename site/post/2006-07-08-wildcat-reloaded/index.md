@@ -2,7 +2,7 @@
 title: "Wildcat reloaded"
 date: "2006-07-08"
 tags: 
-  - "zsonglorkodes"
+  - "zsonglőrködés"
 ---
 
 Újratervezem a Wildcat oldalt. Valami ilyesmi lesz, persze még sokat fog változni. A színekkel heteket szoktam szenvedni, mert színtévesztő lévén sose tudom, hogy mi néz ki igazán jól. Ráadásul nem mindegy az se, hogy milyen monitoron nézi az ember. Majd a tesómmal egyeztetünk, ha egyszer haza téved.

@@ -2,7 +2,7 @@
 title: "Wildcat"
 date: "2006-06-30"
 tags: 
-  - "zsonglorkodes"
+  - "zsonglőrködés"
 ---
 
 Ebben a hónapban mintegy két hétig nem volt elérhető a Wildcat oldal. Megelégeltem, úgyhogy előfizetek valami tárhelyszolgáltatónál és átmozgatom. Legalábbis ez a terv. Még egyeztetjük Robbal.

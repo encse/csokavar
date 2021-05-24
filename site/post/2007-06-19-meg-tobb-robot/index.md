@@ -2,7 +2,7 @@
 title: "Még több robot"
 date: "2007-06-19"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "robot"
   - "szeretem"
 ---

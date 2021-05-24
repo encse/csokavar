@@ -2,9 +2,9 @@
 title: "Így lettem programozó"
 date: "2016-03-12"
 tags: 
-  - "eniko"
-  - "geekseg"
-  - "szemelyes"
+  - "enikő"
+  - "geekség"
+  - "személyes"
 coverImage: images/ezgif-4-cec339a7d2.gif
 ---
 

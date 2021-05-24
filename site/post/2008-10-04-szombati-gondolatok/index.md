@@ -2,9 +2,9 @@
 title: "Szombati gondolatok"
 date: "2008-10-04"
 tags: 
-  - "almok"
-  - "eniko"
-  - "szemelyes"
+  - "álmok"
+  - "enikő"
+  - "személyes"
   - "szeretem"
 ---
 

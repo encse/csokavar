@@ -2,7 +2,7 @@
 title: "Direkt Marketing II"
 date: "2006-05-19"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "iwiw"
 ---
 

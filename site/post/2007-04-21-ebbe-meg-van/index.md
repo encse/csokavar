@@ -3,7 +3,7 @@ title: "Ebbe' még van"
 date: "2007-04-21"
 tags: 
   - "fun"
-  - "geekseg"
+  - "geekség"
   - "isc"
 ---
 

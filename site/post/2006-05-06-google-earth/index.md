@@ -2,7 +2,7 @@
 title: "Google Earth"
 date: "2006-05-06"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "google-earth"
 ---
 

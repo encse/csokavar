@@ -2,7 +2,7 @@
 title: "A robot"
 date: "2007-06-09"
 tags: 
-  - "geekseg"
+  - "geekség"
   - "robot"
   - "szeretem"
 ---

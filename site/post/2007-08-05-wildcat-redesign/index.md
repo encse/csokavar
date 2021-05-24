@@ -2,7 +2,7 @@
 title: "Wildcat redesign"
 date: "2007-08-05"
 tags: 
-  - "szemelyes"
+  - "személyes"
   - "szeretem"
 ---
 

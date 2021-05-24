@@ -2,10 +2,10 @@
 title: "Hackers"
 date: "2007-01-20"
 tags: 
-  - "geekseg"
-  - "konyv"
+  - "geekség"
+  - "könyv"
   - "szeretem"
-  - "velemeny"
+  - "vélemény"
 coverImage: images/Spacewar-PDP-1-200705121.jpg
 ---
 

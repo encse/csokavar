@@ -2,7 +2,7 @@
 title: "Személyes bejegyzés; vigyázat, semmi értelme!"
 date: "2008-05-06"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 Minden szart csináltam az elmúlt 24 órában.

@@ -2,7 +2,7 @@
 title: "Dolgok"
 date: "2006-12-02"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 Az előbb írtam egy remek bejegyzést arról, hogyan irtottam ki egy trójait a gépemről, dacára annak, hogy nem tudtam recovery módban bebootolni az XP-t a hülye USB-s billentyűzetem miatt. (Mert ugye az csak akkor működik, ha már fut a Windows, tehát esélyem sincs induláskor kiválasztani, hogy recovery módban induljon el.)

@@ -3,7 +3,7 @@ title: "Hacktivity Wargame 2009"
 date: "2009-09-20"
 tags: 
   - "fun"
-  - "geekseg"
+  - "geekség"
   - "hacktivity"
 coverImage: images/hacktivity_logo_2-e1447878090663.jpg
 ---

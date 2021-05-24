@@ -2,7 +2,7 @@
 title: "ALAPÍTÓ OKIRAT"
 date: "2007-12-16"
 tags: 
-  - "velemeny"
+  - "vélemény"
 ---
 
 ALAPÍTÓ OKIRAT

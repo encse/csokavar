@@ -4,7 +4,7 @@ date: "2007-10-30"
 tags: 
   - "isc"
   - "jopo"
-  - "jopofa-mondas"
+  - "jópofa-mondás"
 ---
 
 Dávid a leveleit olvassa:

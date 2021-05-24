@@ -2,7 +2,7 @@
 title: "Lakás SP1"
 date: "2006-06-26"
 tags: 
-  - "szemelyes"
+  - "személyes"
 ---
 
 Egy év után már akad jópár dolog, ami hiányzik a lakásból, ill. meg akarom változtatni. Úgyhogy ez a szabadság a „lakás SP1”-re fog elmenni.

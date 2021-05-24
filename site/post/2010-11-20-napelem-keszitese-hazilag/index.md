@@ -2,8 +2,8 @@
 title: "Napelem készítése házilag"
 date: "2010-11-20"
 tags: 
-  - "geekseg"
-  - "villamosmernokseg"
+  - "geekség"
+  - "villamosmérnökség"
 coverImage: images/ΙΚ1.jpg
 ---
 
