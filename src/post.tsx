@@ -9,6 +9,7 @@ import markdown_it_gallery_plugin from './markdown-it-gallery';
 import markdown_it_image_plugin from './markdown-it-image';
 import {AssetManager, ImageAsset} from './assets';
 import { ParsedPath } from 'path';
+import { Tag } from './tag';
 
 export type PageTemplateProps = {
     headingClasses: string[],
@@ -109,10 +110,6 @@ export class Page {
     readonly title: string;
     readonly subtitle: string;
     readonly coverImage: ImageAsset | null;
-    readonly date: Date;
-    readonly tags: string[];
-    readonly #htmlContent: string;
-    readonly slug: string;
     readonly uri: string;
     readonly #mdContent: string;
     readonly #template: Template<PageTemplateProps>;
@@ -125,14 +122,11 @@ export class Page {
     ) {
 
         const { metadata, content } = metadataParse(md);
-        this.date = new Date(metadata.date);
         this.title = metadata.title;
         this.subtitle = metadata.subtitle;
-
-
-        this.tags = metadata.tags || [];
-        this.slug = metadata.slug || slugify(this.title);
-        this.uri = '/'+this.slug;
+       
+        const slug = metadata.slug || slugify(this.title);
+        this.uri = '/'+slug;
         this.assetManager = new AssetManager(this.assetPaths, this.uri);
 
         this.coverImage = metadata.coverImage ? this.assetManager.lookup(metadata.coverImage) : null;
@@ -160,11 +154,10 @@ export class Post {
     readonly title: string;
     readonly coverImage: ImageAsset;
     readonly date: Date;
-    readonly tags: string[];
+    readonly tags: Tag[];
     readonly #htmlContent: string;
     readonly #mdContent: string;
     readonly #template: Template<PageTemplateProps>;
-    readonly slug: string;
     readonly uri: string;
     readonly excerpt: React.ReactElement<any>;
 
@@ -178,13 +171,14 @@ export class Post {
         const { metadata, content } = metadataParse(md);
         this.date = new Date(metadata.date);
         this.title = metadata.title;
-        this.tags = metadata.tags || [];
-        this.slug = metadata.slug || slugify(this.title);
+
+        this.tags = (metadata.tags || []).map(name => new Tag(name));
 
         this.#template = template;
         this.#mdContent = content;
 
-        this.uri = `/blog/${zeroPad(this.date.getFullYear(), 4)}/${zeroPad(this.date.getMonth() + 1, 2)}/${this.slug}/`;
+        const slug = metadata.slug || slugify(this.title);
+        this.uri = `/blog/${zeroPad(this.date.getFullYear(), 4)}/${zeroPad(this.date.getMonth() + 1, 2)}/${slug}/`;
 
         this.assetManager = new AssetManager(this.assetPaths, this.uri);
         this.coverImage = metadata.coverImage != null ? this.assetManager.lookup(metadata.coverImage) : null;
@@ -214,7 +208,7 @@ export class Post {
                 <span className="tags-icon" />
                 {this.tags.map((tag, i) => [
                     i == 0 ? ' ' : ', ',
-                    <a href={`/blog/tag/${slugify(tag)}/`} rel="tag">{tag}</a>
+                    <a href={tag.uri} rel="tag">{tag.name}</a>
                 ])}
             </p>
         }

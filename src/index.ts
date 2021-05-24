@@ -5,6 +5,7 @@ import { chunks, slugify } from './util';
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
 import { AssetManager } from './assets';
+import { Tag } from './tag';
 
 type Asset = ParsedPath;
 
@@ -41,7 +42,7 @@ function collectPostlike<T>(dir: string, create: (markdown:string, assets: Asset
     for (const item of fs.readdirSync(dir)) {
         const markdown = fs.readFileSync(path.join(dir, item, 'index.md'), 'utf8');
         const assets = [...files(path.join(dir, item))]
-            .filter(fpat => fpat.name != 'index.md')
+            .filter(fpat => fpat.base !== 'index.md')
         result.push(create(markdown, assets));
     }
     return result;
@@ -98,21 +99,20 @@ async function generate(fpatIn: string, fpatOut: string, writeFile: FileWriter) 
         writeFile
     );
 
-    const tags = new Set<string>();
+    const tags = new Map<string, Tag>();
     for(const post of posts){
         for (const tag of post.tags){
-            tags.add(tag);
+            tags.set(tag.name, tag);
         }
     }
 
-    for (const tag of tags) {
-        console.log
+    for (const [_, tag] of tags) {
         await generateList(
-            posts.filter(post => post.tags.indexOf(tag) >= 0),
-            path.join(fpatOut, 'blog', 'tag', slugify(tag)),
-            `/blog/tag/${slugify(tag)}`,
+            posts.filter(post => post.tags.some(t => t.uri === tag.uri)),
+            path.join(fpatOut, tag.uri),
+            tag.uri,
             template,
-            `Címke: ${tag}`,
+            `Címke: ${tag.name}`,
             '',
             'https://d1tyrc4sjyi164.cloudfront.net/wp-content/uploads/2021/01/Screen-Shot-2021-01-14-at-20.47.03-scaled.jpg',
             writeFile
