@@ -1,6 +1,6 @@
 import fs, { PathLike } from 'fs';
 import path, { ParsedPath } from 'path';
-import { Post, Page, PostList, PageTemplateProps } from './post';
+import { Post, Page, PostList, PageTemplateProps, Template } from './post';
 import { chunks } from './util';
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
@@ -47,8 +47,9 @@ function collectPostlike<T>(dir: string, create: (markdown:string, assets: Asset
     return result;
 }
 
+type FileWriter = (fpat: string, content: string | NodeJS.ArrayBufferView) => void;
 
-async function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: string, content: string | NodeJS.ArrayBufferView) => void) {
+async function generate(fpatIn: string, fpatOut: string, writeFile: FileWriter) {
     const templateHtml = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
 
     const template = (props: PageTemplateProps) => {
@@ -85,7 +86,49 @@ async function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: strin
         }
     }
 
+  
+    generateList(
+        posts, 
+        fpatOut, 
+        '/', 
+        template, 
+        'Csókavár',
+        'Németh Cs. Dávid blogja',
+        'https://d1tyrc4sjyi164.cloudfront.net/wp-content/uploads/2021/01/Screen-Shot-2021-01-14-at-20.47.03-scaled.jpg',
+        writeFile
+    );
 
+    const tags = new Set<string>();
+    for(const post of posts){
+        for (const tag of post.tags){
+            tags.add(tag);
+        }
+    }
+
+    for (const tag of tags) {
+        console.log(tag);
+        await generateList(
+            posts.filter(post => post.tags.indexOf(tag) >= 0),
+            path.join(fpatOut, 'blog', 'tag', tag),
+            `/blog/tag/${tag}`,
+            template,
+            `Címke: ${tag}`,
+            '',
+            'https://d1tyrc4sjyi164.cloudfront.net/wp-content/uploads/2021/01/Screen-Shot-2021-01-14-at-20.47.03-scaled.jpg',
+            writeFile
+        )
+    }
+}
+
+
+async function generateList(posts: Post[], 
+    fpatOut: string, 
+    baseUri: string, template: Template<PageTemplateProps>, 
+    title: string,
+    subtitle: string,
+    coverImage: string,
+    writeFile: FileWriter
+){
     let page = 1;
     let chunkSize = 5;
     for (let chunk of chunks([...posts].sort((a, b) => b.date.getTime() - a.date.getTime()), chunkSize)) {
@@ -93,18 +136,16 @@ async function generate(fpatIn: string, fpatOut: string, writeFile: (fpat: strin
         let fpat = page == 1 ? path.join(fpatOut, "index.html") : path.join(fpatOut, `page/${page}/index.html`);
 
         const postList = new PostList(template,
-            'Csókavár',
-            'Németh Cs. Dávid blogja',
-            'https://d1tyrc4sjyi164.cloudfront.net/wp-content/uploads/2021/01/Screen-Shot-2021-01-14-at-20.47.03-scaled.jpg',
-            '',
+            title,
+            subtitle,
+            coverImage,
+              baseUri,
             chunk, page, posts.length);
 
         const htmlContent = await postList.render();
         writeFile(fpat, htmlContent);
         page++;
     }
-
-
 }
 
 fs.rmdirSync("build", { recursive: true });

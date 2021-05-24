@@ -6,6 +6,7 @@ import markdownKatex from '@iktakahiro/markdown-it-katex';
 import markdown_it_iframe_plugin from './markdown-it-iframe';
 import markdown_it_youtube_plugin from './markdown-it-youtube';
 import markdown_it_gallery_plugin from './markdown-it-gallery';
+import markdown_it_image_plugin from './markdown-it-image';
 import {AssetManager, ImageAsset} from './assets';
 import { ParsedPath } from 'path';
 
@@ -18,7 +19,7 @@ export type PageTemplateProps = {
     footer: React.ReactChild
 }
 
-type Template<T> = (t: T) => string;
+export type Template<T> = (t: T) => string;
 
 export class PostList {
 
@@ -97,7 +98,8 @@ function markdownToReact(md: string, assetManager: AssetManager): React.ReactEle
     })
         .use(markdown_it_iframe_plugin)
         .use(markdown_it_youtube_plugin)
-        .use(markdown_it_gallery_plugin, { assetManager: assetManager });
+        .use(markdown_it_gallery_plugin, { assetManager: assetManager })
+        .use(markdown_it_image_plugin);
     let html = markdownIt.render(md);
     return <div dangerouslySetInnerHTML={{ __html: html }} />
 }
@@ -130,7 +132,7 @@ export class Page {
 
         this.tags = metadata.tags || [];
         this.slug = metadata.slug || slugify(this.title);
-        this.uri = this.slug;
+        this.uri = '/'+this.slug;
         this.assetManager = new AssetManager(this.assetPaths, this.uri);
 
         this.coverImage = metadata.coverImage ? this.assetManager.lookup(metadata.coverImage) : null;
