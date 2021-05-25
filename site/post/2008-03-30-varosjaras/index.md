@@ -2,7 +2,6 @@
 title: "Városjárás"
 date: "2008-03-30"
 tags: 
-  - "budapest"
   - "személyes"
 coverImage: images/Budapest-at-Night-2.jpg
 ---

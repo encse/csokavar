@@ -9,7 +9,7 @@ coverImage: images/0001-e1451228724420.jpg
 
 Nemrégiben fejeztem be két aranyos Scheme könyvet a Little Schemert, és a folytatását a Seasoned Schemert. Bár nem sok újdonságot találtam bennünk, mégis nagyon szerethetők, főleg az illusztrációk miatt.
 
-![fotó 3 (1)](images/fotó-3-1-e1451228572856-375x500.jpg)
+![fotó 3 (1)](images/foto-3-1-e1451228572856-375x500.jpg)
 
 Ami igazán megfogott benne, és végül rávettem magam egy kis munka utáni hobbi projektre, az a call with current continuation, vagy call/cc volt. Még sosem volt dolgom olyan nyelvvel, ami ezt a konstrukciót támogatná, pedig ezer dolgot lehet vele csinálni például returnt, kivételkezelést, lazy generátorokat, vagy akár threadeket is szimulálni.
 

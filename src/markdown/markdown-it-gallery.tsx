@@ -5,21 +5,22 @@ import MarkdownIt, { PluginWithOptions } from 'markdown-it';
 import Token from 'markdown-it/lib/token';
 import ReactDOMServer from 'react-dom/server';
 import * as React from 'react';
-import { AssetManager, ImageAsset } from './assets';
+import { AssetManager, ImageAsset } from '../assets';
+import {resolve} from 'url';
 
 type GalleryPluginOptions = {
+  fpat: string,
   assetManager: AssetManager
 }
 
 export default function plugin(md: MarkdownIt, options: GalleryPluginOptions) {
-  const { assetManager } = options;
-
+  const { fpat, assetManager } = options;
   function galleryToken(tokens: Token[], idx: number, options, env, self) {
 
     const token = tokens[idx];
+  
     const src: string[] = JSON.parse(token.attrGet("src"));
-
-    const image = assetManager.lookup(src[0]);
+    const image = assetManager.lookup(resolve(fpat, src[0]));
 
     return ReactDOMServer.renderToStaticMarkup(
       <div id="jtg-4716" className="modula modula-gallery modula-creative-gallery"
@@ -27,7 +28,7 @@ export default function plugin(md: MarkdownIt, options: GalleryPluginOptions) {
         <div className="modula-items">
           {
             src.map(item => {
-              const asset = assetManager.lookup(item);
+              const asset = assetManager.lookup(resolve(fpat, item));
               const width = asset.width > asset.height ? 500 : Math.round(asset.width * 500 / asset.height);
               const height = asset.height > asset.width ? 500 : Math.round(asset.height * 500 / asset.width);
 
@@ -35,29 +36,13 @@ export default function plugin(md: MarkdownIt, options: GalleryPluginOptions) {
                 throw new Error('imageAsset expected');
               }
 
-              // // 
-              // data-caption={asset.caption}
-              // rel="jtg-4716"
-              // data-image-id={asset.uri}
-
-              // 
-              // data-caption=""
-              //    data-valign="middle"
-              // data-halign="center"
-              // data-src={asset.uri}
-              // alt=""
-              // data-full={asset.uri}
-              // title={asset.caption} 
-              // sizes={`(max-width: ${width}px) 100vw, ${width}px`} 
-              // 
-              // 
               return (
                 <div className="modula-item effect-pufrobo">
                   <div className="modula-item-overlay"></div>
                   <div className="modula-item-content">{" "}
                     <a
 
-                      href={asset.uri}
+                      href={asset.url.toString()}
                       className="tile-inner modula-item-link"
                     ></a>{" "}
                     <img
@@ -65,7 +50,7 @@ export default function plugin(md: MarkdownIt, options: GalleryPluginOptions) {
                    
                       width={width}
                       height={height}
-                      src={asset.uri}
+                      src={asset.url.toString()}
 
                     />
                     <div className="figc no-description">
@@ -82,11 +67,10 @@ export default function plugin(md: MarkdownIt, options: GalleryPluginOptions) {
       </div>
     );
   };
+
   md.renderer.rules['gallery_token'] = galleryToken;
-
-
+  
   function process(state: StateBlock, startLine: number, endLine: number, silent: boolean) {
-    const rx = /\[gallery\](.*)\[\/gallery\]/sm;
 
     function getLine(i: number) {
       return state.src.slice(state.bMarks[i], state.eMarks[i]).trim();

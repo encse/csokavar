@@ -4,7 +4,6 @@ date: "2009-01-14"
 tags: 
   - "fun"
   - "gekko"
-  - "wikipedia"
 ---
 
 A minap nézegettem a [gekkora](http://gekko.csokavar.hu) mutató linkeket, és találtam egyet a [wikipédián](http://hu.wikipedia.org/wiki/Wikip%C3%A9dia:Tudakoz%C3%B3/Arch%C3%ADvum/2008-12-10).

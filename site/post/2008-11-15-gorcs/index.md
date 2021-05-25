@@ -5,7 +5,6 @@ tags:
   - "enikő"
   - "fun"
   - "személyes"
-  - "színház"
   - "vélemény"
 ---
 

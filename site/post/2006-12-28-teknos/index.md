@@ -3,7 +3,6 @@ title: "Teknős"
 date: "2006-12-28"
 tags: 
   - "személyes"
-  - "teknős"
 ---
 
 Ma megharapott ez a rohadt Nagy Hegyi Sárkány teknős (hogy lenne ez latinul?). Pedig csak ki akartam cserélni a vizét. Alig bírtam lerázni a kezemről, és még mindig fáj.

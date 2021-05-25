@@ -1,11 +1,13 @@
 import sizeOf from 'image-size';
 import path, { ParsedPath } from 'path';
+import { Url } from 'url';
+import { v5 as uuidv5 } from 'uuid';
 
 export class ImageAsset {
     kind: "imageAsset" = "imageAsset";
     #width: number | null;
     #height: number | null;
-    constructor(public readonly path: string, public readonly uri: string) {
+    constructor(public readonly path: string, public readonly url: URL) {
     }
 
     get caption(): string {
@@ -34,21 +36,34 @@ export class ImageAsset {
 export type Asset = ImageAsset;
 
 export class AssetManager {
-    private assets: Asset[];
-    constructor(public readonly paths: readonly ParsedPath[], baseUri: string) {
-        this.assets = paths.map(item => new ImageAsset(
-            path.join(item.root, item.dir, item.base),
-            path.join(baseUri, item.dir, item.base)
-        ))
+    #assets: Asset[] = [];
+    static namespace = 'efd20c5e-528e-42c9-b5fa-2ad7487f0510';
+
+    constructor(private readonly cdnUri: string) {
     }
 
-    lookup(path: string): Asset {
-        for (const item of this.assets) {
-            if (item.path.endsWith(path)) {
+    get assets(): Asset[]{
+        return [...this.#assets];
+    }
+
+    register(parsedPath: ParsedPath){
+        const uuid = uuidv5(path.join(parsedPath.dir, parsedPath.base), AssetManager.namespace);
+        this.#assets.push(
+            new ImageAsset(
+                path.join(parsedPath.root, parsedPath.dir, parsedPath.base),
+                new URL(path.join('assets', uuid + parsedPath.ext), this.cdnUri)
+            )
+        );
+    }
+
+    lookup(fpat: string): Asset {
+        
+        for (const item of this.#assets) {
+            if (item.path == fpat) {
                 return item;
             }
         }
-        throw new Error(`Cannot find asset '${path}'`);
+        throw new Error(`Cannot find asset '${fpat}'`);
     }
 }
 

@@ -3,6 +3,7 @@ title: "Panni"
 date: "2012-01-17"
 tags: 
   - "személyes"
+  - "család"
 coverImage: images/86c5a37f93850a8c47d3a890ce0219be.jpg
 ---
 

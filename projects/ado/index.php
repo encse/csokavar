@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php require('../bootstrap.php'); ?>
+<?php require('./bootstrap.php'); ?>
 <html>
 <head>
 	<?php csv_head(); ?>

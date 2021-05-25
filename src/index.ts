@@ -1,10 +1,11 @@
 import fs, { PathLike } from 'fs';
 import path, { ParsedPath } from 'path';
-import { Post, Page, PostList, PageTemplateProps, Template } from './post';
+import { Post, Page, PageTemplateProps, Template } from './post';
+import { PostList } from "./PostList";
 import { chunks, slugify } from './util';
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
-import { AssetManager } from './assets';
+import { AssetManager, ImageAsset } from './assets';
 import { Tag } from './tag';
 
 type Asset = ParsedPath;
@@ -37,20 +38,19 @@ function* files(root: string, dir: string = ''): Iterable<ParsedPath> {
 };
 
 
-function collectPostlike<T>(dir: string, create: (markdown:string, assets: Asset[]) => T): T[] {
+function collectPostlike<T>(dir: string, assetManager: AssetManager, create: (fpat: string, markdown: string) => T): T[] {
     const result: T[] = [];
     for (const item of fs.readdirSync(dir)) {
-        const markdown = fs.readFileSync(path.join(dir, item, 'index.md'), 'utf8');
-        const assets = [...files(path.join(dir, item))]
-            .filter(fpat => fpat.base !== 'index.md')
-        result.push(create(markdown, assets));
+        const fpat = path.join(dir, item, 'index.md')
+        const markdown = fs.readFileSync(fpat, 'utf8');
+        result.push(create(fpat, markdown));
     }
     return result;
 }
 
 type FileWriter = (fpat: string, content: string | NodeJS.ArrayBufferView) => void;
 
-async function generate(fpatIn: string, fpatOut: string, writeFile: FileWriter) {
+async function generate(fpatIn: string, writeFile: FileWriter) {
     const templateHtml = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
 
     const template = (props: PageTemplateProps) => {
@@ -58,100 +58,122 @@ async function generate(fpatIn: string, fpatOut: string, writeFile: FileWriter) 
             .replace('{{ heading-classes }}', props.headingClasses.map(c => ' ' + c).join(''))
             .replace('{{ title }}', renderReactChild(props.title))
             .replace('{{ subtitle }}', renderReactChild(props.subtitle))
-            .replace('{{ featured-image }}', 
-                props.featuredImage ? 
-                    `url(${props.featuredImage})` :
+            .replace('{{ featured-image }}',
+                props.coverImage ?
+                    `url(${props.coverImage.url})` :
                     `linear-gradient(to right, #0f2027, #203a43, #2c5364)`)
             .replace('{{ post-content }}', renderReactChild(props.postContent))
             .replace('{{ footer }}', renderReactChild(props.footer))
     }
 
+    const assetManager = new AssetManager('http://127.0.0.1:8080/');
+
+    for (let assetPath of [...files('site')].filter(fpat => fpat.base !== 'index.md')) {
+        assetManager.register(assetPath);
+    }
+
     const pages: Page[] = collectPostlike(
-        'site/page', 
-        (md, assetPaths) => new Page(template, md, assetPaths)
+        'site/page',
+        assetManager,
+        (fpat, md) => new Page(template, fpat, md, assetManager)
     );
 
     const posts: Post[] = collectPostlike(
-        'site/post', 
-        (md, assetPaths) => new Post(template, md, assetPaths)
+        'site/post',
+        assetManager,
+        (fpat, md) => new Post(template, fpat, md, assetManager)
     );
 
     for (const p of [...posts, ...pages]) {
-        const pDir = path.join(fpatOut, p.uri)
+        const pDir = p.uri;
         const htmlContent = await p.render();
         writeFile(path.join(pDir, 'index.html'), htmlContent);
-        for (let asset of p.assetManager.paths) {
-            writeFile(
-                path.join(pDir, asset.dir, asset.base), 
-                fs.readFileSync(path.join(asset.root, asset.dir, asset.base)));
-        }
+
     }
 
-  
+    for (let asset of assetManager.assets) {
+        writeFile(
+            asset.url.pathname,
+            fs.readFileSync(path.join(asset.path)));
+    }
+
     generateList(
-        posts, 
-        fpatOut, 
-        '/', 
-        template, 
+        posts,
+        '/',
+        template,
         'Csókavár',
         'Németh Cs. Dávid blogja',
-        'https://d1tyrc4sjyi164.cloudfront.net/wp-content/uploads/2021/01/Screen-Shot-2021-01-14-at-20.47.03-scaled.jpg',
+        assetManager.lookup('site/assets/main-bg.jpg'),
         writeFile
     );
 
     const tags = new Map<string, Tag>();
-    for(const post of posts){
-        for (const tag of post.tags){
+    const tagCount = new Map<string, number>();
+    for (const post of posts) {
+        for (const tag of post.tags) {
             tags.set(tag.name, tag);
+            tagCount.set(tag.name, (tagCount.get(tag.name) ?? 0) + 1)
         }
     }
 
     for (const [_, tag] of tags) {
+        if (tagCount.get(tag.name) == 1) {
+            console.log(tag.name);
+        }
         await generateList(
             posts.filter(post => post.tags.some(t => t.uri === tag.uri)),
-            path.join(fpatOut, tag.uri),
             tag.uri,
             template,
             `Címke: ${tag.name}`,
             '',
-            'https://d1tyrc4sjyi164.cloudfront.net/wp-content/uploads/2021/01/Screen-Shot-2021-01-14-at-20.47.03-scaled.jpg',
+            assetManager.lookup('site/assets/main-bg.jpg'),
             writeFile
         )
     }
 }
 
 
-async function generateList(posts: Post[], 
-    fpatOut: string, 
-    baseUri: string, template: Template<PageTemplateProps>, 
+async function generateList(
+    posts: Post[],
+    baseUri: string,
+    template: Template<PageTemplateProps>,
     title: string,
     subtitle: string,
-    coverImage: string,
+    coverImage: ImageAsset,
     writeFile: FileWriter
-){
+) {
     let page = 1;
     let chunkSize = 5;
     for (let chunk of chunks([...posts].sort((a, b) => b.date.getTime() - a.date.getTime()), chunkSize)) {
-
-        let fpat = page == 1 ? path.join(fpatOut, "index.html") : path.join(fpatOut, `page/${page}/index.html`);
 
         const postList = new PostList(template,
             title,
             subtitle,
             coverImage,
-              baseUri,
+            baseUri,
             chunk, page, posts.length);
 
         const htmlContent = await postList.render();
-        writeFile(fpat, htmlContent);
+        writeFile(path.join(postList.uri, "index.html"), htmlContent);
         page++;
     }
 }
 
 fs.rmdirSync("build", { recursive: true });
 
-generate('.', 'build', (fpat: string, content: string | NodeJS.ArrayBufferView) => {
+generate('.', (fpat: string, content: string | NodeJS.ArrayBufferView) => {
+    fpat = path.join('build', fpat);
     fs.mkdirSync(path.parse(fpat).dir, { recursive: true });
     fs.writeFileSync(fpat, content);
+}).then(() => {
+    for (let line of fs.readFileSync('projects/projects.conf', 'utf-8').split('\n')) {
+        line = line.split('#')[0].trim()
+        if (line != '') {
+            const parts = line.split('->').map(part => part.trim());
+            fs.symlinkSync(path.resolve('projects', parts[1]), path.join('build', 'projects', parts[0]), 'junction')
+        }
+    }
 });
+
+
 

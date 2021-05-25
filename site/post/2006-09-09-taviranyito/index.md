@@ -3,7 +3,6 @@ title: "Távirányító"
 date: "2006-09-09"
 tags: 
   - "geekség"
-  - "pda"
 ---
 
 A minap nézegettem, hogy lehetne régió függetlenné tenni a DVD lejátszómat. Persze valószínüleg megmarad elméletnek a dolog, ugyanis kell az a fránya garancia... Ugyanakkor nem szeretem ha korlátok közé szorítanak, meg egyébként is érdekel, milyen a szerviz menü.

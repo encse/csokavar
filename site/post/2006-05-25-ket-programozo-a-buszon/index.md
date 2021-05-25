@@ -14,7 +14,9 @@ Lukáccsal jöttünk fel Budapestre a hétvégén. Mikor kifogytunk a témából
 
 Van egy 1 dimenziós bolygó (számegyenes), amire ledobunk két robotot, és közéjük egy bóját:
 
-\---------R----------B-------------------R---------------
+```
+---------R----------B-------------------R---------------
+```
 
 A robotok tudnak jobbra/balra menni, mindkét irányba két sebességgel. Ezen kívül ácsoroghatnak is. Van véges memóriájuk. Nem kommunikálhatnak egymással.
 
@@ -24,7 +26,11 @@ Az pl. nem jó, hogy az egyik robot áll, a másik pedig jobbra-balra megy egyre
 
 2\. Adott egy n x m-es mátrix. A mátrix elemei izzók. Ezek lehetnek ki- vagy bekapcsolt állapotban. Műveletek: a mátrix bármelyik sorában ill. oszlopában egyszerre átállíthatjuk a lámpákat. Pl. egy 3x3-as mátrixban, először az első oszlopot, majd az első sort átállítva ezt kapjuk:
 
-011 100 100
+```
+011
+100
+100
+```
 
 Probléma: szépen le volt kapcsolva az összes lámpa, mikor Agresszív Pistike egy óvatlan pillanatban (iskola helyett) összevissza kapcsolgatta a őket. 
 

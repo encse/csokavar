@@ -11,7 +11,12 @@ main article {
 }
 
 main article img { 
-    float: left; width: 104px; height: 104px; margin: 16px; margin-top: 0; object-fit: cover; 
+    float: left; 
+    width: 104px !important; 
+    height: 104px !important; 
+    margin: 16px !important; 
+    margin-top: 0 !important; 
+    object-fit: cover; 
     border: 4px solid #fff;
     background: #fff;
 } 

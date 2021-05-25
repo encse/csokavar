@@ -2,7 +2,6 @@
 title: "Tüzifa rakodás"
 date: "2010-09-18"
 tags: 
-  - "fejtörő"
   - "feladat"
   - "geekség"
 coverImage: images/hasitottfa.jpg

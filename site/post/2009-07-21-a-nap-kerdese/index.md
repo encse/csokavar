@@ -1,8 +1,6 @@
 ---
 title: "A nap kérdése"
 date: "2009-07-21"
-tags: 
-  - "macska"
 coverImage: images/question-mark-e1447879471360.jpg
 ---
 

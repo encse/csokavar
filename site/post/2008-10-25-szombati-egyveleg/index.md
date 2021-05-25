@@ -4,7 +4,6 @@ date: "2008-10-25"
 tags: 
   - "enikő"
   - "fun"
-  - "plafon"
   - "tökfej"
 ---
 

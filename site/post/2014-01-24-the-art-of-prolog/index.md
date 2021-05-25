@@ -12,7 +12,7 @@ Amikor Ásványi tanár úr leosztályozta a második Prolog ZH-mat, mondott pá
 
 Ez aztán csak nem hagyott nyugodni az évek alatt, úgyhogy végül is megvettem a [The Art of Prolog](http://www.amazon.com/The-Art-Prolog-Second-Edition/dp/0262691639) című könyvet és végigtoltam az ősszel-télen. Érdekelt, mit lehet kihozni egy egyszerű backtrackből.
 
-[![large-0262193388](images/large-0262193388.jpg)](https://csokavar.hu/blog/2014/01/the-art-of-prolog/large-0262193388/)
+![the art of prolog](images/large-0262193388.jpg)
 
 A Prolog ugyebár egy logikai programozási nyelv. Állításokat próbálunk levezetni kölönböző tényekből és következtetési szabályokból. A bizonyítás módszere az unifikálás, aminek során a logikai változók értéket kapnak, és a visszalépéses keresés. A vágásokkal jelezhetjük a Prolognak, hogy ha már egy részproblémát bebizonyított, tartson ki mellette, még ha később el is akad, ne menjen vissza és ne próbálja meg más úton újra belátni. Mint kiderült attól zöld egy vágás, hogy ki szabad törölni, nem változik tőle a megtalált megoldások halmaza, legfeljebb a keresés hatékonyságát csökkentjük vele.
 

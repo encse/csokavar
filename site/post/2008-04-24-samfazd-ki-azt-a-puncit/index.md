@@ -2,7 +2,6 @@
 title: "Sámfázd ki azt a puncit!"
 date: "2008-04-24"
 tags: 
-  - "falmászas"
   - "személyes"
 ---
 

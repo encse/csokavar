@@ -2,7 +2,6 @@
 title: "Extrém blogolás"
 date: "2009-01-11"
 tags: 
-  - "extrem-blogolás"
   - "személyes"
 ---
 

@@ -3,7 +3,6 @@ title: "Spamek"
 date: "2007-10-30"
 tags: 
   - "isc"
-  - "jopo"
   - "jópofa-mondás"
 ---
 

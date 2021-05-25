@@ -3,7 +3,6 @@ title: "Jó ez?"
 date: "2009-03-08"
 tags: 
   - "metaentry"
-  - "muveszek"
   - "vélemény"
 ---
 

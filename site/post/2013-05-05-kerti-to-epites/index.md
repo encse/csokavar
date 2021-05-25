@@ -2,7 +2,7 @@
 title: "Kerti tó építés"
 date: "2013-05-05"
 tags: 
-  - "kert"
+  - "ház"
 coverImage: images/to1.jpg
 ---
 

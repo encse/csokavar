@@ -3,7 +3,6 @@ title: "User Interfész a seggem"
 date: "2007-01-02"
 tags: 
   - "geekség"
-  - "otp"
 ---
 
 Azt hinné az ember, hogy legalább egy bank ad egy kicsit magára, ha már egyszer webes számlakezelőt csináltat. A stabilitás mellett én a kezelhetőséggel szemben is elég magas követelményeket támasztanék, ha én lennék az informatikai fejleszésügyi főelőadó szakmanager. De ezek? Csak egyet hadd emeljek ki.

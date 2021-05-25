@@ -5,6 +5,7 @@ tags:
   - "enikő"
   - "gólya"
   - "személyes"
+  - "család"
 coverImage: images/Ciconia_ciconia_at_the_hamburg_zoo.jpg
 ---
 

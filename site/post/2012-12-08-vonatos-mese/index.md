@@ -2,7 +2,7 @@
 title: "Vonatos mese"
 date: "2012-12-08"
 tags: 
-  - "zsófi"
+    - "család"
 coverImage: images/locomotive-001.jpg
 ---
 
@@ -10,7 +10,8 @@ coverImage: images/locomotive-001.jpg
 
 Anyukámat nagy ritkán rá lehetett venni, hogy elmesélje a kisvonatot, én meg már csak a hagyományőrzés miatt is megpróbálkoztam vele. Azóta kb. negyvenszer meséltem el, egy időben nagy kedvenc volt, és mindig kicsit más lett a történet, mert sokszor Zsófi is beleszólt, amit próbáltam beépíteni a mesébe.
 
-### Vonatos mese
+<div style="background: #feffde; padding: 3em 2em; margin: 1em 0; color: rgb(55, 64, 80)">
+<h3 style="font-family: 'Emilys Candy', cursive; font-size: 400%; text-align: center; color: #7f663a; border: none;">Vonatos mese</h3>
 
 Hol volt, hol nem volt, volt egyszer egy nagy kerek erdő. Ebben az erdőben egy kis erdei vasút szállította az állatokat fel- és alá reggeltől estig. De nem akármilyen vasút volt ám ez! A kocsikat ugyanis egy kis gőzös húzta. A vonatot a lompos farkú róka vezette, a medve lapátolta a szenet, az utasok jegyeit pedig a nyuszi ellenőrizte. _\- Itt akadt a kezembe a plüsskígyó. -_ Sőt hátul a poggyászkocsiban volt egy öreg kígyó is, aki letisztította az utasok cipőjét ha megkérték rá.
 
@@ -22,6 +23,7 @@ Ott voltak a hódok, az őzikék, a vaddisznók...
 
 Mindenki szépen beszállt a kisvonatba, a nyuszi kilyukasztotta a jegyeket, a kígyó pedig letisztította a cipőket. Közben a róka feltöltötte a mozdony tartályát friss vízzel, a medve pedig jó három zsák szenet öntött a szeneskocsiba. Mikor mindennel elkészültek, megkapták a jelet az indulásra, és a kisvonat nekiveselkedett.
 
+<pre style="text-align: center; border: none; background: transparent; font: inherit;">
 Ssh-sszh, beh
 sok súly!
 Meg se
@@ -33,6 +35,7 @@ messze,
 messze
 szaladok,
 szaladok.
+</pre>
 
 _(Illyés Gyula Mozdonyát a Cini cini muzsikában találtam egyik alkalommal.)_ 
 
@@ -49,5 +52,7 @@ Elzakatoltak a szénégető kemencéi mellett, fütyültek a favágó kunyhója 
 Nem maradt más a pályaudvaron, csak a kisvonat és a kígyó a poggyászkocsiban. A kisvonat még egy darabig beszélgetett a többi vonattal, aztán ő is elfáradt, becsukta a kis lámpáit és aludt egészen reggelig.
 
 ![](images/footer-symbol.png "footer-symbol")
+
+</div>
 
 Egyszerű kis történet, de szeretem vele együtt kitalálni a dolgokat. Egyszer lemaradtak a hódok is, na akkor aztán volt fejtörés, még vissza is kellett fordulniuk...
