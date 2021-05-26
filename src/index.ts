@@ -26,7 +26,6 @@ const settings = config[process.argv[2]];
 console.log(settings);
 
 
-
 function renderReactChild(child: React.ReactChild | null): string {
     if (child == null) {
         return ''
@@ -177,21 +176,29 @@ async function generateList(
     }
 }
 
-fs.rmdirSync("build", { recursive: true });
+async function build(){
 
-generate('.', (fpat: string, content: string | NodeJS.ArrayBufferView) => {
-    fpat = path.join('build', fpat);
-    fs.mkdirSync(path.parse(fpat).dir, { recursive: true });
-    fs.writeFileSync(fpat, content);
-}).then(() => {
+    const tmpDir = fs.mkdtempSync("build_");
+    await generate('.', (fpat: string, content: string | NodeJS.ArrayBufferView) => {
+        fpat = path.join(tmpDir, fpat);
+        fs.mkdirSync(path.parse(fpat).dir, { recursive: true });
+        fs.writeFileSync(fpat, content);
+    })
+      
     for (let line of fs.readFileSync('projects/projects.conf', 'utf-8').split('\n')) {
         line = line.split('#')[0].trim()
         if (line != '') {
             const parts = line.split('->').map(part => part.trim());
-            fs.symlinkSync(path.resolve('projects', parts[1]), path.join('build', 'projects', parts[0]), 'junction')
+            fs.symlinkSync(path.resolve('projects', parts[1]), path.join(tmpDir, 'projects', parts[0]), 'junction')
         }
     }
-});
+
+    fs.rmdirSync("build", { recursive: true });
+    fs.renameSync(tmpDir, "build");
+}
+
+build();
+
 
 
 
