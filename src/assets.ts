@@ -1,6 +1,6 @@
 import sizeOf from 'image-size';
 import path, { ParsedPath } from 'path';
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4, v5 as uuidv5 } from 'uuid';
 
 type AssetKind = "imageAsset" | "jsAsset";
 type AssetOf<T extends AssetKind> = Asset & {kind: T};
@@ -47,6 +47,7 @@ export type Asset = ImageAsset | JsAsset;
 export class AssetManager {
     #assets: Asset[] = [];
 
+    private static namespace = 'efd20c5e-528e-42c9-b5fa-2ad7487f0510';
     constructor(private readonly cdnUri: string) {
     }
 
@@ -55,13 +56,16 @@ export class AssetManager {
     }
 
     register(parsedPath: ParsedPath){
-        const uuid = uuidv4();
+        const isImage = parsedPath.ext !== '.js';
+
+        const uuid = isImage ? 
+            uuidv5(path.join(parsedPath.dir, parsedPath.base), AssetManager.namespace) : 
+            uuidv4();
+
         const fpat = path.join(parsedPath.root, parsedPath.dir, parsedPath.base);
         const uri = new URL(path.join('assets', uuid + parsedPath.ext), this.cdnUri);
 
-        const asset = 
-            parsedPath.ext == '.js' ? new JsAsset(fpat, uri) :
-            new ImageAsset(fpat, uri);
+        const asset = isImage ? new ImageAsset(fpat, uri) : new JsAsset(fpat, uri);
 
         this.#assets.push(asset);
     }
