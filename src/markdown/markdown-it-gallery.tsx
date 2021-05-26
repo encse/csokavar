@@ -20,7 +20,6 @@ export default function plugin(md: MarkdownIt, options: GalleryPluginOptions) {
     const token = tokens[idx];
   
     const src: string[] = JSON.parse(token.attrGet("src"));
-    const image = assetManager.lookup(resolve(fpat, src[0]));
 
     return ReactDOMServer.renderToStaticMarkup(
       <div id="jtg-4716" className="modula modula-gallery modula-creative-gallery"
@@ -28,7 +27,7 @@ export default function plugin(md: MarkdownIt, options: GalleryPluginOptions) {
         <div className="modula-items">
           {
             src.map(item => {
-              const asset = assetManager.lookup(resolve(fpat, item));
+              const asset = assetManager.lookup(resolve(fpat, item), "imageAsset");
               const width = asset.width > asset.height ? 500 : Math.round(asset.width * 500 / asset.height);
               const height = asset.height > asset.width ? 500 : Math.round(asset.height * 500 / asset.width);
 

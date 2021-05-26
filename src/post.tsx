@@ -41,7 +41,7 @@ export class Page {
         const slug = metadata.slug || slugify(this.title);
         this.uri = '/'+slug+'/';
 
-        this.coverImage = metadata.coverImage ? this.assetManager.lookup(resolve(fpat, metadata.coverImage)) : null;
+        this.coverImage = metadata.coverImage ? this.assetManager.lookup(resolve(fpat, metadata.coverImage), "imageAsset") : null;
 
         this.#template = template;
         this.#mdContent = content;
@@ -90,7 +90,7 @@ export class Post {
         const slug = metadata.slug || slugify(this.title);
         this.uri = `/blog/${zeroPad(this.date.getFullYear(), 4)}/${zeroPad(this.date.getMonth() + 1, 2)}/${slug}/`;
 
-        this.coverImage = metadata.coverImage != null ? this.assetManager.lookup(resolve(fpat, metadata.coverImage)) : null;
+        this.coverImage = metadata.coverImage != null ? this.assetManager.lookup(resolve(fpat, metadata.coverImage), "imageAsset") : null;
 
         this.excerpt = markdownToReactExcerpt(content, this.uri);
         

@@ -1,7 +1,9 @@
 import sizeOf from 'image-size';
 import path, { ParsedPath } from 'path';
-import { Url } from 'url';
-import { v5 as uuidv5 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
+
+type AssetKind = "imageAsset" | "jsAsset";
+type AssetOf<T extends AssetKind> = Asset & {kind: T};
 
 export class ImageAsset {
     kind: "imageAsset" = "imageAsset";
@@ -33,11 +35,17 @@ export class ImageAsset {
     }
 }
 
-export type Asset = ImageAsset;
+export class JsAsset {
+    kind: "jsAsset" = "jsAsset";
+
+    constructor(public readonly path: string, public readonly url: URL) {
+    }
+}
+
+export type Asset = ImageAsset | JsAsset;
 
 export class AssetManager {
     #assets: Asset[] = [];
-    static namespace = 'efd20c5e-528e-42c9-b5fa-2ad7487f0510';
 
     constructor(private readonly cdnUri: string) {
     }
@@ -47,22 +55,27 @@ export class AssetManager {
     }
 
     register(parsedPath: ParsedPath){
-        const uuid = uuidv5(path.join(parsedPath.dir, parsedPath.base), AssetManager.namespace);
-        this.#assets.push(
-            new ImageAsset(
-                path.join(parsedPath.root, parsedPath.dir, parsedPath.base),
-                new URL(path.join('assets', uuid + parsedPath.ext), this.cdnUri)
-            )
-        );
+        const uuid = uuidv4();
+        const fpat = path.join(parsedPath.root, parsedPath.dir, parsedPath.base);
+        const uri = new URL(path.join('assets', uuid + parsedPath.ext), this.cdnUri);
+
+        const asset = 
+            parsedPath.ext == '.js' ? new JsAsset(fpat, uri) :
+            new ImageAsset(fpat, uri);
+
+        this.#assets.push(asset);
     }
 
-    lookup(fpat: string): Asset {
+    lookup<T extends AssetKind>(fpat: string, assetKind: T): AssetOf<T> {
         
         for (const item of this.#assets) {
-            if (item.path == fpat) {
-                return item;
+            if (item.path === fpat) {
+                if (item.kind === assetKind){
+                    return item as AssetOf<T>;
+                }
             }
         }
+
         throw new Error(`Cannot find asset '${fpat}'`);
     }
 }

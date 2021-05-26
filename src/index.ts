@@ -1,15 +1,12 @@
-import fs, { PathLike } from 'fs';
+import fs from 'fs';
 import path, { ParsedPath } from 'path';
 import { Post, Page, PageTemplateProps, Template } from './post';
 import { PostList } from "./PostList";
-import { chunks, slugify } from './util';
+import { chunks } from './util';
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
 import { AssetManager, ImageAsset } from './assets';
 import { Tag } from './tag';
-
-type Asset = ParsedPath;
-
 
 function renderReactChild(child: React.ReactChild | null): string {
     if (child == null) {
@@ -53,8 +50,11 @@ type FileWriter = (fpat: string, content: string | NodeJS.ArrayBufferView) => vo
 async function generate(fpatIn: string, writeFile: FileWriter) {
     const templateHtml = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
 
+    const assetManager = new AssetManager('http://127.0.0.1:8080/');
+
     const template = (props: PageTemplateProps) => {
         return templateHtml
+            .replace('{{ site.js }}', assetManager.lookup('site/assets/site.js', "jsAsset").url.toString())
             .replace('{{ heading-classes }}', props.headingClasses.map(c => ' ' + c).join(''))
             .replace('{{ title }}', renderReactChild(props.title))
             .replace('{{ subtitle }}', renderReactChild(props.subtitle))
@@ -66,7 +66,6 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
             .replace('{{ footer }}', renderReactChild(props.footer))
     }
 
-    const assetManager = new AssetManager('http://127.0.0.1:8080/');
 
     for (let assetPath of [...files('site')].filter(fpat => fpat.base !== 'index.md')) {
         assetManager.register(assetPath);
@@ -103,7 +102,7 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
         template,
         'Csókavár',
         'Németh Cs. Dávid blogja',
-        assetManager.lookup('site/assets/main-bg.jpg'),
+        assetManager.lookup('site/assets/main-bg.jpg', "imageAsset"),
         writeFile
     );
 
@@ -126,7 +125,7 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
             template,
             `Címke: ${tag.name}`,
             '',
-            assetManager.lookup('site/assets/main-bg.jpg'),
+            assetManager.lookup('site/assets/main-bg.jpg', "imageAsset"),
             writeFile
         )
     }
