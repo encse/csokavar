@@ -26,7 +26,7 @@ main article img {
 
 ## [Prezi 2014-2021](https://csokavar.hu/blog/tag/prezi/)
 
-![Prezi](https://csokavar.hu/wp-content/uploads/2008/06/prezi.svg)
+![Prezi](images/prezi.svg)
 
 2014 nyarától (ismét) a Prezi.com fejlesztőjeként dolgoztam, középpontban az ötletekkel.
 
@@ -38,7 +38,7 @@ Senior programozóként kezdtem, most (2019) a Pezi Next Editor frontend archite
 
 ## [Mobilengine 2011-2014](https://csokavar.hu/blog/tag/mobilengine/)
 
-![mobilengine](https://csokavar.hu/wp-content/uploads/2008/06/me.svg)
+![mobilengine](images/me.svg)
 
 2011-ben fordultam a mobil technológiák felé. A Mobilengine egy több platformon (Android, IOS, Blackberry, Windows Mobile) futó alkalmazás, amivel különböző űrlapokat lehet kitölteni, és egy nagy közös szerveren (ASP .Net és hasonlók) nézegetni. Sajnos ebből a cégből nem lett nagy durranás, de a fejlesztő csapat nagyon erős volt, sokat tanultam itt.
 </article>
@@ -46,7 +46,7 @@ Senior programozóként kezdtem, most (2019) a Pezi Next Editor frontend archite
 
 ## [Intentional Software 2002-2011](https://csokavar.hu/blog/tag/isc/)
 
-![ISC](https://csokavar.hu/wp-content/uploads/2008/06/isc.svg)
+![ISC](images/isc.svg)
 
 Intentional programming technológiák kutatása és alkalmazása, Charles Simonyi vállalatában. Természetesen minden szupertitkos, de néhány kapcsolódó történet a blogon olvasható.
 
