@@ -7,6 +7,25 @@ import ReactDOMServer from 'react-dom/server';
 import React from 'react';
 import { AssetManager, ImageAsset } from './assets';
 import { Tag } from './tag';
+import process from 'process';
+
+type Settings = {
+    'cdn': string
+};
+
+const config: {[key: string]:Settings } = {
+    local: {
+        'cdn': 'http://127.0.0.1:8080'
+    },
+    prod: {
+        'cdn': 'https://d1tyrc4sjyi164.cloudfront.net/'
+    }
+}
+
+const settings = config[process.argv[2]];
+console.log(settings);
+
+
 
 function renderReactChild(child: React.ReactChild | null): string {
     if (child == null) {
@@ -50,7 +69,7 @@ type FileWriter = (fpat: string, content: string | NodeJS.ArrayBufferView) => vo
 async function generate(fpatIn: string, writeFile: FileWriter) {
     const templateHtml = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
 
-    const assetManager = new AssetManager('http://127.0.0.1:8080/');
+    const assetManager = new AssetManager(settings.cdn);
 
     const template = (props: PageTemplateProps) => {
         return templateHtml

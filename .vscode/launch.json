@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "args": ["-r", "ts-node/register", "${workspaceFolder}/src/index.ts"],
+            "args": ["-r", "ts-node/register", "${workspaceFolder}/src/index.ts", "local"],
             "protocol": "inspector",
             "cwd": "${workspaceRoot}",
         }

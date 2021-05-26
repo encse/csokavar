@@ -2,11 +2,11 @@
   "name": "wildcat",
   "version": "1.0.0",
   "description": "Wildcat Jugglers Tutorial",
-  "repository": "https://github.com/encse/wildcat",
+  "repository": "https://github.com/encse/csokavar",
   "license": "MIT",
   "keywords": [],
   "scripts": {
-    "build": "node -r ts-node/register src/index.ts",
+    "build-prod": "node -r ts-node/register src/index.ts prod",
     "dev": "npx http-server -c-1 build",
     "deploy": "qqqssh csokavar.hu 'cd /var/www/zsonglor/assets; git pull'"
   },
