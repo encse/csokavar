@@ -179,6 +179,8 @@ async function generateList(
 async function build(){
 
     const tmpDir = fs.mkdtempSync("build_");
+    fs.chmodSync(tmpDir, 0o777);
+
     await generate('.', (fpat: string, content: string | NodeJS.ArrayBufferView) => {
         fpat = path.join(tmpDir, fpat);
         fs.mkdirSync(path.parse(fpat).dir, { recursive: true });
