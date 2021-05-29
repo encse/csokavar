@@ -68,7 +68,7 @@ type FileWriter = (fpat: string, content: string | NodeJS.ArrayBufferView) => vo
 async function generate(fpatIn: string, writeFile: FileWriter) {
     const templateHtml = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
 
-    const assetManager = new AssetManager(settings.cdn);
+    const assetManager = new AssetManager(settings.cdn, ".media");
 
     const template = (props: PageTemplateProps) => {
         return templateHtml
@@ -78,15 +78,15 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
             .replace('{{ subtitle }}', renderReactChild(props.subtitle))
             .replace('{{ featured-image }}',
                 props.coverImage ?
-                    `url(${props.coverImage.url})` :
-                    `linear-gradient(to right, #0f2027, #203a43, #2c5364)`)
+                    `background-image: url(${props.coverImage.url}); background-color: ${props.coverImage.dominantColor};` :
+                    `background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);`)
             .replace('{{ post-content }}', renderReactChild(props.postContent))
             .replace('{{ footer }}', renderReactChild(props.footer))
     }
 
 
     for (let assetPath of [...files('site')].filter(fpat => fpat.base !== 'index.md')) {
-        assetManager.register(assetPath);
+       await assetManager.register(assetPath);
     }
 
     const pages: Page[] = collectPostlike(
@@ -111,7 +111,7 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
     for (let asset of assetManager.assets) {
         writeFile(
             asset.url.pathname,
-            fs.readFileSync(path.join(asset.path)));
+            fs.readFileSync(path.join(asset.srcPath)));
     }
 
     generateList(

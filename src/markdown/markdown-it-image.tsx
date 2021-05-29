@@ -18,9 +18,12 @@ export default function plugin(md: MarkdownIt, options: ImagePluginOption) {
     const token = tokens[idx];
     let src = token.attrGet('src');
     if (!src.startsWith('http://') && !src.startsWith('https://')) {
-      src = assetManager.lookup(resolve(fpat, token.attrGet("src")), "imageAsset").url.toString()
+      let asset = assetManager.lookup(resolve(fpat, token.attrGet("src")), "imageAsset");
+      let src = asset.url.toString();
+      return ReactDOMServer.renderToStaticMarkup(<img style={{background: asset.dominantColor}} src={src} className="image" />);
+    } else {
+      return ReactDOMServer.renderToStaticMarkup(<img src={src} className="image" />);
     }
-    return ReactDOMServer.renderToStaticMarkup(<img src={src} className="image" />);
   };
 
   md.renderer.rules['image'] = imageToken;
