@@ -114,7 +114,7 @@ Daniel P. Friedman és Matthias Felleisen Little Schemer és Seasoned Schemer k�
 </article>
 <article>
 
-## [Ray march (2013)](https://csokavar.hu/blog/2013/12/raytrace-es-ray-march/)
+## [Ray march (2013)](https://csokavar.hu/blog/2013/12/ray-trace-es-ray-march/)
 
 ![ray march](images/raytrace1-300x300.jpg)
 
@@ -122,7 +122,7 @@ Csináltam egy kis raymarch renderelőkét néhány gömbbel meg fényforrással
 </article>
 <article>
 
-## [Horgász-bot (2013)](https://csokavar.hu/blog/2013/06/28/horgasz-bot/)
+## [Horgász-bot (2013)](https://csokavar.hu/blog/2013/06/horgasz-bot/)
 
 ![fishingbot](images/fishingbot-500x2541.png)
 
