@@ -43,7 +43,7 @@ export class PostList {
         }
 
         const hasPrev = this.page > 1;
-        const hasNext = this.postCount / this.posts.length > this.page;
+        const hasNext = this.postCount / this.posts.length >= this.page + 1;
 
         if (hasPrev || hasNext) {
             content.push(

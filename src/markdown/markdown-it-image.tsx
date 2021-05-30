@@ -3,7 +3,7 @@ import Token from 'markdown-it/lib/token';
 import ReactDOMServer from 'react-dom/server';
 import * as React from 'react';
 import { AssetManager } from '../assets';
-import {resolve} from 'url';
+import { resolve } from 'url';
 
 type ImagePluginOption = {
   fpat: string,
@@ -11,7 +11,7 @@ type ImagePluginOption = {
 }
 
 export default function plugin(md: MarkdownIt, options: ImagePluginOption) {
-  const {fpat, assetManager} = options;
+  const { fpat, assetManager } = options;
 
   function imageToken(tokens: Token[], idx: number, options, env, self) {
 
@@ -20,7 +20,14 @@ export default function plugin(md: MarkdownIt, options: ImagePluginOption) {
     if (!src.startsWith('http://') && !src.startsWith('https://')) {
       let asset = assetManager.lookup(resolve(fpat, token.attrGet("src")), "imageAsset");
       let src = asset.url.toString();
-      return ReactDOMServer.renderToStaticMarkup(<img style={{background: asset.dominantColor}} src={src} className="image" />);
+      const h = Math.min(asset.height, 375);
+      const w = h / asset.height * asset.width;
+      return ReactDOMServer.renderToStaticMarkup(
+        <img
+          style={{ background: asset.dominantColor, width: w, height: h}}
+          src={src}
+          className="image"
+        />);
     } else {
       return ReactDOMServer.renderToStaticMarkup(<img src={src} className="image" />);
     }

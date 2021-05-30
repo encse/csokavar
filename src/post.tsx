@@ -92,7 +92,7 @@ export class Post {
 
         this.coverImage = metadata.coverImage != null ? this.assetManager.lookup(resolve(fpat, metadata.coverImage), "imageAsset") : null;
 
-        this.excerpt = markdownToReactExcerpt(content, this.uri);
+        this.excerpt = markdownToReactExcerpt(content, this.uri, this.assetManager, fpat);
         
     }
 

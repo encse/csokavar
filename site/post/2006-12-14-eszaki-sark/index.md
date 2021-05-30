@@ -8,7 +8,7 @@ tags:
 
 Felvetődött, hogy ha 2040-re elolvad a sarki jégtakaró, akkor a Mikulás hajléktalanná válik. Maya szerint ez hülyeség: nem az Északi Sarkon lakik. De én akkor is jobban tudom! És tényleg: megkerestem Google Earth-ben, és ott van!
 
-[broken link...](dshajdkashkdjhsak)
+\[broken link...\]
 
 Itt lehet egyébként beszerezni:
 

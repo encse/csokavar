@@ -18,10 +18,14 @@ export function markdownToReact(md: string, assetManager: AssetManager, fpat: st
     return <div dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
-export function markdownToReactExcerpt(md: string, uri: string): React.ReactElement<any>{
+export function markdownToReactExcerpt(md: string, uri: string, assetManager: AssetManager, fpat: string): React.ReactElement<any>{
 
     const markdownIt = MarkdownIt({html: true})
         .use(markdownKatex, { output: "html",  errorColor: "#cc0000" })
+        .use(markdown_it_iframe_plugin)
+        .use(markdown_it_youtube_plugin)
+        .use(markdown_it_gallery_plugin, { assetManager: assetManager, fpat: fpat })
+        .use(markdown_it_image_plugin, { assetManager: assetManager, fpat: fpat });
 
     for (let block of markdownIt.parse(md, {})) {
         if (block.content != '') {

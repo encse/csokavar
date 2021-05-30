@@ -46,9 +46,7 @@ export default function plugin(md: MarkdownIt, options: GalleryPluginOptions) {
                     ></a>{" "}
                     <img
                       className="pic" 
-                   
-                      width={width}
-                      height={height}
+                      style={{ background: asset.dominantColor, width: width, height: height}}
                       src={asset.url.toString()}
 
                     />

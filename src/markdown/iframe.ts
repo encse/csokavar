@@ -17,7 +17,7 @@ export function iframe(state: StateInline, src: string){
     token.attrs = [["style", "position: absolute; top: 0; bottom: 0; left: 0; right: 0; text-align: center;"]];
     
     token = state.push("div_open", "div", 1);
-    token.attrs = [["style", "display: inline-block;height: 100%;position: relative;"]];
+    token.attrs = [["style", "display: inline-block; height: 100%; position: relative;"]];
 
     token = state.push("img_open", "img", 0);
     token.attrs = [
