@@ -96,7 +96,7 @@
 	function set_permalink()
 	{
 		var stText = $("#q").val();
-		var uri = location.href.substring(0,location.href.lastIndexOf('/')+1);
+		var uri = 'https://csokavar.hu/hanynapos';
 		if(stText != '' && date != null)
 			uri += '?q='+escape(stText);
 		$('#permalink').html('<a href="'+uri+'">'+uri+'</a>');

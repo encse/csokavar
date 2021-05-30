@@ -15,14 +15,7 @@ function csv_header(){
 	<div id="top">
 		<div id="top-content">
 			<div id="logo">
-				<h1> <?php
-$url = $_SERVER['REQUEST_URI']; //returns the current URL
-$parts = explode('/',$url);
-$dir = '';
-for ($i = 1; $i < count($parts) - 1; $i++) {
- $dir .= "/" . $parts[$i] ;
-}
- ?> <a href="http://csokavar.hu<?php echo $dir; ?>"><?php echo $dir; ?></a></h1>
+				<h1></h1>
 			</div>
 		</div>
 	</div> <!-- top -->
