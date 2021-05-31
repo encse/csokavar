@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path, { ParsedPath } from 'path';
 import { Post, Page, PageTemplateProps, Template } from './post';
-import { PostList } from "./postList";
+import { PostList } from "./PostList";
 import { chunks } from './util';
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
@@ -9,6 +9,7 @@ import { AssetManager, ImageAsset } from './assets';
 import { Tag } from './tag';
 import process from 'process';
 import { ServerStyleSheet } from 'styled-components';
+import { PageComponent } from './page';
 
 type Settings = {
     'cdn': string
@@ -75,20 +76,29 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
     const assetManager = new AssetManager(settings.cdn, ".media");
 
     const template = (props: PageTemplateProps) => {
-        const postContent = renderReactChild(props.postContent);
+        const featuredImage:React.CSSProperties = props.coverImage ? {
+                backgroundImage: `url(${props.coverImage.url})`,
+                backgroundColor: props.coverImage.dominantColor
+            } : {
+                backgroundImage: 'linear-gradient(to right, #0f2027, #203a43, #2c5364)',
+            };
+
+
+        const page = renderReactChild(
+            <PageComponent 
+                featuredImage={featuredImage} 
+                footer={props.footer} 
+                postContent={props.postContent} 
+                subtitle={props.subtitle} 
+                title={props.title}
+                headingClasses={props.headingClasses}
+            />);
+
         return templateHtml
             .replace('{{ site.js }}', assetManager.lookup('site/assets/site.js', "jsAsset").url.toString())
-            .replace('{{ style }}', postContent.style)
-            .replace('{{ heading-classes }}', props.headingClasses.map(c => ' ' + c).join(''))
-            .replace('{{ title }}', renderReactChild(props.title).html)
-            .replace('{{ subtitle }}', renderReactChild(props.subtitle).html)
-            .replace('{{ featured-image }}',
-                props.coverImage ?
-                    `background-image: url(${props.coverImage.url}); background-color: ${props.coverImage.dominantColor};` :
-                    `background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);`)
-            .replace('{{ post-content }}', postContent.html)
-            .replace('{{ footer }}', renderReactChild(props.footer).html)
-    }
+            .replace('{{ style }}', page.style)
+            .replace('{{ page }}', page.html);
+    };
 
 
     for (let assetPath of [...files('site')].filter(fpat => fpat.base !== 'index.md')) {

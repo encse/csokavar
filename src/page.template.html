@@ -3050,41 +3050,6 @@
 </head>
 
 <body>
-    <header class="header" style="{{ featured-image }}">
-        <section class="site-heading"> <a class="site-title" href="/">Csókavár</a>
-            <nav role="menubar">
-                <ul>
-                    <li><a href="/">Blog</a></li>
-                    <li><a href="/projects/">Projektek</a></li>
-                    <li><a href="/konyvespolc/">Könyvespolc</a></li>
-                    <li><a href="/about/">About</a></li>
-                </ul>
-            </nav>
-        </section>
-        <div class="page-heading {{ heading-classes }}">
-            <h1>{{ title }}</h1>
-            <p class="subtitle">{{ subtitle }}</p>
-        </div>
-    </header>
-    <main>
-        <article>
-            <section>
-                {{ post-content }}
-            </section>
-            <footer>
-                {{ footer }}
-            </footer>
-        </article>
-    </main>
-    <footer class="footer">
-        <nav class="social-links">
-            <ul>
-                <li><a href="https://twitter.com/encse" target="_blank" class="twitter-icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/ncsdavid/" target="_blank" class="linkedin-icon"></a></li>
-                <li><a href="https://github.com/encse" target="_blank" class="github-icon"></a></li>
-            </ul>
-        </nav>
-        <p class="copyright">2006 - 2021 csokavar.hu</p>
-    </footer>
+    {{ page }}
 </body>
 </html>

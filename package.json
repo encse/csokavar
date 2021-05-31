@@ -6,7 +6,7 @@
   "license": "MIT",
   "keywords": [],
   "scripts": {
-    "build-prod": "node -r ts-node/register src/index.ts prod",
+    "build-prod": "node -r ts-node/register src/index.tsx prod",
     "dev": "npx http-server -c-1 build",
     "deploy": "qqqssh csokavar.hu 'cd /var/www/zsonglor/assets; git pull'"
   },
