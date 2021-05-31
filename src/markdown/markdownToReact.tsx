@@ -62,18 +62,25 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
             children().push(renderImage(token, ctx));
         } else if (token.tag === "math") {
             children().push(<span dangerouslySetInnerHTML={{ __html:  markdownIt.renderer.renderInline([token], {}, {}) }} />);
-           
-        } else {
+        } else if (token.type === "code_inline") {
+            children().push(<code>{token.content}</code>);
+        } else if (token.type === "fence") {
+            children().push(<pre><code>{token.content}</code></pre>);
+        }else {
+            if (token.content != null && token.content != ''){
+                throw new Error('content is not empty');
+            }
             if (token.tag == '') {
                 throw new Error(`invalid token ${token.type}}`);
             }
             if (token.type.endsWith("_close")) {
-                stack.push([
+                const content = stack.pop();
+                children().push(
                     React.createElement(
                         token.tag,
                         getProps(tokenStack.pop().attrs),
-                        stack.pop())
-                ]);
+                        content)
+                );
             } else {
                 children().push(
                     React.createElement(token.tag, getProps(token.attrs))

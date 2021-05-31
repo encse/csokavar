@@ -11,7 +11,7 @@ coverImage: images/Fermat-3-11.jpg
 
 A következő jópofa feladaton gondolkoztam a héten viszonylag sokáig. Határozzuk meg azokat az $x,y$ pozitív egész számokat, amelyekre teljesül, hogy:
 
-$$ | 2^x-3^y | =17$$
+$$| 2^x-3^y | =17$$
 
 Ez egy diofantoszi egyenlet, de túl sok ötletem nem volt, hogyan is kezdjek neki. Mert az ilyenekről mindig azt hallottam, hogy próbáljuk meg valahogy szorzattá alakítani, aztán meglátjuk mi lesz belőle. Hát ez itt most nem megy, viszont kis szemlélődés után észrevesszük, hogy $17 = 8+9$, amivel talán lehet kezdeni valamit. Az abszolútértékkel a $\pm$ szimbólum segítségével elbánva:
 
@@ -38,7 +38,7 @@ Az alsó sorból látszik, hogy $3^n + 1$ sosem lesz nyolccal osztható, így eg
 
 $$8 (2^{x-3} + 1) = 9 (3^{y-2} - 1)$$
 
-Mivel a kettőhatvány sorozat 6 szerint periodikus, a táblázat alapján csak a $2^{3+6n} + 1, n \in \mathbb{N}\_0$ alakú számok oszthatók kilenccel. Hasonlóan a $3^{2m} - 1, m \in \mathbb{N}\_0$ alakúak oszthatók nyolccal. Ezt összevetve a fentiekkel $x-3 = 3 + 6n$ és $y-2 = 2m$ miatt x és y is páros kell legyen.
+Mivel a kettőhatvány sorozat 6 szerint periodikus, a táblázat alapján csak a $2^{3+6n} + 1, n \in \mathbb{N}_0$ alakú számok oszthatók kilenccel. Hasonlóan a $3^{2m} - 1, m \in \mathbb{N}_0$ alakúak oszthatók nyolccal. Ezt összevetve a fentiekkel $x-3 = 3 + 6n$ és $y-2 = 2m$ miatt x és y is páros kell legyen.
 
 Az most még nem nyilvánvaló miért, de én egy kicsit többet néztem már ezt a feladatot, mint Önök, és nagyon megörültem neki amikor idáig eljutottam, mert ezzel mégiscsak szorzattá tudjuk alakítani a fránya egyenletet.
 

@@ -9,7 +9,7 @@ import { AssetManager, ImageAsset } from './assets';
 import { Tag } from './tag';
 import process from 'process';
 import { ServerStyleSheet } from 'styled-components';
-import { PageComponent } from './page';
+import { PageComponent } from './components/page';
 
 type Settings = {
     'cdn': string

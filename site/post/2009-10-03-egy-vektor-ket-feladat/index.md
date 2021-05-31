@@ -30,18 +30,18 @@ Ha megvagyunk $q$-ig, akkor $q + 1$-re viszonylag könnyen átléphetünk, hisze
 
 Ezután már csak a $P$, $Q$ és $M$ beállítgatása van hátra és kész is vagyunk:
 
-<pre><code>
-<b>function</b> maxContiguousSum(A): 
+```
+function maxContiguousSum(A): 
   p = q = P = Q = 0
   m = M = A[0]
-  <b>for</b> q <b>in</b> 1 .. A.length:
-    <b>if</b> m < 0:
+  for q in 1 .. A.length:
+    if m < 0:
       (p, m) = (q, A[q])
-    <b>else</b>:
+    else:
       m = A\[q\] + m
-    <b>if</b> m > M:
+    if m > M:
       (P, Q, M) = (p, q, m)
-  <b>return</b> (P, Q)
-</code></pre>
+  return (P, Q)
+```
 
 Ez a feladat egyébként az irodalomban [maxium subarray problem](https://en.wikipedia.org/wiki/Maximum_subarray_problem) néven ismert, a fenti megoldás pedig a Kadane algoritmus egy változata.

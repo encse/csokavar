@@ -16,40 +16,40 @@ Erre a megoldás a következő. Legyen egy képzeletbeli olvasó fejünk, ami eg
 
 Ekkor első közelítésben azt mondhatjuk, hogy:
 
-<pre><code>
-<b>function</b> longestCommonSubsequence(pos)
+```
+function longestCommonSubsequence(pos)
   maxLen ← 0  
 
-  <b>foreach</b> alpha <b>in</b> alphabet:
+  foreach alpha in alphabet:
     nextPos ← read(pos, alpha)
-    <b>if</b> nextPos ≠ ⊥:
+    if nextPos ≠ ⊥:
       maxLen ← max(maxLen, 1 +
         longestCommonSubsequence(nextPos))
 
-  <b>return</b> maxLen
-</code></pre>
+  return maxLen
+```
 
 Amit a csupa nullával inicializált pos tömbbel hívunk meg, hogy megkapjuk a megoldást.
 
 Mivel a függvény csak pos-tól függ, egy kis cachelés nem árthat neki:
 
-<pre><code>
-<b>function</b> longestCommonSubsequence(pos, cache)
-  <b>if</b> contains(cache, pos): 
-     <b>return</b> readFromCache(cache, pos)
+```
+function longestCommonSubsequence(pos, cache)
+  if contains(cache, pos): 
+     return readFromCache(cache, pos)
   
   maxLen ← 0  
 
-  <b>foreach</b> alpha <b>in</b> alphabet:
+  foreach alpha in alphabet:
     nextPos ← read(pos, alpha)
-    <b>if</b> nextPos ≠ ⊥:
+    if nextPos ≠ ⊥:
       maxLen ← max(maxLen, 1 +
         longestCommonSubsequence(nextPos, cache))
 
   addToCache(cache, pos, maxlen)
 
- <b>return</b> maxLen
-</code></pre>
+ return maxLen
+```
 
 És így már elég gyors is lesz a megoldásunk.
 

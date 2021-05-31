@@ -32,13 +32,13 @@ Magamtól valahogy így csinálnám. Az üres listához könnyű bármit fűzni:
 append([], Ys, Ys).
 ```
 
-Ha a lista nem üres, akkor előbb a farkát meg a másik listát összefűzzük `Zs`\-be, aztán a fejéből meg `Zs`\-ből megcsináljuk az eredményt `[X|Zs]`\-t.
+Ha a lista nem üres, akkor előbb a farkát meg a másik listát összefűzzük `Zs`-be, aztán a fejéből meg `Zs`-ből megcsináljuk az eredményt `[X|Zs]`\-t.
 
 ```
 append([X|Xs], Ys, [X|Zs]) :- append(Xs,Ys,Zs).
 ```
 
-Ez így persze lassú, mert végig kell hozzá sétálni az első listán. De kiderül, hogy a listákat két lista különbségeként is felfoghatjuk. Például az `[1,2,3]` listára gondolhatunk úgy mint az `[1,2,3|E]` és az `E` listák különbségére, ahol `E` tök mindegy milyen lista. Ezt jelölésben `[1,2,3|E]\E` -nek írjuk. Az üres listát például tetszőleges `As`\-sel írhatjuk `[As]\As` alakban. Ez a listák úgynevezett _különbségi reprezentációja_ (difference lists).
+Ez így persze lassú, mert végig kell hozzá sétálni az első listán. De kiderül, hogy a listákat két lista különbségeként is felfoghatjuk. Például az `[1,2,3]` listára gondolhatunk úgy mint az `[1,2,3|E]` és az `E` listák különbségére, ahol `E` tök mindegy milyen lista. Ezt jelölésben `[1,2,3|E]\E` -nek írjuk. Az üres listát például tetszőleges `As`-sel írhatjuk `[As]\As` alakban. Ez a listák úgynevezett _különbségi reprezentációja_ (difference lists).
 
 Namost amíg nem rögzítjük egy difference list farkát, addig elég könyű hozzácsapni egy másikat. Az `append_dl` definíciója:
 

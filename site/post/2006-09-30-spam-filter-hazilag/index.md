@@ -23,7 +23,8 @@ Adott tehát egy IP cím. A példa kedvéért mondjuk 127.0.0.2.. Ez megállapod
 
 Konkrétan:
 
-<pre><code>>nslookup 2.0.0.127.sbl-xbl.spamhaus.org
+```
+>nslookup 2.0.0.127.sbl-xbl.spamhaus.org
 Server: xxx.xxx.xxx.xxx
 Address: xxx.xxx.xxx.xxx#yyy
 
@@ -32,17 +33,19 @@ Name: 2.0.0.127.sbl-xbl.spamhaus.org
 Address: 127.0.0.2
 Name: 2.0.0.127.sbl-xbl.spamhaus.org
 Address: 127.0.0.4
-</code></pre>
+```
 
 A két válasz azt jelenti, hogy 'fúj spam', ha nem kapnánk választ: 'nem spam'. Precízebben:
 
-<pre><code>127.0.0.2: Direct UBE sources, verified spam services and ROKSO spammers
+```
+127.0.0.2: Direct UBE sources, verified spam services and ROKSO spammers
 127.0.0.4-6: Illegal 3rd party exploits, including proxies, worms and trojan exploits
-</code></pre>
+```
 
 Nekem ez nagyon bejön... Aztán találtam még egy php kódot is (fúj konzerv) hozzá:
 
-<pre><code>function is_blacklisted($ip)
+```
+function is_blacklisted($ip)
 {
   // written by satmd, do what you want with it, but keep the author please
   $result=Array();
@@ -63,7 +66,7 @@ Nekem ez nagyon bejön... Aztán találtam még egy php kódot is (fúj konzerv)
     return $result;
   }
 }
-</code></pre>
+```
 
 Ennyi. :)
 

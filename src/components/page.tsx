@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import {TwitterLink, LinkedInLink, GitHubLink} from './components/fontAwesame';
+import {TwitterLink, LinkedInLink, GitHubLink} from './fontAwesame';
 
 export type PageProps = {
     featuredImage: React.CSSProperties,
@@ -167,7 +167,7 @@ export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
                 <LinkedInLink href="https://www.linkedin.com/in/ncsdavid/" />
                 <GitHubLink href="https://github.com/encse" />
             </SocialLinks>
-            <Copyright>2006 - 2021 csokavar.hu</Copyright>
+            <Copyright>2006 - {new Date().getFullYear()} csokavar.hu</Copyright>
         </Footer>
     </>
 }
