@@ -21,6 +21,6 @@ Amikor a látogató felküldi az adatot, a mac-et is mindig elküldi vele. Mivel
 
 Vagy mégsem?
 
-Készítettem egy [pici oldalt](https://csokavar.hu/projects/heti-feladat/), ahol megpróbálhatunk magunkból admint csinálni. Próbálják ki, tisztelt programozó barátaim!
+Készítettem egy [pici oldalt](https://heti-feladat.csokavar.hu/), ahol megpróbálhatunk magunkból admint csinálni. Próbálják ki, tisztelt programozó barátaim!
 
 Az induláshoz ez elég, több segítséget egyelőre nem adok, de kérdésekre válaszolok. Azért kapják elő a kereső ösztöneiket!

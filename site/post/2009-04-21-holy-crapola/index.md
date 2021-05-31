@@ -25,4 +25,4 @@ Maya hozzáfűzése:
 
 Saját hozzáfűzésem:
 
-[https://csokavar.hu/projects/teameditor/?q=HOLY%20CRAPOLA](https://csokavar.hu/projects/teameditor/?q=HOLY%20CRAPOLA)
+[https://teameditor.csokavar.hu/?q=HOLY%20CRAPOLA](https://teameditor.csokavar.hu/?q=HOLY%20CRAPOLA)

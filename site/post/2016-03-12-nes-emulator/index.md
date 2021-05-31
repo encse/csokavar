@@ -28,8 +28,8 @@ A szüleim válása után hozzánk került a VIC-20. Igazából apukám elvitte,
 
 És ezzel egy másik vonalon is elérkeztünk a NES projekthez: az akkor kielégítetlen tudásvágy sem hagyott nyugodni, hogy egyszer az életben tényleg megérthessem hogy mentek ezek a dolgok annak idején.
 
-Tehát amíg Enikő a diplomamunkáját írta (írja), én esténként a [nesdevet](http://wiki.nesdev.com/w/index.php/Nesdev_Wiki) olvasgattam, és megpróbáltam a fórum hozzászólásokból és a pontatlan leírásokból összerakni egy működő emulátort. Ezt most már akár Önök is [megnézhetik](https://csokavar.hu/projects/nes), igaz csak Chromeban. Valószínűleg meg lehetne oldani, hogy a többi böngészőn is elfogadható legyen, na de mekkora májerság már, hogy egyáltalán működik! És nincs hangja. Tudom.
+Tehát amíg Enikő a diplomamunkáját írta (írja), én esténként a [nesdevet](http://wiki.nesdev.com/w/index.php/Nesdev_Wiki) olvasgattam, és megpróbáltam a fórum hozzászólásokból és a pontatlan leírásokból összerakni egy működő emulátort. Ezt most már akár Önök is [megnézhetik](https://nes.csokavar.hu/), igaz csak Chromeban. Valószínűleg meg lehetne oldani, hogy a többi böngészőn is elfogadható legyen, na de mekkora májerság már, hogy egyáltalán működik! És nincs hangja. Tudom.
 
 Mindenesetre én nagyon örülök neki. A tizenéves kicsi én biztos nagyon büszke lenne rám, és olyan akarna lenni mint én, ha felnő. Legalább nem okoztam csalódást neki.
 
-[![nesemu](images/nesemu.jpg)](https://csokavar.hu/projects/nes)
+[![nesemu](images/nesemu.jpg)](https://nes.csokavar.hu/)

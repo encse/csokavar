@@ -1,12 +1,10 @@
-import { fstat } from 'fs';
 import gm from 'gm';
-import sizeOf from 'image-size';
-import { type } from 'os';
 import path, { ParsedPath } from 'path';
 import { v4 as uuidv4, v5 as uuidv5 } from 'uuid';
+import { assertNever } from './util';
 import fs from 'fs';
 
-type AssetKind = "imageAsset" | "jsAsset";
+type AssetKind = "imageAsset" | "jsAsset" | "fileAsset";
 type AssetOf<T extends AssetKind> = Asset & { kind: T };
 
 export class ImageAsset {
@@ -55,7 +53,18 @@ export class JsAsset {
     }
 }
 
-export type Asset = ImageAsset | JsAsset;
+
+export class FileAsset {
+    readonly kind: "fileAsset" = "fileAsset";
+    constructor(
+        readonly srcPath: string,
+        readonly url: URL
+    ) {
+
+    }
+}
+
+export type Asset = ImageAsset | JsAsset | FileAsset;
 
 type MediaDb = {
     readonly version: string;
@@ -88,15 +97,19 @@ export class AssetManager {
     async register(parsedPath: ParsedPath) {
 
         const fpat = path.join(parsedPath.root, parsedPath.dir, parsedPath.base);
-        const assetKind: AssetKind = parsedPath.ext === '.js' ? "jsAsset" : "imageAsset";
+        const assetKind: AssetKind = 
+            parsedPath.ext === '.js' ? "jsAsset" : 
+            ['.jpg', '.jpeg', '.gif', '.png', '.svg'].includes(parsedPath.ext) ? "imageAsset" :
+            "fileAsset";
         if (this.tryLookup(fpat, assetKind) != null) {
             return
         }
 
         const uuid =
-            assetKind == "imageAsset" ?
-                uuidv5(path.join(parsedPath.dir, parsedPath.base), AssetManager.namespace) :
-                uuidv4();
+            assetKind == "imageAsset" ? uuidv5(path.join(parsedPath.dir, parsedPath.base), AssetManager.namespace) :
+            assetKind == "jsAsset" ? uuidv4() :
+            assetKind == "fileAsset" ? uuidv4() :
+            assertNever(assetKind)
 
         const uri = new URL(path.join('assets', uuid + parsedPath.ext), this.cdnUri);
 

@@ -57,7 +57,7 @@ Néhány kisebb-nagyobb projekt, amivel az évek során foglalkoztam. Némelyik 
 
 <article>
 
-## [Mandelbrot drawers for vintage hardware (2021)](https://csokavar.hu/projects/mandelbrot)
+## [Mandelbrot drawers for vintage hardware (2021)](https://mandelbrot.csokavar.hu/)
 
 ![mandelbrot](images/Screen-Shot-2021-03-31-at-14.46.59-300x300.png)
 
@@ -74,7 +74,7 @@ Minden napra jut két nem túl bonyolult programozós feladat, amiket aztán min
 </article>
 <article>
 
-## [Casette (2020)](https://csokavar.hu/projects/casette)
+## [Casette (2020)](https://casette.csokavar.hu/)
 
 ![](images/casette-500x313.png)
 
@@ -82,7 +82,7 @@ Nem túl nehéz programozási fejtörő, amit a 2020-as Advent of Code-hoz kész
 </article>
 <article>
 
-## [Loginmatrix (2018)](https://csokavar.hu/projects/loginmatrix)
+## [Loginmatrix (2018)](https://loginmatrix.csokavar.hu/)
 
 ![loginmatrix](images/hackmetop_r1_c2-e1568920869463.gif)
 
@@ -90,7 +90,7 @@ Internet konzerváló céllal letöltöttem, kikukáztam és újra elérhetővé
 </article>
 <article>
 
-## [NES emulátor (2016)](https://csokavar.hu/projects/nes)
+## [NES emulátor (2016)](https://nes.csokavar.hu/)
 
 ![super mario bros](images/NES_Super_Mario_Bros.png)
 
@@ -162,7 +162,7 @@ A fogaskerék oldalt Mayával, a főnökömmel, együtt indítottuk, könnyebb-n
 </article>
 <article>
 
-## [ISC Team Editor (2009)](https://csokavar.hu/projects/teameditor)
+## [ISC Team Editor (2009)](https://teameditor.csokavar.hu/)
 
 ![teameditor](images/teameditor.png)
 
@@ -186,7 +186,7 @@ A Bilux Autósiskola honlapjának gatyába rázása viszonylag komoly feladat vo
 </article>
 <article>
 
-## [Hány napos vagyok (2008)](https://csokavar.hu/hanynapos)
+## [Hány napos vagyok (2008)](https://hanynapos.csokavar.hu/)
 
 ![fishingbot](images/hanynapos1.png)
 
@@ -194,7 +194,7 @@ Ezzel a kis alkalmazással bárki kiderítheti, hogy éppen hány napos (órás,
 </article>
 <article>
 
-## [Nagy adóvarázslat (2008)](https://csokavar.hu/projects/ado)
+## [Nagy adóvarázslat (2008)](https://ado.csokavar.hu/)
 
 ![ado](images/ado.png)
 
@@ -202,7 +202,7 @@ A Nagy adóvarázslat lényege, hogy a program egy beadott adószámból megmond
 </article>
 <article>
 
-## [Rubik (1998-2001)](https://csokavar.hu/projects/rubik)
+## [Rubik (1998-2001)](https://rubik.csokavar.hu/)
 
 ![rubik](images/Screen-Shot-2021-01-07-at-20.13.57-500x440.png)
 

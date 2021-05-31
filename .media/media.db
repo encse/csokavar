@@ -2863,6 +2863,69 @@
 			"height": 1920,
 			"width": 2560,
 			"srcPath": "site/post/2021-01-05-4695/images/img_2988.jpg"
+		},
+		{
+			"cdnPath": "/assets/8f6619eb-55a9-5bd3-a91f-fd6991cdb0b4.pdf",
+			"dominantColor": "rgb(230, 230, 230)",
+			"height": 842,
+			"width": 595,
+			"srcPath": "site/assets/22472178-SONY-RDR-HX520-HX525-HX720-HX722-HX725-HX727-HX920-HX925.pdf"
+		},
+		{
+			"cdnPath": "/assets/f09a5a91-2ec9-55fa-8028-84f7bd4551d8.pdf",
+			"dominantColor": "rgb(254, 254, 254)",
+			"height": 842,
+			"width": 595,
+			"srcPath": "site/assets/Napelemek.pdf"
+		},
+		{
+			"cdnPath": "/assets/de89f664-8d82-59d8-893b-1d4d21866634.pdf",
+			"dominantColor": "rgb(219, 220, 227)",
+			"height": 546,
+			"width": 768,
+			"srcPath": "site/assets/aranyvar.pdf"
+		},
+		{
+			"cdnPath": "/assets/ad89edf5-90b8-5cba-9e90-f7f34621f37e.png",
+			"dominantColor": "rgb(84, 75, 68)",
+			"height": 144,
+			"width": 144,
+			"srcPath": "site/favicon/android-chrome-144x144.png"
+		},
+		{
+			"cdnPath": "/assets/63ae5b0c-dc4d-51ad-a8a2-0fa7a1a83dd6.png",
+			"dominantColor": "rgb(83, 75, 68)",
+			"height": 152,
+			"width": 152,
+			"srcPath": "site/favicon/apple-touch-icon.png"
+		},
+		{
+			"cdnPath": "/assets/1643f66a-d2e3-5d92-aee8-ce369f33b88f.png",
+			"dominantColor": "rgb(86, 77, 69)",
+			"height": 16,
+			"width": 16,
+			"srcPath": "site/favicon/favicon-16x16.png"
+		},
+		{
+			"cdnPath": "/assets/d9335340-5c5b-5ab8-8d49-385342d7f6c0.png",
+			"dominantColor": "rgb(85, 76, 69)",
+			"height": 32,
+			"width": 32,
+			"srcPath": "site/favicon/favicon-32x32.png"
+		},
+		{
+			"cdnPath": "/assets/0b0a7008-1314-5661-a0da-256868ec2013.png",
+			"dominantColor": "rgb(45, 41, 38)",
+			"height": 270,
+			"width": 270,
+			"srcPath": "site/favicon/mstile-150x150.png"
+		},
+		{
+			"cdnPath": "/assets/5faf5ba2-ad31-5b1b-932c-832e1c481eed.svg",
+			"dominantColor": "rgb(114, 205, 114)",
+			"height": 160,
+			"width": 160,
+			"srcPath": "site/favicon/safari-pinned-tab.svg"
 		}
 	]
 }

@@ -17,9 +17,9 @@ Lényegében arról van szó, hogy készítesz egy blokkot, ami futáskor param�
 
 Az érdekes az benne, hogy a continuationt eltehetjük egy változóba is, és tényleg bármikor, akár a blokkon kívülről meg szabad hívni.
 
-Namost én már írtam néhány interpretert és compilert kisebb nyelvekhez, de ilyet még egyik se tudott csinálni, ráadásul idén nem volt semmi mini projektem se a csókaváron, szóval hogy úgy mondjam szüksészerűvé vált a dolog. És ha már ott vagyunk miért ne csináljam TypeScriptben, hogy egyből demozható is legyen, nem igaz? Na ez amilyen jól hangzik, akkora baromság volt, tekintve, hogy mekkora trágyalé ez az egész TypeScript fejlesztés, de ha már elkezdtem, végig is toltam. A projektek között [megtalálható](https://csokavar.hu/projects/mini-scheme), meg [githubon](https://github.com/encse/sicp) is akinek arra van gusztusa.
+Namost én már írtam néhány interpretert és compilert kisebb nyelvekhez, de ilyet még egyik se tudott csinálni, ráadásul idén nem volt semmi mini projektem se a csókaváron, szóval hogy úgy mondjam szüksészerűvé vált a dolog. És ha már ott vagyunk miért ne csináljam TypeScriptben, hogy egyből demozható is legyen, nem igaz? Na ez amilyen jól hangzik, akkora baromság volt, tekintve, hogy mekkora trágyalé ez az egész TypeScript fejlesztés, de ha már elkezdtem, végig is toltam. A projektek között [megtalálható](https://mini-scheme.csokavar.hu/), meg [githubon](https://github.com/encse/sicp) is akinek arra van gusztusa.
 
-[![minischeme](images/minischeme-500x334.jpg)](https://csokavar.hu/projects/mini-scheme)
+[![minischeme](images/minischeme-500x334.jpg)](https://mini-scheme.csokavar.hu)
 
 Az implementáció nem volt különösebben bonyolult, feltéve hogy valaki tisztában van a [continuation passing style](https://en.wikipedia.org/wiki/Continuation-passing_style)\-lal. Ahelyett, hogy magát a call/cc-t implementáltam volna meg ugyanis, egyszerűbb volt úgy megfogni a problémát, hogy minden utasítás paraméterként megkapja azt a continuationt, ami a program hátralevő részét értékeli ki. Így aztán, mondjuk egy értékadás előbb elvégzi a mellékhatásait, aztán csak meghívja a continuationt, hogy mehet tovább srácok.
 

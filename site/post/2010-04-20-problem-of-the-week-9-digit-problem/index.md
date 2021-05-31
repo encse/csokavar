@@ -18,6 +18,6 @@ I've posted the following challenge to the jokes list of our company the last we
 
 A couple of solutions arived, mostly from Maya and Cactus. Right now we have programs written in C#, Perl, Haskell, XSLT and Maya took our very own intentional editor and our internal language called CL1 and solved the problem in that. It could cleary be written in a much better style, but hey... that's not so bad.
 
-See the list of solutions [here](https://csokavar.hu/projects/ninedigitproblem/).
+See the list of solutions [here](https://github.com/encse/ninedigitproblem).
 
 If you find that your favourite language is missing, don't hesitate to share it with us, just provide a link to you solution, or copy the source code in the comment box below (bonus points for a Javascript XSS that works). I'm really longing for a version written in mod-rewrite and one with C++ template meta programming...

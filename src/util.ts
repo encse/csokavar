@@ -1,4 +1,7 @@
-import { isTemplateSpan } from "typescript";
+
+export function assertNever(x: never): never {
+    throw new Error(x);
+}
 
 export function slugify(st: string) {
     return st.normalize("NFD")

@@ -71,6 +71,7 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
     const assetManager = new AssetManager(settings.cdn, ".media");
 
     const template = (props: PageTemplateProps) => {
+        // return  renderReactChild(props.postContent);
         return templateHtml
             .replace('{{ site.js }}', assetManager.lookup('site/assets/site.js', "jsAsset").url.toString())
             .replace('{{ heading-classes }}', props.headingClasses.map(c => ' ' + c).join(''))
@@ -177,26 +178,24 @@ async function generateList(
 }
 
 async function build(){
-
+    
     const tmpDir = fs.mkdtempSync("build_");
-    fs.chmodSync(tmpDir, 0o777);
+    try {
+        fs.chmodSync(tmpDir, 0o755);
 
-    await generate('.', (fpat: string, content: string | NodeJS.ArrayBufferView) => {
-        fpat = path.join(tmpDir, fpat);
-        fs.mkdirSync(path.parse(fpat).dir, { recursive: true });
-        fs.writeFileSync(fpat, content);
-    })
-      
-    for (let line of fs.readFileSync('projects/projects.conf', 'utf-8').split('\n')) {
-        line = line.split('#')[0].trim()
-        if (line != '') {
-            const parts = line.split('->').map(part => part.trim());
-            fs.symlinkSync(path.resolve('projects', parts[1]), path.join(tmpDir, 'projects', parts[0]), 'junction')
+        await generate('.', (fpat: string, content: string | NodeJS.ArrayBufferView) => {
+            fpat = path.join(tmpDir, fpat);
+            fs.mkdirSync(path.parse(fpat).dir, { recursive: true });
+            fs.writeFileSync(fpat, content);
+        })
+        
+        fs.rmdirSync("build", { recursive: true });
+        fs.renameSync(tmpDir, "build");
+    } finally {
+        if (fs.existsSync(tmpDir)) {
+            fs.rmdirSync(tmpDir)
         }
     }
-
-    fs.rmdirSync("build", { recursive: true });
-    fs.renameSync(tmpDir, "build");
 }
 
 build();

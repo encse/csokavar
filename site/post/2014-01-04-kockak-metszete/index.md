@@ -12,8 +12,8 @@ Az egyetemen volt egy olyan beadandó, amiben két kocka metszetét kellett megj
 
 Na de mennyi számolási hibám volt, és milyen bonyolult lett a végeredmény. Most, hogy összebarátkoztam a ray traceléssel, ismét elővettem a feladatot, és lényegesen egyszerűbben és átláthatóbban sikerült megoldani. Tulajdonképpen csak annyi a dolgunk, hogy a képernyő egyes pontjain átmenő egyenesekre meghatározzuk a kockákkal vett legközelebbi és legtávolabbi metszéspontot, így kapunk egy vagy két szakaszt, esetleg elfajuló esetben pontot. Aztán megnézzük, hogy van-e átfedés. Ha igen, máris találtunk egy metszéspontot.
 
-Még egy kis alpha blending, és néhány forgató mátrix, és kész is a [végeredmény](https://csokavar.hu/projects/raymarch/cubes/), ami megint csak Chrome és Firefox böngészőkben működik, mert ismét webgl-t használtam hozzá.
+Még egy kis alpha blending, és néhány forgató mátrix, és kész is a [végeredmény](https://raymarch.csokavar.hu/cubes/), ami megint csak Chrome és Firefox böngészőkben működik, mert ismét webgl-t használtam hozzá.
 
-[iframe src="https://csokavar.hu/projects/raymarch/cubes/"]
+[iframe src="https://raymarch.csokavar.hu/cubes/"]
 
 A forráskód githubon is [elérhető](https://github.com/encse/raymarch), ha bárkit édekel az ilyesmi.

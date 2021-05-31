@@ -23,7 +23,7 @@ Fragment shadert GLSL-ben lehet programozni. Ez egy C-nek látszó nyelv, csak m
 
 Mivel az elmúlt hónapokban csak úgy röpködtek a closure-ök, promise-ok és hasonlók az irodában, képzelhetik mekkora élmény volt összekalapálni az alábbi kis szösszenetet. Kis hijján lefejeltem a monitort a fékezéstől.
 
-[iframe src="https://csokavar.hu/projects/raymarch/spheres"]
+[iframe src="https://raymarch.csokavar.hu/spheres"]
 
 Viszont működik, már amelyik böngésző támogatja a WebGL-t.
 
@@ -47,4 +47,4 @@ Ray marchinggal viszont bevethetünk egy apró trükköt, ugyanis ha a fényforr
 
 Így már elég egyetlen félegyenest vizsgálni, és mégis lágyabb, átmenetesebb árnyékokat kapunk a bináris látszik/nem látszik helyett.
 
-Nem akartam ezt a bejegyzést algoritmusokkal terhelni, de a fentieket részletesebben is elolvashatjuk az alábbi [dolgozatban](https://csokavar.hu/projects/raytrace/imm6392.pdf). Nem néztem végig az egészet, csak a fejezeteket meg az algoritmusokat, de sokat segített a megértésben. A dolgozat irányított fényforrásokkal számol, nekem meg fénygömbjeim vannak, de nem volt nehéz továbbfejleszteni az olvasottakat.
+Nem akartam ezt a bejegyzést algoritmusokkal terhelni, de a fentieket részletesebben is elolvashatjuk az alábbi [dolgozatban](https://raytrace.csokavar.hu/imm6392.pdf). Nem néztem végig az egészet, csak a fejezeteket meg az algoritmusokat, de sokat segített a megértésben. A dolgozat irányított fényforrásokkal számol, nekem meg fénygömbjeim vannak, de nem volt nehéz továbbfejleszteni az olvasottakat.
