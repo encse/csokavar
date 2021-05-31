@@ -52,9 +52,7 @@ Intentional programming technológiák kutatása és alkalmazása, Charles Simon
 
 2017-ben érkezett a hír, hogy a céget felvásárolta a Microsoft, így annak ellenére sikerként gondolhatok rá, hogy végül semmi nem lett nyilvános belőle.
 </article>
-
-Néhány kisebb-nagyobb projekt, amivel az évek során foglalkoztam. Némelyik ma is így néz ki, másokról meg csak ez a leírás maradt.
-
+<p>Néhány kisebb-nagyobb projekt, amivel az évek során foglalkoztam. Némelyik ma is így néz ki, másokról meg csak ez a leírás maradt.</p>
 <article>
 
 ## [Mandelbrot drawers for vintage hardware (2021)](https://mandelbrot.csokavar.hu/)
@@ -63,7 +61,6 @@ Néhány kisebb-nagyobb projekt, amivel az évek során foglalkoztam. Némelyik 
 
 Kicsit eljátszottam régi gépekkel meg assembly nyelvekkel és írtam néhány Mandelbrot halmaz rajzoló programot.
 </article>
-
 <article>
 
 ## [Advent of code (2015-)](https://github.com/encse/adventofcode)

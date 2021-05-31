@@ -71,9 +71,9 @@ export function render(tokens: Token[], ctx: RenderContext): React.ReactElement<
                         stack.pop())
                 ]);
             } else {
-                stack.push([
+                children().push(
                     React.createElement(token.tag, getProps(token.attrs))
-                ]);
+                );
             }
         }
     }

@@ -1,4 +1,9 @@
 window.addEventListener("load", function() {
+
+    document.querySelectorAll('[data-preload]').forEach(element=>{
+        element.style.backgroundColor=null;
+    });
+
     document.querySelectorAll('.site-heading nav').forEach(element=>{
         const button = document.createElement('button');
         button.classList.add("hamburger", "hamburger--squeeze", "dropdown");

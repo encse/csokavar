@@ -12,6 +12,9 @@ const Image = styled.img`
     margin-left: auto;
     margin-right: auto;
     max-height: ${maxHeight}px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
 `;
 
 export function renderImage(token: Token, ctx: RenderContext) {
@@ -24,7 +27,10 @@ export function renderImage(token: Token, ctx: RenderContext) {
         const w = h / asset.height * asset.width;
         return (
             <Image
-                style={{ background: asset.dominantColor, width: w, height: h }}
+                style={{ background: asset.dominantColor }}
+                data-preload
+                width={w}
+                height={h}
                 src={src}
             />
         );
