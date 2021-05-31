@@ -1,13 +1,14 @@
 import fs from 'fs';
 import path, { ParsedPath } from 'path';
 import { Post, Page, PageTemplateProps, Template } from './post';
-import { PostList } from "./PostList";
+import { PostList } from "./postList";
 import { chunks } from './util';
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
 import { AssetManager, ImageAsset } from './assets';
 import { Tag } from './tag';
 import process from 'process';
+import { ServerStyleSheet } from 'styled-components';
 
 type Settings = {
     'cdn': string
@@ -26,18 +27,21 @@ const settings = config[process.argv[2]];
 console.log(settings);
 
 
-function renderReactChild(child: React.ReactChild | null): string {
+function renderReactChild(child: React.ReactChild | null): {html: string, style: string} {
     if (child == null) {
-        return ''
+        return {html: '', style: ''}
     } else if (typeof (child) === 'string') {
-        return child;
+        return {html: child, style: ''};
     } else if (typeof (child) === 'number') {
-        return '' + child;
+        return {html: '' + child, style: ''}
     } else {
-        return ReactDOMServer.renderToStaticMarkup(child)
+        const sheet = new ServerStyleSheet()
+        const html = ReactDOMServer.renderToStaticMarkup(sheet.collectStyles(child));
+        const style = sheet.getStyleTags() 
+        sheet.seal();
+        return {html, style};
     }
 }
-
 
 function* files(root: string, dir: string = ''): Iterable<ParsedPath> {
     for (let file of fs.readdirSync(path.resolve(root, dir))) {
@@ -71,18 +75,19 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
     const assetManager = new AssetManager(settings.cdn, ".media");
 
     const template = (props: PageTemplateProps) => {
-        // return  renderReactChild(props.postContent);
+        const postContent = renderReactChild(props.postContent);
         return templateHtml
             .replace('{{ site.js }}', assetManager.lookup('site/assets/site.js', "jsAsset").url.toString())
+            .replace('{{ style }}', postContent.style)
             .replace('{{ heading-classes }}', props.headingClasses.map(c => ' ' + c).join(''))
-            .replace('{{ title }}', renderReactChild(props.title))
-            .replace('{{ subtitle }}', renderReactChild(props.subtitle))
+            .replace('{{ title }}', renderReactChild(props.title).html)
+            .replace('{{ subtitle }}', renderReactChild(props.subtitle).html)
             .replace('{{ featured-image }}',
                 props.coverImage ?
                     `background-image: url(${props.coverImage.url}); background-color: ${props.coverImage.dominantColor};` :
                     `background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);`)
-            .replace('{{ post-content }}', renderReactChild(props.postContent))
-            .replace('{{ footer }}', renderReactChild(props.footer))
+            .replace('{{ post-content }}', postContent.html)
+            .replace('{{ footer }}', renderReactChild(props.footer).html)
     }
 
 
@@ -193,7 +198,7 @@ async function build(){
         fs.renameSync(tmpDir, "build");
     } finally {
         if (fs.existsSync(tmpDir)) {
-            fs.rmdirSync(tmpDir)
+            fs.rmdirSync(tmpDir, { recursive: true });
         }
     }
 }

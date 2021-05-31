@@ -3,6 +3,18 @@ export function assertNever(x: never): never {
     throw new Error(x);
 }
 
+export function snakeToCamel(snake: string) {
+    return (
+        snake
+            .split("-")
+            .map(
+                (part, i) => i == 0 ?
+                    part :
+                    part[0].toUpperCase() + part.substring(1))
+            .join('')
+    );
+}
+
 export function slugify(st: string) {
     return st.normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")

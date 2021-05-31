@@ -1,26 +1,14 @@
 import MarkdownIt from 'markdown-it';
 import * as React from 'react';
 import markdownKatex from '@iktakahiro/markdown-it-katex';
-import markdown_it_iframe_plugin from './markdown-it-iframe';
-import markdown_it_youtube_plugin from './markdown-it-youtube';
-import markdown_it_gallery_plugin, { renderGallery } from './markdown-it-gallery';
+import * as iframePlugin from './iframe';
+import markdown_it_youtube_plugin from './youtube';
+import markdown_it_gallery_plugin, { renderGallery } from './gallery';
 import { AssetManager } from '../assets';
 import Token from 'markdown-it/lib/token';
-import { RenderContext } from './RenderContext';
-import { renderImage } from './markdown-it-image';
-
-function snakeToCamel(snake: string) {
-    return (
-        snake
-            .split("-")
-            .map(
-                (part, i) =>
-                    i == 0 ?
-                        part :
-                        part[0].toUpperCase() + part.substring(1))
-            .join('')
-    );
-}
+import { RenderContext } from './renderContext';
+import { renderImage } from './image';
+import { snakeToCamel } from '../util';
 
 function getProps(attrs: [string, string][] | null) {
     let props = {};
@@ -67,6 +55,8 @@ export function render(tokens: Token[], ctx: RenderContext): React.ReactElement<
             children().push(<>{token.content}</>);
         } else if (token.type === "gallery") {
             children().push(renderGallery(token, ctx));
+        } else if (token.type === iframePlugin.tokenId) {
+            children().push(iframePlugin.render(token, ctx));
         } else if (token.tag === "img") {
             children().push(renderImage(token, ctx));
         } else {
@@ -94,7 +84,7 @@ export function render(tokens: Token[], ctx: RenderContext): React.ReactElement<
 export function markdownToReact(md: string, assetManager: AssetManager, fpat: string): React.ReactElement<any> {
     const markdownIt = MarkdownIt({ html: true })
         .use(markdownKatex, { output: "html", errorColor: "#cc0000" })
-        .use(markdown_it_iframe_plugin)
+        .use(iframePlugin.plugin)
         .use(markdown_it_youtube_plugin)
         .use(markdown_it_gallery_plugin)
         ;
@@ -106,7 +96,7 @@ export function markdownToReactExcerpt(md: string, uri: string, assetManager: As
 
     const markdownIt = MarkdownIt({ html: true })
         .use(markdownKatex, { output: "html", errorColor: "#cc0000" })
-        .use(markdown_it_iframe_plugin)
+        .use(iframePlugin.plugin)
         .use(markdown_it_youtube_plugin)
         .use(markdown_it_gallery_plugin)
         ;
