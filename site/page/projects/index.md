@@ -63,6 +63,7 @@ Néhány kisebb-nagyobb projekt, amivel az évek során foglalkoztam. Némelyik 
 
 Kicsit eljátszottam régi gépekkel meg assembly nyelvekkel és írtam néhány Mandelbrot halmaz rajzoló programot.
 </article>
+
 <article>
 
 ## [Advent of code (2015-)](https://github.com/encse/adventofcode)

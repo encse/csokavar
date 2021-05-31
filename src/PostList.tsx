@@ -12,6 +12,28 @@ const Subtitle = styled.p`
     font-variant: all-small-caps;
 `;
 
+const Pager = styled.div`
+    display: flex;
+    padding: 0;
+    margin: 0;
+`;
+
+const PageLink = styled.a`
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+`;
+
+const PreviousPage = styled(PageLink)`
+`;
+
+const NextPage = styled(PageLink)`
+    flex-grow: 1;
+    text-align: right;
+`;
 
 export class PostList {
 
@@ -55,14 +77,14 @@ export class PostList {
 
         if (hasPrev || hasNext) {
             content.push(
-                <div className="pager">
+                <Pager>
                     {hasPrev ?
-                        <div className="previous"><a href={`${this.getUriForPage(this.page - 1)}`}>« Előző</a></div> :
+                        <PreviousPage href={`${this.getUriForPage(this.page - 1)}`}>« Előző</PreviousPage> :
                         null}
                     {hasNext ?
-                        <div className="next"><a href={`${this.getUriForPage(this.page + 1)}`}>Következő »</a></div> :
+                        <NextPage href={`${this.getUriForPage(this.page + 1)}`}>Következő »</NextPage> :
                         null}
-                </div>
+                </Pager>
             );
         }
 
