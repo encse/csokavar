@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path, { ParsedPath } from 'path';
 import { Post, Page, PageTemplateProps, Template } from './post';
-import { PostList } from "./PostList";
+import { PostList } from "./postList";
 import { chunks } from './util';
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
