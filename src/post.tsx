@@ -1,15 +1,14 @@
-import MarkdownIt from 'markdown-it';
 import metadataParse from 'markdown-yaml-metadata-parser';
 import { slugify, formatDate, zeroPad } from "./util";
 import * as React from 'react';
 import {AssetManager, ImageAsset} from './assets';
-import { ParsedPath } from 'path';
 import { Tag } from './tag';
 import { markdownToReact, markdownToReactExcerpt } from './markdown/markdownToReact';
 import {resolve} from 'url';
+import { TagsIcon } from './components/fontAwesame';
 
 export type PageTemplateProps = {
-    headingClasses: string[],
+    homePageHeading: boolean,
     title: React.ReactChild,
     subtitle: React.ReactChild,
     coverImage: ImageAsset,
@@ -51,7 +50,7 @@ export class Page {
         const html = markdownToReact(this.#mdContent, this.assetManager, this.fpat);
         return this.#template(
             {
-                headingClasses: ['home-page-heading'],
+                homePageHeading: true,
                 title: this.title,
                 subtitle: this.subtitle,
                 coverImage: this.coverImage,
@@ -100,7 +99,7 @@ export class Post {
         let footer: React.ReactElement = null;
         if (this.tags.length > 0) {
             footer = <p>
-                <span className="tags-icon" />
+                <TagsIcon />
                 {this.tags.map((tag, i) => [
                     i == 0 ? ' ' : ', ',
                     <a href={tag.uri} rel="tag">{tag.name}</a>
@@ -111,7 +110,7 @@ export class Post {
         const html = markdownToReact(this.#mdContent, this.assetManager, this.fpat);
         return this.#template(
             {
-                headingClasses: [],
+                homePageHeading: false,
                 title: this.title,
                 subtitle: <time className="posted-on" dateTime={this.date.toISOString()}>{formatDate(this.date)}</time>,
                 coverImage: this.coverImage,

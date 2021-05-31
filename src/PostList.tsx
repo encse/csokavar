@@ -3,6 +3,14 @@ import * as React from 'react';
 import path from 'path';
 import { Template, PageTemplateProps, Post } from './post';
 import { ImageAsset } from "./assets";
+import styled from 'styled-components';
+
+const Title = styled.h2``;
+
+const Subtitle = styled.p`
+    margin-top: 0;
+    font-variant: all-small-caps;
+`;
 
 
 export class PostList {
@@ -32,8 +40,8 @@ export class PostList {
             content.push(
                 <article key={post.uri}>
                     <header>
-                        <h2 className="title"><a href={post.uri} rel="bookmark">{post.title}</a></h2>
-                        <p className="subtitle">{formatDate(post.date)}</p>
+                        <Title><a href={post.uri} rel="bookmark">{post.title}</a></Title>
+                        <Subtitle>{formatDate(post.date)}</Subtitle>
                     </header>
                     <section>
                         {post.excerpt}
@@ -59,7 +67,7 @@ export class PostList {
         }
 
         return this.template({
-            headingClasses: ['home-page-heading'],
+            homePageHeading: true,
             title: this.title, 
             subtitle: this.subtitle,
             coverImage: this.coverImage,

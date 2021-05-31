@@ -91,7 +91,7 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
                 postContent={props.postContent} 
                 subtitle={props.subtitle} 
                 title={props.title}
-                headingClasses={props.headingClasses}
+                homePageHeading={props.homePageHeading}
             />);
 
         return templateHtml
