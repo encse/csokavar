@@ -13,7 +13,7 @@ Minden szart csináltam az elmúlt 24 órában.
 
 3\. Letolattam a hajamat a fodrásszal. :)
 
-4\. [Ökörködtem](https://csokavar.hu/blog/2008/05/02/eljatszottam-a-gondolattal/) Visual Basic-ben.
+4\. [Ökörködtem](https://csokavar.hu/blog/2008/05/eljatszottam-a-gondolattal/) Visual Basic-ben.
 
 5\. Aztán elmentünk cserebogarat szedni Csanakra. Csomót megettek a pipik, egyet meg jól felgyújtottunk, mert szadista állatok vagyunk mind a ketten az öcsémmel.
 

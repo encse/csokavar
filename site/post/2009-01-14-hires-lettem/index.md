@@ -12,7 +12,7 @@ Képzeljék, itt a gekko regisztrációs captchájának megoldásáról beszélg
 
 Na jó, tudom én, hogy csinálhattam volna valami bonyolultabb captchát is, de a fene se gondolta, hogy lesz olyan primitív véglény, aki nem tudja kiszámolni magától és az interneten kezd el utána keresgélni...
 
-Pedig volt is ebből pár bejövő találat ide a blogra, és írtam is róla [korábban](https://csokavar.hu/blog/2008/02/24/tudok-egy-rovidebb-utat-az-erdon-at/). Akkor kitaláltam, hogy milyen jófejség lenne, ha egy kis meglepetést rejtenénk a dologba, és az említett bejegyzésben megadtam egy hibás eredményt, a regisztrációs oldalba pedig beleírtam, hogy ha valaki ezt adja meg válasznak, akkor írjon ki valami olyasmit, hogy "intereneten keresgélünk? ejnye-bejnye".
+Pedig volt is ebből pár bejövő találat ide a blogra, és írtam is róla [korábban](https://csokavar.hu/blog/2008/02/tudok-egy-rovidebb-utat-az-erdon-at/). Akkor kitaláltam, hogy milyen jófejség lenne, ha egy kis meglepetést rejtenénk a dologba, és az említett bejegyzésben megadtam egy hibás eredményt, a regisztrációs oldalba pedig beleírtam, hogy ha valaki ezt adja meg válasznak, akkor írjon ki valami olyasmit, hogy "intereneten keresgélünk? ejnye-bejnye".
 
 Hát így.
 

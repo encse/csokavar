@@ -20,4 +20,4 @@ Utána megint Kossuth tér, Vértanúk (ezúttal tüntetők nélkül) stb., mert
 
 * * *
 
-\* A Duna-korzón kaptuk a hírt, hogy megszületett a [nagyobbik húgom](https://csokavar.hu/blog/2006/09/03/linda-i/) kisfia délután 3 körül.
+\* A Duna-korzón kaptuk a hírt, hogy megszületett a [nagyobbik húgom](https://csokavar.hu/blog/2006/09/linda-i/) kisfia délután 3 körül.

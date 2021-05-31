@@ -23,4 +23,4 @@ Jól van, mondom, beviszem.
 
 Aztán eltelt újabb két hét, és ma végre elmehettem érte. Reggel még azt mondta a bácsi, hogy 8000 Ft lesz plusz áfa. Délután meg már azzal jöttek, hogy 7000-ért ideadják, de nem ismerjük egymást... Kipróbáltuk, minden működött, hazahoztam.
 
-Komolyan: ha a Sony Kibaszott Hivatalos Szervízben ez van, akkor már előre rettegek attól a kis javítástól a [fürdőszobában](https://csokavar.hu/blog/2008/10/25/szombati-egyveleg/)... Pedig én tényleg jól akartam csinálni, és már eleve a vásárlás helyét hívtam fel, hogy ajánljanak ők egy jó szervízt ehhez.
+Komolyan: ha a Sony Kibaszott Hivatalos Szervízben ez van, akkor már előre rettegek attól a kis javítástól a [fürdőszobában](https://csokavar.hu/blog/2008/10/szombati-egyveleg/)... Pedig én tényleg jól akartam csinálni, és már eleve a vásárlás helyét hívtam fel, hogy ajánljanak ők egy jó szervízt ehhez.

@@ -16,7 +16,7 @@ Előbb nyilván NOT, AND, OR, XOR kapukat építesz, meg ezeknek az egyszerre t�
 
 Nagyon egyszerű processzorra gondoljunk, mindössze kétféle utasítása van, de az is bőven elég.
 
-[![The-Elements-of-Computing-Systems-9780262640688](images/The-Elements-of-Computing-Systems-9780262640688.jpg)](https://csokavar.hu/blog/2014/06/the-elements-of-computing-systems/the-elements-of-computing-systems-9780262640688/)
+![The-Elements-of-Computing-Systems-9780262640688](images/The-Elements-of-Computing-Systems-9780262640688.jpg)
 
 A fejezetek végén levő feladatok a fentiekhez hasonló áramkörök megépítését kérik. Nem rágják szájba a megoldást, gondolkodni kell, de éppen elég tippet kapunk ahhoz, hogy ne legyen megoldhatatlan a feladat, amit aztán a mellékelt tesztekkel többé-kevésbé ellenőrizhetünk is.
 

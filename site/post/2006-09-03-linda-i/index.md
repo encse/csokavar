@@ -1,5 +1,6 @@
 ---
 title: "Linda I."
+slug: "linda-i"
 date: "2006-09-03"
 tags: 
   - "személyes"

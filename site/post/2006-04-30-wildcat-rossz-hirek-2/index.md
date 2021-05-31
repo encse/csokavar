@@ -1,5 +1,6 @@
 ---
 title: "Wildcat rossz hírek"
+slug: 'wildcat-rossz-hirek-2'
 date: "2006-04-30"
 tags: 
   - "zsonglőrködés"
