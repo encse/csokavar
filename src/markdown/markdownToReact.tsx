@@ -32,7 +32,7 @@ function getProps(attrs: [string, string][] | null) {
 }
 
 
-export function render(tokens: Token[], ctx: RenderContext): React.ReactElement<any> {
+export function render(tokens: Token[], ctx: RenderContext, markdownIt: MarkdownIt): React.ReactElement<any> {
 
     let i = 0;
     let stack: React.ReactElement<any>[][] = [[]];
@@ -46,12 +46,13 @@ export function render(tokens: Token[], ctx: RenderContext): React.ReactElement<
             tokenStack.push(token);
             stack.push([]);
         } else if (token.type === "inline") {
-            children().push(render(token.children, ctx));
+            children().push(render(token.children, ctx, markdownIt));
         } else if (token.type === "text") {
             children().push(<>{token.content}</>);
         } else if (token.type === "html_block") {
             children().push(<div dangerouslySetInnerHTML={{ __html: token.content }} />);
         } else if (token.type === "html_inline") {
+            console.log(token.content);
             children().push(<>{token.content}</>);
         } else if (token.type === "gallery") {
             children().push(renderGallery(token, ctx));
@@ -59,6 +60,9 @@ export function render(tokens: Token[], ctx: RenderContext): React.ReactElement<
             children().push(iframePlugin.render(token, ctx));
         } else if (token.tag === "img") {
             children().push(renderImage(token, ctx));
+        } else if (token.tag === "math") {
+            children().push(<span dangerouslySetInnerHTML={{ __html:  markdownIt.renderer.renderInline([token], {}, {}) }} />);
+           
         } else {
             if (token.tag == '') {
                 throw new Error(`invalid token ${token.type}}`);
@@ -89,7 +93,7 @@ export function markdownToReact(md: string, assetManager: AssetManager, fpat: st
         .use(markdown_it_gallery_plugin)
         ;
 
-    return <div>{render(markdownIt.parse(md, {}), {assetManager, fpat})}</div>;
+    return <div>{render(markdownIt.parse(md, {}), {assetManager, fpat}, markdownIt)}</div>;
 }
 
 export function markdownToReactExcerpt(md: string, uri: string, assetManager: AssetManager, fpat: string): React.ReactElement<any> {
@@ -105,7 +109,7 @@ export function markdownToReactExcerpt(md: string, uri: string, assetManager: As
         if (block.content != '') {
             return (
                 <p>
-                    {render([block], {assetManager, fpat})}
+                    {render([block], {assetManager, fpat}, markdownIt)}
                     <a href={uri} rel="bookmark">…</a>
                 </p>
             );
