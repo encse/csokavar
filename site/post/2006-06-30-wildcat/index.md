@@ -13,5 +13,5 @@ Az ötlet az, hogy a magyar részek a videókkal együtt átjönnek az új helyr
 
 Előzmények:
 
-- [Wildcat - rossz hírek (1)](https://csokavar.hu/blog/2006/05/06/wildcat-rossz-hirek/)
-- [Wildcat - rossz hírek (2)](https://csokavar.hu/blog/2006/04/30/wildcat-rossz-hirek-2/)
+- [Wildcat - rossz hírek (1)](https://csokavar.hu/blog/2006/05/wildcat-rossz-hirek/)
+- [Wildcat - rossz hírek (2)](https://csokavar.hu/blog/2006/04/wildcat-rossz-hirek-2/)

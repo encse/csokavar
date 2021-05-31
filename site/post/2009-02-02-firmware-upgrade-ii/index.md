@@ -5,7 +5,7 @@ tags:
   - "rdr-hx-722"
 ---
 
-Szinte még egy hónap sem telt el az emlékezetes [firmware upgrade](https://csokavar.hu/blog/2009/01/04/firmware-upgrade/) óta, és máris újra kezembe kaparinthattam a DVD felvevőmet.
+Szinte még egy hónap sem telt el az emlékezetes [firmware upgrade](https://csokavar.hu/blog/2009/01/firmware-upgrade/) óta, és máris újra kezembe kaparinthattam a DVD felvevőmet.
 
 Mindössze 7000 forintba került, és természetesen most sincs rajta az új firmware, annak ellenére, hogy a bácsi a boltban azt hazudta, hogy a legfrissebb van rajta.
 

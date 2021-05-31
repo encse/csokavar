@@ -21,7 +21,7 @@ Nem minden nap megy az ember főnöke a világűrbe, de az enyém holnap mégis.
 (Mondanom se kell, hogy minden magyar idő szerint.)
 
 - **Szombat, április 7.**: 19:30-kor kilövés, de már előtte egy órával közvetítik az előkészületeket a NASA TV-n.
-- **Hétfő, április 9.**: 21:12-kor dokkolás, 22:55-kor zsilip kinyit. A hülye eszemmel bent hagytam a - még mindig [sérült](https://csokavar.hu/blog/2007/02/22/eltorott-a-ctrl/) - gépemet az irodában, úgyhogy ezt a wii-n fogom nézni.
+- **Hétfő, április 9.**: 21:12-kor dokkolás, 22:55-kor zsilip kinyit. A hülye eszemmel bent hagytam a - még mindig [sérült](https://csokavar.hu/blog/2007/02/eltorott-a-ctrl/) - gépemet az irodában, úgyhogy ezt a wii-n fogom nézni.
 - **Péntek, április 20.**: 9:15-kor zsilip becsuk, 12:25-kor kidokkolás;
 - **péntek, április 20.**: 15:43-kor landolás, aztán
 - _a Kazakhstan break című amerikai sorozat premierje (No HIV test, no visa) este tíztől az RTL Klubon._

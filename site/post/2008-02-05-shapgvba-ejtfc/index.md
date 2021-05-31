@@ -1,5 +1,6 @@
 ---
 title: "shapgvba ejtf(c){..."
+slug: 'shapgvba-ejtfc'
 date: "2008-02-05"
 tags: 
   - "geekség"
