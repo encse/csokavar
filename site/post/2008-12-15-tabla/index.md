@@ -8,7 +8,9 @@ tags:
 
 "Hogy néz ki egy intencionális programozó táblája?" - kérdezik Önök.
 
-Imígyen:\[seadragon width="100%" height="600px"\]https://csokavar.hu/wp-content/uploads/2008/12/tabla/dzc\_output.xml\[/seadragon\]
+Imígyen:
+
+<iframe loading="lazy" width="100%" height="800" allowfullscreen="" allow="autoplay; fullscreen" src="https://tabla.csokavar.hu"></iframe>
 
 Próbáljuk megtalálni az elrejtett részleteket:
 

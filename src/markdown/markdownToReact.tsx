@@ -9,6 +9,7 @@ import Token from 'markdown-it/lib/token';
 import { RenderContext } from './renderContext';
 import { renderImage } from './image';
 import { snakeToCamel } from '../util';
+import {resolve} from 'url';
 
 function getProps(attrs: [string, string][] | null) {
     let props = {};
@@ -58,7 +59,7 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
             children().push(renderGallery(token, ctx));
         } else if (token.type === iframePlugin.tokenId) {
             children().push(iframePlugin.render(token, ctx));
-        } else if (token.tag === "img") {
+        } else if (token.type === "image") {
             children().push(renderImage(token, ctx));
         } else if (token.tag === "math") {
             children().push(<span dangerouslySetInnerHTML={{ __html:  markdownIt.renderer.renderInline([token], {}, {}) }} />);
@@ -74,11 +75,29 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
                 throw new Error(`invalid token ${token.type}}`);
             }
             if (token.type.endsWith("_close")) {
+
                 const content = stack.pop();
+                const tokenOpen = tokenStack.pop();
+
+                if (token.tag === 'a') {
+                    let href = tokenOpen.attrGet('href');
+                    if (
+                        !href.startsWith('http://') && 
+                        !href.startsWith('https://') &&
+                        !href.startsWith('ftp://') &&
+                        !href.startsWith('mailto:')
+                    ) {
+                        const asset = ctx.assetManager.lookupAsset(
+                                resolve(ctx.fpat, href)
+                            );
+                        tokenOpen.attrSet('href', asset.url.toString());
+                    }
+                } 
+
                 children().push(
                     React.createElement(
                         token.tag,
-                        getProps(tokenStack.pop().attrs),
+                        getProps(tokenOpen.attrs),
                         content)
                 );
             } else {

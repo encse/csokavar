@@ -32,7 +32,7 @@ Talán kicsit egyszerűbb a képet meglátni, ha valahogy elszeparáljuk a szeme
 
 3\. A fenti tulajdonképpen a [tapéta effektus](http://en.wikipedia.org/wiki/Autostereogram) legegyszerűbb esete. A lényeg itt is az, hogy két képrészlet különböző ismétlődéseit az agy "egybeolvasztva" értelmezi. Ha az ismétlődés nem pontos, azaz kicsit elcsúsztatjuk a képrészleteket, különböző magasságban lebegő síkidomokat kapunk. A képen Bodri 'követési távolsága' a legkisebb, aztán jön a kerítés, utána a fák és így tovább. Figyeljük meg, hogy a kép jobb szélén a kerítés már nem is a ház előtt van, teljesen kiesett a szinkronból.
 
-[![sorhaz](images/sorhaz-500x82.png)](https://csokavar.hu/wp-content/uploads/2007/02/sorhaz.png) A megtekintéshez ugyanúgy a távolba kell fókuszálni mint a második példában, de talán érdemes a képet kinagyítani előbb. (Katt.)
+![sorhaz](images/sorhaz.png) A megtekintéshez ugyanúgy a távolba kell fókuszálni mint a második példában, de talán érdemes a képet kinagyítani előbb. (Katt.)
 
 Még sorolhatnám, de úgyis jobb a wikipédia, ráadásul ezen a ponton felébredt bennem a programozó, és elkezdtem a távolságmérésen gondolkodni. Végül nekálltam megírni egy automatikus ágyú programját. Nyilván soha nem fogom befejezni, de matematikailag azért sikerült megoldani. :) Íme a feladat.
 

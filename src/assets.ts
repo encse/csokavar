@@ -78,7 +78,7 @@ type MediaDb = {
 };
 
 const MediaDb = {
-    version: "0.1"
+    version: "0.2"
 };
 
 export class AssetManager {
@@ -101,25 +101,33 @@ export class AssetManager {
             parsedPath.ext === '.js' ? "jsAsset" : 
             ['.jpg', '.jpeg', '.gif', '.png', '.svg'].includes(parsedPath.ext) ? "imageAsset" :
             "fileAsset";
+
         if (this.tryLookup(fpat, assetKind) != null) {
             return
         }
 
-        const uuid =
+        let location =
             assetKind == "imageAsset" ? uuidv5(path.join(parsedPath.dir, parsedPath.base), AssetManager.namespace) :
             assetKind == "jsAsset" ? uuidv4() :
-            assetKind == "fileAsset" ? uuidv4() :
+            assetKind == "fileAsset" ? path.join(parsedPath.dir, parsedPath.name) :
             assertNever(assetKind)
+        
+        location = path.join('assets', location + parsedPath.ext);
 
-        const uri = new URL(path.join('assets', uuid + parsedPath.ext), this.cdnUri);
+        const uri = new URL(location, this.cdnUri);
 
         if (assetKind == "imageAsset") {
             const imageAsset = await ImageAsset.create(fpat, uri);
             this.#assets.push(imageAsset);
             this.saveMediaDb();
-        } else {
+        } else if (assetKind == 'jsAsset') {
             const jsAsset = new JsAsset(fpat, uri);
             this.#assets.push(jsAsset);
+        } else if (assetKind == 'fileAsset') {
+            const fileAsset = new FileAsset(fpat, uri);
+            this.#assets.push(fileAsset);
+        } else {
+            assertNever(assetKind);
         }
     }
 
@@ -133,17 +141,31 @@ export class AssetManager {
         throw new Error(`Cannot find asset '${fpat}'`);
     }
 
-    private tryLookup<T extends AssetKind>(fpat: string, assetKind: T): AssetOf<T> | null {
+    lookupAsset<T extends AssetKind>(fpat: string): Asset {
+        const res = this.tryLookupAsset(fpat);
+        if (res != null) {
+            return res;
+        }
+
+        throw new Error(`Cannot find asset '${fpat}'`);
+    }
+
+    private tryLookup<T extends AssetKind>(fpat: string, assetKind: T | null): AssetOf<T> | null {
+        const asset = this.tryLookupAsset(fpat);
+        return asset?.kind == assetKind ? (asset as AssetOf<T>) : null;
+    }
+
+
+    private tryLookupAsset(fpat: string): Asset {
 
         for (const item of this.#assets) {
             if (item.srcPath === fpat) {
-                if (item.kind === assetKind) {
-                    return item as AssetOf<T>;
-                }
+                return item;
             }
         }
         return null;
     }
+
 
     private getMediaDbPath(): string {
         return path.resolve(this.mediaDbDir, 'media.db');

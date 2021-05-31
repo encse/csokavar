@@ -10,40 +10,43 @@ Gondoltam most nagyon szépen megcsinálok mindent a zsongi oldalhoz. A css vil�
 
 Lássunk egy példát:
 
+```
+<!DOCTYPE html>
 <html>
 <head>
-    <style>
-    <!--
-    body{
-        background: blue;
-        padding:0;
-        margin:0;
-    }
-    div {
-        background: yellow;
-        padding:0;
-        margin:0;
-    }
-    h1{
-        background: green;
-        padding: 0;
-        margin: 40px;
-    }
-    -->
-    </style>
+    <style>
+    body { 
+        background: blue;
+        padding:0;
+        margin:0;
+    }
+    
+    div {
+        background: yellow;
+        padding:0pt;
+        margin:0;
+    }
+
+    h1 {
+        background: green;
+        padding: 0;
+        margin: 40px;
+    }
+   </style>
 </head>
 <body>
-    <div>
-        <h1>h1</h1>
-    </div>
+    <div>
+        <h1>h1</h1>
+    </div>
 </body>
 </html>
+```
 
 Azt várnánk, hogy ennek eredményeként kapunk egy kék hátterű oldalt, benne egy sárga keretbe foglalt 'h1' felirattal, aminek még szintén van egy kis zöld kerete.
 
-Hát nem... [Ez lesz belőle](https://csokavar.hu/wp-content/uploads/2006/08/css1.htm). Valamilyen oknál fogva úgy gondolja a böngésző, hogy a h1 alsó és felső margója, hiába van a sárga div-en belül, mégse legyen sárga. Viszont ugyez a logika már nem vonatkozik az oldalsó margókra. Ott sárga valamiért. Enyhén inkonzisztens...
+Hát nem... [Ez lesz belőle](files/css1.htm). Valamilyen oknál fogva úgy gondolja a böngésző, hogy a h1 alsó és felső margója, hiába van a sárga div-en belül, mégse legyen sárga. Viszont ugyez a logika már nem vonatkozik az oldalsó margókra. Ott sárga valamiért. Enyhén inkonzisztens...
 
-Megoldás: ne akarjál nullás paddingot a diven. [Legyen mondjuk 1pt](https://csokavar.hu/wp-content/uploads/2006/08/css2.htm).
+Megoldás: ne akarjál nullás paddingot a diven. [Legyen mondjuk 1pt](files/css2.htm).
 
 ### Releváns linkek:
 

@@ -23,6 +23,6 @@ A végeredményt fel szándékozom tenni ide is, úgyhogy tessék megcsinálni m
 
 ### Kiegészítés
 
-És kész is lett, [íme](https://csokavar.hu/wp-content/uploads/2007/10/wake-up-ocean.mp3).
+És kész is lett, [íme](files/wake-up-ocean.mp3).
 
 Lőry szerint traktorral szántanak a háttérben, pedig nem.

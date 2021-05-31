@@ -23,7 +23,7 @@ Rezet a munkahelyemhez legközelebbi bádogosnál vettem, ott elég hülyén né
 
 A réz-I-oxid készítéséhez egy rezsóra van szükségünk, legalábbis a kísérlet leírása szerint, amitől nem akartam eltérni hacsak nem volt muszáj. Szereztem hát egy 1500W-os rezsót a neten. Nekem ne mondja senki, hogy nem készülök fel alaposan...
 
-Jobb kint csinálni az ilyeneket, ki tudja milyen büdös lesz miatta. (Nem lett az.) Kivittem a rezsót, beállítottam max fokozatra, és jó fél órán keresztül hevítettem rajta a rezet, amin sötét réz-II-oxid réteg keletkezett. Ezt lassú hűtés után ütögetéssel, illetve simán az ujjam végighúzásával el lehetett távolítani, hogy alatta előtűnjön a vékony réz-I-oxid bevonat. A bejegyéshez csatolt képen amúgy ez a réz-I-oxid látszik kicsiben. A teljes kép [itt](https://csokavar.hu/wp-content/uploads/2010/11/ΙΚ1-1.jpg) érhető el, és [innen](http://galleryhip.com/copper-oxide-structure.html) származik.
+Jobb kint csinálni az ilyeneket, ki tudja milyen büdös lesz miatta. (Nem lett az.) Kivittem a rezsót, beállítottam max fokozatra, és jó fél órán keresztül hevítettem rajta a rezet, amin sötét réz-II-oxid réteg keletkezett. Ezt lassú hűtés után ütögetéssel, illetve simán az ujjam végighúzásával el lehetett távolítani, hogy alatta előtűnjön a vékony réz-I-oxid bevonat. A bejegyéshez csatolt képen amúgy ez a réz-I-oxid látszik kicsiben. A teljes kép [itt](images/IK1-1.jpg) érhető el, és [innen](http://galleryhip.com/copper-oxide-structure.html) származik.
 
 ### A kísérlet
 

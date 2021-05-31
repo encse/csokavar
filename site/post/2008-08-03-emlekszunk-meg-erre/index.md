@@ -10,7 +10,7 @@ coverImage: images/MorseCodeForever.png
 
 Takarítottam, és mit nem találok....
 
-> Hi Cristian, [this](https://csokavar.hu/wp-content/uploads/2008/08/riddle.mp3) is for the crew, please distribute.
+> Hi Cristian, [this](files/riddle.mp3) is for the crew, please distribute.
 > 
 > Happy holidays! The Hungarian ISC team
 

@@ -10,7 +10,7 @@ coverImage: images/practical-common-lisp.png
 
 A héten befejeztem Peter Seibel Practical Common Lisp című könyvét, és továbbra is vegyes érzéseim vannak a nyelvvel kapcsolatban. A könyv egyébként nagyon jó, csak ajánlani tudom mindazoknak, akiket érdekel a Lisp és egy viszonylag széles merítést akarnak kapni belőle az alapoktól indulva, egészen egy egyszerű kis webes alkalmazás elkészítéséig, ami egyúttal shoutcast szerver, binárisból parsolja az ID3 tageket stb. Nagyon jól összerakott könyv 10/10, bár én tudnék ilyet írni valamikor... akármiről.
 
-[![pcommlisp](images/pcommlisp.jpg)](https://csokavar.hu/wp-content/uploads/2011/10/pcommlisp.jpg) 
+![pcommlisp](images/pcommlisp.jpg)
 
 ### Domain specifikus nyelvek
 
