@@ -19,7 +19,12 @@ Egyik este a kisvonat bepöfögött az erdei állomásra. - Krrrr nyüüüüüü
 
 Ott voltak a hódok, az őzikék, a vaddisznók...
 
-\- És a Timi bárány is? - kérdezi Zsófi - Igen persze, a Timi bárány is. - És a Süsü? - Hmm... hát persze a Süsü is - kezd kicsit megborulni a történet, de nem én vagyok a főnök. - És a Linda és a Sári és a Léna és a Tamás is? - Hogyne persze, ők is - bár eredetileg állatokról volt szó, de legyen.
+- És a Timi bárány is? - kérdezi Zsófi 
+- Igen persze, a Timi bárány is. 
+- És a Süsü? 
+- Hmm... hát persze a Süsü is - kezd kicsit megborulni a történet, de nem én vagyok a főnök. 
+- És a Linda és a Sári és a Léna és a Tamás is? 
+- Hogyne persze, ők is - bár eredetileg állatokról volt szó, de legyen.
 
 Mindenki szépen beszállt a kisvonatba, a nyuszi kilyukasztotta a jegyeket, a kígyó pedig letisztította a cipőket. Közben a róka feltöltötte a mozdony tartályát friss vízzel, a medve pedig jó három zsák szenet öntött a szeneskocsiba. Mikor mindennel elkészültek, megkapták a jelet az indulásra, és a kisvonat nekiveselkedett.
 

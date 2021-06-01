@@ -9,7 +9,7 @@ import { TagsIcon } from './components/fontAwesame';
 
 export type PageTemplateProps = {
     homePageHeading: boolean,
-    title: React.ReactChild,
+    title: string,
     subtitle: React.ReactChild,
     coverImage: ImageAsset,
     postContent: React.ReactChild

@@ -97,7 +97,8 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
         return templateHtml
             .replace('{{ site.js }}', assetManager.lookup('site/assets/site.js', "jsAsset").url.toString())
             .replace('{{ style }}', page.style)
-            .replace('{{ page }}', page.html);
+            .replace('{{ page }}', page.html)
+            .replace('{{ title }}', props.title);
     };
 
 

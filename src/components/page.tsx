@@ -4,32 +4,12 @@ import {TwitterLink, LinkedInLink, GitHubLink} from './fontAwesame';
 
 export type PageProps = {
     featuredImage: React.CSSProperties,
-    title: React.ReactChild,
+    title: string,
     subtitle: React.ReactChild,
     postContent: React.ReactChild,
     footer: React.ReactChild,
     homePageHeading: boolean,
 }
-
-
-// @media only screen and (max-width:600px) {
-//     body>header .dropdown {
-//         padding: 16px;
-//         display: inline-block
-//     }
-
-//     body>header .dropdown {
-//         float: right;
-//         user-select: none
-//     }
-// }
-
-
-//     @media only screen and (min-width:601px) {
-//     body>.header .dropdown {
-//         display: none
-//     }
-// }
 
 const Header = styled.header`
     background-size: cover;
