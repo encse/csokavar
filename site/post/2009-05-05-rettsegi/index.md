@@ -7,7 +7,7 @@ tags:
 coverImage: images/P1000927.jpg
 ---
 
-Emlékszem utolsó évben „ó”, „ió”, „ció”, „áció” helyett az Érettségi szót írtuk fel betűnként a táblára. Magát az érettségit amúgy utáltam, főleg a szóbeli részét, mert ott csak olyan tudásról kellett bizottság előtt számot adni, amiről már akkor tudtam, hogy soha semmi szükségem nem lesz rá [^1]. A matekot azonban azóta is mindig megnézem nosztalgiából. Tegnap elkezdődött az idei érettségi szezon, és délután mi is elővettük a tavalyi matek felvételit Lőryvel meg Catussal.
+Emlékszem utolsó évben „ó”, „ió”, „ció”, „áció” helyett az Érettségi szót írtuk fel betűnként a táblára. Magát az érettségit amúgy utáltam, főleg a szóbeli részét, mert ott csak olyan tudásról kellett bizottság előtt számot adni, amiről már akkor tudtam, hogy soha semmi szükségem nem lesz rá*. A matekot azonban azóta is mindig megnézem nosztalgiából. Tegnap elkezdődött az idei érettségi szezon, és délután mi is elővettük a tavalyi matek felvételit Lőryvel meg Catussal.
 
 Mókásnak nevezném, pedig annak idején rengeteget készültem rá. Negyedikben nagyjából az összes irodalom és történelem órát azzal töltöttem, hogy a Gerőcs tanár úr-féle piros színű feladatgyűjteményt oldogattam. Most viszont olyan jó volt ellazulni kicsit ezekkel a példákkal. Különösen tetszett, hogy a kombinatorikus-valszámos feladatcsokrot úgy vezették fel, hogy „Annának az IWIW-en 40 ismerőse van”. Ettől olyan jópofa modern lett a dolog szerintem.
 
@@ -17,4 +17,4 @@ Várom már az idei adagot :) Lehetne benne valami „Józsinak a Provident 240%
 
 * * *
 
-[^1]: Na jó ez főleg az irodalomra vonatkozik.
+\* Na jó ez főleg az irodalomra vonatkozik.

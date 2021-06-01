@@ -7,10 +7,10 @@ tags:
 
 Éppen töltődik lefelé a legújabb [Sam & Max](http://www.telltalegames.com/) epizód, a Situation: Comedy, erről eszembe jutott, hogy már régóta meg akartam írni a nagymamám kutyáját, annyira jópofa.
 
-Szóval az úgy volt, hogy keresztapuval megcsináltuk a kerítést, mert már évek óta azon mászott ki az előző medvekutyánk[^1], és hiába foltozgattuk, csak nem lett jobb a helyzet. Végül, "nem becsinálni, hanem megcsinálni" felkiáltással kicseréltük az egészet faszán.
+Szóval az úgy volt, hogy keresztapuval megcsináltuk a kerítést, mert már évek óta azon mászott ki az előző medvekutyánk *, és hiába foltozgattuk, csak nem lett jobb a helyzet. Végül, "nem becsinálni, hanem megcsinálni" felkiáltással kicseréltük az egészet faszán.
 
 Aztán lett egy másik hódkutyánk, de az meg alulról bontotta ki a cuccot, és azóta is mindig elkíséri a nagymamámat, akárhová is megy. Ez még nem is lenne baj, csakhogy alig érnek oda, rögtön elkezdi a házat őrizni. Mivel elég kicsi és vérszomjas, ez már önmagában is vicces, de képzeljék el az áhitatos híveket, amikor nem tudnak bejutni a misére, mert a kutya éppen a templomot vagy a plébániát őrzi...
 
 * * *
 
-[^1]: Ha van farkaskutya, akkor van medve- és hódkutya is. És tényleg: [google it](http://www.google.com/search?q=medvekutya), bár a miénk nem ilyen volt hanem újfunlandi.
+\* Ha van farkaskutya, akkor van medve- és hódkutya is. És tényleg: [google it](http://www.google.com/search?q=medvekutya), bár a miénk nem ilyen volt hanem újfunlandi.

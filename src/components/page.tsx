@@ -94,6 +94,10 @@ const HomePageSubTitle = styled(PageSubTitle)`
     }
 `;
 
+const ArticleFooter = styled.footer`
+    font-variant: all-small-caps;
+`;
+
 const Footer = styled.footer`
     color: #c8c8c8;
     display: flex;
@@ -156,9 +160,9 @@ export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
                 <section>
                     {props.postContent}
                 </section>
-                <footer>
+                <ArticleFooter>
                     {props.footer}
-                </footer>
+                </ArticleFooter>
             </article>
         </main>
         <Footer>

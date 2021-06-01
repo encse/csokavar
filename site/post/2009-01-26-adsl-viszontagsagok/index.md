@@ -54,11 +54,11 @@ Mellékelnék egy rövidke levelet, amit ma délután erős felindultságomból 
 > 
 > Azóta önök az alábbi egymásnak részben ellentmondó információkkal szolgáltak:
 > 
-> 1. T-com folyamatosan visszadobja a kérelmet. \*
+> 1. T-com folyamatosan visszadobja a kérelmet. *
 > 2. január 21-én a T-Com elfogadta a kérelmet.
 > 3. január 21-én a T-Com nem fogadta el a kérelmet.
 > 
-> \*: a „kérelem” bizonyára a „szünetmentes szolgáltató váltási” kérelmet jelenti, bár ebben nem vagyok teljesen biztos.
+> \* a „kérelem” bizonyára a „szünetmentes szolgáltató váltási” kérelmet jelenti, bár ebben nem vagyok teljesen biztos.
 > 
 > Mivel önök nyilván szétperelnék az összes felmenőmet is, ha megpróbálnék az egyéves hűségnyilatkozat alól azzal az apró kifogással kibújni, hogy _egyáltalán nem mennek a bitek a vonalon_, azért még 1 azaz egy dolgot megpróbálhatok (a T-comos ügyfélszolgálat legújabb tanácsára hallgatva, és az önök egyik ügyintézőjével – Cs\*\*\*\* D\*\*\*\*a – január 26.-án egyeztetve).
 > 

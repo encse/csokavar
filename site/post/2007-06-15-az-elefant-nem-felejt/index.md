@@ -7,7 +7,7 @@ tags:
 
 > Kedves Tanár úr!
 > 
-> Ön már bizonyára nem emlékszik rám, de a napokban eszembe jutott az az emlékezetes XXXX[^1] vizsga, amikor én a XXXXXXXXXXXXXXX-t húztam, Ön pedig úgy buktatott meg, hogy bele sem nézett a tételembe. Nem mintha puskáztam vagy beszélgettem volna, csak éppen úgy tartotta úri kedve. Megkérdezte, hogy kész vagyok-e, amire igennel válaszoltam, erre átmentünk XXXXXXXXX tanár úrhoz a másik terembe, ahol beírták az egyest. Ezután „Menjen ki a teremből!” felkiáltással hazazavart.  Ez életem második szóbeli vizsgáján történt, úgyhogy nem is nagyon akadékoskodtam, azt hittem ez így van rendben. Az utóvizsgán aztán hajlandók voltak meghallgatni, és ötöst kaptam. A vizsgáztató meg is kérdezte a többi tanárt, hogy UV-n adnak-e ötöst, ugyanis ’ez a gyerek mindent tud’.
+> Ön már bizonyára nem emlékszik rám, de a napokban eszembe jutott az az emlékezetes XXXX* vizsga, amikor én a XXXXXXXXXXXXXXX-t húztam, Ön pedig úgy buktatott meg, hogy bele sem nézett a tételembe. Nem mintha puskáztam vagy beszélgettem volna, csak éppen úgy tartotta úri kedve. Megkérdezte, hogy kész vagyok-e, amire igennel válaszoltam, erre átmentünk XXXXXXXXX tanár úrhoz a másik terembe, ahol beírták az egyest. Ezután „Menjen ki a teremből!” felkiáltással hazazavart.  Ez életem második szóbeli vizsgáján történt, úgyhogy nem is nagyon akadékoskodtam, azt hittem ez így van rendben. Az utóvizsgán aztán hajlandók voltak meghallgatni, és ötöst kaptam. A vizsgáztató meg is kérdezte a többi tanárt, hogy UV-n adnak-e ötöst, ugyanis ’ez a gyerek mindent tud’.
 > 
 > Később kiderült, hogy csak Ön ilyen rosszindulatú, és mivel a továbbiakban sikeresen elkerültük egymást (néha nem volt egyszerű), ezen az egy, igazságtalan buktatáson kívül egyetlen UV-m sem volt az egyetem alatt. Végül, négy és fél évvel az eset után, jelesre diplomáztam mint XXXXXXXXXXXXX.
 > 
@@ -18,4 +18,4 @@ tags:
 
 * * *
  
-[^1]: személyiségi jogok védelme miatt, a konkrétumokat kihúztam.
+\* személyiségi jogok védelme miatt, a konkrétumokat kihúztam.
