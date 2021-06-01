@@ -11,6 +11,26 @@ export type PageProps = {
     homePageHeading: boolean,
 }
 
+
+// @media only screen and (max-width:600px) {
+//     body>header .dropdown {
+//         padding: 16px;
+//         display: inline-block
+//     }
+
+//     body>header .dropdown {
+//         float: right;
+//         user-select: none
+//     }
+// }
+
+
+//     @media only screen and (min-width:601px) {
+//     body>.header .dropdown {
+//         display: none
+//     }
+// }
+
 const Header = styled.header`
     background-size: cover;
     background-position: center;
@@ -20,6 +40,16 @@ const Header = styled.header`
    
     a {
         text-decoration: none;
+    }
+
+    @media only screen and (max-width:600px) {
+        height: 50vh;
+    }
+
+    @media only screen and (min-width:601px) {
+        height: 100vh;
+        max-height: 450px;
+        color: #fff;
     }
 `;
 
@@ -128,18 +158,78 @@ const SocialLinks: React.FC = (props) => {
     </StyledSocialLinks>;
 } 
 
+const StyledMenu = styled.nav`
+    @media only screen and (max-width:600px) {
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            width: 100%;
+            overflow: hidden;
+            float: left;
+            background: #1e1e1e;
+            max-height: 0px;
+            transition: max-height .2s ease-in-out;
+        }
+
+        a {
+            width: 100%;
+            display: block;
+        }
+
+        li {
+            padding: 8px 16px;
+
+            &:last-child {
+                padding-bottom: 24px;
+            }
+        }
+
+    }
+
+    @media only screen and (min-width:601px) {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-grow: 1;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            padding-left: 32px;
+        }
+    }
+`;
+
+const Menu: React.FC = (props) => {
+    return <StyledMenu><ul>{props.children}</ul></StyledMenu>;
+}
+
+const MenuItem: React.FC<{href: string, title: string}> = (props) => {
+    return <li><a href={props.href}>{props.title}</a></li>;
+}
+
 export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
     return <>
-        <Header className="header" style={props.featuredImage}>
+        <Header style={props.featuredImage}>
             <SiteHeading className="site-heading"> <SiteTitle href="/">Csókavár</SiteTitle>
-                <nav role="menubar">
-                    <ul>
-                        <li><a href="/">Blog</a></li>
-                        <li><a href="/projects/">Projektek</a></li>
-                        <li><a href="/konyvespolc/">Könyvespolc</a></li>
-                        <li><a href="/about/">About</a></li>
-                    </ul>
-                </nav>
+                <Menu>
+                    <MenuItem href="/" title="Blog" />
+                    <MenuItem href="/projects/" title="Projektek" />
+                    <MenuItem href="/konyvespolc/" title="Könyvespolc" />
+                    <MenuItem href="/about/" title="About" />
+                </Menu>
+              
             </SiteHeading>
             {
                 props.homePageHeading ?
