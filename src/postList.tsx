@@ -60,7 +60,7 @@ export class PostList {
         let content: React.ReactElement<any>[] = [];
         for (let post of this.posts) {
             content.push(
-                <article key={post.uri}>
+                <article>
                     <header>
                         <Title><a href={post.uri} rel="bookmark">{post.title}</a></Title>
                         <Subtitle>{formatDate(post.date)}</Subtitle>
@@ -93,7 +93,7 @@ export class PostList {
             title: this.title, 
             subtitle: this.subtitle,
             coverImage: this.coverImage,
-            postContent: <>{content}</>,
+            postContent: React.createElement(React.Fragment, {}, ...content),
             footer: null
         });
     }

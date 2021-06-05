@@ -108,7 +108,7 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
         }
     }
 
-    return <>{stack.flat()}</>;
+    return React.createElement(React.Fragment, {}, ...stack.flat());
 }
 
 export function markdownToReact(md: string, assetManager: AssetManager, fpat: string): React.ReactElement<any> {

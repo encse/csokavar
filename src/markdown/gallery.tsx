@@ -9,14 +9,12 @@ import { renderImageAsset } from './image';
 export function renderGallery(token: Token, ctx: RenderContext) {
     const src: string[] = JSON.parse(token.attrGet("src"));
 
-    return <div className="gallery">
-        {
-            ...src.map(item => {
-                const asset = ctx.assetManager.lookup(resolve(ctx.fpat, item), "imageAsset");
-                return renderImageAsset(asset);
-            })
-        }
-    </div>;
+    return  React.createElement('div', {className: "gallery"},
+        ...src.map(item => {
+            const asset = ctx.assetManager.lookup(resolve(ctx.fpat, item), "imageAsset");
+            return renderImageAsset(asset);
+        })
+    );
 }
 
 export default function plugin(md: MarkdownIt) {
