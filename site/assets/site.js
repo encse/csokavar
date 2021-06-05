@@ -9,8 +9,15 @@ window.addEventListener("load", function() {
         function pick(items) {
             return items[Math.floor(Math.random() * items.length)];
         }
+        let oldWidth = null;
 
         function performLayout() {
+
+            if (oldWidth == gallery.clientWidth) {
+                return;
+            }
+            oldWidth = gallery.clientWidth;
+
             let top = 0;
             let gutter = 8;
 
