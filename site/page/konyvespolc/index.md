@@ -8,4 +8,17 @@ Szeretek olvasni, és néha [véleményt](https://csokavar.hu/blog/tag/konyv/) i
 
 Mostanában már kevesebb idő jut rá, az ezer oldalas szakkönyvekkel meg lassan is haladok. Még az isc-s időkben, amikor 10 percre laktam az irodától, annyira ráértem, hogy munka után leültem az aktuális könyvvel és olvastam egész elalvásig, hétvégente meg mindig könyvesboltba jártam, hátha találok valamit…
 
+<style>
+    .gr_grid_book_container {
+        display: inline;
+    }
+    
+    .gr_grid_book_container img {
+        height: 147px;
+        width: 110px;
+        object-fit:cover;
+
+    }
+
+</style>
 <script src="https://www.goodreads.com/review/grid_widget/27816163.D%C3%A1vid's%20bookshelf:%20read?cover_size=medium&amp;hide_link=true&amp;hide_title=true&amp;num_books=2000&amp;order=d&amp;shelf=read&amp;sort=date_added&amp;widget_id=1474126508" type="text/javascript" charset="utf-8"></script>
