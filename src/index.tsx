@@ -39,7 +39,7 @@ function renderReactChild(child: React.ReactChild | null): {html: string, style:
     } else if (typeof (child) === 'number') {
         return {html: '' + child, style: ''}
     } else {
-        const sheet = new ServerStyleSheet()
+        const sheet = new ServerStyleSheet();
         const html = ReactDOMServer.renderToStaticMarkup(sheet.collectStyles(child));
         const style = sheet.getStyleTags() 
         sheet.seal();
@@ -161,7 +161,7 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
             posts.filter(post => post.tags.some(t => t.uri === tag.uri)),
             tag.uri,
             template,
-            `Címke: ${tag.name}`,
+            tag.name,
             '',
             assetManager.lookup('site/assets/main-bg.jpg', "imageAsset"),
             writeFile

@@ -10,6 +10,8 @@ import { RenderContext } from './renderContext';
 import { renderImage } from './image';
 import { snakeToCamel } from '../util';
 import {resolve} from 'url';
+import { renderMath } from './math';
+
 
 function getProps(attrs: [string, string][] | null) {
     let props = {};
@@ -52,9 +54,6 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
             children().push(<>{token.content}</>);
         } else if (token.type === "html_block") {
             children().push(<div dangerouslySetInnerHTML={{ __html: token.content }} />);
-        } else if (token.type === "html_inline") {
-            console.log(token.content);
-            children().push(<>{token.content}</>);
         } else if (token.type === "gallery") {
             children().push(renderGallery(token, ctx));
         } else if (token.type === iframePlugin.tokenId) {
@@ -62,7 +61,7 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
         } else if (token.type === "image") {
             children().push(renderImage(token, ctx));
         } else if (token.tag === "math") {
-            children().push(<span dangerouslySetInnerHTML={{ __html:  markdownIt.renderer.renderInline([token], {}, {}) }} />);
+            children().push(renderMath(token, markdownIt));
         } else if (token.type === "code_inline") {
             children().push(<code>{token.content}</code>);
         } else if (token.type === "fence") {
