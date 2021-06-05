@@ -5,11 +5,24 @@ import * as React from 'react';
 import { resolve } from 'url';
 import { RenderContext } from './renderContext';
 import { renderImageAsset } from './image';
+import styled from 'styled-components';
+
+const Gallery = styled.div`
+    position: relative;
+    height: 800px;
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        max-height: unset;
+        transition: 1s ease-in-out;
+    }
+`;
 
 export function renderGallery(token: Token, ctx: RenderContext) {
     const src: string[] = JSON.parse(token.attrGet("src"));
 
-    return  React.createElement('div', {className: "gallery"},
+    return  React.createElement(Gallery, {className: "gallery"},
         ...src.map(item => {
             const asset = ctx.assetManager.lookup(resolve(ctx.fpat, item), "imageAsset");
             return renderImageAsset(asset);
