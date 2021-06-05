@@ -98,7 +98,7 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
                     React.createElement(
                         token.tag,
                         getProps(tokenOpen.attrs),
-                        content)
+                        ...content)
                 );
             } else {
                 children().push(

@@ -86,7 +86,7 @@ export class AssetManager {
     #assets: Asset[] = [];
 
     private static namespace = 'efd20c5e-528e-42c9-b5fa-2ad7487f0510';
-    constructor(private readonly cdnUri: string, private readonly mediaDbDir: string) {
+    constructor(private readonly dev: boolean, private readonly cdnUri: string, private readonly mediaDbDir: string) {
         this.loadMediaDb();
     }
 
@@ -108,7 +108,7 @@ export class AssetManager {
 
         let location =
             assetKind == "imageAsset" ? uuidv5(path.join(parsedPath.dir, parsedPath.base), AssetManager.namespace) :
-            assetKind == "jsAsset" ? uuidv4() :
+            assetKind == "jsAsset" ?  (this.dev ? path.join(parsedPath.dir, parsedPath.name) :  uuidv4()) :
             assetKind == "fileAsset" ? path.join(parsedPath.dir, parsedPath.name) :
             assertNever(assetKind)
         

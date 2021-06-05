@@ -12,14 +12,17 @@ import { ServerStyleSheet } from 'styled-components';
 import { PageComponent } from './components/page';
 
 type Settings = {
-    'cdn': string
+    'cdn': string,
+    'dev': boolean
 };
 
 const config: {[key: string]:Settings } = {
     local: {
+        'dev': true,
         'cdn': 'http://127.0.0.1:8080'
     },
     prod: {
+        'dev': false,
         'cdn': 'https://d1tyrc4sjyi164.cloudfront.net/'
     }
 }
@@ -73,7 +76,7 @@ type FileWriter = (fpat: string, content: string | NodeJS.ArrayBufferView) => vo
 async function generate(fpatIn: string, writeFile: FileWriter) {
     const templateHtml = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
 
-    const assetManager = new AssetManager(settings.cdn, ".media");
+    const assetManager = new AssetManager(settings.dev, settings.cdn, ".media");
 
     const template = (props: PageTemplateProps) => {
         const featuredImage:React.CSSProperties = props.coverImage ? {
