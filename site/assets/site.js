@@ -1,10 +1,14 @@
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
 
-    document.querySelectorAll('[data-preload]').forEach(element=>{
-        element.style.backgroundColor=null;
+    document.querySelectorAll('[data-preload]').forEach(element => {
+        element.style.backgroundColor = null;
     });
 
-    document.querySelectorAll('.gallery').forEach(gallery => {
+    document.querySelectorAll('[data-hamburger-menu]').forEach(element => {
+        element.parentElement.onclick = () => element.parentElement.classList.toggle('active');
+    });
+
+    document.querySelectorAll('[data-gallery]').forEach(gallery => {
 
         function pick(items) {
             return items[Math.floor(Math.random() * items.length)];
@@ -39,7 +43,7 @@ window.addEventListener("load", function() {
                     child.style.width = `${gallery.clientWidth - left}px`;
                     child.style.height = `${dy * 2 + gutter}px`;
                     child.style.transform = `translate(${left}px, ${top}px)`;
-                    
+
                     top += dy * 2 + 2 * gutter;
                 } else {
 
@@ -55,34 +59,14 @@ window.addEventListener("load", function() {
         performLayout();
 
         let wait = false;
-        window.addEventListener("resize", function() {
+        window.addEventListener("resize", function () {
             if (wait) window.clearTimeout(wait);
             wait = window.setTimeout(performLayout, 50);
         }, false);
 
     })
 
-    document.querySelectorAll('.site-heading nav').forEach(element=>{
-        const button = document.createElement('button');
-        button.classList.add("hamburger", "hamburger--squeeze", "dropdown");
-        button.type = "button";
-        const hamburgerbox = document.createElement('span');
-        hamburgerbox.classList.add("hamburger-box");
-        const hamburgerInner = document.createElement('span');
-        hamburgerInner.classList.add("hamburger-inner");
-        hamburgerbox.append(hamburgerInner);
-        button.append(hamburgerbox);
-        element.parentNode.insertBefore(button, element);
-        button.onclick = ()=>{
-            element.classList.toggle("active");
-            button.classList.toggle("active");
-            return false;
-        }
-    }
-    )
+    new WebSocket('wss://csokavar.hu/finger', "finger-protocol").onmessage = (e) => {
+        console.log(e.data);
+    };
 });
-
-var connection = new WebSocket('wss://csokavar.hu/finger',"finger-protocol");
-connection.onmessage = function(e) {
-    console.log(e.data);
-};

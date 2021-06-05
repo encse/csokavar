@@ -7,7 +7,9 @@ import { RenderContext } from './renderContext';
 import { renderImageAsset } from './image';
 import styled from 'styled-components';
 
-const Gallery = styled.div`
+const Gallery = styled.div.attrs(() => ({
+    'data-gallery': true,
+}))`
     position: relative;
     height: 800px;
 
@@ -22,7 +24,7 @@ const Gallery = styled.div`
 export function renderGallery(token: Token, ctx: RenderContext) {
     const src: string[] = JSON.parse(token.attrGet("src"));
 
-    return  React.createElement(Gallery, {className: "gallery"},
+    return  React.createElement(Gallery, {},
         ...src.map(item => {
             const asset = ctx.assetManager.lookup(resolve(ctx.fpat, item), "imageAsset");
             return renderImageAsset(asset);

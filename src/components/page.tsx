@@ -138,11 +138,14 @@ const SocialLinks: React.FC = (props) => {
     </StyledSocialLinks>;
 } 
 
-const StyledMenu = styled.nav`
+const StyledMenu = styled.span`
+    width: 100%;
     @media only screen and (max-width:600px) {
-        width: 100%;
-        position: absolute;
-        flex-direction: column;
+        nav {
+            width: 100%;
+            position: absolute;
+            flex-direction: column;
+        }
 
         ul {
             margin: 0;
@@ -156,6 +159,10 @@ const StyledMenu = styled.nav`
             background: #1e1e1e;
             max-height: 0px;
             transition: max-height .2s ease-in-out;
+        }
+
+        &.active ul {
+            max-height: 200px;
         }
 
         a {
@@ -174,9 +181,11 @@ const StyledMenu = styled.nav`
     }
 
     @media only screen and (min-width:601px) {
-        display: flex;
-        flex-direction: row-reverse;
-        flex-grow: 1;
+        nav {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-grow: 1;
+        }
 
         ul {
             margin: 0;
@@ -191,8 +200,86 @@ const StyledMenu = styled.nav`
     }
 `;
 
+const HamburgerButton = styled.button`
+    display: none;
+
+    @media only screen and (max-width:600px) {
+        display: initial;
+        padding: 16px;
+        margin: 12px 0;
+        user-select: none;
+        cursor: pointer;
+        font: inherit;
+        background-color: transparent;
+        border: 0;
+        float: right;
+        outline: 0;
+        position: relative;
+    }
+`;
+
+const HamburgerIcon = styled.span`
+
+    display: block;
+    top: 50%;
+    transition-duration: .075s;
+    transition-timing-function: cubic-bezier(.55, .055, .675, .19);
+    left: 0;
+
+    ${StyledMenu}.active & {
+        transform: rotate(45deg);
+        transition-delay: .12s;
+        transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+
+        &:before {
+            top: 0;
+            opacity: 0;
+            transition: top .075s ease, opacity .075s .12s ease;
+        }
+
+        &:after {
+            bottom: 0;
+            transform: rotate(-90deg);
+            transition: bottom .075s ease, transform .075s .12s cubic-bezier(.215, .61, .355, 1);
+        }
+    }
+
+    &,
+    &:before,
+    &:after {
+        width: 24px;
+        height: 2px;
+        background-color: #c8c8c8;
+        border-radius: 2px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: .15s;
+        transition-timing-function: ease;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        transition: top .075s .12s ease, opacity .075s ease;
+        top: -6px;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        transition: bottom .075s .12s ease, transform .075s cubic-bezier(.55, .055, .675, .19);
+        bottom: -6px;
+    }
+`;
+
+
 const Menu: React.FC = (props) => {
-    return <StyledMenu><ul>{props.children}</ul></StyledMenu>;
+    return <StyledMenu>
+            <HamburgerButton data-hamburger-menu>
+                <HamburgerIcon />
+            </HamburgerButton>
+            <nav><ul>{props.children}</ul></nav>
+        </StyledMenu>;
 }
 
 const MenuItem: React.FC<{href: string, title: string}> = (props) => {
