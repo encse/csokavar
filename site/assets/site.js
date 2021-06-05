@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
     });
 
     document.querySelectorAll('[data-hamburger-menu]').forEach(element => {
-        element.parentElement.onclick = () => element.parentElement.classList.toggle('active');
+        element.onclick = () => element.parentElement.classList.toggle('active');
     });
 
     document.querySelectorAll('[data-gallery]').forEach(gallery => {
