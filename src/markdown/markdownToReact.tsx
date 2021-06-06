@@ -53,9 +53,13 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
         } else if (token.type === "text") {
             children().push(<>{token.content}</>);
         } else if (token.type === "html_block") {
-            children().push(<div dangerouslySetInnerHTML={{ __html: token.content }} />);
+            if (!ctx.excerpt) {
+                children().push(<div dangerouslySetInnerHTML={{ __html: token.content }} />);
+            }
         } else if (token.type === "gallery") {
-            children().push(renderGallery(token, ctx));
+            if (!ctx.excerpt) {
+                children().push(renderGallery(token, ctx));
+            }
         } else if (token.type === iframePlugin.tokenId) {
             children().push(iframePlugin.render(token, ctx));
         } else if (token.type === "image") {
@@ -118,7 +122,7 @@ export function markdownToReact(md: string, assetManager: AssetManager, fpat: st
         .use(markdown_it_gallery_plugin)
         ;
 
-    return <div>{render(markdownIt.parse(md, {}), {assetManager, fpat}, markdownIt)}</div>;
+    return <div>{render(markdownIt.parse(md, {}), {assetManager, fpat, excerpt: false}, markdownIt)}</div>;
 }
 
 export function markdownToReactExcerpt(md: string, uri: string, assetManager: AssetManager, fpat: string): React.ReactElement<any> {
@@ -134,7 +138,7 @@ export function markdownToReactExcerpt(md: string, uri: string, assetManager: As
         if (block.content != '') {
             return (
                 <p>
-                    {render([block], {assetManager, fpat}, markdownIt)}
+                    {render([block], {assetManager, fpat, excerpt: true}, markdownIt)}
                     <a href={uri} rel="bookmark">…</a>
                 </p>
             );

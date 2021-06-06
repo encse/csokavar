@@ -2,7 +2,7 @@ import fs from 'fs';
 import path, { ParsedPath } from 'path';
 import { Post, Page, PageTemplateProps, Template } from './post';
 import { PostList } from "./postList";
-import { chunks } from './util';
+import { chunks, slugify } from './util';
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
 import { AssetManager, ImageAsset } from './assets';
@@ -10,6 +10,7 @@ import { Tag } from './tag';
 import process from 'process';
 import { ServerStyleSheet } from 'styled-components';
 import { PageComponent } from './components/page';
+import { buildSearch, SearchPage } from './search';
 
 type Settings = {
     'cdn': string,
@@ -167,6 +168,9 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
             writeFile
         )
     }
+
+    const search = new SearchPage(template, assetManager, posts);
+    writeFile(path.join(search.uri, 'index.html'), await search.render());
 }
 
 

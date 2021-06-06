@@ -302,7 +302,7 @@ export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
                 props.homePageHeading ?
                     <HomePageHeading>
                         <HomePageTitle>{props.title}</HomePageTitle>
-                        <HomePageSubTitle>{props.subtitle}</HomePageSubTitle>
+                        {props.subtitle && <HomePageSubTitle>{props.subtitle}</HomePageSubTitle>}
                     </HomePageHeading>
                 :
                     <PageHeading>

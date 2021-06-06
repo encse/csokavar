@@ -2234,7 +2234,6 @@
 			"width": 1600,
 			"srcPath": "site/post/2010-11-20-napelem-keszitese-hazilag/images/IMG_0746.jpg"
 		},
-		
 		{
 			"cdnPath": "/assets/e0b9d0d0-4c11-5128-a5bc-034fa810eed3.jpg",
 			"dominantColor": "rgb(111, 111, 111)",
@@ -2906,6 +2905,13 @@
 			"height": 943,
 			"width": 1024,
 			"srcPath": "site/post/2010-11-20-napelem-keszitese-hazilag/images/IK1-1.jpg"
+		},
+		{
+			"cdnPath": "/assets/b85952c0-5ffe-5be5-8770-787e8673271c.gif",
+			"dominantColor": "rgb(71, 50, 77)",
+			"height": 640,
+			"width": 960,
+			"srcPath": "site/assets/street.gif"
 		}
 	]
 }

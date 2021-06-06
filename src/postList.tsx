@@ -35,6 +35,8 @@ const NextPage = styled(PageLink)`
     text-align: right;
 `;
 
+
+
 export class PostList {
 
     readonly uri: string;
@@ -56,20 +58,22 @@ export class PostList {
         return page == 1 ? this.baseUri : path.join(this.baseUri, `page/${page}`);
     }
 
+    static renderItem(post: Post) {
+        return <article>
+            <header>
+                <Title><a href={post.uri} rel="bookmark">{post.title}</a></Title>
+                <Subtitle>{formatDate(post.date)}</Subtitle>
+            </header>
+            <section>
+                {post.excerpt}
+            </section>
+        </article>;
+    }
+
     async render(): Promise<string> {
         let content: React.ReactElement<any>[] = [];
         for (let post of this.posts) {
-            content.push(
-                <article>
-                    <header>
-                        <Title><a href={post.uri} rel="bookmark">{post.title}</a></Title>
-                        <Subtitle>{formatDate(post.date)}</Subtitle>
-                    </header>
-                    <section>
-                        {post.excerpt}
-                    </section>
-                </article>
-            );
+            content.push(PostList.renderItem(post));
         }
 
         const hasPrev = this.page > 1;

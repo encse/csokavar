@@ -7,6 +7,7 @@ import fs from 'fs';
 type AssetKind = "imageAsset" | "jsAsset" | "fileAsset";
 type AssetOf<T extends AssetKind> = Asset & { kind: T };
 
+
 export class ImageAsset {
     readonly kind: "imageAsset" = "imageAsset";
     constructor(
@@ -16,7 +17,6 @@ export class ImageAsset {
         readonly height: number,
         readonly dominantColor: string
     ) {
-
     }
 
     static async create(fpat: string, url: URL): Promise<ImageAsset> {
@@ -49,7 +49,6 @@ export class JsAsset {
         readonly srcPath: string,
         readonly url: URL
     ) {
-
     }
 }
 
@@ -60,7 +59,6 @@ export class FileAsset {
         readonly srcPath: string,
         readonly url: URL
     ) {
-
     }
 }
 

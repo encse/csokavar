@@ -24,6 +24,13 @@ export const GitHubLink = styled.a`
 export const TagsIcon = styled.span`
     :before {
         font-family: 'font_awesome';
+        content: '\\e801';
+    }
+`;
+
+export const SearchIcon = styled.span`
+    :before {
+        font-family: 'font_awesome';
         content: '\\e800';
     }
 `;

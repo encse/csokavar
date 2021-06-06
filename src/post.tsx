@@ -23,7 +23,7 @@ export class Page {
     readonly subtitle: string;
     readonly coverImage: ImageAsset | null;
     readonly uri: string;
-    readonly #mdContent: string;
+    readonly mdContent: string;
     readonly #template: Template<PageTemplateProps>;
 
     constructor(
@@ -43,11 +43,11 @@ export class Page {
         this.coverImage = metadata.coverImage ? this.assetManager.lookup(resolve(fpat, metadata.coverImage), "imageAsset") : null;
 
         this.#template = template;
-        this.#mdContent = content;
+        this.mdContent = content;
     }
 
     async render(): Promise<string> {
-        const html = markdownToReact(this.#mdContent, this.assetManager, this.fpat);
+        const html = markdownToReact(this.mdContent, this.assetManager, this.fpat);
         return this.#template(
             {
                 homePageHeading: true,
@@ -66,7 +66,7 @@ export class Post {
     readonly coverImage: ImageAsset;
     readonly date: Date;
     readonly tags: Tag[];
-    readonly #mdContent: string;
+    readonly mdContent: string;
     readonly #template: Template<PageTemplateProps>;
     readonly uri: string;
     readonly excerpt: React.ReactElement<any>;
@@ -84,7 +84,7 @@ export class Post {
         this.tags = (metadata.tags || []).map(name => new Tag(name));
 
         this.#template = template;
-        this.#mdContent = content;
+        this.mdContent = content;
 
         const slug = metadata.slug || slugify(this.title);
         this.uri = `/blog/${zeroPad(this.date.getFullYear(), 4)}/${zeroPad(this.date.getMonth() + 1, 2)}/${slug}/`;
@@ -107,7 +107,7 @@ export class Post {
             </p>
         }
 
-        const html = markdownToReact(this.#mdContent, this.assetManager, this.fpat);
+        const html = markdownToReact(this.mdContent, this.assetManager, this.fpat);
         return this.#template(
             {
                 homePageHeading: false,

@@ -15,9 +15,14 @@ export function snakeToCamel(snake: string) {
     );
 }
 
+export function removeAccents(st: string){
+   return st
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+}
+
 export function slugify(st: string) {
-    return st.normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
+    return removeAccents(st)
         .replace(/[^a-zA-Z0-9_\-]/g, "-")
         .replace(/--+/g, "-")
         .toLowerCase();
