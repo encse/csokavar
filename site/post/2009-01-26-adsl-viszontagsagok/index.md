@@ -77,7 +77,7 @@ Mellékelnék egy rövidke levelet, amit ma délután erős felindultságomból 
 > 
 > **N\*\*\*\*\* D\*\*\*\*\*\*** +36 \*\* \*\*\*-\*\*\*\* encse@csokavar.hu Budapest, 2009. január 26.
 
-Még egy hangyafasznyi időt tudok várni ezekre a szerencsétlen taplókra, aztán kénytelen leszek fogyasztóvédőkhöz meg én nem tudom kikhez (de tudom) fordulni.
+Még egy hangyaf�sznyi időt tudok várni ezekre a szerencsétlen taplókra, aztán kénytelen leszek fogyasztóvédőkhöz meg én nem tudom kikhez (de tudom) fordulni.
 
 ### 2009\. január 28.
 

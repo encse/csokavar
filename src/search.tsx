@@ -6,10 +6,11 @@ import ReactDOMServer from 'react-dom/server';
 import { PostList } from './postList';
 import styled from 'styled-components';
 import { SearchIcon } from "./components/fontAwesame";
+import { ServerStyleSheet } from 'styled-components';
 
 const Search = styled.div`
     width: 100%;
-    background: rgba(255,255,255,0.6);
+    background: white;
     border: 1px solid black;
     border-radius: 25px;
     
@@ -25,6 +26,7 @@ const SearchInput = styled.input`
     border: none;
     background: transparent;
     font-family: 'Noto Sans';
+    font-size: 16px;
 `;
 
 export class SearchPage {
@@ -44,16 +46,16 @@ export class SearchPage {
         this.title = "Keresés"
         this.subtitle = null;
         this.uri = '/search/';
-        this.coverImage = assetManager.lookup('site/assets/street.gif', "imageAsset");
+        this.coverImage = assetManager.lookup('site/assets/backgrounds/street.gif', "imageAsset");
         this.#template = template;
     }
 
     async render(): Promise<string> {
 
+        const styleSheet = new ServerStyleSheet();
         const content = <div data-search>
-            <script data-search-index type="application/json" dangerouslySetInnerHTML={{ __html: buildSearch(this.posts) }}>
+            <script data-search-index type="application/json" dangerouslySetInnerHTML={{ __html: buildSearch(this.posts, styleSheet) }}>
             </script>
-            <Search><SearchInput data-search-input/><SearchIcon /></Search>
             <div data-search-result></div>
         </div>
 
@@ -61,17 +63,18 @@ export class SearchPage {
             {
                 homePageHeading: true,
                 title: this.title,
-                subtitle: null,
+                subtitle: <Search><SearchInput data-search-input/><SearchIcon /></Search>,
                 coverImage: this.coverImage,
                 postContent: content,
-                footer: null
+                footer: null,
+                styleSheet: styleSheet
             }
         );
     }
 }
 
 
-export function buildSearch(posts: Post[]): string {
+export function buildSearch(posts: Post[], styleSheet: ServerStyleSheet): string {
     let wordToIds = new Map<string, Set<number>>();
 
     let id = 0;
@@ -92,7 +95,7 @@ export function buildSearch(posts: Post[]): string {
 
     let keywords = Object.fromEntries([...wordToIds.entries()].map(entry => [entry[0], [...entry[1]]]));
     let search = {
-        meta: posts.map(post => ReactDOMServer.renderToStaticMarkup(PostList.renderItem(post))),
+        meta: posts.map(post => ReactDOMServer.renderToStaticMarkup(styleSheet.collectStyles(PostList.renderItem(post)))),
         keywords
     }
 

@@ -9,7 +9,7 @@ Szinte még egy hónap sem telt el az emlékezetes [firmware upgrade](https://cs
 
 Mindössze 7000 forintba került, és természetesen most sincs rajta az új firmware, annak ellenére, hogy a bácsi a boltban azt hazudta, hogy a legfrissebb van rajta.
 
-Hátafaszomebbemostmáraztántényleg. Ebben a kurva országban SEMMI SEM MŰKÖDIK?
+Hátaf�szomebbemostmáraztántényleg. Ebben a kurva országban SEMMI SEM MŰKÖDIK?
 
 Először kitalálja a faszi, hogy ez bizony alaplap (vagymi) csere lesz, és úgy mellesleg elvesznek az adatok is a vinyóról. Nem volt rajta semmi, csak pár tucat Dr. House epizód: nem kár érte.
 

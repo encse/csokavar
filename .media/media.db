@@ -2907,11 +2907,46 @@
 			"srcPath": "site/post/2010-11-20-napelem-keszitese-hazilag/images/IK1-1.jpg"
 		},
 		{
-			"cdnPath": "/assets/b85952c0-5ffe-5be5-8770-787e8673271c.gif",
-			"dominantColor": "rgb(71, 50, 77)",
-			"height": 640,
+			"cdnPath": "/assets/845ecb0c-ce93-55ce-9c18-be853a6be8ec.gif",
+			"dominantColor": "rgb(62, 61, 106)",
+			"height": 346,
+			"width": 775,
+			"srcPath": "site/assets/backgrounds/1468446451_giphy.gif"
+		},
+		{
+			"cdnPath": "/assets/af857a25-7e42-58bc-a4e8-1d4bbeaacea7.gif",
+			"dominantColor": "rgb(40, 46, 67)",
+			"height": 507,
+			"width": 903,
+			"srcPath": "site/assets/backgrounds/1505369458_8mUuzCn.gif"
+		},
+		{
+			"cdnPath": "/assets/4eef5acf-e587-58c6-adf2-344d578e842a.gif",
+			"dominantColor": "rgb(52, 44, 85)",
+			"height": 281,
+			"width": 500,
+			"srcPath": "site/assets/backgrounds/1522007488_tumblr_os62xpG2hP1tvppquo1_500.gif"
+		},
+		{
+			"cdnPath": "/assets/b9d95196-a672-55e0-ad6f-616bee4c22aa.gif",
+			"dominantColor": "rgb(80, 57, 88)",
+			"height": 480,
 			"width": 960,
-			"srcPath": "site/assets/street.gif"
+			"srcPath": "site/assets/backgrounds/street.gif"
+		},
+		{
+			"cdnPath": "/assets/93ea5547-c22b-5eb7-a161-0e5bf03db677.gif",
+			"dominantColor": "rgb(46, 33, 30)",
+			"height": 360,
+			"width": 640,
+			"srcPath": "site/assets/backgrounds/tenor.gif"
+		},
+		{
+			"cdnPath": "/assets/02e23458-fa6f-5c78-83b5-0be6a8720859.gif",
+			"dominantColor": "x",
+			"height": 281,
+			"width": 500,
+			"srcPath": "site/assets/backgrounds/tumblr_inline_p0w0doqrrH1qcsurn_500.gif"
 		}
 	]
 }

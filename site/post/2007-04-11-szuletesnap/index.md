@@ -7,7 +7,11 @@ tags:
   - "személyes"
 ---
 
-Boldog születésnapot, Blog! ![birthday](images/birthday.jpg) Encsé már egy éve blogol, úgyhogy egy aprócska, level 1-es, korszellemet idézzünk meg:
+Boldog születésnapot, Blog! 
+
+![birthday](images/birthday.jpg) 
+
+Encsé már egy éve blogol, úgyhogy egy aprócska, level 1-es, korszellemet idézzünk meg:
 
 - A leggyakoribb keresőkifejezés az [ördöglakat](https://csokavar.hu/blog/2006/07/iroda-lom/) (200+ találat) volt. De sokakat érdekel  a [lufihajtogatás](https://csokavar.hu/blog/tag/lufi/) is.
 - A leghasznosabbnak a [dosos nyomtatásról szóló entry](https://csokavar.hu/blog/2006/08/zarvanyok/)t, meg az [Active-X szívást](https://csokavar.hu/blog/2006/04/activex-szivas/) kiáltottam ki.

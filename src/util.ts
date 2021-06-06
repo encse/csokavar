@@ -15,6 +15,10 @@ export function snakeToCamel(snake: string) {
     );
 }
 
+export function pick<T>(items: T[]): T {
+    return items[Math.floor(Math.random() * items.length)];
+}
+
 export function removeAccents(st: string){
    return st
         .normalize("NFD")

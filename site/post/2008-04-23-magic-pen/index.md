@@ -10,4 +10,4 @@ Végigvittem a kmk blogon két hete megjelent [Magic Pen](http://armorgames.com/
 
 [youtube src="oFFI1D4zvec"]
 
-_Csomót lestem youtube-on, de pl. a 11 és 25-ös pályákat egyedül csináltam meg ilyen faszára._
+_Csomót lestem youtube-on, de pl. a 11 és 25-ös pályákat egyedül csináltam meg ilyen f�szára._

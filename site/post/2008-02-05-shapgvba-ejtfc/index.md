@@ -50,7 +50,7 @@ Ugyanaz a Hong Kongi IP, közvetlen a másik mellett.
 
 Szóval valaki lenyúlta az FTP jelszavamat, és ahogy sejtem, arra használta fel, hogy ugyanezt a jelszólopó trójait terjessze az oldalaimon.
 
-A neten találtam egy fórumot, ahol egy hasonló támadást elemeznek ([http://pouet.net/topic.php?which=5006&page=1](http://pouet.net/topic.php?which=5006&page=1)). Itt az 'én' scriptem egy másik mutációját elemzik. Szerintük az egész mögött a [Russian Business Network](http://en.wikipedia.org/wiki/Russian_Business_Network) áll, ami a wikipedia leírása alapján nagyjából a maffia. hátafaszom.
+A neten találtam egy fórumot, ahol egy hasonló támadást elemeznek ([http://pouet.net/topic.php?which=5006&page=1](http://pouet.net/topic.php?which=5006&page=1)). Itt az 'én' scriptem egy másik mutációját elemzik. Szerintük az egész mögött a [Russian Business Network](http://en.wikipedia.org/wiki/Russian_Business_Network) áll, ami a wikipedia leírása alapján nagyjából a maffia. hátaf�szom.
 
 Tegnap jelszavakat váltogattam (bankos, céges, stb.  el lehet képzelni...) Ma meg egész nap a gépet pucolgattam, de ez tisztának tűnik. Azt gondolom, hogy az otthoni, régi gépemen lesz a trójai, de ez a hétvége előtt nem fog kiderülni.
 

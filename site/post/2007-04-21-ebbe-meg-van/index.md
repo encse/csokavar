@@ -9,7 +9,7 @@ tags:
 
 _Ez fájni fog, de jó lesz..._
 
-Tegnap munka után elkezdtünk faszkodni a dimenzió utazásról, és hogy szegény Cactus csak 3D-ben él, és milyen rossz is így neki. Persze a 23 dimenziós lényeknek se könnyű, hiszen olyan óvatosan kell mozogni, nehogy véletlenül valami furcsaság történjen.
+Tegnap munka után elkezdtünk f�szkodni a dimenzió utazásról, és hogy szegény Cactus csak 3D-ben él, és milyen rossz is így neki. Persze a 23 dimenziós lényeknek se könnyű, hiszen olyan óvatosan kell mozogni, nehogy véletlenül valami furcsaság történjen.
 
 Emlékezetes eset volt, amikor Cactus feltett egy kérdést, és abban a pillanatban beugrott neki a válasz, amit előzetes ismeretei alapján nem tudhatott volna. Mondanom se kell, hogy valaki véletlenül a múltban válaszolt neki. Egy másik alkalommal a kajáldába mentünk, és az az érzése támadt, mintha az előbb pár lépéssel előtte jártam volna, pedig valójában mellette sétáltam. Természetesen időutazás volt ez is.
 

@@ -2,7 +2,7 @@ import fs from 'fs';
 import path, { ParsedPath } from 'path';
 import { Post, Page, PageTemplateProps, Template } from './post';
 import { PostList } from "./postList";
-import { chunks, slugify } from './util';
+import { chunks, pick, slugify } from './util';
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
 import { AssetManager, ImageAsset } from './assets';
@@ -32,19 +32,15 @@ const settings = config[process.argv[2]];
 console.log(settings);
 
 
-function renderReactChild(child: React.ReactChild | null): {html: string, style: string} {
+function renderReactChild(child: React.ReactChild | null, styleSheet: ServerStyleSheet): string {
     if (child == null) {
-        return {html: '', style: ''}
+        return '';
     } else if (typeof (child) === 'string') {
-        return {html: child, style: ''};
+        return child;
     } else if (typeof (child) === 'number') {
-        return {html: '' + child, style: ''}
+        return '' + child;
     } else {
-        const sheet = new ServerStyleSheet();
-        const html = ReactDOMServer.renderToStaticMarkup(sheet.collectStyles(child));
-        const style = sheet.getStyleTags() 
-        sheet.seal();
-        return {html, style};
+        return ReactDOMServer.renderToStaticMarkup(styleSheet.collectStyles(child));
     }
 }
 
@@ -79,15 +75,18 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
 
     const assetManager = new AssetManager(settings.dev, settings.cdn, ".media");
 
+    function randomCoverImage() {
+        return pick(assetManager.lookupAll('site/assets/backgrounds/', 'imageAsset'));
+    }
+
     const template = (props: PageTemplateProps) => {
-        const featuredImage:React.CSSProperties = props.coverImage ? {
-                backgroundImage: `url(${props.coverImage.url})`,
-                backgroundColor: props.coverImage.dominantColor
-            } : {
-                backgroundImage: 'linear-gradient(to right, #0f2027, #203a43, #2c5364)',
+        const coverImage = props.coverImage ?? randomCoverImage();
+        const featuredImage:React.CSSProperties = {
+                backgroundImage: `url(${coverImage.url})`,
+                backgroundColor: coverImage.dominantColor
             };
 
-
+        const styleSheet = props.styleSheet ?? new ServerStyleSheet();
         const page = renderReactChild(
             <PageComponent 
                 featuredImage={featuredImage} 
@@ -96,12 +95,12 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
                 subtitle={props.subtitle} 
                 title={props.title}
                 homePageHeading={props.homePageHeading}
-            />);
+            />, styleSheet);
 
         return templateHtml
             .replace('{{ site.js }}', assetManager.lookup('site/assets/site.js', "jsAsset").url.toString())
-            .replace('{{ style }}', page.style)
-            .replace('{{ page }}', page.html)
+            .replace('{{ style }}', styleSheet.getStyleTags())
+            .replace('{{ page }}', page)
             .replace('{{ title }}', props.title);
     };
 

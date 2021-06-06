@@ -6,6 +6,7 @@ import { Tag } from './tag';
 import { markdownToReact, markdownToReactExcerpt } from './markdown/markdownToReact';
 import {resolve} from 'url';
 import { TagsIcon } from './components/fontAwesame';
+import { ServerStyleSheet } from 'styled-components';
 
 export type PageTemplateProps = {
     homePageHeading: boolean,
@@ -13,7 +14,8 @@ export type PageTemplateProps = {
     subtitle: React.ReactChild,
     coverImage: ImageAsset,
     postContent: React.ReactChild
-    footer: React.ReactChild
+    footer: React.ReactChild,
+    styleSheet?: ServerStyleSheet | null,
 }
 
 export type Template<T> = (t: T) => string;
@@ -55,7 +57,7 @@ export class Page {
                 subtitle: this.subtitle,
                 coverImage: this.coverImage,
                 postContent: html,
-                footer: null
+                footer: null,
             }
         );
     }

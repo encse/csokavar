@@ -13,7 +13,7 @@ A gázost a világhálón találtam: [Gebe mester](http://www.gebeviz.hu/). Tudo
 
 Aztán elmentem a Praktikerbe venni két lámpát. Az előző lakó, ugyanis olyan helyekre is spotlámpát tett, ahova egyáltalán nem az való. (Például a fürdőben a tükör fölé.) Szépen ki is cseréltem.
 
-Még vettem ezt-azt a konyhába. Most várom a rácsos embert, hogy berácsozza az ablakomat. Aztán jöhetnek a növények. Sokat akarok. Holnap pedig IKEA-ba megyek (ágytakaró kell mindenképp, és kismiliárd lófasz, amit meglátok.)
+Még vettem ezt-azt a konyhába. Most várom a rácsos embert, hogy berácsozza az ablakomat. Aztán jöhetnek a növények. Sokat akarok. Holnap pedig IKEA-ba megyek (ágytakaró kell mindenképp, és kismiliárd lóf�sz, amit meglátok.)
 
 Megint lemerészkedtem a pincébe, és ezúttal sikerrel is jártam. Egy sötét lyuk. Olyan mint valami betonbunker, ráadásul kiégett a lámpa. A múltkor, mikor leosontam a lécsőn, becsapódott mögöttem a vasajtó. Visszarohantam, de aztán megint lemerészkedtem, és a korom sötétben eljutottam a következő kapcsolóig. Kettő van egymás mellett, és az egyik át van szigszalagozva „ne kapcsold be” felirattal. Nagy kedvem volt odanyúlni a másikhoz, mondhatom... Az a lámpa égett, de csak valami vasajtó mögött, és csak egy kis ablakon szűrődött ki a fény. Kicsit beljebb merészkedtem, itt egy végtelen hosszú koromfekete folyosó volt, és természetesen az ottani lámpa is kiégett. Ezen a ponton feladtam, és visszamenekültem, miközben végig attól rettegtem, hogy rámugrik valami zombi.
 

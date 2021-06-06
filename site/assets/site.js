@@ -69,10 +69,10 @@ window.addEventListener("load", function () {
     document.querySelectorAll('[data-search]').forEach(element => {
 
 
-        const searchIndex = JSON.parse(element.querySelector('[data-search-index]').textContent);
+        const searchIndex = JSON.parse(document.querySelector('[data-search-index]').textContent);
 
-        let input = element.querySelector('[data-search-input]')
-        let result = element.querySelector('[data-search-result]')
+        let input = document.querySelector('[data-search-input]')
+        let result = document.querySelector('[data-search-result]')
 
         let wait = false;
 
@@ -87,7 +87,7 @@ window.addEventListener("load", function () {
             if (input.value == "") {
                 return;
             }
-            
+
             const seen = new Set();
             const searchStrings = input.value
                 .normalize("NFD")

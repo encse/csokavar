@@ -9,7 +9,7 @@ András saját fejlesztésű, IHTC* motorra épülő blogján már kifejtette a 
 
 A lényeg: Maya kurvára tud biliárdozni. Érdekes látni, ahogy az elején még csak "normálisan" játszik, aztán egy fél óra alatt kezd nagyon belelendülni. Egész biztos valami sötét dolog van a múltjában, amiért abbahagyta a profi biliárdot, és inkább beállt abba az egyházi énekkarba. Mondjuk az az emlékezetes 81-es eset Sheffieldben, amikor Jimmy White részegen kis híján gerincsérülést szenvedett, amikor elütötte egy tejeskocsi. Tudni illik a VB elbukása után egész éjjel együtt ittak Mayával, és Maya volt az, aki hajnalban Jimmy fejét a WC fölött tartotta, hogy amaz ne hányja össze magát teljesen. Aztán később összebalhéztak valami apróságon, és Jimmy kitámolygott az éjszakába...
 
-Jó ez a biliárd, bár mi Cactussal inkább csak fékeztük a csapattársainkat (ő játszott Mayával, én Zapét gyengítettem). Viszont a faszkodás, az nagyon ment végig: Left English-sel szépen ráhúzod a falra, leteszed a pirosat, de csak finoman, hogy még épp jó legyen a sárgára. Nah persze, egy csövet nem tudok meglökni harminc centiről.
+Jó ez a biliárd, bár mi Cactussal inkább csak fékeztük a csapattársainkat (ő játszott Mayával, én Zapét gyengítettem). Viszont a f�szkodás, az nagyon ment végig: Left English-sel szépen ráhúzod a falra, leteszed a pirosat, de csak finoman, hogy még épp jó legyen a sárgára. Nah persze, egy csövet nem tudok meglökni harminc centiről.
 
 Persze végig azt játszottuk, hogy az egész csak szívatás, hogy eltereljük a másik csapat gyanúját, és a fontosabb lökéseket éppen valahogy véletlenül mindig bemákoljuk. Btw. ez egy film sztorija. Dávid, nem tudod, mi lehet a címe?
 

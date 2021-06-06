@@ -13,4 +13,4 @@ Természetesen levág egy karikát a maradék fatörzsből, és odapróbálja a 
 
 ### Foglalkozása? Utazó anyuka.
 
-Háromgyerekes anyuka leszállás előtt megszólít, hogy adjam neki a jegyemet, mert ő ugyan 90%-os kedvezménnyel utazik, de a teljes árat vissza tudná igényelni az egészségpénztártól... Hátafaszom. Persze az ilyenek a leghangosabbak akkor is, amikor a „mocskos kormány mindent kilop az emberek zsebéből” című slágert kell énekelni.
+Háromgyerekes anyuka leszállás előtt megszólít, hogy adjam neki a jegyemet, mert ő ugyan 90%-os kedvezménnyel utazik, de a teljes árat vissza tudná igényelni az egészségpénztártól... Hátaf�szom. Persze az ilyenek a leghangosabbak akkor is, amikor a „mocskos kormány mindent kilop az emberek zsebéből” című slágert kell énekelni.

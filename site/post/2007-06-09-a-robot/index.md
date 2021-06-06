@@ -9,7 +9,7 @@ tags:
 
 Pénteken egy ügyes húzással belegyömöszöltem a laptop táskába a [LEGO Mindstorms](http://en.wikipedia.org/wiki/Lego_Mindstorms) készletünket, és kicsempésztem az irodából. Reggel fél háromig játszottam vele. Utána kicsit lepihentem, de hajnali hétnél tovább nem sikerült bírni, úgyhogy folytattam, ahol abbahagytam.
 
-Először csináltam egy fasza robotot, ami a múltkori közös próbálkozásunkkal ellentétben TUD kanyarodni.
+Először csináltam egy f�sza robotot, ami a múltkori közös próbálkozásunkkal ellentétben TUD kanyarodni.
 
 Ezután jöhetett a programozás. LEGO robotot NQC-ben (is) szokás programozni, amiről azt kell tudni, hogy nagyon fapados nyelv. A név kifejtése Not Quite C, de szerintem a C-re csak a szintaxisa hasonlít.
 
@@ -23,11 +23,13 @@ Mindenesetre megcsináltam pár algó+robot változatot a vonalkövetés problé
 
 A legegyszerűbb megoldás talán a következő:
 
-**while true**
-**if** <az érzékelő a vonalon van> **then**
-**<**kanyarodjunk jobbra>
-**else**
-**<**kanyarodjunk balra>
+```
+while true
+    if <az érzékelő a vonalon van> then
+        <kanyarodjunk jobbra>
+    else
+        <kanyarodjunk balra>
+```
 
 Ehhez csak a fenti érzékelést, és a két cselekvést végrehajtani képes robotra van szükségünk. Hallgatólagosan feltettük azt is, hogy a robotunk nem helyben kanyarodik, hanem, mondjuk egy autóhoz hasonlóan, kanyarodás közben kicsit előre is halad.
 
@@ -35,7 +37,9 @@ Ha minden jól ment, akkor robotunk szépen cikkcakkban végig fog menni a vonal
 
 Jó, jó, de honnan tudjuk, hogy az 'érzékelő a vonalon van'? Először a fényérzékelővel bemérjük a vonal fényességét (mondjuk 29%), meg a háttér fényességét (55%), az kettő átlaga 42%. Ha a fényérzékelő ennél kevesebbet mutat, úgy ítéljük meg, hogy a vonalon vagyunk:
 
-<az érzékelő a vonalon van> = ÉRZÉKELŐ\_PILLANATNYI\_ÁLLAPOTA < ÁTLAG
+```
+<az érzékelő a vonalon van> = ÉRZÉKELŐ_PILLANATNYI_ÁLLAPOTA < ÁTLAG
+```
 
 A manuális kalibrálásnál jópofább, ha a robot magától tanulja meg az értékeket. Ehhez csak az érzékelő eddigi minimum és maximum értékeit kell tárolni, amiből az ÁTLAG számolható.
 
@@ -47,7 +51,7 @@ _Itt aludtam el._
 
 Reggel elkezdtem kutatni a .NET-es kommunikáció után. A fő célom ezúttal egy Morse-kód leolvasó robot elkészítése volt, ami a végén feltölti PC-re az adatokat, és a gép ebből kiszámolja a szöveges megfelelőt. (Ezt még [Verseny24](http://verseny24.sch.bme.hu/)\-en kellett megoldanunk annó 2002-ben.)
 
-Találtam egy [microsoftos blogot](http://blogs.msdn.com/coding4fun/archive/2006/10/26/877488.aspx), ahol készítettek egy wrappert a LEGO Mindstorms SDK-s robot-PC kommunikáció köré. Ezzel közvetlenül lehet a robotot irányítani, azaz nem kell NQC-vel szívni. C#-ban megírja az ember, amit szeretne, a framework pedig infrán lekommunikálja az egészet a robottal. Talán mondanom se kell, mekkora felüdülést jelentenek az NQC után az olyan apróságok, mint pl., hogy a szenzorok változásáról egy .NET event formájában kapok hírt, vagy hogy a kib\*szott kerekítéshez meghívhatom a Math.Round() metódust...
+Találtam egy [microsoftos blogot](http://blogs.msdn.com/coding4fun/archive/2006/10/26/877488.aspx), ahol készítettek egy wrappert a LEGO Mindstorms SDK-s robot-PC kommunikáció köré. Ezzel közvetlenül lehet a robotot irányítani, azaz nem kell NQC-vel szívni. C#-ban megírja az ember, amit szeretne, a framework pedig infrán lekommunikálja az egészet a robottal. Talán mondanom se kell, mekkora felüdülést jelentenek az NQC után az olyan apróságok, mint pl., hogy a szenzorok változásáról egy .NET event formájában kapok hírt, vagy hogy a kib\*szott kerekítéshez meghívhatom a `Math.Round()` metódust...
 
 Sajnos semmi sincs ingyen, két kommunkációval kapcsolatos hátránya azért van a dolognak:
 

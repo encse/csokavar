@@ -25,6 +25,7 @@ export class ImageAsset {
                 if (error != null) {
                     reject(error);
                 } else {
+                            
                     gm(fpat)
                         .resize(10, 10)
                         .colors(1)
@@ -137,6 +138,16 @@ export class AssetManager {
         }
 
         throw new Error(`Cannot find asset '${fpat}'`);
+    }
+
+    lookupAll<T extends AssetKind>(fpat: string, assetKind: T): AssetOf<T>[] {
+        let res: AssetOf<T>[] = [];
+        for (const item of this.#assets) {
+            if (item.srcPath.startsWith(fpat) && item.kind == assetKind) {
+                res.push(item as AssetOf<T>);
+            }
+        }
+        return res;
     }
 
     lookupAsset<T extends AssetKind>(fpat: string): Asset {

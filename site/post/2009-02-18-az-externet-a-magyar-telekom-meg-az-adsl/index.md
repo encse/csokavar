@@ -11,7 +11,7 @@ tags:
 
 Mit gondolnak? Tán minden jól működik [azóta](https://csokavar.hu/blog/2009/01/adsl-viszontagsagok/) is?
 
-Hát persze, hogy nem. Matáv minap kiküldött egy számlát erre a hónapra a Felező díjcsomagra. Hívom az ügyfélszolgálatot: nekik az Externet nem küldött semmit. Mondom neki, nézze csak meg jobban. Aszongya: igen van itt egy igény február kilencedikén, de azt tárgytalanítottuk. Remek mondom, gratulálok. Hívom az Externetet is, hogy mégis mi a faszt szívnak mostmár. Aszongya a néni, hogy ők küldik a matávnak mindig a papírt, de hát mégis mindig visszajön. De nyugodtan fizessem csak be a havi telefonszámlát, mert biztos csak arról van szó, hogy van egy kis átfutási ideje a dolognak.
+Hát persze, hogy nem. Matáv minap kiküldött egy számlát erre a hónapra a Felező díjcsomagra. Hívom az ügyfélszolgálatot: nekik az Externet nem küldött semmit. Mondom neki, nézze csak meg jobban. Aszongya: igen van itt egy igény február kilencedikén, de azt tárgytalanítottuk. Remek mondom, gratulálok. Hívom az Externetet is, hogy mégis mi a f�szt szívnak mostmár. Aszongya a néni, hogy ők küldik a matávnak mindig a papírt, de hát mégis mindig visszajön. De nyugodtan fizessem csak be a havi telefonszámlát, mert biztos csak arról van szó, hogy van egy kis átfutási ideje a dolognak.
 
 Mondom neki: két hónap?
 

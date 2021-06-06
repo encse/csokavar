@@ -17,7 +17,7 @@ Az ördöglakatokon kívül még Cactus térképész barátnője is általános
 
 \- A vágóhídnál?! Te jó ég... Semmi gond, kihozunk onnan, csak nyugodj meg.
 
-Aztán persze beindult a faszkodás, és hamarosan átváltottunk mátrixos hangvételre:
+Aztán persze beindult a f�szkodás, és hamarosan átváltottunk mátrixos hangvételre:
 
 \- Kijárat? Van egy készen az aluljáróban. Öt perc múlva.
 

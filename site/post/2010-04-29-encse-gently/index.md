@@ -20,7 +20,7 @@ Naszóval elmondtam a józsinak, hogy mit csináljon, ha nem akar a susnyásban 
 
 \- Nem tudom merről jöttem.
 
-Végül kikeveredett az aszfaltra úgy, hogy közben telefonon diktáltam neki, hogy merre menjen. Akkor meg azzal kezdett jönni, hogy ugye van otthon valaki férfiember, mert ő nem bírja el a hűtőt. Hát a faszomat nem bírod el bazmeg, milyen szállítás ez már? Mondom neki, nincs otthon senki, csak a terhes asszony, de oldja meg valahogy, mert ez a munkája. Na ezek után lebaszta a ház elé az egészet. Dáviddal kellett hazamenni becipelni.
+Végül kikeveredett az aszfaltra úgy, hogy közben telefonon diktáltam neki, hogy merre menjen. Akkor meg azzal kezdett jönni, hogy ugye van otthon valaki férfiember, mert ő nem bírja el a hűtőt. Hát a f�szomat nem bírod el bazmeg, milyen szállítás ez már? Mondom neki, nincs otthon senki, csak a terhes asszony, de oldja meg valahogy, mert ez a munkája. Na ezek után lebaszta a ház elé az egészet. Dáviddal kellett hazamenni becipelni.
 
 A hűtő elhelyezése volt a legmókásabb, ugyanis a kamra ajtaja (valójában nincs ajtaja, csak egy nyílás), naszóval az ajtó kicsit kisebb volt mint a hűtő. De nehogy azt gondolják ám, hogy nem számítottam erre előre... Már jóval korábban kikalkuláltam Mapleben azt a legnagyobb frigóméretet, ami még éppen bevihető egy kis ügyeskedéssel.
 

@@ -23,7 +23,7 @@ Látszik bazmeg. "Innentől triviális."
 
 Aztán valahogy megint visszakanyarodtunk a kezdeti lökő erő kérdéséhez (mert ugye miből van a virág: magból, miből van a mag: virágból...), de itt már nagyon sietni kellett, mert jött a busz, úgyhogy megköszöntem a beszélgetést, sajnálkozva, hogy a legfőbb érvük sem támasztotta alá a dolgot nekem eléggé.
 
-És hogy mit barmoltak el? Hát faszki. Nekem dunsztom sincs róla, hogy van-e Isten. Felőlem akár lehet is. Csak akkor azt is ugyanígy meg kéne magyarázni, hogy őt ki teremtette stb. Vagy legalábbis egy hasonló kérdéskört meg kéne nyitni, és megnyugtatóan rövidre zárni a témát valahol. És Dávid szerint: ha már valahol úgyis rövidre zárjuk, lehet akár Isten meg a teremtés nélkül is csinálni. Lehet. Tényleg nem tudom.
+És hogy mit barmoltak el? Hát f�szki. Nekem dunsztom sincs róla, hogy van-e Isten. Felőlem akár lehet is. Csak akkor azt is ugyanígy meg kéne magyarázni, hogy őt ki teremtette stb. Vagy legalábbis egy hasonló kérdéskört meg kéne nyitni, és megnyugtatóan rövidre zárni a témát valahol. És Dávid szerint: ha már valahol úgyis rövidre zárjuk, lehet akár Isten meg a teremtés nélkül is csinálni. Lehet. Tényleg nem tudom.
 
 De ebbe az egészbe nem is kellett volna belemenniük, ha nem lettek volna ilyen lököttek. Szerintem ugyanis a hit, mint olyan, kurvára jól működik attól függetlenül, hogy ténylegesen van-e mögötte Isten. Mert ha bízol egy fő vezérlőerőben, ami téged mindig kiránt a szarból, akkor neked kurva jó életed lesz. Teljesen biztos lehetsz benne ugyanis, hogy a legvadabb szituációból is jól fogsz kikeveredni. Hát nem fantasztikus?
 

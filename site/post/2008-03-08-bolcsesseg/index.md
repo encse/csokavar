@@ -9,7 +9,7 @@ tags:
 coverImage: images/photo-1.jpg
 ---
 
-Encsé nagyon leépült mostanság. A héten már a harmadik testrésze gyulladt be: a  bölcsességfoga, pontosabban a fölötte levő íny, amitől sosem tudott rendesen kinőni az a szegény fog. A fogorvos bácsi szerint ki kellene húzni, mármint ki kellene vésni onnan. hátafaszom
+Encsé nagyon leépült mostanság. A héten már a harmadik testrésze gyulladt be: a  bölcsességfoga, pontosabban a fölötte levő íny, amitől sosem tudott rendesen kinőni az a szegény fog. A fogorvos bácsi szerint ki kellene húzni, mármint ki kellene vésni onnan. hátaf�szom
 
 Közben elkezdtem olvasni a Structure and Interpretation of Computer Programs című könyvet. Most vagyok a közepén, és tetszik. Bár eddig csupa olyan dologról volt benne szó, amit hallottam már az egyetemen (ha más nem a Horváth Zoltán-féle kurva jó Clean előadáson). Viszont van benne egy csomó jópofa konstrukció, meg bonyolultnak látszó problémára adott elegáns válasz, ami miatt nagyon élvezetes olvasmány.
 
