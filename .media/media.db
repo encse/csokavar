@@ -2934,19 +2934,48 @@
 			"width": 960,
 			"srcPath": "site/assets/backgrounds/street.gif"
 		},
-		{
-			"cdnPath": "/assets/93ea5547-c22b-5eb7-a161-0e5bf03db677.gif",
-			"dominantColor": "rgb(46, 33, 30)",
-			"height": 360,
-			"width": 640,
-			"srcPath": "site/assets/backgrounds/tenor.gif"
-		},
+	
 		{
 			"cdnPath": "/assets/02e23458-fa6f-5c78-83b5-0be6a8720859.gif",
 			"dominantColor": "x",
 			"height": 281,
 			"width": 500,
 			"srcPath": "site/assets/backgrounds/tumblr_inline_p0w0doqrrH1qcsurn_500.gif"
+		},
+		{
+			"cdnPath": "/assets/fcae97f1-3871-5892-a13f-c9e2db006c21.gif",
+			"dominantColor": "rgb(46, 58, 69)",
+			"height": 640,
+			"width": 960,
+			"srcPath": "site/assets/backgrounds/11-111194_cyberpunk-pixel-art-gif.gif"
+		},
+		{
+			"cdnPath": "/assets/351db8c3-d47a-55fd-8c6c-bf04648b93ab.gif",
+			"dominantColor": "rgb(26, 24, 86)",
+			"height": 1080,
+			"width": 1920,
+			"srcPath": "site/assets/backgrounds/1b83dce6c2a59c92d2dfdd14df85c377.gif"
+		},
+		{
+			"cdnPath": "/assets/74be01b7-92f5-504b-935e-d1125b54bb90.gif",
+			"dominantColor": "rgb(71, 74, 97)",
+			"height": 540,
+			"width": 1041,
+			"srcPath": "site/assets/backgrounds/61f3cd0c66cc4e33f72ca6d11762d763.gif"
+		},
+		{
+			"cdnPath": "/assets/2c1ddeb1-cce7-5534-8d17-a2e6ed40e149.gif",
+			"dominantColor": "rgb(88, 62, 101)",
+			"height": 432,
+			"width": 768,
+			"srcPath": "site/assets/backgrounds/df661b213ee05573007418bcd5cca532.gif"
+		},
+		{
+			"cdnPath": "/assets/3a565ffc-b236-5103-ad2f-dc66b476316e.gif",
+			"dominantColor": "rgb(28, 29, 44)",
+			"height": 540,
+			"width": 960,
+			"srcPath": "site/assets/backgrounds/tumblr_7d7916290ee905bba571911f6f168680_a51b66e5_1280.gif"
 		}
 	]
 }
