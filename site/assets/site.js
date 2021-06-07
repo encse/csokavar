@@ -73,22 +73,20 @@ window.addEventListener("load", function () {
 
         let input = document.querySelector('[data-search-input]')
         let result = document.querySelector('[data-search-result]')
+        let suggestions = document.querySelector('[data-search-suggestions]')
 
-        let wait = false;
-
-        input.addEventListener("keyup", function (event) {
-            if (wait) window.clearTimeout(wait);
-            wait = window.setTimeout(performSearch, 50);
-        }, false);
+        input.oninput = () => {
+            performSearch();
+        };
 
         function performSearch() {
             result.innerHTML = '';
+            suggestions.innerHTML = '';
 
             if (input.value == "") {
                 return;
             }
 
-            const seen = new Set();
             const searchStrings = input.value
                 .normalize("NFD")
                 .replace(/[\u0300-\u036f]/g, "")
@@ -97,7 +95,7 @@ window.addEventListener("load", function () {
 
             let idxToPoint = new Map();
 
-            for (let key of Object.keys(searchIndex.keywords)) {
+            for (let key of Object.keys(searchIndex.words)) {
                 for (let searchString of searchStrings) {
                     if (key.indexOf(searchString) >= 0) {
                         let point = 0;
@@ -106,7 +104,7 @@ window.addEventListener("load", function () {
                         } else if (key.startsWith(searchString)) {
                             point += 60;
                         }
-                        for (let idx of searchIndex.keywords[key]) {
+                        for (let idx of searchIndex.words[key]) {
                             if (!idxToPoint.has(idx)) {
                                 idxToPoint.set(idx, 0);
                             }
@@ -123,6 +121,44 @@ window.addEventListener("load", function () {
                 result.appendChild(item);
                 item.innerHTML = meta;
             }
+
+            // if (document.activeElement == input) {
+                let keywordToPoint = new Map();
+
+                for (let keyword of searchIndex.keywords) {
+                    for (let searchString of searchStrings) {
+                        if (keyword.indexOf(searchString) >= 0) {
+                            let point = 0;
+                            if (keyword == searchString) {
+                                point += 100;
+                            } else if (keyword.startsWith(searchString)) {
+                                point += 60;
+                            }
+                            if (!keywordToPoint.has(keyword)) {
+                                keywordToPoint.set(keyword, 0);
+                            }
+
+                            keywordToPoint.set(keyword, keywordToPoint.get(keyword) + point);
+                        }
+                    }
+                }
+
+                if (keywordToPoint.size > 1 || (keywordToPoint.size == 1 && [...keywordToPoint][0][1] < 100)) {
+                    for (let searchResult of [...keywordToPoint.entries()].sort((a, b) => b[1] - a[1]).filter(a => a[1] > 50)) {
+                        let keyword = searchResult[0];
+                        let item = document.createElement('div');
+                        suggestions.appendChild(item);
+                        let link = document.createElement('a');
+                        link.setAttribute('href', '#');
+                        item.appendChild(link)
+                        link.innerHTML = keyword;
+                        item.onclick = () => {
+                            input.value = keyword;
+                            performSearch();
+                        };
+                    }
+                }
+            // }
         }
     });
 

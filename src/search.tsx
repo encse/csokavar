@@ -11,12 +11,12 @@ import { ServerStyleSheet } from 'styled-components';
 const Search = styled.div`
     width: 100%;
     background: white;
-    border: 1px solid black;
-    border-radius: 25px;
+    border-radius: 8px;
     
-    padding: 8px 16px;
+    padding: 8px 0;
     
     display: flex;
+    flex-wrap: wrap;
     color: black;
 `;
 
@@ -25,8 +25,38 @@ const SearchInput = styled.input`
     outline: 0;
     border: none;
     background: transparent;
-    font-family: 'Noto Sans';
-    font-size: 16px;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 16px;
+`;
+
+const SearchSuggestionsWrapper = styled.div`
+    position:relative;
+    width: 100%;
+`;
+
+const SearchSuggestions = styled.div`
+    position:absolute;
+    width: 100%;
+    background: white;
+
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+    
+    a {
+        display: block;
+        padding: 8px 16px;
+        outline: none;
+        &:hover, &:active, &:focus {
+            background: gray;
+            color: white;
+            
+        }
+    }
+`;
+const StyledSearchIcon = styled(SearchIcon)`
+    padding-right:16px;
 `;
 
 export class SearchPage {
@@ -63,7 +93,11 @@ export class SearchPage {
             {
                 homePageHeading: true,
                 title: this.title,
-                subtitle: <Search><SearchInput data-search-input/><SearchIcon /></Search>,
+                subtitle: <Search>
+                    <SearchInput data-search-input type="search" />
+                    <StyledSearchIcon/>
+                    <SearchSuggestionsWrapper><SearchSuggestions data-search-suggestions/></SearchSuggestionsWrapper>
+                    </Search>,
                 coverImage: this.coverImage,
                 postContent: content,
                 footer: null,
@@ -76,10 +110,15 @@ export class SearchPage {
 
 export function buildSearch(posts: Post[], styleSheet: ServerStyleSheet): string {
     let wordToIds = new Map<string, Set<number>>();
+    let keywords = new Set<string>();
 
     let id = 0;
     for (let id = 0; id < posts.length; id++) {
         const post = posts[id];
+        for (let tagName of post.tags.map(tag => tag.name)) {
+            keywords.add(tagName);
+        }
+
         let normalized = removeAccents(post.title + " " + post.mdContent).toLowerCase();
 
         for (let match of normalized.matchAll(/(\w)+/g)) {
@@ -93,10 +132,11 @@ export function buildSearch(posts: Post[], styleSheet: ServerStyleSheet): string
         }
     }
 
-    let keywords = Object.fromEntries([...wordToIds.entries()].map(entry => [entry[0], [...entry[1]]]));
+    let words = Object.fromEntries([...wordToIds.entries()].map(entry => [entry[0], [...entry[1]]]));
     let search = {
+        keywords: [...keywords],
         meta: posts.map(post => ReactDOMServer.renderToStaticMarkup(styleSheet.collectStyles(PostList.renderItem(post)))),
-        keywords
+        words
     }
 
     return JSON.stringify(search);

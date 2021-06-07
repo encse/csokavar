@@ -9,27 +9,6 @@ Szeretek olvasni, és néha [véleményt](https://csokavar.hu/blog/tag/konyv/) i
 Mostanában már kevesebb idő jut rá, az ezer oldalas szakkönyvekkel meg lassan is haladok. Még az isc-s időkben, amikor 10 percre laktam az irodától, annyira ráértem, hogy munka után leültem az aktuális könyvvel és olvastam egész elalvásig, hétvégente meg mindig könyvesboltba jártam, hátha találok valamit…
 
 <style>
-    /* .gr_grid_container {
-        text-align: center;
-    }
-
-    .gr_grid_book_container {
-        display: inline-block;
-        margin: 8px;
-        box-shadow: 2px 2px #e8e8e8, 0px 2px #e8e8e8;
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-    }
-    
-    .gr_grid_book_container img {
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-    }
-
-    .gr_grid_book_container a {
-        
-        display: flex;
-    }  */
 
     .gr_grid_container {
         display: flex;
@@ -57,7 +36,7 @@ Mostanában már kevesebb idő jut rá, az ezer oldalas szakkönyvekkel meg lass
     }
 
     .gr_grid_book_container a {
-        margin: 8px;
+        margin: 4px;
         box-shadow: 2px 2px #e8e8e8, 0px 2px #e8e8e8;
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;

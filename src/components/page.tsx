@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import {TwitterLink, LinkedInLink, GitHubLink} from './fontAwesame';
+import {TwitterLink, LinkedInLink, GitHubLink, SearchIcon} from './fontAwesame';
 
 export type PageProps = {
     featuredImage: React.CSSProperties,
@@ -34,6 +34,7 @@ const Header = styled.header`
 `;
 
 const SiteHeading = styled.section`
+
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
@@ -41,25 +42,23 @@ const SiteHeading = styled.section`
     width: 100%;
     line-height: 24px;
     font-size: 16px;
+    padding: 16px;
 
+    display: flex;
+    flex-wrap: wrap;
     @media only screen and (max-width:600px) {
         background: #1e1e1e;
         color: #c8c8c8;
     }
 
     @media only screen and (min-width:601px) {
-        position: absolute;
-        padding: 16px;
-        display: flex;
-        max-width: 800px
+        max-width: 800px;
     }
+
 `;
 
 const SiteTitle = styled.a`
-    @media only screen and (max-width:600px) {
-        padding: 16px;
-        display: inline-block
-    }
+    flex-grow: 1;
 `;
 
 
@@ -68,7 +67,7 @@ const PageHeading = styled.div`
     flex-direction: column;
     margin: auto;
     color: #fff;
-    overflow: hidden;
+    overflow: visible;
     max-width: 800px;
     padding: 0 16px;
     width: 100%;
@@ -138,95 +137,30 @@ const SocialLinks: React.FC = (props) => {
     </StyledSocialLinks>;
 } 
 
-const StyledMenu = styled.span`
-    width: 100%;
-    @media only screen and (max-width:600px) {
-        nav {
-            width: 100%;
-            position: absolute;
-            flex-direction: column;
-        }
-
-        ul {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            list-style: none;
-            width: 100%;
-            overflow: hidden;
-            float: left;
-            background: #1e1e1e;
-            max-height: 0px;
-            transition: max-height .2s ease-in-out;
-        }
-
-        &.active ul {
-            max-height: 200px;
-        }
-
-        a {
-            width: 100%;
-            display: block;
-        }
-
-        li {
-            padding: 8px 16px;
-
-            &:last-child {
-                padding-bottom: 24px;
-            }
-        }
-
-    }
-
-    @media only screen and (min-width:601px) {
-        nav {
-            display: flex;
-            flex-direction: row-reverse;
-            flex-grow: 1;
-        }
-
-        ul {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            list-style: none;
-        }
-
-        li {
-            padding-left: 32px;
-        }
-    }
-`;
-
 const HamburgerButton = styled.button`
     display: none;
 
     @media only screen and (max-width:600px) {
         display: initial;
-        padding: 16px;
-        margin: 12px 0;
         user-select: none;
         cursor: pointer;
         font: inherit;
         background-color: transparent;
         border: 0;
-        float: right;
         outline: 0;
         position: relative;
+        padding: 0;
+        padding-right: 8px;
     }
 `;
 
 const HamburgerIcon = styled.span`
 
     display: block;
-    top: 50%;
     transition-duration: .075s;
     transition-timing-function: cubic-bezier(.55, .055, .675, .19);
-    left: 0;
 
-    ${StyledMenu}.active & {
+    ${SiteHeading}.active & {
         transform: rotate(45deg);
         transition-delay: .12s;
         transition-timing-function: cubic-bezier(.215, .61, .355, 1);
@@ -239,7 +173,7 @@ const HamburgerIcon = styled.span`
 
         &:after {
             bottom: 0;
-            transform: rotate(-90deg);
+            transform: rotate(-90deg) translateX(6px);
             transition: bottom .075s ease, transform .075s .12s cubic-bezier(.215, .61, .355, 1);
         }
     }
@@ -247,56 +181,70 @@ const HamburgerIcon = styled.span`
     &,
     &:before,
     &:after {
-        width: 24px;
-        height: 2px;
+        position: relative;
+        width: 16px;
+        height: 3px;
         background-color: #c8c8c8;
         border-radius: 2px;
-        position: absolute;
         transition-property: transform;
         transition-duration: .15s;
         transition-timing-function: ease;
     }
+    
+    top: -2px;
 
     &:before {
         content: "";
         display: block;
         transition: top .075s .12s ease, opacity .075s ease;
         top: -6px;
+
     }
 
     &:after {
         content: "";
         display: block;
         transition: bottom .075s .12s ease, transform .075s cubic-bezier(.55, .055, .675, .19);
-        bottom: -6px;
+        top: 3px;
+        position: relative;
+
     }
 `;
 
+const Menu = styled.div`
 
-const Menu: React.FC = (props) => {
-    return <StyledMenu>
-            <HamburgerButton data-hamburger-menu>
-                <HamburgerIcon />
-            </HamburgerButton>
-            <nav><ul>{props.children}</ul></nav>
-        </StyledMenu>;
-}
+    @media only screen and (max-width:600px) {
+        display: none;
 
-const MenuItem: React.FC<{href: string, title: string}> = (props) => {
-    return <li><a href={props.href}>{props.title}</a></li>;
-}
+        ${SiteHeading}.active & {
+            display: flex;
+            flex-direction: column;
+            order: 10;
+            width: 100%;
+            padding-left: 8px;
+        }
+    }
+`;
+
+const MenuItem = styled.a`
+    padding: 8px 16px;
+`;
 
 export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
     return <>
         <Header style={props.featuredImage}>
-            <SiteHeading className="site-heading"> <SiteTitle href="/">Csókavár</SiteTitle>
+            <SiteHeading className="site-heading"> 
+                <HamburgerButton data-hamburger-menu>
+                    <HamburgerIcon />
+                </HamburgerButton>
+                <SiteTitle href="/">Csókavár</SiteTitle>
                 <Menu>
-                    <MenuItem href="/" title="Blog" />
-                    <MenuItem href="/projects/" title="Projektek" />
-                    <MenuItem href="/konyvespolc/" title="Könyvespolc" />
-                    <MenuItem href="/about/" title="About" />
+                    <MenuItem href="/">Blog</MenuItem>
+                    <MenuItem href="/projects/">Projektek</MenuItem>
+                    <MenuItem href="/konyvespolc/">Könyvespolc</MenuItem>
+                    <MenuItem href="/about/">About</MenuItem>
                 </Menu>
-              
+                <a href="/search/"><SearchIcon /></a>
             </SiteHeading>
             {
                 props.homePageHeading ?
