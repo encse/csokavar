@@ -1,0 +1,1 @@
+export const linkColor = 'var(--link-color)';

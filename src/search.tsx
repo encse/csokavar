@@ -5,8 +5,8 @@ import * as React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { PostList } from './postList';
 import styled from 'styled-components';
-import { SearchIcon } from "./components/fontAwesame";
 import { ServerStyleSheet } from 'styled-components';
+import { linkColor } from "./colors";
 
 const Search = styled.div`
     width: 100%;
@@ -27,7 +27,7 @@ const SearchInput = styled.input`
     background: transparent;
     font-family: inherit;
     font-size: inherit;
-    padding-left: 16px;
+    padding: 0 16px;
 `;
 
 const SearchSuggestionsWrapper = styled.div`
@@ -43,21 +43,19 @@ const SearchSuggestions = styled.div`
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     overflow: hidden;
-    
+
     a {
         display: block;
         padding: 8px 16px;
         outline: none;
         &:hover, &:active, &:focus {
-            background: gray;
+            background: ${linkColor};
             color: white;
             
         }
     }
 `;
-const StyledSearchIcon = styled(SearchIcon)`
-    padding-right:16px;
-`;
+
 
 export class SearchPage {
     readonly title: string;
@@ -94,8 +92,7 @@ export class SearchPage {
                 homePageHeading: true,
                 title: this.title,
                 subtitle: <Search>
-                    <SearchInput data-search-input type="search" />
-                    <StyledSearchIcon/>
+                    <SearchInput data-search-input autoFocus type="search" />
                     <SearchSuggestionsWrapper><SearchSuggestions data-search-suggestions/></SearchSuggestionsWrapper>
                     </Search>,
                 coverImage: this.coverImage,
@@ -119,7 +116,7 @@ export function buildSearch(posts: Post[], styleSheet: ServerStyleSheet): string
             keywords.add(tagName);
         }
 
-        let normalized = removeAccents(post.title + " " + post.mdContent).toLowerCase();
+        let normalized = removeAccents(post.title + " " + post.tags.map(tag => tag.name).join(' ') + post.mdContent).toLowerCase();
 
         for (let match of normalized.matchAll(/(\w)+/g)) {
             const word = match[0];

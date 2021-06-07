@@ -24,6 +24,7 @@
         * {
             box-sizing: border-box;
             --xxl-text-size: 80px;
+            --link-color: rgb(108,142,210);
         }
 
         @media only screen and (max-width:600px) {
@@ -76,7 +77,7 @@
         }
 
         a:hover {
-            color: #bda000;
+            color: var(--link-color);
         }
 
         main {
@@ -89,7 +90,7 @@
         }
 
         main a:hover {
-            color: #bda000;
+            color: var(--link-color);
         }
 
         main article {

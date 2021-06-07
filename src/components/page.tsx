@@ -150,7 +150,7 @@ const HamburgerButton = styled.button`
         outline: 0;
         position: relative;
         padding: 0;
-        padding-right: 8px;
+        padding-right: 16px;
     }
 `;
 
@@ -221,7 +221,7 @@ const Menu = styled.div`
             flex-direction: column;
             order: 10;
             width: 100%;
-            padding-left: 8px;
+            padding-left: 16px;
         }
     }
 `;
