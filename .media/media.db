@@ -2934,7 +2934,6 @@
 			"width": 960,
 			"srcPath": "site/assets/backgrounds/street.gif"
 		},
-	
 		{
 			"cdnPath": "/assets/02e23458-fa6f-5c78-83b5-0be6a8720859.gif",
 			"dominantColor": "x",
@@ -2976,6 +2975,48 @@
 			"height": 540,
 			"width": 960,
 			"srcPath": "site/assets/backgrounds/tumblr_7d7916290ee905bba571911f6f168680_a51b66e5_1280.gif"
+		},
+		{
+			"cdnPath": "/assets/83c763a2-aeb7-5f55-87eb-c385bb9c0ae4.jpeg",
+			"dominantColor": "rgb(110, 76, 39)",
+			"height": 900,
+			"width": 900,
+			"srcPath": "site/post/2021-01-05-4695/images/bg.jpeg"
+		},
+		{
+			"cdnPath": "/assets/e3db942b-ef3f-5d07-adff-7d4f1591fe2c.jpeg",
+			"dominantColor": "rgb(203, 152, 128)",
+			"height": 442,
+			"width": 500,
+			"srcPath": "site/post/2012-03-26-oreganyam/images/bg.jpeg"
+		},
+		{
+			"cdnPath": "/assets/9e9101cb-4151-5e95-8742-59e766e65c53.jpg",
+			"dominantColor": "rgb(142, 143, 149)",
+			"height": 483,
+			"width": 563,
+			"srcPath": "site/post/2015-11-15-mikulas/images/bg.jpg"
+		},
+		{
+			"cdnPath": "/assets/4e8fd761-971e-554b-b3c7-cf06d6161022.gif",
+			"dominantColor": "rgb(217, 183, 126)",
+			"height": 200,
+			"width": 400,
+			"srcPath": "site/post/2012-03-26-oreganyam/images/pizza.gif"
+		},
+		{
+			"cdnPath": "/assets/5593cd0c-5d78-54d7-8a09-8ca97d0ae1f8.png",
+			"dominantColor": "rgb(111, 119, 134)",
+			"height": 1187,
+			"width": 2560,
+			"srcPath": "site/post/2015-11-15-mikulas/images/bg.png"
+		},
+		{
+			"cdnPath": "/assets/87635ab2-d742-54e9-9a68-d3d0a20a7813.png",
+			"dominantColor": "rgb(120, 108, 13)",
+			"height": 480,
+			"width": 640,
+			"srcPath": "site/post/2015-11-05-encse-es-a-windows-team/images/bg.png"
 		}
 	]
 }
