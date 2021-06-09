@@ -17,10 +17,12 @@ const Header = styled.header`
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-shadow: 0px 0px 1px #000000, 0px 0px 10px rgba(0,0,0,0.1);
    
     a {
         text-decoration: none;
     }
+
 
     @media only screen and (max-width:600px) {
         height: 50vh;
