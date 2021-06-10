@@ -66,6 +66,7 @@ const SiteHeading = styled.section`
 
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
     @media only screen and (max-width:600px) {
         background: #1e1e1e;
         color: #c8c8c8;
@@ -247,7 +248,7 @@ const Menu = styled.div`
 `;
 
 const MenuItem = styled(HeaderLink)`
-    padding: 0 16px;
+    padding: 8px 16px;
 `;
 
 export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
