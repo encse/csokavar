@@ -5,6 +5,9 @@ tags:
   - "könyv"
   - "személyes"
   - "vélemény"
+keywords:
+  - "Ready player one"
+  - "Ernest Cline"
 coverImage: images/ready-player-one1.png
 ---
 

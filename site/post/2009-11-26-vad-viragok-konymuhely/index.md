@@ -4,6 +4,8 @@ date: "2009-11-26"
 tags: 
   - "könyv"
   - "vélemény"
+keywords:
+  - "Kázmér és Huba"
 coverImage: images/kazmer.jpg
 ---
 

@@ -3,6 +3,8 @@ title: "Hegesztési zsebkönyv"
 date: "2008-11-16"
 tags: 
   - "könyv"
+keywords:
+  - "Hegesztési zsebkönyv"
 coverImage: images/MIg_MAGCOhegesztes_2.jpg
 ---
 

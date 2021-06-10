@@ -5,6 +5,9 @@ tags:
   - "geekség"
   - "könyv"
   - "vélemény"
+keywords:
+  - "Common Lisp"
+  - "Peter Seibel"
 coverImage: images/practical-common-lisp.png
 ---
 

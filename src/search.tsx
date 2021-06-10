@@ -26,6 +26,7 @@ const Search = styled.div`
     display: flex;
     flex-wrap: wrap;
     color: black;
+    overflow:hidden;
 `;
 
 const SearchInput = styled.input`
@@ -41,6 +42,8 @@ const SearchInput = styled.input`
 
 const SearchSuggestions = styled.div`
     width: 100%;
+    max-height: 300px;
+    overflow: auto;
 
     a {
         display: block;
@@ -112,16 +115,16 @@ export function buildSearch(posts: Post[], styleSheet: ServerStyleSheet): string
     let id = 0;
     for (let id = 0; id < posts.length; id++) {
         const post = posts[id];
-        for (let tagName of post.tags.map(tag => tag.name)) {
-            keywords.add(tagName);
+        for (let keyword of post.keywords) {
+            keywords.add(keyword);
         }
 
-        let normalized = removeAccents(post.title + " " + post.tags.map(tag => tag.name).join(' ') + post.mdContent).toLowerCase();
+        let normalized = removeAccents(post.title + " " + post.tags.map(tag => tag.name).join(' ') + post.textContent()).toLowerCase();
 
-        for (let match of normalized.matchAll(/(\w)+/g)) {
+        for (let match of normalized.matchAll(/([^\s])+/g)) {
             const word = match[0];
             if (word.length > 2) {
-                const key = slugify(word);
+                const key = word;
                 let list = wordToIds.get(key) ?? new Set<number>();
                 list.add(id);
                 wordToIds.set(key, list);

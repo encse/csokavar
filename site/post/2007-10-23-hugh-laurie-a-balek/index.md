@@ -4,6 +4,9 @@ date: "2007-10-23"
 tags: 
   - "könyv"
   - "vélemény"
+keywords:
+  - "Hugh Laurie"
+  - "A Balek"
 coverImage: images/Hugh-Laurie-hugh-laurie-31954777-1024-7681.jpg
 ---
 

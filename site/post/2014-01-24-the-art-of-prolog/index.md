@@ -5,6 +5,8 @@ tags:
   - "geekség"
   - "könyv"
   - "vélemény"
+keywords:
+  - "The Art of Prolog"
 coverImage: images/Shinagawa-_Departure_of_a_Daimyo_LACMA_48.jpg
 ---
 

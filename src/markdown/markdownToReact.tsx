@@ -114,6 +114,25 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
     return React.createElement(React.Fragment, {}, ...stack.flat());
 }
 
+
+export function markdownToTextContent(md: string, assetManager: AssetManager, fpat: string): string {
+    const markdownIt = MarkdownIt({ html: true })
+        .use(markdownKatex, { output: "html", errorColor: "#cc0000" })
+        .use(iframePlugin.plugin)
+        .use(markdown_it_youtube_plugin)
+        .use(markdown_it_gallery_plugin)
+        ;
+
+    const tokens = markdownIt.parse(md, {});
+    let text = '';
+    for(let token of tokens){
+        if (token.type == 'inline') {
+            text += token.content;
+        }
+    }
+    return text;
+}
+
 export function markdownToReact(md: string, assetManager: AssetManager, fpat: string): React.ReactElement<any> {
     const markdownIt = MarkdownIt({ html: true })
         .use(markdownKatex, { output: "html", errorColor: "#cc0000" })

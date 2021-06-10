@@ -5,6 +5,8 @@ tags:
   - "geekség"
   - "könyv"
   - "vélemény"
+keywords:
+  - "The Elements of Computing Systems"
 coverImage: images/photo-1-1.jpg
 ---
 

@@ -3,7 +3,7 @@ import { slugify, formatDate, zeroPad } from "./util";
 import * as React from 'react';
 import {AssetManager, ImageAsset} from './assets';
 import { Tag } from './tag';
-import { markdownToReact, markdownToReactExcerpt } from './markdown/markdownToReact';
+import { markdownToReact, markdownToReactExcerpt, markdownToTextContent } from './markdown/markdownToReact';
 import {resolve} from 'url';
 import { TagsIcon } from './components/fontAwesame';
 import { ServerStyleSheet } from 'styled-components';
@@ -68,6 +68,7 @@ export class Post {
     readonly coverImage: ImageAsset;
     readonly date: Date;
     readonly tags: Tag[];
+    readonly keywords: string[];
     readonly mdContent: string;
     readonly #template: Template<PageTemplateProps>;
     readonly uri: string;
@@ -84,6 +85,7 @@ export class Post {
         this.title = metadata.title;
 
         this.tags = (metadata.tags || []).map(name => new Tag(name));
+        this.keywords = [...(metadata.keywords || []), ...(metadata.tags || []), metadata.title];
 
         this.#template = template;
         this.mdContent = content;
@@ -95,6 +97,10 @@ export class Post {
 
         this.excerpt = markdownToReactExcerpt(content, this.uri, this.assetManager, fpat);
         
+    }
+
+    textContent(): string {
+       return markdownToTextContent(this.mdContent, this.assetManager, this.fpat);
     }
 
     async render(): Promise<string> {

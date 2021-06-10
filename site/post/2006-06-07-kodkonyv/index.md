@@ -5,6 +5,9 @@ tags:
   - "könyv"
   - "szeretem"
   - "vélemény"
+keywords:
+  - "Kódkönyv"
+  - "Simon Singh"
 coverImage: images/photo-52.jpg
 ---
 

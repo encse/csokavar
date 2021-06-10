@@ -6,6 +6,9 @@ tags:
   - "könyv"
   - "szeretem"
   - "vélemény"
+keywords:
+  - "Steven Levy"
+  - "Hackers - heroes of the computer revolution"
 coverImage: images/Spacewar-PDP-1-200705121.jpg
 ---
 

@@ -2991,13 +2991,6 @@
 			"srcPath": "site/post/2012-03-26-oreganyam/images/bg.jpeg"
 		},
 		{
-			"cdnPath": "/assets/9e9101cb-4151-5e95-8742-59e766e65c53.jpg",
-			"dominantColor": "rgb(142, 143, 149)",
-			"height": 483,
-			"width": 563,
-			"srcPath": "site/post/2015-11-15-mikulas/images/bg.jpg"
-		},
-		{
 			"cdnPath": "/assets/4e8fd761-971e-554b-b3c7-cf06d6161022.gif",
 			"dominantColor": "rgb(217, 183, 126)",
 			"height": 200,
@@ -3017,6 +3010,27 @@
 			"height": 480,
 			"width": 640,
 			"srcPath": "site/post/2015-11-05-encse-es-a-windows-team/images/bg.png"
+		},
+		{
+			"cdnPath": "/assets/1953ffc7-97ca-5b01-8632-bce5d9ab06b6.png",
+			"dominantColor": "rgb(53, 80, 45)",
+			"height": 600,
+			"width": 1024,
+			"srcPath": "site/post/2012-12-08-vonatos-mese/images/DtcA8_7XcAIig33.png"
+		},
+		{
+			"cdnPath": "/assets/1eb17425-60b0-5a0b-b801-7ad191dfb97c.png",
+			"dominantColor": "rgb(63, 67, 41)",
+			"height": 750,
+			"width": 1000,
+			"srcPath": "site/post/2012-12-08-vonatos-mese/images/sgaugl7k92b51.png"
+		},
+		{
+			"cdnPath": "/assets/264fa97c-9174-5afc-8d69-581387cd0b28.png",
+			"dominantColor": "rgb(64, 43, 62)",
+			"height": 750,
+			"width": 1000,
+			"srcPath": "site/post/2014-09-19-kemeny-dio/images/08c3d2c499870d7ee29f08b9af196b74.png"
 		}
 	]
 }

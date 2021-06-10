@@ -4,6 +4,9 @@ date: "2015-07-05"
 tags: 
   - "könyv"
   - "vélemény"
+keywords:
+  - "Richard Bird"
+  - "Pearls of Functional Algorithm Design"
 coverImage: images/pearl.jpg
 ---
 

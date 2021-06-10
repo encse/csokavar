@@ -4,6 +4,9 @@ date: "2015-03-13"
 tags: 
   - "könyv"
   - "személyes"
+keywords:
+  - "Donald E. Knuth"
+  - "A számítógép-programozás művészete"
 coverImage: images/dek-14may10-1.jpg
 ---
 

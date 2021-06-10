@@ -73,36 +73,41 @@ window.addEventListener("load", function () {
 
         let input = document.querySelector('[data-search-input]')
         let result = document.querySelector('[data-search-result]')
-        let suggestions = document.querySelector('[data-search-suggestions]')
+        let suggestionsItem = document.querySelector('[data-search-suggestions]')
 
+        performSearch();
+        
         input.oninput = () => {
             performSearch();
         };
 
+        function normalizeString(st) {
+            return st
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .toLowerCase();
+        }
+
         function performSearch() {
             result.innerHTML = '';
-            suggestions.innerHTML = '';
+            suggestionsItem.innerHTML = '';
 
             if (input.value == "") {
                 return;
             }
-
-            const searchStrings = input.value
-                .normalize("NFD")
-                .replace(/[\u0300-\u036f]/g, "")
-                .toLowerCase()
-                .split(" ");
+            const normalizedSearchString = normalizeString(input.value);
+            const searchStringWords = normalizedSearchString.split(" ");
 
             let idxToPoint = new Map();
 
             for (let key of Object.keys(searchIndex.words)) {
-                for (let searchString of searchStrings) {
+                for (let searchString of searchStringWords) {
                     if (key.indexOf(searchString) >= 0) {
                         let point = 0;
                         if (key == searchString) {
-                            point += 100;
+                            point += 100 * searchString.length;
                         } else if (key.startsWith(searchString)) {
-                            point += 60;
+                            point += 6 * searchString.length;
                         }
                         for (let idx of searchIndex.words[key]) {
                             if (!idxToPoint.has(idx)) {
@@ -114,7 +119,10 @@ window.addEventListener("load", function () {
                 }
             }
 
-            for (let searchResult of [...idxToPoint.entries()].sort((a, b) => b[1] - a[1]).filter(a => a[1] > 50)) {
+            for (let searchResult of [...idxToPoint.entries()]
+                .sort((a, b) => b[1] !== a[1])
+                .filter(a => a[1] > 18)
+            ) {
                 let idx = searchResult[0];
                 const meta = searchIndex.meta[idx];
                 let item = document.createElement('div');
@@ -122,32 +130,43 @@ window.addEventListener("load", function () {
                 item.innerHTML = meta;
             }
 
-            // if (document.activeElement == input) {
-                let keywordToPoint = new Map();
+            let keywordToPoint = new Map();
 
-                for (let keyword of searchIndex.keywords) {
-                    for (let searchString of searchStrings) {
-                        if (keyword.indexOf(searchString) >= 0) {
-                            let point = 0;
-                            if (keyword == searchString) {
-                                point += 100;
-                            } else if (keyword.startsWith(searchString)) {
-                                point += 60;
-                            }
-                            if (!keywordToPoint.has(keyword)) {
-                                keywordToPoint.set(keyword, 0);
-                            }
+            for (let keyword of searchIndex.keywords) {
+                let normalizedKeyword = normalizeString(keyword);
+                let point = 0;
 
-                            keywordToPoint.set(keyword, keywordToPoint.get(keyword) + point);
-                        }
+                if (normalizedKeyword.indexOf(normalizedSearchString) >= 0) {
+                    if (normalizedKeyword == normalizedSearchString) {
+                        point += 100;
+                    } else if (normalizedKeyword.startsWith(normalizedSearchString)) {
+                        point += 60;
+                    } else {
+                        point += 0;
                     }
+
                 }
 
-                if (keywordToPoint.size > 1 || (keywordToPoint.size == 1 && [...keywordToPoint][0][1] < 100)) {
-                    for (let searchResult of [...keywordToPoint.entries()].sort((a, b) => b[1] - a[1]).filter(a => a[1] > 50)) {
-                        let keyword = searchResult[0];
+                if (point > 0){
+                    if (!keywordToPoint.has(keyword)) {
+                        keywordToPoint.set(keyword, 0);
+                    }
+
+                    keywordToPoint.set(keyword, keywordToPoint.get(keyword) + point);
+                }
+            }
+
+            if (keywordToPoint.size > 0) {
+                let suggestions = [...keywordToPoint.entries()].sort((a, b) => b[1] - a[1]);
+                const maxPoint = suggestions[0][1];
+                suggestions = suggestions.filter(a => a[1] == maxPoint);
+
+                if (maxPoint < 100) {
+                
+                    for (let suggestion of suggestions) {
+                        let keyword = suggestion[0];
                         let item = document.createElement('div');
-                        suggestions.appendChild(item);
+                        suggestionsItem.appendChild(item);
                         let link = document.createElement('a');
                         link.setAttribute('href', '#');
                         item.appendChild(link)
@@ -158,7 +177,7 @@ window.addEventListener("load", function () {
                         };
                     }
                 }
-            // }
+            }
         }
     });
 

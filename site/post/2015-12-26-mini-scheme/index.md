@@ -4,6 +4,9 @@ date: "2015-12-26"
 tags: 
   - "geekség"
   - "könyv"
+keywords:
+  - "Little Schemer"
+  - "Seasoned Schemer"
 coverImage: images/0001-e1451228724420.jpg
 ---
 

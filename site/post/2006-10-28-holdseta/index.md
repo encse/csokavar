@@ -5,6 +5,9 @@ tags:
   - "isc"
   - "könyv"
   - "űrkutatás"
+keywords:
+  - "Dancsó Béla"
+  - "Holdséta"
 coverImage: images/Aldrin_Apollo_11.jpg
 ---
 

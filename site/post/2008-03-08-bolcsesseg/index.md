@@ -6,6 +6,8 @@ tags:
   - "könyv"
   - "személyes"
   - "vélemény"
+keywords:
+  - "Structure and Interpretation of Computer Programs"
 coverImage: images/photo-1.jpg
 ---
 

