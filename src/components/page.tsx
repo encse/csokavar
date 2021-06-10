@@ -11,13 +11,31 @@ export type PageProps = {
     homePageHeading: boolean,
 }
 
+const textShadowInHeader = `text-shadow: 0px 0px 1px #000000, 0px 0px 10px rgba(0,0,0,1)`;
+
+const PageTitle = styled.h1`
+    margin: 0;
+    ${textShadowInHeader};
+`;
+
+const PageSubTitle = styled.p`
+    margin: 0;
+    margin-top: 8px;
+    ${textShadowInHeader};
+`;
+
+const HeaderLink = styled.a`
+    @media only screen and (min-width:601px) {
+        ${textShadowInHeader}
+    }
+`;
+
 const Header = styled.header`
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-shadow: 0px 0px 1px #000000, 0px 0px 10px rgba(0,0,0,0.1);
    
     a {
         text-decoration: none;
@@ -59,7 +77,7 @@ const SiteHeading = styled.section`
 
 `;
 
-const SiteTitle = styled.a`
+const SiteTitle = styled(HeaderLink)`
     flex-grow: 1;
 `;
 
@@ -75,14 +93,6 @@ const PageHeading = styled.div`
     width: 100%;
 `;
 
-const PageTitle = styled.h1`
-    margin: 0;
-`;
-
-const PageSubTitle = styled.p`
-    margin: 0;
-    margin-top: 8px;
-`;
 
 const HomePageHeading = styled(PageHeading)`
     align-items: center;
@@ -180,32 +190,41 @@ const HamburgerIcon = styled.span`
         }
     }
 
+    background-color: #c8c8c8;
+    ${HamburgerButton}:hover & {
+        background-color: var(--link-color);
+    }
+
     &,
     &:before,
     &:after {
         position: relative;
         width: 16px;
         height: 3px;
-        background-color: #c8c8c8;
         border-radius: 2px;
         transition-property: transform;
         transition-duration: .15s;
         transition-timing-function: ease;
     }
+
+    &:before,
+    &:after {
+        background-color: inherit;
+        content: "";
+        display: block;
+    }
+   
     
     top: -2px;
 
     &:before {
-        content: "";
-        display: block;
+
         transition: top .075s .12s ease, opacity .075s ease;
         top: -6px;
 
     }
 
     &:after {
-        content: "";
-        display: block;
         transition: bottom .075s .12s ease, transform .075s cubic-bezier(.55, .055, .675, .19);
         top: 3px;
         position: relative;
@@ -214,7 +233,6 @@ const HamburgerIcon = styled.span`
 `;
 
 const Menu = styled.div`
-
     @media only screen and (max-width:600px) {
         display: none;
 
@@ -228,8 +246,8 @@ const Menu = styled.div`
     }
 `;
 
-const MenuItem = styled.a`
-    padding: 8px 16px;
+const MenuItem = styled(HeaderLink)`
+    padding: 0 16px;
 `;
 
 export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
@@ -246,7 +264,7 @@ export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
                     <MenuItem href="/konyvespolc/">Könyvespolc</MenuItem>
                     <MenuItem href="/about/">About</MenuItem>
                 </Menu>
-                <a href="/search/"><SearchIcon /></a>
+                <HeaderLink href="/search/"><SearchIcon /></HeaderLink>
             </SiteHeading>
             {
                 props.homePageHeading ?
