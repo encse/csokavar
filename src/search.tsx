@@ -8,10 +8,18 @@ import styled from 'styled-components';
 import { ServerStyleSheet } from 'styled-components';
 import { linkColor } from "./colors";
 
+const SearchWrapper = styled.div`
+    position:relative;
+    width: 100%;
+`;
+
+
 const Search = styled.div`
+    position:absolute;
     width: 100%;
     background: white;
-    border-radius: 8px;
+    border-radius: 20px;
+    border: 1px solid #444444;
     
     padding: 8px 0;
     
@@ -30,19 +38,9 @@ const SearchInput = styled.input`
     padding: 0 16px;
 `;
 
-const SearchSuggestionsWrapper = styled.div`
-    position:relative;
-    width: 100%;
-`;
 
 const SearchSuggestions = styled.div`
-    position:absolute;
     width: 100%;
-    background: white;
-
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    overflow: hidden;
 
     a {
         display: block;
@@ -91,10 +89,12 @@ export class SearchPage {
             {
                 homePageHeading: true,
                 title: this.title,
-                subtitle: <Search>
-                    <SearchInput data-search-input autoFocus type="search" />
-                    <SearchSuggestionsWrapper><SearchSuggestions data-search-suggestions/></SearchSuggestionsWrapper>
-                    </Search>,
+                subtitle: <SearchWrapper>
+                    <Search>
+                        <SearchInput data-search-input autoFocus type="search" />
+                        <SearchSuggestions data-search-suggestions />
+                    </Search>
+                </SearchWrapper>,
                 coverImage: this.coverImage,
                 postContent: content,
                 footer: null,
