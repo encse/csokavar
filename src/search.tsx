@@ -107,23 +107,25 @@ export class SearchPage {
     }
 }
 
-
 export function buildSearch(posts: Post[], styleSheet: ServerStyleSheet): string {
     let wordToIds = new Map<string, Set<number>>();
     let keywords = new Set<string>();
 
-    let id = 0;
     for (let id = 0; id < posts.length; id++) {
         const post = posts[id];
         for (let keyword of post.keywords) {
             keywords.add(keyword);
         }
 
-        let normalized = removeAccents(post.title + " " + post.tags.map(tag => tag.name).join(' ') + post.textContent()).toLowerCase();
 
-        for (let match of normalized.matchAll(/([^\s])+/g)) {
-            const word = match[0];
-            if (word.length > 2) {
+        let text = removeAccents(post.title + " " + post.textContent()).toLowerCase();
+        let normalized = [
+            ...post.keywords,
+            ...[...text.matchAll(/([\w+#]+)/g)].map(m => m[1])
+        ].map(st => removeAccents(st).toLowerCase());
+
+        for (let word of normalized) {
+            if (word.length >= 2) {
                 const key = word;
                 let list = wordToIds.get(key) ?? new Set<number>();
                 list.add(id);
@@ -139,5 +141,6 @@ export function buildSearch(posts: Post[], styleSheet: ServerStyleSheet): string
         words
     }
 
+    console.log(Object.keys(words).length);
     return JSON.stringify(search);
 }

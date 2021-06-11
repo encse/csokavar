@@ -76,7 +76,7 @@ window.addEventListener("load", function () {
         let suggestionsItem = document.querySelector('[data-search-suggestions]')
 
         performSearch();
-        
+
         input.oninput = () => {
             performSearch();
         };
@@ -95,32 +95,90 @@ window.addEventListener("load", function () {
             if (input.value == "") {
                 return;
             }
-            const normalizedSearchString = normalizeString(input.value);
-            const searchStringWords = normalizedSearchString.split(" ");
-
-            let idxToPoint = new Map();
-
-            for (let key of Object.keys(searchIndex.words)) {
-                for (let searchString of searchStringWords) {
-                    if (key.indexOf(searchString) >= 0) {
-                        let point = 0;
-                        if (key == searchString) {
-                            point += 100 * searchString.length;
-                        } else if (key.startsWith(searchString)) {
-                            point += 6 * searchString.length;
-                        }
-                        for (let idx of searchIndex.words[key]) {
-                            if (!idxToPoint.has(idx)) {
-                                idxToPoint.set(idx, 0);
-                            }
-                            idxToPoint.set(idx, idxToPoint.get(idx) + point);
-                        }
+       
+            function intersect(idxToPointA, idxToPointB) {
+                var res = new Map();
+                for (idx of idxToPointA.keys()) {
+                    if (idxToPointB.has(idx)) {
+                        res.set(idx, idxToPointA.get(idx) + idxToPointB.get(idx));
                     }
+                }
+                return res;
+            }
+
+            function union(idxToPointA, idxToPointB) {
+                var res = new Map(idxToPointA);
+                for (idx of idxToPointB.keys()) {
+                    if (!res.has(idx)) {
+                        res.set(idx, 0);
+                    }
+                    res.set(idx, res.get(idx) + idxToPointB.get(idx));
+                }
+                return res;
+            }
+
+            function addPoints(idxToPoint, key, point){
+                for(let idx of searchIndex.words[key]){
+                    if (!idxToPoint.has(idx)) {
+                        idxToPoint.set(idx, 0);
+                    }
+                    idxToPoint.set(idx, idxToPoint.get(idx) + point);
                 }
             }
 
+            function findPrefixMatch(searchString) {
+                let idxToPoint = new Map();
+
+                for (let key of Object.keys(searchIndex.words)) {
+                    if (key.startsWith(searchString)) {
+                        let point = 0;
+                        if (key == searchString) {
+                            point += 100 * searchString.length;
+                        } else {
+                            point += 6 * searchString.length;
+                        }
+
+                        addPoints(idxToPoint, key, point);
+                    }
+                }
+                return idxToPoint;
+            }
+
+            function findPrefixMatches(normalizedSearchString) {
+                const searchStringWords = normalizedSearchString.split(" ");
+
+                let idxToPoint = new Map();
+                let first = true;
+                for (let searchString of searchStringWords) {
+                    if (first) {
+                        idxToPoint = findPrefixMatch(searchString);
+                        first = false;
+                    }
+                    else {
+                        idxToPoint = intersect(idxToPoint, findPrefixMatch(searchString));
+                    }
+                }
+                return idxToPoint;
+            }
+
+            function findExpressionMatch(normalizedSearchString) {
+                let idxToPoint = new Map();
+
+                for (let key of Object.keys(searchIndex.words)) {
+                    if (key === normalizedSearchString) {
+                        let point = 100 * normalizedSearchString.length;
+                        addPoints(idxToPoint, key, point);
+                    }
+                }
+                return idxToPoint;
+            }
+
+            const normalizedSearchString = normalizeString(input.value);
+
+            let idxToPoint = union(findExpressionMatch(normalizedSearchString), findPrefixMatches(normalizedSearchString))
+            
             for (let searchResult of [...idxToPoint.entries()]
-                .sort((a, b) => b[1] !== a[1])
+                .sort((a, b) => b[1] - a[1])
                 .filter(a => a[1] > 18)
             ) {
                 let idx = searchResult[0];
@@ -147,7 +205,7 @@ window.addEventListener("load", function () {
 
                 }
 
-                if (point > 0){
+                if (point > 0) {
                     if (!keywordToPoint.has(keyword)) {
                         keywordToPoint.set(keyword, 0);
                     }
@@ -162,7 +220,7 @@ window.addEventListener("load", function () {
                 suggestions = suggestions.filter(a => a[1] == maxPoint);
 
                 if (maxPoint < 100) {
-                
+
                     for (let suggestion of suggestions) {
                         let keyword = suggestion[0];
                         let item = document.createElement('div');
