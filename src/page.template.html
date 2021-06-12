@@ -25,6 +25,8 @@
             box-sizing: border-box;
             --xxl-text-size: 80px;
             --link-color: rgb(29 89 209);
+            --background-color: #1e1e1e;
+            --text-color: #c8c8c8;
         }
 
         @media only screen and (max-width:600px) {
@@ -34,16 +36,17 @@
         }
 
         body {
-            background: #1e1e1e;
             margin: 0;
             font-family: 'Noto Sans', sans-serif;
+            background: var(--background-color);
+            color: var(--text-color);
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        b, strong, h1, h2, h3 {
             font-weight: 700;
         }
 
-        h1, h2, h3, h4, h5, h6, p {
+        h1, h2, h3, p {
             margin: 24px 0;
         }
 
@@ -67,10 +70,6 @@
             line-height: 26px;
         }
 
-        b, strong {
-            font-weight: 700;
-        }
-
         a {
             color: inherit;
             text-decoration: underline;
@@ -80,58 +79,9 @@
             color: var(--link-color);
         }
 
-        main {
-            display: flex;
-            flex-direction: column;
-            max-width: 800px;
-            margin: auto;
-            padding: 16px;
-            color: #c8c8c8
-        }
-
-        main a:hover {
-            color: var(--link-color);
-        }
-
-        main article {
-            padding: 16px 0;
-        }
-
-        main article header a {
-            text-decoration: none
-        }
-
-        main article header h2 {
-            margin-bottom: 0;
-        }
-
-        main article section h1 a,
-        main article section h2 a,
-        main article section h3 a,
-        main article section h4 a,
-        main article section h5 a,
-        main article section h6 a {
+        header a, h1 a, h2 a, h3 a {
             text-decoration: none;
         }
-
-        blockquote {
-            margin: 0;
-            padding-left: 16px;
-            border-left: 8px solid var(--link-color);
-            font-style: italic;
-            font-weight: 700;
-        }
-
-        pre code,
-        .katex-display {
-            display: block;
-            background: #383838;
-            padding: 16px;
-            overflow: scroll;
-            border: 1px solid #45a29e;
-            border-radius: 4px
-        }
-
 
     </style>
     <title>{{ title }} &#8211; Csókavár</title>

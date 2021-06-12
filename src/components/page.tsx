@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { linkColor, textColor, xxlFontSize } from '../consts';
 import {TwitterLink, LinkedInLink, GitHubLink, SearchIcon} from './fontAwesame';
 
 export type PageProps = {
@@ -71,7 +72,6 @@ const SiteHeading = styled.section`
     
     @media only screen and (max-width:600px) {
         background: #1e1e1e;
-        color: #c8c8c8;
     }
 
     @media only screen and (min-width:601px) {
@@ -106,7 +106,7 @@ const HomePageHeading = styled(PageHeading)`
 `;
 
 const HomePageTitle = styled(PageTitle)`
-    font-size: var(--xxl-text-size);
+    font-size: ${xxlFontSize};
     line-height: 1.2;
     text-align: center;
 `;
@@ -116,7 +116,7 @@ const HomePageSubTitle = styled(PageSubTitle)`
         content: "";
         display: block;
         border-top: 2px solid #fff;
-        box-shadow: 0 0 0 .5px #c8c8c8;
+        box-shadow: 0 0 0 .5px ${textColor};
         width: 50%;
         margin: 16px auto;
     }
@@ -127,7 +127,6 @@ const ArticleFooter = styled.footer`
 `;
 
 const Footer = styled.footer`
-    color: #c8c8c8;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -197,9 +196,10 @@ const HamburgerIcon = styled.span`
         }
     }
 
-    background-color: #c8c8c8;
+    background-color: ${textColor};
+
     ${HamburgerButton}:hover & {
-        background-color: var(--link-color);
+        background-color: ${linkColor};
     }
 
     &,
@@ -257,6 +257,44 @@ const MenuItem = styled(HeaderLink)`
     padding: 8px 16px;
 `;
 
+const StyledMain = styled.main`
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 16px;
+    margin: auto;
+
+    article {
+        padding: 16px 0;
+    }
+`;
+
+const StyledPostContent = styled.section`
+
+    header h2 {
+        margin-bottom: 0;
+    }
+
+    blockquote {
+        margin: 0;
+        padding-left: 16px;
+        border-left: 8px solid ${textColor};
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    pre code,
+    .katex-display {
+        display: block;
+        background: #383838;
+        padding: 16px;
+        overflow: scroll;
+        border: 1px solid #45a29e;
+        border-radius: 4px
+    }
+
+`
+
 export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
     return <>
         <Header style={props.featuredImage}>
@@ -287,16 +325,16 @@ export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
             }
             
         </Header>
-        <main>
+        <StyledMain>
             <article>
-                <section>
+                <StyledPostContent>
                     {props.postContent}
-                </section>
+                </StyledPostContent>
                 <ArticleFooter>
                     {props.footer}
                 </ArticleFooter>
             </article>
-        </main>
+        </StyledMain>
         <Footer>
             <SocialLinks>
                 <TwitterLink href="https://twitter.com/encse" />
