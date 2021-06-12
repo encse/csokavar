@@ -12,4 +12,4 @@ tags:
 
 ### A nap mondása (ND)
 
-\- Milyen nagy a belem!
+– Milyen nagy a belem!

@@ -10,7 +10,7 @@ tags:
 
 Imígyen:
 
-<iframe loading="lazy" width="100%" height="800" allowfullscreen="" allow="autoplay; fullscreen" src="https://tabla.csokavar.hu"></iframe>
+[iframe src="https://tabla.csokavar.hu"]
 
 Próbáljuk megtalálni az elrejtett részleteket:
 

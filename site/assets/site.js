@@ -178,7 +178,7 @@ window.addEventListener("load", function () {
             let idxToPoint = union(findExpressionMatch(normalizedSearchString), findPrefixMatches(normalizedSearchString))
             
             for (let searchResult of [...idxToPoint.entries()]
-                .sort((a, b) => b[1] - a[1])
+                .sort((a, b) => b[1] - a[1] != 0 ? b[1] - a[1] : b[0] - a[0]) // same points -> reverse chronological order
                 .filter(a => a[1] > 18)
             ) {
                 let idx = searchResult[0];

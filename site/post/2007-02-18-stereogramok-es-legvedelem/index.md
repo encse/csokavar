@@ -16,13 +16,13 @@ Vegyük az alábbi képet. Ez csak látszólag gyerekrajz, valójában Ágotáv
 
 Mivel Bodri, a kerítés, a fák, a ház és a háttér külön layereken voltak, könnyű volt őket egymáshoz képest csúsztatgatni. Ezzel tudtam elérni, hogy az alábbi térhatású képeken, látszólag egymás mögötti síkokon úszva jelennek meg. Amikor a jobb szemmel látott képhez képest a bal szemmel látottat készítettem, az egyes layereken levő dolgokat más-más mértékben toltam el jobbra. (A perspektíva szabályainak megfelelően a távolabbiakat kevésbé, a kerítés előtt levő Bodrit a leginkább.) Lássuk az eredményt!
 
-1\. Az alábbi módszert a gimis fizikakönyvemből tanultam. Fogjuk a két képet, tükrözzük az egyiket, majd helyezzük őket egymás mellé, valahogy így:
+1. Az alábbi módszert a gimis fizikakönyvemből tanultam. Fogjuk a két képet, tükrözzük az egyiket, majd helyezzük őket egymás mellé, valahogy így:
 
 ![haz_inv](images/haz_inv-500x234.png)
 
 Fogjunk egy síktükröt, és az egyik szemünkkel a baloldali képet nézve, másikkal pedig a tükrön keresztül a jobboldalit, mozgassuk a tükröt addig, míg a két kép egymásba nem olvad.
 
-2\. Aztán itt van ez, amit az új könyvem ihletett (majd arról is írok egyszer):
+2. Aztán itt van ez, amit az új könyvem ihletett (majd arról is írok egyszer):
 
 ![haz_ph](images/haz_ph-500x234.png)
 
@@ -30,7 +30,7 @@ Fókuszáljunk a kép mögé, valahova a monitor túloldalára. Ha sikerül, a t
 
 Talán kicsit egyszerűbb a képet meglátni, ha valahogy elszeparáljuk a szemeinket. Régebben csináltak olyan látcsőszerű izéket, amiből a lencséket kiszedték, és helyére ugyanannak a dolognak két, kicsit eltérő szögből készült fényképét tették. Tulajdonképpen elég egy DVD tokot (vagy valamit) a két szemünk közé tartani úgy, hogy egy szemünkkel csak a kép egyik felét lássuk. Ha sikerül, megszűnik a szellemkép, és csak egy ház marad középen.
 
-3\. A fenti tulajdonképpen a [tapéta effektus](http://en.wikipedia.org/wiki/Autostereogram) legegyszerűbb esete. A lényeg itt is az, hogy két képrészlet különböző ismétlődéseit az agy "egybeolvasztva" értelmezi. Ha az ismétlődés nem pontos, azaz kicsit elcsúsztatjuk a képrészleteket, különböző magasságban lebegő síkidomokat kapunk. A képen Bodri 'követési távolsága' a legkisebb, aztán jön a kerítés, utána a fák és így tovább. Figyeljük meg, hogy a kép jobb szélén a kerítés már nem is a ház előtt van, teljesen kiesett a szinkronból.
+3. A fenti tulajdonképpen a [tapéta effektus](http://en.wikipedia.org/wiki/Autostereogram) legegyszerűbb esete. A lényeg itt is az, hogy két képrészlet különböző ismétlődéseit az agy "egybeolvasztva" értelmezi. Ha az ismétlődés nem pontos, azaz kicsit elcsúsztatjuk a képrészleteket, különböző magasságban lebegő síkidomokat kapunk. A képen Bodri 'követési távolsága' a legkisebb, aztán jön a kerítés, utána a fák és így tovább. Figyeljük meg, hogy a kép jobb szélén a kerítés már nem is a ház előtt van, teljesen kiesett a szinkronból.
 
 ![sorhaz](images/sorhaz.png) A megtekintéshez ugyanúgy a távolba kell fókuszálni mint a második példában, de talán érdemes a képet kinagyítani előbb. (Katt.)
 

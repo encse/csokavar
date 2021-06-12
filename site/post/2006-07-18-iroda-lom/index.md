@@ -15,10 +15,10 @@ Lassan kifejlesztjük a negyedik dimenzióban forgatás képességét is. Ez el
 
 Az ördöglakatokon kívül még Cactus térképész barátnője is általános derültséget okozott, aki valamelyik nap ötször telefonált, hogy hogyan juthat vissza a városba. Kicsit eltévedt, pedig csak BKV-t használt. Térképész, értik...
 
-\- A vágóhídnál?! Te jó ég... Semmi gond, kihozunk onnan, csak nyugodj meg.
+– A vágóhídnál?! Te jó ég... Semmi gond, kihozunk onnan, csak nyugodj meg.
 
 Aztán persze beindult a f�szkodás, és hamarosan átváltottunk mátrixos hangvételre:
 
-\- Kijárat? Van egy készen az aluljáróban. Öt perc múlva.
+– Kijárat? Van egy készen az aluljáróban. Öt perc múlva.
 
 Tegnaptól van egy új kollégánk is: Lőrentey Károly. Együtt kezdtük az egyetemet, de szerintem ő már nem emlékszik rám. Honlapja is van: [lorentey.hu](http://lorentey.hu/)

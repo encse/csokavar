@@ -1283,13 +1283,6 @@
 			"srcPath": "site/post/2008-09-03-tuti-bank/images/logo.png"
 		},
 		{
-			"cdnPath": "/assets/c310765b-da64-554c-a0b7-302df0a01aa5.jpg",
-			"dominantColor": "rgb(123, 127, 133)",
-			"height": 640,
-			"width": 1024,
-			"srcPath": "site/post/2008-09-04-a-programozo-otthona/images/0191162_PE345209_S5.jpg"
-		},
-		{
 			"cdnPath": "/assets/85897164-ea91-5224-a133-4ea3b30c118f.jpg",
 			"dominantColor": "rgb(102, 106, 108)",
 			"height": 640,
@@ -3024,6 +3017,13 @@
 			"height": 336,
 			"width": 456,
 			"srcPath": "site/assets/backgrounds/tokfej/8eac26c0cfffa771658bdbb663bfdbcc.gif"
+		},
+		{
+			"cdnPath": "/assets/eba0b4b7-8519-5f7b-926c-2730b134501e.png",
+			"dominantColor": "rgb(124, 13, 12)",
+			"height": 659,
+			"width": 989,
+			"srcPath": "site/assets/backgrounds/rajz/ezgif-2-0617c10ffdf5.png"
 		}
 	]
 }

@@ -7,7 +7,6 @@ tags:
   - "geekség"
   - "isc"
   - "matematika"
-coverImage: images/0191162_PE345209_S5.jpg
 ---
 
 Beszélgettünk Dávid kollégával, és megint előkerültek a geek lét előnyei. Mert annyira büszke a vízmértékes esetre (joggal, mindjárt kivesézem). Én meg ezúttal azzal vágtam vissza, hogy miért mit gondol, nálam tán nem 17 csipesszel van feltéve a függöny?

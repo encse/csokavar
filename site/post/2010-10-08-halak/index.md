@@ -3,7 +3,6 @@ title: "Halak"
 date: "2010-10-08"
 tags: 
   - "rajz"
-coverImage: images/Untitled-2.png
 ---
 
 Gondoltam jó lenne valami kép a baba szobájába. Rajzoltam egyet gyorsan:
