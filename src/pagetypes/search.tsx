@@ -1,12 +1,13 @@
-import { removeAccents } from "./util";
-import { AssetManager, ImageAsset } from './assets';
-import { Template, PageTemplateProps, Post } from './post';
+import { removeAccents } from "../util";
+import { AssetManager, ImageAsset } from '../assets';
+import { Post } from './post';
 import * as React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { PostList } from './postList';
 import styled from 'styled-components';
 import { ServerStyleSheet } from 'styled-components';
-import { linkColor } from "./baseStyle";
+import { linkColor } from "../template/baseStyle";
+import { PageTemplateProps, Template } from "../template/template";
 
 const SearchWrapper = styled.div`
     position:relative;

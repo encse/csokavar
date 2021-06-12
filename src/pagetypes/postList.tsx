@@ -1,9 +1,10 @@
-import { formatDate } from "./util";
+import { formatDate } from "../util";
 import * as React from 'react';
 import path from 'path';
-import { Template, PageTemplateProps, Post } from './post';
-import { ImageAsset } from "./assets";
+import { ImageAsset } from "../assets";
 import styled from 'styled-components';
+import { Post } from "./post";
+import { PageTemplateProps, Template } from "../template/template";
 
 const Title = styled.h2``;
 

@@ -1,18 +1,15 @@
 import fs from 'fs';
 import path, { ParsedPath } from 'path';
-import { Post, Page, PageTemplateProps, Template } from './post';
-import { PostList } from "./postList";
-import { chunks, pick, slugify } from './util';
-import ReactDOMServer from 'react-dom/server';
-import React from 'react';
+import { Post } from './pagetypes/post';
+import { Page } from "./pagetypes/page";
+import { PostList } from "./pagetypes/postList";
+import { chunks } from './util';
 import { AssetManager, ImageAsset } from './assets';
 import { Tag } from './tag';
 import process from 'process';
-import { ServerStyleSheet } from 'styled-components';
-import { PageComponent } from './components/page';
-import { buildSearch, SearchPage } from './search';
-import { isContext } from 'vm';
-import { baseStyle } from './baseStyle';
+
+import { SearchPage } from './pagetypes/search';
+import { getTemplate, PageTemplateProps, Template } from './template/template';
 
 type Settings = {
     'cdn': string,
@@ -33,18 +30,6 @@ const config: { [key: string]: Settings } = {
 const settings = config[process.argv[2]];
 console.log(settings);
 
-
-function renderReactChild(child: React.ReactChild | null, styleSheet: ServerStyleSheet): string {
-    if (child == null) {
-        return '';
-    } else if (typeof (child) === 'string') {
-        return child;
-    } else if (typeof (child) === 'number') {
-        return '' + child;
-    } else {
-        return ReactDOMServer.renderToStaticMarkup(styleSheet.collectStyles(child));
-    }
-}
 
 function* files(root: string, dir: string = ''): Iterable<ParsedPath> {
     for (let file of fs.readdirSync(path.resolve(root, dir))) {
@@ -73,10 +58,10 @@ function collectPostlike<T>(dir: string, assetManager: AssetManager, create: (fp
 type FileWriter = (fpat: string, content: string | NodeJS.ArrayBufferView) => void;
 
 async function generate(fpatIn: string, writeFile: FileWriter) {
-    const templateHtml = fs.readFileSync(path.join(fpatIn, 'src/page.template.html'), 'utf8');
 
     const assetManager = new AssetManager(settings.dev, settings.cdn, ".media");
 
+    const template = getTemplate(fpatIn, assetManager);
     let success: boolean = true;
 
     async function guardAsync<T>(fpat: string, cb: () => Promise<void>): Promise<void> {
@@ -89,31 +74,7 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
         }
     }
 
-    const template = (props: PageTemplateProps) => {
-        const coverImage = props.coverImage;
-        const featuredImage: React.CSSProperties = {
-            backgroundImage: `url(${coverImage.url})`,
-            backgroundColor: coverImage.dominantColor
-        };
-
-        const styleSheet = props.styleSheet ?? new ServerStyleSheet();
-        const page = renderReactChild(
-            <PageComponent
-                featuredImage={featuredImage}
-                footer={props.footer}
-                postContent={props.postContent}
-                subtitle={props.subtitle}
-                title={props.title}
-                homePageHeading={props.homePageHeading}
-            />, styleSheet);
-
-        return templateHtml
-            .replace('{{ site.js }}', assetManager.lookup('site/assets/site.js', "jsAsset").url.toString())
-            .replace('{{ style }}', styleSheet.getStyleTags() + baseStyle)
-            .replace('{{ page }}', page)
-            .replace('{{ title }}', props.title);
-    };
-
+    
 
     for (let assetPath of [...files('site')].filter(fpat => fpat.base !== 'index.md')) {
         await guardAsync(assetPath.name, () => assetManager.register(assetPath));
@@ -224,9 +185,10 @@ async function build() {
             fs.writeFileSync(fpat, content);
         })
 
-        fs.rmdirSync("build", { recursive: true });
-        fs.renameSync(tmpDir, "build");
-
+        if (success){
+            fs.rmdirSync("build", { recursive: true });
+            fs.renameSync(tmpDir, "build");
+        }
         return success;
     } finally {
         if (fs.existsSync(tmpDir)) {

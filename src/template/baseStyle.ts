@@ -1,4 +1,4 @@
-import {fontFace as fontAwesome} from './components/fontAwesame';
+import {fontFace as fontAwesome} from '../components/fontAwesame';
 
 export const linkColor = '#1d59d1';
 export const xxlFontSize = 'var(--xxl-text-size)';

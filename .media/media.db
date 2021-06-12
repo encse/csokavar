@@ -2851,53 +2851,11 @@
 			"srcPath": "site/post/2016-03-12-nes-emulator/images/super_mario_bros.0-e1457822735742.jpg"
 		},
 		{
-			"cdnPath": "/assets/9f415f3e-bd9b-54fb-81b3-975405c5ee07.jpg",
-			"dominantColor": "rgb(110, 79, 55)",
-			"height": 2560,
-			"width": 1920,
-			"srcPath": "site/post/2021-01-05-4695/images/img_2908.jpg"
-		},
-		{
-			"cdnPath": "/assets/53793a57-555c-5ed7-af2a-86a1b7a19ce6.jpg",
-			"dominantColor": "rgb(147, 137, 124)",
-			"height": 1920,
-			"width": 2560,
-			"srcPath": "site/post/2021-01-05-4695/images/img_2920.jpg"
-		},
-		{
-			"cdnPath": "/assets/62855715-bf8e-5a8e-bab9-f2515b4ad9ee.jpg",
-			"dominantColor": "rgb(142, 134, 118)",
-			"height": 2560,
-			"width": 1920,
-			"srcPath": "site/post/2021-01-05-4695/images/img_2936.jpg"
-		},
-		{
-			"cdnPath": "/assets/61a08ce4-df11-5125-ade0-0fccfadc7260.jpg",
-			"dominantColor": "rgb(151, 128, 102)",
-			"height": 1920,
-			"width": 2560,
-			"srcPath": "site/post/2021-01-05-4695/images/img_2952.jpg"
-		},
-		{
-			"cdnPath": "/assets/bcb0654e-f03d-5834-8531-10459d6a60f0.jpg",
-			"dominantColor": "rgb(155, 137, 115)",
-			"height": 1920,
-			"width": 2560,
-			"srcPath": "site/post/2021-01-05-4695/images/img_2988.jpg"
-		},
-		{
 			"cdnPath": "/assets/72f88780-377c-5111-834a-0cdc71e7e889.jpg",
 			"dominantColor": "rgb(98, 98, 98)",
 			"height": 943,
 			"width": 1024,
 			"srcPath": "site/post/2010-11-20-napelem-keszitese-hazilag/images/IK1-1.jpg"
-		},
-		{
-			"cdnPath": "/assets/83c763a2-aeb7-5f55-87eb-c385bb9c0ae4.jpeg",
-			"dominantColor": "rgb(110, 76, 39)",
-			"height": 900,
-			"width": 900,
-			"srcPath": "site/post/2021-01-05-4695/images/bg.jpeg"
 		},
 		{
 			"cdnPath": "/assets/e3db942b-ef3f-5d07-adff-7d4f1591fe2c.jpeg",
@@ -3024,6 +2982,48 @@
 			"height": 659,
 			"width": 989,
 			"srcPath": "site/assets/backgrounds/rajz/ezgif-2-0617c10ffdf5.png"
+		},
+		{
+			"cdnPath": "/assets/d49e6a58-663a-5359-9057-6ce47e85492d.jpeg",
+			"dominantColor": "rgb(110, 76, 39)",
+			"height": 900,
+			"width": 900,
+			"srcPath": "site/post/2021-01-05-pekeskedes/images/bg.jpeg"
+		},
+		{
+			"cdnPath": "/assets/0dafee72-3530-5305-b0e9-8527c6b4a7dc.jpg",
+			"dominantColor": "rgb(110, 79, 55)",
+			"height": 2560,
+			"width": 1920,
+			"srcPath": "site/post/2021-01-05-pekeskedes/images/img_2908.jpg"
+		},
+		{
+			"cdnPath": "/assets/7ab02528-9a48-5c4e-aa17-ef7d9ccf8d76.jpg",
+			"dominantColor": "rgb(147, 137, 124)",
+			"height": 1920,
+			"width": 2560,
+			"srcPath": "site/post/2021-01-05-pekeskedes/images/img_2920.jpg"
+		},
+		{
+			"cdnPath": "/assets/5bea57a6-5dc1-55a6-a770-25c800d1890b.jpg",
+			"dominantColor": "rgb(142, 134, 118)",
+			"height": 2560,
+			"width": 1920,
+			"srcPath": "site/post/2021-01-05-pekeskedes/images/img_2936.jpg"
+		},
+		{
+			"cdnPath": "/assets/094648cf-b05b-5418-9b34-4c83bba1480c.jpg",
+			"dominantColor": "rgb(151, 128, 102)",
+			"height": 1920,
+			"width": 2560,
+			"srcPath": "site/post/2021-01-05-pekeskedes/images/img_2952.jpg"
+		},
+		{
+			"cdnPath": "/assets/9622d7b9-d107-54a8-839b-16abcd157cf7.jpg",
+			"dominantColor": "rgb(155, 137, 115)",
+			"height": 1920,
+			"width": 2560,
+			"srcPath": "site/post/2021-01-05-pekeskedes/images/img_2988.jpg"
 		}
 	]
 }
