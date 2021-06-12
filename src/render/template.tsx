@@ -1,5 +1,5 @@
 import { ServerStyleSheet } from 'styled-components';
-import { AssetManager, ImageAsset, JsAsset } from '../assets';
+import { AssetManager, ImageAsset } from '../assets';
 import React from 'react';
 import { PageComponent } from './page';
 import ReactDOMServer from 'react-dom/server';

@@ -227,6 +227,7 @@ window.addEventListener("load", function () {
                         suggestionsItem.appendChild(item);
                         let link = document.createElement('a');
                         link.setAttribute('href', '#');
+                        link.setAttribute('tabindex', '0');
                         item.appendChild(link)
                         link.innerHTML = keyword;
                         item.onclick = () => {

@@ -159,7 +159,7 @@ export class AssetManager {
         return res;
     }
 
-    lookupAsset<T extends AssetKind>(fpat: string): Asset {
+    lookupAsset(fpat: string): Asset {
         const res = this.tryLookupAsset(fpat);
         if (res != null) {
             return res;

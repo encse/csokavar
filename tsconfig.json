@@ -2,8 +2,8 @@
   "compilerOptions": {
     "target": "es2020",
     "esModuleInterop": true,
-    // "noUnusedLocals": true /* Report errors on unused locals. */,
-    // "noUnusedParameters": true /* Report errors on unused parameters. */,
+    "noUnusedLocals": true /* Report errors on unused locals. */,
+    "noUnusedParameters": true /* Report errors on unused parameters. */,
     "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
     "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
     "moduleResolution": "node",

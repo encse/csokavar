@@ -6,7 +6,7 @@ export class Tag {
     public readonly backgrounds: readonly ImageAsset[];
     constructor(
         public readonly name: string, 
-        private assetManager: AssetManager
+        assetManager: AssetManager
     ) {
         let slug = slugify(name);
         this.uri = `/blog/tag/${slug}`;

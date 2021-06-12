@@ -27,7 +27,7 @@ const Iframe = styled.iframe`
     border: 0;
 `;
 
-export function render(token: Token, ctx: RenderContext) {
+export function render(token: Token, _ctx: RenderContext) {
     let src = token.attrGet('src');
 
     return <IframeContainer>

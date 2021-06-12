@@ -25,8 +25,22 @@ const config: { [key: string]: Settings } = {
     }
 }
 
-const settings = config[process.argv[2]];
-console.log(settings);
+function header(settings: Settings){
+    console.log(`
+         ██████╗███████╗ ██████╗ ██╗  ██╗ █████╗ ██╗   ██╗ █████╗ ██████╗ 
+        ██╔════╝██╔════╝██╔═══██╗██║ ██╔╝██╔══██╗██║   ██║██╔══██╗██╔══██╗
+        ██║     ███████╗██║   ██║█████╔╝ ███████║██║   ██║███████║██████╔╝
+        ██║     ╚════██║██║   ██║██╔═██╗ ██╔══██║╚██╗ ██╔╝██╔══██║██╔══██╗
+        ╚██████╗███████║╚██████╔╝██║  ██╗██║  ██║ ╚████╔╝ ██║  ██║██║  ██║ 
+    `);
+
+    for (let key of Object.keys(settings)){
+        console.log(`\t${key}:\t${settings[key]}`);
+    }
+
+}
+
+
 
 function* files(root: string, dir: string = ''): Iterable<ParsedPath> {
     for (let file of fs.readdirSync(path.resolve(root, dir))) {
@@ -41,7 +55,7 @@ function* files(root: string, dir: string = ''): Iterable<ParsedPath> {
     }
 };
 
-function collectPostlike<T>(dir: string, assetManager: AssetManager, create: (fpat: string, markdown: string) => T): T[] {
+function collectPostlike<T>(dir: string, create: (fpat: string, markdown: string) => T): T[] {
     const result: T[] = [];
     for (const item of fs.readdirSync(dir)) {
         const fpat = path.join(dir, item, 'index.md')
@@ -53,13 +67,13 @@ function collectPostlike<T>(dir: string, assetManager: AssetManager, create: (fp
 
 type FileWriter = (fpat: string, content: string | NodeJS.ArrayBufferView) => void;
 
-async function generate(fpatIn: string, writeFile: FileWriter) {
+async function generate(writeFile: FileWriter) {
 
     const assetManager = new AssetManager(settings.dev, settings.cdn, ".media");
 
     let success: boolean = true;
 
-    async function guardAsync<T>(fpat: string, cb: () => Promise<void>): Promise<void> {
+    async function guardAsync(fpat: string, cb: () => Promise<void>): Promise<void> {
         try {
             await cb();
         } catch (e) {
@@ -75,13 +89,11 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
 
     const pages: Page[] = collectPostlike(
         'site/page',
-        assetManager,
         (fpat, md) => new Page(fpat, md, assetManager)
     );
 
     const posts: Post[] = collectPostlike(
         'site/post',
-        assetManager,
         (fpat, md) => new Post(fpat, md, assetManager)
     );
 
@@ -167,13 +179,15 @@ async function generateList(
     }
 }
 
-async function build() {
+async function build(settings: Settings) {
+
+    header(settings);
 
     const tmpDir = fs.mkdtempSync("build_");
     try {
         fs.chmodSync(tmpDir, 0o755);
 
-        let success = await generate('.', (fpat: string, content: string | NodeJS.ArrayBufferView) => {
+        let success = await generate((fpat: string, content: string | NodeJS.ArrayBufferView) => {
             fpat = path.join(tmpDir, fpat);
             fs.mkdirSync(path.parse(fpat).dir, { recursive: true });
             fs.writeFileSync(fpat, content);
@@ -191,7 +205,8 @@ async function build() {
     }
 }
 
-build().then(success => {
+const settings = config[process.argv[2]];
+build(settings).then(success => {
     if (!success) {
         process.exitCode = 1;
     }

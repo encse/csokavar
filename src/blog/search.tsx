@@ -27,8 +27,6 @@ const Search = styled.div`
     flex-wrap: wrap;
     color: black;
     overflow:hidden;
-
-  
 `;
 
 const SearchInput = styled.input`

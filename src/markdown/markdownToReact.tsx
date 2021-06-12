@@ -37,7 +37,6 @@ function getProps(attrs: [string, string][] | null) {
 
 export function render(tokens: Token[], ctx: RenderContext, markdownIt: MarkdownIt): React.ReactElement<any> {
 
-    let i = 0;
     let stack: React.ReactElement<any>[][] = [[]];
     let tokenStack: Token[] = [];
     function children() {
@@ -115,7 +114,7 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
 }
 
 
-export function markdownToTextContent(md: string, assetManager: AssetManager, fpat: string): string {
+export function markdownToTextContent(md: string): string {
     const markdownIt = MarkdownIt({ html: true })
         .use(markdownKatex, { output: "html", errorColor: "#cc0000" })
         .use(iframePlugin.plugin)

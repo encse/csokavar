@@ -50,7 +50,7 @@ export class Post {
     }
 
     textContent(): string {
-       return markdownToTextContent(this.mdContent, this.assetManager, this.fpat);
+       return markdownToTextContent(this.mdContent);
     }
 
     async render(): Promise<string> {
