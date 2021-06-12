@@ -67,6 +67,8 @@ const SiteHeading = styled.section`
     display: flex;
     flex-wrap: wrap;
     position: absolute;
+    z-index:100;
+    
     @media only screen and (max-width:600px) {
         background: #1e1e1e;
         color: #c8c8c8;
@@ -92,6 +94,10 @@ const PageHeading = styled.div`
     max-width: 800px;
     padding: 0 16px;
     width: 100%;
+
+    @media only screen and (max-width:600px) {
+        padding-top: 32px;
+    }
 `;
 
 

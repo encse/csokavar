@@ -27,6 +27,8 @@ const Search = styled.div`
     flex-wrap: wrap;
     color: black;
     overflow:hidden;
+
+  
 `;
 
 const SearchInput = styled.input`
@@ -54,6 +56,11 @@ const SearchSuggestions = styled.div`
             color: white;
             
         }
+    }
+
+    display: none;
+    ${Search}:focus-within & {
+        display:block;
     }
 `;
 
