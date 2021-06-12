@@ -7,9 +7,7 @@ import { chunks } from './util';
 import { AssetManager, ImageAsset } from './assets';
 import { Tag } from './tag';
 import process from 'process';
-
 import { SearchPage } from './pagetypes/search';
-import { getTemplate, PageTemplateProps, Template } from './template/template';
 
 type Settings = {
     'cdn': string,
@@ -30,7 +28,6 @@ const config: { [key: string]: Settings } = {
 const settings = config[process.argv[2]];
 console.log(settings);
 
-
 function* files(root: string, dir: string = ''): Iterable<ParsedPath> {
     for (let file of fs.readdirSync(path.resolve(root, dir))) {
         const fpat = path.join(dir, file);
@@ -43,7 +40,6 @@ function* files(root: string, dir: string = ''): Iterable<ParsedPath> {
         }
     }
 };
-
 
 function collectPostlike<T>(dir: string, assetManager: AssetManager, create: (fpat: string, markdown: string) => T): T[] {
     const result: T[] = [];
@@ -61,7 +57,6 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
 
     const assetManager = new AssetManager(settings.dev, settings.cdn, ".media");
 
-    const template = getTemplate(fpatIn, assetManager);
     let success: boolean = true;
 
     async function guardAsync<T>(fpat: string, cb: () => Promise<void>): Promise<void> {
@@ -74,8 +69,6 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
         }
     }
 
-    
-
     for (let assetPath of [...files('site')].filter(fpat => fpat.base !== 'index.md')) {
         await guardAsync(assetPath.name, () => assetManager.register(assetPath));
     }
@@ -83,13 +76,13 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
     const pages: Page[] = collectPostlike(
         'site/page',
         assetManager,
-        (fpat, md) => new Page(template, fpat, md, assetManager)
+        (fpat, md) => new Page(fpat, md, assetManager)
     );
 
     const posts: Post[] = collectPostlike(
         'site/post',
         assetManager,
-        (fpat, md) => new Post(template, fpat, md, assetManager)
+        (fpat, md) => new Post(fpat, md, assetManager)
     );
 
     for (const p of [...posts, ...pages]) {
@@ -107,9 +100,9 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
     }
 
     generateList(
+        assetManager,
         posts,
         '/',
-        template,
         'Csókavár',
         'Németh Cs. Dávid blogja',
         assetManager.lookup('site/assets/main-bg.jpg', "imageAsset"),
@@ -130,9 +123,9 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
             console.log(tag.name);
         }
         await generateList(
+            assetManager,
             posts.filter(post => post.tags.some(t => t.uri === tag.uri)),
             tag.uri,
-            template,
             tag.name,
             '',
             assetManager.lookup('site/assets/main-bg.jpg', "imageAsset"),
@@ -140,7 +133,7 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
         )
     }
 
-    const search = new SearchPage(template, assetManager, posts);
+    const search = new SearchPage(assetManager, posts);
     writeFile(path.join(search.uri, 'index.html'), await search.render());
 
     return success;
@@ -148,9 +141,9 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
 
 
 async function generateList(
+    assetManager: AssetManager,
     posts: Post[],
     baseUri: string,
-    template: Template<PageTemplateProps>,
     title: string,
     subtitle: string,
     coverImage: ImageAsset,
@@ -160,7 +153,8 @@ async function generateList(
     let chunkSize = 5;
     for (let chunk of chunks([...posts].sort((a, b) => b.date.getTime() - a.date.getTime()), chunkSize)) {
 
-        const postList = new PostList(template,
+        const postList = new PostList(
+            assetManager,
             title,
             subtitle,
             coverImage,

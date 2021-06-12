@@ -7,13 +7,12 @@ import { PostList } from './postList';
 import styled from 'styled-components';
 import { ServerStyleSheet } from 'styled-components';
 import { linkColor } from "../template/baseStyle";
-import { PageTemplateProps, Template } from "../template/template";
+import { template } from "../template/template";
 
 const SearchWrapper = styled.div`
     position:relative;
     width: 100%;
 `;
-
 
 const Search = styled.div`
     position:absolute;
@@ -72,10 +71,8 @@ export class SearchPage {
     readonly uri: string;
     readonly coverImage: ImageAsset;
     readonly mdContent: string;
-    readonly #template: Template<PageTemplateProps>;
 
     constructor(
-        template: Template<PageTemplateProps>,
         private assetManager: AssetManager,
         private posts: Post[],
     ) {
@@ -84,7 +81,6 @@ export class SearchPage {
         this.subtitle = null;
         this.uri = '/search/';
         this.coverImage = assetManager.lookup('site/assets/backgrounds/generic/street.gif', "imageAsset");
-        this.#template = template;
     }
 
     async render(): Promise<string> {
@@ -96,8 +92,9 @@ export class SearchPage {
             <div data-search-result></div>
         </div>
 
-        return this.#template(
+        return template(
             {
+                assetManager: this.assetManager,
                 homePageHeading: true,
                 title: this.title,
                 subtitle: <SearchWrapper>
@@ -115,7 +112,7 @@ export class SearchPage {
     }
 }
 
-export function buildSearch(posts: Post[], styleSheet: ServerStyleSheet): string {
+function buildSearch(posts: Post[], styleSheet: ServerStyleSheet): string {
     let wordToIds = new Map<string, Set<number>>();
     let keywords = new Set<string>();
 
@@ -124,7 +121,6 @@ export function buildSearch(posts: Post[], styleSheet: ServerStyleSheet): string
         for (let keyword of post.keywords) {
             keywords.add(keyword);
         }
-
 
         let text = removeAccents(post.title + " " + post.textContent()).toLowerCase();
         let normalized = [

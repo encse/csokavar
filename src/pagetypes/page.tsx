@@ -3,8 +3,7 @@ import { slugify } from "../util";
 import { AssetManager, ImageAsset } from '../assets';
 import { markdownToReact } from '../markdown/markdownToReact';
 import { resolve } from 'url';
-import { PageTemplateProps, Template } from '../template/template';
-
+import { template } from '../template/template';
 
 export class Page {
     readonly title: string;
@@ -12,10 +11,8 @@ export class Page {
     readonly coverImage: ImageAsset | null;
     readonly uri: string;
     readonly mdContent: string;
-    readonly #template: Template<PageTemplateProps>;
 
     constructor(
-        template: Template<PageTemplateProps>,
         private fpat: string,
         md: string,
         private assetManager: AssetManager
@@ -30,14 +27,14 @@ export class Page {
 
         this.coverImage = this.assetManager.lookup(resolve(fpat, metadata.coverImage), "imageAsset");
 
-        this.#template = template;
         this.mdContent = content;
     }
 
     async render(): Promise<string> {
         const html = markdownToReact(this.mdContent, this.assetManager, this.fpat);
-        return this.#template(
+        return template(
             {
+                assetManager: this.assetManager,
                 homePageHeading: true,
                 title: this.title,
                 subtitle: this.subtitle,

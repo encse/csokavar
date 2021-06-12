@@ -6,8 +6,7 @@ import { Tag } from '../tag';
 import { markdownToReact, markdownToReactExcerpt, markdownToTextContent } from '../markdown/markdownToReact';
 import {resolve} from 'url';
 import { TagsIcon } from '../components/fontAwesame';
-import { PageTemplateProps, Template } from '../template/template';
-
+import { template } from '../template/template';
 
 export class Post {
     readonly title: string;
@@ -16,12 +15,10 @@ export class Post {
     readonly tags: Tag[];
     readonly keywords: string[];
     readonly mdContent: string;
-    readonly #template: Template<PageTemplateProps>;
     readonly uri: string;
     readonly excerpt: React.ReactElement<any>;
 
     constructor(
-        template: Template<PageTemplateProps>,
         private fpat: string,
         md: string,
         private assetManager: AssetManager
@@ -33,7 +30,6 @@ export class Post {
         this.tags = (metadata.tags || []).map(name => new Tag(name, assetManager));
         this.keywords = [...(metadata.keywords || []), ...(metadata.tags || []), metadata.title];
 
-        this.#template = template;
         this.mdContent = content;
 
         const slug = metadata.slug || slugify(this.title);
@@ -70,8 +66,9 @@ export class Post {
         }
 
         const html = markdownToReact(this.mdContent, this.assetManager, this.fpat);
-        return this.#template(
+        return template(
             {
+                assetManager: this.assetManager,
                 homePageHeading: false,
                 title: this.title,
                 subtitle: <time className="posted-on" dateTime={this.date.toISOString()}>{formatDate(this.date)}</time>,

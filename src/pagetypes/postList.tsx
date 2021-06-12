@@ -1,10 +1,10 @@
 import { formatDate } from "../util";
 import * as React from 'react';
 import path from 'path';
-import { ImageAsset } from "../assets";
+import { AssetManager, ImageAsset } from "../assets";
 import styled from 'styled-components';
 import { Post } from "./post";
-import { PageTemplateProps, Template } from "../template/template";
+import { template } from "../template/template";
 
 const Title = styled.h2``;
 
@@ -36,14 +36,12 @@ const NextPage = styled(PageLink)`
     text-align: right;
 `;
 
-
-
 export class PostList {
 
     readonly uri: string;
 
     constructor(
-        private readonly template: Template<PageTemplateProps>,
+        private readonly assetManager: AssetManager,
         private readonly title: string,
         private readonly subtitle: string,
         private readonly coverImage: ImageAsset,
@@ -93,7 +91,8 @@ export class PostList {
             );
         }
 
-        return this.template({
+        return template({
+            assetManager: this.assetManager,
             homePageHeading: true,
             title: this.title, 
             subtitle: this.subtitle,

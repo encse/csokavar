@@ -1,13 +1,12 @@
 import { ServerStyleSheet } from 'styled-components';
-import { AssetManager, ImageAsset } from '../assets';
-import path from 'path';
-import fs from 'fs';
+import { AssetManager, ImageAsset, JsAsset } from '../assets';
 import React from 'react';
 import { PageComponent } from '../components/page';
 import { baseStyle } from './baseStyle';
 import ReactDOMServer from 'react-dom/server';
 
-export type PageTemplateProps = {
+export type TemplateProps = {
+    assetManager: AssetManager,
     homePageHeading: boolean,
     title: string,
     subtitle: React.ReactChild,
@@ -17,21 +16,16 @@ export type PageTemplateProps = {
     styleSheet?: ServerStyleSheet | null,
 }
 
-export type Template<T> = (t: T) => string;
+export function template(props: TemplateProps): string {
+    const coverImage = props.coverImage;
+    const featuredImage: React.CSSProperties = {
+        backgroundImage: `url(${coverImage.url})`,
+        backgroundColor: coverImage.dominantColor
+    };
 
-export function getTemplate(fpatIn: string, assetManager: AssetManager){
-
-    const templateHtml = fs.readFileSync(path.join(fpatIn, 'src/template/page.template.html'), 'utf8');
-
-    return (props: PageTemplateProps) => {
-        const coverImage = props.coverImage;
-        const featuredImage: React.CSSProperties = {
-            backgroundImage: `url(${coverImage.url})`,
-            backgroundColor: coverImage.dominantColor
-        };
-
-        const styleSheet = props.styleSheet ?? new ServerStyleSheet();
-        const page = renderReactChild(
+    const styleSheet = props.styleSheet ?? new ServerStyleSheet();
+    let result =  "<!DOCTYPE html>" + renderReactChild(
+        <Template title={props.title} js={props.assetManager.lookupAll("", "jsAsset")}>
             <PageComponent
                 featuredImage={featuredImage}
                 footer={props.footer}
@@ -39,14 +33,10 @@ export function getTemplate(fpatIn: string, assetManager: AssetManager){
                 subtitle={props.subtitle}
                 title={props.title}
                 homePageHeading={props.homePageHeading}
-            />, styleSheet);
-
-        return templateHtml
-            .replace('{{ site.js }}', assetManager.lookup('site/assets/site.js', "jsAsset").url.toString())
-            .replace('{{ style }}', styleSheet.getStyleTags() + baseStyle)
-            .replace('{{ page }}', page)
-            .replace('{{ title }}', props.title);
-    };
+            />
+        </Template>, styleSheet);
+    return result
+        .replace('{{ style }}', styleSheet.getStyleTags() + baseStyle);
 };
 
 function renderReactChild(child: React.ReactChild | null, styleSheet: ServerStyleSheet): string {
@@ -60,3 +50,21 @@ function renderReactChild(child: React.ReactChild | null, styleSheet: ServerStyl
         return ReactDOMServer.renderToStaticMarkup(styleSheet.collectStyles(child));
     }
 }
+
+const Template: React.FC<{title: string, js: JsAsset[]}> = (props) => 
+    <html>
+        <head>
+            <meta charSet="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            />
+            {[props.js.map(asset =><script src={asset.url.toString()} async></script>)]}
+            {"{{ style }}"}
+            <title>{props.title} &#8211; Csókavár</title>
+        </head>
+        <body>
+            { props.children }
+        </body>
+    </html>;
