@@ -23,7 +23,7 @@ export class ImageAsset {
         return new Promise((resolve, reject) => {
             gm(fpat).size((error, dim) => {
                 if (error != null) {
-                    reject(error);
+                    reject(new Error(`cannot create asset from ${fpat}\n` + error.message));
                 } else {
                             
                     gm(fpat)
@@ -31,7 +31,7 @@ export class ImageAsset {
                         .colors(1)
                         .toBuffer('RGB', function (error, buffer) {
                             if (error != null) {
-                                reject(error);
+                                reject(new Error(`cannot create asset from ${fpat}\n` + error.message));
                             } else {
                                 const color = `rgb(${buffer[0]}, ${buffer[1]}, ${buffer[2]})`;
                                 resolve(new ImageAsset(fpat, url, dim.width, dim.height, color))
@@ -87,6 +87,7 @@ export class AssetManager {
     private static namespace = 'efd20c5e-528e-42c9-b5fa-2ad7487f0510';
     constructor(private readonly dev: boolean, private readonly cdnUri: string, private readonly mediaDbDir: string) {
         this.loadMediaDb();
+        this.saveMediaDb();
     }
 
     get assets(): Asset[] {
@@ -105,6 +106,11 @@ export class AssetManager {
             return
         }
 
+
+        if (!fs.existsSync(fpat)){
+            throw new Error(`${fpat} does not exist`);
+        }
+
         let location =
             assetKind == "imageAsset" ? uuidv5(path.join(parsedPath.dir, parsedPath.base), AssetManager.namespace) :
             assetKind == "jsAsset" ?  (this.dev ? path.join(parsedPath.dir, parsedPath.name) :  uuidv4()) :
@@ -116,9 +122,12 @@ export class AssetManager {
         const uri = new URL(location, this.cdnUri);
 
         if (assetKind == "imageAsset") {
-            const imageAsset = await ImageAsset.create(fpat, uri);
-            this.#assets.push(imageAsset);
-            this.saveMediaDb();
+            try {
+                const imageAsset = await ImageAsset.create(fpat, uri);
+                this.#assets.push(imageAsset);
+                this.saveMediaDb();
+            } catch(e) {
+            }
         } else if (assetKind == 'jsAsset') {
             const jsAsset = new JsAsset(fpat, uri);
             this.#assets.push(jsAsset);
@@ -188,14 +197,16 @@ export class AssetManager {
                 const db = JSON.parse(fs.readFileSync(mediaDbPath, 'utf-8')) as MediaDb;
                 if (db.version === MediaDb.version) {
                     for (let item of db.items) {
-                        this.#assets.push(
-                            new ImageAsset(
-                                item.srcPath,
-                                new URL(item.cdnPath, this.cdnUri),
-                                item.width,
-                                item.height,
-                                item.dominantColor
-                            ));
+                        if (fs.existsSync(item.srcPath)) {
+                            this.#assets.push(
+                                new ImageAsset(
+                                    item.srcPath,
+                                    new URL(item.cdnPath, this.cdnUri),
+                                    item.width,
+                                    item.height,
+                                    item.dominantColor
+                                ));
+                        }
                     }
                 }
             } catch(e){

@@ -1276,13 +1276,6 @@
 			"srcPath": "site/post/2008-07-26-nagy-monitor-szarakodas/images/ezgif.com-resize.gif"
 		},
 		{
-			"cdnPath": "/assets/7844d438-7385-5926-82b2-e60548db0d09.png",
-			"dominantColor": "rgb(2, 2, 2)",
-			"height": 640,
-			"width": 1024,
-			"srcPath": "site/post/2008-08-03-emlekszunk-meg-erre/images/MorseCodeForever.png"
-		},
-		{
 			"cdnPath": "/assets/f3d2cef1-18e3-5130-9255-b2fb2adf49ce.png",
 			"dominantColor": "rgb(68, 181, 218)",
 			"height": 215,
@@ -2907,76 +2900,6 @@
 			"srcPath": "site/post/2010-11-20-napelem-keszitese-hazilag/images/IK1-1.jpg"
 		},
 		{
-			"cdnPath": "/assets/845ecb0c-ce93-55ce-9c18-be853a6be8ec.gif",
-			"dominantColor": "rgb(62, 61, 106)",
-			"height": 346,
-			"width": 775,
-			"srcPath": "site/assets/backgrounds/1468446451_giphy.gif"
-		},
-		{
-			"cdnPath": "/assets/af857a25-7e42-58bc-a4e8-1d4bbeaacea7.gif",
-			"dominantColor": "rgb(40, 46, 67)",
-			"height": 507,
-			"width": 903,
-			"srcPath": "site/assets/backgrounds/1505369458_8mUuzCn.gif"
-		},
-		{
-			"cdnPath": "/assets/4eef5acf-e587-58c6-adf2-344d578e842a.gif",
-			"dominantColor": "rgb(52, 44, 85)",
-			"height": 281,
-			"width": 500,
-			"srcPath": "site/assets/backgrounds/1522007488_tumblr_os62xpG2hP1tvppquo1_500.gif"
-		},
-		{
-			"cdnPath": "/assets/b9d95196-a672-55e0-ad6f-616bee4c22aa.gif",
-			"dominantColor": "rgb(80, 57, 88)",
-			"height": 480,
-			"width": 960,
-			"srcPath": "site/assets/backgrounds/street.gif"
-		},
-		{
-			"cdnPath": "/assets/02e23458-fa6f-5c78-83b5-0be6a8720859.gif",
-			"dominantColor": "x",
-			"height": 281,
-			"width": 500,
-			"srcPath": "site/assets/backgrounds/tumblr_inline_p0w0doqrrH1qcsurn_500.gif"
-		},
-		{
-			"cdnPath": "/assets/fcae97f1-3871-5892-a13f-c9e2db006c21.gif",
-			"dominantColor": "rgb(46, 58, 69)",
-			"height": 640,
-			"width": 960,
-			"srcPath": "site/assets/backgrounds/11-111194_cyberpunk-pixel-art-gif.gif"
-		},
-		{
-			"cdnPath": "/assets/351db8c3-d47a-55fd-8c6c-bf04648b93ab.gif",
-			"dominantColor": "rgb(26, 24, 86)",
-			"height": 1080,
-			"width": 1920,
-			"srcPath": "site/assets/backgrounds/1b83dce6c2a59c92d2dfdd14df85c377.gif"
-		},
-		{
-			"cdnPath": "/assets/74be01b7-92f5-504b-935e-d1125b54bb90.gif",
-			"dominantColor": "rgb(71, 74, 97)",
-			"height": 540,
-			"width": 1041,
-			"srcPath": "site/assets/backgrounds/61f3cd0c66cc4e33f72ca6d11762d763.gif"
-		},
-		{
-			"cdnPath": "/assets/2c1ddeb1-cce7-5534-8d17-a2e6ed40e149.gif",
-			"dominantColor": "rgb(88, 62, 101)",
-			"height": 432,
-			"width": 768,
-			"srcPath": "site/assets/backgrounds/df661b213ee05573007418bcd5cca532.gif"
-		},
-		{
-			"cdnPath": "/assets/3a565ffc-b236-5103-ad2f-dc66b476316e.gif",
-			"dominantColor": "rgb(28, 29, 44)",
-			"height": 540,
-			"width": 960,
-			"srcPath": "site/assets/backgrounds/tumblr_7d7916290ee905bba571911f6f168680_a51b66e5_1280.gif"
-		},
-		{
 			"cdnPath": "/assets/83c763a2-aeb7-5f55-87eb-c385bb9c0ae4.jpeg",
 			"dominantColor": "rgb(110, 76, 39)",
 			"height": 900,
@@ -2996,13 +2919,6 @@
 			"height": 200,
 			"width": 400,
 			"srcPath": "site/post/2012-03-26-oreganyam/images/pizza.gif"
-		},
-		{
-			"cdnPath": "/assets/5593cd0c-5d78-54d7-8a09-8ca97d0ae1f8.png",
-			"dominantColor": "rgb(111, 119, 134)",
-			"height": 1187,
-			"width": 2560,
-			"srcPath": "site/post/2015-11-15-mikulas/images/bg.png"
 		},
 		{
 			"cdnPath": "/assets/87635ab2-d742-54e9-9a68-d3d0a20a7813.png",
@@ -3031,6 +2947,83 @@
 			"height": 750,
 			"width": 1000,
 			"srcPath": "site/post/2014-09-19-kemeny-dio/images/08c3d2c499870d7ee29f08b9af196b74.png"
+		},
+		{
+			"cdnPath": "/assets/05921aeb-6577-54a2-aa6b-09c2ef78d8e5.png",
+			"dominantColor": "rgb(130, 101, 86)",
+			"height": 407,
+			"width": 639,
+			"srcPath": "site/assets/backgrounds/karacsony/bg.png"
+		},
+		{
+			"cdnPath": "/assets/b4a12df4-9c9a-5205-8164-45860109c4b7.gif",
+			"dominantColor": "rgb(46, 58, 69)",
+			"height": 640,
+			"width": 960,
+			"srcPath": "site/assets/backgrounds/generic/11-111194_cyberpunk-pixel-art-gif.gif"
+		},
+		{
+			"cdnPath": "/assets/47577c95-b8de-513c-9261-d8fc625707a8.gif",
+			"dominantColor": "rgb(62, 61, 106)",
+			"height": 346,
+			"width": 775,
+			"srcPath": "site/assets/backgrounds/generic/1468446451_giphy.gif"
+		},
+		{
+			"cdnPath": "/assets/485c72a3-f66c-5fe0-934b-7bcbba66b5a4.gif",
+			"dominantColor": "rgb(40, 46, 67)",
+			"height": 507,
+			"width": 903,
+			"srcPath": "site/assets/backgrounds/generic/1505369458_8mUuzCn.gif"
+		},
+		{
+			"cdnPath": "/assets/a9056a20-0f57-55a2-9469-ced7c84ca134.gif",
+			"dominantColor": "rgb(52, 44, 85)",
+			"height": 281,
+			"width": 500,
+			"srcPath": "site/assets/backgrounds/generic/1522007488_tumblr_os62xpG2hP1tvppquo1_500.gif"
+		},
+		{
+			"cdnPath": "/assets/3fe7e08d-b6ee-57a1-bf13-fc2cf952e5f5.gif",
+			"dominantColor": "rgb(26, 24, 86)",
+			"height": 1080,
+			"width": 1920,
+			"srcPath": "site/assets/backgrounds/generic/1b83dce6c2a59c92d2dfdd14df85c377.gif"
+		},
+		{
+			"cdnPath": "/assets/21754556-c996-5bc1-9a3a-888fc1556408.gif",
+			"dominantColor": "rgb(71, 74, 97)",
+			"height": 540,
+			"width": 1041,
+			"srcPath": "site/assets/backgrounds/generic/61f3cd0c66cc4e33f72ca6d11762d763.gif"
+		},
+		{
+			"cdnPath": "/assets/619d8343-87c7-59d1-9d4a-cb325c15db0b.gif",
+			"dominantColor": "rgb(88, 62, 101)",
+			"height": 432,
+			"width": 768,
+			"srcPath": "site/assets/backgrounds/generic/df661b213ee05573007418bcd5cca532.gif"
+		},
+		{
+			"cdnPath": "/assets/ecfdb4fc-526a-57e7-83a1-864dbd1ef0be.gif",
+			"dominantColor": "rgb(80, 57, 88)",
+			"height": 480,
+			"width": 960,
+			"srcPath": "site/assets/backgrounds/generic/street.gif"
+		},
+		{
+			"cdnPath": "/assets/d9570132-2546-59dd-97cd-a5602bea2eb1.gif",
+			"dominantColor": "rgb(28, 29, 44)",
+			"height": 540,
+			"width": 960,
+			"srcPath": "site/assets/backgrounds/generic/tumblr_7d7916290ee905bba571911f6f168680_a51b66e5_1280.gif"
+		},
+		{
+			"cdnPath": "/assets/6b90ce8e-b917-5fe2-a025-4dc0c379ee9e.gif",
+			"dominantColor": "rgb(106, 54, 81)",
+			"height": 336,
+			"width": 456,
+			"srcPath": "site/assets/backgrounds/tokfej/8eac26c0cfffa771658bdbb663bfdbcc.gif"
 		}
 	]
 }

@@ -3,7 +3,7 @@ title: "Mikulás"
 date: "2015-11-15"
 tags: 
   - "rajz"
-coverImage: images/bg.png
+  - "karácsony"
 ---
 
 Nehogy azt gondolják, hogy kinőttem már a Mikulás rajzolásból. Most, hogy ekkora gyerekeim vannak kezdek belejönni igazán.

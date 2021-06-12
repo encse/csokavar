@@ -1,5 +1,5 @@
 import metadataParse from 'markdown-yaml-metadata-parser';
-import { slugify, formatDate, zeroPad } from "./util";
+import { slugify, formatDate, zeroPad, pick } from "./util";
 import * as React from 'react';
 import {AssetManager, ImageAsset} from './assets';
 import { Tag } from './tag';
@@ -42,7 +42,7 @@ export class Page {
         const slug = metadata.slug || slugify(this.title);
         this.uri = '/'+slug+'/';
 
-        this.coverImage = metadata.coverImage ? this.assetManager.lookup(resolve(fpat, metadata.coverImage), "imageAsset") : null;
+        this.coverImage = this.assetManager.lookup(resolve(fpat, metadata.coverImage), "imageAsset");
 
         this.#template = template;
         this.mdContent = content;
@@ -84,7 +84,7 @@ export class Post {
         this.date = new Date(metadata.date);
         this.title = metadata.title;
 
-        this.tags = (metadata.tags || []).map(name => new Tag(name));
+        this.tags = (metadata.tags || []).map(name => new Tag(name, assetManager));
         this.keywords = [...(metadata.keywords || []), ...(metadata.tags || []), metadata.title];
 
         this.#template = template;
@@ -93,7 +93,15 @@ export class Post {
         const slug = metadata.slug || slugify(this.title);
         this.uri = `/blog/${zeroPad(this.date.getFullYear(), 4)}/${zeroPad(this.date.getMonth() + 1, 2)}/${slug}/`;
 
-        this.coverImage = metadata.coverImage != null ? this.assetManager.lookup(resolve(fpat, metadata.coverImage), "imageAsset") : null;
+        if (metadata.coverImage != null) {
+            this.coverImage = this.assetManager.lookup(resolve(fpat, metadata.coverImage), "imageAsset");
+        } else {
+            let backgrounds = this.tags.flatMap(tag => tag.backgrounds);
+            if (backgrounds.length == 0) {
+                backgrounds.push(...new Tag('generic', assetManager).backgrounds);
+            }
+            this.coverImage = pick(backgrounds);
+        }
 
         this.excerpt = markdownToReactExcerpt(content, this.uri, this.assetManager, fpat);
         

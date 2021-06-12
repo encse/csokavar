@@ -5,7 +5,6 @@ tags:
   - "fun"
   - "isc"
   - "karácsony"
-coverImage: images/MorseCodeForever.png
 ---
 
 Takarítottam, és mit nem találok....

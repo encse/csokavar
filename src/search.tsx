@@ -75,7 +75,7 @@ export class SearchPage {
         this.title = "Keresés"
         this.subtitle = null;
         this.uri = '/search/';
-        this.coverImage = assetManager.lookup('site/assets/backgrounds/street.gif', "imageAsset");
+        this.coverImage = assetManager.lookup('site/assets/backgrounds/generic/street.gif', "imageAsset");
         this.#template = template;
     }
 
@@ -141,6 +141,5 @@ export function buildSearch(posts: Post[], styleSheet: ServerStyleSheet): string
         words
     }
 
-    console.log(Object.keys(words).length);
     return JSON.stringify(search);
 }

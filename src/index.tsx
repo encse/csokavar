@@ -11,13 +11,14 @@ import process from 'process';
 import { ServerStyleSheet } from 'styled-components';
 import { PageComponent } from './components/page';
 import { buildSearch, SearchPage } from './search';
+import { isContext } from 'vm';
 
 type Settings = {
     'cdn': string,
     'dev': boolean
 };
 
-const config: {[key: string]:Settings } = {
+const config: { [key: string]: Settings } = {
     local: {
         'dev': true,
         'cdn': 'http://127.0.0.1:8080'
@@ -75,24 +76,32 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
 
     const assetManager = new AssetManager(settings.dev, settings.cdn, ".media");
 
-    function randomCoverImage() {
-        return pick(assetManager.lookupAll('site/assets/backgrounds/', 'imageAsset'));
+    let success: boolean = true;
+
+    async function guardAsync<T>(fpat: string, cb: () => Promise<void>): Promise<void> {
+        try {
+            await cb();
+        } catch (e) {
+            console.error(fpat);
+            console.error(e);
+            success = false;
+        }
     }
 
     const template = (props: PageTemplateProps) => {
-        const coverImage = props.coverImage ?? randomCoverImage();
-        const featuredImage:React.CSSProperties = {
-                backgroundImage: `url(${coverImage.url})`,
-                backgroundColor: coverImage.dominantColor
-            };
+        const coverImage = props.coverImage;
+        const featuredImage: React.CSSProperties = {
+            backgroundImage: `url(${coverImage.url})`,
+            backgroundColor: coverImage.dominantColor
+        };
 
         const styleSheet = props.styleSheet ?? new ServerStyleSheet();
         const page = renderReactChild(
-            <PageComponent 
-                featuredImage={featuredImage} 
-                footer={props.footer} 
-                postContent={props.postContent} 
-                subtitle={props.subtitle} 
+            <PageComponent
+                featuredImage={featuredImage}
+                footer={props.footer}
+                postContent={props.postContent}
+                subtitle={props.subtitle}
                 title={props.title}
                 homePageHeading={props.homePageHeading}
             />, styleSheet);
@@ -106,7 +115,7 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
 
 
     for (let assetPath of [...files('site')].filter(fpat => fpat.base !== 'index.md')) {
-       await assetManager.register(assetPath);
+        await guardAsync(assetPath.name, () => assetManager.register(assetPath));
     }
 
     const pages: Page[] = collectPostlike(
@@ -122,10 +131,11 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
     );
 
     for (const p of [...posts, ...pages]) {
-        const pDir = p.uri;
-        const htmlContent = await p.render();
-        writeFile(path.join(pDir, 'index.html'), htmlContent);
-
+        await guardAsync(p.uri, async () => {
+            const pDir = p.uri;
+            const htmlContent = await p.render();
+            writeFile(path.join(pDir, 'index.html'), htmlContent);
+        });
     }
 
     for (let asset of assetManager.assets) {
@@ -170,6 +180,8 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
 
     const search = new SearchPage(template, assetManager, posts);
     writeFile(path.join(search.uri, 'index.html'), await search.render());
+
+    return success;
 }
 
 
@@ -199,20 +211,22 @@ async function generateList(
     }
 }
 
-async function build(){
-    
+async function build() {
+
     const tmpDir = fs.mkdtempSync("build_");
     try {
         fs.chmodSync(tmpDir, 0o755);
 
-        await generate('.', (fpat: string, content: string | NodeJS.ArrayBufferView) => {
+        let success = await generate('.', (fpat: string, content: string | NodeJS.ArrayBufferView) => {
             fpat = path.join(tmpDir, fpat);
             fs.mkdirSync(path.parse(fpat).dir, { recursive: true });
             fs.writeFileSync(fpat, content);
         })
-        
+
         fs.rmdirSync("build", { recursive: true });
         fs.renameSync(tmpDir, "build");
+
+        return success;
     } finally {
         if (fs.existsSync(tmpDir)) {
             fs.rmdirSync(tmpDir, { recursive: true });
@@ -220,7 +234,11 @@ async function build(){
     }
 }
 
-build();
+build().then(success => {
+    if (!success) {
+        process.exitCode = 1;
+    }
+})
 
 
 
