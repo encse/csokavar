@@ -12,6 +12,7 @@ import { ServerStyleSheet } from 'styled-components';
 import { PageComponent } from './components/page';
 import { buildSearch, SearchPage } from './search';
 import { isContext } from 'vm';
+import { baseStyle } from './baseStyle';
 
 type Settings = {
     'cdn': string,
@@ -108,7 +109,7 @@ async function generate(fpatIn: string, writeFile: FileWriter) {
 
         return templateHtml
             .replace('{{ site.js }}', assetManager.lookup('site/assets/site.js', "jsAsset").url.toString())
-            .replace('{{ style }}', styleSheet.getStyleTags())
+            .replace('{{ style }}', styleSheet.getStyleTags() + baseStyle)
             .replace('{{ page }}', page)
             .replace('{{ title }}', props.title);
     };

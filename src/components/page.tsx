@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { linkColor, textColor, xxlFontSize } from '../consts';
+import { linkColor, textColor, xxlFontSize } from '../baseStyle';
 import {TwitterLink, LinkedInLink, GitHubLink, SearchIcon} from './fontAwesame';
 
 export type PageProps = {

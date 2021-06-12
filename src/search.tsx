@@ -6,7 +6,7 @@ import ReactDOMServer from 'react-dom/server';
 import { PostList } from './postList';
 import styled from 'styled-components';
 import { ServerStyleSheet } from 'styled-components';
-import { linkColor } from "./consts";
+import { linkColor } from "./baseStyle";
 
 const SearchWrapper = styled.div`
     position:relative;
