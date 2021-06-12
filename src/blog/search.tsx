@@ -97,9 +97,7 @@ export class SearchPage {
                 title: this.title,
                 subtitle: <SearchWrapper>
                     <Search>
-                        <form action=".">
-                            <SearchInput data-search-input autoFocus type="search" name="search" />
-                        </form>
+                        <SearchInput data-search-input autoFocus type="search" />
                         <SearchSuggestions data-search-suggestions />
                     </Search>
                 </SearchWrapper>,
