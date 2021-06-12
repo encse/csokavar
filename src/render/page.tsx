@@ -362,12 +362,11 @@ export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
         <head>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            />
             {[props.scripts.map(asset => <script src={asset.url.toString()} async></script>)]}
             {"{{ style }}"}
+            <style>
+                @import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+            </style>
             <title>{props.title} &#8211; Csókavár</title>
         </head>
         <body>
