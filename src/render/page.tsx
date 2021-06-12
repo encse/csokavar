@@ -1,7 +1,8 @@
 import * as React from 'react';
-import styled from 'styled-components';
-import { linkColor, textColor, xxlFontSize } from '../template/baseStyle';
-import {TwitterLink, LinkedInLink, GitHubLink, SearchIcon} from './fontAwesame';
+import styled, {createGlobalStyle} from 'styled-components';
+import { JsAsset } from '../assets';
+import { backgroundColor, linkColor, textColor, xxlFontSize } from './consts';
+import {fontFace as fontAwesome, TwitterLink, LinkedInLink, GitHubLink, SearchIcon} from './fontAwesame';
 
 export type PageProps = {
     featuredImage: React.CSSProperties,
@@ -10,7 +11,68 @@ export type PageProps = {
     postContent: React.ReactChild,
     footer: React.ReactChild,
     homePageHeading: boolean,
+    scripts: JsAsset[],
 }
+
+const GlobalStyle = createGlobalStyle`
+    ${fontAwesome}
+
+    * {
+        box-sizing: border-box;
+        --xxl-text-size: 80px;
+    }
+
+    @media only screen and (max-width:600px) {
+        * {
+            --xxl-text-size: 50px;
+        }
+    }
+
+    b, strong, h1, h2, h3 {
+        font-weight: 700;
+    }
+
+    h1, h2, h3, p {
+        margin: 24px 0;
+    }
+
+    h1 {
+        font-size: ${xxlFontSize};
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    body {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0;
+        font-family: 'Noto Sans', sans-serif;
+        background: ${backgroundColor};
+        color: ${textColor};
+    }
+
+    a {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: ${linkColor};
+    }
+
+    header a, h1 a, h2 a, h3 a {
+        text-decoration: none;
+    }
+`;
 
 const textShadowInHeader = `text-shadow: 0px 0px 1px #000000, 0px 0px 10px rgba(0,0,0,1)`;
 
@@ -296,52 +358,66 @@ const StyledPostContent = styled.section`
 `
 
 export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
-    return <>
-        <Header style={props.featuredImage}>
-            <SiteHeading className="site-heading"> 
-                <HamburgerButton data-hamburger-menu>
-                    <HamburgerIcon />
-                </HamburgerButton>
-                <SiteTitle href="/">Csókavár</SiteTitle>
-                <Menu>
-                    <MenuItem href="/">Blog</MenuItem>
-                    <MenuItem href="/projects/">Projektek</MenuItem>
-                    <MenuItem href="/konyvespolc/">Könyvespolc</MenuItem>
-                    <MenuItem href="/about/">About</MenuItem>
-                </Menu>
-                <HeaderLink href="/search/"><SearchIcon /></HeaderLink>
-            </SiteHeading>
-            {
-                props.homePageHeading ?
-                    <HomePageHeading>
-                        <HomePageTitle>{props.title}</HomePageTitle>
-                        {props.subtitle && <HomePageSubTitle>{props.subtitle}</HomePageSubTitle>}
-                    </HomePageHeading>
-                :
-                    <PageHeading>
-                        <PageTitle>{props.title}</PageTitle>
-                        <PageSubTitle>{props.subtitle}</PageSubTitle>
-                    </PageHeading>
-            }
-            
-        </Header>
-        <StyledMain>
-            <article>
-                <StyledPostContent>
-                    {props.postContent}
-                </StyledPostContent>
-                <ArticleFooter>
-                    {props.footer}
-                </ArticleFooter>
-            </article>
-        </StyledMain>
-        <Footer>
-            <SocialLinks>
-                <TwitterLink href="https://twitter.com/encse" />
-                <LinkedInLink href="https://www.linkedin.com/in/ncsdavid/" />
-                <GitHubLink href="https://github.com/encse" />
-            </SocialLinks>
-            <Copyright>2006 - {new Date().getFullYear()} csokavar.hu</Copyright>
-        </Footer>
-    </>
+    return <html>
+        <head>
+            <meta charSet="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            />
+            {[props.scripts.map(asset => <script src={asset.url.toString()} async></script>)]}
+            {"{{ style }}"}
+            <title>{props.title} &#8211; Csókavár</title>
+        </head>
+        <body>
+            <GlobalStyle />
+            <Header style={props.featuredImage}>
+                <SiteHeading className="site-heading"> 
+                    <HamburgerButton data-hamburger-menu>
+                        <HamburgerIcon />
+                    </HamburgerButton>
+                    <SiteTitle href="/">Csókavár</SiteTitle>
+                    <Menu>
+                        <MenuItem href="/">Blog</MenuItem>
+                        <MenuItem href="/projects/">Projektek</MenuItem>
+                        <MenuItem href="/konyvespolc/">Könyvespolc</MenuItem>
+                        <MenuItem href="/about/">About</MenuItem>
+                    </Menu>
+                    <HeaderLink href="/search/"><SearchIcon /></HeaderLink>
+                </SiteHeading>
+                {
+                    props.homePageHeading ?
+                        <HomePageHeading>
+                            <HomePageTitle>{props.title}</HomePageTitle>
+                            {props.subtitle && <HomePageSubTitle>{props.subtitle}</HomePageSubTitle>}
+                        </HomePageHeading>
+                    :
+                        <PageHeading>
+                            <PageTitle>{props.title}</PageTitle>
+                            <PageSubTitle>{props.subtitle}</PageSubTitle>
+                        </PageHeading>
+                }
+                
+            </Header>
+            <StyledMain>
+                <article>
+                    <StyledPostContent>
+                        {props.postContent}
+                    </StyledPostContent>
+                    <ArticleFooter>
+                        {props.footer}
+                    </ArticleFooter>
+                </article>
+            </StyledMain>
+            <Footer>
+                <SocialLinks>
+                    <TwitterLink href="https://twitter.com/encse" />
+                    <LinkedInLink href="https://www.linkedin.com/in/ncsdavid/" />
+                    <GitHubLink href="https://github.com/encse" />
+                </SocialLinks>
+                <Copyright>2006 - {new Date().getFullYear()} csokavar.hu</Copyright>
+            </Footer>
+        </body>
+    </html>;
 }

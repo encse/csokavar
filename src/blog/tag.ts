@@ -1,5 +1,5 @@
-import { AssetManager, ImageAsset } from "./assets";
-import { slugify } from "./util";
+import { AssetManager, ImageAsset } from "../assets";
+import { slugify } from "../util";
 
 export class Tag {
     public readonly uri;

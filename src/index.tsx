@@ -1,13 +1,13 @@
 import fs from 'fs';
 import path, { ParsedPath } from 'path';
-import { Post } from './pagetypes/post';
-import { Page } from "./pagetypes/page";
-import { PostList } from "./pagetypes/postList";
+import { Post } from './blog/post';
+import { Page } from "./blog/page";
+import { PostList } from "./blog/postList";
 import { chunks } from './util';
 import { AssetManager, ImageAsset } from './assets';
-import { Tag } from './tag';
+import { Tag } from './blog/tag';
 import process from 'process';
-import { SearchPage } from './pagetypes/search';
+import { SearchPage } from './blog/search';
 
 type Settings = {
     'cdn': string,

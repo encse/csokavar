@@ -3,7 +3,7 @@ import { slugify } from "../util";
 import { AssetManager, ImageAsset } from '../assets';
 import { markdownToReact } from '../markdown/markdownToReact';
 import { resolve } from 'url';
-import { template } from '../template/template';
+import { renderTemplate } from '../render/template';
 
 export class Page {
     readonly title: string;
@@ -32,7 +32,7 @@ export class Page {
 
     async render(): Promise<string> {
         const html = markdownToReact(this.mdContent, this.assetManager, this.fpat);
-        return template(
+        return renderTemplate(
             {
                 assetManager: this.assetManager,
                 homePageHeading: true,

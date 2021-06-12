@@ -6,8 +6,8 @@ import ReactDOMServer from 'react-dom/server';
 import { PostList } from './postList';
 import styled from 'styled-components';
 import { ServerStyleSheet } from 'styled-components';
-import { linkColor } from "../template/baseStyle";
-import { template } from "../template/template";
+import { linkColor } from "../render/consts";
+import { renderTemplate } from "../render/template";
 
 const SearchWrapper = styled.div`
     position:relative;
@@ -92,7 +92,7 @@ export class SearchPage {
             <div data-search-result></div>
         </div>
 
-        return template(
+        return renderTemplate(
             {
                 assetManager: this.assetManager,
                 homePageHeading: true,

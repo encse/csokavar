@@ -4,7 +4,7 @@ import path from 'path';
 import { AssetManager, ImageAsset } from "../assets";
 import styled from 'styled-components';
 import { Post } from "./post";
-import { template } from "../template/template";
+import { renderTemplate } from "../render/template";
 
 const Title = styled.h2``;
 
@@ -91,7 +91,7 @@ export class PostList {
             );
         }
 
-        return template({
+        return renderTemplate({
             assetManager: this.assetManager,
             homePageHeading: true,
             title: this.title, 

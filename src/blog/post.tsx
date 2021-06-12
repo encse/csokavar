@@ -2,11 +2,11 @@ import metadataParse from 'markdown-yaml-metadata-parser';
 import { slugify, formatDate, zeroPad, pick } from "../util";
 import * as React from 'react';
 import {AssetManager, ImageAsset} from '../assets';
-import { Tag } from '../tag';
+import { Tag } from './tag';
 import { markdownToReact, markdownToReactExcerpt, markdownToTextContent } from '../markdown/markdownToReact';
 import {resolve} from 'url';
-import { TagsIcon } from '../components/fontAwesame';
-import { template } from '../template/template';
+import { TagsIcon } from '../render/fontAwesame';
+import { renderTemplate } from '../render/template';
 
 export class Post {
     readonly title: string;
@@ -66,7 +66,7 @@ export class Post {
         }
 
         const html = markdownToReact(this.mdContent, this.assetManager, this.fpat);
-        return template(
+        return renderTemplate(
             {
                 assetManager: this.assetManager,
                 homePageHeading: false,
