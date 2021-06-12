@@ -75,14 +75,15 @@ export const baseStyle = `<style>${css}</style>`;
 
 function minifyCss(st: string) {
     st = st.replace(/\/\*(.|\n)*?\*\//g, ""); 
+    st = st.replace(/^\s+|\s+$/g, "");
     st = st.replace(/\s*(\{|\}|\[|\]|\(|\)|\:|\;|\,)\s*/g, "$1"); 
     st = st.replace(/#([\da-fA-F])\1([\da-fA-F])\2([\da-fA-F])\3/g, "#$1$2$3"); 
     st = st.replace(
         /:[\+\-]?0(rem|em|ec|ex|px|pc|pt|vh|vw|vmin|vmax|%|mm|cm|in)/g,
         ":0"
     ); 
-    st = st.replace(/\n/g, ""); 
+    st = st.replace(/\n/g, " "); 
     st = st.replace(/;\}/g, "}");
-    st = st.replace(/^\s+|\s+$/g, "");
+    st = st.replace(/@/g, "\n@");
     return st;
 };
