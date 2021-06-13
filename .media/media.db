@@ -2893,13 +2893,6 @@
 			"srcPath": "site/post/2021-01-05-pekeskedes/images/img_2988.jpg"
 		},
 		{
-			"cdnPath": "/assets/c8a25b65-a918-5e57-95ba-1779d8cedb64.gif",
-			"dominantColor": "rgb(46, 58, 69)",
-			"height": 640,
-			"width": 960,
-			"srcPath": "site/backgrounds/generic/11-111194_cyberpunk-pixel-art-gif.gif"
-		},
-		{
 			"cdnPath": "/assets/84e7dffb-afcf-5428-8a14-246aa84ef9d0.gif",
 			"dominantColor": "rgb(62, 61, 106)",
 			"height": 346,
@@ -2982,6 +2975,13 @@
 			"height": 336,
 			"width": 456,
 			"srcPath": "site/backgrounds/tokfej/8eac26c0cfffa771658bdbb663bfdbcc.gif"
+		},
+		{
+			"cdnPath": "/assets/94791e5c-8c6f-5b32-8484-7e5bc7aafc40.gif",
+			"dominantColor": "rgb(46, 58, 69)",
+			"height": 640,
+			"width": 960,
+			"srcPath": "site/backgrounds/generic/street2.gif"
 		}
 	]
 }

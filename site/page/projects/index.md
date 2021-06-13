@@ -136,7 +136,7 @@ Nagy kedvencem a már évek óta futó zsonglőr oldal. Eredetileg az egykori Wi
 </article>
 <article>
 
-## [**CO**ZERO (2011)](http://cozero.hu)
+## **CO**ZERO (2011)
 
 ![cozero](images/cozero1.png)
 
@@ -144,7 +144,7 @@ A **CO**ZERO egy kicsi, de annál nagyobb kilátásokkal rendelkező kft, körny
 </article>
 <article>
 
-## [Mérték Építészeti Stúdió (2010)](http://mertek.hu)
+## Mérték Építészeti Stúdió (2010)
 
 ![Mérték](images/mertek-500x2911.png)
 
@@ -176,7 +176,7 @@ Második számú kedvencem a Csodálatos Geek Játék. Sajnos a magyar internete
 </article>
 <article>
 
-## [Bilux Autósiskola (2008)](http://www.biluxiskola.hu)
+## Bilux Autósiskola (2008)
 
 ![bilux](images/bilux.png)
 
