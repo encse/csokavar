@@ -10,6 +10,6 @@ export class Tag {
     ) {
         let slug = slugify(name);
         this.uri = `/blog/tag/${slug}`;
-        this.backgrounds = assetManager.lookupAll(`site/assets/backgrounds/${slug}/`, 'imageAsset');
+        this.backgrounds = assetManager.lookupAll(`site/backgrounds/${slug}/`, 'imageAsset');
     }
 }

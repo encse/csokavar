@@ -4,6 +4,7 @@ date: "2010-07-27"
 tags: 
   - "enikő"
   - "gólya"
+  - "család"
 coverImage: images/IMG_0584-e1380095771486.jpg
 ---
 

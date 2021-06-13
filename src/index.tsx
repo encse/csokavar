@@ -117,7 +117,7 @@ async function generate(writeFile: FileWriter) {
         '/',
         'Csókavár',
         'Németh Cs. Dávid blogja',
-        assetManager.lookup('site/assets/main-bg.jpg', "imageAsset"),
+        assetManager.lookup('site/backgrounds/main-bg.jpg', "imageAsset"),
         writeFile
     );
 
@@ -140,13 +140,19 @@ async function generate(writeFile: FileWriter) {
             tag.uri,
             tag.name,
             '',
-            assetManager.lookup('site/assets/main-bg.jpg', "imageAsset"),
+            assetManager.lookup('site/backgrounds/main-bg.jpg', "imageAsset"),
             writeFile
         )
     }
 
     const search = new SearchPage(assetManager, posts);
     writeFile(path.join(search.uri, 'index.html'), await search.render());
+
+    for (let staticFile of [...files('static')]) {
+        const fpatDst = path.join(staticFile.dir, staticFile.base);
+        const fpatSrc = path.join(staticFile.root, staticFile.dir, staticFile.base);
+        writeFile(fpatDst, fs.readFileSync(fpatSrc));
+    }
 
     return success;
 }

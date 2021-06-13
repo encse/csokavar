@@ -2,55 +2,6 @@
 	"version": "0.2",
 	"items": [
 		{
-			"cdnPath": "/assets/a0eb3cf2-9ca7-59ae-8a20-c06e6a6438c2.jpg",
-			"dominantColor": "rgb(26, 60, 48)",
-			"height": 1189,
-			"width": 2560,
-			"srcPath": "site/assets/main-bg.jpg"
-		},
-		{
-			"cdnPath": "/assets/ad89edf5-90b8-5cba-9e90-f7f34621f37e.png",
-			"dominantColor": "rgb(84, 75, 68)",
-			"height": 144,
-			"width": 144,
-			"srcPath": "site/favicon/android-chrome-144x144.png"
-		},
-		{
-			"cdnPath": "/assets/63ae5b0c-dc4d-51ad-a8a2-0fa7a1a83dd6.png",
-			"dominantColor": "rgb(83, 75, 68)",
-			"height": 152,
-			"width": 152,
-			"srcPath": "site/favicon/apple-touch-icon.png"
-		},
-		{
-			"cdnPath": "/assets/1643f66a-d2e3-5d92-aee8-ce369f33b88f.png",
-			"dominantColor": "rgb(86, 77, 69)",
-			"height": 16,
-			"width": 16,
-			"srcPath": "site/favicon/favicon-16x16.png"
-		},
-		{
-			"cdnPath": "/assets/d9335340-5c5b-5ab8-8d49-385342d7f6c0.png",
-			"dominantColor": "rgb(85, 76, 69)",
-			"height": 32,
-			"width": 32,
-			"srcPath": "site/favicon/favicon-32x32.png"
-		},
-		{
-			"cdnPath": "/assets/0b0a7008-1314-5661-a0da-256868ec2013.png",
-			"dominantColor": "rgb(45, 41, 38)",
-			"height": 270,
-			"width": 270,
-			"srcPath": "site/favicon/mstile-150x150.png"
-		},
-		{
-			"cdnPath": "/assets/5faf5ba2-ad31-5b1b-932c-832e1c481eed.svg",
-			"dominantColor": "rgb(114, 205, 114)",
-			"height": 160,
-			"width": 160,
-			"srcPath": "site/favicon/safari-pinned-tab.svg"
-		},
-		{
 			"cdnPath": "/assets/731800fb-2c23-57f0-92f4-bbe280cd21e6.jpg",
 			"dominantColor": "rgb(156, 182, 145)",
 			"height": 1080,
@@ -2900,90 +2851,6 @@
 			"srcPath": "site/post/2014-09-19-kemeny-dio/images/08c3d2c499870d7ee29f08b9af196b74.png"
 		},
 		{
-			"cdnPath": "/assets/05921aeb-6577-54a2-aa6b-09c2ef78d8e5.png",
-			"dominantColor": "rgb(130, 101, 86)",
-			"height": 407,
-			"width": 639,
-			"srcPath": "site/assets/backgrounds/karacsony/bg.png"
-		},
-		{
-			"cdnPath": "/assets/b4a12df4-9c9a-5205-8164-45860109c4b7.gif",
-			"dominantColor": "rgb(46, 58, 69)",
-			"height": 640,
-			"width": 960,
-			"srcPath": "site/assets/backgrounds/generic/11-111194_cyberpunk-pixel-art-gif.gif"
-		},
-		{
-			"cdnPath": "/assets/47577c95-b8de-513c-9261-d8fc625707a8.gif",
-			"dominantColor": "rgb(62, 61, 106)",
-			"height": 346,
-			"width": 775,
-			"srcPath": "site/assets/backgrounds/generic/1468446451_giphy.gif"
-		},
-		{
-			"cdnPath": "/assets/485c72a3-f66c-5fe0-934b-7bcbba66b5a4.gif",
-			"dominantColor": "rgb(40, 46, 67)",
-			"height": 507,
-			"width": 903,
-			"srcPath": "site/assets/backgrounds/generic/1505369458_8mUuzCn.gif"
-		},
-		{
-			"cdnPath": "/assets/a9056a20-0f57-55a2-9469-ced7c84ca134.gif",
-			"dominantColor": "rgb(52, 44, 85)",
-			"height": 281,
-			"width": 500,
-			"srcPath": "site/assets/backgrounds/generic/1522007488_tumblr_os62xpG2hP1tvppquo1_500.gif"
-		},
-		{
-			"cdnPath": "/assets/3fe7e08d-b6ee-57a1-bf13-fc2cf952e5f5.gif",
-			"dominantColor": "rgb(26, 24, 86)",
-			"height": 1080,
-			"width": 1920,
-			"srcPath": "site/assets/backgrounds/generic/1b83dce6c2a59c92d2dfdd14df85c377.gif"
-		},
-		{
-			"cdnPath": "/assets/21754556-c996-5bc1-9a3a-888fc1556408.gif",
-			"dominantColor": "rgb(71, 74, 97)",
-			"height": 540,
-			"width": 1041,
-			"srcPath": "site/assets/backgrounds/generic/61f3cd0c66cc4e33f72ca6d11762d763.gif"
-		},
-		{
-			"cdnPath": "/assets/619d8343-87c7-59d1-9d4a-cb325c15db0b.gif",
-			"dominantColor": "rgb(88, 62, 101)",
-			"height": 432,
-			"width": 768,
-			"srcPath": "site/assets/backgrounds/generic/df661b213ee05573007418bcd5cca532.gif"
-		},
-		{
-			"cdnPath": "/assets/ecfdb4fc-526a-57e7-83a1-864dbd1ef0be.gif",
-			"dominantColor": "rgb(80, 57, 88)",
-			"height": 480,
-			"width": 960,
-			"srcPath": "site/assets/backgrounds/generic/street.gif"
-		},
-		{
-			"cdnPath": "/assets/d9570132-2546-59dd-97cd-a5602bea2eb1.gif",
-			"dominantColor": "rgb(28, 29, 44)",
-			"height": 540,
-			"width": 960,
-			"srcPath": "site/assets/backgrounds/generic/tumblr_7d7916290ee905bba571911f6f168680_a51b66e5_1280.gif"
-		},
-		{
-			"cdnPath": "/assets/6b90ce8e-b917-5fe2-a025-4dc0c379ee9e.gif",
-			"dominantColor": "rgb(106, 54, 81)",
-			"height": 336,
-			"width": 456,
-			"srcPath": "site/assets/backgrounds/tokfej/8eac26c0cfffa771658bdbb663bfdbcc.gif"
-		},
-		{
-			"cdnPath": "/assets/eba0b4b7-8519-5f7b-926c-2730b134501e.png",
-			"dominantColor": "rgb(124, 13, 12)",
-			"height": 659,
-			"width": 989,
-			"srcPath": "site/assets/backgrounds/rajz/ezgif-2-0617c10ffdf5.png"
-		},
-		{
 			"cdnPath": "/assets/d49e6a58-663a-5359-9057-6ce47e85492d.jpeg",
 			"dominantColor": "rgb(110, 76, 39)",
 			"height": 900,
@@ -3024,6 +2891,97 @@
 			"height": 1920,
 			"width": 2560,
 			"srcPath": "site/post/2021-01-05-pekeskedes/images/img_2988.jpg"
+		},
+		{
+			"cdnPath": "/assets/c8a25b65-a918-5e57-95ba-1779d8cedb64.gif",
+			"dominantColor": "rgb(46, 58, 69)",
+			"height": 640,
+			"width": 960,
+			"srcPath": "site/backgrounds/generic/11-111194_cyberpunk-pixel-art-gif.gif"
+		},
+		{
+			"cdnPath": "/assets/84e7dffb-afcf-5428-8a14-246aa84ef9d0.gif",
+			"dominantColor": "rgb(62, 61, 106)",
+			"height": 346,
+			"width": 775,
+			"srcPath": "site/backgrounds/generic/1468446451_giphy.gif"
+		},
+		{
+			"cdnPath": "/assets/062c5a12-5474-55e8-9bad-5f9a64c1d1bc.gif",
+			"dominantColor": "rgb(40, 46, 67)",
+			"height": 507,
+			"width": 903,
+			"srcPath": "site/backgrounds/generic/1505369458_8mUuzCn.gif"
+		},
+		{
+			"cdnPath": "/assets/726b49d9-5563-5603-8855-781b4db8b66b.gif",
+			"dominantColor": "rgb(52, 44, 85)",
+			"height": 281,
+			"width": 500,
+			"srcPath": "site/backgrounds/generic/1522007488_tumblr_os62xpG2hP1tvppquo1_500.gif"
+		},
+		{
+			"cdnPath": "/assets/36c2db73-3c71-5f6b-942c-fdf34dc44400.gif",
+			"dominantColor": "rgb(26, 24, 86)",
+			"height": 1080,
+			"width": 1920,
+			"srcPath": "site/backgrounds/generic/1b83dce6c2a59c92d2dfdd14df85c377.gif"
+		},
+		{
+			"cdnPath": "/assets/a4874a2d-1c01-585e-b5b0-1567c7982cb1.gif",
+			"dominantColor": "rgb(71, 74, 97)",
+			"height": 540,
+			"width": 1041,
+			"srcPath": "site/backgrounds/generic/61f3cd0c66cc4e33f72ca6d11762d763.gif"
+		},
+		{
+			"cdnPath": "/assets/0ffc7369-d99f-52ee-92a9-b8febcb7e054.gif",
+			"dominantColor": "rgb(88, 62, 101)",
+			"height": 432,
+			"width": 768,
+			"srcPath": "site/backgrounds/generic/df661b213ee05573007418bcd5cca532.gif"
+		},
+		{
+			"cdnPath": "/assets/b5835a40-1ab3-5f27-8bef-6383b759334c.gif",
+			"dominantColor": "rgb(80, 57, 88)",
+			"height": 480,
+			"width": 960,
+			"srcPath": "site/backgrounds/generic/street.gif"
+		},
+		{
+			"cdnPath": "/assets/6045d23a-9acc-5775-8bb4-babe08876c94.gif",
+			"dominantColor": "rgb(28, 29, 44)",
+			"height": 540,
+			"width": 960,
+			"srcPath": "site/backgrounds/generic/tumblr_7d7916290ee905bba571911f6f168680_a51b66e5_1280.gif"
+		},
+		{
+			"cdnPath": "/assets/67bbe75d-c246-513e-8ed7-96cf6a5c154d.png",
+			"dominantColor": "rgb(130, 101, 86)",
+			"height": 407,
+			"width": 639,
+			"srcPath": "site/backgrounds/karacsony/bg.png"
+		},
+		{
+			"cdnPath": "/assets/763fc17b-fa04-596d-a0eb-2e3adbc7a1dd.jpg",
+			"dominantColor": "rgb(26, 60, 48)",
+			"height": 1189,
+			"width": 2560,
+			"srcPath": "site/backgrounds/main-bg.jpg"
+		},
+		{
+			"cdnPath": "/assets/2485d278-b8b6-5e14-9a38-05d78d620601.png",
+			"dominantColor": "rgb(124, 13, 12)",
+			"height": 659,
+			"width": 989,
+			"srcPath": "site/backgrounds/rajz/ezgif-2-0617c10ffdf5.png"
+		},
+		{
+			"cdnPath": "/assets/90569555-a232-5821-9f20-435abec6f0a3.gif",
+			"dominantColor": "rgb(106, 54, 81)",
+			"height": 336,
+			"width": 456,
+			"srcPath": "site/backgrounds/tokfej/8eac26c0cfffa771658bdbb663bfdbcc.gif"
 		}
 	]
 }

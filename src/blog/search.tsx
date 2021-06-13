@@ -78,7 +78,7 @@ export class SearchPage {
         this.title = "Keresés"
         this.subtitle = null;
         this.uri = '/search/';
-        this.coverImage = assetManager.lookup('site/assets/backgrounds/generic/street.gif', "imageAsset");
+        this.coverImage = assetManager.lookup('site/backgrounds/generic/street.gif', "imageAsset");
     }
 
     async render(): Promise<string> {
