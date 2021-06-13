@@ -75,6 +75,11 @@ window.addEventListener("load", function () {
         let result = document.querySelector('[data-search-result]')
         let suggestionsItem = document.querySelector('[data-search-suggestions]')
 
+        let searchParam = new URLSearchParams(window.location.search).get('s');
+        if (searchParam != null) {
+            input.value = searchParam;
+        }
+
         performSearch();
 
         input.oninput = () => {
