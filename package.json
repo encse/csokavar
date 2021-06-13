@@ -7,8 +7,8 @@
   "keywords": [],
   "scripts": {
     "build-prod": "node -r ts-node/register src/index.tsx prod",
-    "dev": "npx http-server -c-1 build",
-    "deploy": "qqqssh csokavar.hu 'cd /var/www/zsonglor/assets; git pull'"
+    "build": "node -r ts-node/register src/index.tsx dev",
+    "dev": "npx http-server -c-1 build"
   },
   "dependencies": {
     "@iktakahiro/markdown-it-katex": "^4.0.1",

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
     <InputEncoding>UTF-8</InputEncoding>
-    <ShortName>Csokavar Search</ShortName>
-    <Description>Csokavar Search Engine</Description>
+    <ShortName>csokavar</ShortName>
+    <Description>csokavar search engine</Description>
     <Url type="text/html" method="get" template="https://csokavar.hu/search/?s={searchTerms}"/>
     <Image width="16" height="16">https://csokavar.hu/favicon/favicon.png</Image>
 </OpenSearchDescription>

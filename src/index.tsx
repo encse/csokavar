@@ -199,10 +199,11 @@ async function build(settings: Settings) {
             fs.writeFileSync(fpat, content);
         })
 
-        if (success){
+        if (success ){
             fs.rmdirSync("build", { recursive: true });
             fs.renameSync(tmpDir, "build");
         }
+        console.log('Done');
         return success;
     } finally {
         if (fs.existsSync(tmpDir)) {

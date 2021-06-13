@@ -364,7 +364,7 @@ export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
             <link rel="icon" type="image/png" href="/favicon/favicon.png" />
-            <link rel="search" type="application/opensearchdescription+xml" title="Keresés" href="/opensearchdescription.xml"></link>
+            <link rel="search" type="application/opensearchdescription+xml" title="csokavar" href="/opensearchdescription.xml"></link>
             {[props.scripts.map(asset => <script src={asset.url.toString()} async></script>)]}
             {"{{ style }}"}
             <style>
