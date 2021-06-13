@@ -44,4 +44,5 @@ Mostanában már kevesebb idő jut rá, az ezer oldalas szakkönyvekkel meg lass
     } 
 
 </style>
-<script src="https://www.goodreads.com/review/grid_widget/27816163.D%C3%A1vid's%20bookshelf:%20read?cover_size=medium&amp;hide_link=true&amp;hide_title=true&amp;num_books=2000&amp;order=d&amp;shelf=read&amp;sort=date_added&amp;widget_id=1474126508" type="text/javascript" charset="utf-8"></script>
+<div id="gr_grid_widget_1474126508"></div>
+<script src="https://www.goodreads.com/review/grid_widget/27816163.D%C3%A1vid's%20bookshelf:%20read?cover_size=medium&amp;hide_link=true&amp;hide_title=true&amp;num_books=2000&amp;order=d&amp;shelf=read&amp;sort=date_added&amp;widget_id=1474126508" type="text/javascript" charset="utf-8" async></script>

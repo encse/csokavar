@@ -157,7 +157,7 @@ export function markdownToReactExcerpt(md: string, uri: string, assetManager: As
             return (
                 <p>
                     {render([block], {assetManager, fpat, excerpt: true}, markdownIt)}
-                    <a href={uri} rel="bookmark">…</a>
+                    &nbsp;<a href={uri} rel="bookmark">&raquo;</a>
                 </p>
             );
         }
