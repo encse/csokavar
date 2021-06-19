@@ -261,10 +261,6 @@ const HamburgerIcon = styled.span`
 
     background-color: ${textColor};
 
-    ${HamburgerButton}:hover & {
-        background-color: ${linkColor};
-    }
-
     &,
     &:before,
     &:after {
@@ -305,13 +301,14 @@ const HamburgerIcon = styled.span`
 const Menu = styled.div`
     @media only screen and (max-width:600px) {
         display: none;
+        width: 100%;
+        padding-left: 16px;
+        order: 10;
 
         ${SiteHeading}.active & {
             display: flex;
             flex-direction: column;
-            order: 10;
-            width: 100%;
-            padding-left: 16px;
+            padding-top: 8px;
         }
     }
 `;
@@ -382,7 +379,6 @@ export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
                     </HamburgerButton>
                     <SiteTitle href="/">Csókavár</SiteTitle>
                     <Menu>
-                        <MenuItem href="/">Blog</MenuItem>
                         <MenuItem href="/projects/">Projektek</MenuItem>
                         <MenuItem href="/konyvespolc/">Könyvespolc</MenuItem>
                         <MenuItem href="/about/">About</MenuItem>

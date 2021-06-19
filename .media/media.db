@@ -2942,13 +2942,6 @@
 			"srcPath": "site/backgrounds/generic/street.gif"
 		},
 		{
-			"cdnPath": "/assets/6045d23a-9acc-5775-8bb4-babe08876c94.gif",
-			"dominantColor": "rgb(28, 29, 44)",
-			"height": 540,
-			"width": 960,
-			"srcPath": "site/backgrounds/generic/tumblr_7d7916290ee905bba571911f6f168680_a51b66e5_1280.gif"
-		},
-		{
 			"cdnPath": "/assets/67bbe75d-c246-513e-8ed7-96cf6a5c154d.png",
 			"dominantColor": "rgb(130, 101, 86)",
 			"height": 407,
@@ -2982,6 +2975,13 @@
 			"height": 640,
 			"width": 960,
 			"srcPath": "site/backgrounds/generic/street2.gif"
+		},
+		{
+			"cdnPath": "/assets/fed5a554-68d8-50cf-bf9a-e0ed7a8bd658.gif",
+			"dominantColor": "rgb(60, 64, 74)",
+			"height": 640,
+			"width": 960,
+			"srcPath": "site/backgrounds/generic/street3.gif"
 		}
 	]
 }
