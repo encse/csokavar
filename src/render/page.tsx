@@ -229,6 +229,7 @@ const HamburgerButton = styled.button`
         border: 0;
         outline: 0;
         position: relative;
+        margin: 0;
         padding: 0;
         padding-right: 16px;
     }
