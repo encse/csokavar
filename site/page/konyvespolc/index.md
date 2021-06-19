@@ -29,11 +29,6 @@ Mostanában már kevesebb idő jut rá, az ezer oldalas szakkönyvekkel meg lass
         display: flex;
         box-shadow: inset 0px -14px 17px -15px #000000;
     }
-    
-    .gr_grid_book_container img {
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-    }
 
     .gr_grid_book_container a {
         margin: 4px;
@@ -43,6 +38,39 @@ Mostanában már kevesebb idő jut rá, az ezer oldalas szakkönyvekkel meg lass
         display: flex;
     } 
 
+    .gr_grid_book_container a > * {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+
+
 </style>
-<div id="gr_grid_widget_1474126508"></div>
+<div id="gr_grid_widget_1474126508">
+<div class="gr_grid_container">
+    <div class="gr_grid_book_container">
+    <a href=""><div style="width:83px; height: 100px; background: #443d5a;"></div></a>
+    </div>
+    <div class="gr_grid_book_container">
+    <a href=""><div style="width:83px; height: 100px; background: #282e40;"></div></a>
+    </div>
+    <div class="gr_grid_book_container">
+    <a href=""><div style="width:83px; height: 100px; background: #b17031;"></div></a>
+    </div>    
+    <div class="gr_grid_book_container">
+    <a href=""><div style="width:83px; height: 100px; background: #f5e2ae;"></div></a>
+    </div>    
+    <div class="gr_grid_book_container">
+    <a href=""><div style="width:83px; height: 100px; background: #e9583e;"></div></a>
+    </div>    
+    <div class="gr_grid_book_container">
+    <a href=""><div style="width:83px; height: 100px; background: #f1ae55;"></div></a>
+    </div>    
+    <div class="gr_grid_book_container">
+    <a href=""><div style="width:83px; height: 100px; background: #f0d086;"></div></a>
+    </div>    
+    <div class="gr_grid_book_container">
+    <a href=""><div style="width:83px; height: 100px; background: #070707;"></div></a>
+    </div>
+</div>
+</div>
 <script src="https://www.goodreads.com/review/grid_widget/27816163.D%C3%A1vid's%20bookshelf:%20read?cover_size=medium&amp;hide_link=true&amp;hide_title=true&amp;num_books=2000&amp;order=d&amp;shelf=read&amp;sort=date_added&amp;widget_id=1474126508" type="text/javascript" charset="utf-8" async></script>
