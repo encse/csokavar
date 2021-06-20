@@ -2982,6 +2982,13 @@
 			"height": 640,
 			"width": 960,
 			"srcPath": "site/backgrounds/generic/street3.gif"
+		},
+		{
+			"cdnPath": "/assets/6e750a40-ae68-5abb-8cfb-8de8642b4885.gif",
+			"dominantColor": "rgb(40, 29, 33)",
+			"height": 810,
+			"width": 810,
+			"srcPath": "site/backgrounds/generic/E4FfXuAXwAQaCWR.gif"
 		}
 	]
 }
