@@ -2949,13 +2949,6 @@
 			"srcPath": "site/backgrounds/karacsony/bg.png"
 		},
 		{
-			"cdnPath": "/assets/763fc17b-fa04-596d-a0eb-2e3adbc7a1dd.jpg",
-			"dominantColor": "rgb(26, 60, 48)",
-			"height": 1189,
-			"width": 2560,
-			"srcPath": "site/backgrounds/main-bg.jpg"
-		},
-		{
 			"cdnPath": "/assets/2485d278-b8b6-5e14-9a38-05d78d620601.png",
 			"dominantColor": "rgb(124, 13, 12)",
 			"height": 659,
@@ -2989,6 +2982,13 @@
 			"height": 810,
 			"width": 810,
 			"srcPath": "site/backgrounds/generic/E4FfXuAXwAQaCWR.gif"
+		},
+		{
+			"cdnPath": "/assets/a0451bda-59dc-50dd-ad73-6eedf3dee4b3.webp",
+			"dominantColor": "rgb(26, 60, 48)",
+			"height": 1189,
+			"width": 2560,
+			"srcPath": "site/backgrounds/main-bg.webp"
 		}
 	]
 }

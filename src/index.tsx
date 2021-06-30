@@ -117,7 +117,7 @@ async function generate(writeFile: FileWriter) {
         '/',
         'Csókavár',
         'Németh Cs. Dávid blogja',
-        assetManager.lookup('site/backgrounds/main-bg.jpg', "imageAsset"),
+        assetManager.lookup('site/backgrounds/main-bg.webp', "imageAsset"),
         writeFile
     );
 
@@ -140,7 +140,7 @@ async function generate(writeFile: FileWriter) {
             tag.uri,
             tag.name,
             '',
-            assetManager.lookup('site/backgrounds/main-bg.jpg', "imageAsset"),
+            assetManager.lookup('site/backgrounds/main-bg.webp', "imageAsset"),
             writeFile
         )
     }

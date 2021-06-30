@@ -99,7 +99,7 @@ export class AssetManager {
         const fpat = path.join(parsedPath.root, parsedPath.dir, parsedPath.base);
         const assetKind: AssetKind = 
             parsedPath.ext === '.js' ? "jsAsset" : 
-            ['.jpg', '.jpeg', '.gif', '.png', '.svg'].includes(parsedPath.ext) ? "imageAsset" :
+            ['.jpg', '.jpeg', '.gif', '.png', '.svg', '.webp'].includes(parsedPath.ext) ? "imageAsset" :
             "fileAsset";
 
         if (this.tryLookup(fpat, assetKind) != null) {
