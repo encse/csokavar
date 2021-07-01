@@ -30,3 +30,42 @@ I have also learned to juggle five balls for a couple of seconds, and I'm fairly
 I take computer security as a hobby. My 2000-ish years were spent on various security challenge sites, and I started my own one in 2007. [Gekko](http://gekko.csokavar.hu) is mostly about various areas of maths and programming. It's fun to play, but haven't become well known during the years.
 
 I also enjoy playing the piano, although I'm not much of a pianist. I started to learn in 2016 at the age of 36, so you can imagine how good I could be... But I practice almost every day.
+
+<script>
+    function preventScroll(e){
+        if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+            e.preventDefault();
+        }
+    }
+    let iframe = null;
+
+    [...document.getElementsByTagName('header')].forEach(header => {
+         if (header.clientWidth > 800) {
+            header.style.cursor = 'pointer';
+            header.onclick = (evt) => {
+                if (iframe == null) {
+                    iframe = document.createElement('iframe');
+                    iframe.style.zIndex='999';
+                    iframe.style.top='0';
+                    iframe.style.left='0';
+                    iframe.style.position='absolute';
+                    iframe.style.width=`${header.clientWidth}px`;
+                    iframe.style.height=`${header.clientHeight}px`;
+                    iframe.style.padding='0';
+                    iframe.style.border='none';
+                    iframe.src='https://pacman.csokavar.hu';
+                    iframe.src='http://127.0.0.1:8000/';
+
+                    header.append(iframe);
+
+                    const onClose = (event) => {
+                        iframe.remove();
+                        iframe = null;
+                        window.removeEventListener("message", onClose, false);
+                    }
+                    window.addEventListener("message", onClose, false);
+                } 
+            };
+         }
+    });
+</script>
