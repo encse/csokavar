@@ -1,13 +1,14 @@
 import fs from 'fs';
-import path, { ParsedPath } from 'path';
+import path from 'path';
 import { Post } from './blog/post';
 import { Page } from "./blog/page";
 import { PostList } from "./blog/postList";
-import { chunks } from './util';
+import { chunks, files } from './util';
 import { AssetManager, ImageAsset } from './assets';
 import { Tag } from './blog/tag';
 import process from 'process';
 import { SearchPage } from './blog/search';
+import { convertToWebp } from './convert';
 
 type Settings = {
     'cdn': string,
@@ -40,21 +41,6 @@ function header(settings: Settings){
 
 }
 
-
-
-function* files(root: string, dir: string = ''): Iterable<ParsedPath> {
-    for (let file of fs.readdirSync(path.resolve(root, dir))) {
-        const fpat = path.join(dir, file);
-        if (fs.statSync(path.resolve(root, fpat)).isDirectory()) {
-            yield* files(root, fpat);
-        } else {
-            const parsed = path.parse(fpat);
-            parsed.root = root;
-            yield parsed;
-        }
-    }
-};
-
 function collectPostlike<T>(dir: string, create: (fpat: string, markdown: string) => T): T[] {
     const result: T[] = [];
     for (const item of fs.readdirSync(dir)) {
@@ -73,6 +59,8 @@ async function generate(writeFile: FileWriter) {
 
     let success: boolean = true;
 
+    convertToWebp('site');
+    
     async function guardAsync(fpat: string, cb: () => Promise<void>): Promise<void> {
         try {
             await cb();
@@ -82,6 +70,7 @@ async function generate(writeFile: FileWriter) {
             success = false;
         }
     }
+
 
     for (let assetPath of [...files('site')].filter(fpat => fpat.base !== 'index.md')) {
         await guardAsync(assetPath.name, () => assetManager.register(assetPath));

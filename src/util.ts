@@ -1,3 +1,18 @@
+import fs from 'fs';
+import path, { ParsedPath }  from 'path';
+
+export function* files(root: string, dir: string = ''): Iterable<ParsedPath> {
+    for (let file of fs.readdirSync(path.resolve(root, dir))) {
+        const fpat = path.join(dir, file);
+        if (fs.statSync(path.resolve(root, fpat)).isDirectory()) {
+            yield* files(root, fpat);
+        } else {
+            const parsed = path.parse(fpat);
+            parsed.root = root;
+            yield parsed;
+        }
+    }
+};
 
 export function assertNever(x: never): never {
     throw new Error(x);
