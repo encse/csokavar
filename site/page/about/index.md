@@ -54,7 +54,6 @@ I also enjoy playing the piano, although I'm not much of a pianist. I started to
                     iframe.style.padding='0';
                     iframe.style.border='none';
                     iframe.src='https://pacman.csokavar.hu';
-                    iframe.src='http://127.0.0.1:8000/';
 
                     header.append(iframe);
 
