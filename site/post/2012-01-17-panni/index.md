@@ -4,7 +4,7 @@ date: "2012-01-17"
 tags: 
   - "személyes"
   - "család"
-coverImage: images/86c5a37f93850a8c47d3a890ce0219be.jpg
+coverImage: images/86c5a37f93850a8c47d3a890ce0219be.webp
 ---
 
 Délelőtt megszületett második kislányunk Panni. Szerintem lényegesen jobban ment a dolog, mint legutóbb, de ezt Enikőtől kéne megkérdezni. Mindenesetre gyorsabb volt sokkal.

@@ -14,7 +14,7 @@ Januárban megint rám jött a hmm... 'csinálhatnék', és valami oknál fogva 
 
 De jó húsz évvel később, már elég tökös gyereknek tartom magam ahhoz, hogy megcsináljam házilag. Megmutatom annak a kis geek 12 éves énemnek, hogy igenis megírom. Ha most lenne egy időgépem vissza is küldhetném neki, hadd játszon vele. Bár igazából mi évekig jól elvoltunk a Flimbo's Questtel. Sőt, az talán még jobb is volt, és főleg pokoli nehéz. Bár abban nem vagyok biztos, hogy a flimbós korszak egybe estett az Elektor kalandorral, mert C-64-et is csak viszonylag későn kaptunk, amikor a többi osztálytársam már inkább a PC-felé kacsintgatott.
 
-![flimbo.jpg](images/flimbo.jpg.jpg)
+![flimbo.webp](images/flimbo.webp)
 
 Mindenesetre ezek voltak az évek, amikor esténként öcsémmel Columbot néztünk, meg pankrációt (Yokozuna vs Tatanka) és vasárnap a Balu kapitány ment a Disney családi mozidélutánban. Csak hétvégente lehetett számítógépezni, mert amúgy f�szságokat kellett bemagolni Gőcének irodalom órára. Aztán persze szénné játszottuk azt a néhány játékot. Nem volt sajnos floppynk, ezért magnóval kellett szórakozni, fejet állítgatni meg hasonló bohócságok. A korosztályom még emlékszik, de már most tele vagyok olyan tejfölösszájú kollégákkal, akik már a Windows 95 után voltak gyerekek. Ezek már talán azt se tudják miért C meghajtó a C meghajtó. B-t meg nem is láttak. Na ne szórakozzunk már...
 
@@ -32,4 +32,4 @@ Tehát amíg Enikő a diplomamunkáját írta (írja), én esténként a [nesdev
 
 Mindenesetre én nagyon örülök neki. A tizenéves kicsi én biztos nagyon büszke lenne rám, és olyan akarna lenni mint én, ha felnő. Legalább nem okoztam csalódást neki.
 
-[![nesemu](images/nesemu.jpg)](https://nes.csokavar.hu/)
+[![nesemu](images/nesemu.webp)](https://nes.csokavar.hu/)

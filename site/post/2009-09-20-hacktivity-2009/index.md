@@ -5,7 +5,7 @@ tags:
   - "fun"
   - "geekség"
   - "hacktivity"
-coverImage: images/hacktivity_logo_2-e1447878090663.jpg
+coverImage: images/hacktivity_logo_2-e1447878090663.webp
 ---
 
 Idén is indultunk a Hacktivity Wargamen, a tavaly már jól bevált Cactus & Encsé (The Intentionals) felállásban. Nyertünk, de most tényleg csak pár percen múlt az egész. Tegnap délután még úgy jöttünk el, hogy 22 ponttal első helyen állunk, az utánunk következőnek pedig csak 13 pontja volt. Jól is aludtunk, de reggel mikor bementem kiderült, hogy az este folyamán egy csapat a nulláról eljutott 22 pontig.
@@ -15,8 +15,8 @@ Döntetlen volt a meccs reggel nyolckor, szerencsére az éjjel megoldottunk 4 m
 Sikerült befutni az első helyre, a nyeremény egy XBox 360-as egy Guitar Hero játékkal. Holnap eldöntjük mi legyen a sorsa. Vagy kivásárolom Cactust, vagy eladjuk Vaterán, ha nincs rá más jelentkező...
 
 [gallery]
-  images/guitarhero.jpg
-  images/xbox360.jpg
+  images/guitarhero.webp
+  images/xbox360.webp
 [/gallery]
 
 A feladatok nagyon jók voltak, és idén alig volt egy-két hibás feladvány. (Az ilyenek amúgy kurvára idegesítőek ám...) A három kedvencemet szeretném kiemelni:

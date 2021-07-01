@@ -10,8 +10,8 @@ tags:
 Csináltam egy pöpec halat.
 
 [gallery] 
-  images/hal_oldal.jpg
-  images/hal_szembe.jpg
+  images/hal_oldal.webp
+  images/hal_szembe.webp
 [/gallery]
 
 Akartam egy koncept-hernyót is. A koncept állatok érdekesek, elkezded az egyik végén majomként, és befejezed a másik végén tigrisként. Néha két feje van. Vagy malacorrot teszel a túlsó végére, és olyan mint egy fenék...

@@ -7,7 +7,7 @@ tags:
 
 Mamám sógora, Józsi bácsi, mamánál hirdeti a szőlőjét. Korrekt kis műanyag tábla a kapun: szőlő eladó. Igen ám, de mi van a tábla másik felén?
 
-![003](images/003-500x400.jpg)
+![003](images/003-500x400.webp)
 
 Muszáj volt megfordítani.
 

@@ -7,12 +7,12 @@ tags:
 keywords:
   - "Donald E. Knuth"
   - "A számítógép-programozás művészete"
-coverImage: images/dek-14may10-1.jpg
+coverImage: images/dek-14may10-1.webp
 ---
 
 A héten ismét elkezdtem olvasni A számítógép-programozás művészetét Knuthtól. Emlékszem milyen viccesnek találtam, amikor először láttam ezt a könyvet 1998 körül az Akadémiai Kiadó győri boltjában. A programozás művészete, na ne... Persze ez még a háború előtt volt, nem sokkal mielőtt leérettségiztem, tehát lópikulát se tudtam a programozásról, meg arról, hogy ki a fene az Donald E. Knuth.
 
-![a-szamitogep-programozas-muveszete-1-3--8458788](images/a-szamitogep-programozas-muveszete-1-3-8458788-e1570267410481.jpg)
+![a-szamitogep-programozas-muveszete-1-3--8458788](images/a-szamitogep-programozas-muveszete-1-3-8458788-e1570267410481.webp)
 
 Aztán az egyetemen a műegyetemista haverjaim valahogy megtudták, hogy a mi jegyzetboltunkban van még belőle néhány példány, és mivel akkoriban már nagyon fogyóban volt, mi sem vehettünk, csak fejenként egyet belőle. Elsősként semmi szükségem nem volt rá, úgyhogy Lukács haveromnak ajánlottam fel a kvótámat. Sajnos csak a kettes és hármas kötet volt raktáron és csak kb. fél év múlva talált Tisza Gergő haverom egy antikváriumot, ahol még volt az első kötetből néhány darab. Nevetséges, hogy egy hatvanas évekbeli könyv az algoritmusokról harminc évvel később is így pörögjön.
 

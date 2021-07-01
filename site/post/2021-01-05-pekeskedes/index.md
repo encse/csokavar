@@ -15,11 +15,11 @@ Eleinte próbálkoztam még csigával és zsemlével is, de kovászból nagyon m
 Kenyeret minden nap sütök, vagy mondjuk hatszor egy héten, és kb kétszer valami mást is. Ez lehet Blundel tésztás (ez egy vajmagos tésztafajta) csiga vagy túrós táska, vagy sima kelt tésztás kalács, esetleg tejes kifli, kuglóf. Karácsonykor sütöttem több bejglit is. Az meg zsíros tészta. Ezek a kelt dolgok jönnek be nekem. Itt van néhány kép, nagyjából ilyenek. És nagyon gyorsan elfogynak...
 
 [gallery]
-  images/img_2988.jpg
-  images/img_2952.jpg
-  images/img_2936.jpg
-  images/img_2908.jpg
-  images/img_2920.jpg
+  images/img_2988.webp
+  images/img_2952.webp
+  images/img_2936.webp
+  images/img_2908.webp
+  images/img_2920.webp
 [/gallery]
 
 Van már kutyánk is, illetve a régi két kutyánk helyett most megint van egy, Olala. Csak azért említem meg, mert már kétszer előfordult, hogy felzabálta a csigát mire reggel lementem... Benti kutya... Amúgy nem lopkod, csak a csigát szereti. Lehet hogy francia apja van?

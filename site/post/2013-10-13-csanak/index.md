@@ -4,7 +4,7 @@ date: "2013-10-13"
 tags: 
   - "család"
   - "fun"
-coverImage: images/IMG_1409.jpg
+coverImage: images/IMG_1409.webp
 ---
 
 Tegnap voltunk Csanakon, csináltam képeket mindkét gyerekről. Itt van mindjárt Zsófi:
@@ -25,7 +25,7 @@ Ha kicsit jobbra fordulnánk, akkor a traktorkerékből készült homokozót lá
 
 Aztán, ez az a hely, ahol megfordítottuk Józsi bácsi szőlőt hirdető kis tábláját. Biztos nem örült neki, dehát mi már csak ilyen csibész gyerekek vagyunk így harminc évesen is.
 
-![003](images/003-500x400.jpg)
+![003](images/003-500x400.webp)
 
 A jó öreg Józsi bácsinak egyébként hatalmas kertje van, és hatalmas teherbírása. Régebben hajnalban kelt, és állandóan piacozott. Persze mostanra már ő is 84 éves, de azért mikor pár éve találkoztam vele, még mindig nagyon korrekten rendbe volt téve a kertje. Úgy 10 éve dolgoztunk együtt legutóbb, valami gödröt kellett kiásni. Hát mit ne mondjak, nem ő fáradt el hamarabb. Az ilyen aknász munka nem programozónak való, de Józsi bácsi elég jól nyomta 70+ évesen.
 

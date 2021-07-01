@@ -6,7 +6,7 @@ tags:
   - "geekség"
   - "grafika"
   - "matematika"
-coverImage: images/raytrace1.jpg
+coverImage: images/raytrace1.webp
 ---
 
 Gyerekkoromban rengeteg kisebb-nagyobb grafikai demót csináltunk Lukács haverommal PC-re. Persze ő mindig ügyesebb volt nálam, de azért én is összeraktam egy-két pörgő-forgó poliédert, mindenféle tűz effekteket meg plazmákat, Rubik kockát meg ilyesmit. Akkoriban még C-ben programoztunk, és assemblyben az igazán kritikus részeknél.
@@ -37,7 +37,7 @@ Jó sok koordinátageometria kell hozzá, de szerencsére nem túl bonyolult (le
 
 Ahelyett, hogy metszéspontokat számolunk, képzeljük el, hogy a félegyenes egy pontján ülünk. Nézzünk körül, és keressük meg a legközelebbi objektumot. Tegyük fel, hogy ez d távolságra van. Ekkor az egészen biztos, hogy ha d-t megyünk előre a félegyenesen, még nem ugrunk át semmit. Viszont az új pontban megint megcsinálhatjuk ezt a számolást, és így tovább mehetünk előre, egészen addig, amíg végül eltalálunk valamit. Az alábbi ábrán ([forrás](http://nopjia.blogspot.hu/2012/03/ray-marching-distance-fields-in-real.html)) látszik mire gondolok.
 
-![08_displacement_05](images/08_displacement_05.jpg)
+![08_displacement_05](images/08_displacement_05.webp)
 
 Bőven elég a távolságokat nézni, az meg egy jóval egyszerűbb. Emiatt persze még nem írtam volna át az egészet, ray marchingra, hiszen addigra már kiszámoltam a gömbökkel meg a síkkal vett metszéspontokat, de kiderült, hogy ezzel a módszerrel az árnyékokat is viszonylag olcsón szép átmenetessé varázsolhatjuk.
 

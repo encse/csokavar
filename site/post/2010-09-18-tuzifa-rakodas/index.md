@@ -4,7 +4,7 @@ date: "2010-09-18"
 tags: 
   - "feladat"
   - "geekség"
-coverImage: images/hasitottfa.jpg
+coverImage: images/hasitottfa.webp
 ---
 
 Ezt a jóságot Enikő Facebook falán láttam, és kicsit még ki is egészítem, hogy lássuk, hogy egy sima matekpélda hogy kísérheti végig tanulmányainkat.

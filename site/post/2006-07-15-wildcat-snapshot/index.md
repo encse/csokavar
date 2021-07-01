@@ -7,4 +7,4 @@ tags:
 
 Le akarom dokumentálni a folyamatot. Most ez a terv:
 
-![main3](images/main3-500x408.jpg)
+![main3](images/main3-500x408.webp)

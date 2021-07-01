@@ -8,7 +8,7 @@ tags:
 keywords:
   - "Ready player one"
   - "Ernest Cline"
-coverImage: images/ready-player-one1.png
+coverImage: images/ready-player-one1.webp
 ---
 
 Tudom, hogy mostanában alig-alig blogolok, de szeretném visszahozni ezt a jó szokásomat, mert hát mitagadás hiányzik az írás. Jó dolog szavakat egymás mellé rakni, és később visszaolvasni. Bár mióta gyerekeim vannak, csak lopva találok magamnak egy kis időt. Az is főleg arra elég, hogy kipihenjem magam a következő műszakig.
@@ -21,7 +21,7 @@ Kezdetnek leporoltam a kinézetet. Így mobilbarátabb, meg mégse olyan kétezr
 
 Pár hete fejeztem be Ernest Cline Ready Player One című könyvét, és Facebookon ajánlgattam is már, sőt Maya el is olvasta. Régen volt a kezemben ilyen szórakoztató könyv.
 
-![ready-player-one](images/ready-player-one-322x500.png)
+![ready-player-one](images/ready-player-one-322x500.webp)
 
 A történet szög egyszerű, ráadásul egy szálon fut, amit még a buszon is képes voltam követni. Volt egyszer egy milliárdos bácsi, aki imádta a nyolcvanas évek kultúráját, és a számítógépes játékokat minden mennyiségben. Később készített egy virtuális valóság szimulátort, ami ez egész bolygón széleskörben elterjedt, és szinte mindenki ebben éli mindennapi életét. (A bolygó közben enyhén lepusztult egyébként.) Még a halála előtt készít egy játékot a játékban, afféle kincskeresést, és arra hagyja az összes pénzét, aki a kincset leghamarabb megtalálja.
 

@@ -4,7 +4,7 @@ date: "2010-04-23"
 tags: 
   - "metaentry"
   - "személyes"
-coverImage: images/win95shutdown-e1447789608709.jpg
+coverImage: images/win95shutdown-e1447789608709.webp
 ---
 
 Nagyjából végeztünk a csomagolással, és mindjárt lekapcsolom a routert, úgyhogy ezek az információmorzsák ezen az ADSL vonalon tőlem.

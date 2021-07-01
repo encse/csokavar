@@ -7,7 +7,7 @@ tags:
 
 Az előbb ránéztem az elemtöltőre, és erről eszembe jutott, hogy durván színtévesztő vagyok. Ez az élmények és a szórakozás kimeríthetetlen tárháza. Néhány pillanatot megosztok önökkel is:
 
-1. a színtévesztő teszt harmadik oldalánál már nagyon szoktam röhögni. Ez egészen a végéig egyre csak fokozódik. ![szinteveszto](images/szinteveszto.jpg) 2. nem látom a különbséget a közlekedési jelzőlámpa pirosa és sárgája között.
+1. a színtévesztő teszt harmadik oldalánál már nagyon szoktam röhögni. Ez egészen a végéig egyre csak fokozódik. ![szinteveszto](images/szinteveszto.webp) 2. nem látom a különbséget a közlekedési jelzőlámpa pirosa és sárgája között.
 
 3. egyszer fél órán keresztül debuggoltam, hogy miért nem rózsaszín egy felirat a mi csodálatos szoftverünkben. Végső elkeseredésemben előkaptam photoshopot, és megnéztem, hogy milyen színű is az a felirat. Csak ekkor bizonyosodott be, hogy mégis rózsaszín, nem szürke.
 

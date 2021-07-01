@@ -3,7 +3,7 @@ title: "Gázóra - Tigáz és Emfesz"
 date: "2011-08-03"
 tags: 
   - "vélemény"
-coverImage: images/Untitled2.png
+coverImage: images/Untitled2.webp
 ---
 
 Megmondom kivel vigyázzanak: akitől a házamat vettem. Az eladó (Zabó László) ugyanis úgy hagyta itt az ingatlant, hogy a gázóra meg volt buherálva. Természetesen nem tudom bizonyítani, hogy ő buherálta meg, de ha Önöknek dolguk akad az illetővel, előbb alaposan győződjenek meg róla, hogy nincs semmi turpisság a dologban. Előfordulhat ugyanis, hogy lesz.

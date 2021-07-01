@@ -8,4 +8,4 @@ tags:
 
 Nesze Önöknek víziló. Ez az első, amit csináltam.
 
-![hippo](images/hippo-500x375.jpg)
+![hippo](images/hippo-500x375.webp)

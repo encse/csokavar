@@ -3,7 +3,7 @@ title: "Camel Active = nem menő"
 date: "2009-09-09"
 tags: 
   - "vélemény"
-coverImage: images/490_1camel_004-e1447878289318.jpg
+coverImage: images/490_1camel_004-e1447878289318.webp
 ---
 
 Tegnap a seggére akartam verni a korábban kapott Camel Active utalványoknak. Ki is választottam magamnak egy kabátot a Westendben 39.990 Ft-ért, így az utalványból maradt volna 10 Ft. Gondoltam, hogy ezt nem adják vissza, de annyit hajlandó lettem volna bukni rajta.

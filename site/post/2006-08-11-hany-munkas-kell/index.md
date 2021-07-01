@@ -7,4 +7,4 @@ tags:
 
 Ebben a témában van még egy "hány munkás kell egy villanykörte kicseréléséhez" is az irodai szerveren, de ezt most találtam az "asztalon". Majd a másikat is előkerítem...
 
-![gyor_belvaros_pentek](images/gyor_belvaros_pentek-500x257.jpg)
+![gyor_belvaros_pentek](images/gyor_belvaros_pentek-500x257.webp)

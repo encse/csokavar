@@ -4,7 +4,7 @@ date: "2009-08-07"
 tags: 
   - "geekség"
   - "hack"
-coverImage: images/Chain-e1447878835557.jpg
+coverImage: images/Chain-e1447878835557.webp
 ---
 
 Ezt a lakatot az utcán találtam, valaki elvághatta a vezetéket valami komoly csípő-harapó eszközzel, és talán eltulajdonította a hozzátartozó biciklit/motort. Én meg észrevettem a fűben az eldobott kincset, és mindenképp ki akartam próbálni, hogy fel tudom-e törni.

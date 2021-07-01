@@ -4,7 +4,7 @@ date: "2006-04-10"
 tags: 
   - "metaentry"
   - "személyes"
-coverImage: images/Typewriters.jpg
+coverImage: images/Typewriters.webp
 ---
 
 Ma bekábeleztem magamnak a világhálót. Ezt ki kell hirdetni, nem igaz? Csináltam wireless lanot, meg ami kell, úgyhogy most fotelből netezhetek. A kötögetés jól ment, csak egy kábelt dugtam rossz helyre. Persze meg voltam győződve, hogy úgy kell, dehát értek én ehhez a sz�rhoz? Nagyjából. Kivéve ahhoz a részéhez ami a telefontól vezet a modem kimenetéig. Vicces volt, mert meg akartam nézni, hogy a modemben jól vannak-e beállítva a dolgok, de természetesen nem volt hozzá jelszavam. Internet ugye még nem volt, tehát telefonon kellett kideríteni a default jelszót. Mint egy miniatűr Mitnick vaze... G\['dzsi\]!

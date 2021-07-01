@@ -3,7 +3,7 @@ title: "Kerti tó építés"
 date: "2013-05-05"
 tags: 
   - "ház"
-coverImage: images/to1.jpg
+coverImage: images/to1.webp
 ---
 
 A tavat már a házzal együtt vettem, és ha már megvolt, nem akartam betemetni. Elolvastam egy csomó egymásnak részben ellentmondó leírást, mindenfélét kipróbáltam, jó csomó pénzt beleöltünk, és talán-talán most már működőképes állapotba került, de ki tudja mit hoz a jövő.
@@ -14,7 +14,7 @@ Az előző tulajdonos kibetonozott egy kis részt hátul a diófa alatt. Elmondt
 
 Egyszerűnek hangzott. Azt gondoltuk, hogy a kis iszapba teszünk majd növényeket, és attól egy idő után kitisztul majd a víz. Persze nem tisztult ki, úgyhogy vettünk egy UV-s vízszűrőt, amitől picit javult a helyzet, de igazából az sem segített. Vannak ilyen egymásnak részben ellentmondó okosságok, hogy a tó legyen árnyékos helyen, de ne legyen fa alatt, mert a belepotyogó levél nem tesz jót neki. Nekünk egy nagy fa volt a tó fölött, ami több ok miatt sem tetszett, úgyhogy megszabadultunk tőle, így most nincs árnyék, viszont a levelek sem potyognak a vízbe. Mondanom se kell, hogy ez sem vált be.
 
-![IMG_0801](images/IMG_08011-500x375.jpg)
+![IMG_0801](images/IMG_08011-500x375.webp)
 
 A másik vonalon elindulva a kisgyerekek miatt kénytelenek voltunk biztonsági hálót tetetni a víz fölé. Ez jól működik, már mindkét gyerek kipróbálta, és tényleg a víz fölött tartotta őket. A tó élvezeti értékéből persze sokat levon, de eredetileg se voltak illúzióim. A [hálót](http://www.medencebiztonsag.hu/home/) egy kedves bácsi szerelte fel, nyugodtan ajánlhatom. Nem olcsó, de szerintem megéri, már két telet kibírt, eddig semmi gond nem volt vele.
 
@@ -26,17 +26,17 @@ Visszakanyarodva: a szűrés tehát jó volt, de kellett egy nagyobb teljesítm�
 
 Az UV szűrő persze nem elég, mert a fonalas algát nem öli meg, ami akkor jön elő ha túl sok fényt kap a víz. Erre a [rezezőt](http://www.kertitotechnika.hu/kertito_termek/velda_i-tronic_algairto_it-15_126655) javasolta a kertész, és tényleg működik a dolog. Mondjuk a rezezővel egy mondatban azt is fontosnak találta megjegyezni, hogy _soha semmi probléma nem volt vele_, és valóban, ahogy utánaolvastam, a túl sok réz nem csak az algát irtja ki a vízben, hanem a halakat is. Ezt mondjuk pont nem szúrtuk el, de azért leírom a rend kedvéért mint lehetséges buktatót. Persze a rezezőnek is kell egy szivattyú, de szerencsére erre a célra fel tudták használni azt, ami korábban az UV szűrőt táplálta. Ezt is kell tamagocsiztatni, néha drótkefével átkefélem a réz katódot, amikor kéri, és persze ebben is van fogyó alkatrész, amit 1-2 évente pótolni kell. A biztonság kedvéért úgy döntöttem, hogy évente fogom cserélni, mert ezen aztán igazán nem fogok elcsúszni, ráadásul márciusban akciós volt a réz anód a [koi farmnál](http://www.koi-farm.hu/index.php?page=shop.product_details&flypage=vmj_color_plus.tpl&product_id=365&category_id=72&option=com_virtuemart&Itemid=32).
 
-![IMG_0804](images/IMG_0804-500x375.jpg)
+![IMG_0804](images/IMG_0804-500x375.webp)
 
 A fő probléma az iszap volt a tó alján. Ugye az volt az egyik alapvetés, hogy iszap kell az aljára. Na ez nem igaz. A legfontosabb dolog a kerti tóban, ahogy a kertész mondta, hogy a szerves anyagot tartsuk tőle távol. Ne essen bele levél, fűszál, és ne folyjon bele föld, meg ami benne van. Tehát az egész tavat kiürítették, gőzborotvával lemosták. A növényeknek nagyon jópofa kis ültető kosarakat készítettek sziklából, a közepén kaviccsal. A víz közepén volt egy kis csobogó, amit én egy a ház körül kallódó műanyag doboz tetejére raktam rá, ők viszont megfordították a dobozt, megtöltötték kövekkel, és ebbe ültették a csobogó szivattyú részét. Ez tök jó ötletnek bizonyult, mert a kövek kicsit megszűrték a vizet, úgyhogy ritkábban kellett tisztítani az egészet. Most tavaszra mondjuk pont tönkre ment, bár az is igaz, hogy télen-nyáron használtam három évig. De nem vettem újat, inkább majd télire valami vízmelegítőt.
 
 A növényeket cserépben tegyük a vízbe, a cserép tetejére pedig kavicsréteg kerüljön ezzel is elejét vesszük a koszolódásnak.
 
-![IMG_0811](images/IMG_0811-500x375.jpg)
+![IMG_0811](images/IMG_0811-500x375.webp)
 
 A következő probléma az volt, hogy a beton megrepedt, és a víz szivárogni kezdett. Sajnos a gőzborotvával kimosták a szilikon szigetelést a repedésekből, úgyhogy le kellett engedni újra és kiszilikonozni megint. Tavaly jó is volt, de idén persze megint tönkre ment... Itt már kábé ötvenedjére gondoltam, hogy betemetem az egészet a \*csába, de ilyenkor már inkább veszteségminimalizálásra megy az ember, úgyhogy vettem két réteg [geotextilt](http://www.suni-kft.hu/webshop/c95/geotextilia) (200g/nm), és egy réteg [EPDM gumi 1mm](http://www.suni-kft.hu/webshop/category/kertito_toepitesi_kellekek_tofolia,_geotextilia)\-es fóliát is. Szétszedtük a tavat, kipakoltuk a széléről és a mederből a sziklákat. Aztán egy réteg geotextil, egy réteg fólia és újabb réteg geotextil következett. Visszaépítettünk mindent, kifúrtam a geotextilt meg a fóliát ahol a biztonsági háló cölöpjei vannak, már éppen felraktam a hálót, amikor a kertész arra járt, és még időben megkérdeztem tőle, hogy mennyire szívja meg magát a geotextil (szemre nem látszott, mert éjszaka esett az eső). Na igen, azt vissza kell hajtani, különben kiszívja a vizet a partra. Tehát a rétegrend: geotextil, fólia és utána csak annyi geotextil, ami még a mederben marad. Na most, hogy a vízben úszó geotextillel mi lesz, az még a jövő zenéje. Egyelőre kövekkel lefogattam az aljára, sajnos még nem sikerült teljesen, de talán beválik.
 
-![IMG_0821](images/IMG_0821-500x375.jpg)
+![IMG_0821](images/IMG_0821-500x375.webp)
 
 Na itt állunk most. Tudom, tudom, tök jó lenne, ha a randa fekete izét eltakarná valami növény. Még nem szabad bekapcsolni az UV szűrőt meg a rezezőt, mert friss vízzel való feltöltés után két hétig érnie kell és állítólag bele kéne rakni egy kis tóindító baktérium mixet is, de az éppen nem volt itthon.
 

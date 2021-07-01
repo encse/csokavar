@@ -29,4 +29,4 @@ Azt sütöttem ki, hogy mivel már jól kifizettem márciusra is az internetet, 
 
 Még szerencse, hogy nincs nekem ezzel nagy anyagi csődöm, mert asszem kb 300 forinttal kerül így többe az internet havonta. Szóval ráérek tulajdonképpen. Csak az a kár, hogy éppen a költségek racionalizálása miatt kezdtem bele ebbe az egészbe... 
 
-![tobw0106](images/tobw0106.jpg)
+![tobw0106](images/tobw0106.webp)

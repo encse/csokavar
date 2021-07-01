@@ -7,7 +7,7 @@ tags:
   - "vélemény"
 keywords:
   - "The Elements of Computing Systems"
-coverImage: images/photo-1-1.jpg
+coverImage: images/photo-1-1.webp
 ---
 
 Múlt héten volt egy lélegzetvételnyi időm, és sikerült befejezni a [The Elements of Computing Systems](http://www.nand2tetris.org/) című könyvet. Régen volt a kezemben ilyen jó könyv. Bár igazából nem is az volt jó, hanem a mondanivalója. Mert hát melyik programozó ne szeretne legalább egyszer az életben egy saját számítógépet összerakni, egészen az alapoktól: NAND kapukból?
@@ -18,7 +18,7 @@ Előbb nyilván NOT, AND, OR, XOR kapukat építesz, meg ezeknek az egyszerre t�
 
 Nagyon egyszerű processzorra gondoljunk, mindössze kétféle utasítása van, de az is bőven elég.
 
-![The-Elements-of-Computing-Systems-9780262640688](images/The-Elements-of-Computing-Systems-9780262640688.jpg)
+![The-Elements-of-Computing-Systems-9780262640688](images/The-Elements-of-Computing-Systems-9780262640688.webp)
 
 A fejezetek végén levő feladatok a fentiekhez hasonló áramkörök megépítését kérik. Nem rágják szájba a megoldást, gondolkodni kell, de éppen elég tippet kapunk ahhoz, hogy ne legyen megoldhatatlan a feladat, amit aztán a mellékelt tesztekkel többé-kevésbé ellenőrizhetünk is.
 

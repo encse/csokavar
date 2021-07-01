@@ -3,7 +3,7 @@ title: "The name of the current drive"
 date: "2010-03-08"
 tags: 
   - "geekség"
-coverImage: images/disk_drive_image-e1447790283886.jpg
+coverImage: images/disk_drive_image-e1447790283886.webp
 ---
 
 I needed the current drive's name (e.g. C:) in a windows shell environment, but there was no powershell around.

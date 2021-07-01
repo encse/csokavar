@@ -8,12 +8,12 @@ tags:
 keywords:
   - "Kódkönyv"
   - "Simon Singh"
-coverImage: images/photo-52.jpg
+coverImage: images/photo-52.webp
 ---
 
 Simon Singh könyve, a Kódkönyv, a titkosírásról szól. Kezdve az alapvető betűcserélgetéstől, egészen a kvantumtitkosításig bemutatja a titkosírás fejlődését, a titkosítók és a kódfejtők örök párharcát. Valamiért nagyon szeretem ezt a könyvet. Még akkor is, ha nem én vagyok a kifejezett célközönsége. Érdekel, hiszen borzasztó kiváncsi vagyok, és az ilyen titkos dolgok mindig is megmozgatták a fantáziámat. Nincs tele mély techno blablával, remekül elmagyarázza miért rosszak a régi módszerek, és receptet ad a "kihüvelyezésükhöz" is. (Igen, ezt a hülye szót is ebből tanultam.) Ezon felül olvasmányos, és igazából csak ennyit várok tőle.
 
-![singh](images/singh.jpg)
+![singh](images/singh.webp)
 
 Ebből a könyvből tanultam meg, mi a [Vigenère](http://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) módszer, és hogy XIV. Lajos titkait őrizte évszázadokig. (Ez volt a '_chiffre indéchiffrable'_, azaz a megfejthetetlen kód.)
 

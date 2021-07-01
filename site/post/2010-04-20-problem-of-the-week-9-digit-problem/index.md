@@ -4,7 +4,7 @@ date: "2010-04-20"
 tags: 
   - "feladat"
   - "geekség"
-coverImage: images/8bit_digits_pattern-500-e1447789863193.jpg
+coverImage: images/8bit_digits_pattern-500-e1447789863193.webp
 ---
 
 I've posted the following challenge to the jokes list of our company the last week, and asked my collegaues to use their imagination and exploit as many programming languages as possible, the more exotic the better...

@@ -8,4 +8,4 @@ tags:
 
 Akarok egy ilyen [pólót](http://www.topatoco.com/merchant.mvc?Screen=PROD&Store_Code=TO&Product_Code=QW-CHEATSHEET&Category_Code=QW).
 
-![timetravelling](images/timetravelling-458x500.jpg)
+![timetravelling](images/timetravelling-458x500.webp)

@@ -4,7 +4,7 @@ date: "2009-08-02"
 tags: 
   - "autó"
   - "enikő"
-coverImage: images/rebirth__a_precious_name_or_a_smile3-e1447879361691.jpg
+coverImage: images/rebirth__a_precious_name_or_a_smile3-e1447879361691.webp
 ---
 
 Enikő előző autója egy kb. vele egykorú Renault 5-ös volt, hasított (felhasadt) bőr ülésekkel, és baloldalon letekerhető ablakkal. Halott fékekkel, de frissen tekercselt indítómotorral. Télen már nem nagyon működött, nyáron meg ugye az ablak hiánya... Szóval alaposan megérett a cserére a dolog.

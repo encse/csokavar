@@ -11,6 +11,6 @@ Ezentúl ide fogok írni. Sőt, ha már belekezdtem, akkor végig is csinálom, 
 
 Ha megengednek egy tippet a végére. Nem mindenki tudja, hogy az Outlookot igenis rá lehet venni, hogy elfelejtsen egy email címet. Előbb írjuk át az esetleges névjegyeket, majd kezdjünk egy új levelet, de csak annyit írjunk be címzettnek, hogy _encse_.  Aztán amikor az Outlook felajánlja a régi címemet, válasszuk ki a nyilakkal, és nyomjuk meg a delete gombot. Tehát valahol itt:
 
-![outlook](images/outlook.png)
+![outlook](images/outlook.webp)
 
 Ezzel a képfeltöltést is kipróbáltuk :)

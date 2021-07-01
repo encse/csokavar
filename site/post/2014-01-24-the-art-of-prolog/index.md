@@ -7,14 +7,14 @@ tags:
   - "vélemény"
 keywords:
   - "The Art of Prolog"
-coverImage: images/Shinagawa-_Departure_of_a_Daimyo_LACMA_48.jpg
+coverImage: images/Shinagawa-_Departure_of_a_Daimyo_LACMA_48.webp
 ---
 
 Amikor Ásványi tanár úr leosztályozta a második Prolog ZH-mat, mondott pár dolgot, aminek azóta sem néztem utána. Tudni illik nem tudtam a különbséget a zöld és piros vágás között. A ZH-ban meg piros vágásokat használtam, és ejnye-bejnye. ("De félre ne értsen nagyon jó dolgozatról van szó, csak...") Most azt már nem tudom, hogy konkrétan rossz is volt-e a megoldás, mindenesetre azt mondta a tanár úr, hogy nekünk ezt "nem szabad".
 
 Ez aztán csak nem hagyott nyugodni az évek alatt, úgyhogy végül is megvettem a [The Art of Prolog](http://www.amazon.com/The-Art-Prolog-Second-Edition/dp/0262691639) című könyvet és végigtoltam az ősszel-télen. Érdekelt, mit lehet kihozni egy egyszerű backtrackből.
 
-![the art of prolog](images/large-0262193388.jpg)
+![the art of prolog](images/large-0262193388.webp)
 
 A Prolog ugyebár egy logikai programozási nyelv. Állításokat próbálunk levezetni kölönböző tényekből és következtetési szabályokból. A bizonyítás módszere az unifikálás, aminek során a logikai változók értéket kapnak, és a visszalépéses keresés. A vágásokkal jelezhetjük a Prolognak, hogy ha már egy részproblémát bebizonyított, tartson ki mellette, még ha később el is akad, ne menjen vissza és ne próbálja meg más úton újra belátni. Mint kiderült attól zöld egy vágás, hogy ki szabad törölni, nem változik tőle a megtalált megoldások halmaza, legfeljebb a keresés hatékonyságát csökkentjük vele.
 

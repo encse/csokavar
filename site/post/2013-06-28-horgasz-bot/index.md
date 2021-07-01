@@ -3,14 +3,14 @@ title: "Horgász-bot"
 date: "2013-06-28"
 tags: 
   - "geekség"
-coverImage: images/horgaszbot.jpg
+coverImage: images/horgaszbot.webp
 ---
 
 A horgászás Wowban úgy működik, hogy bedobod a csalit, vársz egy kicsit, amíg ráharap valami, aztán amikor hallod, hogy kapás van, jobb gombbal rákattintasz az úszóra, és bezsákolod halat.
 
 Ezt persze hamar meg lehet unni, de nekem sok hal kellett, úgyhogy kipróbáltam az [Ultimate Fishbotot](http://fishbot.net/), ami automatizálja a horgászást. Sajnos csak az esetek egy részében működött jól, a többiben nem találta meg az úszót a képernyőn. Még szerencse, hogy programozó vagyok, így rögtön kitaláltam valamit ami jobban működik. [AForge.Nettel](http://www.aforgenet.com/news/2012.02.23.releasing_framework_2.2.4.html) és képelemzéssel közelítettem meg a feladatot.
 
-![Untitled-2](images/Untitled-21-500x254.png)
+![Untitled-2](images/Untitled-21-500x254.webp)
 
 Dobás előtt készítek egy screenshotot, majd dobás után egy másikat. A kettő különbségéből látjuk, hogy hol változott a kép. Az AForge.Net BlobCountere ezeket téglalapok sorozataként adja vissza. Némi rendszerintegrációval (copy paste), ezt összegányoltam a Code Projecten talált [motion detection](http://www.codeproject.com/Articles/10248/Motion-Detection-Algorithms) cikkből.
 

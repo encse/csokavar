@@ -4,7 +4,7 @@ date: "2010-11-20"
 tags: 
   - "geekség"
   - "villamosmérnökség"
-coverImage: images/ΙΚ1.jpg
+coverImage: images/ΙΚ1.webp
 ---
 
 Villamosipari anyagismeretből azt a feladatot kaptuk, hogy válasszunk ki bármilyen az anyagismeret témájába vágó anyagot, és írjunk róla valamit. Elsőéves villamismérnök halgatóként a legmesszebbmenőkig elítélem ezt a feladatkiosztást, hiszen honnan a .... kéne nekem bármit tudni az anyagtudományról, meg arról, hogy mi vág a témájába. Meg is mondtam a tanárnak, hogy tőlem ne várjon érdekességeket, a napelemekről tudok írni, mert az viszonylag jól dokumentált mindenfelé a neten. De azért, hogy ne legyen túl száraz a dolog, és főleg, hogy én is élvezzem egy kicsit, megpróbálkozom itthon napelem készítésével.
@@ -19,17 +19,17 @@ Azt szeretnénk kimutatni, hogy egy réz-I-oxid (Cu2O) lemez, fény hatására e
 
 Rezet a munkahelyemhez legközelebbi bádogosnál vettem, ott elég hülyén néztek, amikor elmondtam, hogy nekem csak egy ilyen kis darabka réz kellene, és tényleg nem akarok belőle esőcsatornát építeni, csak egy házi feladat miatt kell. Végül nagy nehezen, és duzzogva levágtak egy arasznyi széles csíkot a 40 méteres rézgurigából. Még mondta is a bácsi, hogy a szélét levágja géppel egyenesre, de megegyeztünk, hogy erre semmi szükség, hiszen ezt én még úgyis tovább fogom darabolni egészen kis darabokra. Nagyot néztek amikor elmondtam, hogy napelemet fogok csinálni belőle.
 
-![IMG_0720](images/IMG_0720-500x375.jpg)
+![IMG_0720](images/IMG_0720-500x375.webp)
 
 A réz-I-oxid készítéséhez egy rezsóra van szükségünk, legalábbis a kísérlet leírása szerint, amitől nem akartam eltérni hacsak nem volt muszáj. Szereztem hát egy 1500W-os rezsót a neten. Nekem ne mondja senki, hogy nem készülök fel alaposan...
 
-Jobb kint csinálni az ilyeneket, ki tudja milyen büdös lesz miatta. (Nem lett az.) Kivittem a rezsót, beállítottam max fokozatra, és jó fél órán keresztül hevítettem rajta a rezet, amin sötét réz-II-oxid réteg keletkezett. Ezt lassú hűtés után ütögetéssel, illetve simán az ujjam végighúzásával el lehetett távolítani, hogy alatta előtűnjön a vékony réz-I-oxid bevonat. A bejegyéshez csatolt képen amúgy ez a réz-I-oxid látszik kicsiben. A teljes kép [itt](images/IK1-1.jpg) érhető el, és [innen](http://galleryhip.com/copper-oxide-structure.html) származik.
+Jobb kint csinálni az ilyeneket, ki tudja milyen büdös lesz miatta. (Nem lett az.) Kivittem a rezsót, beállítottam max fokozatra, és jó fél órán keresztül hevítettem rajta a rezet, amin sötét réz-II-oxid réteg keletkezett. Ezt lassú hűtés után ütögetéssel, illetve simán az ujjam végighúzásával el lehetett távolítani, hogy alatta előtűnjön a vékony réz-I-oxid bevonat. A bejegyéshez csatolt képen amúgy ez a réz-I-oxid látszik kicsiben. A teljes kép [itt](images/IK1-1.webp) érhető el, és [innen](http://galleryhip.com/copper-oxide-structure.html) származik.
 
 ### A kísérlet
 
 Nem fűztem a dologhoz komoly reményeket, már azzal is ki lettem volna elégítve, ha bármilyen mérhető eredményre jutok. A kísérletet többször is meg kellett ismételni, mert legnagyobb sajnálatomra már a műszer tiszta vízbe mártott csatlakozói között is tudtam némi feszültséget mérni. (Ugyanez reprodukálható volt közönséges rézlemezek vízbemerítésével is.) Próbáltam desztillált vizet is szerezni, de több benzinkúton is csak ioncserélt vizet árultak. Végül egy olyan desztillált vízzel egyenértékűnek nevezett, kémiailag teljesen sómentesített víz mellett döntöttem, aminek a vezetése 20μS-nél kisebb volt. (Bár azt nem adták meg, hogy ezt pontosan hogyan lehetne kimutatni, én ennél jóval nagyobbat mértem.) Sajnos ez a víz is produkálta a mérhető feszültséget már akkor is, amikor tiszta pohárba öntöttem és a feszültségmérőt közvetlenül a víz két pontjára helyeztem. Ez kissé elgondolkodtatott, mert ugyan hogyan tudna már az a szerencsétlen tök homogén víz két pontja között bármilyen feszültséget produkálni, de mondjuk tudjuk ezt be a benne mikro szinten kavarogó ionoknak.
 
-![IMG_0746](images/IMG_0746-500x375.jpg)
+![IMG_0746](images/IMG_0746-500x375.webp)
 
 Összességében négy különböző alkalommal, és több elrendezésben is sikerült reprodukálni a jelenséget, és minden alkalommal nagyon szépen látszott, ahogy a berendezést letakarva csökken a feszültség ill az áramerősség.
 

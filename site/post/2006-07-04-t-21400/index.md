@@ -11,10 +11,10 @@ Na, sikerül a sajtótájékoztató után elcsípnem pár screenshotot Hustonbó
 
 NASA:
 
-![nasa_view](images/nasa_view-500x375.jpg) Vegyük észre, hogy XP-t használnak...
+![nasa_view](images/nasa_view-500x375.webp) Vegyük észre, hogy XP-t használnak...
 
 Google Earth:
 
-![ncs_view](images/ncs_view-500x346.jpg)
+![ncs_view](images/ncs_view-500x346.webp)
 
 Jobbra lent Madagaszkár látszik (Afrikától keletre ugye).

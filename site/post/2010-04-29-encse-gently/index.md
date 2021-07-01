@@ -5,7 +5,7 @@ tags:
   - "geekség"
   - "ház"
   - "matematika"
-coverImage: images/maxresdefault.jpg
+coverImage: images/maxresdefault.webp
 ---
 
 Vettünk hűtőt, egy élmény volt... Végigjártuk az összes boltot, kiválasztottuk a jót, aztán a neten kikerestük a legolcsóbb helyet és [megrendeltük](http://konyhabolt.hu). Eddig jól is ment, csak a kiszállítás volt szar, mert nem tudták megmondani, hogy melyik nap hozzák majd, csak előtte este hét és nyolc között. Aztán vegyél ki szabadságot másnapra... Majd biztos jön valami buzgómócsing megint, aki szerint ez így kurva jó, de engem akkor is idegesít.
@@ -26,13 +26,13 @@ A hűtő elhelyezése volt a legmókásabb, ugyanis a kamra ajtaja (valójában 
 
 Az alábbi ábrából induljunk ki.
 
-![IMG_050711](images/IMG_050711-500x375.jpg)
+![IMG_050711](images/IMG_050711-500x375.webp)
 
 Ez egy oldalnézeti kép. A csíkozott rész jelöli a falat, a piros téglalap a hűtő, amit addig döntünk, amíg a legmagasabb pontja éppen a nyílás magasságába nem esik, ezután rátoljuk a kamra falára, majd elkezdjük a talpára állítani, miközben végig hozzáér a hátsó falhoz. A hűtő méretei $H_x$, $H_y$, a kamráé $K_x$, $K_y$. Egy adott pillanatban a helyzetet egy $\alpha$ szöggel jellemezhetjük. A kérdés az, hogy van-e olyan $\alpha$ a $[0,\pi/2]$ tartományban, amikor a $(K_x, K_y)$ pont a hűtő belsejébe kerül.
 
 Egészítsük ki az ábrát az $A$ és $B$ pontokkal, az ezeken átmenő $e$ egyenessel. Toljuk el $e$-t $e'$-be, ami a hűtő külső oldalán fut végig, és vegyük fel a talajjal és a fallal alkotott metszéspontokba az $A', B'$ pontokat.
 
-![IMG_05081](images/IMG_05081-500x375.jpg)
+![IMG_05081](images/IMG_05081-500x375.webp)
 
 Kis trigonometrikus bűvészkedéssel:
 

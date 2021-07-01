@@ -6,7 +6,7 @@ tags:
   - "vélemény"
 keywords:
   - "Kázmér és Huba"
-coverImage: images/kazmer.jpg
+coverImage: images/kazmer.webp
 ---
 
 Nehogy azt gondolják, hogy csak a fogyasztó társadalommal kapcsolatos rossz tapasztalataimat írom meg, egyszerűen ezekből van több. Egy remek pozitív példa viszont a [Vad Virágok Könyvműhellyel](http://vadviragok.hu/) kapcsolatos. Tavasszal, vagy tán még a múlt télen írtam nekik, hogy a Kázmér és Huba képregénygyűjtemény második kötetét keresem. Akkor nem volt nekik raktáron, de ősszel tervezték az újrakiadást.

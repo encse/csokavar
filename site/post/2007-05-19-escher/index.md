@@ -5,6 +5,6 @@ tags:
   - "fun"
 ---
 
-![kalapacs](images/kalapacs.jpg)
+![kalapacs](images/kalapacs.webp)
 
 Mindig érdekelt, hogy készülnek a szerszámkészítő szerszámai. (Elnézést, a kép mobillal készült.)

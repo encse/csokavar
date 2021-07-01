@@ -14,6 +14,6 @@ Egyébként már teszteltem Cactuson és Dávidon is néhány pályát, és egye
 
 Délután meg nekiálltam layoutot csinálgatni. Itt egy darabka:
 
-![gekko](images/gekko-500x136.jpg)
+![gekko](images/gekko-500x136.webp)
 
 A projekt fedőneve gekko, ami a geek szó elferdítéséből adódik. Asszem maradok ennél a névnél a végleges verzióban. Csak az a kár, hogy még fényévekre vagyunk a megvalósulástól! Bár, talán sikerül valamit összehozni az év végi hosszú pihenés alatt. Ez már nagyon régi álmom, ideje lenne valóra váltani!

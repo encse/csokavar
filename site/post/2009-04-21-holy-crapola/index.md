@@ -21,7 +21,7 @@ Toltunk egy jobbféle demót a minap. Vannak reakciók, [videó](http://msdn.mic
 
 Maya hozzáfűzése:
 
-![holycrapola](images/holycrapola-500x437.jpg)
+![holycrapola](images/holycrapola-500x437.webp)
 
 Saját hozzáfűzésem:
 

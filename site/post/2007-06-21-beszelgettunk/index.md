@@ -15,4 +15,4 @@ Időközben csináltam (gányoltam) egy labirintus editort, amit összekötötte
 
 Ilyen a labirintus editor. A robot úgy néz ki mint egy tank, de a valóságban sokkal aranyosabb.
 
-![lab](images/lab.jpg) Még egy LEGO-LOGO program hiányzik, és azzal 5 évvel a verseny után végre kész is lesz minden (vagy inkább: meg lesz oldva minden).
+![lab](images/lab.webp) Még egy LEGO-LOGO program hiányzik, és azzal 5 évvel a verseny után végre kész is lesz minden (vagy inkább: meg lesz oldva minden).

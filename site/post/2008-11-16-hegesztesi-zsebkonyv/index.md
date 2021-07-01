@@ -5,7 +5,7 @@ tags:
   - "könyv"
 keywords:
   - "Hegesztési zsebkönyv"
-coverImage: images/MIg_MAGCOhegesztes_2.jpg
+coverImage: images/MIg_MAGCOhegesztes_2.webp
 ---
 
 _A polcról véletlenszerűen levett könyvek_ rovatunkban ma a Hegesztési zsebkönyvet mutatjuk be önöknek.

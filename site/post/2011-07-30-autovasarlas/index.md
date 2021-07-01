@@ -3,7 +3,7 @@ title: "Autóvásárlás"
 date: "2011-07-30"
 tags: 
   - "autó"
-coverImage: images/old_peugeot_by_luethy-d3a5hzz.jpg
+coverImage: images/old_peugeot_by_luethy-d3a5hzz.webp
 ---
 
 Lecseréljük Pözsit a kissé öregecske Peugeot-t egy fiatalabb és családbarátabb járgányra. Mert hogy megint bővül a család, ahogy ezt már Facebookon meg is írtam korábban. Egyikünknek sincs baja a francia autókkal, pedig állítólag van egy ilyen szabály, hogy francia kocsit tilos. Enikőnek mindig francia járgányai voltak (ügyesen kerülöm a szóismétlést). Amikor összejöttünk egy vele egyidős Renault-val furikázott, amivel végül legurultak a bontóba. Érdekes, hogy még fizetni is kellett azért, hogy bevegyék, nekem ez nagyon fura volt akkor.

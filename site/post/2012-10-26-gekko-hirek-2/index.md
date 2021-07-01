@@ -3,7 +3,7 @@ title: "Gekkó hírek"
 date: "2012-10-26"
 tags: 
   - "gekko"
-coverImage: images/2194494864_47d3f3b098_o.jpg
+coverImage: images/2194494864_47d3f3b098_o.webp
 ---
 
 Hétvégén kiraktam egy frissítést a [gekkóra](http://gekko.csokavar.hu). Mostantól egyszerre több feladaton lehet dolgozni. Alapból három feladat érhető el, és minden feladat megoldásakor kapsz egy újat. Még nem küldtem köremailt róla, hátha bugos valahol, de nemsokára az is meglesz.

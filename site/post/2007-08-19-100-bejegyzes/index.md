@@ -13,7 +13,7 @@ András küldött egy comicot arról, hogy a programozók legfőbb kifogása a n
 
 Már kb. egy éve töröm a fejem egy intentional comic sorozaton, mert az ottani, jó értelemben vett, kreténséget igazából csak rajzban lehet visszaadni. (Kár, hogy nem tudok eléggé rajzolni.) Most viszont nagyon ráértem délután, és a Bandi-féle levél remek apropót kínált az alábbi kis firkálmány elkészítéséhez:
 
-![Shit Fairy - ISC comic](images/shitfairy.jpg) 
+![Shit Fairy - ISC comic](images/shitfairy.webp) 
 
 Elmagyarázni nem fogom.
 

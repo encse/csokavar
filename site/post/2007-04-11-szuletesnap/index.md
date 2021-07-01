@@ -9,7 +9,7 @@ tags:
 
 Boldog születésnapot, Blog! 
 
-![birthday](images/birthday.jpg) 
+![birthday](images/birthday.webp) 
 
 Encsé már egy éve blogol, úgyhogy egy aprócska, level 1-es, korszellemet idézzünk meg:
 

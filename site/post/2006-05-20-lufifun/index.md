@@ -16,6 +16,6 @@ Maga a hajtogatás egyszerű, bármenniyre is hihetetlennek tűnik. A kutyát pl
 Néhány műremek:
 
 [gallery]
-  images/kutya.jpg
-  images/macska2.jpg
+  images/kutya.webp
+  images/macska2.webp
 [/gallery]

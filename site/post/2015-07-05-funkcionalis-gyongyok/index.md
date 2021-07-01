@@ -7,12 +7,12 @@ tags:
 keywords:
   - "Richard Bird"
   - "Pearls of Functional Algorithm Design"
-coverImage: images/pearl.jpg
+coverImage: images/pearl.webp
 ---
 
 Megvolt a banki elszámoltatás. Bár nekem már nincs hitelem, mégis kaptam vissza valamennyi pénzt, amit könnyen jött könnyen megy alapon az amazonos wish listám (ez rémesen néz ki magyarul) kipucolására fordítottam. Jobban mondva csak egy részét. A másik részét a NAV-nak küldtem el, mert hiába töltöttem ki tavaly, adtam oda és pecsételtettem le, hogy nem kérem a gyerekek után járó adókedvezményt, a csodálatos mobilengines papírgyáros néni mégis visszaigényelte nekem. Így aztán én is és Enikő is megkaptuk tavaly a kedvezményt, amit most büntetéssel együtt csengethettem ki az adóbevallással. Ennyit a hozzáértésről.
 
-![51JRG-YGgOL](images/51JRG-YGgOL.jpg)
+![51JRG-YGgOL](images/51JRG-YGgOL.webp)
 
 Naszóval, megjött a harminc centi magas könyvkupac, és elsőként a [Pearls of Functional Algorithm Designnak](http://www.amazon.com/Pearls-Functional-Algorithm-Design-Richard/dp/0521513383) álltam neki Richard Bird khmm, hát... tollából. Ez a hasonló című Programming Pearls könyv funkcionális változata, eredetileg a Journal of Functional Programming számára készült cikkek újra publikálása kis pimpelés után.
 

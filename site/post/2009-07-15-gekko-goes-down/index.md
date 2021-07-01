@@ -3,7 +3,7 @@ title: "Gekkó: felfüggesztve"
 date: "2009-07-15"
 tags: 
   - "gekko"
-coverImage: images/wU0J1QB-1.jpg
+coverImage: images/wU0J1QB-1.webp
 ---
 
 Lassan lejár az előfizetésem a régi szerveren, és a gekkót még mindig nem költöztettem át az újra. Ennek több oka is van, és csak részben a lustaság a felelős érte.

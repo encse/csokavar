@@ -5,7 +5,7 @@ tags:
   - "feladat"
   - "geekség"
   - "logika"
-coverImage: images/birds_wallpapers_free_download-e1447877918280.jpg
+coverImage: images/birds_wallpapers_free_download-e1447877918280.webp
 ---
 
 <p style="text-align: center">

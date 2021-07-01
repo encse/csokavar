@@ -6,7 +6,7 @@ tags:
   - "gólya"
   - "személyes"
   - "család"
-coverImage: images/Ciconia_ciconia_at_the_hamburg_zoo.jpg
+coverImage: images/Ciconia_ciconia_at_the_hamburg_zoo.webp
 ---
 
 Tegnap megkaptam az utolsó karácsonyi ajándékot is Szily László: Kitolás - kalauz leendő apáknak című könyvét, és hál' Istennek idén még nem telt meg a karácsonyfa alja mindenféle zenélő műanyag izgentyűvel, amivel nyilvánvalóan meg fog telni a következő években, annak ellenére, hogy már most is kérem, hogy senki ne adjon nekünk ilyesmit. Úgyis még aznap kifogy belőle az elem, és szinte biztos vagyok benne, hogy nem is lesz cserélhető.

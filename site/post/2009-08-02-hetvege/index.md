@@ -3,7 +3,7 @@ title: "Hétvége"
 date: "2009-08-02"
 tags: 
   - "személyes"
-coverImage: images/lloyd16-e1447878996273.jpg
+coverImage: images/lloyd16-e1447878996273.webp
 ---
 
 Zsúfolt hétvége volt, tegnap Győrbe mentünk az öreglányt meg a szivattyút megnézni. (Hmm erről se írtam még.) Aztán beugrottunk a belvárosba, a Bécsi fagyizóban ettünk egy jó fagyit, és megnéztük a [Széchenyi teret](http://index.hu/tudomany/blog/2009/04/16/vegleg_elvesztek_a_kozepkor_emlekei_a_gyori_szechenyi_teren_/). Na ez egy érdekes hely. Győrben tök jó sétálni a Radó szigeten, a Rába parton, az egyetlen valamirevaló sétálóutcán, a Püspökvárnál, meg a környéken. A Széchenyi tér ezek tőszomszédságában van, de mégsem szerettem arra menni, mert irgalmatlanul ronda volt. Egy kurva nagy, leaszfaltozott tér. Most viszont rendes burokolatot, sőt jópofa szökőkutat is kapott, olyat, ami a járókelők között, közvetlenül a földből fröcsköl fel. Csomó gyerek fetrengett a vízben, ami külön érdekes volt...

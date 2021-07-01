@@ -3,7 +3,7 @@ title: "Challenge24 Ec 2014"
 date: "2014-02-09"
 tags: 
   - "geekség"
-coverImage: images/ch242.jpg
+coverImage: images/ch242.webp
 ---
 
 Ez is [megvolt](http://ch24.org/) tegnap. Az idei csapatunk (a Quxers) szerintem kiváló volt, bár csak ketten voltunk három helyett. Nem találtunk senkit aki elég motivált és alkalmas lett volna harmadik embernek, főleg hogy még rá is kellett volna érnie.

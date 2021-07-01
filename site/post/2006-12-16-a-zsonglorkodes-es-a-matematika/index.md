@@ -7,7 +7,7 @@ tags:
 
 Valakitől kaptam egy emailt, hogy tudnék-e ajánlani valamit a fenti témában. A helyzet az, hogy ez engem is nagyon érdekelne, de olyan sok anyagom nincs róla. Van egy egyetemi előadás [A zsonglőrködés matematikája](http://www.math.u-szeged.hu/tagok/czedli/oktatas/zs-mat.htm) címmel, de sajnos nincs online jegyzetük, ráadásul a szegedi egyetemen tartják, ami, mit ne mondjak, enyhén szólva kiesik a közvetlen környezetemből.
 
-![Capture](images/Capture-311x500.png)
+![Capture](images/Capture-311x500.webp)
 
 Aztán van még egy könyv is [The Mathematics of Juggling](http://www.amazon.com/Mathematics-Juggling-Burkard-Polster/dp/0387955135), de könyvesboltban eddig még nem láttam (amazontól meg nem rendelek). Talán valamelyik könyvtárban megtalálható.
 

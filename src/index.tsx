@@ -59,7 +59,7 @@ async function generate(writeFile: FileWriter) {
 
     let success: boolean = true;
 
-    convertToWebp('site');
+    success = convertToWebp('site');
     
     async function guardAsync(fpat: string, cb: () => Promise<void>): Promise<void> {
         try {

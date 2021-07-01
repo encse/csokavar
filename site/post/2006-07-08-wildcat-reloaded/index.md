@@ -7,7 +7,7 @@ tags:
 
 Újratervezem a Wildcat oldalt. Valami ilyesmi lesz, persze még sokat fog változni. A színekkel heteket szoktam szenvedni, mert színtévesztő lévén sose tudom, hogy mi néz ki igazán jól. Ráadásul nem mindegy az se, hogy milyen monitoron nézi az ember. Majd a tesómmal egyeztetünk, ha egyszer haza téved.
 
-![main2](images/main2-500x452.jpg)
+![main2](images/main2-500x452.webp)
 
 A főbb változtatások között szerepel, hogy minden oldalon lesz egy új sáv a jobboldalon. Ez igazából nagyon hiányzik a mostani designból. Tulajdonképpen ezért is tervezem újra. A fő-fő probléma az volt eddig, hogy bár lehetett kommentezni minden trükköt, nem igazán látszott, hogy milyen hozzászólások voltak az elmúlt pár napban. Ez a kis jobboldali sáv ezt remekül megoldja, így sokkal pörgösebb lesz a közösségi élet. (Remélhetőleg.)
 

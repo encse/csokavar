@@ -5,4 +5,4 @@ tags:
   - "személyes"
 ---
 
-![szabi2](images/szabi2.jpg)
+![szabi2](images/szabi2.webp)

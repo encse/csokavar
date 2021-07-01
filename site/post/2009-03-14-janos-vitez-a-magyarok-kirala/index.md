@@ -8,7 +8,7 @@ tags:
 
 Régen volt már buszos történet, pedig van miből meríteni. Ma például a magyar őstulok egyik korosodó példányával sikerült összefutni, aki nemzeti szallagos, lúdtollas kalpagba, kitüntetésekkel meg ilyenekkel várta a pesti buszt.
 
-![janosvitez](images/janosvitez.png)
+![janosvitez](images/janosvitez.webp)
 
 Közben hangosan ordibált, hogy "most már aztán igazán vége ezeknek a zsidó kommunistáknak", és egyébként is ilyen-olyan kutyák meg én nem tudom még mi. Valaki szólt neki, hogy nem érti miért kell ezt ilyen hangosan. Na onnantól fogva rátért ez a jóember, hogy a néni bizonyos testrésze odáig szaglik ahol áll, és hogy milyen g\*cit kellene neki besz\*pnia és hogyan. És nevetett közben ez az igaz magyar ember a lúdtollas kucsmája alatt, és a miheztartás végett még hozzátette, hogy az ő családjában Rendőr Őrmester is akad. (És, hogy királok remegnek meg, ha csak kinyitja a száját.)
 

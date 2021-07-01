@@ -4,7 +4,7 @@ date: "2011-12-03"
 tags: 
   - "mobilengine"
   - "prezi"
-coverImage: images/me.png
+coverImage: images/me.webp
 ---
 
 Nem sokat dolgoztam a [Prezinél](http://prezi.com), tulajdonképpen azt hiszem, hogy csak egy hónapot. Nagyon jópofa a hely, csak sajnos az időbeosztást nem úgy képzelték, ahogy én. Nekem ugyanis, családos ember lévén, fontos, hogy ötkor kieshessen a kezemből a billentyűzet és elindulhassak haza. A Preziben meg tulajdonképpen délután négy körül kezdődik az élet, ahogy az amerikai iroda is ébredezik. Szakítottunk hát, még a csodás Macbook Prot is vissza kellett adni. Mondjuk amiatt annyira nem fáj a fejem, mert kifejezetten csúnyának találtam, rohadt nehéz volt felnyitni, és kényelmetlen használni. Szerencsére nem okozott maradandó károsodást, hogy néhány dologhoz commandot kellett nyomni ctrl helyett, és pár hét alatt visszaszoktak az ujjaim a normál kerékvágásba.

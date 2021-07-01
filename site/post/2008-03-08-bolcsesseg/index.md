@@ -8,14 +8,14 @@ tags:
   - "vélemény"
 keywords:
   - "Structure and Interpretation of Computer Programs"
-coverImage: images/photo-1.jpg
+coverImage: images/photo-1.webp
 ---
 
 Encsé nagyon leépült mostanság. A héten már a harmadik testrésze gyulladt be: a  bölcsességfoga, pontosabban a fölötte levő íny, amitől sosem tudott rendesen kinőni az a szegény fog. A fogorvos bácsi szerint ki kellene húzni, mármint ki kellene vésni onnan. hátaf�szom
 
 Közben elkezdtem olvasni a Structure and Interpretation of Computer Programs című könyvet. Most vagyok a közepén, és tetszik. Bár eddig csupa olyan dologról volt benne szó, amit hallottam már az egyetemen (ha más nem a Horváth Zoltán-féle kurva jó Clean előadáson). Viszont van benne egy csomó jópofa konstrukció, meg bonyolultnak látszó problémára adott elegáns válasz, ami miatt nagyon élvezetes olvasmány.
 
-![sicp-cover](images/sicp-cover-345x500.jpg)
+![sicp-cover](images/sicp-cover-345x500.webp)
 
 Inkább nem másolnám ide a [tartalomjegyzéket](http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html#%_toc_start), de az első fejezet a függvényekkel elkövetett absztrakcióval, a második az adatabsztrakcióval foglalkozik, tisztán funkcionális megközelítést alkalmazva. Nagyjából mindenféle jóság benne van, amire csak gondolni lehet, és az első fejezet végére annyira gyönyörűen épül fel a különböző trükkösebbnél trükkösebb függvényekből (higher-order functions) az Anal I-ből megismert gyökvonó algoritmus, hogy csak áradozni lehet róla.
 

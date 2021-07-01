@@ -7,7 +7,7 @@ tags:
 keywords:
   - "Hugh Laurie"
   - "A Balek"
-coverImage: images/Hugh-Laurie-hugh-laurie-31954777-1024-7681.jpg
+coverImage: images/Hugh-Laurie-hugh-laurie-31954777-1024-7681.webp
 ---
 
 Nagy Dr. House mániás az egész iroda, így adni kellett egy esélyt a Laurie könyvnek: hátha. Annyira rossz csak nem lehet... Valami bugyuta kis történetre számítottam, viszonylag élvezetesen megírva, a végén jópofa csavarral, amitől jó szájízzel teszem fel a polcra, hogy egy fél év múlva örömmel adjam kölcsön valakinek, aki persze elfelejti visszaadni. Ahogy ez már lenni szokott.

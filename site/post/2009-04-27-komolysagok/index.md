@@ -4,7 +4,7 @@ date: "2009-04-27"
 tags: 
   - "enikő"
   - "személyes"
-coverImage: images/HIGH-FIDELITY-REWIRE-SECTION-1.jpg
+coverImage: images/HIGH-FIDELITY-REWIRE-SECTION-1.webp
 ---
 
 > "A női bugyik szörnyű csalódást jelentettek számomra, amikor elkezdtem nőkkel együttélni. Igazából soha nem is tudtam felocsúdni a sokkból,  melyet az a felfedezés okozott, hogy a nők ugyanazt csinálják, mint mi: a legjobb bugyikat azokra az estékre tartogatják, amikor tudják, hogy le fognak feküdni valakivel. Amikor az ember együtt él egy nővel, hirtelen az egész lakásban megjelennek a radiátorokon ezek a kifakult, összement, csiricsáré M&S-bugyogók; örökre keresztet vethetsz buja kamaszkori ábrándjaidra, amikor úgy képzelted el a felnőttséget, hogy egyszer és mindörökre körülvesznek az egzotikus női fehérneműk... az ilyen álmok ízzé-porrá zúzódnak, összeütközve a valósággal." (Nick Hornby: Pop, csajok, satöbbi)

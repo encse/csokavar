@@ -5,7 +5,7 @@ tags:
   - "feladat"
   - "geekség"
   - "logika"
-coverImage: images/blackboard-bog-standard-e1447877703210.jpg
+coverImage: images/blackboard-bog-standard-e1447877703210.webp
 ---
 
 Adott egy $n$ elemű egész számokat tartalmazó $A$ vektor.

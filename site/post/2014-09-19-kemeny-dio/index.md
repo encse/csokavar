@@ -12,7 +12,7 @@ De visszakanyarodva, azt semmiképp nem szeretném, ha ne tudnák rólam, hogy o
 
 Én azért szeretem, mert így megismerem a legjobb arcokat, a többiek meg azért, mert szeretnek hülyeségeken gondolkodni. Vagy legalábbis így gondolom. Volt már matekosabb és programozós feladat, meg olyan is, amiben késekből kellett hidat építeni. Tisztelt korábbi kollégáim nyilván emlékeznek rá a régi szép időkből.
 
-![pohar](images/pohar.jpg)
+![pohar](images/pohar.webp)
 
 Van vagy harminc tagja a levelező csoportunknak, és minden héten jön néhány megoldás is, de azért nem túl sok. Persze a lényeg úgyis az, hogy tudjam kivel érdemes haverkodni. HP meg is jegyezte, hogy majd belőlük alakítom ki a csapatomat. Hát igen, szegény kollégák még nem sejtik, hogy egy 50 részes interjúsorozaton vesznek részt...
 

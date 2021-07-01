@@ -9,7 +9,7 @@ tags:
 
 Végre kilőtték. A Google Earth-ös tracker per pill ilyet mutat:
 
-![shuttle](images/shuttle-500x440.jpg)
+![shuttle](images/shuttle-500x440.webp)
 
 Az űrállomás a felvétel időpontjában épp Florida fölött húzott el (innen indult az űrsikló), tehát egy félgömbnyivel van előbbre az űrsiklónál. Most az történik, hogy az űrsikló kisebb pályamódosítások után bekerül az űrállomás keringési síkjára. De egy kicsit alacsonyabban fog repülni, mint az ISS, így egy kicsit gyorsabb lesz az űrállomásnál, és kb. két nap alatt ledolgozza a hátányt.
 

@@ -5,7 +5,7 @@ tags:
   - "isc"
   - "prezi"
   - "személyes"
-coverImage: images/174885_176839412360203_7011051_n.jpg
+coverImage: images/174885_176839412360203_7011051_n.webp
 ---
 
 Elég hosszú idő után végül gyakorlatilag felszámolták a magyar ISC irodát. Januárban kirúgtak három remek programozót, mi Mayával pedig úgy döntöttünk, hogy akkor már nekünk sincs sok keresnivalónk a cégnél. Most már csak Dávid maradt ott egyedül. Nem kívánok ennek az elemzésébe belemenni, mert nem akarom, hogy bárki rosszat vagy jót gondoljon róla. A lényeg, hogy az ISC mostantól főleg az amerikai piacra fókuszál az ott megmaradt embereivel, és folyamatosan keresi az új, tehetséges arcokat, akik a legjobb 10%-ban vannak (asszem 10%-ot mondtak). Tehát ha Önök tisztelt barátaim úgy gondolják, hogy ott a helyük a legjobbak legjobbjai között, akkor nyugodtan vegyék fel a kapcsolatot Ericcel és a többiekkel [itt](http://intentsoft.com/company/careers.html).

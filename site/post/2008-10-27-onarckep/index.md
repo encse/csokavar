@@ -9,18 +9,18 @@ tags:
 
 Játszottam fotosoppal.
 
-![en](images/en.png)
+![en](images/en.webp)
 
 ### Kiegészítés
 
 Á, nem bírtam ki. Cactus és Dávid: 
 
-![cactus-david](images/cactus-david.png) 
+![cactus-david](images/cactus-david.webp) 
 
 Cactus korábbról: 
 
-![cactus](images/cactus.png) 
+![cactus](images/cactus.webp) 
 
 Zapéval meg gondban vagyok: 
 
-![zape](images/zape.png)
+![zape](images/zape.webp)

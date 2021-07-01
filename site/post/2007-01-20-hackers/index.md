@@ -9,12 +9,12 @@ tags:
 keywords:
   - "Steven Levy"
   - "Hackers - heroes of the computer revolution"
-coverImage: images/Spacewar-PDP-1-200705121.jpg
+coverImage: images/Spacewar-PDP-1-200705121.webp
 ---
 
 A héten megjött az egyik könyvem, amit még tavaly rendeltem a [Software Station](http://www.swsbooks.hu/)-től. Steven Levy: [Hackers - heroes of the computer revolution](http://www.amazon.com/exec/obidos/ASIN/0141000511). Letehetetlen. Nem gondoltam, hogy idén már januárban elolvasom az év könyvét, de nincs kétségem afelől, hogy ez viszi el a pálmát. Kicsit ugyan lassan megy, mert angolul van, de azért nem vészes. Ráadásul túl jó ahhoz, hogy csak úgy félredobjam, tehát még így is hamarabb el fogom olvasni, mint egy hasonló hosszúságú magyarul írt könyvet. :)
 
-![hackers](images/hackers.jpg)
+![hackers](images/hackers.webp)
 
 Történelem. A dolog a számítógépekkel ott lett elrontva, hogy az MIT-n volt egy vasúti modellező klub. Mivel pedig egy normális terepasztal irányításához kell egy csomó relé, mindenféle switch, meg egyéb anyámkínja, néhány koszos, beszédhibás és erősen antiszociális fiatal, az autószerelőknél használatos gördeszkaszerű izén fekve, naphosszat csak ezeket buzerálta. Aztán véletlenül találtak egy lyukkártyarendező gépet valamelyik teremben, és beindult a fantáziájuk... Hogy működik? Mit lehetne ezzel csinálni?
 

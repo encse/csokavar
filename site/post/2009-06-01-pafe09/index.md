@@ -4,7 +4,7 @@ date: "2009-06-01"
 tags: 
   - "enikő"
   - "fun"
-coverImage: images/shutterstock_612941954-900x506.jpg
+coverImage: images/shutterstock_612941954-900x506.webp
 ---
 
 Kedves Hölgyem elhívott a Pannónia Fesztivál nevű ritmikus társasági összeröffenésre. Tudják ez az a fajta rendezvény, ahol dübörgő zenére ugrálnak a részegség tengely mentén az "enyhén spicces" és az "éppen ájulás előtti" beosztások között. Ettől balra még nem, jobbra pedig már nem ugrálnak a fiatalok.

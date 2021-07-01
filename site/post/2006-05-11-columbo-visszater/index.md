@@ -3,7 +3,7 @@ title: "Columbo visszatér"
 date: "2006-05-11"
 tags: 
   - "fun"
-coverImage: images/Columbo.jpg
+coverImage: images/Columbo.webp
 ---
 
 Vége a Született felségeknek. Érdekes, hogy ez egy nőknek szóló sorozat akarna lenni, mégis a fél iroda nézi. Bár lehet, hogy valójában férfiaknak szól, csak úgy van tálalva mintha... Értik. Most viszont Doktor House mellett egy másik Sherlock Holmes klón is megjelenik a TV2-n, a nagy öreg: Columbo. Tényleg, észrevették már hogy hasonlítanak? Persze Doktor Housenak ott a teamje segítségnek, de ugyanolyan jó megfigyelők mindketten.

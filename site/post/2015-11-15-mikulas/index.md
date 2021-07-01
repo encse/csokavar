@@ -8,7 +8,7 @@ tags:
 
 Nehogy azt gondolják, hogy kinőttem már a Mikulás rajzolásból. Most, hogy ekkora gyerekeim vannak kezdek belejönni igazán.
 
-![mikulas.JPG](images/mikulas-370x500.jpg)
+![mikulas.webp](images/mikulas-370x500.webp)
 
 A minap volt egy teológiai vitánk Zsófival, amit a következő verhetetlen érvvel zárt le. "Oké apa, ha te nem hiszel Istenben, akkor én se hiszek a Télapóban." Hát erre most mit mondjak...
 

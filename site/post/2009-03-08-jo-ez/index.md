@@ -12,7 +12,7 @@ Már nagyon régóta szerettem volna megcsinálni. Nevezzük generatív művész
 
 Teszik? Nem tetszik?
 
-![faja](images/faja-500x300.png)
+![faja](images/faja-500x300.webp)
 
 ### Frissítés (másnap)
 

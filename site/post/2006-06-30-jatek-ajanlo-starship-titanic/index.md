@@ -8,7 +8,7 @@ tags:
 
 A Titanik Csillaghajó egy Douglas Adams fémjelezte CD-ROM, még az özönvíz előtti huszadik századból. Tavaly tudtam meg, hogy létezik, mikor a Kétség lazacát olvastam. Aztán valahogy elfejetődött, de pár hete megint eszembe jutott, és mivel elég retromán vagyok, muszáj volt beszerezni.
 
-![starship_titanic_box_art](images/starship_titanic_box_art.jpg)
+![starship_titanic_box_art](images/starship_titanic_box_art.webp)
 
 A játék elindításával problémák voltak, ugyanis az XP SP2-t nem szereti, de egy rajongó honlapján találtam egy patch-t, amivel downgradelni lehet az xp-t (!!), és akkor elindul rendesen. :)
 

@@ -8,7 +8,7 @@ tags:
 
 Júlia a hétvégén barlangász túravezetői vizsgát tesz. Ennek azonban előfeltétele volt, hogy - egyelőre még felügyelet mellett - egy kisebb túrát vezessen néhány jó barátnak. Szerda délután tehát felszedelőzködtünk, és a legszarabb ruháinkban felsorakoztunk a Mátyás-hegyi-barlang mellett.
 
-![matyasbarlang](images/matyasbarlang-500x309.jpg)
+![matyasbarlang](images/matyasbarlang-500x309.webp)
 
 A kirándulás alaphangját az az immáron évezredek óta kifogyhatatlan humorforrás adta meg, amikor Ádám (Júlia egykori barátja) bemutatkozott Évának, akiről tudni érdemes, hogy szintén túravezető szeretne lenni. Aztán a biztonság kedvéért még belém öntöttek egy csésze teát, és rám tukmáltak egy gyönyörű, kék kantáros nadrágot, hogy mégis inkább azt agyagozzam majd össze, és ne úgy nézzek ki hazafelé a buszon, mint a seggem.
 
@@ -26,7 +26,7 @@ Szégyenletes, de nem emlékszem a termek nevére, meg a konkrét útvonalra. Ez
 
 Mindenesetre a legjópofább dolgok közé tartozott, hogy amikor beértél egy terembe, amiből nyilvánvalóan nem volt kivezető út, akkor valamelyik vezetőnk, mintha az a világ legtermészetesebb dolga lenne, egyszerűen bemászott valami sziklaperem alá, vagy beereszkedett egy nyilvánvalóan alulméretezett résbe, és hipp-hopp, eltűnt benne. Aztán némi kapálózás és nyögdösés után mi is átjutottunk a másik - az előzőhöz megszólalásig hasonló - terembe.
 
-![micimacko](images/micimacko.jpg)
+![micimacko](images/micimacko.webp)
 
 És hát, amit el tudnak képzelni. Itt-ott egy két csillivilli kristály, vagy mészvázas állatka maradványai. Sőt: van egy kb. 3 centiméter hosszú cseppkőoszlop is a Mátyás barlangban. Ez utóbbi közvetlenül a Micimackóként emlegetett rés mellett található, ami a Nyúl üregében ragadt Micimackóról kapta a nevét. Nyilvánvalóan nem véletlenül... Júlia azért kipróbálta, és gond nélkül át is fért rajta. (A Túlméretezett Hasú Programozó nem vállalkozott a próbatételre.)
 

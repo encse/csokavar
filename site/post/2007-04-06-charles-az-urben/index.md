@@ -4,7 +4,7 @@ date: "2007-04-06"
 tags: 
   - "isc"
   - "űrkutatás"
-coverImage: images/simonyi_patch.png
+coverImage: images/simonyi_patch.webp
 ---
 
 Nem minden nap megy az ember főnöke a világűrbe, de az enyém holnap mégis...
