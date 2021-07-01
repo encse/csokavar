@@ -3,7 +3,7 @@ title: "Vonatos mese"
 date: "2012-12-08"
 tags: 
     - "család"
-coverImage: images/sgaugl7k92b51.png
+coverImage: images/sgaugl7k92b51.webp
 ---
 
 <script type="text/javascript">// <![CDATA[ WebFontConfig = { google: { families: [ 'Emilys+Candy::latin' ] }<br /> };<br /> (function() {<br /> var wf = document.createElement('script');<br /> wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +<br /> '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';<br /> wf.type = 'text/javascript';<br /> wf.async = 'true';<br /> var s = document.getElementsByTagName('script')[0];<br /> s.parentNode.insertBefore(wf, s);<br /> })();<br /> // ]]></script>

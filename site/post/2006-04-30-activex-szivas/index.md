@@ -11,7 +11,7 @@ Kedves M$ barátunk elvesztett egy szabadalmi pert a "weboldalba ágyazott activ
 
 Most azt hiszik, valami random implementációs detailről beszélek, és ilyennel halandó ember úgysem találkozik. Ez sajnos nem igaz. Lásd pl. index.hu, vigyük csak az egeret egy flash reklám fölé:
 
-![flash_ad](images/flash_ad.png) 
+![flash_ad](images/flash_ad.webp) 
 
 "Az aktiváláshoz és használathoz kattintson a vezérlőre." Erről van szó. Flashnél még nem is annyira gáz a helyzet. A Wildcat oldal viszont tele van .mov videókkal, amit csak a szintén ActiveX-es Quicktime Playerrel lehet lejátszani. Mit gondolnak ott hogy sikerült implementálni a dolgot? Vajon ilyen diszkrét módon, vagy sikerült valami elbaszott megoldást választani? NA? Szabad a gazda?
 

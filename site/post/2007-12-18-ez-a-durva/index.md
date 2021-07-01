@@ -10,7 +10,7 @@ Szóval itt a Karácsony, az év végi pihenés, és hazahoztam a laptopot Pest
 
 Ettől aztán a Vista ClearType fontjai megzavarodnak, és úgy néznek ki mint... nos, nézzék meg inkább maguknak:
 
-![brg](images/brg.png) A két kép közül nálam a baloldali éles a külső monitoron, a jobboldali pedig a beépítetten. Vicces nézni, ahogy áthúzom az ablakot az egyik monitorról a másikra, és ettől minden megváltozik...
+![brg](images/brg.webp) A két kép közül nálam a baloldali éles a külső monitoron, a jobboldali pedig a beépítetten. Vicces nézni, ahogy áthúzom az ablakot az egyik monitorról a másikra, és ettől minden megváltozik...
 
 Szerencsére pár éve, Microsofték beépítették a ClearTypeba a BGR támogatást is. De vajon gondoltak-e a hozzám hasonló szerencsétlenekre, és lehet-e a két monitoron különböző BGR/RGB beállítást használni?
 

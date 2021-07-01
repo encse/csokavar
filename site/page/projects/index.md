@@ -90,7 +90,7 @@ Internet konzerváló céllal letöltöttem, kikukáztam és újra elérhetővé
 
 ## [NES emulátor (2016)](https://nes.csokavar.hu/)
 
-![super mario bros](images/NES_Super_Mario_Bros.png)
+![super mario bros](images/NES_Super_Mario_Bros.webp)
 
 Egy nagyon hosszú januári napon elkezdtem írni egy Nintendo Entertainment System emulátort. Jó két hónappal később eljutottam odáig, hogy stabilan fut benne a Super Mario Bros.
 </article>

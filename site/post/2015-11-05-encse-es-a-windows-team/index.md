@@ -4,7 +4,7 @@ date: "2015-11-05"
 tags: 
   - "könyv"
   - "prezi"
-coverImage: images/bg.png
+coverImage: images/bg.webp
 ---
 
 Év eleje óta vagyok a JS platform csapatban, négy hónapja tech leadként. Mostanra egész jól helyre kalapáltuk a build környezetet, a tesztek stabilak lettek, az AWS nodeok jönnek-mennek ahogy kell, a sebesség elfogadható. Szeretnék minél több területet megismerni a cégen belül, ezért elkezdtem keresgélni.

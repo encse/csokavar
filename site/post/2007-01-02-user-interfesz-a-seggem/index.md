@@ -9,7 +9,7 @@ Azt hinné az ember, hogy legalább egy bank ad egy kicsit magára, ha már egys
 
 Véletlenül rányomtam a postaládára, és valami ilyesmi jött ki:
 
-![Capture](images/Capture.png) A törlés világos: kijelölöm, benyomom, letörlöm.
+![Capture](images/Capture.webp) A törlés világos: kijelölöm, benyomom, letörlöm.
 
 De minek a checkbox az ovasáshoz? Nem inkább az üzenet szövegéből kéne linket csinálni? Ha hármat kijelölök, és úgy nyomok az olvasásra, vajon mi történik? Hogy mi? HIBA. Azt nem szabad.
 

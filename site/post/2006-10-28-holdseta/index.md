@@ -13,7 +13,7 @@ coverImage: images/Aldrin_Apollo_11.webp
 
 Ez mégiscsak egy blog valahol, így, még ha oly óvatosan is, de kénytelen vagyok megemlékezni a [charlesinspace.com](http://charlesinspace.com/) weboldalról. Hát csoda, ha az ember űrmániákus lesz egy ilyen cégnél?
 
-![holdseta](images/holdseta.jpg)
+![holdseta](images/holdseta.webp)
 
 Hadd ajánljak egy könyvet ismét. Dancsó Béla: Holdséta. Bazi vastag, és mi tagadás, elég száraz is, tele tényekkel, adatokkal. Ugyanakkor mégis élvezettel olvastam, mert szépen végigvezet az űr és a Hold meghódításának fázisain, a kezdeti rakétakísérletektől az Apolló 17-ig, meg az azt követő évekig.
 

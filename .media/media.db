@@ -2,13 +2,6 @@
 	"version": "0.2",
 	"items": [
 		{
-			"cdnPath": "/assets/2e033cfb-b14d-5b02-b5c2-ab1aae1f1af1.jpg",
-			"dominantColor": "rgb(129, 112, 76)",
-			"height": 529,
-			"width": 1024,
-			"srcPath": "site/page/about/images/AAEAAQAAAAAAAAmGAAAAJGQ2ZTAzNmJmLWRlZmQtNGJhMy04OGJiLTZlZWYyYWNlNjIwYg-e1503254268233.jpg"
-		},
-		{
 			"cdnPath": "/assets/1376b35f-a073-5014-8f11-8de9d42ad849.gif",
 			"dominantColor": "rgb(40, 30, 66)",
 			"height": 799,
@@ -44,34 +37,6 @@
 			"srcPath": "site/page/konyvespolc/images/ezgif-7-c057475f207c.gif"
 		},
 		{
-			"cdnPath": "/assets/d57eadad-479b-51d5-880f-5e29f27bf205.png",
-			"dominantColor": "rgb(108, 142, 216)",
-			"height": 224,
-			"width": 256,
-			"srcPath": "site/page/projects/images/NES_Super_Mario_Bros.png"
-		},
-		{
-			"cdnPath": "/assets/b54d3d36-4f52-55e6-aec5-87b03818fd35.png",
-			"dominantColor": "rgb(12, 4, 21)",
-			"height": 742,
-			"width": 844,
-			"srcPath": "site/page/projects/images/Screen-Shot-2021-01-07-at-20.13.57.png"
-		},
-		{
-			"cdnPath": "/assets/b03b62ef-4b70-58ab-bfde-e64e00fef2cb.png",
-			"dominantColor": "rgb(78, 86, 96)",
-			"height": 880,
-			"width": 848,
-			"srcPath": "site/page/projects/images/Screen-Shot-2021-03-31-at-14.46.59.png"
-		},
-		{
-			"cdnPath": "/assets/12e1bbe0-c512-5320-be92-c699638037ef.png",
-			"dominantColor": "rgb(48, 47, 43)",
-			"height": 800,
-			"width": 1280,
-			"srcPath": "site/page/projects/images/casette.png"
-		},
-		{
 			"cdnPath": "/assets/fd35d8f3-a2df-5dee-8709-3f5effc773fc.gif",
 			"dominantColor": "rgb(23, 47, 62)",
 			"height": 364,
@@ -100,74 +65,11 @@
 			"srcPath": "site/page/projects/images/me.svg"
 		},
 		{
-			"cdnPath": "/assets/eb834962-82fa-5704-8603-a81cda44a3be.png",
-			"dominantColor": "rgb(209, 236, 220)",
-			"height": 198,
-			"width": 289,
-			"srcPath": "site/page/projects/images/mobilengine.png"
-		},
-		{
 			"cdnPath": "/assets/3dacf142-2486-55ec-81c8-e670cd1a1fd0.svg",
 			"dominantColor": "rgb(206, 238, 225)",
 			"height": 600,
 			"width": 600,
 			"srcPath": "site/page/projects/images/prezi.svg"
-		},
-		{
-			"cdnPath": "/assets/df816c97-bedf-599e-879e-f9961ee90fdc.jpg",
-			"dominantColor": "rgb(115, 110, 108)",
-			"height": 768,
-			"width": 1024,
-			"srcPath": "site/post/2006-04-12-team-building/images/grldn01.jpg"
-		},
-		{
-			"cdnPath": "/assets/7e9bb669-1504-51d9-aa33-cb8533492e4e.png",
-			"dominantColor": "rgb(238, 236, 234)",
-			"height": 265,
-			"width": 331,
-			"srcPath": "site/post/2006-04-30-activex-szivas/images/flash_ad.png"
-		},
-		{
-			"cdnPath": "/assets/8d9b3e72-376b-5d82-87e1-6550e71f85d1.jpg",
-			"dominantColor": "rgb(127, 125, 143)",
-			"height": 350,
-			"width": 245,
-			"srcPath": "site/post/2006-10-28-holdseta/images/holdseta.jpg"
-		},
-		{
-			"cdnPath": "/assets/9f8c59e4-cdb0-53f6-9707-8fc97878c421.png",
-			"dominantColor": "rgb(242, 243, 227)",
-			"height": 321,
-			"width": 506,
-			"srcPath": "site/post/2007-01-02-user-interfesz-a-seggem/images/Capture.png"
-		},
-		{
-			"cdnPath": "/assets/1e025e78-4622-5484-92ec-7c52601089d5.png",
-			"dominantColor": "rgb(225, 225, 224)",
-			"height": 661,
-			"width": 664,
-			"srcPath": "site/post/2007-01-28-az-xp-meg-az-eszkozok/images/modem.png"
-		},
-		{
-			"cdnPath": "/assets/d06e5d9b-f526-55a2-b27c-0c937b3cb57c.png",
-			"dominantColor": "rgb(129, 125, 90)",
-			"height": 210,
-			"width": 220,
-			"srcPath": "site/post/2007-06-30-khmm-baranykefelos/images/schmuck041.png"
-		},
-		{
-			"cdnPath": "/assets/6b2c4b27-19e4-59ea-bd87-10e7f627e547.jpg",
-			"dominantColor": "rgb(134, 129, 127)",
-			"height": 350,
-			"width": 242,
-			"srcPath": "site/post/2007-10-23-hugh-laurie-a-balek/images/b330327.jpg"
-		},
-		{
-			"cdnPath": "/assets/8ebcaa08-2a54-55e7-a956-624aa7d42886.png",
-			"dominantColor": "rgb(231, 231, 233)",
-			"height": 211,
-			"width": 444,
-			"srcPath": "site/post/2007-12-18-ez-a-durva/images/brg.png"
 		},
 		{
 			"cdnPath": "/assets/77519d7e-3927-59ee-a947-26861e68955f.gif",
@@ -345,13 +247,6 @@
 			"srcPath": "site/post/2015-03-04-challenge24-ec-2015/images/4k7kp0I.gif"
 		},
 		{
-			"cdnPath": "/assets/7367aab2-664d-5731-b2bc-e337cce8b02d.png",
-			"dominantColor": "rgb(8, 6, 7)",
-			"height": 271,
-			"width": 384,
-			"srcPath": "site/post/2016-03-12-nes-emulator/images/162160-avenger-commodore-64-screenshot-gameplay-us-and-europe-version.png"
-		},
-		{
 			"cdnPath": "/assets/d7f7d14e-e49b-559f-95fe-187c95be2072.gif",
 			"dominantColor": "rgb(141, 141, 201)",
 			"height": 240,
@@ -385,34 +280,6 @@
 			"height": 200,
 			"width": 400,
 			"srcPath": "site/post/2012-03-26-oreganyam/images/pizza.gif"
-		},
-		{
-			"cdnPath": "/assets/87635ab2-d742-54e9-9a68-d3d0a20a7813.png",
-			"dominantColor": "rgb(120, 108, 13)",
-			"height": 480,
-			"width": 640,
-			"srcPath": "site/post/2015-11-05-encse-es-a-windows-team/images/bg.png"
-		},
-		{
-			"cdnPath": "/assets/1953ffc7-97ca-5b01-8632-bce5d9ab06b6.png",
-			"dominantColor": "rgb(53, 80, 45)",
-			"height": 600,
-			"width": 1024,
-			"srcPath": "site/post/2012-12-08-vonatos-mese/images/DtcA8_7XcAIig33.png"
-		},
-		{
-			"cdnPath": "/assets/1eb17425-60b0-5a0b-b801-7ad191dfb97c.png",
-			"dominantColor": "rgb(63, 67, 41)",
-			"height": 750,
-			"width": 1000,
-			"srcPath": "site/post/2012-12-08-vonatos-mese/images/sgaugl7k92b51.png"
-		},
-		{
-			"cdnPath": "/assets/264fa97c-9174-5afc-8d69-581387cd0b28.png",
-			"dominantColor": "rgb(64, 43, 62)",
-			"height": 750,
-			"width": 1000,
-			"srcPath": "site/post/2014-09-19-kemeny-dio/images/08c3d2c499870d7ee29f08b9af196b74.png"
 		},
 		{
 			"cdnPath": "/assets/d49e6a58-663a-5359-9057-6ce47e85492d.jpeg",
@@ -2940,6 +2807,139 @@
 			"height": 720,
 			"width": 1280,
 			"srcPath": "site/post/2016-03-12-nes-emulator/images/flimbo.webp"
+		},
+		{
+			"cdnPath": "/assets/70accc94-42d8-5612-889f-de436c415370.webp",
+			"dominantColor": "rgb(129, 112, 76)",
+			"height": 529,
+			"width": 1024,
+			"srcPath": "site/page/about/images/AAEAAQAAAAAAAAmGAAAAJGQ2ZTAzNmJmLWRlZmQtNGJhMy04OGJiLTZlZWYyYWNlNjIwYg-e1503254268233.webp"
+		},
+		{
+			"cdnPath": "/assets/ca74b8fa-f82b-5bcb-a76e-94a923fa4286.webp",
+			"dominantColor": "rgb(108, 143, 216)",
+			"height": 224,
+			"width": 256,
+			"srcPath": "site/page/projects/images/NES_Super_Mario_Bros.webp"
+		},
+		{
+			"cdnPath": "/assets/d6c4fde8-b797-5e71-a3fe-336d454481f7.webp",
+			"dominantColor": "rgb(13, 5, 22)",
+			"height": 742,
+			"width": 844,
+			"srcPath": "site/page/projects/images/Screen-Shot-2021-01-07-at-20.13.57.webp"
+		},
+		{
+			"cdnPath": "/assets/bded5831-ac86-51f5-887a-6a4d4a147f7b.webp",
+			"dominantColor": "rgb(78, 86, 96)",
+			"height": 880,
+			"width": 848,
+			"srcPath": "site/page/projects/images/Screen-Shot-2021-03-31-at-14.46.59.webp"
+		},
+		{
+			"cdnPath": "/assets/351a879b-1c03-5aa3-ac71-a723c50d5bd7.webp",
+			"dominantColor": "rgb(48, 47, 44)",
+			"height": 800,
+			"width": 1280,
+			"srcPath": "site/page/projects/images/casette.webp"
+		},
+		{
+			"cdnPath": "/assets/d109b6cd-915e-5755-ae74-561ab46ef18a.webp",
+			"dominantColor": "rgb(207, 235, 218)",
+			"height": 198,
+			"width": 289,
+			"srcPath": "site/page/projects/images/mobilengine.webp"
+		},
+		{
+			"cdnPath": "/assets/5b55abbd-df47-5c2a-9bd0-787be9932900.webp",
+			"dominantColor": "rgb(115, 110, 108)",
+			"height": 768,
+			"width": 1024,
+			"srcPath": "site/post/2006-04-12-team-building/images/grldn01.webp"
+		},
+		{
+			"cdnPath": "/assets/fe1b6a44-b0f5-5863-bf33-e7d93f8025d2.webp",
+			"dominantColor": "rgb(236, 235, 233)",
+			"height": 265,
+			"width": 331,
+			"srcPath": "site/post/2006-04-30-activex-szivas/images/flash_ad.webp"
+		},
+		{
+			"cdnPath": "/assets/1a2ed440-f7c0-5853-9fa1-ddedcbb13b22.webp",
+			"dominantColor": "rgb(127, 125, 143)",
+			"height": 350,
+			"width": 245,
+			"srcPath": "site/post/2006-10-28-holdseta/images/holdseta.webp"
+		},
+		{
+			"cdnPath": "/assets/766fd561-15ec-5d8e-a746-8c7bb08643e6.webp",
+			"dominantColor": "rgb(241, 242, 226)",
+			"height": 321,
+			"width": 506,
+			"srcPath": "site/post/2007-01-02-user-interfesz-a-seggem/images/Capture.webp"
+		},
+		{
+			"cdnPath": "/assets/087d9df9-6397-5d0f-9967-2189292c8ead.webp",
+			"dominantColor": "rgb(224, 224, 223)",
+			"height": 661,
+			"width": 664,
+			"srcPath": "site/post/2007-01-28-az-xp-meg-az-eszkozok/images/modem.webp"
+		},
+		{
+			"cdnPath": "/assets/1c8816bc-f367-557a-888c-8eb95a1d348b.webp",
+			"dominantColor": "rgb(129, 125, 92)",
+			"height": 210,
+			"width": 220,
+			"srcPath": "site/post/2007-06-30-khmm-baranykefelos/images/schmuck041.webp"
+		},
+		{
+			"cdnPath": "/assets/c0a3f718-03d2-5fa2-828e-be0edbe3b53c.webp",
+			"dominantColor": "rgb(134, 129, 127)",
+			"height": 350,
+			"width": 242,
+			"srcPath": "site/post/2007-10-23-hugh-laurie-a-balek/images/b330327.webp"
+		},
+		{
+			"cdnPath": "/assets/403df9b9-fdcd-5688-b4a2-4e9eb9463987.webp",
+			"dominantColor": "rgb(230, 230, 231)",
+			"height": 211,
+			"width": 444,
+			"srcPath": "site/post/2007-12-18-ez-a-durva/images/brg.webp"
+		},
+		{
+			"cdnPath": "/assets/9bda7592-f772-5cf6-9d01-41a2ba0225c1.webp",
+			"dominantColor": "rgb(53, 80, 45)",
+			"height": 600,
+			"width": 1024,
+			"srcPath": "site/post/2012-12-08-vonatos-mese/images/DtcA8_7XcAIig33.webp"
+		},
+		{
+			"cdnPath": "/assets/33bfeda6-7f13-5d92-b344-ba0718d10795.webp",
+			"dominantColor": "rgb(63, 67, 41)",
+			"height": 750,
+			"width": 1000,
+			"srcPath": "site/post/2012-12-08-vonatos-mese/images/sgaugl7k92b51.webp"
+		},
+		{
+			"cdnPath": "/assets/8aa9d7e7-a807-533b-929d-c128c938bd2a.webp",
+			"dominantColor": "rgb(65, 43, 63)",
+			"height": 750,
+			"width": 1000,
+			"srcPath": "site/post/2014-09-19-kemeny-dio/images/08c3d2c499870d7ee29f08b9af196b74.webp"
+		},
+		{
+			"cdnPath": "/assets/39a8502e-3c89-5a84-b01e-d334513cb548.webp",
+			"dominantColor": "rgb(118, 108, 31)",
+			"height": 480,
+			"width": 640,
+			"srcPath": "site/post/2015-11-05-encse-es-a-windows-team/images/bg.webp"
+		},
+		{
+			"cdnPath": "/assets/451015eb-4388-5a08-afae-b8a884e2f0aa.webp",
+			"dominantColor": "rgb(8, 7, 8)",
+			"height": 271,
+			"width": 384,
+			"srcPath": "site/post/2016-03-12-nes-emulator/images/162160-avenger-commodore-64-screenshot-gameplay-us-and-europe-version.webp"
 		}
 	]
 }

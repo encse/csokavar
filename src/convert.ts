@@ -13,12 +13,8 @@ export function convertToWebp(fpatRoot: string): boolean {
 
                 execSync(`cwebp ${fpatIn} -o ${fpatOut}`)
                 const ratio = ((fs.statSync(fpatOut).size / fs.statSync(fpatIn).size) * 100);
-                if (ratio < 100) {
-                    console.log(`converted ${fpatOut}, size to original ratio: ${ratio.toFixed(2)}%`);
-                    fs.unlinkSync(fpatIn);
-                } else {
-                    fs.unlinkSync(fpatOut);
-                }
+                console.log(`converted ${fpatOut}, size to original ratio: ${ratio.toFixed(2)}%`);
+                fs.unlinkSync(fpatIn);
             }
         } catch (error) {
             console.log(fpatIn);

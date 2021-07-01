@@ -12,7 +12,7 @@ coverImage: images/Hugh-Laurie-hugh-laurie-31954777-1024-7681.webp
 
 Nagy Dr. House mániás az egész iroda, így adni kellett egy esélyt a Laurie könyvnek: hátha. Annyira rossz csak nem lehet... Valami bugyuta kis történetre számítottam, viszonylag élvezetesen megírva, a végén jópofa csavarral, amitől jó szájízzel teszem fel a polcra, hogy egy fél év múlva örömmel adjam kölcsön valakinek, aki persze elfelejti visszaadni. Ahogy ez már lenni szokott.
 
-![b330327](images/b330327.jpg)
+![b330327](images/b330327.webp)
 
 De nem így történt. A három kívánalamból csak a bugyuta kis történet volt meg. Csavar nincs, a szöveg pedig túlerőltetett metaforákkal van tele. A legnagyobb poén talán az volt, hogy szinte minden kétszer van leírva. Valahogy így:
 

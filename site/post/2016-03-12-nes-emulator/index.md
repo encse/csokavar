@@ -20,7 +20,7 @@ Mindenesetre ezek voltak az évek, amikor esténként öcsémmel Columbot nézt�
 
 Akkoriban kezdtem tanulgatni a programozást is. 10 évesen írtam az első Hello World-öt, de az hogy programozó leszek, szerintem már kicsit korábban eldőlt. Nagyjából három éves lehettem, amikor először láttam számítógépet, volt (van) egy VIC-20-asunk, amiről el sem tudom képzelni, hogy tudták megvenni a nyolcvanas évek elején. Mármint nem anyagilag, hanem egyáltalán. Akkoriban nem lehetett csak úgy áthozni ilyet a határon. Amikor először láttam, a szüleim egy ehhez hasonló Space invaders klónnal játszottak.
 
-![162160-avenger-commodore-64-screenshot-gameplay-us-and-europe-version](images/162160-avenger-commodore-64-screenshot-gameplay-us-and-europe-version.png)
+![162160-avenger-commodore-64-screenshot-gameplay-us-and-europe-version](images/162160-avenger-commodore-64-screenshot-gameplay-us-and-europe-version.webp)
 
 A képekre annyira nem emlékszem, főleg, hogy fekete fehér tévén láttam, de azt a kisgyerek számára hátborzongató hangját most is fel tudom idézni. Azt mondanám, hogy itt el is dőlt a pályaválasztás. Nem húztam sokáig, és tényleg ez az egyik legkorábbi emlékem, amennyire vissza tudok tekerni. Jó, annyira nem vagyok elveszett ember, van egy rakás nem geek dolog is. Fura, hogy mennyi minden megmaradt. Szerencsés vagyok, mert négy évesen Győrbe költöztünk (Anyu, az egy másik ország?), és így be tudom lőni, hogy mi történhetett három éves koromban vagy korábban.
 
