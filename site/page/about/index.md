@@ -49,13 +49,13 @@ I also enjoy playing the piano, although I'm not much of a pianist. I started to
                     iframe.style.top='0';
                     iframe.style.left='0';
                     iframe.style.position='absolute';
-                    iframe.style.width=`${header.clientWidth}px`;
-                    iframe.style.height=`${header.clientHeight}px`;
+                    iframe.style.width=`100%`;
+                    iframe.style.height=`100%`;
                     iframe.style.padding='0';
                     iframe.style.border='none';
                     iframe.src='https://pacman.csokavar.hu';
 
-                    header.append(iframe);
+                    document.body.append(iframe);
 
                     const onClose = (event) => {
                         iframe.remove();
