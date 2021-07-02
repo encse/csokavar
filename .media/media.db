@@ -2940,6 +2940,13 @@
 			"height": 271,
 			"width": 384,
 			"srcPath": "site/post/2016-03-12-nes-emulator/images/162160-avenger-commodore-64-screenshot-gameplay-us-and-europe-version.webp"
+		},
+		{
+			"cdnPath": "/assets/709302b7-dbf2-57b8-aa0a-e7435f666e7b.webp",
+			"dominantColor": "rgb(145, 48, 174)",
+			"height": 2457,
+			"width": 1737,
+			"srcPath": "site/post/2021-07-02-ready-player-two/images/ready-player-two.webp"
 		}
 	]
 }
