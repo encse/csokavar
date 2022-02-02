@@ -7,7 +7,7 @@
     "keywords": [],
     "scripts": {
         "build-prod": "node -r ts-node/register src/index.tsx prod",
-        "build": "node -r ts-node/register src/index.tsx dev",
+        "build": "node -r ts-node/register src/index.tsx local",
         "dev": "npx http-server -c-1 build",
         "deploy": "ssh csokavar.hu \"bash -ic 'cd /var/www/csokavar/csokavar && git reset --hard && git clean -fd && git pull && npm run build-prod'\""
     },

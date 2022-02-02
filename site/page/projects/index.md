@@ -128,14 +128,6 @@ A World of Warcraft horgász minijátékának automatizálására készült. Van
 </article>
 <article>
 
-## [Wildcat Zsonglőr Oldalak (2011)](http://zsonglor.csokavar.hu)
-
-![zsonglor](images/zsonglor1.webp)
-
-Nagy kedvencem a már évek óta futó zsonglőr oldal. Eredetileg az egykori Wildcat Jugglers Tutorial szószerinti fordítása volt, de mára kicsit jobban kinőtte magát. Hogy mást ne mondjak, ebből indult a csokavar.hu is. Higgye el, feltétlenül el akarja olvasni, amennyiben kicsit is konyít a zsonglőrködéshez, vagy épp ellenkezőleg, de mindig is meg akart ismerkedni vele.
-</article>
-<article>
-
 ## **CO**ZERO (2011)
 
 ![cozero](images/cozero1.webp)
@@ -168,14 +160,6 @@ Erős felindultságomban egy vállalati fényképezés után készült ez a kis 
 </article>
 <article>
 
-## [Gekkó - a geek játék (2009)](http://gekko.csokavar.hu)
-
-![gekko](images/gekko.webp)
-
-Második számú kedvencem a Csodálatos Geek Játék. Sajnos a magyar internetezők még nem jöttek rá, hogy mit is veszítenek a kihagyásával de annyi baj legyen. Talán idővel fordul a leányzó fekvése, és ebből leszek dothu milliárdos. A dolog egyébként informatikusoknak szóló logikai és programozós problémák leküzdéséről szól, egy a személyes varázsomat sem nélkülöző környezetben.
-</article>
-<article>
-
 ## Bilux Autósiskola (2008)
 
 ![bilux](images/bilux.webp)
@@ -199,6 +183,21 @@ Ezzel a kis alkalmazással bárki kiderítheti, hogy éppen hány napos (órás,
 A Nagy adóvarázslat lényege, hogy a program egy beadott adószámból megmondja a hozzátartozó személy születésnapját.
 </article>
 <article>
+
+## [Gekkó - a geek játék (2007)](http://gekko.csokavar.hu)
+
+![gekko](images/gekko.webp)
+
+Második számú kedvencem a Csodálatos Geek Játék. Sajnos a magyar internetezők még nem jöttek rá, hogy mit is veszítenek a kihagyásával de annyi baj legyen. Talán idővel fordul a leányzó fekvése, és ebből leszek dothu milliárdos. A dolog egyébként informatikusoknak szóló logikai és programozós problémák leküzdéséről szól, egy a személyes varázsomat sem nélkülöző környezetben.
+</article>
+<article>
+
+## [Wildcat Zsonglőr Oldalak (2004)](http://zsonglor.csokavar.hu)
+
+![zsonglor](images/zsonglor1.webp)
+
+Nagy kedvencem a már évek óta futó zsonglőr oldal. Eredetileg az egykori Wildcat Jugglers Tutorial szószerinti fordítása volt, de mára kicsit jobban kinőtte magát. Hogy mást ne mondjak, ebből indult a csokavar.hu is. Higgye el, feltétlenül el akarja olvasni, amennyiben kicsit is konyít a zsonglőrködéshez, vagy épp ellenkezőleg, de mindig is meg akart ismerkedni vele.
+</article>
 
 ## [Rubik (1998-2001)](https://rubik.csokavar.hu/)
 
