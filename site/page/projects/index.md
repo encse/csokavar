@@ -198,6 +198,7 @@ Második számú kedvencem a Csodálatos Geek Játék. Sajnos a magyar internete
 
 Nagy kedvencem a már évek óta futó zsonglőr oldal. Eredetileg az egykori Wildcat Jugglers Tutorial szószerinti fordítása volt, de mára kicsit jobban kinőtte magát. Hogy mást ne mondjak, ebből indult a csokavar.hu is. Higgye el, feltétlenül el akarja olvasni, amennyiben kicsit is konyít a zsonglőrködéshez, vagy épp ellenkezőleg, de mindig is meg akart ismerkedni vele.
 </article>
+<article>
 
 ## [Rubik (1998-2001)](https://rubik.csokavar.hu/)
 
