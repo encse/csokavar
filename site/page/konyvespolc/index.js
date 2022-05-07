@@ -1,4 +1,4 @@
-fetch('https://encse.github.io/bookself/books.json')
+fetch('https://bookself.csokavar.hu/books.json')
     .then(response => response.json())
     .then(booksData => {
 
