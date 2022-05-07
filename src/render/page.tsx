@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 import { JsAsset } from '../assets';
+import { CssAsset } from '../assets';
 import { backgroundColor, linkColor, textColor, xxlFontSize } from './consts';
 import {fontFace as fontAwesome, TwitterLink, LinkedInLink, GitHubLink, SearchIcon} from './fontAwesame';
 
@@ -12,6 +13,7 @@ export type PageProps = {
     footer: React.ReactChild,
     homePageHeading: boolean,
     scripts: JsAsset[],
+    styles: CssAsset[],
 }
 
 const GlobalStyle = createGlobalStyle`
@@ -387,6 +389,7 @@ export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
             <link rel="icon" type="image/png" href="/favicon/favicon.png" />
             <link rel="search" type="application/opensearchdescription+xml" title="csokavar" href="/opensearchdescription.xml"></link>
             {[props.scripts.map(asset => <script src={asset.url.toString()} async></script>)]}
+            {[props.styles.map(asset => <link rel="stylesheet" href={asset.url.toString()}></link>)]}
             {"{{ style }}"}
             <GoogleAnalytics />
             <GoogleFonts href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" />

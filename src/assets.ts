@@ -4,7 +4,7 @@ import { v4 as uuidv4, v5 as uuidv5 } from 'uuid';
 import { assertNever } from './util';
 import fs from 'fs';
 
-type AssetKind = "imageAsset" | "jsAsset" | "fileAsset";
+type AssetKind = "imageAsset" | "jsAsset" | "cssAsset" | "fileAsset";
 type AssetOf<T extends AssetKind> = Asset & { kind: T };
 
 
@@ -54,6 +54,15 @@ export class JsAsset {
 }
 
 
+export class CssAsset {
+    readonly kind: "cssAsset" = "cssAsset";
+    constructor(
+        readonly srcPath: string,
+        readonly url: URL
+    ) {
+    }
+}
+
 export class FileAsset {
     readonly kind: "fileAsset" = "fileAsset";
     constructor(
@@ -63,7 +72,7 @@ export class FileAsset {
     }
 }
 
-export type Asset = ImageAsset | JsAsset | FileAsset;
+export type Asset = ImageAsset | JsAsset | FileAsset | CssAsset;
 
 type MediaDb = {
     readonly version: string;
@@ -100,6 +109,7 @@ export class AssetManager {
         const assetKind: AssetKind = 
             parsedPath.ext === '.js' ? "jsAsset" : 
             ['.jpg', '.jpeg', '.gif', '.png', '.svg', '.webp'].includes(parsedPath.ext) ? "imageAsset" :
+            ['.css'].includes(parsedPath.ext) ? "cssAsset" :
             "fileAsset";
 
         if (this.tryLookup(fpat, assetKind) != null) {
@@ -114,6 +124,7 @@ export class AssetManager {
         let location =
             assetKind == "imageAsset" ? uuidv5(path.join(parsedPath.dir, parsedPath.base), AssetManager.namespace) :
             assetKind == "jsAsset" ?  (this.dev ? path.join(parsedPath.dir, parsedPath.name) :  uuidv4()) :
+            assetKind == "cssAsset" ?  (this.dev ? path.join(parsedPath.dir, parsedPath.name) :  uuidv4()) :
             assetKind == "fileAsset" ? path.join(parsedPath.dir, parsedPath.name) :
             assertNever(assetKind)
         
@@ -131,6 +142,9 @@ export class AssetManager {
         } else if (assetKind == 'jsAsset') {
             const jsAsset = new JsAsset(fpat, uri);
             this.#assets.push(jsAsset);
+        } else if (assetKind == 'cssAsset') {
+            const cssAsset = new CssAsset(fpat, uri);
+            this.#assets.push(cssAsset);
         } else if (assetKind == 'fileAsset') {
             const fileAsset = new FileAsset(fpat, uri);
             this.#assets.push(fileAsset);

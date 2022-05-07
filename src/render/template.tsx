@@ -26,6 +26,7 @@ export function renderTemplate(props: TemplateProps): string {
     let result = ReactDOMServer.renderToStaticMarkup(
         styleSheet.collectStyles(<PageComponent
             scripts={props.assetManager.lookupAll("", "jsAsset")}
+            styles={props.assetManager.lookupAll("", "cssAsset")}
             featuredImage={featuredImage}
             footer={props.footer}
             postContent={props.postContent}
