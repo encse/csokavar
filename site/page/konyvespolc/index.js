@@ -1,4 +1,4 @@
-fetch('https://bookself.csokavar.hu/books.json')
+fetch('https://bookshelf.csokavar.hu/books.json')
     .then(response => response.json())
     .then(booksData => {
 
