@@ -9,8 +9,7 @@
         "build-prod": "node -r ts-node/register src/index.tsx prod",
         "build": "node -r ts-node/register src/index.tsx local",
         "dev": "npx http-server -c-1 build",
-        "is-clean": "git diff --quiet && git diff --cached --quiet",
-        "deploy": "npm run build-prod && npm run is-clean",
+        "deploy": "npm run build-prod && git add . && git commit -m 'deploy'",
         "qqq": "ssh csokavar.hu \"bash -ic 'cd /var/www/csokavar/csokavar && git reset --hard && git clean -fd && git pull && npm run build-prod'\""
     },
     "dependencies": {
