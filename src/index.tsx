@@ -190,15 +190,18 @@ async function build(settings: Settings) {
 
         if (success ){
             if (!settings.dev) {
-                fs.rmdirSync("build", { recursive: true });
-
+                if (fs.existsSync("build")) {
+                    fs.rmdirSync("build", { recursive: true });
+                }
                 if (fs.existsSync("docs")) {
                     fs.rmdirSync("docs", { recursive: true });
                 }
 
                 fs.renameSync(tmpDir, "docs");
             } else {
-                fs.rmdirSync("build", { recursive: true });
+                if (fs.existsSync("build")) {
+                    fs.rmdirSync("build", { recursive: true });
+                }
                 fs.renameSync(tmpDir, "build");
             }
         }
