@@ -6,10 +6,11 @@
     "license": "MIT",
     "keywords": [],
     "scripts": {
-        "build-prod": "node -r ts-node/register src/index.tsx prod",
+        "is-clean": "git diff --quiet && git diff --cached --quiet",
+        "make-prod": "npm run is-clean && node -r ts-node/register src/index.tsx prod && git add . && git commit -m 'deploy' && git push",
         "build": "node -r ts-node/register src/index.tsx local",
         "dev": "npx http-server -c-1 build",
-        "deploy": "npm run build-prod && git add . && git commit -m 'deploy' && git push && ssh csokavar.hu \"bash -ic 'cd /var/www/csokavar/csokavar && git reset --hard && git clean -fd && git pull'\""
+        "deploy": "ssh csokavar.hu \"bash -ic 'cd /var/www/csokavar/csokavar && git reset --hard && git clean -fd && git pull'\""
     },
     "dependencies": {
         "@iktakahiro/markdown-it-katex": "^4.0.1",
