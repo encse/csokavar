@@ -2947,6 +2947,13 @@
 			"height": 2457,
 			"width": 1737,
 			"srcPath": "site/post/2021-07-02-ready-player-two/images/ready-player-two.webp"
+		},
+		{
+			"cdnPath": "/assets/548c4b24-d893-5408-bdd5-aacdbc0b4751.webp",
+			"dominantColor": "rgb(130, 130, 132)",
+			"height": 1114,
+			"width": 1536,
+			"srcPath": "site/post/2022-07-01-404-et-all/images/varosos.webp"
 		}
 	]
 }
