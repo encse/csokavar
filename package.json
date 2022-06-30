@@ -9,8 +9,7 @@
         "build-prod": "node -r ts-node/register src/index.tsx prod",
         "build": "node -r ts-node/register src/index.tsx local",
         "dev": "npx http-server -c-1 build",
-        "deploy": "npm run build-prod && git add . && git commit -m 'deploy'",
-        "qqq": "ssh csokavar.hu \"bash -ic 'cd /var/www/csokavar/csokavar && git reset --hard && git clean -fd && git pull && npm run build-prod'\""
+        "deploy": "npm run build-prod && git add . && git commit -m 'deploy' && ssh csokavar.hu \"bash -ic 'cd /var/www/csokavar/csokavar && git reset --hard && git clean -fd && git pull'\""
     },
     "dependencies": {
         "@iktakahiro/markdown-it-katex": "^4.0.1",
