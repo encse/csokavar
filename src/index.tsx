@@ -189,8 +189,18 @@ async function build(settings: Settings) {
         })
 
         if (success ){
-            fs.rmdirSync("build", { recursive: true });
-            fs.renameSync(tmpDir, "build");
+            if (!settings.dev) {
+                fs.rmdirSync("build", { recursive: true });
+
+                if (fs.existsSync("docs")) {
+                    fs.rmdirSync("docs", { recursive: true });
+                }
+
+                fs.renameSync(tmpDir, "docs");
+            } else {
+                fs.rmdirSync("build", { recursive: true });
+                fs.renameSync(tmpDir, "build");
+            }
         }
         console.log('Done');
         return success;
