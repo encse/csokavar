@@ -30,8 +30,11 @@ export function snakeToCamel(snake: string) {
     );
 }
 
+let seed = 0;
 export function pick<T>(items: T[]): T {
-    return items[Math.floor(Math.random() * items.length)];
+    let x = Math.sin(seed++) * 10000;
+    x = x - Math.floor(x);
+    return items[Math.floor(x * items.length)];
 }
 
 export function removeAccents(st: string){

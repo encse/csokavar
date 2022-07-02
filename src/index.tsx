@@ -55,7 +55,7 @@ type FileWriter = (fpat: string, content: string | NodeJS.ArrayBufferView) => vo
 
 async function generate(writeFile: FileWriter) {
 
-    const assetManager = new AssetManager(settings.dev, settings.cdn, ".media");
+    const assetManager = new AssetManager(settings.cdn, ".media");
 
     let success: boolean = true;
 

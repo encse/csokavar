@@ -6,10 +6,9 @@
     "license": "MIT",
     "keywords": [],
     "scripts": {
-        "is-clean": "git diff --quiet && git diff --cached --quiet",
-        "make-prod": "npm run is-clean && node -r ts-node/register src/index.tsx prod && git add . && git commit -m 'deploy' && git push",
-        "build": "node -r ts-node/register src/index.tsx local",
-        "dev": "npx http-server -c-1 build",
+        "build": "node -r ts-node/register src/index.tsx prod",
+        "dev": "node -r ts-node/register src/index.tsx local",
+        "start": "npx http-server -c-1 build",
         "deploy": "ssh csokavar.hu \"bash -ic 'cd /var/www/csokavar/csokavar && git reset --hard && git clean -fd && git pull'\""
     },
     "dependencies": {

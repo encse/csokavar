@@ -5,9 +5,9 @@ tags:
     - "geekség"
 ---
 
-Készítettem egy mini 404 oldalt ide a csókavárra. Valójában egy pici szöveges kalandjátékról van szó. A sima statikus hibaoldal elég unalmasnak tűnt, meg mindig is ki akartam próbálni, hogy kell ilyet készíteni. Tetszőleges, amúgy nem létező url-en elérhető, de az egyszerűség kedvéért van egy kanonikus alakja is: [404.csokavar.hu](https://404.csokavar.hu). Tele pakoltam pop kulturális referenciával, de kell egy kicsit próbálkozni, hogy minden előjöjjön.
+Készítettem egy mini 404 oldalt ide a csókavárra. Valójában egy pici szöveges kalandjátékról van szó. A sima statikus hibaoldal elég unalmasnak tűnt, meg mindig is ki akartam próbálni, hogy kell ilyet készíteni. Tetszőleges, amúgy nem létező url-en elérhető, de az egyszerűség kedvéért van egy kanonikus alakja is: [404.csokavar.hu](https://404.csokavar.hu). Telepakoltam popkulturális referenciával, de kell egy kicsit próbálkozni, hogy minden előjöjjön.
 
-Ezzel már a harmadik retró marhaságot adtam hozzá az oldalhoz. Az első a finger protocol implementáció volt, ami egyébként közvetlenül böngészőben a dev consoleban is elérhető, nem csak a `finger @csokavar.hu`-val. A második pedig tavaly került az about oldal fejlécébe. Ha valaki a játékgépekre kattint, egy javascriptes pac-man játék ugrik elő. Csak desktopon működik, mert az irányítás nem tetszett mobilon.
+Ezzel már a harmadik retró marhaságot adtam hozzá az oldalhoz. Az első a finger protocol implementáció volt, ami egyébként közvetlenül böngésző dev consoleában is elérhető, nem csak a `finger @csokavar.hu`-val. A második pedig tavaly került az about oldal fejlécébe. Ha valaki a játékgépekre kattint, egy javascriptes pac-man játék ugrik elő. Csak desktopon működik, mert az irányítás nem tetszett mobilon.
 
 Mostanában a legtöbb mini projektemet GitHub Pagesen tárolom, mert végtelen kényelmes, hogy elég csak pusholni a repóba, ha deployolni akarok. Sajnos a csókaváron még nem jutottam el a fejlettségnek erre a magas fokára, ugyanis mindenképp ragaszkodom az apex domainhez, tehát hogy mindenféle előtag nélkül elérhető legyen az oldal, ne kezdődjön mondjuk www-vel. De ha ilyet akarok, akkor macerásabb a GitHub Pages, és végül legutóbb valami miatt elvetettem. Ennél mélyebb integrációt meg a lustaságom miatt nem csinálok, szóval marad a kézi vezérlés. Nem mintha túl gyakran változna itt bármi :)
 

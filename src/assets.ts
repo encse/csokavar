@@ -1,6 +1,6 @@
 import gm from 'gm';
 import path, { ParsedPath } from 'path';
-import { v4 as uuidv4, v5 as uuidv5 } from 'uuid';
+import { v5 as uuidv5 } from 'uuid';
 import { assertNever } from './util';
 import fs from 'fs';
 
@@ -94,7 +94,7 @@ export class AssetManager {
     #assets: Asset[] = [];
 
     private static namespace = 'efd20c5e-528e-42c9-b5fa-2ad7487f0510';
-    constructor(private readonly dev: boolean, private readonly cdnUri: string, private readonly mediaDbDir: string) {
+    constructor(private readonly cdnUri: string, private readonly mediaDbDir: string) {
         this.loadMediaDb();
         this.saveMediaDb();
     }
@@ -123,8 +123,8 @@ export class AssetManager {
 
         let location =
             assetKind == "imageAsset" ? uuidv5(path.join(parsedPath.dir, parsedPath.base), AssetManager.namespace) :
-            assetKind == "jsAsset" ?  (this.dev ? path.join(parsedPath.dir, parsedPath.name) :  uuidv4()) :
-            assetKind == "cssAsset" ?  (this.dev ? path.join(parsedPath.dir, parsedPath.name) :  uuidv4()) :
+            assetKind == "jsAsset" ?  this.hash(path.join(parsedPath.root, parsedPath.dir, parsedPath.name + parsedPath.ext)) :
+            assetKind == "cssAsset" ?  this.hash(path.join(parsedPath.root, parsedPath.dir, parsedPath.name + parsedPath.ext)) :
             assetKind == "fileAsset" ? path.join(parsedPath.dir, parsedPath.name) :
             assertNever(assetKind)
         
@@ -180,6 +180,17 @@ export class AssetManager {
         }
 
         throw new Error(`Cannot find asset '${fpat}'`);
+    }
+
+    private hash(fpat: string): string {
+        const crypto = require('crypto');
+        const fs = require('fs');
+
+        const fileBuffer = fs.readFileSync(fpat);
+        const hashSum = crypto.createHash('sha256');
+        hashSum.update(fileBuffer);
+
+        return hashSum.digest('hex');
     }
 
     private tryLookup<T extends AssetKind>(fpat: string, assetKind: T | null): AssetOf<T> | null {
