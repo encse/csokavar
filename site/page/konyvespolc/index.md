@@ -8,11 +8,11 @@ Szeretek olvasni, és néha [véleményt](https://csokavar.hu/blog/tag/konyv/) i
 
 Mostanában már kevesebb idő jut rá, az ezer oldalas szakkönyvekkel meg lassan is haladok. Még az isc-s időkben, amikor 10 percre laktam az irodától, annyira ráértem, hogy munka után leültem az aktuális könyvvel és olvastam egész elalvásig, hétvégente meg mindig könyvesboltba jártam, hátha találok valamit…
 
-<bookself/>
+<bookshelf/>
 
 
 <style>
-    bookself {
+    bookshelf {
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
@@ -42,6 +42,7 @@ Mostanában már kevesebb idő jut rá, az ezer oldalas szakkönyvekkel meg lass
     book img {
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
+        width: 100px;
     }
 </style>
 
@@ -65,7 +66,7 @@ Mostanában már kevesebb idő jut rá, az ezer oldalas szakkönyvekkel meg lass
         });
         
         let books = '';
-        for(let book of booksData){
+        for (let book of booksData) {
             books += `
                 <book-container>
                     <book title="${book['Title']}">
@@ -75,7 +76,7 @@ Mostanában már kevesebb idő jut rá, az ezer oldalas szakkönyvekkel meg lass
         }
 
 
-        document.getElementsByTagName('bookself')[0].innerHTML = books;
+        document.getElementsByTagName('bookshelf')[0].innerHTML = books;
     });
 
 </script>
