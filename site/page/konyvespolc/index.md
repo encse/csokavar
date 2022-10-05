@@ -33,9 +33,13 @@ Mostanában már kevesebb idő jut rá, az ezer oldalas szakkönyvekkel meg lass
 
     book {
         margin: 4px;
-        box-shadow: 2px 2px #e8e8e8, 0px 2px #e8e8e8;
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
+        box-shadow: 
+            0.5px 0.5px #444, 
+            1px 1px #eee, 
+            1.5px 1.5px #444, 
+            2px 2px #eee;
+        border-top-right-radius: 1px;
+        border-bottom-right-radius: 1px;
         display: flex;
     }
 
