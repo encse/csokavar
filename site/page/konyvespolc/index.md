@@ -8,9 +8,5 @@ Szeretek olvasni, és néha [véleményt](https://csokavar.hu/blog/tag/konyv/) i
 
 Mostanában már kevesebb idő jut rá, az ezer oldalas szakkönyvekkel meg lassan is haladok. Még az isc-s időkben, amikor 10 percre laktam az irodától, annyira ráértem, hogy munka után leültem az aktuális könyvvel és olvastam egész elalvásig, hétvégente meg mindig könyvesboltba jártam, hátha találok valamit…
 
-<div id="myBooks"/>
-
-<script type="module">
-    import {render} from 'https://bookshelf.csokavar.hu/bookshelf.js';
-    render(document.getElementById('myBooks'));
-</script>
+<script type="module" src="https://bookshelf.csokavar.hu/bookshelf.js"></script>
+<my-bookshelf src="https://bookshelf.csokavar.hu/books.json"/>
