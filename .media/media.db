@@ -450,13 +450,6 @@
 			"srcPath": "site/page/konyvespolc/images/LEGO-Modular-Buildings-e1556466731946.webp"
 		},
 		{
-			"cdnPath": "/assets/2d162bcd-2ef0-55a7-9987-f74f78692d73.webp",
-			"dominantColor": "rgb(72, 37, 43)",
-			"height": 1182,
-			"width": 2560,
-			"srcPath": "site/page/konyvespolc/images/Screen-Shot-2021-01-14-at-20.45.37-scaled.webp"
-		},
-		{
 			"cdnPath": "/assets/d5c7546e-d09c-50ac-b46c-eeccaf6fcce0.webp",
 			"dominantColor": "rgb(38, 37, 135)",
 			"height": 1214,
@@ -2954,6 +2947,20 @@
 			"height": 1114,
 			"width": 1536,
 			"srcPath": "site/post/2022-07-01-404-et-all/images/varosos.webp"
+		},
+		{
+			"cdnPath": "/assets/4fae46a0-77cf-577d-8724-fa5929d19f10.webp",
+			"dominantColor": "rgb(56, 28, 15)",
+			"height": 273,
+			"width": 947,
+			"srcPath": "site/post/2022-10-31-konyvespolc/images/bg.webp"
+		},
+		{
+			"cdnPath": "/assets/150936ba-cfb8-510a-9b17-aa08676f80ca.webp",
+			"dominantColor": "rgb(51, 26, 18)",
+			"height": 1080,
+			"width": 1920,
+			"srcPath": "site/page/konyvespolc/images/bg.webp"
 		}
 	]
 }

@@ -4,6 +4,7 @@ date: "2022-10-31"
 tags: 
   - "fun"
   - "személyes"
+coverImage: images/bg.webp
 ---
 
 2006-ban jött az [ötlet](https://csokavar.hu/blog/2006/10/konyvespolc/), hogy virtuális könyvespolcot készítsek a könyveimből. Akkoriban tényleg sok bepótolni valóm volt, kezdő programozóként el kellett olvasnom mindent, amit általában a programozók el szoktak olvasni. Először a moly.hu-t használtam gyűjtőoldalnak, később váltottam a GoodReads-re. Mindkettőnek van valamifajta API-ja vagy widgetje, amit be tudtam ágyazni a Csókavárra, de mindegyikkel volt valami baj. A moly.hu-n nem volt meg sok szakkönyv, a másikon meg csak 200 könyv fért a widgetbe.
