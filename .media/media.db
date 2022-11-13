@@ -2,293 +2,6 @@
 	"version": "0.2",
 	"items": [
 		{
-			"cdnPath": "/assets/1376b35f-a073-5014-8f11-8de9d42ad849.gif",
-			"dominantColor": "rgb(40, 30, 66)",
-			"height": 799,
-			"width": 1421,
-			"srcPath": "site/page/about/images/ezgif-7-c057475f207c-1.gif"
-		},
-		{
-			"cdnPath": "/assets/351107d8-6d16-5e87-b3d7-5e6aba977af6.jpeg",
-			"dominantColor": "rgb(86, 72, 60)",
-			"height": 3800,
-			"width": 5715,
-			"srcPath": "site/page/konyvespolc/images/books-bookstore-book-reading-159711.jpeg"
-		},
-		{
-			"cdnPath": "/assets/eee46e1c-aae6-535d-9bb5-00e66665160e.gif",
-			"dominantColor": "rgb(39, 27, 95)",
-			"height": 669,
-			"width": 1189,
-			"srcPath": "site/page/konyvespolc/images/ezgif-7-4455edd3d49e.gif"
-		},
-		{
-			"cdnPath": "/assets/08c8869f-6dfa-56c0-80bb-73ee6b3d4362.gif",
-			"dominantColor": "rgb(40, 30, 66)",
-			"height": 799,
-			"width": 1421,
-			"srcPath": "site/page/konyvespolc/images/ezgif-7-c057475f207c-1.gif"
-		},
-		{
-			"cdnPath": "/assets/8ceac4a8-939a-5988-b618-0bcb04f0400a.gif",
-			"dominantColor": "rgb(40, 30, 66)",
-			"height": 799,
-			"width": 1421,
-			"srcPath": "site/page/konyvespolc/images/ezgif-7-c057475f207c.gif"
-		},
-		{
-			"cdnPath": "/assets/fd35d8f3-a2df-5dee-8709-3f5effc773fc.gif",
-			"dominantColor": "rgb(23, 47, 62)",
-			"height": 364,
-			"width": 647,
-			"srcPath": "site/page/projects/images/ezgif.com-gif-maker-1.gif"
-		},
-		{
-			"cdnPath": "/assets/8c469deb-ca80-52e3-aec7-4995ccbb1253.gif",
-			"dominantColor": "rgb(14, 85, 18)",
-			"height": 152,
-			"width": 152,
-			"srcPath": "site/page/projects/images/hackmetop_r1_c2-e1568920869463.gif"
-		},
-		{
-			"cdnPath": "/assets/f88bb283-b8bb-5c87-b44d-ba99ee0a405a.svg",
-			"dominantColor": "rgb(141, 60, 166)",
-			"height": 100,
-			"width": 100,
-			"srcPath": "site/page/projects/images/isc.svg"
-		},
-		{
-			"cdnPath": "/assets/340c21b3-caab-5005-89dd-9d84aaa9f405.svg",
-			"dominantColor": "rgb(101, 109, 179)",
-			"height": 69,
-			"width": 69,
-			"srcPath": "site/page/projects/images/me.svg"
-		},
-		{
-			"cdnPath": "/assets/3dacf142-2486-55ec-81c8-e670cd1a1fd0.svg",
-			"dominantColor": "rgb(206, 238, 225)",
-			"height": 600,
-			"width": 600,
-			"srcPath": "site/page/projects/images/prezi.svg"
-		},
-		{
-			"cdnPath": "/assets/77519d7e-3927-59ee-a947-26861e68955f.gif",
-			"dominantColor": "rgb(50, 62, 54)",
-			"height": 614,
-			"width": 1023,
-			"srcPath": "site/post/2008-07-26-nagy-monitor-szarakodas/images/ezgif.com-resize.gif"
-		},
-		{
-			"cdnPath": "/assets/555086e2-d0a4-568b-a190-d184b430b4aa.jpeg",
-			"dominantColor": "rgb(110, 93, 77)",
-			"height": 640,
-			"width": 480,
-			"srcPath": "site/post/2008-11-16-hegesztesi-zsebkonyv/images/p-640-480-51ff3df0-3b72-4e39-bdfc-7c682342bd29.jpeg"
-		},
-		{
-			"cdnPath": "/assets/67fcae6f-bcf1-5899-827e-8bc91c64dedd.jpeg",
-			"dominantColor": "rgb(114, 102, 91)",
-			"height": 640,
-			"width": 480,
-			"srcPath": "site/post/2008-11-16-hegesztesi-zsebkonyv/images/p-640-480-b962d39b-6709-41e5-a2ef-86e8262ff2db.jpeg"
-		},
-		{
-			"cdnPath": "/assets/042537b4-90d7-53b1-804b-3cb49766edaf.jpeg",
-			"dominantColor": "rgb(85, 64, 126)",
-			"height": 375,
-			"width": 500,
-			"srcPath": "site/post/2008-12-04-999/images/l-640-480-5b736a46-5d6b-40a5-97a4-c752a25c1979-500x375.jpeg"
-		},
-		{
-			"cdnPath": "/assets/0488f37e-bcf2-56c1-a054-20e046d9bddb.jpeg",
-			"dominantColor": "rgb(85, 64, 126)",
-			"height": 480,
-			"width": 640,
-			"srcPath": "site/post/2008-12-04-999/images/l-640-480-5b736a46-5d6b-40a5-97a4-c752a25c1979.jpeg"
-		},
-		{
-			"cdnPath": "/assets/c32e04c6-366c-5fed-93cc-af96f39185d1.jpeg",
-			"dominantColor": "rgb(86, 61, 55)",
-			"height": 480,
-			"width": 640,
-			"srcPath": "site/post/2008-12-20-hangjegyek/images/l-640-480-2cd4fc65-37e9-4d07-ada4-b1cc739e10d1.jpeg"
-		},
-		{
-			"cdnPath": "/assets/89d0e172-354f-5622-a1fc-fce86cb122e4.jpeg",
-			"dominantColor": "rgb(37, 23, 27)",
-			"height": 375,
-			"width": 500,
-			"srcPath": "site/post/2008-12-20-hangjegyek/images/l-640-480-312f67b0-7be8-482b-aa13-ee56b745c476-500x375.jpeg"
-		},
-		{
-			"cdnPath": "/assets/0b469130-80dd-5e41-8d97-39851d7cdb57.jpeg",
-			"dominantColor": "rgb(38, 23, 28)",
-			"height": 480,
-			"width": 640,
-			"srcPath": "site/post/2008-12-20-hangjegyek/images/l-640-480-312f67b0-7be8-482b-aa13-ee56b745c476.jpeg"
-		},
-		{
-			"cdnPath": "/assets/e59551c7-a53d-5c4c-83d4-8595ce37e13a.jpeg",
-			"dominantColor": "rgb(82, 58, 48)",
-			"height": 375,
-			"width": 500,
-			"srcPath": "site/post/2008-12-20-hangjegyek/images/l-640-480-d1a44488-574a-4dc8-852e-e083946b8d6e-500x375.jpeg"
-		},
-		{
-			"cdnPath": "/assets/2e642ad3-5f11-5aa0-9c3e-d96e4cee3d29.jpeg",
-			"dominantColor": "rgb(83, 58, 49)",
-			"height": 480,
-			"width": 640,
-			"srcPath": "site/post/2008-12-20-hangjegyek/images/l-640-480-d1a44488-574a-4dc8-852e-e083946b8d6e.jpeg"
-		},
-		{
-			"cdnPath": "/assets/d4445cda-1cf5-52a5-8d4d-d6f75720f2fe.jpeg",
-			"dominantColor": "rgb(45, 42, 46)",
-			"height": 500,
-			"width": 375,
-			"srcPath": "site/post/2008-12-20-hangjegyek/images/p-640-480-c929bfd3-a3e9-4751-ae6a-db7f1568e772-375x500.jpeg"
-		},
-		{
-			"cdnPath": "/assets/df69f9e6-09c4-5287-b6c4-e3e27fc37eba.jpeg",
-			"dominantColor": "rgb(45, 43, 46)",
-			"height": 640,
-			"width": 480,
-			"srcPath": "site/post/2008-12-20-hangjegyek/images/p-640-480-c929bfd3-a3e9-4751-ae6a-db7f1568e772.jpeg"
-		},
-		{
-			"cdnPath": "/assets/d0d40758-d8b1-5267-8246-a503898de4fa.jpeg",
-			"dominantColor": "rgb(76, 74, 76)",
-			"height": 640,
-			"width": 480,
-			"srcPath": "site/post/2009-01-11-a-duna-kozeperol/images/p-640-480-29d46282-1098-44e8-9d91-8162fbed511d.jpeg"
-		},
-		{
-			"cdnPath": "/assets/e3adc25f-7c5f-5296-9a35-3c549aac6a8e.jpeg",
-			"dominantColor": "rgb(83, 83, 89)",
-			"height": 640,
-			"width": 480,
-			"srcPath": "site/post/2009-01-11-a-duna-kozeperol/images/p-640-480-d4827b2c-6c01-486b-8cbd-2b5023a4dc83.jpeg"
-		},
-		{
-			"cdnPath": "/assets/04447915-6790-5c2f-bd30-95889bffcd4c.jpeg",
-			"dominantColor": "rgb(105, 105, 105)",
-			"height": 640,
-			"width": 480,
-			"srcPath": "site/post/2009-01-11-a-duna-kozeperol/images/p-640-480-f0f04512-c552-4807-ba88-512595967aa3.jpeg"
-		},
-		{
-			"cdnPath": "/assets/6a6ddec9-7135-55a0-add1-30bb09b7a7ab.jpeg",
-			"dominantColor": "rgb(117, 112, 116)",
-			"height": 480,
-			"width": 640,
-			"srcPath": "site/post/2009-02-05-megpadkazta/images/l-640-480-79eccb05-0108-42b9-b31e-afb0f8d47f21.jpeg"
-		},
-		{
-			"cdnPath": "/assets/0953e0a4-8a9a-5899-97f8-6d41ff919225.jpeg",
-			"dominantColor": "rgb(104, 100, 100)",
-			"height": 640,
-			"width": 480,
-			"srcPath": "site/post/2009-02-05-megpadkazta/images/p-640-480-44655016-301e-4340-ac4a-3010e58f73cb.jpeg"
-		},
-		{
-			"cdnPath": "/assets/ec759ca0-4840-526e-9362-1f55260db604.jpeg",
-			"dominantColor": "rgb(116, 100, 92)",
-			"height": 500,
-			"width": 375,
-			"srcPath": "site/post/2009-07-21-a-nap-kerdese/images/p-1600-1200-9fcabf1f-2191-48b9-aab2-8e50a6a590bd-375x500.jpeg"
-		},
-		{
-			"cdnPath": "/assets/dd6f4c3d-99b6-599c-b073-fdcde1814b6a.jpeg",
-			"dominantColor": "rgb(116, 101, 93)",
-			"height": 1600,
-			"width": 1200,
-			"srcPath": "site/post/2009-07-21-a-nap-kerdese/images/p-1600-1200-9fcabf1f-2191-48b9-aab2-8e50a6a590bd.jpeg"
-		},
-		{
-			"cdnPath": "/assets/c83ab6ea-052f-5ba8-9550-2a270a6d4c88.jpeg",
-			"dominantColor": "rgb(110, 107, 103)",
-			"height": 640,
-			"width": 480,
-			"srcPath": "site/post/2009-08-07-zarnyitas-alapfok/images/p-1600-1200-361a7325-97bd-4eeb-b0c0-bf19f03a14af.jpeg"
-		},
-		{
-			"cdnPath": "/assets/10e63f0b-4952-530d-810c-1d7d20d313c1.jpeg",
-			"dominantColor": "rgb(112, 92, 75)",
-			"height": 640,
-			"width": 480,
-			"srcPath": "site/post/2009-08-07-zarnyitas-alapfok/images/p-1600-1200-8df7e0a3-59b0-47f8-98e1-4167eb22e729.jpeg"
-		},
-		{
-			"cdnPath": "/assets/a44b022e-143d-5d3e-9433-2b208c09288f.gif",
-			"dominantColor": "rgb(113, 96, 72)",
-			"height": 742,
-			"width": 557,
-			"srcPath": "site/post/2013-10-13-csanak/images/IMG_1400-MOTION.gif"
-		},
-		{
-			"cdnPath": "/assets/b5e50a50-9ade-5ecc-8739-8c79a281bcaf.gif",
-			"dominantColor": "rgb(102, 106, 61)",
-			"height": 785,
-			"width": 590,
-			"srcPath": "site/post/2013-10-13-csanak/images/IMG_1417-MOTION.gif"
-		},
-		{
-			"cdnPath": "/assets/4e268ffc-1dec-5cc9-8213-2c18c6615915.gif",
-			"dominantColor": "rgb(218, 204, 111)",
-			"height": 640,
-			"width": 1024,
-			"srcPath": "site/post/2014-01-04-kockak-metszete/images/cubes.gif"
-		},
-		{
-			"cdnPath": "/assets/00077b64-9d70-5b2a-8280-e5b2872347db.gif",
-			"dominantColor": "rgb(94, 130, 117)",
-			"height": 176,
-			"width": 240,
-			"srcPath": "site/post/2015-03-04-challenge24-ec-2015/images/4k7kp0I.gif"
-		},
-		{
-			"cdnPath": "/assets/d7f7d14e-e49b-559f-95fe-187c95be2072.gif",
-			"dominantColor": "rgb(141, 141, 201)",
-			"height": 240,
-			"width": 256,
-			"srcPath": "site/post/2016-03-12-nes-emulator/images/Super_Mario_Bros_NES_02.gif"
-		},
-		{
-			"cdnPath": "/assets/883d1b6d-3e3c-5998-8507-09bb3263a7be.gif",
-			"dominantColor": "rgb(17, 22, 31)",
-			"height": 240,
-			"width": 256,
-			"srcPath": "site/post/2016-03-12-nes-emulator/images/ezgif-4-cec339a7d2.gif"
-		},
-		{
-			"cdnPath": "/assets/91509849-ad88-523e-b5be-7154b1eb9685.gif",
-			"dominantColor": "rgb(137, 127, 194)",
-			"height": 640,
-			"width": 1024,
-			"srcPath": "site/post/2016-03-12-nes-emulator/images/smb.gif"
-		},
-		{
-			"cdnPath": "/assets/e3db942b-ef3f-5d07-adff-7d4f1591fe2c.jpeg",
-			"dominantColor": "rgb(203, 152, 128)",
-			"height": 442,
-			"width": 500,
-			"srcPath": "site/post/2012-03-26-oreganyam/images/bg.jpeg"
-		},
-		{
-			"cdnPath": "/assets/4e8fd761-971e-554b-b3c7-cf06d6161022.gif",
-			"dominantColor": "rgb(217, 183, 126)",
-			"height": 200,
-			"width": 400,
-			"srcPath": "site/post/2012-03-26-oreganyam/images/pizza.gif"
-		},
-		{
-			"cdnPath": "/assets/d49e6a58-663a-5359-9057-6ce47e85492d.jpeg",
-			"dominantColor": "rgb(110, 76, 39)",
-			"height": 900,
-			"width": 900,
-			"srcPath": "site/post/2021-01-05-pekeskedes/images/bg.jpeg"
-		},
-		{
 			"cdnPath": "/assets/84e7dffb-afcf-5428-8a14-246aa84ef9d0.gif",
 			"dominantColor": "rgb(62, 61, 106)",
 			"height": 346,
@@ -324,6 +37,13 @@
 			"srcPath": "site/backgrounds/generic/61f3cd0c66cc4e33f72ca6d11762d763.gif"
 		},
 		{
+			"cdnPath": "/assets/6e750a40-ae68-5abb-8cfb-8de8642b4885.gif",
+			"dominantColor": "rgb(40, 29, 34)",
+			"height": 810,
+			"width": 810,
+			"srcPath": "site/backgrounds/generic/E4FfXuAXwAQaCWR.gif"
+		},
+		{
 			"cdnPath": "/assets/0ffc7369-d99f-52ee-92a9-b8febcb7e054.gif",
 			"dominantColor": "rgb(88, 62, 101)",
 			"height": 432,
@@ -336,13 +56,6 @@
 			"height": 480,
 			"width": 960,
 			"srcPath": "site/backgrounds/generic/street.gif"
-		},
-		{
-			"cdnPath": "/assets/90569555-a232-5821-9f20-435abec6f0a3.gif",
-			"dominantColor": "rgb(106, 54, 81)",
-			"height": 336,
-			"width": 456,
-			"srcPath": "site/backgrounds/tokfej/8eac26c0cfffa771658bdbb663bfdbcc.gif"
 		},
 		{
 			"cdnPath": "/assets/94791e5c-8c6f-5b32-8484-7e5bc7aafc40.gif",
@@ -359,11 +72,11 @@
 			"srcPath": "site/backgrounds/generic/street3.gif"
 		},
 		{
-			"cdnPath": "/assets/6e750a40-ae68-5abb-8cfb-8de8642b4885.gif",
-			"dominantColor": "rgb(40, 29, 33)",
-			"height": 810,
-			"width": 810,
-			"srcPath": "site/backgrounds/generic/E4FfXuAXwAQaCWR.gif"
+			"cdnPath": "/assets/8702a1da-66bb-52af-a8a2-cafbfc6a8a72.webp",
+			"dominantColor": "rgb(130, 102, 86)",
+			"height": 407,
+			"width": 639,
+			"srcPath": "site/backgrounds/karacsony/bg.webp"
 		},
 		{
 			"cdnPath": "/assets/a0451bda-59dc-50dd-ad73-6eedf3dee4b3.webp",
@@ -373,13 +86,6 @@
 			"srcPath": "site/backgrounds/main-bg.webp"
 		},
 		{
-			"cdnPath": "/assets/8702a1da-66bb-52af-a8a2-cafbfc6a8a72.webp",
-			"dominantColor": "rgb(130, 102, 86)",
-			"height": 407,
-			"width": 639,
-			"srcPath": "site/backgrounds/karacsony/bg.webp"
-		},
-		{
 			"cdnPath": "/assets/ddff0844-ba9f-53f1-9ae9-008a3254d8b8.webp",
 			"dominantColor": "rgb(125, 13, 13)",
 			"height": 659,
@@ -387,11 +93,25 @@
 			"srcPath": "site/backgrounds/rajz/ezgif-2-0617c10ffdf5.webp"
 		},
 		{
+			"cdnPath": "/assets/90569555-a232-5821-9f20-435abec6f0a3.gif",
+			"dominantColor": "rgb(106, 54, 81)",
+			"height": 336,
+			"width": 456,
+			"srcPath": "site/backgrounds/tokfej/8eac26c0cfffa771658bdbb663bfdbcc.gif"
+		},
+		{
 			"cdnPath": "/assets/053e2299-a4f5-5d39-b7b9-d901205d75c4.webp",
 			"dominantColor": "rgb(156, 182, 145)",
 			"height": 1080,
 			"width": 1920,
 			"srcPath": "site/page/about/images/26341_super_mario_bros_super_mario_template.webp"
+		},
+		{
+			"cdnPath": "/assets/70accc94-42d8-5612-889f-de436c415370.webp",
+			"dominantColor": "rgb(129, 112, 76)",
+			"height": 529,
+			"width": 1024,
+			"srcPath": "site/page/about/images/AAEAAQAAAAAAAAmGAAAAJGQ2ZTAzNmJmLWRlZmQtNGJhMy04OGJiLTZlZWYyYWNlNjIwYg-e1503254268233.webp"
 		},
 		{
 			"cdnPath": "/assets/089b7b18-1d29-52d4-936b-760da759b61d.webp",
@@ -420,6 +140,13 @@
 			"height": 1090,
 			"width": 1980,
 			"srcPath": "site/page/about/images/aladdin3-1.webp"
+		},
+		{
+			"cdnPath": "/assets/1376b35f-a073-5014-8f11-8de9d42ad849.gif",
+			"dominantColor": "rgb(40, 30, 66)",
+			"height": 799,
+			"width": 1421,
+			"srcPath": "site/page/about/images/ezgif-7-c057475f207c-1.gif"
 		},
 		{
 			"cdnPath": "/assets/24ecb891-c04c-5739-a56d-0280b76d10b4.webp",
@@ -457,11 +184,46 @@
 			"srcPath": "site/page/konyvespolc/images/aladdin2-scaled.webp"
 		},
 		{
+			"cdnPath": "/assets/150936ba-cfb8-510a-9b17-aa08676f80ca.webp",
+			"dominantColor": "rgb(51, 26, 18)",
+			"height": 1080,
+			"width": 1920,
+			"srcPath": "site/page/konyvespolc/images/bg.webp"
+		},
+		{
+			"cdnPath": "/assets/351107d8-6d16-5e87-b3d7-5e6aba977af6.jpeg",
+			"dominantColor": "rgb(86, 72, 60)",
+			"height": 3800,
+			"width": 5715,
+			"srcPath": "site/page/konyvespolc/images/books-bookstore-book-reading-159711.jpeg"
+		},
+		{
 			"cdnPath": "/assets/786f429c-741e-5457-b067-25e4a8b200fd.webp",
 			"dominantColor": "rgb(105, 103, 99)",
 			"height": 1200,
 			"width": 1920,
 			"srcPath": "site/page/konyvespolc/images/decorations-for-bookshelves-hd-wallpaper-picture-download-awesome-library-backgrounds-free-wallpaper-of-decorations-for-bookshelves-hd-wallpaper-picture-download.webp"
+		},
+		{
+			"cdnPath": "/assets/eee46e1c-aae6-535d-9bb5-00e66665160e.gif",
+			"dominantColor": "rgb(39, 27, 95)",
+			"height": 669,
+			"width": 1189,
+			"srcPath": "site/page/konyvespolc/images/ezgif-7-4455edd3d49e.gif"
+		},
+		{
+			"cdnPath": "/assets/08c8869f-6dfa-56c0-80bb-73ee6b3d4362.gif",
+			"dominantColor": "rgb(40, 30, 66)",
+			"height": 799,
+			"width": 1421,
+			"srcPath": "site/page/konyvespolc/images/ezgif-7-c057475f207c-1.gif"
+		},
+		{
+			"cdnPath": "/assets/8ceac4a8-939a-5988-b618-0bcb04f0400a.gif",
+			"dominantColor": "rgb(40, 30, 66)",
+			"height": 799,
+			"width": 1421,
+			"srcPath": "site/page/konyvespolc/images/ezgif-7-c057475f207c.gif"
 		},
 		{
 			"cdnPath": "/assets/0f1c8d12-8884-5a91-9793-27c85c5a7c40.webp",
@@ -492,11 +254,25 @@
 			"srcPath": "site/page/projects/images/AfA1xJc-e1556467081569.webp"
 		},
 		{
+			"cdnPath": "/assets/ca74b8fa-f82b-5bcb-a76e-94a923fa4286.webp",
+			"dominantColor": "rgb(108, 143, 216)",
+			"height": 224,
+			"width": 256,
+			"srcPath": "site/page/projects/images/NES_Super_Mario_Bros.webp"
+		},
+		{
 			"cdnPath": "/assets/f32f2fa2-b5d0-5dda-ba46-fa98b5c0cefe.webp",
 			"dominantColor": "rgb(13, 5, 22)",
 			"height": 440,
 			"width": 500,
 			"srcPath": "site/page/projects/images/Screen-Shot-2021-01-07-at-20.13.57-500x440.webp"
+		},
+		{
+			"cdnPath": "/assets/d6c4fde8-b797-5e71-a3fe-336d454481f7.webp",
+			"dominantColor": "rgb(13, 5, 22)",
+			"height": 742,
+			"width": 844,
+			"srcPath": "site/page/projects/images/Screen-Shot-2021-01-07-at-20.13.57.webp"
 		},
 		{
 			"cdnPath": "/assets/d3f6ac42-0a90-5384-9867-b6b4970cf0d1.webp",
@@ -518,6 +294,13 @@
 			"height": 300,
 			"width": 300,
 			"srcPath": "site/page/projects/images/Screen-Shot-2021-03-31-at-14.46.59-300x300.webp"
+		},
+		{
+			"cdnPath": "/assets/bded5831-ac86-51f5-887a-6a4d4a147f7b.webp",
+			"dominantColor": "rgb(78, 86, 96)",
+			"height": 880,
+			"width": 848,
+			"srcPath": "site/page/projects/images/Screen-Shot-2021-03-31-at-14.46.59.webp"
 		},
 		{
 			"cdnPath": "/assets/b885f200-3973-51d8-90c3-c53fa2001f14.webp",
@@ -562,6 +345,13 @@
 			"srcPath": "site/page/projects/images/casette-500x313.webp"
 		},
 		{
+			"cdnPath": "/assets/351a879b-1c03-5aa3-ac71-a723c50d5bd7.webp",
+			"dominantColor": "rgb(48, 47, 44)",
+			"height": 800,
+			"width": 1280,
+			"srcPath": "site/page/projects/images/casette.webp"
+		},
+		{
 			"cdnPath": "/assets/c461e496-47cc-5c3d-96d0-577992d35402.webp",
 			"dominantColor": "rgb(207, 163, 61)",
 			"height": 512,
@@ -581,6 +371,13 @@
 			"height": 100,
 			"width": 100,
 			"srcPath": "site/page/projects/images/cozero1.webp"
+		},
+		{
+			"cdnPath": "/assets/fd35d8f3-a2df-5dee-8709-3f5effc773fc.gif",
+			"dominantColor": "rgb(23, 47, 62)",
+			"height": 364,
+			"width": 647,
+			"srcPath": "site/page/projects/images/ezgif.com-gif-maker-1.gif"
 		},
 		{
 			"cdnPath": "/assets/992b36bf-210e-5ec4-b46d-b859750f4b73.webp",
@@ -625,6 +422,13 @@
 			"srcPath": "site/page/projects/images/gondoltam.webp"
 		},
 		{
+			"cdnPath": "/assets/8c469deb-ca80-52e3-aec7-4995ccbb1253.gif",
+			"dominantColor": "rgb(14, 85, 18)",
+			"height": 152,
+			"width": 152,
+			"srcPath": "site/page/projects/images/hackmetop_r1_c2-e1568920869463.gif"
+		},
+		{
 			"cdnPath": "/assets/cda0a1f4-cd8c-57f4-9371-7d26cce6aa94.webp",
 			"dominantColor": "rgb(209, 215, 200)",
 			"height": 111,
@@ -637,6 +441,13 @@
 			"height": 100,
 			"width": 100,
 			"srcPath": "site/page/projects/images/hanynapos1.webp"
+		},
+		{
+			"cdnPath": "/assets/f88bb283-b8bb-5c87-b44d-ba99ee0a405a.svg",
+			"dominantColor": "rgb(141, 60, 166)",
+			"height": 100,
+			"width": 100,
+			"srcPath": "site/page/projects/images/isc.svg"
 		},
 		{
 			"cdnPath": "/assets/6ebd5c7e-57e3-52f3-98d7-7acfaab911fb.webp",
@@ -674,6 +485,13 @@
 			"srcPath": "site/page/projects/images/maxresdefault-e1523079088252.webp"
 		},
 		{
+			"cdnPath": "/assets/340c21b3-caab-5005-89dd-9d84aaa9f405.svg",
+			"dominantColor": "rgb(101, 109, 179)",
+			"height": 69,
+			"width": 69,
+			"srcPath": "site/page/projects/images/me.svg"
+		},
+		{
 			"cdnPath": "/assets/70e5dcc4-bdde-5361-89b1-d3f789613e64.webp",
 			"dominantColor": "rgb(85, 85, 85)",
 			"height": 100,
@@ -688,6 +506,13 @@
 			"srcPath": "site/page/projects/images/mertek.webp"
 		},
 		{
+			"cdnPath": "/assets/d109b6cd-915e-5755-ae74-561ab46ef18a.webp",
+			"dominantColor": "rgb(207, 235, 218)",
+			"height": 198,
+			"width": 289,
+			"srcPath": "site/page/projects/images/mobilengine.webp"
+		},
+		{
 			"cdnPath": "/assets/e2ecc126-f967-5576-9be7-d67fba89405e.webp",
 			"dominantColor": "rgb(73, 178, 116)",
 			"height": 100,
@@ -700,6 +525,13 @@
 			"height": 300,
 			"width": 300,
 			"srcPath": "site/page/projects/images/photo-2-300x300.webp"
+		},
+		{
+			"cdnPath": "/assets/3dacf142-2486-55ec-81c8-e670cd1a1fd0.svg",
+			"dominantColor": "rgb(206, 238, 225)",
+			"height": 600,
+			"width": 600,
+			"srcPath": "site/page/projects/images/prezi.svg"
 		},
 		{
 			"cdnPath": "/assets/2f175ab7-f34a-5b71-8e43-1beec6023d7b.webp",
@@ -765,6 +597,13 @@
 			"srcPath": "site/post/2006-04-10-zsongas/images/EGYPT.webp"
 		},
 		{
+			"cdnPath": "/assets/5b55abbd-df47-5c2a-9bd0-787be9932900.webp",
+			"dominantColor": "rgb(115, 110, 108)",
+			"height": 768,
+			"width": 1024,
+			"srcPath": "site/post/2006-04-12-team-building/images/grldn01.webp"
+		},
+		{
 			"cdnPath": "/assets/1642833a-740c-5040-b23b-e6306ea66d73.webp",
 			"dominantColor": "rgb(150, 163, 170)",
 			"height": 347,
@@ -777,6 +616,13 @@
 			"height": 348,
 			"width": 260,
 			"srcPath": "site/post/2006-04-22-muemlek/images/oszlop_gyor.webp"
+		},
+		{
+			"cdnPath": "/assets/fe1b6a44-b0f5-5863-bf33-e7d93f8025d2.webp",
+			"dominantColor": "rgb(236, 235, 233)",
+			"height": 265,
+			"width": 331,
+			"srcPath": "site/post/2006-04-30-activex-szivas/images/flash_ad.webp"
 		},
 		{
 			"cdnPath": "/assets/0e370145-1f38-537e-911e-3030a821ebe0.webp",
@@ -1010,6 +856,13 @@
 			"srcPath": "site/post/2006-10-28-holdseta/images/Aldrin_Apollo_11.webp"
 		},
 		{
+			"cdnPath": "/assets/1a2ed440-f7c0-5853-9fa1-ddedcbb13b22.webp",
+			"dominantColor": "rgb(127, 125, 143)",
+			"height": 350,
+			"width": 245,
+			"srcPath": "site/post/2006-10-28-holdseta/images/holdseta.webp"
+		},
+		{
 			"cdnPath": "/assets/d8a17518-6973-520b-b929-75e6bdf0bf44.webp",
 			"dominantColor": "rgb(124, 109, 77)",
 			"height": 375,
@@ -1073,6 +926,13 @@
 			"srcPath": "site/post/2006-12-28-teknos/images/sarkany_t.webp"
 		},
 		{
+			"cdnPath": "/assets/766fd561-15ec-5d8e-a746-8c7bb08643e6.webp",
+			"dominantColor": "rgb(241, 242, 226)",
+			"height": 321,
+			"width": 506,
+			"srcPath": "site/post/2007-01-02-user-interfesz-a-seggem/images/Capture.webp"
+		},
+		{
 			"cdnPath": "/assets/b4b2e998-df30-587a-bcc1-08d7547e9f38.webp",
 			"dominantColor": "rgb(110, 87, 66)",
 			"height": 600,
@@ -1113,6 +973,13 @@
 			"height": 573,
 			"width": 383,
 			"srcPath": "site/post/2007-01-20-hackers/images/hackers.webp"
+		},
+		{
+			"cdnPath": "/assets/087d9df9-6397-5d0f-9967-2189292c8ead.webp",
+			"dominantColor": "rgb(224, 224, 223)",
+			"height": 661,
+			"width": 664,
+			"srcPath": "site/post/2007-01-28-az-xp-meg-az-eszkozok/images/modem.webp"
 		},
 		{
 			"cdnPath": "/assets/a9bd9a84-8b99-5183-9cd6-dcb588e1d785.webp",
@@ -1227,6 +1094,13 @@
 			"srcPath": "site/post/2007-06-21-beszelgettunk/images/lab.webp"
 		},
 		{
+			"cdnPath": "/assets/1c8816bc-f367-557a-888c-8eb95a1d348b.webp",
+			"dominantColor": "rgb(129, 125, 92)",
+			"height": 210,
+			"width": 220,
+			"srcPath": "site/post/2007-06-30-khmm-baranykefelos/images/schmuck041.webp"
+		},
+		{
 			"cdnPath": "/assets/cb0b4124-d632-54f6-9d62-c57ccff9e43d.webp",
 			"dominantColor": "rgb(210, 201, 191)",
 			"height": 640,
@@ -1260,6 +1134,13 @@
 			"height": 640,
 			"width": 1024,
 			"srcPath": "site/post/2007-10-23-hugh-laurie-a-balek/images/Hugh-Laurie-hugh-laurie-31954777-1024-7681.webp"
+		},
+		{
+			"cdnPath": "/assets/c0a3f718-03d2-5fa2-828e-be0edbe3b53c.webp",
+			"dominantColor": "rgb(134, 129, 127)",
+			"height": 350,
+			"width": 242,
+			"srcPath": "site/post/2007-10-23-hugh-laurie-a-balek/images/b330327.webp"
 		},
 		{
 			"cdnPath": "/assets/ffa1f89d-8166-53c0-a5c6-6818679ce05c.webp",
@@ -1316,6 +1197,13 @@
 			"height": 224,
 			"width": 820,
 			"srcPath": "site/post/2007-12-15-lesz-e-ebbol-valami/images/gekko.webp"
+		},
+		{
+			"cdnPath": "/assets/403df9b9-fdcd-5688-b4a2-4e9eb9463987.webp",
+			"dominantColor": "rgb(230, 230, 231)",
+			"height": 211,
+			"width": 444,
+			"srcPath": "site/post/2007-12-18-ez-a-durva/images/brg.webp"
 		},
 		{
 			"cdnPath": "/assets/9e152117-a7cd-5945-8bc1-ebb73ea600a8.webp",
@@ -1393,6 +1281,13 @@
 			"height": 241,
 			"width": 500,
 			"srcPath": "site/post/2008-07-24-kanape/images/kanape.webp"
+		},
+		{
+			"cdnPath": "/assets/77519d7e-3927-59ee-a947-26861e68955f.gif",
+			"dominantColor": "rgb(50, 62, 54)",
+			"height": 614,
+			"width": 1023,
+			"srcPath": "site/post/2008-07-26-nagy-monitor-szarakodas/images/ezgif.com-resize.gif"
 		},
 		{
 			"cdnPath": "/assets/0e0b9af3-5c12-5a8b-9c9b-473248e4b744.webp",
@@ -1521,11 +1416,123 @@
 			"srcPath": "site/post/2008-11-16-hegesztesi-zsebkonyv/images/MIg_MAGCOhegesztes_2.webp"
 		},
 		{
+			"cdnPath": "/assets/555086e2-d0a4-568b-a190-d184b430b4aa.jpeg",
+			"dominantColor": "rgb(110, 93, 77)",
+			"height": 640,
+			"width": 480,
+			"srcPath": "site/post/2008-11-16-hegesztesi-zsebkonyv/images/p-640-480-51ff3df0-3b72-4e39-bdfc-7c682342bd29.jpeg"
+		},
+		{
+			"cdnPath": "/assets/67fcae6f-bcf1-5899-827e-8bc91c64dedd.jpeg",
+			"dominantColor": "rgb(114, 102, 91)",
+			"height": 640,
+			"width": 480,
+			"srcPath": "site/post/2008-11-16-hegesztesi-zsebkonyv/images/p-640-480-b962d39b-6709-41e5-a2ef-86e8262ff2db.jpeg"
+		},
+		{
+			"cdnPath": "/assets/042537b4-90d7-53b1-804b-3cb49766edaf.jpeg",
+			"dominantColor": "rgb(85, 64, 126)",
+			"height": 375,
+			"width": 500,
+			"srcPath": "site/post/2008-12-04-999/images/l-640-480-5b736a46-5d6b-40a5-97a4-c752a25c1979-500x375.jpeg"
+		},
+		{
+			"cdnPath": "/assets/0488f37e-bcf2-56c1-a054-20e046d9bddb.jpeg",
+			"dominantColor": "rgb(85, 64, 126)",
+			"height": 480,
+			"width": 640,
+			"srcPath": "site/post/2008-12-04-999/images/l-640-480-5b736a46-5d6b-40a5-97a4-c752a25c1979.jpeg"
+		},
+		{
+			"cdnPath": "/assets/c32e04c6-366c-5fed-93cc-af96f39185d1.jpeg",
+			"dominantColor": "rgb(86, 61, 55)",
+			"height": 480,
+			"width": 640,
+			"srcPath": "site/post/2008-12-20-hangjegyek/images/l-640-480-2cd4fc65-37e9-4d07-ada4-b1cc739e10d1.jpeg"
+		},
+		{
+			"cdnPath": "/assets/89d0e172-354f-5622-a1fc-fce86cb122e4.jpeg",
+			"dominantColor": "rgb(37, 23, 27)",
+			"height": 375,
+			"width": 500,
+			"srcPath": "site/post/2008-12-20-hangjegyek/images/l-640-480-312f67b0-7be8-482b-aa13-ee56b745c476-500x375.jpeg"
+		},
+		{
+			"cdnPath": "/assets/0b469130-80dd-5e41-8d97-39851d7cdb57.jpeg",
+			"dominantColor": "rgb(38, 23, 28)",
+			"height": 480,
+			"width": 640,
+			"srcPath": "site/post/2008-12-20-hangjegyek/images/l-640-480-312f67b0-7be8-482b-aa13-ee56b745c476.jpeg"
+		},
+		{
+			"cdnPath": "/assets/e59551c7-a53d-5c4c-83d4-8595ce37e13a.jpeg",
+			"dominantColor": "rgb(82, 58, 48)",
+			"height": 375,
+			"width": 500,
+			"srcPath": "site/post/2008-12-20-hangjegyek/images/l-640-480-d1a44488-574a-4dc8-852e-e083946b8d6e-500x375.jpeg"
+		},
+		{
+			"cdnPath": "/assets/2e642ad3-5f11-5aa0-9c3e-d96e4cee3d29.jpeg",
+			"dominantColor": "rgb(83, 58, 49)",
+			"height": 480,
+			"width": 640,
+			"srcPath": "site/post/2008-12-20-hangjegyek/images/l-640-480-d1a44488-574a-4dc8-852e-e083946b8d6e.jpeg"
+		},
+		{
+			"cdnPath": "/assets/d4445cda-1cf5-52a5-8d4d-d6f75720f2fe.jpeg",
+			"dominantColor": "rgb(45, 42, 46)",
+			"height": 500,
+			"width": 375,
+			"srcPath": "site/post/2008-12-20-hangjegyek/images/p-640-480-c929bfd3-a3e9-4751-ae6a-db7f1568e772-375x500.jpeg"
+		},
+		{
+			"cdnPath": "/assets/df69f9e6-09c4-5287-b6c4-e3e27fc37eba.jpeg",
+			"dominantColor": "rgb(45, 43, 46)",
+			"height": 640,
+			"width": 480,
+			"srcPath": "site/post/2008-12-20-hangjegyek/images/p-640-480-c929bfd3-a3e9-4751-ae6a-db7f1568e772.jpeg"
+		},
+		{
 			"cdnPath": "/assets/1023e35f-35d1-5d23-9dd5-2bc414bed99a.webp",
 			"dominantColor": "rgb(59, 59, 48)",
 			"height": 495,
 			"width": 1284,
 			"srcPath": "site/post/2009-01-02-bilux/images/Capture.webp"
+		},
+		{
+			"cdnPath": "/assets/d0d40758-d8b1-5267-8246-a503898de4fa.jpeg",
+			"dominantColor": "rgb(76, 74, 76)",
+			"height": 640,
+			"width": 480,
+			"srcPath": "site/post/2009-01-11-a-duna-kozeperol/images/p-640-480-29d46282-1098-44e8-9d91-8162fbed511d.jpeg"
+		},
+		{
+			"cdnPath": "/assets/e3adc25f-7c5f-5296-9a35-3c549aac6a8e.jpeg",
+			"dominantColor": "rgb(83, 83, 89)",
+			"height": 640,
+			"width": 480,
+			"srcPath": "site/post/2009-01-11-a-duna-kozeperol/images/p-640-480-d4827b2c-6c01-486b-8cbd-2b5023a4dc83.jpeg"
+		},
+		{
+			"cdnPath": "/assets/04447915-6790-5c2f-bd30-95889bffcd4c.jpeg",
+			"dominantColor": "rgb(105, 105, 105)",
+			"height": 640,
+			"width": 480,
+			"srcPath": "site/post/2009-01-11-a-duna-kozeperol/images/p-640-480-f0f04512-c552-4807-ba88-512595967aa3.jpeg"
+		},
+		{
+			"cdnPath": "/assets/6a6ddec9-7135-55a0-add1-30bb09b7a7ab.jpeg",
+			"dominantColor": "rgb(117, 112, 116)",
+			"height": 480,
+			"width": 640,
+			"srcPath": "site/post/2009-02-05-megpadkazta/images/l-640-480-79eccb05-0108-42b9-b31e-afb0f8d47f21.jpeg"
+		},
+		{
+			"cdnPath": "/assets/0953e0a4-8a9a-5899-97f8-6d41ff919225.jpeg",
+			"dominantColor": "rgb(104, 100, 100)",
+			"height": 640,
+			"width": 480,
+			"srcPath": "site/post/2009-02-05-megpadkazta/images/p-640-480-44655016-301e-4340-ac4a-3010e58f73cb.jpeg"
 		},
 		{
 			"cdnPath": "/assets/4e36ae54-d872-5756-9d1a-df508d4b0b1c.webp",
@@ -1647,6 +1654,20 @@
 			"srcPath": "site/post/2009-07-15-gekko-goes-down/images/wU0J1QB-1.webp"
 		},
 		{
+			"cdnPath": "/assets/ec759ca0-4840-526e-9362-1f55260db604.jpeg",
+			"dominantColor": "rgb(116, 100, 92)",
+			"height": 500,
+			"width": 375,
+			"srcPath": "site/post/2009-07-21-a-nap-kerdese/images/p-1600-1200-9fcabf1f-2191-48b9-aab2-8e50a6a590bd-375x500.jpeg"
+		},
+		{
+			"cdnPath": "/assets/dd6f4c3d-99b6-599c-b073-fdcde1814b6a.jpeg",
+			"dominantColor": "rgb(116, 101, 93)",
+			"height": 1600,
+			"width": 1200,
+			"srcPath": "site/post/2009-07-21-a-nap-kerdese/images/p-1600-1200-9fcabf1f-2191-48b9-aab2-8e50a6a590bd.jpeg"
+		},
+		{
 			"cdnPath": "/assets/7836d785-0ba6-5e08-bb16-eb20a4f81a52.webp",
 			"dominantColor": "rgb(145, 145, 145)",
 			"height": 640,
@@ -1680,6 +1701,20 @@
 			"height": 641,
 			"width": 1025,
 			"srcPath": "site/post/2009-08-07-zarnyitas-alapfok/images/Chain-e1447878835557.webp"
+		},
+		{
+			"cdnPath": "/assets/c83ab6ea-052f-5ba8-9550-2a270a6d4c88.jpeg",
+			"dominantColor": "rgb(110, 107, 103)",
+			"height": 640,
+			"width": 480,
+			"srcPath": "site/post/2009-08-07-zarnyitas-alapfok/images/p-1600-1200-361a7325-97bd-4eeb-b0c0-bf19f03a14af.jpeg"
+		},
+		{
+			"cdnPath": "/assets/10e63f0b-4952-530d-810c-1d7d20d313c1.jpeg",
+			"dominantColor": "rgb(112, 92, 75)",
+			"height": 640,
+			"width": 480,
+			"srcPath": "site/post/2009-08-07-zarnyitas-alapfok/images/p-1600-1200-8df7e0a3-59b0-47f8-98e1-4167eb22e729.jpeg"
 		},
 		{
 			"cdnPath": "/assets/98696253-4578-5c5a-931a-aa922907d285.webp",
@@ -2312,6 +2347,20 @@
 			"srcPath": "site/post/2012-03-26-oreganyam/images/Barcode_on_a_Coke_can.webp"
 		},
 		{
+			"cdnPath": "/assets/e3db942b-ef3f-5d07-adff-7d4f1591fe2c.jpeg",
+			"dominantColor": "rgb(203, 152, 128)",
+			"height": 442,
+			"width": 500,
+			"srcPath": "site/post/2012-03-26-oreganyam/images/bg.jpeg"
+		},
+		{
+			"cdnPath": "/assets/4e8fd761-971e-554b-b3c7-cf06d6161022.gif",
+			"dominantColor": "rgb(217, 183, 126)",
+			"height": 200,
+			"width": 400,
+			"srcPath": "site/post/2012-03-26-oreganyam/images/pizza.gif"
+		},
+		{
 			"cdnPath": "/assets/6a7f9029-5b1d-5503-b2ad-f9702530e619.webp",
 			"dominantColor": "rgb(117, 95, 74)",
 			"height": 640,
@@ -2333,6 +2382,13 @@
 			"srcPath": "site/post/2012-11-05-koltozes-a-felhobe/images/Clouds_on_a_nice_day_by_EdenMarel.webp"
 		},
 		{
+			"cdnPath": "/assets/9bda7592-f772-5cf6-9d01-41a2ba0225c1.webp",
+			"dominantColor": "rgb(53, 80, 45)",
+			"height": 600,
+			"width": 1024,
+			"srcPath": "site/post/2012-12-08-vonatos-mese/images/DtcA8_7XcAIig33.webp"
+		},
+		{
 			"cdnPath": "/assets/8b2d8424-68e9-572f-84d0-8ff25bc85e98.webp",
 			"dominantColor": "rgb(127, 105, 63)",
 			"height": 97,
@@ -2345,6 +2401,13 @@
 			"height": 648,
 			"width": 1024,
 			"srcPath": "site/post/2012-12-08-vonatos-mese/images/locomotive-001.webp"
+		},
+		{
+			"cdnPath": "/assets/33bfeda6-7f13-5d92-b344-ba0718d10795.webp",
+			"dominantColor": "rgb(63, 67, 41)",
+			"height": 750,
+			"width": 1000,
+			"srcPath": "site/post/2012-12-08-vonatos-mese/images/sgaugl7k92b51.webp"
 		},
 		{
 			"cdnPath": "/assets/934ba123-c9d4-5ed0-b319-b1f5456976c7.webp",
@@ -2480,11 +2543,25 @@
 			"srcPath": "site/post/2013-10-13-csanak/images/003-500x400.webp"
 		},
 		{
+			"cdnPath": "/assets/a44b022e-143d-5d3e-9433-2b208c09288f.gif",
+			"dominantColor": "rgb(113, 96, 72)",
+			"height": 742,
+			"width": 557,
+			"srcPath": "site/post/2013-10-13-csanak/images/IMG_1400-MOTION.gif"
+		},
+		{
 			"cdnPath": "/assets/0ab7effa-69e9-56ec-ae21-5ffb731a8ef3.webp",
 			"dominantColor": "rgb(138, 113, 79)",
 			"height": 640,
 			"width": 1024,
 			"srcPath": "site/post/2013-10-13-csanak/images/IMG_1409.webp"
+		},
+		{
+			"cdnPath": "/assets/b5e50a50-9ade-5ecc-8739-8c79a281bcaf.gif",
+			"dominantColor": "rgb(102, 106, 61)",
+			"height": 785,
+			"width": 590,
+			"srcPath": "site/post/2013-10-13-csanak/images/IMG_1417-MOTION.gif"
 		},
 		{
 			"cdnPath": "/assets/8c88faaa-24f3-52f6-9a4a-20deb7541fe7.webp",
@@ -2534,6 +2611,13 @@
 			"height": 640,
 			"width": 1024,
 			"srcPath": "site/post/2013-12-18-raytrace-es-ray-march/images/raytrace1.webp"
+		},
+		{
+			"cdnPath": "/assets/4e268ffc-1dec-5cc9-8213-2c18c6615915.gif",
+			"dominantColor": "rgb(218, 204, 111)",
+			"height": 640,
+			"width": 1024,
+			"srcPath": "site/post/2014-01-04-kockak-metszete/images/cubes.gif"
 		},
 		{
 			"cdnPath": "/assets/89196748-4479-5339-92b3-cefb5b21bda5.webp",
@@ -2599,6 +2683,13 @@
 			"srcPath": "site/post/2014-06-23-the-elements-of-computing-systems/images/photo-2.webp"
 		},
 		{
+			"cdnPath": "/assets/8aa9d7e7-a807-533b-929d-c128c938bd2a.webp",
+			"dominantColor": "rgb(65, 43, 63)",
+			"height": 750,
+			"width": 1000,
+			"srcPath": "site/post/2014-09-19-kemeny-dio/images/08c3d2c499870d7ee29f08b9af196b74.webp"
+		},
+		{
 			"cdnPath": "/assets/0fab4659-07d8-5fa8-94b1-02f0b81f8942.webp",
 			"dominantColor": "rgb(92, 67, 63)",
 			"height": 640,
@@ -2618,6 +2709,13 @@
 			"height": 1216,
 			"width": 912,
 			"srcPath": "site/post/2014-09-19-kemeny-dio/images/pohar.webp"
+		},
+		{
+			"cdnPath": "/assets/00077b64-9d70-5b2a-8280-e5b2872347db.gif",
+			"dominantColor": "rgb(94, 130, 117)",
+			"height": 176,
+			"width": 240,
+			"srcPath": "site/post/2015-03-04-challenge24-ec-2015/images/4k7kp0I.gif"
 		},
 		{
 			"cdnPath": "/assets/a0b2b1de-6d33-5ce3-adc7-b117c503e1a5.webp",
@@ -2674,6 +2772,13 @@
 			"height": 640,
 			"width": 1024,
 			"srcPath": "site/post/2015-11-05-encse-es-a-windows-team/images/Windows-8.1-e1446755008901.webp"
+		},
+		{
+			"cdnPath": "/assets/39a8502e-3c89-5a84-b01e-d334513cb548.webp",
+			"dominantColor": "rgb(118, 108, 31)",
+			"height": 480,
+			"width": 640,
+			"srcPath": "site/post/2015-11-05-encse-es-a-windows-team/images/bg.webp"
 		},
 		{
 			"cdnPath": "/assets/19067926-657d-52ea-a0a7-3d1a2c5050ff.webp",
@@ -2739,6 +2844,34 @@
 			"srcPath": "site/post/2015-12-26-mini-scheme/images/minischeme.webp"
 		},
 		{
+			"cdnPath": "/assets/451015eb-4388-5a08-afae-b8a884e2f0aa.webp",
+			"dominantColor": "rgb(8, 7, 8)",
+			"height": 271,
+			"width": 384,
+			"srcPath": "site/post/2016-03-12-nes-emulator/images/162160-avenger-commodore-64-screenshot-gameplay-us-and-europe-version.webp"
+		},
+		{
+			"cdnPath": "/assets/d7f7d14e-e49b-559f-95fe-187c95be2072.gif",
+			"dominantColor": "rgb(141, 141, 201)",
+			"height": 240,
+			"width": 256,
+			"srcPath": "site/post/2016-03-12-nes-emulator/images/Super_Mario_Bros_NES_02.gif"
+		},
+		{
+			"cdnPath": "/assets/883d1b6d-3e3c-5998-8507-09bb3263a7be.gif",
+			"dominantColor": "rgb(17, 22, 31)",
+			"height": 240,
+			"width": 256,
+			"srcPath": "site/post/2016-03-12-nes-emulator/images/ezgif-4-cec339a7d2.gif"
+		},
+		{
+			"cdnPath": "/assets/a61faceb-a400-50ac-ba9d-bacf3204625b.webp",
+			"dominantColor": "rgb(57, 45, 63)",
+			"height": 720,
+			"width": 1280,
+			"srcPath": "site/post/2016-03-12-nes-emulator/images/flimbo.webp"
+		},
+		{
 			"cdnPath": "/assets/57113534-bd2e-5d0c-8b1e-d0d07213427c.webp",
 			"dominantColor": "rgb(135, 134, 160)",
 			"height": 640,
@@ -2753,11 +2886,25 @@
 			"srcPath": "site/post/2016-03-12-nes-emulator/images/nesemu.webp"
 		},
 		{
+			"cdnPath": "/assets/91509849-ad88-523e-b5be-7154b1eb9685.gif",
+			"dominantColor": "rgb(137, 127, 194)",
+			"height": 640,
+			"width": 1024,
+			"srcPath": "site/post/2016-03-12-nes-emulator/images/smb.gif"
+		},
+		{
 			"cdnPath": "/assets/3658602c-894a-5792-b424-b71ef864639c.webp",
 			"dominantColor": "rgb(109, 121, 169)",
 			"height": 640,
 			"width": 1138,
 			"srcPath": "site/post/2016-03-12-nes-emulator/images/super_mario_bros.0-e1457822735742.webp"
+		},
+		{
+			"cdnPath": "/assets/d49e6a58-663a-5359-9057-6ce47e85492d.jpeg",
+			"dominantColor": "rgb(110, 76, 39)",
+			"height": 900,
+			"width": 900,
+			"srcPath": "site/post/2021-01-05-pekeskedes/images/bg.jpeg"
 		},
 		{
 			"cdnPath": "/assets/94c271ea-13e8-5874-9594-2950e0ed580c.webp",
@@ -2795,146 +2942,6 @@
 			"srcPath": "site/post/2021-01-05-pekeskedes/images/img_2988.webp"
 		},
 		{
-			"cdnPath": "/assets/a61faceb-a400-50ac-ba9d-bacf3204625b.webp",
-			"dominantColor": "rgb(57, 45, 63)",
-			"height": 720,
-			"width": 1280,
-			"srcPath": "site/post/2016-03-12-nes-emulator/images/flimbo.webp"
-		},
-		{
-			"cdnPath": "/assets/70accc94-42d8-5612-889f-de436c415370.webp",
-			"dominantColor": "rgb(129, 112, 76)",
-			"height": 529,
-			"width": 1024,
-			"srcPath": "site/page/about/images/AAEAAQAAAAAAAAmGAAAAJGQ2ZTAzNmJmLWRlZmQtNGJhMy04OGJiLTZlZWYyYWNlNjIwYg-e1503254268233.webp"
-		},
-		{
-			"cdnPath": "/assets/ca74b8fa-f82b-5bcb-a76e-94a923fa4286.webp",
-			"dominantColor": "rgb(108, 143, 216)",
-			"height": 224,
-			"width": 256,
-			"srcPath": "site/page/projects/images/NES_Super_Mario_Bros.webp"
-		},
-		{
-			"cdnPath": "/assets/d6c4fde8-b797-5e71-a3fe-336d454481f7.webp",
-			"dominantColor": "rgb(13, 5, 22)",
-			"height": 742,
-			"width": 844,
-			"srcPath": "site/page/projects/images/Screen-Shot-2021-01-07-at-20.13.57.webp"
-		},
-		{
-			"cdnPath": "/assets/bded5831-ac86-51f5-887a-6a4d4a147f7b.webp",
-			"dominantColor": "rgb(78, 86, 96)",
-			"height": 880,
-			"width": 848,
-			"srcPath": "site/page/projects/images/Screen-Shot-2021-03-31-at-14.46.59.webp"
-		},
-		{
-			"cdnPath": "/assets/351a879b-1c03-5aa3-ac71-a723c50d5bd7.webp",
-			"dominantColor": "rgb(48, 47, 44)",
-			"height": 800,
-			"width": 1280,
-			"srcPath": "site/page/projects/images/casette.webp"
-		},
-		{
-			"cdnPath": "/assets/d109b6cd-915e-5755-ae74-561ab46ef18a.webp",
-			"dominantColor": "rgb(207, 235, 218)",
-			"height": 198,
-			"width": 289,
-			"srcPath": "site/page/projects/images/mobilengine.webp"
-		},
-		{
-			"cdnPath": "/assets/5b55abbd-df47-5c2a-9bd0-787be9932900.webp",
-			"dominantColor": "rgb(115, 110, 108)",
-			"height": 768,
-			"width": 1024,
-			"srcPath": "site/post/2006-04-12-team-building/images/grldn01.webp"
-		},
-		{
-			"cdnPath": "/assets/fe1b6a44-b0f5-5863-bf33-e7d93f8025d2.webp",
-			"dominantColor": "rgb(236, 235, 233)",
-			"height": 265,
-			"width": 331,
-			"srcPath": "site/post/2006-04-30-activex-szivas/images/flash_ad.webp"
-		},
-		{
-			"cdnPath": "/assets/1a2ed440-f7c0-5853-9fa1-ddedcbb13b22.webp",
-			"dominantColor": "rgb(127, 125, 143)",
-			"height": 350,
-			"width": 245,
-			"srcPath": "site/post/2006-10-28-holdseta/images/holdseta.webp"
-		},
-		{
-			"cdnPath": "/assets/766fd561-15ec-5d8e-a746-8c7bb08643e6.webp",
-			"dominantColor": "rgb(241, 242, 226)",
-			"height": 321,
-			"width": 506,
-			"srcPath": "site/post/2007-01-02-user-interfesz-a-seggem/images/Capture.webp"
-		},
-		{
-			"cdnPath": "/assets/087d9df9-6397-5d0f-9967-2189292c8ead.webp",
-			"dominantColor": "rgb(224, 224, 223)",
-			"height": 661,
-			"width": 664,
-			"srcPath": "site/post/2007-01-28-az-xp-meg-az-eszkozok/images/modem.webp"
-		},
-		{
-			"cdnPath": "/assets/1c8816bc-f367-557a-888c-8eb95a1d348b.webp",
-			"dominantColor": "rgb(129, 125, 92)",
-			"height": 210,
-			"width": 220,
-			"srcPath": "site/post/2007-06-30-khmm-baranykefelos/images/schmuck041.webp"
-		},
-		{
-			"cdnPath": "/assets/c0a3f718-03d2-5fa2-828e-be0edbe3b53c.webp",
-			"dominantColor": "rgb(134, 129, 127)",
-			"height": 350,
-			"width": 242,
-			"srcPath": "site/post/2007-10-23-hugh-laurie-a-balek/images/b330327.webp"
-		},
-		{
-			"cdnPath": "/assets/403df9b9-fdcd-5688-b4a2-4e9eb9463987.webp",
-			"dominantColor": "rgb(230, 230, 231)",
-			"height": 211,
-			"width": 444,
-			"srcPath": "site/post/2007-12-18-ez-a-durva/images/brg.webp"
-		},
-		{
-			"cdnPath": "/assets/9bda7592-f772-5cf6-9d01-41a2ba0225c1.webp",
-			"dominantColor": "rgb(53, 80, 45)",
-			"height": 600,
-			"width": 1024,
-			"srcPath": "site/post/2012-12-08-vonatos-mese/images/DtcA8_7XcAIig33.webp"
-		},
-		{
-			"cdnPath": "/assets/33bfeda6-7f13-5d92-b344-ba0718d10795.webp",
-			"dominantColor": "rgb(63, 67, 41)",
-			"height": 750,
-			"width": 1000,
-			"srcPath": "site/post/2012-12-08-vonatos-mese/images/sgaugl7k92b51.webp"
-		},
-		{
-			"cdnPath": "/assets/8aa9d7e7-a807-533b-929d-c128c938bd2a.webp",
-			"dominantColor": "rgb(65, 43, 63)",
-			"height": 750,
-			"width": 1000,
-			"srcPath": "site/post/2014-09-19-kemeny-dio/images/08c3d2c499870d7ee29f08b9af196b74.webp"
-		},
-		{
-			"cdnPath": "/assets/39a8502e-3c89-5a84-b01e-d334513cb548.webp",
-			"dominantColor": "rgb(118, 108, 31)",
-			"height": 480,
-			"width": 640,
-			"srcPath": "site/post/2015-11-05-encse-es-a-windows-team/images/bg.webp"
-		},
-		{
-			"cdnPath": "/assets/451015eb-4388-5a08-afae-b8a884e2f0aa.webp",
-			"dominantColor": "rgb(8, 7, 8)",
-			"height": 271,
-			"width": 384,
-			"srcPath": "site/post/2016-03-12-nes-emulator/images/162160-avenger-commodore-64-screenshot-gameplay-us-and-europe-version.webp"
-		},
-		{
 			"cdnPath": "/assets/709302b7-dbf2-57b8-aa0a-e7435f666e7b.webp",
 			"dominantColor": "rgb(145, 48, 174)",
 			"height": 2457,
@@ -2954,13 +2961,6 @@
 			"height": 273,
 			"width": 947,
 			"srcPath": "site/post/2022-10-31-konyvespolc/images/bg.webp"
-		},
-		{
-			"cdnPath": "/assets/150936ba-cfb8-510a-9b17-aa08676f80ca.webp",
-			"dominantColor": "rgb(51, 26, 18)",
-			"height": 1080,
-			"width": 1920,
-			"srcPath": "site/page/konyvespolc/images/bg.webp"
 		}
 	]
 }

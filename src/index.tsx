@@ -22,7 +22,7 @@ const config: { [key: string]: Settings } = {
     },
     prod: {
         'dev': false,
-        'cdn': 'https://d1tyrc4sjyi164.cloudfront.net/'
+        'cdn': 'https://www.csokavar.hu/'
     }
 }
 
