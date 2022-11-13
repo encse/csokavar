@@ -51,8 +51,7 @@ const SearchSuggestions = styled.div`
         outline: none;
         &:hover, &:active, &:focus {
             background: ${linkColor};
-            color: white;
-            
+            color: black;
         }
     }
 
