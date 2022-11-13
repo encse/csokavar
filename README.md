@@ -5,10 +5,11 @@
     ╚██████╗███████║╚██████╔╝██║  ██╗██║  ██║ ╚████╔╝ ██║  ██║██║  ██║ 
     
 
-A static site generator and the sources of my personal website @ csokavar.hu.
+A static site generator and the sources of my personal website at csokavar.hu.
 
 ```
 npm install
+brew install webp
 npm run build
 ```
 
