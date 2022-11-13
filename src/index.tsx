@@ -4,29 +4,13 @@ import { Post } from './blog/post';
 import { Page } from "./blog/page";
 import { PostList } from "./blog/postList";
 import { chunks, files } from './util';
-import { AssetManager, ImageAsset } from './assets';
+import { AssetManager, ImageAsset, mkDstPath } from './assets';
 import { Tag } from './blog/tag';
 import process from 'process';
 import { SearchPage } from './blog/search';
 import { convertToWebp } from './convert';
 
-type Settings = {
-    'cdn': string,
-    'dev': boolean
-};
-
-const config: { [key: string]: Settings } = {
-    local: {
-        'dev': true,
-        'cdn': 'http://127.0.0.1:8080'
-    },
-    prod: {
-        'dev': false,
-        'cdn': 'https://www.csokavar.hu/'
-    }
-}
-
-function header(settings: Settings){
+function header(){
     console.log(`
          ██████╗███████╗ ██████╗ ██╗  ██╗ █████╗ ██╗   ██╗ █████╗ ██████╗ 
         ██╔════╝██╔════╝██╔═══██╗██║ ██╔╝██╔══██╗██║   ██║██╔══██╗██╔══██╗
@@ -34,11 +18,6 @@ function header(settings: Settings){
         ██║     ╚════██║██║   ██║██╔═██╗ ██╔══██║╚██╗ ██╔╝██╔══██║██╔══██╗
         ╚██████╗███████║╚██████╔╝██║  ██╗██║  ██║ ╚████╔╝ ██║  ██║██║  ██║ 
     `);
-
-    for (let key of Object.keys(settings)){
-        console.log(`\t${key}:\t${settings[key]}`);
-    }
-
 }
 
 function collectPostlike<T>(dir: string, create: (fpat: string, markdown: string) => T): T[] {
@@ -55,7 +34,7 @@ type FileWriter = (fpat: string, content: string | NodeJS.ArrayBufferView) => vo
 
 async function generate(writeFile: FileWriter) {
 
-    const assetManager = new AssetManager(settings.cdn, ".media");
+    const assetManager = new AssetManager(mkDstPath("/"), ".media");
 
     let success: boolean = true;
 
@@ -96,7 +75,7 @@ async function generate(writeFile: FileWriter) {
 
     for (let asset of assetManager.assets) {
         writeFile(
-            asset.url.pathname,
+            asset.dstPath,
             fs.readFileSync(path.join(asset.srcPath)));
     }
 
@@ -120,9 +99,6 @@ async function generate(writeFile: FileWriter) {
     }
 
     for (const [_, tag] of tags) {
-        if (tagCount.get(tag.name) == 1) {
-            console.log(tag.name);
-        }
         await generateList(
             assetManager,
             posts.filter(post => post.tags.some(t => t.uri === tag.uri)),
@@ -174,12 +150,13 @@ async function generateList(
     }
 }
 
-async function build(settings: Settings) {
+async function build() {
 
-    header(settings);
+    header();
 
     const tmpDir = fs.mkdtempSync("build_");
     try {
+        console.log('Generating....');
         fs.chmodSync(tmpDir, 0o755);
 
         let success = await generate((fpat: string, content: string | NodeJS.ArrayBufferView) => {
@@ -189,38 +166,25 @@ async function build(settings: Settings) {
         })
 
         if (success ){
-            if (!settings.dev) {
-                if (fs.existsSync("build")) {
-                    fs.rmdirSync("build", { recursive: true });
-                }
-                if (fs.existsSync("docs")) {
-                    fs.rmdirSync("docs", { recursive: true });
-                }
-
-                fs.renameSync(tmpDir, "docs");
-            } else {
-                if (fs.existsSync("build")) {
-                    fs.rmdirSync("build", { recursive: true });
-                }
-                fs.renameSync(tmpDir, "build");
+            if (fs.existsSync("build")) {
+                fs.rmSync("build", { recursive: true });
             }
+            if (fs.existsSync("docs")) {
+                fs.rmSync("docs", { recursive: true });
+            }
+            fs.renameSync(tmpDir, "docs");
         }
         console.log('Done');
         return success;
     } finally {
         if (fs.existsSync(tmpDir)) {
-            fs.rmdirSync(tmpDir, { recursive: true });
+            fs.rmSync(tmpDir, { recursive: true });
         }
     }
 }
 
-const settings = config[process.argv[2]];
-build(settings).then(success => {
+build().then(success => {
     if (!success) {
         process.exitCode = 1;
     }
 })
-
-
-
-

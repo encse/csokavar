@@ -19,7 +19,7 @@ const Image = styled.img`
 `;
 
 export function renderImageAsset(asset: ImageAsset){
-    let src = asset.url.toString();
+    let src = asset.dstPath.toString();
     const h = Math.min(asset.height, maxHeight);
     const w = h / asset.height * asset.width;
     return (

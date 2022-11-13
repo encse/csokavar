@@ -17,7 +17,7 @@ export type TemplateProps = {
 
 export function renderTemplate(props: TemplateProps): string {
     const featuredImage: React.CSSProperties = {
-        backgroundImage: `url(${props.coverImage.url})`,
+        backgroundImage: `url(${props.coverImage.dstPath})`,
         backgroundColor: props.coverImage.dominantColor
     };
 

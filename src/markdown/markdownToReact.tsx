@@ -92,7 +92,7 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
                         const asset = ctx.assetManager.lookupAsset(
                                 resolve(ctx.fpat, href)
                             );
-                        tokenOpen.attrSet('href', asset.url.toString());
+                        tokenOpen.attrSet('href', asset.dstPath.toString());
                     }
                 } 
 
