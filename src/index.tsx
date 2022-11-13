@@ -34,7 +34,7 @@ type FileWriter = (fpat: string, content: string | NodeJS.ArrayBufferView) => vo
 
 async function generate(writeFile: FileWriter) {
 
-    const assetManager = new AssetManager(mkDstPath("/"), ".media");
+    const assetManager = new AssetManager(mkDstPath("/"), ".build");
 
     let success: boolean = true;
 
@@ -154,7 +154,8 @@ async function build() {
 
     header();
 
-    const tmpDir = fs.mkdtempSync("build_");
+    fs.mkdirSync(".build", {recursive: true});
+    const tmpDir = fs.mkdtempSync(".build/build_");
     try {
         console.log('Generating....');
         fs.chmodSync(tmpDir, 0o755);
