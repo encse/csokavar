@@ -246,7 +246,7 @@ window.addEventListener("load", function () {
     });
 
 
-    new WebSocket('wss://csokavar.hu/finger', "finger-protocol").onmessage = (e) => {
+    new WebSocket('wss://finger.csokavar.hu', "finger-protocol").onmessage = (e) => {
         console.log(e.data);
     };
 });
