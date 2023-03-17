@@ -24,6 +24,18 @@ main article img {
 
 <article>
 
+## Formlabs 2021-
+
+![Formlabs](images/formlabs.svg)
+
+2021-től a Formlabs magyarországi csapatát erősítem. 3D nyomtatókkal foglalkozik a cég, 2023-ban jelentettük be a FleetControl terméket, aminek együtt tettük le az alapjait. 
+
+A 3D nyomtatás ma még picit bonyolultabb mint a normál papír alapú, és attól függően, hogy milyen technológiával nyomtatunk más-más előkészítés szükséges. Ehhez fejlesztették a PreForm nevű szoftvert, amiből segítettem kiemelni egy headless api részt, hogy a weben is tudjuk használni konténerizálva. Ez vastagon C++ meló volt és kb fél évet vett igénybe. Utána megörököltem a nyomtatók és a backend közötti kommunikációt, aminek a stabilitásán és monitorozásán dolgoztam javarészt Go-ban meg egy kicsit C++-ban. Végül az ehhez kapcsolódó szerver oldali logikát vettem át az előző fejlesztőtől, ami meg Python. 
+
+Hová lettek azok a jó kis nyelvek, amiket szeretek?
+</article>
+<article>
+
 ## [Prezi 2014-2021](https://csokavar.hu/blog/tag/prezi/)
 
 ![Prezi](images/prezi.svg)

@@ -107,6 +107,7 @@ export class AssetManager {
 
     async register(parsedPath: ParsedPath) {
 
+        
         const fpat = path.join(parsedPath.root, parsedPath.dir, parsedPath.base);
         const assetKind: AssetKind = 
             parsedPath.ext === '.js' ? "jsAsset" : 
@@ -138,6 +139,7 @@ export class AssetManager {
                 this.#assets.push(imageAsset);
                 this.saveMediaDb();
             } catch(e) {
+                console.log(e)
             }
         } else if (assetKind == 'jsAsset') {
             const jsAsset = new JsAsset(fpat, location);
@@ -199,7 +201,7 @@ export class AssetManager {
     }
 
 
-    private tryLookupAsset(fpat: string): Asset {
+    private tryLookupAsset(fpat: string): Asset | null {
 
         for (const item of this.#assets) {
             if (item.srcPath === fpat) {

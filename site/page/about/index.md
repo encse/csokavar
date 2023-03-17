@@ -2,7 +2,7 @@
 slug: "about"
 title: "Dávid Németh Cs."
 date: "2013-09-28"
-coverImage: images/ezgif-7-c057475f207c-1.gif
+coverImage: images/background.gif
 ---
 
 ## Home
