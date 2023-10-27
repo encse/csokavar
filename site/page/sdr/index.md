@@ -1,6 +1,6 @@
 ---
 slug: "sdr"
-title: "SDR"
+title: "Software Defined Radio"
 date: "2023-10-27"
 coverImage: images/bg.webp
 ---
@@ -19,7 +19,7 @@ Ami azért nem rossz egy darab dróttal a kert végéből. Ez tulajdonképpen a 
 Egy másik érdekes projekt lehet az űrállomás hallgatása. Néha előfordul, hogy az űrhajósok iskolásokkal beszélgetnek, amibe kis szerencsével bele is lehet hallgatni:
 
 <center>
-<video width="640" height="480" controls>
+<video width="70%" controls>
   <source src="/assets/page/sdr/files/iss.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -27,11 +27,10 @@ Your browser does not support the video tag.
 
 Máskor SSTV adásokat küldenek, éppen ezen a hétvégén indul egy pár napos session. Az SSTV tulajdonképpen csak egy képet jelent, nem igazi TV, jellemzően az orosz űrkutatás nagy pillanataiból kapunk néhány bélyegszerű izét. Szerintem rém ronda, de jó mulatság összevadászni, kicsit olyan mint a horgászat, sok türelem, és a végén a fene tudja mit jön ki belőle.
 
-Persze SSTV adást bárki küldhet, akinek van rádióamatőr engedélye, és a 14.230 Mhz-es frekvencián folyamatosan megy is az adok-kapok. Hogy a csokavar se maradjon ki belőle, ide teszek egy kis easter egget. Ezt multimode cocoával készítettem, de akármelyik sstv dekóder tudja olvasni. Segítségképpen elárulom, hogy Scottie S4 formátumot használtam hozzá, bár anélkül is ki lehet találni egy kis próbálkozással.
+Persze SSTV adást bárki küldhet, akinek van rádióamatőr engedélye, és a 14.230 Mhz-es frekvencián folyamatosan megy is az adok-kapok. Hogy a csokavar se maradjon ki belőle, ideteszek egy kis easter egget. Ezt multimode cocoával készítettem, de akármelyik sstv dekóder tudja olvasni. Segítségképpen elárulom, hogy Scottie S4 formátumot használtam hozzá, bár anélkül is ki lehet találni egy kis próbálkozással.
 
 
 [sstv](files/sstv.mp3)
-
 
 Elkanyarodva az űr témától, elég könnyű belefutni Hamburgi hajózási térképekbe is, esetleg teletype időjárás előrejelzésekbe.
 
@@ -41,3 +40,7 @@ images/map2.webp
 images/map3.webp
 images/map4.webp
 [/gallery]
+
+Ezzel persze még nincs vége, elkezdtem antennákat, szűrőket építeni. Vettem egy másik RTL SDR-t, ami jobban működik alacsony frekvencián, és egy mágneses hurokantennát is. 
+
+Most egy kristály rádióra hajtok. Már van hozzá tekercsem meg egy old school változtatható kapacitású kondenzátorom, kellene még egy germánium dióda, és valami erősítő a kimenetnek vagy egy "nagy impedanciájú" hangszóró... Később FM rádiót is készítek, ha ez sikerül, és egyszer talán leteszem a rádióamatőr vizsgát, de az még kicsit odébb lesz.
