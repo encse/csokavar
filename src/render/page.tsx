@@ -367,19 +367,6 @@ const GoogleFonts: React.FC<{href:string}> = (props) => {
     </>
 }
 
-const Analytics = () => {
-    return <>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-203054-9"></script>
-        <script dangerouslySetInnerHTML={{ __html:
-            `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            
-            gtag('config', 'UA-203054-9');`
-        }} />
-    </>;
-}
 export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
     return <html>
         <head>
@@ -391,7 +378,6 @@ export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
             {[props.scripts.map(asset => <script src={asset.dstPath.toString()} async></script>)]}
             {[props.styles.map(asset => <link rel="stylesheet" href={asset.dstPath.toString()}></link>)]}
             {"{{ style }}"}
-            <Analytics />
             <GoogleFonts href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
 
             <title>{props.title} &#8211; Csókavár</title>
