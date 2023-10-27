@@ -19,9 +19,7 @@ Ami azért nem rossz egy darab dróttal a kert végéből. Ez tulajdonképpen a 
 Egy másik érdekes projekt lehet az űrállomás hallgatása. Néha előfordul, hogy az űrhajósok iskolásokkal beszélgetnek, amibe kis szerencsével bele is lehet hallgatni:
 
 <center>
-<video width="70%" controls>
-  <source src="/assets/page/sdr/files/iss.mp4" type="video/mp4">
-Your browser does not support the video tag.
+<video width="70%" src="/assets/page/sdr/files/iss.mp4" controls>
 </video>
 </center>
 
