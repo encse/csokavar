@@ -25,6 +25,9 @@ Egy másik érdekes projekt lehet az űrállomás hallgatása. Néha előfordul,
 
 Máskor SSTV adásokat küldenek, éppen ezen a hétvégén indul egy pár napos session. Az SSTV tulajdonképpen csak egy képet jelent, nem igazi TV, jellemzően az orosz űrkutatás nagy pillanataiból kapunk néhány bélyegszerű izét. Rém ronda, de jó mulatság összevadászni, kicsit olyan mint a horgászat, sok türelem, és a végén a fene tudja mit jön ki belőle.
 
+![image](images/iss3.webp)
+![image](images/iss4.webp)
+
 Persze SSTV adást bárki küldhet, akinek van rádióamatőr engedélye, és a 14.230 Mhz-es frekvencián folyamatosan megy is az adok-kapok. Hogy a csokavar se maradjon ki belőle, ideteszek egy kis easter egget. Ezt multimode cocoával készítettem, de akármelyik sstv dekóder tudja olvasni. Segítségképpen elárulom, hogy Scottie S4 formátumot használtam hozzá, bár anélkül is ki lehet találni egy kis próbálkozással.
 
 [sstv](files/sstv.mp3)
