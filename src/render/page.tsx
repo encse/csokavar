@@ -393,7 +393,7 @@ export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
                     <Menu>
                         <MenuItem href="/projects/">Projektek</MenuItem>
                         <MenuItem href="/konyvespolc/">Könyvespolc</MenuItem>
-                        <MenuItem href="/sdr/">sdr</MenuItem>
+                        <MenuItem href="https://altnet.csokavar.hu/#56000">Altnet</MenuItem>
                         <MenuItem href="/about/">About</MenuItem>
                     </Menu>
                     <HeaderLink href="/search/"><SearchIcon /></HeaderLink>

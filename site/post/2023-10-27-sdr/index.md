@@ -2,6 +2,9 @@
 slug: "sdr"
 title: "Software Defined Radio"
 date: "2023-10-27"
+tags: 
+  - "sdr"
+  - "geekség"
 coverImage: images/bg.webp
 ---
 

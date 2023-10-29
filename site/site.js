@@ -245,5 +245,4 @@ window.addEventListener("load", function () {
         }
     });
 
-    this.fetch('https://finger.csokavar.hu/~encse').then(rsp => rsp.text()).then(console.log);
 });

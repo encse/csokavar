@@ -67,6 +67,15 @@ Intentional programming technológiák kutatása és alkalmazása, Charles Simon
 <p>Néhány kisebb-nagyobb projekt, amivel az évek során foglalkoztam. Némelyik ma is így néz ki, másokról meg csak ez a leírás maradt.</p>
 <article>
 
+## [Altnet (2023)](https://altnet.csokavar.hu/#56000)
+
+![altnet](images/altnet.webp)
+
+Az altnet egy hálózat szimulátor. A régmúlt idők internetén garázdálkodhatunk vele, BBS-ek után kutatva és 
+katonai szerverekre betörve. 2023 elején dolgoztam rajta, de még rengeteg minden hiányzik belőle, amit szeretnék.
+</article>
+<article>
+
 ## [Mandelbrot drawers for vintage hardware (2021)](https://mandelbrot.csokavar.hu/)
 
 ![mandelbrot](images/Screen-Shot-2021-03-31-at-14.46.59-300x300.webp)
@@ -140,7 +149,7 @@ A World of Warcraft horgász minijátékának automatizálására készült. Van
 </article>
 <article>
 
-## **CO**ZERO (2011)
+## ~~**CO**ZERO (2011)~~
 
 ![cozero](images/cozero1.webp)
 
@@ -148,7 +157,7 @@ A **CO**ZERO egy kicsi, de annál nagyobb kilátásokkal rendelkező kft, körny
 </article>
 <article>
 
-## Mérték Építészeti Stúdió (2010)
+## ~~Mérték Építészeti Stúdió (2010)~~
 
 ![Mérték](images/mertek-500x2911.webp)
 
@@ -172,7 +181,7 @@ Erős felindultságomban egy vállalati fényképezés után készült ez a kis 
 </article>
 <article>
 
-## Bilux Autósiskola (2008)
+## ~~Bilux Autósiskola (2008)~~
 
 ![bilux](images/bilux.webp)
 
