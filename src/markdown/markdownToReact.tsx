@@ -2,6 +2,7 @@ import MarkdownIt from 'markdown-it';
 import * as React from 'react';
 import markdownKatex from '@iktakahiro/markdown-it-katex';
 import * as iframePlugin from './iframe';
+import * as videoPlugin from './video';
 import markdown_it_youtube_plugin from './youtube';
 import markdown_it_gallery_plugin, { renderGallery } from './gallery';
 import { AssetManager } from '../assets';
@@ -55,13 +56,15 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
             if (!ctx.excerpt) {
                 children().push(<div dangerouslySetInnerHTML={{ __html: token.content }} />);
             }
+        } else if (token.type === "video_embed") {
+            children().push(videoPlugin.render(token, ctx));
         } else if (token.type === "gallery") {
             if (!ctx.excerpt) {
                 children().push(renderGallery(token, ctx));
             }
         } else if (token.type === iframePlugin.tokenId) {
             children().push(iframePlugin.render(token, ctx));
-        } else if (token.type === "image") {
+        }  else if (token.type === "image") {
             children().push(renderImage(token, ctx));
         } else if (token.tag === "math") {
             children().push(renderMath(token, markdownIt));
@@ -118,6 +121,7 @@ export function markdownToTextContent(md: string): string {
     const markdownIt = MarkdownIt({ html: true })
         .use(markdownKatex, { output: "html", errorColor: "#cc0000" })
         .use(iframePlugin.plugin)
+        .use(videoPlugin.plugin)
         .use(markdown_it_youtube_plugin)
         .use(markdown_it_gallery_plugin)
         ;
@@ -136,6 +140,7 @@ export function markdownToReact(md: string, assetManager: AssetManager, fpat: st
     const markdownIt = MarkdownIt({ html: true })
         .use(markdownKatex, { output: "html", errorColor: "#cc0000" })
         .use(iframePlugin.plugin)
+        .use(videoPlugin.plugin)
         .use(markdown_it_youtube_plugin)
         .use(markdown_it_gallery_plugin)
         ;
@@ -148,6 +153,7 @@ export function markdownToReactExcerpt(md: string, uri: string, assetManager: As
     const markdownIt = MarkdownIt({ html: true })
         .use(markdownKatex, { output: "html", errorColor: "#cc0000" })
         .use(iframePlugin.plugin)
+        .use(videoPlugin.plugin)
         .use(markdown_it_youtube_plugin)
         .use(markdown_it_gallery_plugin)
         ;

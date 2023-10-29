@@ -21,10 +21,7 @@ Ami azért nem rossz egy darab dróttal a kert végéből. Tulajdonképpen ez cs
 
 Egy másik érdekes projekt lehet az űrállomás hallgatása. Néha előfordul, hogy az űrhajósok iskolásokkal beszélgetnek, amibe kis szerencsével bele is lehet hallgatni. Legalábbis a válaszokba, a kérdéseket mi nem tudjuk fogni.
 
-<center>
-<video width="70%" src="/assets/page/sdr/files/iss.mp4" controls>
-</video>
-</center>
+[video src="files/iss.mp4"]
 
 Máskor SSTV adásokat küldenek, éppen ezen a hétvégén indul egy pár napos session. Az SSTV tulajdonképpen csak egy képet jelent, nem igazi TV, jellemzően az orosz űrkutatás nagy pillanataiból kapunk néhány bélyegszerű izét. Rém ronda, de jó mulatság összevadászni, kicsit olyan mint a horgászat, sok türelem, és a végén a fene tudja mit jön ki belőle.
 
