@@ -8,9 +8,7 @@ import { RenderContext } from './renderContext';
 
 export function render(token: Token, ctx: RenderContext) {
     const src: string = token.attrGet("src");
-    console.log("kecske", src)
     const asset = ctx.assetManager.lookup(resolve(ctx.fpat, src), "fileAsset");
-    console.log("kecske", asset)
     return React.createElement("center", {},
         React.createElement("video", {"width": "70%", "src": asset.dstPath, "controls": "controls"})
     );

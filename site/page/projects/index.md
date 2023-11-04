@@ -88,8 +88,7 @@ Kicsit eljátszottam régi gépekkel meg assembly nyelvekkel és írtam néhány
 
 ![aoc](images/christmas_star.webp)
 
-2015 óta minden év decembere az Advent of Coderól szól. Érdekes történettel a mikulásról és nagy ellenfeléről a húsvéti nyúlról  
-Minden napra jut két nem túl bonyolult programozós feladat, amiket aztán mindenki a saját kedvenc nyelvén oldhat meg.
+2015 óta minden év decembere az Advent of Coderól szól. Érdekes történettel a mikulásról és nagy ellenfeléről a húsvéti nyúlról. Minden napra jut két nem túl bonyolult programozós feladat, amiket aztán mindenki a saját kedvenc nyelvén oldhat meg.
 </article>
 <article>
 

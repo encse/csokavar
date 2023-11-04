@@ -72,7 +72,12 @@ export function render(tokens: Token[], ctx: RenderContext, markdownIt: Markdown
             children().push(<code>{token.content}</code>);
         } else if (token.type === "fence") {
             children().push(<pre><code>{token.content}</code></pre>);
-        }else {
+        } else if (token.type === "softbreak") {
+            // remove the implicitly added <br/> tags when there is a linebreak 
+            // inside a paragraph in the markdown src.
+            // e.g. `foo\nbar` becomes `foo bar` instead of `foo<br/>bar`.
+            children().push(<> </>);
+        } else {
             if (token.content != null && token.content != ''){
                 throw new Error('content is not empty');
             }
