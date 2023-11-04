@@ -10,7 +10,13 @@ export function render(token: Token, ctx: RenderContext) {
     const src: string = token.attrGet("src");
     const asset = ctx.assetManager.lookup(resolve(ctx.fpat, src), "fileAsset");
     return React.createElement("center", {},
-        React.createElement("video", {"width": "70%", "src": asset.dstPath, "controls": "controls"})
+        React.createElement("video", {
+            "width": "70%",
+            "src": asset.dstPath,
+            "controls": true,
+            "type": "video/mp4",
+            "playsInline": true,
+        })
     );
 }
 

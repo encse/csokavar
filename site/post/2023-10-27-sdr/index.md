@@ -25,6 +25,7 @@ csipogást hallhat. A műholdak fekete-fehérben küldik a képet, de több hull
 így ki lehet belőle keverni valami RGB-t, úgyhogy a végeredmény ilyesmi lehet:
 
 ![image](images/noaa-19-08-25-57_09-09-2023.webp)
+
 ![image](images/2023-9-9-8-26-8_221_composite.webp)
 
 Ami azért nem rossz egy darab dróttal a kert végéből. Tulajdonképpen ez csak a belépő szint, profibb 
@@ -43,6 +44,7 @@ kapunk néhány bélyegszerű izét. Rém ronda, de jó mulatság összevadászn
 horgászat, sok türelem, és a végén a fene tudja mit jön ki belőle.
 
 ![image](images/iss3.webp)
+
 ![image](images/iss4.webp)
 
 Persze SSTV adást bárki küldhet, akinek van rádióamatőr engedélye, és a 14.230 Mhz-es frekvencián 
