@@ -67,6 +67,25 @@ Intentional programming technológiák kutatása és alkalmazása, Charles Simon
 <p>Néhány kisebb-nagyobb projekt, amivel az évek során foglalkoztam. Némelyik ma is így néz ki, másokról meg csak ez a leírás maradt.</p>
 <article>
 
+## [C# loves AI art (2023)](https://aoc.csokavar.hu)
+
+![aoc](images/aoc.webp)
+
+A 2023-as Advent of Code-hoz készült ez a kis weboldal. Megkértem a Bing Image
+Creatort, hogy minden naphoz álmodjon valami illusztációt.
+</article>
+<article>
+
+## [Ground control (2023)](https://ground-control.csokavar.hu)
+
+![aoc](images/gnd.webp)
+
+Idén nagyon rákaptam a műholdakra meg az SDR-ekre, és készítettem egy pici oldalt
+ahol a saját virtuális műholdamat lehet megfigyelni, és ha éppen jókor jár arra 
+az ember, képeket fogadni és dekódolni.
+</article>
+<article>
+
 ## [Altnet (2023)](https://altnet.csokavar.hu/#56000)
 
 ![altnet](images/altnet.webp)
