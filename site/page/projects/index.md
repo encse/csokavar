@@ -103,14 +103,6 @@ Kicsit eljátszottam régi gépekkel meg assembly nyelvekkel és írtam néhány
 </article>
 <article>
 
-## [Advent of code (2015-)](https://github.com/encse/adventofcode)
-
-![aoc](images/christmas_star.webp)
-
-2015 óta minden év decembere az Advent of Coderól szól. Érdekes történettel a mikulásról és nagy ellenfeléről a húsvéti nyúlról. Minden napra jut két nem túl bonyolult programozós feladat, amiket aztán mindenki a saját kedvenc nyelvén oldhat meg.
-</article>
-<article>
-
 ## [Casette (2020)](https://casette.csokavar.hu/)
 
 ![](images/casette-500x313.webp)
@@ -132,6 +124,14 @@ Internet konzerváló céllal letöltöttem, kikukáztam és újra elérhetővé
 ![super mario bros](images/NES_Super_Mario_Bros.webp)
 
 Egy nagyon hosszú januári napon elkezdtem írni egy Nintendo Entertainment System emulátort. Jó két hónappal később eljutottam odáig, hogy stabilan fut benne a Super Mario Bros.
+</article>
+<article>
+
+## [Advent of code (2015-)](https://github.com/encse/adventofcode)
+
+![aoc](images/christmas_star.webp)
+
+2015 óta minden év decembere az Advent of Coderól szól. Érdekes történettel a mikulásról és nagy ellenfeléről a húsvéti nyúlról. Minden napra jut két nem túl bonyolult programozós feladat, amiket aztán mindenki a saját kedvenc nyelvén oldhat meg.
 </article>
 <article>
 
