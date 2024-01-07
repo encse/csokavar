@@ -111,14 +111,6 @@ Nem túl nehéz programozási fejtörő, amit a 2020-as Advent of Code-hoz kész
 </article>
 <article>
 
-## [Loginmatrix (2018)](https://loginmatrix.csokavar.hu/)
-
-![loginmatrix](images/hackmetop_r1_c2-e1568920869463.gif)
-
-Internet konzerváló céllal letöltöttem, kikukáztam és újra elérhetővé tettem az első hack me játékot, amivel valaha játszottam. Mai szemmel borzalmasnak találom, de valami szentimentális oknál fogva azért mégis itt van. Az utolsó pálya kivételével sikerült rekonstruálni az egészet.
-</article>
-<article>
-
 ## [NES emulátor (2016)](https://nes.csokavar.hu/)
 
 ![super mario bros](images/NES_Super_Mario_Bros.webp)
