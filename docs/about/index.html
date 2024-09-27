@@ -100,9 +100,11 @@ data-styled.g31[id="sc-cxNHIi"]{content:"NqbHo,"}/*!sc*/
                     document.body.append(iframe);
 
                     const onClose = (event) => {
-                        iframe.remove();
-                        iframe = null;
-                        window.removeEventListener("message", onClose, false);
+                        if (event.data == "close") {
+                            iframe.remove();
+                            iframe = null;
+                            window.removeEventListener("message", onClose, false);
+                        }
                     }
                     window.addEventListener("message", onClose, false);
                 } 

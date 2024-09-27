@@ -58,9 +58,11 @@ I also enjoy playing the piano, although I'm not much of a pianist. I started to
                     document.body.append(iframe);
 
                     const onClose = (event) => {
-                        iframe.remove();
-                        iframe = null;
-                        window.removeEventListener("message", onClose, false);
+                        if (event.data == "close") {
+                            iframe.remove();
+                            iframe = null;
+                            window.removeEventListener("message", onClose, false);
+                        }
                     }
                     window.addEventListener("message", onClose, false);
                 } 
