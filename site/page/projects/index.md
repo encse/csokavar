@@ -24,7 +24,18 @@ main article img {
 
 <article>
 
-## Formlabs 2021-
+## instantCMR 2024-
+
+![Formlabs](images/icmr.webp)
+
+2024-ben Viktorral megörököltük Zapétól az instantCMR fejlesztését. Egyelőre a kezdeti tapogatózáson
+vagyunk túl, ismerkedünk a nyelvekkel (Scala, Kotlin, Typescript) és megpróbáljuk átlátni a Hungarian notation őrületet, ami szegény Zape hagyatéka.
+
+Én mindenképp egy pörgősebb dolgora szeretnék váltani, a korábbi waterflow folyamatról, ahol évente 1-2 release volt csak, ezért kezdetnek CI/DI-t készítettünk. Automatizált tesztek egyáltalán nem voltak, a rollout pedig kézi vezérléssel történt. Itt vagyunk most 2024 vége felé.
+</article>
+<article>
+
+## Formlabs 2021-2024
 
 ![Formlabs](images/formlabs.svg)
 
@@ -65,6 +76,16 @@ Intentional programming technológiák kutatása és alkalmazása, Charles Simon
 2017-ben érkezett a hír, hogy a céget felvásárolta a Microsoft, így annak ellenére sikerként gondolhatok rá, hogy végül semmi nem lett nyilvános belőle.
 </article>
 <p>Néhány kisebb-nagyobb projekt, amivel az évek során foglalkoztam. Némelyik ma is így néz ki, másokról meg csak ez a leírás maradt.</p>
+<article>
+
+## [Juggling (2024)](https://juggling.csokavar.hu)
+
+![aoc](images/juggling.webp)
+
+Ezt a kis Javascript játékot eredetileg ChatGPT-vel kezdtem iratni, aztán annyira megtetszett,
+hogy beleraktam pár nap fejlesztést is. Az alap kaszkádot, koszorút, egykezes zsonglőrködést
+"gyakorolhatjuk" vele három labdával.
+</article>
 <article>
 
 ## [C# loves AI art (2023)](https://aoc.csokavar.hu)
