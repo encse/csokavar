@@ -29,9 +29,9 @@ main article img {
 ![Formlabs](images/icmr.webp)
 
 2024-ben Viktorral megörököltük Zapétól az instantCMR fejlesztését. Egyelőre a kezdeti tapogatózáson
-vagyunk túl, ismerkedünk a nyelvekkel (Scala, Kotlin, Typescript) és megpróbáljuk átlátni a Hungarian notation őrületet, ami szegény Zape hagyatéka.
+vagyunk túl, ismerkedünk a nyelvekkel (Scala, Kotlin, Typescript) és megpróbáljuk átlátni a Hungarian notation őrületet... szegény Zape hagyatéka.
 
-Én mindenképp egy pörgősebb dolgora szeretnék váltani, a korábbi waterflow folyamatról, ahol évente 1-2 release volt csak, ezért kezdetnek CI/DI-t készítettünk. Automatizált tesztek egyáltalán nem voltak, a rollout pedig kézi vezérléssel történt. Itt vagyunk most 2024 vége felé.
+Én mindenképp egy pörgősebb dolgora szeretnék váltani a korábbi waterflow folyamatról, ahol évente 1-2 release volt csak, ezért kezdetnek CI/CD-t készítettünk. Automatizált tesztek egyáltalán nem voltak, a rollout pedig kézi vezérléssel történt. Itt tartunk 2024 vége felé.
 </article>
 <article>
 
