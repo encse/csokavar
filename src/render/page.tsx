@@ -392,6 +392,7 @@ export const PageComponent: React.FC<PageProps> = (props: PageProps) => {
                     <SiteTitle href="/">Csókavár</SiteTitle>
                     <Menu>
                         <MenuItem href="/konyvespolc/">Könyvespolc</MenuItem>
+                        <MenuItem href="/ha7ncs/">HA7NCS</MenuItem>
                         <MenuItem href="https://altnet.csokavar.hu/#56000">Altnet</MenuItem>
                         <MenuItem href="https://ground-control.csokavar.hu/">Gnd</MenuItem>
                         <MenuItem href="/projects/">Projektek</MenuItem>
